@@ -1,0 +1,141 @@
+/* //// Updated version with same fonts //// */
+@import url('https://fonts.googleapis.com/css?family=Signika+Negative:300,400,600,700|Signika:300,400,600,700');
+
+:root {
+    --fontColor: black;
+    --bgColor: white;
+    --fontFam: "Signika";
+    --fontWght: 400;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 5vw;
+    background: #eee;
+}
+
+.font-test {
+    max-width: calc(750px + 10vw);
+    height: 100%;
+    margin: 0 auto;
+    align-content: space-between;
+    padding: 4vw 5vw;
+    background: white;
+    color: var(--fontColor);
+    font-weight: var(--fontWght);
+    border-radius: 8px;
+    font-family: var(--fontFam), sans-serif;
+}
+
+.font-test.negative {
+    --fontFam: "Signika Negative";
+}
+
+.font-test.negative-colors {
+    --bgColor: #222;
+    --fontColor: white;
+
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-bottom: 2.5vw;
+}
+
+.font-name {
+    diplay: block;
+    max-width: 300px;
+    font-size: 2em;
+    font-weight: var(--fontWght);
+    display: block;
+    margin: 0;
+}
+
+.controls {
+    flex-grow: 1;
+    display: grid;
+    height: 3em;
+    max-width: 400px;
+    grid-template-columns: 2fr auto auto;
+    grid-gap: 1em;
+    align-items: center;
+    font-family: var(--fontFam), sans-serif;
+}
+
+button {
+    border: 1px solid var(--fontColor);
+    border-radius: 99em;
+    padding: 0.75rem 1rem;
+    margin: 0;
+    text-decoration: none;
+    background: transparent;
+    color: var(--fontColor);
+    font-family: var(--fontFam), sans-serif;
+    font-weight: var(--fontWght);
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.25s ease, transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+button:hover {
+    background: #0053ba;
+    font-family: "Signika Negative", sans-serif;
+    color: #fff;
+    border: 1px solid #0053ba;
+}
+
+button:focus {
+    outline: none;
+    border: 1px solid #0088ff;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+
+.controls .checkbox {
+    display: block;
+}
+
+.font-test h1,
+.font-test p {
+    width: 100%;
+}
+
+h1 {
+    font-family: var(--fontFam), sans-serif;
+    font-size: 3em;
+    line-height: 1.125;
+    /*   color: #444; */
+    /*   color:  rgb(75, 88, 97); */
+    margin: 0 0 0.25em;
+}
+
+p,
+li {
+    font-family: var(--fontFam), sans-serif;
+    font-size: 1.25em;
+    margin: 0 0 1em;
+}
+
+a {
+    color: var(--fontColor);
+}
+
+.font-test.negative-colors {
+    background: #222;
+    color: white
+}
