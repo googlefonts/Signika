@@ -21,6 +21,7 @@ function colorCheckboxHandler() {
 
 function swapColorsHandler() {
     colorNegative = !colorNegative;
+    console.log("colorNegative is " + colorNegative)
     if (colorNegative === true) {
         fontTest.classList.toggle("negative-colors")
     }
@@ -44,23 +45,16 @@ function swapButtonHandler() {
     }
 }
 
-// setFontWeight
-
-// fontWght => {
-//     fontTest.style = `--fontWght: ${fontWght.value}`
-// }
-const setFontWght = (menu) => {
-    console.log(menu.value)
-    fontTest.style = `--fontWght: ${menu.value}`
-}
-
-setFontWght(fontWght)
-
 function weightMenuHandler(e) {
     console.log(e.srcElement.value)
     fontTest.style = `--fontWght: ${e.srcElement.value}`
 }
 
+function setFontWght(menu) {
+    fontTest.style = `--fontWght: ${menu.value}`
+}
+
+setFontWght(fontWght)
 
 swapButton.addEventListener("click", swapButtonHandler)
 

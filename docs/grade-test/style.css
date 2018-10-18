@@ -64,8 +64,8 @@ header {
     flex-grow: 1;
     display: grid;
     height: 3em;
-    max-width: 400px;
-    grid-template-columns: 2fr auto auto;
+    max-width: 360px;
+    grid-template-columns: 1fr auto auto;
     grid-gap: 1em;
     align-items: center;
     font-family: var(--fontFam), sans-serif;
@@ -74,7 +74,7 @@ header {
 button {
     border: 1px solid var(--fontColor);
     border-radius: 99em;
-    padding: 0.75rem 1rem;
+    padding: 0.5rem 1rem;
     margin: 0;
     text-decoration: none;
     background: transparent;
