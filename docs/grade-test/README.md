@@ -16,11 +16,11 @@ This shows that the two versions are, in fact, different weights rather than dif
 
 This is consistent with the Glyphs source. It has two masters:
 
-![Signika Masters](masters.png)
+![Signika Masters](assets/masters.png)
 
 ...and the postive/negative instances are derived from that (here, the Signika Negative Light is an extrapolated -15 weight):
 
-![Signika Instances](instances.png)
+![Signika Instances](assets/instances.png)
 
 ## Potential Action
 
