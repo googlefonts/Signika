@@ -78,5 +78,23 @@ Changing:
 - adding `input="900"` to AVAR map
 - setting `GRAD` min to `0`
 
-5. I will temporarily build from `.designspace` without instances.
+5. I will temporarily build from `.designspace` without instances, because these have `wght` values outside of the `min` and `max` (there is a `-15`).
 
+It builds! There are some issues.![signika-grade-slider](/Users/stephennixon/type-repos/google-font-repos/signika-for-google/docs/02-grade-axis/assets/signika-grade-slider.gif)
+
+Most pressing: the grade axis is so subtle, it barely changes the points in the VF. It's hard to understand why immediately. Is this because...
+
+- Variable TTFs don't export with floating-point precision? (I don't know whether they do or not)?
+- The inserted "Grade" Light master was somehow incorrectly extrapolated or processed?
+
+
+
+Ahhh the `Light` static instance has a wght value of `50`, while the `Negative Light` has a `wght` value of `-15`. Meanwhile, the VF has a min of `0`, so the Grade axis may not have as far it can travel
+
+### Next Steps
+
+- [ ] Insert former `Light` static instance as the `Light` master, to give bigger difference between Grade
+- [ ] Match weight values for instances of normal and Negative instances
+- [ ] See which Glyphs source values must change for a successful export, then maybe script this
+
+- [ ] Push grade axis further to see if it has a better effect on export axes.
