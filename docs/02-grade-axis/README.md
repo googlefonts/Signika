@@ -17,7 +17,11 @@ Signika and Signika Negative have a problem: they don't currently share text wid
 
 1. Taking the `Negative Light` instance, which had a wght value of `-15`, and converting it to a master
 
-2) Using a script to copy glyph metrics from the `Light` master to the `Negative Light` master, to hopefully make point deltas only adjust grade, not overall glyph width, etc
-   ![Grade Test](assets/signika-grade 2018-10-19 at 12.08.50.gif)
+![Light Grade Master](assets/light-GRAD.png)
+![Light Master](assets/light.png)
 
-3) Generating a VF and testing the result on bold weights
+2. Using a script to copy glyph metrics from the `Light` master to the `Negative Light` master, to hopefully make point deltas only adjust grade, not overall glyph width, etc
+
+![Grade Test](assets/signika-grade.gif)
+
+1. Generating a VF and testing the result on bold weights
