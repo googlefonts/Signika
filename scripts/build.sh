@@ -4,7 +4,7 @@
 
 ###### set vars ######
 
-glyphsSource="sources/Signika-MM.glyphs"
+glyphsSource="sources/Signika-MM-ext_wght_grad.glyphs"
 
 fontName="Signika-VF"
 
@@ -73,6 +73,8 @@ ttx $ttxPath
 rm -rf $ttxPath
 
 ttfPath=${ttxPath/".ttx"/".ttf"}
+
+open $ttfPath
 
 ## if you set timestampAndFontbakeInDist variable to true, this creates a new folder in 'dist' to put it into and run fontbake on
 if [ $timestampAndFontbakeInDist == true ]
