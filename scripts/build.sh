@@ -4,7 +4,7 @@
 
 ###### set vars ######
 
-glyphsSource="sources/Signika-MM-ext_wght_grad.glyphs"
+glyphsSource="sources/Signika-MM-ext_wght_ext_grad-H.glyphs"
 
 fontName="Signika-VF"
 

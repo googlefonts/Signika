@@ -1,3 +1,7 @@
+---
+typora-copy-images-to: ./assets
+---
+
 # Making a "proper" GRAD Axis
 
 As the previous doc says, a Grade axis should keep widths and prevent reflow. According to Mozilla Dev Network:
@@ -24,7 +28,10 @@ Signika and Signika Negative have a problem: they don't currently share text wid
 
 ![Grade Test](assets/signika-grade.gif)
 
-3. Generating a VF and testing the result on bold weights
+
+
+3. Use a glyphs script (not yet written) to copy kerning values from light to light GRAD master
+4. Generating a VF and testing the result on bold weights
 
 ## Generating the variable font with both axes
 
@@ -87,14 +94,67 @@ Most pressing: the grade axis is so subtle, it barely changes the points in the 
 - Variable TTFs don't export with floating-point precision? (I don't know whether they do or not)?
 - The inserted "Grade" Light master was somehow incorrectly extrapolated or processed?
 
-
-
 Ahhh the `Light` static instance has a wght value of `50`, while the `Negative Light` has a `wght` value of `-15`. Meanwhile, the VF has a min of `0`, so the Grade axis may not have as far it can travel
 
 ### Next Steps
 
-- [ ] Insert former `Light` static instance as the `Light` master, to give bigger difference between Grade
+- [x] Insert former `Light` static instance (`wght` 50) as the `Light` master, to give bigger difference between Grade
+- [x] extrapolate a *much* lighter grade, and try exporting with that
 - [ ] Match weight values for instances of normal and Negative instances
 - [ ] See which Glyphs source values must change for a successful export, then maybe script this
 
 - [ ] Push grade axis further to see if it has a better effect on export axes.
+
+
+
+### Extrapolate a *much* lighter grade, then try exporting with that
+
+I've extrapolated a very light Grade instance (-300 weight), then made this a master and copied the Light metrics.
+
+I was having issues exporting from FontMake...
+
+```
+KeyError: 'wght'
+```
+
+```
+AssertionError: ((236, [227, 236, 236, 236]), 'int', '.BaseCount', 'BaseArray', '.BaseArray', 'MarkBasePos', '[0]', 'Lookup', '[2]', 'list', '.Lookup', 'LookupList', '.LookupList', 'GPOS', '.table', 'table_G_P_O_S_')
+```
+
+...so I'm instead trying to export with GlyphsApp's built-in exporter. This helpfully tells me which glyphs are blocking the export, due to "too many inflection points"
+
+![image-20181019153053384](assets/image-20181019153053384.png)
+
+The plugin RedArrows is extremely helpful in locating inflection points and other issues.
+
+
+
+![image-20181019153547586](/Users/stephennixon/type-repos/google-font-repos/signika-for-google/docs/02-grade-axis/assets/image-20181019153547586.png)
+
+I also got an error `**The font contains glyphs with duplicate production names:**` for `commaaccentcomb` and `commaaccent`. I disabled `commaaccentcomb` for now, to get past this.
+
+Unfortunately, Glyphs export seems to be duplicating the Light GRAD master to make a faulty multiple-master VF, where the Bold Negative corner duplicates the Light Negative corner.
+
+![Problem](assets/grade-problem.gif)
+
+
+
+- [ ] in the eventual glyphs source, be sure that extrapolated Light GRAD master has better outlines, especially in `a`, `G`, `@`, and resolved `commaaccentcomb` and `commaaccent`.
+
+
+
+## Trying with FontMake again
+
+I've set Negative Instances to have weight values matching the positive instances.
+
+
+
+However, I'm getting this error from FontMake:
+
+```
+AssertionError: Location for axis 'Weight' (mapped to 250.0) out of range for 'Signika Light-GRAD' [300.0..700.0]
+```
+
+Probably due to the light masters having a value of `0`, while the light instances have a weight value of `50`.
+
+- [ ] make script to set the designspace in the glyphs file to something more "regular" / gridded
