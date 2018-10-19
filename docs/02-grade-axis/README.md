@@ -147,8 +147,6 @@ Unfortunately, Glyphs export seems to be duplicating the Light GRAD master to ma
 
 I've set Negative Instances to have weight values matching the positive instances.
 
-
-
 However, I'm getting this error from FontMake:
 
 ```
@@ -159,5 +157,12 @@ Probably due to the light masters having a value of `0`, while the light instanc
 
 - [ ] make script to set the designspace in the glyphs file to something more "regular" / gridded
 
-
 It appears that it may not be possible to export a 2-axis variable font with just 3 masters. Here's a relevant GitHub Issue: https://github.com/googlei18n/fontmake/issues/454#issuecomment-431494121
+
+
+
+## FontMaking with corners
+
+Because it seems that a 3-master, 2-axis VF may not currently be possible to export, I make this with 4-masters, simply as a proof of concept. The instance values, kerning, and metadata will still be wrong, but it should work at a basic state.
+
+![grade proof of concept](assets/grade-proof_of_concept.gif)	
