@@ -1,5 +1,8 @@
 {
-.appVersion = "1141";
+.appVersion = "1172";
+DisplayStrings = (
+abcde
+);
 classes = (
 {
 automatic = 1;
@@ -699,6 +702,7 @@ alignmentZones = (
 );
 ascender = 750;
 capHeight = 685;
+custom = "-GRAD";
 customParameters = (
 {
 name = typoAscender;
@@ -740,6 +744,7 @@ horizontalStems = (
 53
 );
 id = "E4378254-F350-404F-89FA-E431A9318E35";
+name = "Light-GRAD";
 verticalStems = (
 75,
 71,
@@ -747,7 +752,6 @@ verticalStems = (
 );
 weight = Light;
 weightValue = -15;
-widthValue = 100;
 xHeight = 490;
 },
 {
@@ -934,7 +938,6 @@ verticalStems = (
 192
 );
 weightValue = 1350;
-widthValue = 100;
 xHeight = 504;
 }
 );
@@ -90862,8 +90865,8 @@ weightClass = Bold;
 exports = 0;
 interpolationWeight = 1170;
 instanceInterpolations = {
-UUID0 = -0.17;
-UUID1 = 1.17;
+"3CDB9BDF-2CAB-4C38-BE1D-F1DC035F661C" = 0.48571;
+UUID1 = 0.51429;
 };
 name = Extrabold;
 weightClass = ExtraBold;
@@ -90872,8 +90875,7 @@ weightClass = ExtraBold;
 exports = 0;
 interpolationWeight = 1350;
 instanceInterpolations = {
-UUID0 = -0.35;
-UUID1 = 1.35;
+"3CDB9BDF-2CAB-4C38-BE1D-F1DC035F661C" = 1;
 };
 name = Black;
 weightClass = Black;
@@ -90895,8 +90897,7 @@ value = "Signika Negative";
 );
 interpolationWeight = -15;
 instanceInterpolations = {
-UUID0 = 1.015;
-UUID1 = -0.015;
+"E4378254-F350-404F-89FA-E431A9318E35" = 1;
 };
 name = Light;
 weightClass = Light;
@@ -90956,8 +90957,8 @@ value = "Signika Negative";
 );
 interpolationWeight = 1089;
 instanceInterpolations = {
-UUID0 = -0.089;
-UUID1 = 1.089;
+"3CDB9BDF-2CAB-4C38-BE1D-F1DC035F661C" = 0.25429;
+UUID1 = 0.74571;
 };
 name = Extrabold;
 weightClass = ExtraBold;
@@ -90972,8 +90973,8 @@ value = "Signika Negative";
 );
 interpolationWeight = 1265;
 instanceInterpolations = {
-UUID0 = -0.265;
-UUID1 = 1.265;
+"3CDB9BDF-2CAB-4C38-BE1D-F1DC035F661C" = 0.75714;
+UUID1 = 0.24286;
 };
 name = Black;
 weightClass = Black;
@@ -93811,8 +93812,8 @@ value = (
 );
 interpolationWeight = 1170;
 instanceInterpolations = {
-UUID0 = -0.17;
-UUID1 = 1.17;
+"3CDB9BDF-2CAB-4C38-BE1D-F1DC035F661C" = 0.48571;
+UUID1 = 0.51429;
 };
 name = Extrabold;
 weightClass = ExtraBold;
@@ -94378,8 +94379,7 @@ value = (
 );
 interpolationWeight = 1350;
 instanceInterpolations = {
-UUID0 = -0.35;
-UUID1 = 1.35;
+"3CDB9BDF-2CAB-4C38-BE1D-F1DC035F661C" = 1;
 };
 name = Black;
 weightClass = Black;
@@ -94952,8 +94952,7 @@ value = (
 );
 interpolationWeight = -15;
 instanceInterpolations = {
-UUID0 = 1.015;
-UUID1 = -0.015;
+"E4378254-F350-404F-89FA-E431A9318E35" = 1;
 };
 name = Light;
 weightClass = Light;
@@ -97217,8 +97216,8 @@ value = (
 );
 interpolationWeight = 1089;
 instanceInterpolations = {
-UUID0 = -0.089;
-UUID1 = 1.089;
+"3CDB9BDF-2CAB-4C38-BE1D-F1DC035F661C" = 0.25429;
+UUID1 = 0.74571;
 };
 name = Extrabold;
 weightClass = ExtraBold;
@@ -97784,8 +97783,8 @@ value = (
 );
 interpolationWeight = 1265;
 instanceInterpolations = {
-UUID0 = -0.265;
-UUID1 = 1.265;
+"3CDB9BDF-2CAB-4C38-BE1D-F1DC035F661C" = 0.75714;
+UUID1 = 0.24286;
 };
 name = Black;
 weightClass = Black;
