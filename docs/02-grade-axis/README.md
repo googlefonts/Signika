@@ -158,3 +158,6 @@ AssertionError: Location for axis 'Weight' (mapped to 250.0) out of range for 'S
 Probably due to the light masters having a value of `0`, while the light instances have a weight value of `50`.
 
 - [ ] make script to set the designspace in the glyphs file to something more "regular" / gridded
+
+
+It appears that it may not be possible to export a 2-axis variable font with just 3 masters. Here's a relevant GitHub Issue: https://github.com/googlei18n/fontmake/issues/454#issuecomment-431494121
