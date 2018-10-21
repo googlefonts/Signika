@@ -166,3 +166,62 @@ It appears that it may not be possible to export a 2-axis variable font with jus
 Because it seems that a 3-master, 2-axis VF may not currently be possible to export, I make this with 4-masters, simply as a proof of concept. The instance values, kerning, and metadata will still be wrong, but it should work at a basic state.
 
 ![grade proof of concept](assets/grade-proof_of_concept.gif)	
+
+## FontMaking without corners!
+
+I learned on [this FontMake Issue](https://github.com/googlei18n/fontmake/issues/454#issuecomment-431524906) how to accomplish what I intended.
+
+I had the grad-min set as the default, rather than the grad-max. The `GRAD` default must match the Grade of the main masters on the weight axis.
+
+It's now exporting and is 175kb for the TTF, versus the 206kb that 4 masters produced.
+
+![3-master-vf](assets/3-master-vf.gif)
+
+This seems to be working well:
+
+    <axes>
+        <axis default="300" maximum="750" minimum="300" name="Weight" tag="wght">
+            # (I'll be tweaking these map values more, so they're not final)
+            <map input="300" output="0" />
+            <map input="400" output="360" />
+            <map input="600" output="650" />
+            <map input="700" output="920" />
+            <map input="750" output="1000" />
+        </axis>
+
+
+        #################
+
+        # this is the critical bit – the default *must* match the GRAD of the two main masters for wght, not the GRAD in the min-grade master
+
+        <axis default="100" maximum="100" minimum="0" name="Grade" tag="GRAD" />
+
+        #################
+
+    </axes>
+
+    # here are my 3 sources
+    <sources>
+        <source familyname="Signika" filename="Signika-Light-GRAD.ufo" name="Signika Light-GRAD" stylename="Light-GRAD">
+            <lib copy="1" />
+            <groups copy="1" />
+            <features copy="1" />
+            <info copy="1" />
+            <location>
+                <dimension name="Weight" xvalue="0" />
+                <dimension name="Grade" xvalue="0" />
+            </location>
+        </source>
+        <source familyname="Signika" filename="Signika-Light.ufo" name="Signika Light" stylename="Light">
+            <location>
+                <dimension name="Weight" xvalue="0" />
+                <dimension name="Grade" xvalue="100" />
+            </location>
+        </source>
+        <source familyname="Signika" filename="Signika-Bold.ufo" name="Signika Bold" stylename="Bold">
+            <location>
+                <dimension name="Weight" xvalue="1000" />
+                <dimension name="Grade" xvalue="100" />
+            </location>
+        </source>
+    </sources>
