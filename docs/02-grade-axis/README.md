@@ -225,3 +225,78 @@ This seems to be working well:
             </location>
         </source>
     </sources>
+
+## Can it export from a 3-master GlyphsApp source?
+
+I'll delete the "Bold GRAD" master from `sources/experiments/Signika-MM-ext_wght_ext_grad.glyphs`, and check if it still exports via FontMake.
+
+Problem with weights: 
+
+```
+AssertionError: Location for axis 'Weight' (mapped to 250.0) out of range for 'Signika Light-GRAD' [300.0..700.0]
+```
+
+The Light instances are given a GlyphsApp weight value of `50`, while the Light masters have a weight value of `0`. Therefore, the instances probably have to change to allow the variable font to export successfully.
+
+Now, this error is happening
+
+```
+AssertionError: Location for axis 'Weight' (mapped to 780.0) out of range for 'Signika Bold' [300.0..700.0]
+```
+
+The Bold instances have a weight values of `920` while the Bold masters have values of `1000`. It seems that this is also blocking the export.
+
+Likely, if fonttools and fontmake won't support aligning a variable font to instance values rather than master values, I'll probably have to create a GlyphsApp script that makes masters that match the lightest and boldest instances, then make these into masters, and deletes original masters.
+
+This gets past the Location "out of range" errors, but now cues:
+
+```
+KeyError: 'wght'
+```
+
+I suspect this is due to the generated designspace showing that `0` is the default value for Grade – when I know that `100` must be the default for the three-axis master to work. Perhaps, putting the `GRAD=100` masters first in the GlyphsApp source will make this the default Grade value?
+
+Yes! It exports, and the Grade default is indeed `100`.
+
+## Keeping weights the same
+
+- [ ] The Light instance weight values have been changed. It will be important to circle back to re-match this with the original light values
+- [ ] Bold instance weight values have been changed. Figure it out later.
+
+## Should we keeping Grades the same? How close should we be?
+
+The original Signika (currently on Google Fonts) have a "Grade" version that doesn't follow the formalized definitions of grade – keeping the same glyph width metrics while changing letter shapes. When this is fixed, whatever Grade versions we make now won't align with old Grade versions. So, we can't keep the new "Grade" the same as the old "Grade." However, should the overall lettershape difference be the same, or different?
+
+**Why to keep it the same**
+If there is research or logic behind the current changes for the "Grade" variations, that shouldn't be discarded. 
+
+- [ ] email Anna to ask about Grade research / reasoning
+
+**Why to change it**
+My first attempt to follow the prior "Grade" shape changes was so subtle, it was barely translating to a variable font. Potentially, if there is a wider range in the Grade axis, it may prove useful in a wider range of contexts.
+
+
+## Will a higher UPM have less "wobble" in the Grade Axis?
+
+One slightly unfortunate (but probably unimportant) downside of the grade axis is that letters have a very noticeable "wobble" when they're being pulled across their grade range. (As far as I know), this is because the points of contours have to snap to their grid as the letter is interpolated.
+
+Fonts with few Units Per Em (UPM) must round points further when interpolating. This font did have a UPM of 1000, but [Dave Crossland is now convincingly suggesting that Variable Fonts take up a standard of 2000 UPM](https://github.com/googlefonts/fontbakery/issues/2185#issuecomment-440844806). Could that help reduce the wobble? 
+
+It doesn't seem to change much, at least not when tested in FontView.
+
+1000 UPM:
+
+![1000 UPM font with Grade axis](assets/1000-upm-grade.gif)
+
+2000 UPM:
+
+![2000 UPM font with Grade axis](assets/2000-upm-grade.gif)
+
+
+## Fixing export issues
+
+```
+WARNING:glyphsLib.builder.builders.UFOBuilder:Non-existent glyph class public.kern2.hyphen found in kerning rules.
+```
+
+- [ ] find why this warning is being fired during build

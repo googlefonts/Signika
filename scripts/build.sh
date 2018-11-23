@@ -4,7 +4,7 @@
 
 ###### set vars ######
 
-glyphsSource="sources/Signika-MM-ext_wght_ext_grad.glyphs"
+glyphsSource="sources/experiments/Signika-MM-ext_wght_ext_grad.glyphs"
 
 fontName="Signika-VF"
 
@@ -45,15 +45,13 @@ rm -rf $tempGlyphsSource
 cd variable_ttf
 
 ## fix file metadata with gftools
-gftools fix-nonhinting ${fontName}.ttf ${fontName}.ttf
 gftools fix-dsig --autofix ${fontName}.ttf
-gftools fix-gasp ${fontName}.ttf
 
 ## sets up temp ttx file to insert correct values into tables
 ttx ${fontName}.ttf
 
 rm -rf ${fontName}.ttf
-rm -rf ${fontName}-backup-fonttools-prep-gasp.ttf
+
 
 cd ..
 
