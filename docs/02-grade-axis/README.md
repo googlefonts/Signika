@@ -1,7 +1,3 @@
----
-typora-copy-images-to: ./assets
----
-
 # Making a "proper" GRAD Axis
 
 As the previous doc says, a Grade axis should keep widths and prevent reflow. According to Mozilla Dev Network:
