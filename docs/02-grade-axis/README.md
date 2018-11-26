@@ -295,4 +295,4 @@ It doesn't seem to change much, at least not when tested in FontView.
 WARNING:glyphsLib.builder.builders.UFOBuilder:Non-existent glyph class public.kern2.hyphen found in kerning rules.
 ```
 
-- [ ] find why this warning is being fired during build
+- [ ] find why this warning is being fired during build (it's not blocking the VF export, but it will still be worth understanding and getting past)
