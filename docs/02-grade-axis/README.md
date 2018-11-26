@@ -269,7 +269,16 @@ If there is research or logic behind the current changes for the "Grade" variati
 - [ ] email Anna to ask about Grade research / reasoning
 
 **Why to change it**
-My first attempt to follow the prior "Grade" shape changes was so subtle, it was barely translating to a variable font. Potentially, if there is a wider range in the Grade axis, it may prove useful in a wider range of contexts.
+~~My first attempt to follow the prior "Grade" shape changes was so subtle, it was barely translating to a variable font. Potentially, if there is a wider range in the Grade axis, it may prove useful in a wider range of contexts.~~
+
+**Update, Nov 26:** Actually, I have realized that I was somewhat mistaken. I believe that earlier, I was seeing a comparison between the "Light Negative" instance (weight `-15` out of 0–1000) vs the Light master (weight `0` out of 0–1000). *However,* the actual exported static fonts were "Light Negative" (`-15`) and default "Light" (`50` out of 0–1000). Whereas there are only 0–2 units difference between "Light Negative" and the Light *master*, there are about 8 units of difference between "Light Negative" and default "Light" instances.
+
+![](assets/light_neg-vs-light_master.png)
+![](assets/light_neg-vs-light_default.png)
+![](assets/light_default.png)
+![](assets/light_neg.png)
+
+I *still* am not quite sure whether I should stick to only this amount of difference for grade, but it is much more reasonable now than before, because this is actually a difference that would be visible to a human.
 
 
 ## Will a higher UPM have less "wobble" in the Grade Axis?
@@ -296,3 +305,4 @@ WARNING:glyphsLib.builder.builders.UFOBuilder:Non-existent glyph class public.ke
 ```
 
 - [ ] find why this warning is being fired during build (it's not blocking the VF export, but it will still be worth understanding and getting past)
+
