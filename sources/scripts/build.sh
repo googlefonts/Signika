@@ -25,14 +25,12 @@ echo "VF Name: ${VFname}"
 ## make temp glyphs filename with "-build" suffix
 tempGlyphsSource=${glyphsSource/".glyphs"/"-Build.glyphs"}
 
-## ttfVFName=${glyphsSource/".glyphs"/"-VF.ttf"} # can't quite do this very sensibly without python
 
 ## copy Glyphs file into temp file
 cp $glyphsSource $tempGlyphsSource
 
-## call the designspace fixing script
-# python2 scripts/fix-designspace.py $tempGlyphsSource
-
+# ===========================================================================
+# Generate Variable Font ====================================================
 
 ## call fontmake to make a varfont
 fontmake -o variable -g $tempGlyphsSource
@@ -97,10 +95,10 @@ echo ttfautohint-vf $ttfPath $hintedPath
 echo "================================================"
 ttfautohint-vf -I $ttfPath $hintedPath
 
-finalFilePath=${hintedPath/"-hinted"/""}
-cp $hintedPath $finalFilePath
+finalHintedFont=${hintedPath/"-hinted"/""}
+cp $hintedPath $finalHintedFont
 
-open ${finalFilePath}
+open ${finalHintedFont}
 
 # ===========================================================================
 # Sort into final folder ====================================================

@@ -44,28 +44,51 @@ if [ -f "$file" ]; then
 fi 
 done
 
+
+copyToFontDir()
+{
+    DIRECTORY=$1
+    if [ ! -d "$DIRECTORY" ]; then
+        mkdir ${outputDir}/$DIRECTORY
+        mkdir ${outputDir}/$DIRECTORY/static
+    fi
+
+    newPath=${outputDir}/$DIRECTORY/static/${fileName}
+    cp ${file} ${newPath}
+}
+
 fontbakeFile()
 {
     FILEPATH=$1
     fontbakery check-googlefonts ${FILEPATH} --ghmarkdown ${FILEPATH/".ttf"/"-fontbakery-report.md"}
 }
 
-# outputDir="fonts"
+outputDir="fonts"
 
-# for file in instance_ttf/*; do 
-# if [ -f "$file" ]; then 
-#     fileName=$(basename $file)
-#     echo $fileName
-#     if [[ $file == *"EncodeSansCondensed-"* ]]; then
-#         newPath=${outputDir}/encodesanscondensed/static/${fileName}
-#         cp ${file} ${newPath}
-        
-#         fontbakeFile ${newPath}
-#     fi
-# fi 
-# done
+for file in instance_ttf/*; do 
+if [ -f "$file" ]; then 
+    fileName=$(basename $file)
+    echo $fileName
+    if [[ $file == *"Signika-"* ]]; then
+        copyToFontDir signika
+        fontbakeFile ${newPath}
+    fi
+    if [[ $file == *"SignikaNegative-"* ]]; then
+        copyToFontDir signikanegative
+        fontbakeFile ${newPath}
+    fi
+    if [[ $file == *"SignikaSC-"* ]]; then
+        copyToFontDir signikasc
+        fontbakeFile ${newPath}
+    fi
+    if [[ $file == *"SignikaNegativeSC-"* ]]; then
+        copyToFontDir signikanegativesc
+        fontbakeFile ${newPath}
+    fi
+fi 
+done
 
 # # clean up build folders
-# rm -rf instance_ufo
-# rm -rf instance_ttf
-# rm -rf master_ufo
+rm -rf instance_ufo
+rm -rf instance_ttf
+rm -rf master_ufo

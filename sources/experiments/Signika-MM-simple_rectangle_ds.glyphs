@@ -1,10 +1,8 @@
 {
 .appVersion = "1187";
 DisplayStrings = (
-"/commaaccent.case/Gcommaaccent",
-"/commaaccent/kcommaaccent",
-"/commaaccentcomb",
-aA
+"T=-/hyphen.case ­",
+VA
 );
 classes = (
 {
@@ -893,7 +891,6 @@ verticalStems = (
 );
 weight = Light;
 weightValue = 50;
-widthValue = 100;
 xHeight = 980;
 },
 {
@@ -23567,7 +23564,7 @@ unicode = 002C;
 {
 color = (0,243,255,1);
 glyphname = hyphen;
-lastChange = "2018-12-12 17:56:20 +0000";
+lastChange = "2018-12-12 21:28:54 +0000";
 layers = (
 {
 layerId = "BF9B7364-100A-4003-A617-B6EC7E73A6E7";
@@ -101083,6 +101080,9 @@ backslash = -117;
 };
 zcaron = {
 backslash = -79;
+};
+hyphen = {
+"@MMK_R_equal" = 0;
 };
 };
 "6BD0978F-C27A-4FE6-8A6F-902073A9F586" = {

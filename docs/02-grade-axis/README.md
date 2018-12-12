@@ -332,7 +332,9 @@ New SemiBold `/a`, scaled back to 1000 UPM, then copy-pasted on top of old SemiB
 
 ![](assets/2018-12-12-14-56-33.png)
 
-Perhaps, the difference visible in the online Regression testing tool is from hinting? 
+~~Perhaps, the difference visible in the online Regression testing tool is from hinting?~~
+
+Answer: the file I was uploading had a name ("Semibold") that was slightly different from the hosted version ("SemiBold"), so it was comparing to the Regular, not to the SemiBold.
 
 - [ ] determine what causes change for online regression tester
 - [ ] (verify with Dave or Marc first, but) match old vertical metrics – most likely, we might need to match old versions for line-height but follow new guidelines as much as possible for how we make the line heights
