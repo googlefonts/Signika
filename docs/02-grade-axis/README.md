@@ -297,6 +297,18 @@ It doesn't seem to change much, at least not when tested in FontView.
 
 ![2000 UPM font with Grade axis](assets/2000-upm-grade.gif)
 
+## Next steps on building wght + NEGA family
+
+- [ ] first, try exporting from a file with just four masters that are from existing instances (`Signika-MM-simple_rectangle_ds.glyphs`)
+  - [ ] check if this builds
+  - [ ] check how instances compare to existing fonts
+
+- [ ] make GlyphsApp source with rectangular designspace
+  - [ ] make font file with masters at bold (920), light (50), and light negative (-15), and *maybe* also bold negative (843).
+  - [ ] set these masters so that the weight goes from 300 to 700, and the "Negative" (NEGA? NGTV?) axis goes from 0 to 1
+  - [ ] Test that it can export static instances that match current statics
+
+- [ ] ? make a script to create this new glyphs file on build?
 
 ## Fixing export issues
 
@@ -305,4 +317,3 @@ WARNING:glyphsLib.builder.builders.UFOBuilder:Non-existent glyph class public.ke
 ```
 
 - [ ] find why this warning is being fired during build (it's not blocking the VF export, but it will still be worth understanding and getting past)
-

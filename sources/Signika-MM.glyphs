@@ -3,7 +3,8 @@
 DisplayStrings = (
 "/commaaccent.case/Gcommaaccent",
 "/commaaccent/kcommaaccent",
-"/commaaccentcomb"
+"/commaaccentcomb",
+A
 );
 classes = (
 {
@@ -893,13 +894,13 @@ unicode = 00A0;
 },
 {
 glyphname = A;
-lastChange = "2018-11-23 02:18:52 +0000";
+lastChange = "2018-11-27 14:54:32 +0000";
 layers = (
 {
 anchors = (
 {
 name = bottom_U;
-position = "{594, -40}";
+position = "{595, -40}";
 },
 {
 name = top_U;
@@ -969,7 +970,7 @@ nodes = (
 );
 }
 );
-width = 1188;
+width = 1189;
 },
 {
 anchors = (

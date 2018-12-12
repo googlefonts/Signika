@@ -69824,6 +69824,12 @@ rightKerningGroup = i;
 );
 instances = (
 {
+customParameters = (
+{
+name = familyName;
+value = Signika;
+}
+);
 interpolationWeight = 0;
 instanceInterpolations = {
 "59A137EB-1A44-4616-9625-4B79FA594CBD" = 1;
@@ -69832,6 +69838,12 @@ name = Light;
 weightClass = Light;
 },
 {
+customParameters = (
+{
+name = familyName;
+value = Signika;
+}
+);
 interpolationWeight = 360;
 instanceInterpolations = {
 "59A137EB-1A44-4616-9625-4B79FA594CBD" = 0.64;
@@ -69840,6 +69852,12 @@ UUID1 = 0.36;
 name = Regular;
 },
 {
+customParameters = (
+{
+name = familyName;
+value = Signika;
+}
+);
 interpolationWeight = 650;
 instanceInterpolations = {
 "59A137EB-1A44-4616-9625-4B79FA594CBD" = 0.35;
@@ -69849,6 +69867,12 @@ name = Semibold;
 weightClass = SemiBold;
 },
 {
+customParameters = (
+{
+name = familyName;
+value = Signika;
+}
+);
 interpolationWeight = 1000;
 instanceInterpolations = {
 UUID1 = 1;
@@ -69859,6 +69883,12 @@ weightClass = Bold;
 },
 {
 exports = 0;
+customParameters = (
+{
+name = familyName;
+value = Signika;
+}
+);
 interpolationWeight = 1170;
 instanceInterpolations = {
 "59A137EB-1A44-4616-9625-4B79FA594CBD" = -0.17;
@@ -69869,6 +69899,12 @@ weightClass = ExtraBold;
 },
 {
 exports = 0;
+customParameters = (
+{
+name = familyName;
+value = Signika;
+}
+);
 interpolationWeight = 1350;
 instanceInterpolations = {
 "59A137EB-1A44-4616-9625-4B79FA594CBD" = -0.35;
