@@ -92031,7 +92031,7 @@ instanceInterpolations = {
 "4A173D0E-7CF5-44A8-8AF0-8145C41E8E72" = 0.31034;
 "6BD0978F-C27A-4FE6-8A6F-902073A9F586" = 0.68966;
 };
-name = Semibold;
+name = SemiBold;
 weightClass = SemiBold;
 },
 {
@@ -92112,7 +92112,7 @@ instanceInterpolations = {
 "99297384-9E31-4A2D-BCE1-6DB06D956511" = 0.68966;
 "BF9B7364-100A-4003-A617-B6EC7E73A6E7" = 0.31034;
 };
-name = Semibold;
+name = SemiBold;
 weightClass = SemiBold;
 },
 {
@@ -93866,7 +93866,7 @@ instanceInterpolations = {
 "4A173D0E-7CF5-44A8-8AF0-8145C41E8E72" = 0.31034;
 "6BD0978F-C27A-4FE6-8A6F-902073A9F586" = 0.68966;
 };
-name = Semibold;
+name = SemiBold;
 weightClass = SemiBold;
 },
 {
@@ -97271,7 +97271,7 @@ instanceInterpolations = {
 "99297384-9E31-4A2D-BCE1-6DB06D956511" = 0.68966;
 "BF9B7364-100A-4003-A617-B6EC7E73A6E7" = 0.31034;
 };
-name = Semibold;
+name = SemiBold;
 weightClass = SemiBold;
 },
 {

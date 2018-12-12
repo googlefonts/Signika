@@ -14,6 +14,14 @@ keepDesignspace=true
 
 ###### set vars ######
 
+# ===========================================================================
+# Set up names ==============================================================
+
+# get font name from glyphs source
+VFname=`python sources/scripts/helpers/get-font-name.py ${glyphsSource}`
+# checking that the name has been pulled out of the source file
+echo "VF Name: ${VFname}"
+
 ## make temp glyphs filename with "-build" suffix
 tempGlyphsSource=${glyphsSource/".glyphs"/"-Build.glyphs"}
 
@@ -42,17 +50,21 @@ fi
 ## clean up temp glyphs file
 rm -rf $tempGlyphsSource
 
-cd variable_ttf
+
+# ===========================================================================
+# OpenType table fixes ======================================================
+
+# cd variable_ttf
 
 ## fix file metadata with gftools
-gftools fix-dsig --autofix ${fontName}.ttf
+gftools fix-dsig --autofix variable_ttf/${fontName}.ttf
 
 ## sets up temp ttx file to insert correct values into tables
 ttx ${fontName}.ttf
 
 rm -rf ${fontName}.ttf
 
-cd ..
+# cd ..
 
 ttxPath="variable_ttf/${fontName}.ttx"
 
@@ -69,18 +81,48 @@ ttx $ttxPath
 # removes temp ttx file
 rm -rf $ttxPath
 
-ttfPath=${ttxPath/".ttx"/".ttf"}
 
-open $ttfPath
+# ===========================================================================
+# Autohinting ===============================================================
 
-## if you set timestampAndFontbakeInDist variable to true, this creates a new folder in 'dist' to put it into and run fontbake on
+ttfPath=variable_ttf/${ttxPath/".ttx"/".ttf"}
+hintedPath=${ttxPath/".ttx"/"-hinted.ttf"}
+
+# Hint with TTFautohint-VF 
+# currently janky – I need to find how to properly add this dependency
+# https://groups.google.com/forum/#!searchin/googlefonts-discuss/ttfautohint%7Csort:date/googlefonts-discuss/WJX1lrzcwVs/SIzaEvntAgAJ
+# ./Users/stephennixon/Environments/gfonts3/bin/ttfautohint-vf ${ttfPath} ${ttfPath/"-unhinted.ttf"/"-hinted.ttf"}
+echo "================================================"
+echo ttfautohint-vf $ttfPath $hintedPath
+echo "================================================"
+ttfautohint-vf -I $ttfPath $hintedPath
+
+finalFilePath=${hintedPath/"-hinted"/""}
+cp $hintedPath $finalFilePath
+
+open ${finalFilePath}
+
+# ===========================================================================
+# Sort into final folder ====================================================
+
+# open VF in default program; hopefully you have FontView
+open ${finalHintedFont}
+
+# set this to true/false at top of script
 if [ $timestampAndFontbakeInDist == true ]
 then
-    ## move font into dist, with timestamp – probably with a python script and datetime
-    ## and fontbake the font
-    python3 scripts/distdate-and-fontbake.py $ttfPath
-    rm -rf variable_ttf
+    newFontLocation=`python sources/scripts/helpers/distdate.py variable_ttf/${VFname}.ttf`
+
+    fontbakery check-googlefonts ${newFontLocation}/${VFname}.ttf --ghmarkdown ${newFontLocation}/${VFname}-fontbakery-report.md
+
+    echo "new VF location is " ${newFontLocation}
 else
-    ttx $ttfPath
-    echo "font and ttx in variable_ttf folder"
+    ## move font into fonts/, then fontbake
+    finalFontLocation=fonts/${VFname}.ttf
+    cp $finalHintedFont $finalFontLocation
+    echo "new VF location is " ${finalFontLocation}
+
+    fontbakery check-googlefonts ${finalFontLocation} --ghmarkdown ${finalFontLocation/".ttf"/"-fontbakery-report.md"}
 fi
+
+rm -rf variable_ttf
