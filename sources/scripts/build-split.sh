@@ -2,7 +2,9 @@
 ### requires a python 2 environment, for now
 
 
-###### set vars ######
+
+##############################################################################
+############################### set vars below ###############################
 
 glyphsSource="sources/sources-buildready/Signika-MM-simple_rectangle_ds-split.glyphs"
 
@@ -10,12 +12,14 @@ fontName="Signika-VF"
 
 timestampAndFontbakeInDist=false
 
-keepDesignspace=true
+keepDesignspace=false
 
-###### set vars ######
 
-# ===========================================================================
-# Set up names ==============================================================
+############################### set vars above ###############################
+##############################################################################
+
+# ============================================================================
+# Set up names ===============================================================
 
 # get font name from glyphs source
 VFname=`python sources/scripts/helpers/get-font-name.py ${glyphsSource}`
@@ -29,8 +33,8 @@ tempGlyphsSource=${glyphsSource/".glyphs"/"-Build.glyphs"}
 ## copy Glyphs file into temp file
 cp $glyphsSource $tempGlyphsSource
 
-# ===========================================================================
-# Generate Variable Font ====================================================
+# ============================================================================
+# Generate Variable Font =====================================================
 
 ## call fontmake to make a varfont
 fontmake -o variable -g $tempGlyphsSource
@@ -49,8 +53,8 @@ fi
 rm -rf $tempGlyphsSource
 
 
-# ===========================================================================
-# OpenType table fixes ======================================================
+# ============================================================================
+# OpenType table fixes =======================================================
 
 
 ## fix file metadata with gftools
@@ -58,8 +62,8 @@ gftools fix-dsig --autofix variable_ttf/${fontName}.ttf
 
 
 
-# ===========================================================================
-# Autohinting ===============================================================
+# ============================================================================
+# Autohinting ================================================================
 
 ttfPath=variable_ttf/${VFname}.ttf
 hintedPath=${ttfPath/".ttf"/"-hinted.ttf"}
@@ -78,8 +82,8 @@ cp $hintedPath $finalHintedFont
 
 open ${finalHintedFont}
 
-# ===========================================================================
-# Sort into final folder ====================================================
+# ============================================================================
+# Sort into final folder =====================================================
 
 # open VF in default program; hopefully you have FontView
 open ${finalHintedFont}

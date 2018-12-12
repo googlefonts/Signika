@@ -3,8 +3,8 @@
 
 glyphsSource="sources/sources-buildready/Signika-MM-simple_rectangle_ds.glyphs"
 
-## if the Glyphs source has a non-rectangular master/instance arrangement, this fixes it (WIP)
-fixGlyphsDesignspace=true
+# ## if the Glyphs source has a non-rectangular master/instance arrangement, this fixes it (WIP)
+# fixGlyphsDesignspace=true
 
 ################# set vars #################
 ############################################
