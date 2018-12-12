@@ -4,7 +4,7 @@
 
 ###### set vars ######
 
-glyphsSource="sources/experiments/Signika-MM-ext_wght_ext_grad.glyphs"
+glyphsSource="sources/experiments/Signika-MM-simple_rectangle_ds.glyphs"
 
 fontName="Signika-VF"
 
@@ -51,7 +51,6 @@ gftools fix-dsig --autofix ${fontName}.ttf
 ttx ${fontName}.ttf
 
 rm -rf ${fontName}.ttf
-
 
 cd ..
 

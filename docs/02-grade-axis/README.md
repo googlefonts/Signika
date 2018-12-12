@@ -299,9 +299,45 @@ It doesn't seem to change much, at least not when tested in FontView.
 
 ## Next steps on building wght + NEGA family
 
-- [ ] first, try exporting from a file with just four masters that are from existing instances (`Signika-MM-simple_rectangle_ds.glyphs`)
-  - [ ] check if this builds
-  - [ ] check how instances compare to existing fonts
+- [x] first, try exporting from a file with just four masters that are from existing instances (`Signika-MM-simple_rectangle_ds.glyphs`)
+  - [x] check if this builds (It does)
+  - [x] check how instances compare to existing fonts (They don't)
+
+Doesn't work:
+> Take four corners (light, bold, light negative, bold negative) and make into masters. Make Lights `300` wght, Bolds `700` wght, normals `0` NEGA, and negatives `100` NEGA.
+
+The above makes the instance weights map to entirely the wrong part of the designspace. For example, the Light Negative instance still maps to `-15` wght, so its outlines are totally wrong.
+
+![](assets/2018-12-12-13-52-10.png)
+
+![](assets/2018-12-12-13-54-08.png)
+
+With the new masters, it will be necessary to also morph the instance values in a related way.
+
+Luckily, the ratios of styles against the total values do stay consistent in the family. That is, the total wght value difference between styles Light, Regular, SemiBold, and Bold is the same in both Signika and Signika Negative. I will have to test this, but I think that means that all weight values can be set to the same numbers, so long as the "Negative" styles are set to different values.
+
+![](assets/2018-12-12-14-11-32.png)
+
+Based on the online for diffing tool, Google Fonts Regression, this appears to be true for [Signika Negative Regular](http://159.65.243.73/compare/e80a02a1-294c-4587-ae69-c5a00e28ed74), but *not* for [Signika (normal) SemiBold](http://159.65.243.73/compare/ab956991-b866-4035-881c-0f1abaadba70). Notably, in either case, the vertical metrics are noticeably different.
+
+*HOWEVER,* based on Diffenator and on a direct comparison of glyph outlines, the Signika SemiBold appears to be nearly the exact same outline.
+
+No visible difference:
+
+![](diffs/results/glyphs_modified.gif)
+
+New SemiBold `/a`, scaled back to 1000 UPM, then copy-pasted on top of old SemiBold `/a`, showing a difference of only 1–2 units:
+
+![](assets/2018-12-12-14-54-10.png)
+
+![](assets/2018-12-12-14-56-33.png)
+
+Perhaps, the difference visible in the online Regression testing tool is from hinting? 
+
+- [ ] determine what causes change for online regression tester
+- [ ] (verify with Dave or Marc first, but) match old vertical metrics – most likely, we might need to match old versions for line-height but follow new guidelines as much as possible for how we make the line heights
+  - [ ] Also probably do this for Encode Sans
+
 
 - [ ] make GlyphsApp source with rectangular designspace
   - [ ] make font file with masters at bold (920), light (50), and light negative (-15), and *maybe* also bold negative (843).
@@ -309,6 +345,8 @@ It doesn't seem to change much, at least not when tested in FontView.
   - [ ] Test that it can export static instances that match current statics
 
 - [ ] ? make a script to create this new glyphs file on build?
+
+- [ ] figure out how to generate separate smallcaps fonts
 
 ## Fixing export issues
 

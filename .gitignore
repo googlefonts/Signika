@@ -1,4 +1,8 @@
-*(Autosaved)*
-*.pyc
 .DS_Store
-master_ufo
+*(Autosaved)*
+.vscode
+master_ufo/*.*
+instance_ufo/*.*
+instance_ttf/*.*
+instance_otf/*.*
+autohinted/*.*
