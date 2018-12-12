@@ -4,7 +4,7 @@
 
 ###### set vars ######
 
-glyphsSource="sources/experiments/Signika-MM-simple_rectangle_ds.glyphs"
+glyphsSource="sources/sources-buildready/Signika-MM-simple_rectangle_ds.glyphs"
 
 fontName="Signika-VF"
 
