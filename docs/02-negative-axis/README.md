@@ -1,4 +1,6 @@
-# Making a "proper" GRAD Axis
+# ~~Making a "proper" GRAD Axis~~ Making a "Negative" Axis
+
+*Update: I started this document with the belief that Signika should have a Grade axis, but later changed direction to make a "Negative" axis, in order to preserve the original system of design in the typeface.*
 
 As the previous doc says, a Grade axis should keep widths and prevent reflow. According to Mozilla Dev Network:
 
