@@ -336,7 +336,7 @@ New SemiBold `/a`, scaled back to 1000 UPM, then copy-pasted on top of old SemiB
 
 Answer: the file I was uploading had a name ("Semibold") that was slightly different from the hosted version ("SemiBold"), so it was comparing to the Regular, not to the SemiBold.
 
-- [ ] determine what causes change for online regression tester
+- [x] determine what causes change for online regression tester (incorrect naming)
 - [ ] (verify with Dave or Marc first, but) match old vertical metrics – most likely, we might need to match old versions for line-height but follow new guidelines as much as possible for how we make the line heights
   - [ ] Also probably do this for Encode Sans
 
@@ -357,3 +357,9 @@ WARNING:glyphsLib.builder.builders.UFOBuilder:Non-existent glyph class public.ke
 ```
 
 - [ ] find why this warning is being fired during build (it's not blocking the VF export, but it will still be worth understanding and getting past)
+
+## Setting "Negative" range values
+
+The logic of the original typeface is really an either/or, positive/negative approach. Therefore, for the "Negative" axis, I will set the default to `0`, and make the "negative" styles have a value of `-1`. 
+
+![](assets/negative-axis-values.gif)

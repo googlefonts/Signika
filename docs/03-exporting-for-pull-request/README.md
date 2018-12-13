@@ -8,7 +8,7 @@
 
 - [ ] delete unnecessary folders/files/experiments
 
-- [ ] make/add metadata files
+- [x] make/add metadata files
 
 - [ ] check naming
 - [ ] run through fontbakery
@@ -20,3 +20,4 @@
   - [ ] push up to GitHub & start PR
 
 - [ ] QA outlines with Red Arrows & FontAudit
+- [ ] correct NAME/STAT tables in full variable font

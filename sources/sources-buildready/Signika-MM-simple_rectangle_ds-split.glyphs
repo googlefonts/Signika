@@ -614,9 +614,18 @@ value = "This Font Software is licensed under the SIL Open Font License Version 
 {
 name = licenseURL;
 value = "http://scripts.sil.org/OFL";
+},
+{
+name = Axes;
+value = (
+{
+Name = Weight;
+Tag = wght;
 }
 );
-date = "2014-06-06 07:58:38 +0000";
+}
+);
+date = "2018-12-12 22:25:55 +0000";
 designer = "Anna Giedrys";
 designerURL = www.ancymonic.com;
 disablesAutomaticAlignment = 1;
@@ -56377,6 +56386,6 @@ backslash = -54;
 manufacturer = "Anna Giedrys";
 manufacturerURL = www.ancymonic.com;
 unitsPerEm = 2000;
-versionMajor = 1;
-versionMinor = 500;
+versionMajor = 2;
+versionMinor = 0;
 }

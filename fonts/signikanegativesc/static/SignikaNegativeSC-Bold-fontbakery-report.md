@@ -5,13 +5,6 @@ Fontbakery version: 0.6.5
 <details>
 <summary><b>[25] Family checks</b></summary>
 <details>
-<summary>:fire: <b>FAIL:</b> Check font has a license.</summary>
-
-* [com.google.fonts/check/028](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :fire: **FAIL** No license file was found. Please add an OFL.txt or a LICENSE.txt file. If you are running fontbakery on a Google Fonts upstream repo, which is fine, just make sure there is a temporary license file in the same folder. [code: no-license]
-
-</details>
-<details>
 <summary>:information_source: <b>INFO:</b> Do we have the latest version of FontBakery installed?</summary>
 
 * [com.google.fonts/check/fontbakery_version](https://github.com/googlefonts/fontbakery/search?q={checkid})
@@ -19,6 +12,13 @@ Fontbakery version: 0.6.5
   INSTALLED: 0.6.5 (latest)
 
 * :bread: **PASS** Font Bakery is up-to-date
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> Check font has a license.</summary>
+
+* [com.google.fonts/check/028](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :bread: **PASS** Found license at '/Users/stephennixon/type-repos/google-font-repos/signika-for-google/OFL.txt'
 
 </details>
 <details>
@@ -201,6 +201,13 @@ Fonts with this setting indicate that they may be embedded and permanently insta
 
 </details>
 <details>
+<summary>:fire: <b>FAIL:</b> Check copyright namerecords match license file.</summary>
+
+* [com.google.fonts/check/029](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :fire: **FAIL** License file OFL.txt exists but NameID 13 (LICENSE DESCRIPTION) value on platform 3 (WINDOWS) is not specified for that. Value was: "This Font Software is licensed under the SIL Open Font License Version 1.1. This license is available at: http://scripts.sil.org/OFL" Must be changed to "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL" [code: wrong]
+
+</details>
+<details>
 <summary>:fire: <b>FAIL:</b> "License URL matches License text on name table?</summary>
 
 * [com.google.fonts/check/030](https://github.com/googlefonts/fontbakery/search?q={checkid})
@@ -303,13 +310,6 @@ Glyph name: Uogonek	Contours detected: 2	Expected: 1
 * :warning: **WARN** The following glyphs have coordinates which are out of bounds:
 [('periodcentered', 160.51999999999998, 572.0), ('periodcentered', 160.51999999999998, 590.0), ('periodcentered', 160.51999999999998, 554.0), ('approxequal', 297.63710000000003, 996.2471), ('approxequal', 391.1934, 996.2471), ('approxequal', 468.0763, 996.2471), ('uni2219', 366.0, 777.1600000000001), ('uni2219', 404.0, 777.1600000000001), ('uni2219', 442.0, 777.1600000000001), ('uni2219', 442.0, 451.74), ('uni2219', 404.0, 451.74), ('uni2219', 366.0, 451.74), ('bullet', 729.3812, 566.9745), ('bullet', 729.3812, 537.4575600000001), ('bullet', 729.3812, 507.94061999999997), ('bullet', 519.5794000000001, 286.56357), ('bullet', 461.38620000000003, 286.56357), ('bullet', 403.19300000000004, 286.56357)]
 This happens a lot when points are not extremes, which is usually bad. However, fixing this alert by adding points on extremes may do more harm than good, especially with italics, calligraphic-script, handwriting, rounded and other fonts. So it is common to ignore this message
-
-</details>
-<details>
-<summary>:zzz: <b>SKIP:</b> Check copyright namerecords match license file.</summary>
-
-* [com.google.fonts/check/029](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :zzz: **SKIP** Unfulfilled Conditions: license
 
 </details>
 <details>
@@ -655,7 +655,7 @@ PPM <= 65535:
 <summary>:information_source: <b>INFO:</b> Check for font-v versioning </summary>
 
 * [com.google.fonts/check/166](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :information_source: **INFO** Version string is: "Version 1.500; ttfautohint (v1.8.2) -l 8 -r 50 -G 200 -x 14 -D latn -f none -a qsq -X """
+* :information_source: **INFO** Version string is: "Version 2.000; ttfautohint (v1.8.2) -l 8 -r 50 -G 200 -x 14 -D latn -f none -a qsq -X """
 The version string must ideally include a git commit hash and either a 'dev' or a 'release' suffix such as in the example below:
 "Version 1.3; git-0d08353-release"
 
@@ -664,7 +664,7 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 <summary>:information_source: <b>INFO:</b> Font contains all required tables?</summary>
 
 * [com.google.fonts/check/052](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :information_source: **INFO** This font contains the following optional tables [DSIG, gasp, GPOS, cvt , fpgm, GSUB, loca, prep]
+* :information_source: **INFO** This font contains the following optional tables [cvt , prep, GPOS, DSIG, gasp, loca, GSUB, fpgm]
 * :bread: **PASS** Font contains all required tables.
 
 </details>
@@ -1063,5 +1063,5 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 | :broken_heart: ERROR | :fire: FAIL | :warning: WARN | :zzz: SKIP | :information_source: INFO | :bread: PASS |
 |:-----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 5 | 9 | 60 | 6 | 62 |
+| 0 | 5 | 9 | 59 | 6 | 63 |
 | 0% | 4% | 6% | 42% | 4% | 44% |

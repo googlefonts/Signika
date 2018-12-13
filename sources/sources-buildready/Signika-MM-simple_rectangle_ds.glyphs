@@ -629,7 +629,7 @@ Tag = NEGA;
 );
 }
 );
-date = "2014-06-06 07:58:38 +0000";
+date = "2018-12-12 22:26:23 +0000";
 designer = "Anna Giedrys";
 designerURL = www.ancymonic.com;
 disablesAutomaticAlignment = 1;
@@ -891,6 +891,7 @@ verticalStems = (
 );
 weight = Light;
 weightValue = 50;
+widthValue = -1;
 xHeight = 980;
 },
 {
@@ -954,6 +955,7 @@ verticalStems = (
 );
 weight = Bold;
 weightValue = 920;
+widthValue = -1;
 xHeight = 997;
 }
 );
@@ -92044,9 +92046,10 @@ weightClass = Bold;
 {
 exports = 0;
 interpolationWeight = 1170;
+interpolationWidth = 0;
 instanceInterpolations = {
-"99297384-9E31-4A2D-BCE1-6DB06D956511" = 1.28736;
-"BF9B7364-100A-4003-A617-B6EC7E73A6E7" = -0.28736;
+"4A173D0E-7CF5-44A8-8AF0-8145C41E8E72" = -0.28736;
+"6BD0978F-C27A-4FE6-8A6F-902073A9F586" = 1.28736;
 };
 name = Extrabold;
 weightClass = ExtraBold;
@@ -92054,18 +92057,20 @@ weightClass = ExtraBold;
 {
 exports = 0;
 interpolationWeight = 1350;
+interpolationWidth = 0;
 instanceInterpolations = {
-"99297384-9E31-4A2D-BCE1-6DB06D956511" = 1.49425;
-"BF9B7364-100A-4003-A617-B6EC7E73A6E7" = -0.49425;
+"4A173D0E-7CF5-44A8-8AF0-8145C41E8E72" = -0.49425;
+"6BD0978F-C27A-4FE6-8A6F-902073A9F586" = 1.49425;
 };
 name = Black;
 weightClass = Black;
 },
 {
 exports = 0;
+interpolationWidth = 0;
 instanceInterpolations = {
-"99297384-9E31-4A2D-BCE1-6DB06D956511" = 0.05747;
-"BF9B7364-100A-4003-A617-B6EC7E73A6E7" = 0.94253;
+"4A173D0E-7CF5-44A8-8AF0-8145C41E8E72" = 0.94253;
+"6BD0978F-C27A-4FE6-8A6F-902073A9F586" = 0.05747;
 };
 name = "--------";
 },
@@ -92077,6 +92082,7 @@ value = "Signika Negative";
 }
 );
 interpolationWeight = 50;
+interpolationWidth = -1;
 instanceInterpolations = {
 "BF9B7364-100A-4003-A617-B6EC7E73A6E7" = 1;
 };
@@ -92091,6 +92097,7 @@ value = "Signika Negative";
 }
 );
 interpolationWeight = 360;
+interpolationWidth = -1;
 instanceInterpolations = {
 "99297384-9E31-4A2D-BCE1-6DB06D956511" = 0.35632;
 "BF9B7364-100A-4003-A617-B6EC7E73A6E7" = 0.64368;
@@ -92105,6 +92112,7 @@ value = "Signika Negative";
 }
 );
 interpolationWeight = 650;
+interpolationWidth = -1;
 instanceInterpolations = {
 "99297384-9E31-4A2D-BCE1-6DB06D956511" = 0.68966;
 "BF9B7364-100A-4003-A617-B6EC7E73A6E7" = 0.31034;
@@ -92120,6 +92128,7 @@ value = "Signika Negative";
 }
 );
 interpolationWeight = 920;
+interpolationWidth = -1;
 instanceInterpolations = {
 "99297384-9E31-4A2D-BCE1-6DB06D956511" = 1;
 };
@@ -92136,6 +92145,7 @@ value = "Signika Negative";
 }
 );
 interpolationWeight = 1089;
+interpolationWidth = -1;
 instanceInterpolations = {
 "99297384-9E31-4A2D-BCE1-6DB06D956511" = 1.19425;
 "BF9B7364-100A-4003-A617-B6EC7E73A6E7" = -0.19425;
@@ -92152,6 +92162,7 @@ value = "Signika Negative";
 }
 );
 interpolationWeight = 1265;
+interpolationWidth = -1;
 instanceInterpolations = {
 "99297384-9E31-4A2D-BCE1-6DB06D956511" = 1.39655;
 "BF9B7364-100A-4003-A617-B6EC7E73A6E7" = -0.39655;
@@ -92161,6 +92172,7 @@ weightClass = Black;
 },
 {
 exports = 0;
+interpolationWidth = -1;
 instanceInterpolations = {
 "99297384-9E31-4A2D-BCE1-6DB06D956511" = 0.05747;
 "BF9B7364-100A-4003-A617-B6EC7E73A6E7" = 0.94253;
@@ -94993,6 +95005,7 @@ value = (
 }
 );
 interpolationWeight = 1170;
+interpolationWidth = -1;
 instanceInterpolations = {
 "99297384-9E31-4A2D-BCE1-6DB06D956511" = 1.28736;
 "BF9B7364-100A-4003-A617-B6EC7E73A6E7" = -0.28736;
@@ -95560,6 +95573,7 @@ value = (
 }
 );
 interpolationWeight = 1350;
+interpolationWidth = -1;
 instanceInterpolations = {
 "99297384-9E31-4A2D-BCE1-6DB06D956511" = 1.49425;
 "BF9B7364-100A-4003-A617-B6EC7E73A6E7" = -0.49425;
@@ -95569,6 +95583,7 @@ weightClass = Black;
 },
 {
 exports = 0;
+interpolationWidth = -1;
 instanceInterpolations = {
 "99297384-9E31-4A2D-BCE1-6DB06D956511" = 0.05747;
 "BF9B7364-100A-4003-A617-B6EC7E73A6E7" = 0.94253;
@@ -96134,6 +96149,7 @@ value = (
 }
 );
 interpolationWeight = 50;
+interpolationWidth = -1;
 instanceInterpolations = {
 "BF9B7364-100A-4003-A617-B6EC7E73A6E7" = 1;
 };
@@ -96699,6 +96715,7 @@ value = (
 }
 );
 interpolationWeight = 360;
+interpolationWidth = -1;
 instanceInterpolations = {
 "99297384-9E31-4A2D-BCE1-6DB06D956511" = 0.35632;
 "BF9B7364-100A-4003-A617-B6EC7E73A6E7" = 0.64368;
@@ -97264,6 +97281,7 @@ value = (
 }
 );
 interpolationWeight = 650;
+interpolationWidth = -1;
 instanceInterpolations = {
 "99297384-9E31-4A2D-BCE1-6DB06D956511" = 0.68966;
 "BF9B7364-100A-4003-A617-B6EC7E73A6E7" = 0.31034;
@@ -97830,6 +97848,7 @@ value = (
 }
 );
 interpolationWeight = 920;
+interpolationWidth = -1;
 instanceInterpolations = {
 "99297384-9E31-4A2D-BCE1-6DB06D956511" = 1;
 };
@@ -98397,6 +98416,7 @@ value = (
 }
 );
 interpolationWeight = 1089;
+interpolationWidth = -1;
 instanceInterpolations = {
 "99297384-9E31-4A2D-BCE1-6DB06D956511" = 1.19425;
 "BF9B7364-100A-4003-A617-B6EC7E73A6E7" = -0.19425;
@@ -98964,6 +98984,7 @@ value = (
 }
 );
 interpolationWeight = 1265;
+interpolationWidth = -1;
 instanceInterpolations = {
 "99297384-9E31-4A2D-BCE1-6DB06D956511" = 1.39655;
 "BF9B7364-100A-4003-A617-B6EC7E73A6E7" = -0.39655;
@@ -100671,6 +100692,9 @@ hbar.smcp = {
 "@MMK_R_Y" = -38;
 V = -19;
 };
+hyphen = {
+"@MMK_R_equal" = 0;
+};
 hyphen.case = {
 seven = -78;
 };
@@ -101080,9 +101104,6 @@ backslash = -117;
 };
 zcaron = {
 backslash = -79;
-};
-hyphen = {
-"@MMK_R_equal" = 0;
 };
 };
 "6BD0978F-C27A-4FE6-8A6F-902073A9F586" = {
@@ -107416,6 +107437,6 @@ backslash = -56;
 manufacturer = "Anna Giedrys";
 manufacturerURL = www.ancymonic.com;
 unitsPerEm = 2000;
-versionMajor = 1;
-versionMinor = 500;
+versionMajor = 2;
+versionMinor = 0;
 }

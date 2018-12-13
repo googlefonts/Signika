@@ -109,21 +109,21 @@ open ${finalHintedFont}
 # open VF in default program; hopefully you have FontView
 open ${finalHintedFont}
 
-# set this to true/false at top of script
-if [ $timestampAndFontbakeInDist == true ]
-then
-    newFontLocation=`python sources/scripts/helpers/distdate.py variable_ttf/${VFname}.ttf`
+# # set this to true/false at top of script
+# if [ $timestampAndFontbakeInDist == true ]
+# then
+#     newFontLocation=`python sources/scripts/helpers/distdate.py variable_ttf/${VFname}.ttf`
 
-    fontbakery check-googlefonts ${newFontLocation}/${VFname}.ttf --ghmarkdown ${newFontLocation}/${VFname}-fontbakery-report.md
+#     fontbakery check-googlefonts ${newFontLocation}/${VFname}.ttf --ghmarkdown ${newFontLocation}/${VFname}-fontbakery-report.md
 
-    echo "new VF location is " ${newFontLocation}
-else
-    ## move font into fonts/, then fontbake
-    finalFontLocation=fonts/${VFname}.ttf
-    cp $finalHintedFont $finalFontLocation
-    echo "new VF location is " ${finalFontLocation}
+#     echo "new VF location is " ${newFontLocation}
+# else
+#     ## move font into fonts/, then fontbake
+#     finalFontLocation=fonts/signika/full_vf/${VFname}.ttf
+#     cp $finalHintedFont $finalFontLocation
+#     echo "new VF location is " ${finalFontLocation}
 
-    fontbakery check-googlefonts ${finalFontLocation} --ghmarkdown ${finalFontLocation/".ttf"/"-fontbakery-report.md"}
-fi
+#     fontbakery check-googlefonts ${finalFontLocation} --ghmarkdown ${finalFontLocation/".ttf"/"-fontbakery-report.md"}
+# fi
 
-rm -rf variable_ttf
+# rm -rf variable_ttf

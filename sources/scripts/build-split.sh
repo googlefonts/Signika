@@ -88,18 +88,6 @@ open ${finalHintedFont}
 # open VF in default program; hopefully you have FontView
 open ${finalHintedFont}
 
-copyToFontDir()
-{
-    DIRECTORY=$1
-    if [ ! -d "$DIRECTORY" ]; then
-        mkdir ${outputDir}/$DIRECTORY
-        mkdir ${outputDir}/$DIRECTORY
-    fi
-
-    newPath=${outputDir}/$DIRECTORY/${fileName}
-    cp ${file} ${newPath}
-}
-
 fontbakeFile()
 {
     FILEPATH=$1
@@ -108,19 +96,11 @@ fontbakeFile()
 
 outputDir="fonts"
 
-for file in variable_ttf/*; do 
-if [ -f "$file" ]; then 
-    fileName=$(basename $file)
-    echo $fileName
-    if [[ $file == *"Signika-"* ]]; then
-        copyToFontDir signika
-        fontbakeFile ${newPath}
-    fi
-    if [[ $file == *"SignikaNegative-"* ]]; then
-        copyToFontDir signikanegative
-        fontbakeFile ${newPath}
-    fi
-fi 
-done
+
+finalFontLocation=fonts/signika/split_vf/${VFname}.ttf
+cp $finalHintedFont $finalFontLocation
+echo "new VF location is " ${finalFontLocation}
+
+fontbakery check-googlefonts ${finalFontLocation} --ghmarkdown ${finalFontLocation/".ttf"/"-fontbakery-report.md"}
 
 rm -rf variable_ttf
