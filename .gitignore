@@ -6,4 +6,5 @@ instance_ufo/*.*
 instance_ttf/*.*
 instance_otf/*.*
 autohinted/*.*
--test.glyphs
+*-test.glyphs
+*-build.glyphs
