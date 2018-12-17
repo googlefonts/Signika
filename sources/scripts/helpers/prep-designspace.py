@@ -15,7 +15,7 @@ import objc
 relPath = sys.argv[-1]
 directory = os.getcwd()
 fullPath = str(directory + "/" + relPath)
-buildPath = fullPath.replace(".glyphs", "-build.glyphs")
+
 
 doc = Glyphs.openDocumentWithContentsOfFile_display_(fullPath, False)
 font = doc.font()
@@ -47,44 +47,104 @@ boldNegValue = negativeWeights[-1]
 
 print("Copying glyphs from interpolated corner instances:")
 
-def copyFromInterpolatedFont(instanceIndex):
+def copyFromInterpolatedFont(instanceIndex, isNegative=False):
     instanceFont = font.generateInstance_error_(font.instances()[instanceIndex], None)
     instanceFontMasterID = instanceFont.fontMasters()[0].id()
+    if isNegative == True:
+        instanceFontName = instanceFont.fontMasters()[0].name()
+        instanceFont.fontMasters()[0].setName_(instanceFontName + " Negative")
+        # print(instanceFont.fontMasters()[0].name())
+
     font.addFontMaster_(instanceFont.fontMasters()[0])
+    newMasterID = instanceFontMasterID # these are the same; copying for clarity below
+
+
 
     print("\n=================================")
     print("Instance Weight: " + str(font.instances()[instanceIndex].interpolationWeight()))
 
-    for index,glyph in enumerate(font.glyphs()[:10]): #first 10 glyphs only, while making/testing script
-        print(". ", end="", flush=True)
-        # make variable for glyph of interpolated font
-        instanceGlyph = instanceFont.glyphs()[index]
-        instanceFontLayer = instanceGlyph.layerForKey_(instanceFontMasterID)
-        glyph.setLayer_forKey_(instanceFontLayer, instanceFontMasterID)
+    # copy glyphs from instance font to new master
+    for index,glyph in enumerate(font.glyphs()[:5]): # (you can use font.glyphs()[:10] to do the first 10 glyphs only while making/testing script)
+        print(". ", end="", flush=True) # shows progress while running script
+        instanceGlyph = instanceFont.glyphs()[index] # make variable for glyph of interpolated font
+        instanceFontLayer = instanceGlyph.layerForKey_(instanceFontMasterID) # get layer of glyph in instance font
+        glyph.setLayer_forKey_(instanceFontLayer, newMasterID) # set layer in new master
 
-#     # # bring kerning in from interpolated font
-#     # in Python API: currentFont.kerning[newMasterID] = instanceFont.kerning[newMasterID]
-#     # font.setKerning_(instanceFont.fontMasters()[0].kerning(), instanceFontMasterID)
+    # bring kerning in from interpolated font # not yet working
+    # font.kerning()[newMasterID] = instanceFont.kerning()[newMasterID]
+    # font.kerning().setObject_forKey_(instanceFont.kerning().objectForKey_(newMasterID), newMasterID)
+    
+
 
 for index, instance in enumerate(font.instances()):
     if "SC" not in str(instance.customValueForKey_("familyName")):
         instanceWeight = instance.interpolationWeight()
-        if instanceWeight == lightValue or instanceWeight == boldValue or instanceWeight == lightNegValue or instanceWeight == boldNegValue:
+        if instanceWeight == lightValue or instanceWeight == boldValue:
             copyFromInterpolatedFont(index)
+        if instanceWeight == lightNegValue or instanceWeight == boldNegValue:
+            copyFromInterpolatedFont(index, isNegative=True)
 
 
-# # set custom param "Axes"
-#     # Weight, wght
-#     # Negative, NEGA
 
-# newCustomParam = GSCustomParameter().init()
+# ============================================================================
+# set varfont axes ===========================================================
 
-# font.addCustomParameter_(newCustomParam)
+# may need to be done manually for now, pending forum question
 
-# print(font.customParameterForKey("Axes"))
+print("=================================\n")
+
+# # describe your variable axis names and tags
+# fontAxes = {
+# 	"Weight": "wght",
+# 	"Negative": "NEGA"
+# }
+
+# # newParam = GSCustomParameter.alloc().init()
+
+# # font.addCustomParameter_(newParam)
+# # font.addCustomParameter_("Axes")
+# # add them to the font
+# font.setCustomParameter_forKey_(fontAxes, "Axes")
+
+# print(font.customParameterForKey_("Axes"))
+
+from Foundation import NSMutableDictionary, NSMutableArray
+fontAxes = NSMutableArray.arrayWithArray_([
+	NSMutableDictionary.dictionaryWithDictionary_({
+		"Name": "Weight", "Tag": "wght"
+	}),
+	NSMutableDictionary.dictionaryWithDictionary_({
+		"Name": "Negative", "Tag": "NEGA"
+	})
+])
+font.setCustomParameter_forKey_(fontAxes, "Axes")
 
 
-# # font.setCustomParameter_forKey_()
+# ============================================================================
+# remove old masters =========================================================
+
+# just do it twice for now to delete original two – would need more flexibility to be abstracted to other fonts
+font.removeFontMasterAtIndex_(0)
+font.removeFontMasterAtIndex_(0)
+
+# ============================================================================
+# set axis values of new masters =============================================
+
+# for master in font.fontMasters():
+#     print(master.name())
+#     # master.setCustomValue_forKey_(0.0, "Negative")
+#     if "Light" in master.name():
+#         master.setWeightValue_(lightValue)
+#     if "Bold" in master.name():
+#         master.setWeightValue_(boldValue)
+#     # "Light" in str(instance.customValueForKey_("familyName"))
+#     if "Negative" in master.name():
+#         # master.setCustomValue_forKey_(-100, "Negative")
+#         master.setCustomValue_(-50.0, "Negative")
+#     # if "Negative" not in master.name():
+#     #     # master.setCustomValue_forKey_(-100, "Negative")
+#     #     master.setCustomValue_(0.0, "NEGA")
+
 
 # # set weight value in each master
 #     # if "light" in name, weight = light instance (50)
@@ -104,5 +164,6 @@ for index, instance in enumerate(font.instances()):
 
 
 # # document.close()
+buildPath = fullPath.replace(".glyphs", "-build.glyphs")
 font.save(buildPath)
 doc.close()

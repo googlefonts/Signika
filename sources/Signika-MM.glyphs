@@ -1,5 +1,5 @@
 {
-.appVersion = "1181";
+.appVersion = "1187";
 DisplayStrings = (
 "/commaaccent.case/Gcommaaccent",
 "/commaaccent/kcommaaccent",
@@ -616,6 +616,19 @@ value = "This Font Software is licensed under the SIL Open Font License Version 
 {
 name = licenseURL;
 value = "http://scripts.sil.org/OFL";
+},
+{
+name = Axes;
+value = (
+{
+Name = Weight;
+Tag = wght;
+},
+{
+Name = Negative;
+Tag = NEGA;
+}
+);
 }
 );
 date = "2014-06-06 07:58:38 +0000";
