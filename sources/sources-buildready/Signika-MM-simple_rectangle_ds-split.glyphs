@@ -1,5 +1,5 @@
 {
-.appVersion = "1187";
+.appVersion = "1189";
 DisplayStrings = (
 "T=-/hyphen.case ­",
 VA
@@ -20,7 +20,7 @@ value = "Signika Light is a trademark of Anna Giedrys.";
 {
 name = openTypeOS2Type;
 value = (
-2
+3
 );
 },
 {
@@ -53859,6 +53859,9 @@ hbar.smcp = {
 "@MMK_R_Y" = -38;
 V = -19;
 };
+hyphen = {
+"@MMK_R_equal" = 0;
+};
 hyphen.case = {
 seven = -78;
 };
@@ -54268,9 +54271,6 @@ backslash = -117;
 };
 zcaron = {
 backslash = -79;
-};
-hyphen = {
-"@MMK_R_equal" = 0;
 };
 };
 "6BD0978F-C27A-4FE6-8A6F-902073A9F586" = {

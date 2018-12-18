@@ -50,10 +50,9 @@ copyToFontDir()
     DIRECTORY=$1
     if [ ! -d "$DIRECTORY" ]; then
         mkdir ${outputDir}/$DIRECTORY
-        mkdir ${outputDir}/$DIRECTORY/static
     fi
 
-    newPath=${outputDir}/$DIRECTORY/static/${fileName}
+    newPath=${outputDir}/$DIRECTORY/${fileName}
     cp ${file} ${newPath}
 }
 

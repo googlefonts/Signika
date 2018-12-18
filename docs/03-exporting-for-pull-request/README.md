@@ -1,12 +1,12 @@
 # Exporting for Pull Request
 
 
-- [ ] make build scripts for:
-  - [ ] a full VF
-  - [ ] split VF families into a positive and negative versions
-  - [ ] static families
+- [x] make build scripts for:
+  - [x] a full VF
+  - [x] split VF families into a positive and negative versions
+  - [x] static families
 
-- [ ] delete unnecessary folders/files/experiments
+- [x] delete unnecessary folders/files/experiments
 
 - [x] make/add metadata files
 
@@ -14,10 +14,11 @@
 - [ ] run through fontbakery
 
 
-- [ ] make PR
-  - [ ] make branch of google/fonts repo (making sure this matches current gf master branch)
-  - [ ] add new font files of Signika
-  - [ ] push up to GitHub & start PR
+- [x] make PR
+  - [x] make branch of google/fonts repo (making sure this matches current gf master branch)
+  - [x] add new font files of Signika
+  - [x] push up to GitHub & start PR
 
 - [ ] QA outlines with Red Arrows & FontAudit
 - [ ] correct NAME/STAT tables in full variable font
+
