@@ -4,7 +4,7 @@ Currently, vertical metrics are the most-noticeable difference between newly-bui
 
 ![](assets/vert_metrics-diff.gif)
 
-Using font-line, I can easily compare the vertical metrics of the new and hosted versions. 
+Using font-line, I can easily compare the vertical metrics of the new and hosted versions. Here's an example of the current state: http://159.65.243.73/compare/66e06a47-3372-46f4-a097-c82207a5a157
 
 ![](assets/2018-12-17-15-49-03.png)
 
@@ -14,7 +14,7 @@ The UPM of Signika is now 2000 rather than the original 1000, so all values on t
 
 However, aside from this, they should probably match the hosted vertical metrics (almost) exactly to prevent websites from breaking. Luckily, font-line gives a simple comparison of the overall line height: the `Ratios` which are `1.2` in the new fonts, and `1.23` in the old fonts.
 
-My hunch is that the ratio difference of `0.03` is linked to the Ascent to Descent difference of `0.032`. 
+My hunch is that the ratio difference of `0.03` is linked to the Ascent to Descent difference of `0.032`. If my intuitive math is right, my main task is finding where to add about 64 units to the height of Signika.
 
 But, how should I go about matching the old versions? First, I'll match [Marc Foley's recommendation for vertical metrics](https://github.com/googlefonts/fontbakery/issues/2164#issuecomment-436595886). Then, I will adjust these as needed to match the line heights of the old fonts, when viewed on the web and ideally also in word processors. The recommended vertical metrics are:
 
@@ -24,3 +24,22 @@ But, how should I go about matching the old versions? First, I'll match [Marc Fo
 - Win Ascent and Win Decent set to yMax and yMin
 - fsSelection bit 7 enabled
 - Vertical metrics on average were around 130% of upm. I felt this number was the sweet spot. Anything greater and the metrics just looked too loose.
+
+After using a script to set these items, I've realized that yes, the font needs exactly 64 units, because the line height ratio is being calculated by hhea & OS/2 ascent-to-descent metrics. The old one was (when doubled) 2464, and the new was 2400. After implementing Marc's recommendations, the ascent-to-descent is 2446, or 18 units short. So, I (probably) need to find how much of this extra space to add to the ascent & descent to match the overall metrics of the font before. *AND* actually that is probably quite simple: doubled, the old ascent was `1880` and the old descent was `-584`. My just-adjusted vertical metrics (from Marc's recommendations) have an ascent of `1870` and a descent of `-576` – or a total of 18 units fewer than the older version. I'll change those metrics, and (I think) it will probably match exactly.
+
+Whereas the metrics got to a computed place with a Glyphs Script, I'll now just use a quick macro to set them: `sources/scripts/helpers/set-vert-metrics.py`.
+
+...comparing in Font Diffenator again: it works! 🎉
+
+![](assets/vert_metrics-fixed.gif)
+
+---
+
+
+- Win Ascent and Win Decent set to yMax and yMin
+- Linegaps set to 0
+- TypoAscender and hheaAscender are set to height of tallest Cap glyph with single accent (Â, Å)
+- TypoDescender and hheaDescender set to lowest a-z letter (p, j, q) 
+- fsSelection bit 7 enabled (use type metrics is True)
+
+![](assets/2018-12-17-18-52-29.png)

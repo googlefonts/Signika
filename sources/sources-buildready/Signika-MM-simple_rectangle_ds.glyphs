@@ -1,5 +1,5 @@
 {
-.appVersion = "1187";
+.appVersion = "1189";
 DisplayStrings = (
 "T=-/hyphen.case ­",
 VA
@@ -627,6 +627,10 @@ Name = Negative;
 Tag = NEGA;
 }
 );
+},
+{
+name = "Use Typo Metrics";
+value = 1;
 }
 );
 date = "2018-12-12 22:26:23 +0000";
@@ -719,31 +723,31 @@ capHeight = 1370;
 customParameters = (
 {
 name = typoAscender;
-value = 1500;
+value = 1880;
 },
 {
 name = typoDescender;
-value = -500;
+value = -584;
 },
 {
 name = typoLineGap;
-value = 400;
+value = 0;
 },
 {
 name = winAscent;
-value = 1700;
+value = 1999;
 },
 {
 name = winDescent;
-value = 700;
+value = 584;
 },
 {
 name = hheaAscender;
-value = 1700;
+value = 1880;
 },
 {
 name = hheaDescender;
-value = -700;
+value = -584;
 },
 {
 name = hheaLineGap;
@@ -782,31 +786,31 @@ capHeight = 1370;
 customParameters = (
 {
 name = typoAscender;
-value = 1500;
+value = 1880;
 },
 {
 name = typoDescender;
-value = -500;
+value = -584;
 },
 {
 name = typoLineGap;
-value = 400;
+value = 0;
 },
 {
 name = winAscent;
-value = 1700;
+value = 1999;
 },
 {
 name = winDescent;
-value = 700;
+value = 584;
 },
 {
 name = hheaAscender;
-value = 1700;
+value = 1880;
 },
 {
 name = hheaDescender;
-value = -700;
+value = -584;
 },
 {
 name = hheaLineGap;
@@ -846,31 +850,31 @@ custom = Negative;
 customParameters = (
 {
 name = typoAscender;
-value = 1500;
+value = 1880;
 },
 {
 name = typoDescender;
-value = -500;
+value = -584;
 },
 {
 name = typoLineGap;
-value = 400;
+value = 0;
 },
 {
 name = winAscent;
-value = 1700;
+value = 1999;
 },
 {
 name = winDescent;
-value = 700;
+value = 584;
 },
 {
 name = hheaAscender;
-value = 1700;
+value = 1880;
 },
 {
 name = hheaDescender;
-value = -700;
+value = -584;
 },
 {
 name = hheaLineGap;
@@ -910,31 +914,31 @@ custom = Negative;
 customParameters = (
 {
 name = typoAscender;
-value = 1500;
+value = 1880;
 },
 {
 name = typoDescender;
-value = -500;
+value = -584;
 },
 {
 name = typoLineGap;
-value = 400;
+value = 0;
 },
 {
 name = winAscent;
-value = 1700;
+value = 1999;
 },
 {
 name = winDescent;
-value = 700;
+value = 584;
 },
 {
 name = hheaAscender;
-value = 1700;
+value = 1880;
 },
 {
 name = hheaDescender;
-value = -700;
+value = -584;
 },
 {
 name = hheaLineGap;

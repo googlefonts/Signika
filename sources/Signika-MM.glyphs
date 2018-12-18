@@ -1,5 +1,5 @@
 {
-.appVersion = "1187";
+.appVersion = "1189";
 DisplayStrings = (
 "/commaaccent.case/Gcommaaccent",
 "/commaaccent/kcommaaccent",
@@ -629,6 +629,10 @@ Name = Negative;
 Tag = NEGA;
 }
 );
+},
+{
+name = "Use Typo Metrics";
+value = 1;
 }
 );
 date = "2014-06-06 07:58:38 +0000";
@@ -721,31 +725,31 @@ capHeight = 1370;
 customParameters = (
 {
 name = typoAscender;
-value = 1500;
+value = 1890;
 },
 {
 name = typoDescender;
-value = -500;
+value = -592;
 },
 {
 name = typoLineGap;
-value = 400;
+value = 0;
 },
 {
 name = winAscent;
-value = 1700;
+value = 2006;
 },
 {
 name = winDescent;
-value = 700;
+value = 592;
 },
 {
 name = hheaAscender;
-value = 1700;
+value = 1890;
 },
 {
 name = hheaDescender;
-value = -700;
+value = -592;
 },
 {
 name = hheaLineGap;
@@ -783,31 +787,31 @@ capHeight = 1370;
 customParameters = (
 {
 name = typoAscender;
-value = 1500;
+value = 1890;
 },
 {
 name = typoDescender;
-value = -500;
+value = -592;
 },
 {
 name = typoLineGap;
-value = 400;
+value = 0;
 },
 {
 name = winAscent;
-value = 1700;
+value = 2006;
 },
 {
 name = winDescent;
-value = 700;
+value = 592;
 },
 {
 name = hheaAscender;
-value = 1700;
+value = 1890;
 },
 {
 name = hheaDescender;
-value = -700;
+value = -592;
 },
 {
 name = hheaLineGap;
