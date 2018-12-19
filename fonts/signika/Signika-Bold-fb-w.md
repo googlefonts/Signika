@@ -250,7 +250,7 @@ But instead we have got: 'Copyright 2011 by Anna Giedrys. All rights reserved. R
 <summary>:warning: <b>WARN:</b> Glyphs are similiar to Google Fonts version?</summary>
 
 * [com.google.fonts/check/118](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/118)
-* :warning: **WARN** Following glyphs differ greatly from Google Fonts version: [exclamdown, exclam]
+* :warning: **WARN** Following glyphs differ greatly from Google Fonts version: [exclam, exclamdown]
 
 </details>
 <details>
@@ -494,7 +494,7 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 <summary>:information_source: <b>INFO:</b> Font contains all required tables?</summary>
 
 * [com.google.fonts/check/052](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/052)
-* :information_source: **INFO** This font contains the following optional tables [DSIG, GPOS, loca, cvt , gasp, prep, fpgm, GSUB]
+* :information_source: **INFO** This font contains the following optional tables [loca, prep, cvt , GPOS, GSUB, gasp, DSIG, fpgm]
 * :bread: **PASS** Font contains all required tables.
 
 </details>

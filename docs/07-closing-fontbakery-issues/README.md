@@ -56,7 +56,8 @@ But instead we have got: 'Copyright (c) 2011 by Anna Giedrys. All rights reserve
 
 </details>
 
-- [ ] this should be inserted by fontmake, right? check this
+- [ ] ~~this should be inserted by fontmake, right? check this~~
+- [x] this has been added to the main font, and it will go into the others when I split the font again
 
 
 <details>
