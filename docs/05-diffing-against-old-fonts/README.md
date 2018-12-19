@@ -43,3 +43,20 @@ Whereas the metrics got to a computed place with a Glyphs Script, I'll now just 
 - fsSelection bit 7 enabled (use type metrics is True)
 
 ![](assets/2018-12-17-18-52-29.png)
+
+
+## Hinting, before/after
+
+A current FontBakery fail is:
+
+> **FAIL** TTFAutohint --increase-x-height is 14. It should match the previous version's value (9).
+
+The result on Windows is certainly visible:
+
+http://159.65.243.73/compare/39540841-f87f-40dd-bdaf-c623c5bc9fb1
+
+![](assets/hinting-before-after.gif)
+
+But is it a bad thing? To me, it seems to be more accurately showing a "regular" weight. My guess is, TTFautohint has simply improved since the old fonts were built in 2011.
+
+- [ ] Ask for Micah's opinion
