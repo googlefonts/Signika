@@ -22,3 +22,4 @@
 - [ ] QA outlines with Red Arrows & FontAudit
 - [ ] correct NAME/STAT tables in full variable font
 
+- [ ] fix `/Germandbls` (currently this is just using a lowercase letter as a component, rather than being a proper uppercase /Germandbls)
