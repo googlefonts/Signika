@@ -821,37 +821,73 @@ xHeight = 1000;
 glyphs = (
 {
 glyphname = .notdef;
-lastChange = "2018-12-20 22:56:22 +0000";
+lastChange = "2018-12-21 15:09:14 +0000";
 layers = (
 {
 guideLines = (
 {
 angle = 123.0627;
-position = "{1068, 190}";
+position = "{1120, 190}";
 },
 {
 angle = -57.0236;
-position = "{294, 1132}";
+position = "{346, 1132}";
 },
 {
 angle = 58.2922;
-position = "{654, 768}";
+position = "{706, 768}";
 },
 {
 angle = 237.6236;
-position = "{1024, 1134}";
+position = "{1076, 1134}";
 },
 {
 angle = 237.2758;
-position = "{604, 712}";
+position = "{656, 712}";
 },
 {
 angle = 237.9946;
-position = "{682, 616}";
+position = "{734, 616}";
 }
 );
 layerId = UUID0;
 paths = (
+{
+closed = 1;
+nodes = (
+"963 324 OFFCURVE",
+"946 352 OFFCURVE",
+"703 736 CURVE SMOOTH",
+"317 1346 LINE",
+"226 1172 LINE",
+"323 1172 LINE",
+"364 1050 OFFCURVE",
+"381 1022 OFFCURVE",
+"624 638 CURVE SMOOTH",
+"1010 28 LINE",
+"1101 202 LINE",
+"1003 202 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"654 768 LINE",
+"604 712 LINE",
+"383 359 OFFCURVE",
+"365 326 OFFCURVE",
+"325 204 CURVE",
+"237 204 LINE",
+"309 17 LINE",
+"676 608 LINE",
+"726 664 LINE",
+"947 1017 OFFCURVE",
+"965 1050 OFFCURVE",
+"1006 1172 CURVE",
+"1093 1172 LINE",
+"1011 1343 LINE"
+);
+},
 {
 closed = 1;
 nodes = (
@@ -862,15 +898,15 @@ nodes = (
 "384 1374 OFFCURVE",
 "212 1366 CURVE",
 "200 1354 LINE",
-"200 12 LINE",
-"212 0 LINE",
-"384 -8 OFFCURVE",
-"498 -11 OFFCURVE",
-"662 -11 CURVE SMOOTH",
-"821 -11 OFFCURVE",
-"935 -8 OFFCURVE",
-"1107 0 CURVE",
-"1119 12 LINE",
+"200 6 LINE",
+"212 -6 LINE",
+"384 -14 OFFCURVE",
+"498 -17 OFFCURVE",
+"662 -17 CURVE SMOOTH",
+"821 -17 OFFCURVE",
+"935 -14 OFFCURVE",
+"1107 -6 CURVE",
+"1119 6 LINE",
 "1119 1354 LINE",
 "1107 1366 LINE"
 );
@@ -878,62 +914,79 @@ nodes = (
 {
 closed = 1;
 nodes = (
-"1020 1079 OFFCURVE",
-"1000 876 OFFCURVE",
-"1000 673 CURVE SMOOTH",
-"1000 477 OFFCURVE",
-"1020 280 OFFCURVE",
-"1030 84 CURVE",
-"942 93 OFFCURVE",
-"750 106 OFFCURVE",
-"662 106 CURVE SMOOTH",
-"573 106 OFFCURVE",
-"388 93 OFFCURVE",
-"299 84 CURVE",
-"309 282 OFFCURVE",
-"329 481 OFFCURVE",
-"329 679 CURVE SMOOTH",
-"329 880 OFFCURVE",
-"309 1081 OFFCURVE",
+"942 87 OFFCURVE",
+"750 100 OFFCURVE",
+"662 100 CURVE SMOOTH",
+"573 100 OFFCURVE",
+"388 87 OFFCURVE",
+"299 78 CURVE",
+"325 274 OFFCURVE",
+"329 368 OFFCURVE",
+"329 680 CURVE SMOOTH",
+"329 992 OFFCURVE",
+"325 1086 OFFCURVE",
 "299 1282 CURVE",
 "388 1273 OFFCURVE",
 "573 1260 OFFCURVE",
 "662 1260 CURVE SMOOTH",
 "750 1260 OFFCURVE",
 "942 1273 OFFCURVE",
-"1030 1282 CURVE"
-);
-},
-{
-closed = 1;
-nodes = (
-"624 638 LINE",
-"1004 37 LINE",
-"1095 86 LINE",
-"703 736 LINE",
-"317 1346 LINE",
-"233 1287 LINE"
-);
-},
-{
-closed = 1;
-nodes = (
-"654 768 LINE",
-"604 712 LINE",
-"225 76 LINE",
-"315 29 LINE",
-"682 616 LINE",
-"726 664 LINE",
-"1093 1290 LINE",
-"1011 1343 LINE"
+"1030 1282 CURVE",
+"1004 1084 OFFCURVE",
+"1000 991 OFFCURVE",
+"1000 680 CURVE SMOOTH",
+"1000 369 OFFCURVE",
+"1004 276 OFFCURVE",
+"1030 78 CURVE"
 );
 }
 );
 width = 1319;
 },
 {
+guideLines = (
+{
+position = "{277, 680}";
+}
+);
 layerId = UUID1;
 paths = (
+{
+closed = 1;
+nodes = (
+"911 324 OFFCURVE",
+"894 352 OFFCURVE",
+"651 736 CURVE SMOOTH",
+"265 1346 LINE",
+"174 1172 LINE",
+"271 1172 LINE",
+"312 1050 OFFCURVE",
+"329 1022 OFFCURVE",
+"572 638 CURVE SMOOTH",
+"958 28 LINE",
+"1049 202 LINE",
+"951 202 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"602 768 LINE",
+"552 712 LINE",
+"331 359 OFFCURVE",
+"313 326 OFFCURVE",
+"273 204 CURVE",
+"185 204 LINE",
+"257 17 LINE",
+"624 608 LINE",
+"674 664 LINE",
+"895 1017 OFFCURVE",
+"913 1050 OFFCURVE",
+"954 1172 CURVE",
+"1041 1172 LINE",
+"959 1343 LINE"
+);
+},
 {
 closed = 1;
 nodes = (
@@ -944,15 +997,15 @@ nodes = (
 "332 1374 OFFCURVE",
 "160 1366 CURVE",
 "148 1354 LINE",
-"148 12 LINE",
-"160 0 LINE",
-"332 -8 OFFCURVE",
-"446 -11 OFFCURVE",
-"610 -11 CURVE SMOOTH",
-"769 -11 OFFCURVE",
-"883 -8 OFFCURVE",
-"1055 0 CURVE",
-"1067 12 LINE",
+"148 6 LINE",
+"160 -6 LINE",
+"332 -14 OFFCURVE",
+"446 -17 OFFCURVE",
+"610 -17 CURVE SMOOTH",
+"769 -17 OFFCURVE",
+"883 -14 OFFCURVE",
+"1055 -6 CURVE",
+"1067 6 LINE",
 "1067 1354 LINE",
 "1055 1366 LINE"
 );
@@ -960,54 +1013,30 @@ nodes = (
 {
 closed = 1;
 nodes = (
-"968 1079 OFFCURVE",
-"948 876 OFFCURVE",
-"948 673 CURVE SMOOTH",
-"948 477 OFFCURVE",
-"968 280 OFFCURVE",
-"978 84 CURVE",
-"890 93 OFFCURVE",
-"698 106 OFFCURVE",
-"610 106 CURVE SMOOTH",
-"521 106 OFFCURVE",
-"336 93 OFFCURVE",
-"247 84 CURVE",
-"257 282 OFFCURVE",
-"277 481 OFFCURVE",
-"277 679 CURVE SMOOTH",
-"277 880 OFFCURVE",
-"257 1081 OFFCURVE",
+"890 87 OFFCURVE",
+"698 100 OFFCURVE",
+"610 100 CURVE SMOOTH",
+"521 100 OFFCURVE",
+"336 87 OFFCURVE",
+"247 78 CURVE",
+"273 274 OFFCURVE",
+"277 368 OFFCURVE",
+"277 680 CURVE SMOOTH",
+"277 992 OFFCURVE",
+"273 1086 OFFCURVE",
 "247 1282 CURVE",
 "336 1273 OFFCURVE",
 "521 1260 OFFCURVE",
 "610 1260 CURVE SMOOTH",
 "698 1260 OFFCURVE",
 "890 1273 OFFCURVE",
-"978 1282 CURVE"
-);
-},
-{
-closed = 1;
-nodes = (
-"572 638 LINE",
-"952 37 LINE",
-"1043 86 LINE",
-"651 736 LINE",
-"265 1346 LINE",
-"181 1287 LINE"
-);
-},
-{
-closed = 1;
-nodes = (
-"602 768 LINE",
-"552 712 LINE",
-"173 76 LINE",
-"263 29 LINE",
-"630 616 LINE",
-"674 664 LINE",
-"1041 1290 LINE",
-"959 1343 LINE"
+"978 1282 CURVE",
+"952 1084 OFFCURVE",
+"948 991 OFFCURVE",
+"948 680 CURVE SMOOTH",
+"948 369 OFFCURVE",
+"952 276 OFFCURVE",
+"978 78 CURVE"
 );
 }
 );
@@ -1080,6 +1109,93 @@ nodes = (
 "674 664 LINE",
 "992 1181 LINE",
 "933 1301 LINE"
+);
+}
+);
+width = 1215;
+},
+{
+associatedMasterId = UUID1;
+layerId = "062C540D-B94C-492E-A685-BF668C895A25";
+name = "Dec 21 18, 09:03";
+paths = (
+{
+closed = 1;
+nodes = (
+"883 1374 OFFCURVE",
+"769 1377 OFFCURVE",
+"610 1377 CURVE SMOOTH",
+"446 1377 OFFCURVE",
+"332 1374 OFFCURVE",
+"160 1366 CURVE",
+"148 1354 LINE",
+"148 12 LINE",
+"160 0 LINE",
+"332 -8 OFFCURVE",
+"446 -11 OFFCURVE",
+"610 -11 CURVE SMOOTH",
+"769 -11 OFFCURVE",
+"883 -8 OFFCURVE",
+"1055 0 CURVE",
+"1067 12 LINE",
+"1067 1354 LINE",
+"1055 1366 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"968 1079 OFFCURVE",
+"948 876 OFFCURVE",
+"948 673 CURVE SMOOTH",
+"948 477 OFFCURVE",
+"968 280 OFFCURVE",
+"978 84 CURVE",
+"890 93 OFFCURVE",
+"698 106 OFFCURVE",
+"610 106 CURVE SMOOTH",
+"521 106 OFFCURVE",
+"336 93 OFFCURVE",
+"247 84 CURVE",
+"257 282 OFFCURVE",
+"277 481 OFFCURVE",
+"277 679 CURVE SMOOTH",
+"277 880 OFFCURVE",
+"257 1081 OFFCURVE",
+"247 1282 CURVE",
+"336 1273 OFFCURVE",
+"521 1260 OFFCURVE",
+"610 1260 CURVE SMOOTH",
+"698 1260 OFFCURVE",
+"890 1273 OFFCURVE",
+"978 1282 CURVE"
+);
+},
+{
+closed = 1;
+nodes = (
+"263 1172 LINE",
+"312 1050 OFFCURVE",
+"329 1022 OFFCURVE",
+"572 638 CURVE SMOOTH",
+"952 37 LINE",
+"1043 86 LINE",
+"651 736 LINE",
+"265 1346 LINE",
+"174 1172 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"602 768 LINE",
+"552 712 LINE",
+"173 76 LINE",
+"263 29 LINE",
+"630 616 LINE",
+"674 664 LINE",
+"1041 1290 LINE",
+"959 1343 LINE"
 );
 }
 );
@@ -55915,7 +56031,6 @@ v.smcp = 0;
 "@MMK_R_z" = -26;
 AE = -70;
 Germandbls = 0;
-germandbls.smcp = 0;
 M = -10;
 Tbar = -24;
 V = -10;
@@ -55924,6 +56039,7 @@ ae = -16;
 ae.smcp = -40;
 backslash = -50;
 germandbls = 0;
+germandbls.smcp = 0;
 slash = -50;
 v.smcp = -14;
 x = -16;
@@ -55957,9 +56073,9 @@ v.smcp = -30;
 "@MMK_R_v" = -20;
 "@MMK_R_y" = -20;
 Germandbls = 10;
-germandbls.smcp = 20;
 V = -30;
 germandbls = 10;
+germandbls.smcp = 20;
 };
 "@MMK_L_K" = {
 "@MMK_R_C" = -20;
@@ -56033,7 +56149,6 @@ v.smcp = -104;
 "@MMK_R_z" = -36;
 AE = -50;
 Germandbls = 0;
-germandbls.smcp = 0;
 Tbar = -40;
 V = -28;
 X = -50;
@@ -56041,6 +56156,7 @@ ae = -32;
 ae.smcp = -62;
 backslash = -60;
 germandbls = 0;
+germandbls.smcp = 0;
 m.smcp = -40;
 quotesinglbase = -60;
 slash = -60;
@@ -56063,12 +56179,12 @@ x.smcp = -30;
 "@MMK_R_u" = -52;
 "@MMK_R_u.smcp" = -16;
 Germandbls = 20;
-germandbls.smcp = -10;
 Oslash = -10;
 V = -34;
 ae = -20;
 backslash = -50;
 germandbls = 20;
+germandbls.smcp = -10;
 oslash = -24;
 };
 "@MMK_L_S" = {
@@ -56081,8 +56197,8 @@ oslash = -24;
 "@MMK_R_y" = -48;
 "@MMK_R_y.smcp" = -26;
 "@MMK_R_z" = -20;
-germandbls.smcp = 0;
 X = -10;
+germandbls.smcp = 0;
 idieresis.smcp = -16;
 imacron.smcp = -16;
 itilde.smcp = 30;
@@ -56124,7 +56240,6 @@ x.smcp = -20;
 "@MMK_R_z.smcp" = -76;
 AE = -130;
 Germandbls = -40;
-germandbls.smcp = -116;
 M = -38;
 abreve = -90;
 abreve.smcp = -100;
@@ -56153,6 +56268,7 @@ egrave = -130;
 emacron = -130;
 eth = -120;
 germandbls = -40;
+germandbls.smcp = -116;
 iacute.smcp = -70;
 ibreve.smcp = 98;
 icircumflex.smcp = 40;
@@ -56229,7 +56345,6 @@ x.smcp = -36;
 "@MMK_R_z.smcp" = -36;
 AE = -70;
 Germandbls = -10;
-germandbls.smcp = -56;
 M = -20;
 Q.ss02 = -24;
 ae = -84;
@@ -56239,6 +56354,7 @@ asterisk = 0;
 at = -56;
 eth = -76;
 germandbls = -10;
+germandbls.smcp = -56;
 hbar.smcp = -20;
 ibreve.smcp = 20;
 icircumflex.smcp = 20;
@@ -56286,7 +56402,6 @@ zcaron = -60;
 "@MMK_R_z.smcp" = -36;
 AE = -150;
 Germandbls = -20;
-germandbls.smcp = -74;
 M = -60;
 Q.ss02 = -36;
 ae = -2;
@@ -56299,6 +56414,7 @@ edieresis = -112;
 emacron = -112;
 eth = -92;
 germandbls = -20;
+germandbls.smcp = -74;
 hbar.smcp = -42;
 iacute.smcp = -40;
 ibreve.smcp = 60;
@@ -56421,10 +56537,10 @@ v.smcp = -130;
 "@MMK_R_t.smcp" = -40;
 "@MMK_R_y.smcp" = -34;
 "@MMK_R_z.smcp" = -34;
-germandbls.smcp = 24;
 V = -44;
 X = -16;
 ae.smcp = -46;
+germandbls.smcp = 24;
 tbar.smcp = -28;
 v.smcp = -28;
 x.smcp = -28;
@@ -56439,8 +56555,8 @@ backslash = -100;
 "@MMK_R_T" = -44;
 "@MMK_R_c.smcp" = -16;
 "@MMK_R_guillemetleft" = -10;
-germandbls.smcp = 20;
 V = 0;
+germandbls.smcp = 20;
 oslash.smcp = -16;
 };
 "@MMK_L_equal" = {
@@ -56537,8 +56653,8 @@ oslash = -24;
 "@MMK_R_a.smcp" = 0;
 "@MMK_R_c.smcp" = -50;
 "@MMK_R_guillemetleft" = -60;
-germandbls.smcp = -22;
 Tbar = -60;
+germandbls.smcp = -22;
 oslash.smcp = -30;
 q.smcp.ss02 = -54;
 };
@@ -56670,9 +56786,9 @@ x = 10;
 "@MMK_R_c.smcp" = -12;
 "@MMK_R_guillemetleft" = -20;
 "@MMK_R_y.smcp" = -26;
-germandbls.smcp = 12;
 Tbar = -60;
 ampersand.c2sc = 0;
+germandbls.smcp = 12;
 };
 "@MMK_L_s" = {
 "@MMK_R_i" = 0;
@@ -56685,10 +56801,10 @@ backslash = -100;
 "@MMK_R_guillemetleft" = 0;
 "@MMK_R_guillemetright" = 0;
 "@MMK_R_j.smcp" = 20;
-germandbls.smcp = 0;
 Tbar = -56;
 V = -20;
 ampersand.c2sc = 0;
+germandbls.smcp = 0;
 };
 "@MMK_L_t" = {
 "@MMK_R_c" = -20;
@@ -56713,12 +56829,12 @@ x = 30;
 "@MMK_R_j.smcp" = -70;
 "@MMK_R_t.smcp" = 50;
 "@MMK_R_w.smcp" = 0;
-germandbls.smcp = -40;
 X = -52;
 ae.smcp = -126;
 ampersand.c2sc = -30;
 asterisk = 40;
 at = -30;
+germandbls.smcp = -40;
 m.smcp = -50;
 napostrophe.smcp = 0;
 v.smcp = 14;
@@ -56771,10 +56887,10 @@ x = 0;
 "@MMK_R_guillemetleft" = -28;
 "@MMK_R_j.smcp" = -60;
 "@MMK_R_t.smcp" = 0;
-germandbls.smcp = -14;
 ae.smcp = -80;
 ampersand.c2sc = -32;
 at = -40;
+germandbls.smcp = -14;
 m.smcp = -40;
 napostrophe.smcp = 0;
 q.smcp.ss02 = -16;
@@ -56808,12 +56924,12 @@ slash = -60;
 "@MMK_R_guillemetright" = -32;
 "@MMK_R_j.smcp" = -80;
 "@MMK_R_s.smcp" = -10;
-germandbls.smcp = -20;
 X = -20;
 ae.smcp = -100;
 ampersand.c2sc = -34;
 asterisk = 0;
 at = -36;
+germandbls.smcp = -20;
 m.smcp = -60;
 napostrophe.smcp = 0;
 q.smcp.ss02 = -20;
@@ -56925,24 +57041,6 @@ Germandbls = {
 M = -30;
 V = -74;
 X = -32;
-};
-germandbls.smcp = {
-"@MMK_R_S" = 0;
-"@MMK_R_T" = -118;
-"@MMK_R_W" = -56;
-"@MMK_R_Y" = -72;
-"@MMK_R_a.smcp" = 12;
-"@MMK_R_c.smcp" = 0;
-"@MMK_R_j.smcp" = 40;
-"@MMK_R_s.smcp" = 20;
-"@MMK_R_t.smcp" = -34;
-"@MMK_R_w.smcp" = -30;
-"@MMK_R_y.smcp" = -40;
-V = -80;
-ampersand.c2sc = -20;
-m.smcp = -16;
-v.smcp = -48;
-x.smcp = 0;
 };
 Lcaron = {
 "@MMK_R_T" = -120;
@@ -57132,7 +57230,6 @@ V = {
 "@MMK_R_z.smcp" = -52;
 AE = -110;
 Germandbls = -40;
-germandbls.smcp = -80;
 M = -50;
 ae = -100;
 ae.smcp = -182;
@@ -57141,6 +57238,7 @@ asterisk = 0;
 at = -100;
 eth = -84;
 germandbls = -40;
+germandbls.smcp = -80;
 hbar.smcp = -20;
 iacute.smcp = -40;
 ibreve.smcp = 80;
@@ -57174,13 +57272,13 @@ X = {
 "@MMK_R_y" = -60;
 "@MMK_R_y.smcp" = -20;
 Germandbls = -20;
-germandbls.smcp = -16;
 Oslash = -28;
 ae = -24;
 ampersand = -16;
 at = -16;
 eth = -40;
 germandbls = -20;
+germandbls.smcp = -16;
 ibreve.smcp = 20;
 icircumflex.smcp = 0;
 idieresis.smcp = 20;
@@ -57330,9 +57428,9 @@ c.smcp = {
 "@MMK_R_guillemetright" = 20;
 "@MMK_R_s.smcp" = 28;
 "@MMK_R_t.smcp" = 0;
-germandbls.smcp = 14;
 V = -32;
 ampersand.c2sc = 10;
+germandbls.smcp = 14;
 tbar.smcp = 0;
 v.smcp = 0;
 };
@@ -57447,10 +57545,10 @@ f.smcp = {
 "@MMK_R_comma" = -130;
 "@MMK_R_j.smcp" = -142;
 "@MMK_R_w.smcp" = 18;
-germandbls.smcp = 34;
 X = -36;
 ae.smcp = -134;
 ampersand.c2sc = -18;
+germandbls.smcp = 34;
 napostrophe.smcp = 20;
 v.smcp = 36;
 };
@@ -57508,6 +57606,24 @@ germandbls = {
 M = -30;
 V = -74;
 X = -32;
+};
+germandbls.smcp = {
+"@MMK_R_S" = 0;
+"@MMK_R_T" = -118;
+"@MMK_R_W" = -56;
+"@MMK_R_Y" = -72;
+"@MMK_R_a.smcp" = 12;
+"@MMK_R_c.smcp" = 0;
+"@MMK_R_j.smcp" = 40;
+"@MMK_R_s.smcp" = 20;
+"@MMK_R_t.smcp" = -34;
+"@MMK_R_w.smcp" = -30;
+"@MMK_R_y.smcp" = -40;
+V = -80;
+ampersand.c2sc = -20;
+m.smcp = -16;
+v.smcp = -48;
+x.smcp = 0;
 };
 germandbls.ss03 = {
 "@MMK_R_c" = -28;
@@ -57674,9 +57790,9 @@ m.smcp = {
 "@MMK_R_t.smcp" = -50;
 "@MMK_R_w.smcp" = -40;
 "@MMK_R_y.smcp" = -60;
-germandbls.smcp = -10;
 Oslash = -40;
 V = -90;
+germandbls.smcp = -10;
 o.smcp = 0;
 tbar.smcp = -40;
 v.smcp = -60;
@@ -57736,10 +57852,10 @@ p.smcp = {
 "@MMK_R_comma" = -180;
 "@MMK_R_j.smcp" = -164;
 "@MMK_R_z.smcp" = -30;
-germandbls.smcp = 36;
 X = -60;
 ae.smcp = -140;
 ampersand.c2sc = -10;
+germandbls.smcp = 36;
 x.smcp = -36;
 };
 parenleft = {
@@ -57933,10 +58049,10 @@ x.smcp = {
 "@MMK_R_c.smcp" = -30;
 "@MMK_R_guillemetleft" = -80;
 "@MMK_R_u.smcp" = -10;
-germandbls.smcp = -10;
 Tbar = -60;
 V = -50;
 ampersand.c2sc = 0;
+germandbls.smcp = -10;
 };
 zacute = {
 backslash = -120;
@@ -58023,7 +58139,6 @@ v.smcp = 26;
 "@MMK_R_z" = -28;
 AE = -56;
 Germandbls = 20;
-germandbls.smcp = 34;
 M = 0;
 Tbar = -28;
 V = -20;
@@ -58032,6 +58147,7 @@ ae = -24;
 ae.smcp = -40;
 backslash = -50;
 germandbls = 20;
+germandbls.smcp = 34;
 slash = -50;
 v.smcp = 0;
 x = -24;
@@ -58065,9 +58181,9 @@ v.smcp = -24;
 "@MMK_R_v" = -14;
 "@MMK_R_y" = -14;
 Germandbls = 10;
-germandbls.smcp = 28;
 V = -12;
 germandbls = 10;
+germandbls.smcp = 28;
 };
 "@MMK_L_K" = {
 "@MMK_R_C" = -16;
@@ -58141,7 +58257,6 @@ v.smcp = -90;
 "@MMK_R_z" = -24;
 AE = -30;
 Germandbls = 20;
-germandbls.smcp = 30;
 Tbar = -14;
 V = -20;
 X = -32;
@@ -58149,6 +58264,7 @@ ae = -22;
 ae.smcp = -40;
 backslash = -40;
 germandbls = 20;
+germandbls.smcp = 30;
 m.smcp = -20;
 quotesinglbase = -60;
 slash = -40;
@@ -58171,12 +58287,12 @@ x.smcp = -22;
 "@MMK_R_u" = -36;
 "@MMK_R_u.smcp" = -10;
 Germandbls = 24;
-germandbls.smcp = 0;
 Oslash = -10;
 V = -36;
 ae = -12;
 backslash = -50;
 germandbls = 24;
+germandbls.smcp = 0;
 oslash = -12;
 };
 "@MMK_L_S" = {
@@ -58189,8 +58305,8 @@ oslash = -12;
 "@MMK_R_y" = -30;
 "@MMK_R_y.smcp" = -10;
 "@MMK_R_z" = 0;
-germandbls.smcp = 24;
 X = 0;
+germandbls.smcp = 24;
 idieresis.smcp = 48;
 imacron.smcp = 20;
 itilde.smcp = 34;
@@ -58232,7 +58348,6 @@ x.smcp = 0;
 "@MMK_R_z.smcp" = -24;
 AE = -130;
 Germandbls = -20;
-germandbls.smcp = -96;
 M = -28;
 abreve = -60;
 abreve.smcp = -80;
@@ -58261,6 +58376,7 @@ egrave = -110;
 emacron = -50;
 eth = -60;
 germandbls = -20;
+germandbls.smcp = -96;
 iacute.smcp = 0;
 ibreve.smcp = 98;
 icircumflex.smcp = 88;
@@ -58337,7 +58453,6 @@ x.smcp = -14;
 "@MMK_R_z.smcp" = -24;
 AE = -70;
 Germandbls = 0;
-germandbls.smcp = -40;
 M = -12;
 Q.ss02 = -22;
 ae = -60;
@@ -58347,6 +58462,7 @@ asterisk = 20;
 at = -48;
 eth = -70;
 germandbls = 0;
+germandbls.smcp = -40;
 hbar.smcp = 0;
 ibreve.smcp = 40;
 icircumflex.smcp = 70;
@@ -58394,7 +58510,6 @@ zcaron = -30;
 "@MMK_R_z.smcp" = -28;
 AE = -150;
 Germandbls = -30;
-germandbls.smcp = -92;
 M = -40;
 Q.ss02 = -40;
 ae = -110;
@@ -58407,6 +58522,7 @@ edieresis = -110;
 emacron = -120;
 eth = -96;
 germandbls = -30;
+germandbls.smcp = -92;
 hbar.smcp = 0;
 iacute.smcp = -24;
 ibreve.smcp = 60;
@@ -58529,10 +58645,10 @@ v.smcp = -110;
 "@MMK_R_t.smcp" = -22;
 "@MMK_R_y.smcp" = -24;
 "@MMK_R_z.smcp" = -24;
-germandbls.smcp = 48;
 V = -46;
 X = -10;
 ae.smcp = -28;
+germandbls.smcp = 48;
 tbar.smcp = -10;
 v.smcp = -24;
 x.smcp = -30;
@@ -58547,8 +58663,8 @@ backslash = -100;
 "@MMK_R_T" = 0;
 "@MMK_R_c.smcp" = -18;
 "@MMK_R_guillemetleft" = -12;
-germandbls.smcp = 22;
 V = -30;
+germandbls.smcp = 22;
 oslash.smcp = 0;
 };
 "@MMK_L_equal" = {
@@ -58645,8 +58761,8 @@ oslash = 0;
 "@MMK_R_a.smcp" = 20;
 "@MMK_R_c.smcp" = -42;
 "@MMK_R_guillemetleft" = -36;
-germandbls.smcp = -30;
 Tbar = 0;
+germandbls.smcp = -30;
 oslash.smcp = -20;
 q.smcp.ss02 = -46;
 };
@@ -58778,9 +58894,9 @@ x = 30;
 "@MMK_R_c.smcp" = -12;
 "@MMK_R_guillemetleft" = -20;
 "@MMK_R_y.smcp" = -32;
-germandbls.smcp = 12;
 Tbar = 0;
 ampersand.c2sc = 16;
+germandbls.smcp = 12;
 };
 "@MMK_L_s" = {
 "@MMK_R_i" = 10;
@@ -58823,12 +58939,12 @@ x = 40;
 "@MMK_R_j.smcp" = -66;
 "@MMK_R_t.smcp" = 100;
 "@MMK_R_w.smcp" = 40;
-germandbls.smcp = -20;
 X = -22;
 ae.smcp = -88;
 ampersand.c2sc = -18;
 asterisk = 40;
 at = -14;
+germandbls.smcp = -20;
 m.smcp = -20;
 napostrophe.smcp = 124;
 v.smcp = 60;
@@ -58881,10 +58997,10 @@ x = 48;
 "@MMK_R_guillemetleft" = -16;
 "@MMK_R_j.smcp" = -50;
 "@MMK_R_t.smcp" = 40;
-germandbls.smcp = 0;
 ae.smcp = -68;
 ampersand.c2sc = -30;
 at = -30;
+germandbls.smcp = 0;
 m.smcp = -24;
 napostrophe.smcp = 100;
 q.smcp.ss02 = -12;
@@ -58918,12 +59034,12 @@ slash = -60;
 "@MMK_R_guillemetright" = -16;
 "@MMK_R_j.smcp" = -100;
 "@MMK_R_s.smcp" = -20;
-germandbls.smcp = -10;
 X = -20;
 ae.smcp = -106;
 ampersand.c2sc = -48;
 asterisk = 40;
 at = -44;
+germandbls.smcp = -10;
 m.smcp = -30;
 napostrophe.smcp = 120;
 q.smcp.ss02 = -20;
@@ -59035,24 +59151,6 @@ Germandbls = {
 M = -10;
 V = -60;
 X = 0;
-};
-germandbls.smcp = {
-"@MMK_R_S" = 20;
-"@MMK_R_T" = -100;
-"@MMK_R_W" = -20;
-"@MMK_R_Y" = -100;
-"@MMK_R_a.smcp" = 32;
-"@MMK_R_c.smcp" = 12;
-"@MMK_R_j.smcp" = 24;
-"@MMK_R_s.smcp" = 28;
-"@MMK_R_t.smcp" = -30;
-"@MMK_R_w.smcp" = -20;
-"@MMK_R_y.smcp" = -28;
-V = -48;
-ampersand.c2sc = 0;
-m.smcp = 0;
-v.smcp = -24;
-x.smcp = 10;
 };
 Lcaron = {
 "@MMK_R_T" = -10;
@@ -59242,7 +59340,6 @@ V = {
 "@MMK_R_z.smcp" = -30;
 AE = -100;
 Germandbls = -28;
-germandbls.smcp = -46;
 M = -40;
 ae = -60;
 ae.smcp = -124;
@@ -59251,6 +59348,7 @@ asterisk = 40;
 at = -80;
 eth = -74;
 germandbls = -28;
+germandbls.smcp = -46;
 hbar.smcp = 0;
 iacute.smcp = 0;
 ibreve.smcp = 100;
@@ -59284,13 +59382,13 @@ X = {
 "@MMK_R_y" = -68;
 "@MMK_R_y.smcp" = -20;
 Germandbls = -40;
-germandbls.smcp = -20;
 Oslash = -16;
 ae = -14;
 ampersand = -16;
 at = 0;
 eth = -32;
 germandbls = -40;
+germandbls.smcp = -20;
 ibreve.smcp = 20;
 icircumflex.smcp = 40;
 idieresis.smcp = 60;
@@ -59440,9 +59538,9 @@ c.smcp = {
 "@MMK_R_guillemetright" = 20;
 "@MMK_R_s.smcp" = 32;
 "@MMK_R_t.smcp" = 28;
-germandbls.smcp = 48;
 V = -20;
 ampersand.c2sc = 10;
+germandbls.smcp = 48;
 tbar.smcp = 48;
 v.smcp = 14;
 };
@@ -59557,10 +59655,10 @@ f.smcp = {
 "@MMK_R_comma" = -130;
 "@MMK_R_j.smcp" = -156;
 "@MMK_R_w.smcp" = 38;
-germandbls.smcp = 20;
 X = -20;
 ae.smcp = -144;
 ampersand.c2sc = -20;
+germandbls.smcp = 20;
 napostrophe.smcp = 100;
 v.smcp = 46;
 };
@@ -59618,6 +59716,24 @@ germandbls = {
 M = -10;
 V = -60;
 X = 0;
+};
+germandbls.smcp = {
+"@MMK_R_S" = 20;
+"@MMK_R_T" = -100;
+"@MMK_R_W" = -20;
+"@MMK_R_Y" = -100;
+"@MMK_R_a.smcp" = 32;
+"@MMK_R_c.smcp" = 12;
+"@MMK_R_j.smcp" = 24;
+"@MMK_R_s.smcp" = 28;
+"@MMK_R_t.smcp" = -30;
+"@MMK_R_w.smcp" = -20;
+"@MMK_R_y.smcp" = -28;
+V = -48;
+ampersand.c2sc = 0;
+m.smcp = 0;
+v.smcp = -24;
+x.smcp = 10;
 };
 germandbls.ss03 = {
 "@MMK_R_c" = -18;
@@ -59784,9 +59900,9 @@ m.smcp = {
 "@MMK_R_t.smcp" = -20;
 "@MMK_R_w.smcp" = -20;
 "@MMK_R_y.smcp" = -30;
-germandbls.smcp = 0;
 Oslash = 0;
 V = -30;
+germandbls.smcp = 0;
 o.smcp = -10;
 tbar.smcp = -20;
 v.smcp = -40;
@@ -59846,10 +59962,10 @@ p.smcp = {
 "@MMK_R_comma" = -180;
 "@MMK_R_j.smcp" = -144;
 "@MMK_R_z.smcp" = -26;
-germandbls.smcp = 48;
 X = -60;
 ae.smcp = -140;
 ampersand.c2sc = -20;
+germandbls.smcp = 48;
 x.smcp = -30;
 };
 parenleft = {
@@ -60043,10 +60159,10 @@ x.smcp = {
 "@MMK_R_c.smcp" = -32;
 "@MMK_R_guillemetleft" = -48;
 "@MMK_R_u.smcp" = -10;
-germandbls.smcp = -14;
 Tbar = 0;
 V = -30;
 ampersand.c2sc = -10;
+germandbls.smcp = -14;
 };
 zacute = {
 backslash = -64;
