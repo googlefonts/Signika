@@ -52,6 +52,24 @@ Build all static instances with:
 sources/scripts/build-statics.sh
 ```
 
+# Build steps after edits to primary source
+
+This project has a "primary" source file which has received design updates and steps of outline QA. However, the designspace of this primary source is setup in such a way that it is not possible to export directly from it to a variable font, via FontMake. This is because it has just two weight masters, but exports to a 2-axis design, with a "Negative" axis that is derived from a smaller shift to the overall weight of fonts (similar to a Grade axis, but without maintaining a fixed width for letters).
+
+Due to [current limitations in remote scripting for GlyphsApp](https://forum.glyphsapp.com/t/instance-as-master-through-core-api/10502/12), if you wish for edits to the design to cascade into the final outputs, you must use a partially-manual build process, wherein a few processing steps are done to make "build-ready" sources. These steps are as follows, in GlyphsApp:
+
+1. Use "Instance as Master" to make masters out of the Light, Bold, Negative Light, and Negative Bold instances
+1. In the Masters, delete the old "Light" and "Bold" Masters (their weights are outside the ultimate exporting weights)
+1. Add "Negative" to the new negative master names
+1. Add a custom parameter to the font for "Axes," and set these to "Weight" (tag: `wght`) and "Negative" (tag: `NEGA`).
+1. Set both Light masters to Weight values of `50` and both Bold masters to a Weight value of `920`
+1. Set Negative masters to Negative values of `-1` and non-negative masters to Negative values of `0`.
+1. Go through Instances, setting the Negative instances to the same Weight values as their non-negative counterparts (`50, 360, 650, 920`) and their Negative values as `-1`. Set non-negative masters to a Negative value of `0`. 
+
+The font now has a build-ready rectangular designspace.
+
+(I may convert the partially-completed remote script to a Glyphs Python Script, as this would handle all steps required. However, in the interest of time, I am using manual methods for the time being.)
+
 # Variable font upgrade project documentation
 
 Notes were taken throughout the variable font upgrade project and added to the [docs](/docs) directory. I tend to take notes while working anyway, in order to think through problems and record solutions for later reference. In this project, I have included these in the repo so that others might find references to solve similar problems, especially because variable font-making processes are relatively new, and there is a general scarcity of online knowledge on font mastering. Because they were often made alongside work, the notes can at times be a bit disjointed. Hopefully they are still helpful to others! 

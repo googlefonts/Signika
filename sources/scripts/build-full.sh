@@ -6,7 +6,8 @@
 ##############################################################################
 ############################### set vars below ###############################
 
-glyphsSource="sources/sources-buildready/Signika-MM-simple_rectangle_ds.glyphs"
+# glyphsSource="sources/sources-buildready/Signika-MM-simple_rectangle_ds.glyphs"
+glyphsSource="sources/Signika-MM-simple_rect_ds_2.glyphs"
 
 fontName="Signika-VF"
 

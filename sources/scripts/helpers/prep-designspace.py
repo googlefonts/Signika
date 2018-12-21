@@ -145,6 +145,7 @@ font.removeFontMasterAtIndex_(0)
 #     #     # master.setCustomValue_forKey_(-100, "Negative")
 #     #     master.setCustomValue_(0.0, "NEGA")
 
+# add " Negative" to negative master names
 
 # # set weight value in each master
 #     # if "light" in name, weight = light instance (50)
