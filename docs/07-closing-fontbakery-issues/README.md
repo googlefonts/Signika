@@ -70,4 +70,4 @@ This happens a lot when points are not extremes, which is usually bad. However, 
 
 </details>
 
-- [ ] this shows that the coordinates are floating-point numbers, from scaling. I should round these, and correct any errors in the outline QA process
+- [x] Many of the outlines in Signika have short paths that are curved subtly, so it would damage their curvature to add extreme points

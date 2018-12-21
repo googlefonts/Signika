@@ -1,3 +1,5 @@
+#MenuTitle: Prep Designspace
+# -*- coding: utf-8 -*-
 """
     Makes a copy of a GlyphsApp source, with adjustments to designspace by:
     - making masters from "corner" instances

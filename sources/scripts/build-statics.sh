@@ -1,7 +1,7 @@
 ############################################
 ################# set vars #################
 
-glyphsSource="sources/sources-buildready/Signika-MM-simple_rectangle_ds.glyphs"
+glyphsSource="sources/Signika-MM-simple_rect_ds_2.glyphs"
 
 # ## if the Glyphs source has a non-rectangular master/instance arrangement, this fixes it (WIP)
 # fixGlyphsDesignspace=true
@@ -38,7 +38,7 @@ if [ -f "$file" ]; then
     echo "TTFautohint " ${file}
     # autohint with detailed info
     hintedFile=${file/".ttf"/"-hinted.ttf"}
-    ttfautohint -I ${file} ${hintedFile}
+    ttfautohint -I ${file} ${hintedFile} --increase-x-height 9
     cp ${hintedFile} ${file}
     rm -rf ${hintedFile}
 fi 

@@ -49,7 +49,7 @@ I don't want this inconsistency in the final font, but I don't want it to be dif
 Steps taken:
 - I've turned off the "export" setting on this glyph and check that it is reflected in fonts exported from FontMake
 - I've changed the name of the old `/germandbls.smcp` (the literal "SS" form) to `/germandbls.smcp.alt1`, then changed the newly-updated `/Germandbls.c2sc` to `/germandbls.smcp`.
-- In the `c2sc` (caps to smallcaps) feature, I've turned the feature to not be auto-compiled, so that I could comment-out the old line, and add a new line pointing to the small cap form
+- I've updated the `c2sc` (caps to smallcaps) feature to properly reference the `/germandbls.smcp` rather than the old `/Germandbls.c2sc`
 
 ![](assets/2018-12-20-15-38-24.png)
 
