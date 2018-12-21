@@ -1,5 +1,8 @@
 {
 .appVersion = "1189";
+DisplayStrings = (
+"/Delta"
+);
 classes = (
 {
 code = "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Agrave Aacute Acircumflex Atilde Amacron Abreve Adieresis Aring Aogonek AE Cacute Ccircumflex Cdotaccent Ccaron Ccedilla Dcaron Dcroat Egrave Eacute Ecircumflex Emacron Ebreve Edotaccent Edieresis Ecaron Eogonek Gcircumflex Gbreve Gdotaccent Gcommaaccent Hcircumflex Hbar Igrave Iacute Icircumflex Itilde Imacron Ibreve Idotaccent Idieresis Iogonek IJ Jcircumflex Kcommaaccent Lacute Lcommaaccent Lcaron Ldot Lslash Nacute Ntilde Ncaron Eng Ncommaaccent Ograve Oacute Ocircumflex Otilde Omacron Obreve Odieresis Ohungarumlaut Oslash OE Racute Rcaron Rcommaaccent Sacute Scircumflex Scaron Scommaaccent Scedilla Germandbls Tcaron Tcommaaccent Tcedilla Tbar Ugrave Uacute Ucircumflex Utilde Umacron Ubreve Udieresis Uring Uhungarumlaut Uogonek Wgrave Wacute Wcircumflex Wdieresis Ygrave Yacute Ycircumflex Ydieresis Zacute Zdotaccent Zcaron Eth Thorn Q.ss02";
@@ -46584,6 +46587,61 @@ width = 1252;
 );
 },
 {
+glyphname = fi;
+lastChange = "2018-12-21 20:18:32 +0000";
+layers = (
+{
+components = (
+{
+name = f_i.liga;
+transform = "{1, 0, 0, 1, -2, 0}";
+}
+);
+layerId = UUID0;
+width = 1130;
+},
+{
+components = (
+{
+name = f_i.liga;
+}
+);
+layerId = UUID1;
+width = 1220;
+}
+);
+leftMetricsKey = f;
+rightMetricsKey = i;
+unicode = FB01;
+},
+{
+glyphname = fl;
+lastChange = "2018-12-21 20:18:20 +0000";
+layers = (
+{
+components = (
+{
+name = f_l.liga;
+}
+);
+layerId = UUID0;
+width = 1196;
+},
+{
+components = (
+{
+name = f_l.liga;
+}
+);
+layerId = UUID1;
+width = 1304;
+}
+);
+leftMetricsKey = f;
+rightMetricsKey = l;
+unicode = FB02;
+},
+{
 glyphname = f_f.liga;
 lastChange = "2018-11-23 02:18:52 +0000";
 layers = (
@@ -49019,6 +49077,60 @@ layerId = UUID1;
 width = 2044;
 }
 );
+},
+{
+glyphname = Delta;
+lastChange = "2018-12-21 20:19:06 +0000";
+layers = (
+{
+components = (
+{
+name = increment;
+}
+);
+layerId = UUID0;
+width = 1188;
+},
+{
+components = (
+{
+name = increment;
+}
+);
+layerId = UUID1;
+width = 1284;
+}
+);
+leftMetricsKey = Increment;
+rightMetricsKey = Increment;
+unicode = 0394;
+},
+{
+glyphname = Omega;
+lastChange = "2018-12-21 20:17:19 +0000";
+layers = (
+{
+components = (
+{
+name = Ohm;
+}
+);
+layerId = UUID0;
+width = 1504;
+},
+{
+components = (
+{
+name = Ohm;
+}
+);
+layerId = UUID1;
+width = 1528;
+}
+);
+leftMetricsKey = Ohm;
+rightMetricsKey = Ohm;
+unicode = 03A9;
 }
 );
 instances = (
