@@ -58,15 +58,11 @@ This project has a "primary" source file which has received design updates and s
 
 Due to [current limitations in remote scripting for GlyphsApp](https://forum.glyphsapp.com/t/instance-as-master-through-core-api/10502/12), if you wish for edits to the design to cascade into the final outputs, you must use a partially-manual build process, wherein a few processing steps are done to make "build-ready" sources. These steps are as follows, in GlyphsApp:
 
-1. Use "Instance as Master" to make masters out of the Light, Bold, Negative Light, and Negative Bold instances
-1. In the Masters, delete the old "Light" and "Bold" Masters (their weights are outside the ultimate exporting weights)
-1. Add "Negative" to the new negative master names
-1. Add a custom parameter to the font for "Axes," and set these to "Weight" (tag: `wght`) and "Negative" (tag: `NEGA`).
-1. Set both Light masters to Weight values of `50` and both Bold masters to a Weight value of `920`
-1. Set Negative masters to Negative values of `-1` and non-negative masters to Negative values of `0`.
-1. Go through Instances, setting the Negative instances to the same Weight values as their non-negative counterparts (`50, 360, 650, 920`) and their Negative values as `-1`. Set non-negative masters to a Negative value of `0`. 
+1. Add `sources/scripts/helpers/prep-designspace-glyphs_script.py` to your Glyphs Scripts folder as a symlink with `ln -s YOUR_PATH/sources/scripts/helpers/prep-designspace-glyphs_script.py GLYPHS_SCRIPTS_PATH/prep-designspace-glyphs_script.py`
+2. Add `sources/scripts/helpers/subset-smallcaps-signika.py` to your Glyphs Scripts folder as a symlink with `ln -s YOUR_PATH/sources/scripts/helpers/subset-smallcaps-signika.py GLYPHS_SCRIPTS_PATH/subset-smallcaps-signika.py`
+3. Open the main source (`sources/Signika-MM.glyphs`) in Glyphs. Run the prep-designspace script. Then, run the smallcaps subsetting script.
 
-The font now has a build-ready rectangular designspace.
+The font now has sources with build-ready rectangular designspace and subset smallcaps.
 
 (I may convert the partially-completed remote script to a Glyphs Python Script, as this would handle all steps required. However, in the interest of time, I am using manual methods for the time being.)
 
