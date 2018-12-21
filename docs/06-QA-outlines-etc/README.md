@@ -113,3 +113,8 @@ The `/seven` has a kink, in part due to have many points along its spine. The sh
 Based on what I can tell, most other curves stay relatively-kink free, as their curve angles change little between weights.
 
 ![](assets/kink-free.gif)
+
+
+## Adding a few glyphs to fill out Mac Roman charset
+
+I've added `/Omega /Delta /fi /fl` to the font, using components of existing characters (`/Ohm /Increment /f_i.liga /f_l.liga`), to complete the Mac Roman character set.
