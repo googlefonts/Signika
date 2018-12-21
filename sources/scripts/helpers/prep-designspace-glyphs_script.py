@@ -65,7 +65,6 @@ def copyFromInterpolatedFont(instanceIndex, isNegative=False):
 
     # copy glyphs from instance font to new master
     for index,glyph in enumerate(font.glyphs): # (you can use font.glyphs()[:10] to do the first 10 glyphs only while making/testing script)
-        print(". ") # shows progress while running script
         instanceGlyph = instanceFont.glyphs[index] # make variable for glyph of interpolated font
         glyph.layers[instanceFontMasterID] = instanceGlyph.layers[instanceFontMasterID]
 
@@ -154,17 +153,17 @@ for instance in font.instances:
         instance.axes[1] = -1
 
     # apply weight values so they match
-    if "Light" in master.name:
+    if "Light" in instance.name:
         instance.weightValue = instanceWeightValues[0]
 
-    if "Regular" in master.name:
+    if "Regular" in instance.name:
         instance.weightValue = instanceWeightValues[1]
     
-    if "Semibold" in master.name:
+    if "Semibold" in instance.name:
         instance.weightValue = instanceWeightValues[2]
         instance.name = "SemiBold"
     
-    if "Bold" in master.name:
+    if "Bold" in instance.name and "Semi" not in instance.name:
         instance.weightValue = instanceWeightValues[3]
     
 
@@ -175,4 +174,6 @@ for instance in font.instances:
 fontPath = font.filepath
 buildPath = fontPath.replace(".glyphs", "-build.glyphs")
 font.save(buildPath)
-doc.close()
+font.close()
+
+Glyphs.open(buildPath)
