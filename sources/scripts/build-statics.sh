@@ -22,9 +22,9 @@ tempGlyphsSource=${glyphsSource/".glyphs"/"-build.glyphs"}
 cp $glyphsSource $tempGlyphsSource
 
 ## call fontmake to make all the static fonts
-# fontmake -g ${tempGlyphsSource} --output ttf --interpolate --overlaps-backend booleanOperations
+fontmake -g ${tempGlyphsSource} --output ttf --interpolate --overlaps-backend booleanOperations
 ## OR to just make one static font, as a test, use:
-fontmake -g sources/sources-buildready/Signika-MM-prepped_designspace.glyphs -i "Signika Bold" --output ttf --overlaps-backend booleanOperations
+# fontmake -g sources/sources-buildready/Signika-MM-prepped_designspace.glyphs -i "Signika Bold" --output ttf --overlaps-backend booleanOperations
 
 ## clean up temp glyphs file
 rm -rf $tempGlyphsSource
@@ -35,9 +35,9 @@ rm -rf $tempGlyphsSource
 # ============================================================================
 # SmallCap subsetting ========================================================
 
-ttx instance_ttf/Signika-Bold.ttf
 
-# TODO: get this dynamically
+# TODO?: get this dynamically
+ttx instance_ttf/Signika-Bold.ttf
 ttxPath="instance_ttf/Signika-Bold.ttx"
 
 #get glyph names, minus .smcp glyphs
@@ -50,6 +50,14 @@ for file in instance_ttf/*; do
 if [ -f "$file" ]; then 
 
     smallCapFile=${file/"Signika"/"SignikaSC"}
+
+    if [[ $file != *"SignikaNegative-"* ]]; then
+        smallCapFile=${file/"Signika"/"SignikaSC"}
+    fi
+    if [[ $file == *"SignikaNegative-"* ]]; then
+        smallCapFile=${file/"SignikaNegative"/"SignikaNegativeSC"}
+    fi
+
     pyftfeatfreeze.py -f 'smcp' -S -U SC $file $smallCapFile
     
     echo "subsetting smallcap font"
@@ -110,24 +118,24 @@ if [ -f "$file" ]; then
     echo $fileName
     if [[ $file == *"Signika-"* ]]; then
         copyToFontDir signika
-        # fontbakeFile ${newPath}
+        fontbakeFile ${newPath}
     fi
     if [[ $file == *"SignikaNegative-"* ]]; then
         copyToFontDir signikanegative
-        # fontbakeFile ${newPath}
+        fontbakeFile ${newPath}
     fi
     if [[ $file == *"SignikaSC-"* ]]; then
         copyToFontDir signikasc
-        # fontbakeFile ${newPath}
+        fontbakeFile ${newPath}
     fi
     if [[ $file == *"SignikaNegativeSC-"* ]]; then
         copyToFontDir signikanegativesc
-        # fontbakeFile ${newPath}
+        fontbakeFile ${newPath}
     fi
 fi 
 done
 
 # # clean up build folders
 rm -rf instance_ufo
-# rm -rf instance_ttf
+rm -rf instance_ttf
 rm -rf master_ufo

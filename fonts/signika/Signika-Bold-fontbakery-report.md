@@ -194,7 +194,7 @@ Fontbakery version: 0.6.6.dev5+g6a494f59.d20181218
 * :fire: **FAIL** METADATA.pb: Copyright notices should match a pattern similar to: 'Copyright 2017 The Familyname Project Authors (git url)'
 But instead we have got: 'Copyright (c) 2011 by Anna Giedrys (info@ancymonic.com), with Reserved Font Names 'Signika'.'
 * :fire: **FAIL** Name table entry: Copyright notices should match a pattern similar to: 'Copyright 2017 The Familyname Project Authors (git url)'
-But instead we have got: 'Copyright 2011 by Anna Giedrys. All rights reserved. Reserved Font Name: Signika.'
+But instead we have got: 'Copyright 2018 by Anna Giedrys. All rights reserved. Reserved Font Name: Signika.'
 
 </details>
 <details>
@@ -208,7 +208,7 @@ But instead we have got: 'Copyright 2011 by Anna Giedrys. All rights reserved. R
 <summary>:fire: <b>FAIL:</b> Copyright field for this font on METADATA.pb matches all copyright notice entries on the name table ?</summary>
 
 * [com.google.fonts/check/155](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/155)
-* :fire: **FAIL** Copyright field for this font on METADATA.pb ('Copyright (c) 2011 by Anna Giedrys (info@ancymonic.com), with Reserved Font Names 'Signika'.') differs from a copyright notice entry on the name table: 'Copyright 2011 by Anna Giedrys. All rights reserved. Reserved Font Name: Signika.'
+* :fire: **FAIL** Copyright field for this font on METADATA.pb ('Copyright (c) 2011 by Anna Giedrys (info@ancymonic.com), with Reserved Font Names 'Signika'.') differs from a copyright notice entry on the name table: 'Copyright 2018 by Anna Giedrys. All rights reserved. Reserved Font Name: Signika.'
 
 </details>
 <details>
@@ -229,7 +229,7 @@ But instead we have got: 'Copyright 2011 by Anna Giedrys. All rights reserved. R
 <summary>:warning: <b>WARN:</b> Glyphs are similiar to Google Fonts version?</summary>
 
 * [com.google.fonts/check/118](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/118)
-* :warning: **WARN** Following glyphs differ greatly from Google Fonts version: [germandbls.smcp, exclam, exclamdown, .notdef]
+* :warning: **WARN** Following glyphs differ greatly from Google Fonts version: [.notdef, germandbls.smcp, exclam, exclamdown]
 
 </details>
 <details>
@@ -247,7 +247,7 @@ Glyph name: Uogonek	Contours detected: 2	Expected: 1
 <summary>:warning: <b>WARN:</b> Name table strings must not contain the string 'Reserved Font Name'.</summary>
 
 * [com.google.fonts/check/152](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/152)
-* :warning: **WARN** Name table entry ("Copyright 2011 by Anna Giedrys. All rights reserved. Reserved Font Name: Signika.") contains "Reserved Font Name". This is an error except in a few specific rare cases.
+* :warning: **WARN** Name table entry ("Copyright 2018 by Anna Giedrys. All rights reserved. Reserved Font Name: Signika.") contains "Reserved Font Name". This is an error except in a few specific rare cases.
 
 </details>
 <details>
@@ -457,7 +457,7 @@ Please visit http://namecheck.fontdata.com/?q=Signika for more info.
 <summary>:information_source: <b>INFO:</b> Check for font-v versioning </summary>
 
 * [com.google.fonts/check/166](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/166)
-* :information_source: **INFO** Version string is: "Version 1.500; ttfautohint (v1.8.2) -l 8 -r 50 -G 200 -x 9 -D latn -f none -a qsq -X """
+* :information_source: **INFO** Version string is: "Version 2.000; ttfautohint (v1.8.2) -l 8 -r 50 -G 200 -x 9 -D latn -f none -a qsq -X """
 The version string must ideally include a git commit hash and either a 'dev' or a 'release' suffix such as in the example below:
 "Version 1.3; git-0d08353-release"
 
@@ -466,7 +466,7 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 <summary>:information_source: <b>INFO:</b> Font contains all required tables?</summary>
 
 * [com.google.fonts/check/052](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/052)
-* :information_source: **INFO** This font contains the following optional tables [cvt , GPOS, gasp, GSUB, loca, prep, DSIG, fpgm]
+* :information_source: **INFO** This font contains the following optional tables [DSIG, prep, cvt , GSUB, GPOS, fpgm, gasp, loca]
 * :bread: **PASS** Font contains all required tables.
 
 </details>
@@ -726,7 +726,7 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 <summary>:bread: <b>PASS:</b> Version number has increased since previous release on Google Fonts?</summary>
 
 * [com.google.fonts/check/117](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/117)
-* :bread: **PASS** Version number 1.5 is greater than version on Google Fonts GitHub (1.002) and production servers (1.002).
+* :bread: **PASS** Version number 2.0 is greater than version on Google Fonts GitHub (1.002) and production servers (1.002).
 
 </details>
 <details>

@@ -9,7 +9,7 @@ code = "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Agrave Aacute Acircu
 name = Uppercase;
 }
 );
-copyright = "Copyright 2011 by Anna Giedrys. All rights reserved. Reserved Font Name: Signika.";
+copyright = "Copyright 2018 by Anna Giedrys. All rights reserved. Reserved Font Name: Signika.";
 customParameters = (
 {
 name = trademark;
@@ -617,7 +617,7 @@ name = "Use Typo Metrics";
 value = 1;
 }
 );
-date = "2014-06-06 07:58:38 +0000";
+date = "2018-12-22 18:35:43 +0000";
 designer = "Anna Giedrys";
 designerURL = www.ancymonic.com;
 disablesAutomaticAlignment = 1;
@@ -60325,6 +60325,6 @@ backslash = -52;
 manufacturer = "Anna Giedrys";
 manufacturerURL = www.ancymonic.com;
 unitsPerEm = 2000;
-versionMajor = 1;
-versionMinor = 500;
+versionMajor = 2;
+versionMinor = 0;
 }

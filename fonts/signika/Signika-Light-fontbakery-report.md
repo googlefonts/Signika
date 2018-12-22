@@ -8,9 +8,9 @@ Fontbakery version: 0.6.6.dev5+g6a494f59.d20181218
 <summary>:information_source: <b>INFO:</b> Do we have the latest version of FontBakery installed?</summary>
 
 * [com.google.fonts/check/fontbakery_version](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/fontbakery_version)
-* :information_source: **INFO** fontbakery (0.6.5)  - Well designed Font QA tool, written in Python 3
+* :information_source: **INFO** fontbakery (0.6.6)  - Well designed Font QA tool, written in Python 3
   INSTALLED: 0.6.6.dev5+g6a494f59.d20181218
-  LATEST:    0.6.5
+  LATEST:    0.6.6
 
 * :bread: **PASS** Font Bakery is up-to-date
 
@@ -188,20 +188,6 @@ Fontbakery version: 0.6.6.dev5+g6a494f59.d20181218
 <details>
 <summary><b>[118] Signika-Light.ttf</b></summary>
 <details>
-<summary>:fire: <b>FAIL:</b> Checking OS/2 fsType.</summary>
-
-* [com.google.fonts/check/016](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/016)
-* :fire: **FAIL** OS/2 fsType is a legacy DRM-related field.
-In this font it is set to 8 meaning that:
-The font may be embedded but must only be installed temporarily on other systems.
-No such DRM restrictions can be enabled on the Google Fonts collection, so the fsType field must be set to zero (Installable Embedding) instead.
-Fonts with this setting indicate that they may be embedded and permanently installed on the remote system by an application.
-
- More detailed info is available at:
- https://docs.microsoft.com/en-us/typography/opentype/spec/os2#fstype
-
-</details>
-<details>
 <summary>:fire: <b>FAIL:</b> Checks METADATA.pb font.name field matches family name declared on the name table.</summary>
 
 * [com.google.fonts/check/092](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/092)
@@ -215,7 +201,7 @@ Fonts with this setting indicate that they may be embedded and permanently insta
 * :fire: **FAIL** METADATA.pb: Copyright notices should match a pattern similar to: 'Copyright 2017 The Familyname Project Authors (git url)'
 But instead we have got: 'Copyright (c) 2011 by Anna Giedrys (info@ancymonic.com), with Reserved Font Names 'Signika'.'
 * :fire: **FAIL** Name table entry: Copyright notices should match a pattern similar to: 'Copyright 2017 The Familyname Project Authors (git url)'
-But instead we have got: 'Copyright 2011 by Anna Giedrys. All rights reserved. Reserved Font Name: Signika.'
+But instead we have got: 'Copyright 2018 by Anna Giedrys. All rights reserved. Reserved Font Name: Signika.'
 
 </details>
 <details>
@@ -223,13 +209,6 @@ But instead we have got: 'Copyright 2011 by Anna Giedrys. All rights reserved. R
 
 * [com.google.fonts/check/108](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/108)
 * :fire: **FAIL** METADATA.pb Family name "Signika") does not match name table entry "Signika Light" ! [code: familyname-mismatch]
-
-</details>
-<details>
-<summary>:fire: <b>FAIL:</b> TTFAutohint x-height increase value is same as in previous release on Google Fonts?</summary>
-
-* [com.google.fonts/check/119](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/119)
-* :fire: **FAIL** TTFAutohint --increase-x-height is 14. It should match the previous version's value (9).
 
 </details>
 <details>
@@ -243,7 +222,7 @@ But instead we have got: 'Copyright 2011 by Anna Giedrys. All rights reserved. R
 <summary>:fire: <b>FAIL:</b> Copyright field for this font on METADATA.pb matches all copyright notice entries on the name table ?</summary>
 
 * [com.google.fonts/check/155](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/155)
-* :fire: **FAIL** Copyright field for this font on METADATA.pb ('Copyright (c) 2011 by Anna Giedrys (info@ancymonic.com), with Reserved Font Names 'Signika'.') differs from a copyright notice entry on the name table: 'Copyright 2011 by Anna Giedrys. All rights reserved. Reserved Font Name: Signika.'
+* :fire: **FAIL** Copyright field for this font on METADATA.pb ('Copyright (c) 2011 by Anna Giedrys (info@ancymonic.com), with Reserved Font Names 'Signika'.') differs from a copyright notice entry on the name table: 'Copyright 2018 by Anna Giedrys. All rights reserved. Reserved Font Name: Signika.'
 
 </details>
 <details>
@@ -261,6 +240,13 @@ But instead we have got: 'Copyright 2011 by Anna Giedrys. All rights reserved. R
 
 </details>
 <details>
+<summary>:warning: <b>WARN:</b> Glyphs are similiar to Google Fonts version?</summary>
+
+* [com.google.fonts/check/118](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/118)
+* :warning: **WARN** Following glyphs differ greatly from Google Fonts version: [.notdef, germandbls.smcp]
+
+</details>
+<details>
 <summary>:warning: <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
 * [com.google.fonts/check/153](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/153)
@@ -272,17 +258,10 @@ Glyph name: Uogonek	Contours detected: 2	Expected: 1
 
 </details>
 <details>
-<summary>:warning: <b>WARN:</b> Font contains .notdef as first glyph?</summary>
-
-* [com.google.fonts/check/046](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/046)
-* :warning: **WARN** Font should contain the .notdef glyph as the first glyph, it should not have a Unicode value assigned and should contain a drawing.
-
-</details>
-<details>
 <summary>:warning: <b>WARN:</b> Name table strings must not contain the string 'Reserved Font Name'.</summary>
 
 * [com.google.fonts/check/152](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/152)
-* :warning: **WARN** Name table entry ("Copyright 2011 by Anna Giedrys. All rights reserved. Reserved Font Name: Signika.") contains "Reserved Font Name". This is an error except in a few specific rare cases.
+* :warning: **WARN** Name table entry ("Copyright 2018 by Anna Giedrys. All rights reserved. Reserved Font Name: Signika.") contains "Reserved Font Name". This is an error except in a few specific rare cases.
 
 </details>
 <details>
@@ -450,10 +429,10 @@ This happens a lot when points are not extremes, which is usually bad. However, 
 
 |  | fonts/signika/Signika-Light.ttf |
 |:--- | ---:|
-| Dehinted Size | 81.1kb |
-| Hinted Size | 101.5kb |
-| Increase | 20.4kb |
-| Change   | 25.1 % |
+| Dehinted Size | 81.4kb |
+| Hinted Size | 102.2kb |
+| Increase | 20.7kb |
+| Change   | 25.5 % |
 
 
 </details>
@@ -492,7 +471,7 @@ Please visit http://namecheck.fontdata.com/?q=Signika for more info.
 <summary>:information_source: <b>INFO:</b> Check for font-v versioning </summary>
 
 * [com.google.fonts/check/166](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/166)
-* :information_source: **INFO** Version string is: "Version 2.000; ttfautohint (v1.8.2) -l 8 -r 50 -G 200 -x 14 -D latn -f none -a qsq -X """
+* :information_source: **INFO** Version string is: "Version 2.000; ttfautohint (v1.8.2) -l 8 -r 50 -G 200 -x 9 -D latn -f none -a qsq -X """
 The version string must ideally include a git commit hash and either a 'dev' or a 'release' suffix such as in the example below:
 "Version 1.3; git-0d08353-release"
 
@@ -501,8 +480,15 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 <summary>:information_source: <b>INFO:</b> Font contains all required tables?</summary>
 
 * [com.google.fonts/check/052](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/052)
-* :information_source: **INFO** This font contains the following optional tables [DSIG, prep, loca, GSUB, gasp, fpgm, cvt , GPOS]
+* :information_source: **INFO** This font contains the following optional tables [cvt , loca, gasp, GPOS, prep, fpgm, GSUB, DSIG]
 * :bread: **PASS** Font contains all required tables.
+
+</details>
+<details>
+<summary>:information_source: <b>INFO:</b> Check if OS/2 xAvgCharWidth is correct.</summary>
+
+* [com.google.fonts/check/034](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/034)
+* :information_source: **INFO** OS/2 xAvgCharWidth is 1025 but should be 1023 which corresponds to the weighted average of the widths of the latin lowercase glyphs in the font. These are similar values, which may be a symptom of the slightly different calculation of the xAvgCharWidth value in font editors. There's further discussion on this at https://github.com/googlefonts/fontbakery/issues/1622
 
 </details>
 <details>
@@ -524,6 +510,13 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 * [com.google.fonts/check/012](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/012)
 * :bread: **PASS** All font files have identical glyph names.
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> Checking OS/2 fsType.</summary>
+
+* [com.google.fonts/check/016](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/016)
+* :bread: **PASS** OS/2 fsType is properly set to zero.
 
 </details>
 <details>
@@ -572,7 +565,7 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 <summary>:bread: <b>PASS:</b> Font has ttfautohint params? </summary>
 
 * [com.google.fonts/check/has_ttfautohint_params](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/has_ttfautohint_params)
-* :bread: **PASS** Font has ttfautohint params (-l 8 -r 50 -G 200 -x 14 -D latn -f none -a qsq -X "")
+* :bread: **PASS** Font has ttfautohint params (-l 8 -r 50 -G 200 -x 9 -D latn -f none -a qsq -X "")
 
 </details>
 <details>
@@ -744,10 +737,10 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 </details>
 <details>
-<summary>:bread: <b>PASS:</b> Glyphs are similiar to Google Fonts version?</summary>
+<summary>:bread: <b>PASS:</b> TTFAutohint x-height increase value is same as in previous release on Google Fonts?</summary>
 
-* [com.google.fonts/check/118](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/118)
-* :bread: **PASS** Glyphs are similar in comparison to the Google Fonts version.
+* [com.google.fonts/check/119](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/119)
+* :bread: **PASS** TTFAutohint --increase-x-height is the same as in the previous Google Fonts release (9).
 
 </details>
 <details>
@@ -880,6 +873,13 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 </details>
 <details>
+<summary>:bread: <b>PASS:</b> Font contains .notdef as first glyph?</summary>
+
+* [com.google.fonts/check/046](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/046)
+* :bread: **PASS** Font contains the .notdef glyph as the first glyph, it does not have a Unicode value assigned and contains a drawing.
+
+</details>
+<details>
 <summary>:bread: <b>PASS:</b> Font contains glyphs for whitespace characters?</summary>
 
 * [com.google.fonts/check/047](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/047)
@@ -954,13 +954,6 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 * [com.google.fonts/check/044](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/044)
 * :bread: **PASS** All font version fields match.
-
-</details>
-<details>
-<summary>:bread: <b>PASS:</b> Check if OS/2 xAvgCharWidth is correct.</summary>
-
-* [com.google.fonts/check/034](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/034)
-* :bread: **PASS** OS/2 xAvgCharWidth value is correct.
 
 </details>
 <details>
@@ -1075,5 +1068,5 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 | :broken_heart: ERROR | :fire: FAIL | :warning: WARN | :zzz: SKIP | :information_source: INFO | :bread: PASS |
 |:-----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 7 | 8 | 17 | 7 | 104 |
-| 0% | 5% | 6% | 12% | 5% | 73% |
+| 0 | 5 | 8 | 17 | 8 | 105 |
+| 0% | 3% | 6% | 12% | 6% | 73% |

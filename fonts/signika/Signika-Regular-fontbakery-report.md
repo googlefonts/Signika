@@ -8,9 +8,9 @@ Fontbakery version: 0.6.6.dev5+g6a494f59.d20181218
 <summary>:information_source: <b>INFO:</b> Do we have the latest version of FontBakery installed?</summary>
 
 * [com.google.fonts/check/fontbakery_version](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/fontbakery_version)
-* :information_source: **INFO** fontbakery (0.6.5)  - Well designed Font QA tool, written in Python 3
+* :information_source: **INFO** fontbakery (0.6.6)  - Well designed Font QA tool, written in Python 3
   INSTALLED: 0.6.6.dev5+g6a494f59.d20181218
-  LATEST:    0.6.5
+  LATEST:    0.6.6
 
 * :bread: **PASS** Font Bakery is up-to-date
 
@@ -188,34 +188,20 @@ Fontbakery version: 0.6.6.dev5+g6a494f59.d20181218
 <details>
 <summary><b>[118] Signika-Regular.ttf</b></summary>
 <details>
-<summary>:fire: <b>FAIL:</b> Checking OS/2 fsType.</summary>
-
-* [com.google.fonts/check/016](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/016)
-* :fire: **FAIL** OS/2 fsType is a legacy DRM-related field.
-In this font it is set to 8 meaning that:
-The font may be embedded but must only be installed temporarily on other systems.
-No such DRM restrictions can be enabled on the Google Fonts collection, so the fsType field must be set to zero (Installable Embedding) instead.
-Fonts with this setting indicate that they may be embedded and permanently installed on the remote system by an application.
-
- More detailed info is available at:
- https://docs.microsoft.com/en-us/typography/opentype/spec/os2#fstype
-
-</details>
-<details>
 <summary>:fire: <b>FAIL:</b> Copyright notices match canonical pattern?</summary>
 
 * [com.google.fonts/check/102](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/102)
 * :fire: **FAIL** METADATA.pb: Copyright notices should match a pattern similar to: 'Copyright 2017 The Familyname Project Authors (git url)'
 But instead we have got: 'Copyright (c) 2011 by Anna Giedrys (info@ancymonic.com), with Reserved Font Names 'Signika'.'
 * :fire: **FAIL** Name table entry: Copyright notices should match a pattern similar to: 'Copyright 2017 The Familyname Project Authors (git url)'
-But instead we have got: 'Copyright 2011 by Anna Giedrys. All rights reserved. Reserved Font Name: Signika.'
+But instead we have got: 'Copyright 2018 by Anna Giedrys. All rights reserved. Reserved Font Name: Signika.'
 
 </details>
 <details>
 <summary>:fire: <b>FAIL:</b> TTFAutohint x-height increase value is same as in previous release on Google Fonts?</summary>
 
 * [com.google.fonts/check/119](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/119)
-* :fire: **FAIL** TTFAutohint --increase-x-height is 14. It should match the previous version's value (None).
+* :fire: **FAIL** TTFAutohint --increase-x-height is 9. It should match the previous version's value (None).
 * :warning: **WARN** No instruction for xheight rounding found on the GFonts release font
 
 </details>
@@ -230,7 +216,7 @@ But instead we have got: 'Copyright 2011 by Anna Giedrys. All rights reserved. R
 <summary>:fire: <b>FAIL:</b> Copyright field for this font on METADATA.pb matches all copyright notice entries on the name table ?</summary>
 
 * [com.google.fonts/check/155](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/155)
-* :fire: **FAIL** Copyright field for this font on METADATA.pb ('Copyright (c) 2011 by Anna Giedrys (info@ancymonic.com), with Reserved Font Names 'Signika'.') differs from a copyright notice entry on the name table: 'Copyright 2011 by Anna Giedrys. All rights reserved. Reserved Font Name: Signika.'
+* :fire: **FAIL** Copyright field for this font on METADATA.pb ('Copyright (c) 2011 by Anna Giedrys (info@ancymonic.com), with Reserved Font Names 'Signika'.') differs from a copyright notice entry on the name table: 'Copyright 2018 by Anna Giedrys. All rights reserved. Reserved Font Name: Signika.'
 
 </details>
 <details>
@@ -251,7 +237,7 @@ But instead we have got: 'Copyright 2011 by Anna Giedrys. All rights reserved. R
 <summary>:warning: <b>WARN:</b> Glyphs are similiar to Google Fonts version?</summary>
 
 * [com.google.fonts/check/118](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/118)
-* :warning: **WARN** Following glyphs differ greatly from Google Fonts version: [AE, racute.smcp, h, a.smcp, atilde.smcp, Ntilde, c, bar, Racute, ecircumflex, copyright, odieresis, igrave.smcp, oe, c.smcp, Zdotaccent, ordmasculine, F, p.smcp, section, Ccedilla, scaron.smcp, Z, threequarters, oacute.smcp, Dcaron, oe.smcp, u, m.smcp, r.smcp, tcaron, five, icircumflex.smcp, exclam, edieresis, aogonek, Iacute, h.smcp, yacute, guillemotright, iacute.smcp, aacute.smcp, aogonek.smcp, dollar, adieresis, acircumflex, C, scaron, K, B, A, ncaron, OE, n, Odieresis, Agrave, ae.smcp, Oacute, slash, Atilde, E, d.smcp, ldot.smcp, kgreenlandic, lslash.smcp, k.smcp, oslash.smcp, ecaron, ecircumflex.smcp, j.smcp, braceright, Uacute, w, Ecaron, uring, eogonek, Yacute, udieresis.smcp, Zcaron, f, W, u.smcp, oslash, N, Igrave, ecaron.smcp, Q, seven, dcaron, zacute, bracketleft, q.smcp, Eogonek, S, Ecircumflex, ordfeminine, X, t, germandbls, g, Udieresis, Ograve, o.smcp, egrave, guillemotleft, ccaron, nacute, thorn, g.smcp, y, uni0237, Nacute, uring.smcp, one, hbar, lslash, b, edieresis.smcp, G, P, Eacute, Thorn, zcaron, cacute.smcp, brokenbar, Idieresis, plusminus, f.smcp, ucircumflex, otilde, o, Lslash, k, Aring, thorn.smcp, four, ccedilla.smcp, two, zacute.smcp, three, tcaron.smcp, idieresis, bracketright, x, ocircumflex.smcp, ldot, jcircumflex.smcp, currency, registered, eogonek.smcp, Icircumflex, onehalf, ampersand, cacute, Ncaron, ncaron.smcp, H, hbar.smcp, v.smcp, itilde.smcp, igrave, agrave.smcp, M, ydieresis.smcp, d, ntilde.smcp, sacute.smcp, e, eth, Ldot, q, s, exclamdown, s.smcp, zcaron.smcp, R, Ydieresis, Ucircumflex, Jcircumflex, Adieresis, yacute.smcp, zdotaccent, ugrave, zero, questiondown, rcaron.smcp, a, w.smcp, aring.smcp, ij.smcp, eacute, ae, ij, v, oacute, n.smcp, Tcaron, sacute, ydieresis, uacute, Eth, z, l, braceleft, ccaron.smcp, Otilde, germandbls.smcp, t.smcp, Scaron, ccedilla, ugrave.smcp, racute, j, x.smcp, itilde, parenleft, e.smcp, Ccaron, p, Ugrave, D, U, Rcaron, ograve.smcp, eight, equal, cent, Zacute, z.smcp, paragraph, backslash, Ocircumflex, eth.smcp, nine, Euro, IJ, L, aacute, O, numbersign, sterling, acircumflex.smcp, eacute.smcp, at, uacute.smcp, Cacute, kgreenlandic.smcp, odieresis.smcp, egrave.smcp, udieresis, yen, l.smcp, J, Y, icircumflex, parenright, y.smcp, six, question, aring, onequarter, Sacute, idieresis.smcp, V, Uring, Edieresis, I, rcaron, Itilde, agrave, Acircumflex, Egrave, ucircumflex.smcp, b.smcp, ntilde, percent, otilde.smcp, Hbar, ograve, jcircumflex, Aogonek, nacute.smcp, ocircumflex, Aacute, i, adieresis.smcp, zdotaccent.smcp, fraction, dcaron.smcp, atilde, T, m, iacute, r, Oslash]
+* :warning: **WARN** Following glyphs differ greatly from Google Fonts version: [t, zdotaccent, ampersand, Iacute, oacute.smcp, uacute, yen, racute, e, kgreenlandic, dollar, edieresis.smcp, uacute.smcp, sacute, o.smcp, igrave.smcp, question, ecircumflex, six, Hbar, Dcaron, ucircumflex, ncaron, udieresis, O, egrave, ij, agrave, i, hbar, copyright, ecircumflex.smcp, P, onequarter, eacute.smcp, h.smcp, parenleft, ordfeminine, exclam, ecaron.smcp, N, kgreenlandic.smcp, oacute, rcaron.smcp, at, Eacute, m.smcp, W, itilde.smcp, ocircumflex, Y, p, d, ydieresis, eogonek, Zcaron, m, guillemotleft, jcircumflex, Nacute, dcaron.smcp, z.smcp, AE, Otilde, Yacute, egrave.smcp, K, U, guillemotright, J, ugrave.smcp, racute.smcp, uring.smcp, ograve.smcp, aogonek.smcp, Sacute, zacute, paragraph, a.smcp, backslash, Ldot, atilde, bar, w.smcp, ncaron.smcp, R, idieresis, IJ, Thorn, Zacute, w, aogonek, A, five, Ntilde, Tcaron, equal, oslash, c, F, Udieresis, Icircumflex, Aogonek, Oslash, ucircumflex.smcp, seven, S, s, exclamdown, eight, Eth, yacute, Egrave, g, ordmasculine, yacute.smcp, udieresis.smcp, ntilde, p.smcp, eacute, Scaron, zcaron, icircumflex, three, otilde.smcp, odieresis.smcp, Ccedilla, H, h, uring, plusminus, B, lslash.smcp, scaron.smcp, section, Eogonek, nine, q.smcp, germandbls, o, iacute.smcp, lslash, Ecircumflex, bracketleft, four, Racute, agrave.smcp, ocircumflex.smcp, itilde, eth.smcp, cacute, sacute.smcp, atilde.smcp, r, scaron, E, Q, Euro, x.smcp, Ucircumflex, threequarters, G, numbersign, Igrave, uni0237, sterling, ccedilla, Ocircumflex, Ugrave, X, v, questiondown, rcaron, oe, c.smcp, onehalf, g.smcp, e.smcp, thorn.smcp, fraction, k.smcp, x, Oacute, I, y.smcp, braceright, icircumflex.smcp, l.smcp, ae, t.smcp, z, aacute.smcp, acircumflex, Lslash, b.smcp, tcaron, currency, n.smcp, zdotaccent.smcp, jcircumflex.smcp, thorn, one, adieresis.smcp, eogonek.smcp, zacute.smcp, Aacute, k, edieresis, s.smcp, nacute, idieresis.smcp, ograve, Zdotaccent, zero, y, Agrave, v.smcp, otilde, bracketright, b, oslash.smcp, aring.smcp, ntilde.smcp, hbar.smcp, igrave, nacute.smcp, ae.smcp, Acircumflex, V, Ydieresis, q, oe.smcp, Atilde, Cacute, percent, L, Edieresis, l, ecaron, M, tcaron.smcp, slash, Rcaron, u, cent, Itilde, Aring, brokenbar, ydieresis.smcp, zcaron.smcp, aring, ugrave, Adieresis, aacute, Ncaron, Jcircumflex, .notdef, ldot, n, eth, Z, j.smcp, f, f.smcp, braceleft, registered, Idieresis, ldot.smcp, C, Uacute, ij.smcp, two, Ecaron, ccedilla.smcp, Odieresis, acircumflex.smcp, iacute, j, Uring, Ograve, ccaron, r.smcp, a, germandbls.smcp, D, d.smcp, cacute.smcp, OE, u.smcp, parenright, T, Ccaron, dcaron, adieresis, ccaron.smcp, odieresis]
 
 </details>
 <details>
@@ -266,17 +252,10 @@ Glyph name: Uogonek	Contours detected: 2	Expected: 1
 
 </details>
 <details>
-<summary>:warning: <b>WARN:</b> Font contains .notdef as first glyph?</summary>
-
-* [com.google.fonts/check/046](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/046)
-* :warning: **WARN** Font should contain the .notdef glyph as the first glyph, it should not have a Unicode value assigned and should contain a drawing.
-
-</details>
-<details>
 <summary>:warning: <b>WARN:</b> Name table strings must not contain the string 'Reserved Font Name'.</summary>
 
 * [com.google.fonts/check/152](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/152)
-* :warning: **WARN** Name table entry ("Copyright 2011 by Anna Giedrys. All rights reserved. Reserved Font Name: Signika.") contains "Reserved Font Name". This is an error except in a few specific rare cases.
+* :warning: **WARN** Name table entry ("Copyright 2018 by Anna Giedrys. All rights reserved. Reserved Font Name: Signika.") contains "Reserved Font Name". This is an error except in a few specific rare cases.
 
 </details>
 <details>
@@ -444,10 +423,10 @@ This happens a lot when points are not extremes, which is usually bad. However, 
 
 |  | fonts/signika/Signika-Regular.ttf |
 |:--- | ---:|
-| Dehinted Size | 81.6kb |
-| Hinted Size | 102.5kb |
-| Increase | 20.9kb |
-| Change   | 25.6 % |
+| Dehinted Size | 81.9kb |
+| Hinted Size | 103.2kb |
+| Increase | 21.3kb |
+| Change   | 26.1 % |
 
 
 </details>
@@ -486,7 +465,7 @@ Please visit http://namecheck.fontdata.com/?q=Signika for more info.
 <summary>:information_source: <b>INFO:</b> Check for font-v versioning </summary>
 
 * [com.google.fonts/check/166](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/166)
-* :information_source: **INFO** Version string is: "Version 2.000; ttfautohint (v1.8.2) -l 8 -r 50 -G 200 -x 14 -D latn -f none -a qsq -X """
+* :information_source: **INFO** Version string is: "Version 2.000; ttfautohint (v1.8.2) -l 8 -r 50 -G 200 -x 9 -D latn -f none -a qsq -X """
 The version string must ideally include a git commit hash and either a 'dev' or a 'release' suffix such as in the example below:
 "Version 1.3; git-0d08353-release"
 
@@ -495,8 +474,15 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 <summary>:information_source: <b>INFO:</b> Font contains all required tables?</summary>
 
 * [com.google.fonts/check/052](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/052)
-* :information_source: **INFO** This font contains the following optional tables [fpgm, prep, loca, GSUB, cvt , DSIG, gasp, GPOS]
+* :information_source: **INFO** This font contains the following optional tables [DSIG, prep, GSUB, fpgm, loca, cvt , GPOS, gasp]
 * :bread: **PASS** Font contains all required tables.
+
+</details>
+<details>
+<summary>:information_source: <b>INFO:</b> Check if OS/2 xAvgCharWidth is correct.</summary>
+
+* [com.google.fonts/check/034](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/034)
+* :information_source: **INFO** OS/2 xAvgCharWidth is 1050 but should be 1048 which corresponds to the weighted average of the widths of the latin lowercase glyphs in the font. These are similar values, which may be a symptom of the slightly different calculation of the xAvgCharWidth value in font editors. There's further discussion on this at https://github.com/googlefonts/fontbakery/issues/1622
 
 </details>
 <details>
@@ -518,6 +504,13 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 * [com.google.fonts/check/012](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/012)
 * :bread: **PASS** All font files have identical glyph names.
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> Checking OS/2 fsType.</summary>
+
+* [com.google.fonts/check/016](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/016)
+* :bread: **PASS** OS/2 fsType is properly set to zero.
 
 </details>
 <details>
@@ -566,7 +559,7 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 <summary>:bread: <b>PASS:</b> Font has ttfautohint params? </summary>
 
 * [com.google.fonts/check/has_ttfautohint_params](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/has_ttfautohint_params)
-* :bread: **PASS** Font has ttfautohint params (-l 8 -r 50 -G 200 -x 14 -D latn -f none -a qsq -X "")
+* :bread: **PASS** Font has ttfautohint params (-l 8 -r 50 -G 200 -x 9 -D latn -f none -a qsq -X "")
 
 </details>
 <details>
@@ -881,6 +874,13 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 </details>
 <details>
+<summary>:bread: <b>PASS:</b> Font contains .notdef as first glyph?</summary>
+
+* [com.google.fonts/check/046](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/046)
+* :bread: **PASS** Font contains the .notdef glyph as the first glyph, it does not have a Unicode value assigned and contains a drawing.
+
+</details>
+<details>
 <summary>:bread: <b>PASS:</b> Font contains glyphs for whitespace characters?</summary>
 
 * [com.google.fonts/check/047](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/047)
@@ -955,13 +955,6 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 * [com.google.fonts/check/044](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/044)
 * :bread: **PASS** All font version fields match.
-
-</details>
-<details>
-<summary>:bread: <b>PASS:</b> Check if OS/2 xAvgCharWidth is correct.</summary>
-
-* [com.google.fonts/check/034](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/034)
-* :bread: **PASS** OS/2 xAvgCharWidth value is correct.
 
 </details>
 <details>
@@ -1076,5 +1069,5 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 | :broken_heart: ERROR | :fire: FAIL | :warning: WARN | :zzz: SKIP | :information_source: INFO | :bread: PASS |
 |:-----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 5 | 9 | 17 | 7 | 105 |
-| 0% | 3% | 6% | 12% | 5% | 73% |
+| 0 | 4 | 8 | 17 | 8 | 106 |
+| 0% | 3% | 6% | 12% | 6% | 74% |
