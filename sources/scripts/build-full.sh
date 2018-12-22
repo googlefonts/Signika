@@ -112,6 +112,8 @@ mv variable_ttf/${subsetSmallCapFontName}.ttf variable_ttf/${smallCapFontName}.t
 # removes temp ttx file
 rm -rf $ttxPath
 
+# 🚨🚨🚨🚨 TODO: update SC font family name with TTX patch
+
 
 # ============================================================================
 # Autohinting ================================================================
@@ -143,7 +145,6 @@ done
 
 # ============================================================================
 # Sort into final folder =====================================================
-
 
 # set this to true/false at top of script
 for file in variable_ttf/*; do 

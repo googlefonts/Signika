@@ -1,13 +1,16 @@
 ############################################
 ################# set vars #################
 
-glyphsSource="sources/Signika-MM-simple_rect_ds_2.glyphs"
+glyphsSource="sources/sources-buildready/Signika-MM-prepped_designspace.glyphs"
 
 # ## if the Glyphs source has a non-rectangular master/instance arrangement, this fixes it (WIP)
 # fixGlyphsDesignspace=true
 
 ################# set vars #################
 ############################################
+
+# ============================================================================
+# Generate Variable Font =====================================================
 
 pwd
 
@@ -18,17 +21,52 @@ tempGlyphsSource=${glyphsSource/".glyphs"/"-build.glyphs"}
 ## copy Glyphs file into temp file
 cp $glyphsSource $tempGlyphsSource
 
-
-
-
-fontmake -g ${tempGlyphsSource} --output ttf --interpolate --overlaps-backend booleanOperations
+## call fontmake to make all the static fonts
+# fontmake -g ${tempGlyphsSource} --output ttf --interpolate --overlaps-backend booleanOperations
 ## OR to just make one static font, as a test, use:
-## fontmake -g sources/split/Encode-Sans-fixed_designspace.glyphs -i "Encode Sans Condensed Bold" --output ttf --overlaps-backend booleanOperations
+fontmake -g sources/sources-buildready/Signika-MM-prepped_designspace.glyphs -i "Signika Bold" --output ttf --overlaps-backend booleanOperations
 
 ## clean up temp glyphs file
 rm -rf $tempGlyphsSource
 
 # python sources/scripts/helpers/shorten-nameID-4-6.py instance_ttf
+
+
+# ============================================================================
+# SmallCap subsetting ========================================================
+
+ttx instance_ttf/Signika-Bold.ttf
+
+# TODO: get this dynamically
+ttxPath="instance_ttf/Signika-Bold.ttx"
+
+#get glyph names, minus .smcp glyphs
+subsetGlyphNames=`python sources/scripts/helpers/get-smallcap-subset-glyphnames.py $ttxPath`
+rm -rf $ttxPath
+
+echo $subsetGlyphNames
+
+for file in instance_ttf/*; do 
+if [ -f "$file" ]; then 
+
+    smallCapFile=${file/"Signika"/"SignikaSC"}
+    pyftfeatfreeze.py -f 'smcp' -S -U SC $file $smallCapFile
+    
+    echo "subsetting smallcap font"
+    # subsetting with subsetGlyphNames list
+    pyftsubset $smallCapFile $subsetGlyphNames
+
+    subsetSmallCapFile=${smallCapFile/".ttf"/".subset.ttf"}
+    rm -rf $smallCapFile
+    mv $subsetSmallCapFile $smallCapFile
+
+    # 🚨 TODO: update SC font family name with TTX patch
+fi 
+done
+
+
+# ============================================================================
+# Autohinting ================================================================
 
 for file in instance_ttf/*; do 
 if [ -f "$file" ]; then 
@@ -44,6 +82,8 @@ if [ -f "$file" ]; then
 fi 
 done
 
+# ============================================================================
+# Sort into final folder =====================================================
 
 copyToFontDir()
 {
@@ -70,24 +110,24 @@ if [ -f "$file" ]; then
     echo $fileName
     if [[ $file == *"Signika-"* ]]; then
         copyToFontDir signika
-        fontbakeFile ${newPath}
+        # fontbakeFile ${newPath}
     fi
     if [[ $file == *"SignikaNegative-"* ]]; then
         copyToFontDir signikanegative
-        fontbakeFile ${newPath}
+        # fontbakeFile ${newPath}
     fi
     if [[ $file == *"SignikaSC-"* ]]; then
         copyToFontDir signikasc
-        fontbakeFile ${newPath}
+        # fontbakeFile ${newPath}
     fi
     if [[ $file == *"SignikaNegativeSC-"* ]]; then
         copyToFontDir signikanegativesc
-        fontbakeFile ${newPath}
+        # fontbakeFile ${newPath}
     fi
 fi 
 done
 
 # # clean up build folders
 rm -rf instance_ufo
-rm -rf instance_ttf
+# rm -rf instance_ttf
 rm -rf master_ufo
