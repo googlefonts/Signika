@@ -190,24 +190,18 @@ TRACEBACK:
 <details>
 <summary><b>[118] SignikaSC-VF.ttf</b></summary>
 <details>
-<summary>:fire: <b>FAIL:</b> Check copyright namerecords match license file.</summary>
-
-* [com.google.fonts/check/029](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/029)
-* :fire: **FAIL** Font lacks NameID 13 (LICENSE DESCRIPTION). A proper licensing entry must be set. [code: missing]
-
-</details>
-<details>
-<summary>:fire: <b>FAIL:</b> "License URL matches License text on name table?</summary>
-
-* [com.google.fonts/check/030](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/030)
-* :fire: **FAIL** A known license URL must be provided in the NameID 14 (LICENSE INFO URL) entry. Currently accepted licenses are Apache or Open Font License. For a small set of legacy families the Ubuntu Font License may be acceptable as well. [code: no-license-found]
-
-</details>
-<details>
 <summary>:fire: <b>FAIL:</b> Font has old ttfautohint applied?</summary>
 
 * [com.google.fonts/check/056](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/056)
 * :fire: **FAIL** Failed to parse ttfautohint version values: installed = '1.8.2'; used_in_font = '1.8.1.43-b0c9' [code: parse-error]
+
+</details>
+<details>
+<summary>:fire: <b>FAIL:</b> Are there non-ASCII characters in ASCII-only NAME table entries?</summary>
+
+* [com.google.fonts/check/074](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/074)
+* :fire: **FAIL** There are 1 strings containing non-ASCII characters in the ASCII-only NAME table entries.
+* :information_source: **INFO** Bad string at [nameID 0, 'utf_16_be']: 'b'Copyright 2018 by Anna Giedry&#347;. All rights reserved. Reserved Font Name: Signika.''
 
 </details>
 <details>
@@ -242,14 +236,7 @@ TRACEBACK:
 <summary>:warning: <b>WARN:</b> Name table strings must not contain the string 'Reserved Font Name'.</summary>
 
 * [com.google.fonts/check/152](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/152)
-* :warning: **WARN** Name table entry ("Copyright 2011 by Anna Giedrys. All rights reserved. Reserved Font Name: Signika.") contains "Reserved Font Name". This is an error except in a few specific rare cases.
-
-</details>
-<details>
-<summary>:warning: <b>WARN:</b> Combined length of family and style must not exceed 20 characters.</summary>
-
-* [com.google.fonts/check/163](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/163)
-* :warning: **WARN** The combined length of family and style exceeds 20 chars in the following 'WINDOWS' entries: FONT_FAMILY_NAME = 'Signika Light SC' / SUBFAMILY_NAME = 'Regular'
+* :warning: **WARN** Name table entry ("Copyright 2018 by Anna Giedryś. All rights reserved. Reserved Font Name: Signika.") contains "Reserved Font Name". This is an error except in a few specific rare cases.
 
 </details>
 <details>
@@ -640,10 +627,10 @@ This happens a lot when points are not extremes, which is usually bad. However, 
 
 |  | fonts/signika/full_vf/SignikaSC-VF.ttf |
 |:--- | ---:|
-| Dehinted Size | 149.3kb |
+| Dehinted Size | 149.9kb |
 | Hinted Size | 169.9kb |
-| Increase | 20.6kb |
-| Change   | 13.8 % |
+| Increase | 20.0kb |
+| Change   | 13.3 % |
 
 
 </details>
@@ -674,7 +661,7 @@ PPM <= 65535:
 <summary>:information_source: <b>INFO:</b> Check for font-v versioning </summary>
 
 * [com.google.fonts/check/166](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/166)
-* :information_source: **INFO** Version string is: "Version 1.500; ttfautohint (v1.8.1.43-b0c9) -l 8 -r 50 -G 200 -x 9 -D latn -f none -a qsq -X """
+* :information_source: **INFO** Version string is: "Version 2.000; ttfautohint (v1.8.1.43-b0c9) -l 8 -r 50 -G 200 -x 9 -D latn -f none -a qsq -X """
 The version string must ideally include a git commit hash and either a 'dev' or a 'release' suffix such as in the example below:
 "Version 1.3; git-0d08353-release"
 
@@ -683,7 +670,7 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 <summary>:information_source: <b>INFO:</b> Font contains all required tables?</summary>
 
 * [com.google.fonts/check/052](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/052)
-* :information_source: **INFO** This font contains the following optional tables [GPOS, GSUB, loca, gasp, prep, DSIG, cvt , fpgm]
+* :information_source: **INFO** This font contains the following optional tables [loca, GPOS, DSIG, GSUB, prep, cvt , fpgm, gasp]
 * :bread: **PASS** Font contains all required tables.
 
 </details>
@@ -723,6 +710,20 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 </details>
 <details>
+<summary>:bread: <b>PASS:</b> Check copyright namerecords match license file.</summary>
+
+* [com.google.fonts/check/029](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/029)
+* :bread: **PASS** Licensing entry on name table is correctly set.
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> "License URL matches License text on name table?</summary>
+
+* [com.google.fonts/check/030](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/030)
+* :bread: **PASS** Font has a valid license URL in NAME table.
+
+</details>
+<details>
 <summary>:bread: <b>PASS:</b> Description strings in the name table must not exceed 200 characters.</summary>
 
 * [com.google.fonts/check/032](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/032)
@@ -755,13 +756,6 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 * [com.google.fonts/check/070](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/070)
 * :bread: **PASS** Font has all expected currency sign characters.
-
-</details>
-<details>
-<summary>:bread: <b>PASS:</b> Are there non-ASCII characters in ASCII-only NAME table entries?</summary>
-
-* [com.google.fonts/check/074](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/074)
-* :bread: **PASS** None of the ASCII-only NAME table entries contain non-ASCII characteres.
 
 </details>
 <details>
@@ -961,6 +955,13 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 </details>
 <details>
+<summary>:bread: <b>PASS:</b> Combined length of family and style must not exceed 20 characters.</summary>
+
+* [com.google.fonts/check/163](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/163)
+* :bread: **PASS** All name entries are good.
+
+</details>
+<details>
 <summary>:bread: <b>PASS:</b> Checking Vertical Metric Linegaps.</summary>
 
 * [com.google.fonts/check/041](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/041)
@@ -1044,5 +1045,5 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 | :broken_heart: ERROR | :fire: FAIL | :warning: WARN | :zzz: SKIP | :information_source: INFO | :bread: PASS |
 |:-----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 5 | 6 | 64 | 6 | 62 |
-| 0% | 3% | 4% | 45% | 4% | 43% |
+| 0 | 4 | 5 | 64 | 6 | 64 |
+| 0% | 3% | 3% | 45% | 4% | 45% |
