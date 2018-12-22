@@ -15,6 +15,7 @@ But how, exactly, are Google Fonts subset?
 
 ## Making a subsetting script for Glyphs
 
+~~
 Making a script which:
 - goes through font and finds all glyphs holding `.smcp` suffix. These are smallcaps.
 - deletes glyphs with the "root name" of the `smcp` glyphs
@@ -22,3 +23,12 @@ Making a script which:
 - doesn't ruin alignment of component glyphs (diacritics), doesn't remove kerning, and doesn't break opentype features
 
 First big challenge: properly deleting root glyphs. I initially had the `smcp` finder and glyph-deletion code in the same loop, but this was messing up the indexing of glyphs and getting thrown off. It's working better to make a list first, then go through this list, and delete glyphs with that name.
+~~
+
+## Better method: use a combination of Twardoch's `pyftfeatfreeze`, some glyph list data transformation, and fontTools subsetting
+
+The build scripts now use the following process:
+
+1. running `pyftfeatfreeze.py -f 'smcp' -S -U SC ${VFpath} ${smallCapFontPath}` to turn the `smcp` feature on by default
+2. running `python sources/scripts/helpers/get-smallcap-subset-glyphnames.py $ttxPath` to get a space-separated list of glyphs in the TTXed font, with all lowercase "siblings" removed
+3. running `pyftsubset ${smallCapFontPath} ${subsetGlyphNames}` to use the edited glyph list to subset the font. This results in a font with smallcap forms in place of lowercase unicodes.

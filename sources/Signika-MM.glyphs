@@ -1,8 +1,5 @@
 {
 .appVersion = "1189";
-DisplayStrings = (
-"/Delta"
-);
 classes = (
 {
 code = "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Agrave Aacute Acircumflex Atilde Amacron Abreve Adieresis Aring Aogonek AE Cacute Ccircumflex Cdotaccent Ccaron Ccedilla Dcaron Dcroat Egrave Eacute Ecircumflex Emacron Ebreve Edotaccent Edieresis Ecaron Eogonek Gcircumflex Gbreve Gdotaccent Gcommaaccent Hcircumflex Hbar Igrave Iacute Icircumflex Itilde Imacron Ibreve Idotaccent Idieresis Iogonek IJ Jcircumflex Kcommaaccent Lacute Lcommaaccent Lcaron Ldot Lslash Nacute Ntilde Ncaron Eng Ncommaaccent Ograve Oacute Ocircumflex Otilde Omacron Obreve Odieresis Ohungarumlaut Oslash OE Racute Rcaron Rcommaaccent Sacute Scircumflex Scaron Scommaaccent Scedilla Germandbls Tcaron Tcommaaccent Tcedilla Tbar Ugrave Uacute Ucircumflex Utilde Umacron Ubreve Udieresis Uring Uhungarumlaut Uogonek Wgrave Wacute Wcircumflex Wdieresis Ygrave Yacute Ycircumflex Ydieresis Zacute Zdotaccent Zcaron Eth Thorn Q.ss02";
@@ -49080,7 +49077,7 @@ width = 2044;
 },
 {
 glyphname = Delta;
-lastChange = "2018-12-21 20:19:06 +0000";
+lastChange = "2018-12-21 20:24:46 +0000";
 layers = (
 {
 components = (
@@ -49101,8 +49098,8 @@ layerId = UUID1;
 width = 1284;
 }
 );
-leftMetricsKey = Increment;
-rightMetricsKey = Increment;
+leftMetricsKey = increment;
+rightMetricsKey = increment;
 unicode = 0394;
 },
 {

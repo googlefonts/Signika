@@ -7,9 +7,7 @@
 ############################### set vars below ###############################
 
 # glyphsSource="sources/sources-buildready/Signika-MM-simple_rectangle_ds.glyphs"
-glyphsSource="sources/Signika-MM-simple_rect_ds_2.glyphs"
-
-fontName="Signika-VF"
+glyphsSource="sources/sources-buildready/Signika-MM-prepped_designspace.glyphs"
 
 timestampAndFontbakeInDist=false
 
@@ -62,47 +60,66 @@ rm -rf $tempGlyphsSource
 gftools fix-dsig --autofix variable_ttf/${fontName}.ttf
 
 ## sets up temp ttx file to insert correct values into tables
-ttx ${fontName}.ttf
+ttx variable_ttf/${VFname}.ttf
 
-rm -rf ${fontName}.ttf
+rm -rf variable_ttf/${VFname}.ttf
 
 # cd ..
 
-ttxPath="variable_ttf/${fontName}.ttx"
+ttxPath="variable_ttf/${VFname}.ttx"
 
 
 ## inserts patch files into new temp naming ttx
-# cat $ttxPath | tr '\n' '\r' | sed -e "s~<name>.*<\/name>~$(cat scripts/NAMEpatch.xml | tr '\n' '\r')~" | tr '\r' '\n' > variable_ttf/${fontName}-name.ttx
-# cat variable_ttf/${fontName}-name.ttx | tr '\n' '\r' | sed -e "s,<STAT>.*<\/STAT>,$(cat scripts/STATpatch.xml | tr '\n' '\r')," | tr '\r' '\n' > $ttxPath
+# cat $ttxPath | tr '\n' '\r' | sed -e "s~<name>.*<\/name>~$(cat scripts/NAMEpatch.xml | tr '\n' '\r')~" | tr '\r' '\n' > variable_ttf/${VFname}-name.ttx
+# cat variable_ttf/${VFname}-name.ttx | tr '\n' '\r' | sed -e "s,<STAT>.*<\/STAT>,$(cat scripts/STATpatch.xml | tr '\n' '\r')," | tr '\r' '\n' > $ttxPath
 
-# rm -rf variable_ttf/${fontName}-name.ttx
+# rm -rf variable_ttf/${VFname}-name.ttx
 
 ## copies temp ttx file back into a new ttf file
 ttx $ttxPath
 
 # removes temp ttx file
-rm -rf $ttxPath
+# rm -rf $ttxPath
 
+
+# ============================================================================
+# SmallCap subsetting ========================================================
+
+smallCapFontName='SignikaSC-VF'
+
+echo making ${smallCapFontName}.ttf
+
+pyftfeatfreeze.py -f 'smcp' -S -U SC variable_ttf/${VFname}.ttf variable_ttf/${smallCapFontName}.ttf
+
+ttxPath="variable_ttf/${VFname}.ttx"
+
+
+#get glyph names, minus .smcp glyphs
+subsetGlyphNames=`python sources/scripts/helpers/get-smallcap-subset-glyphnames.py $ttxPath`
+
+echo $subsetGlyphNames
+
+pyftsubset variable_ttf/${smallCapFontName}.ttf ${subsetGlyphNames}
 
 # ============================================================================
 # Autohinting ================================================================
 
-ttfPath=variable_ttf/${ttxPath/".ttx"/".ttf"}
-hintedPath=${ttxPath/".ttx"/"-hinted.ttf"}
+# ttfPath=variable_ttf/${ttxPath/".ttx"/".ttf"}
+# hintedPath=${ttxPath/".ttx"/"-hinted.ttf"}
 
-# Hint with TTFautohint-VF 
-# currently janky – I need to find how to properly add this dependency
-# https://groups.google.com/forum/#!searchin/googlefonts-discuss/ttfautohint%7Csort:date/googlefonts-discuss/WJX1lrzcwVs/SIzaEvntAgAJ
-# ./Users/stephennixon/Environments/gfonts3/bin/ttfautohint-vf ${ttfPath} ${ttfPath/"-unhinted.ttf"/"-hinted.ttf"}
-echo "================================================"
-echo ttfautohint-vf $ttfPath $hintedPath
-echo "================================================"
-ttfautohint-vf -I $ttfPath $hintedPath
+# # Hint with TTFautohint-VF 
+# # currently janky – I need to find how to properly add this dependency
+# # https://groups.google.com/forum/#!searchin/googlefonts-discuss/ttfautohint%7Csort:date/googlefonts-discuss/WJX1lrzcwVs/SIzaEvntAgAJ
+# # ./Users/stephennixon/Environments/gfonts3/bin/ttfautohint-vf ${ttfPath} ${ttfPath/"-unhinted.ttf"/"-hinted.ttf"}
+# echo "================================================"
+# echo ttfautohint-vf $ttfPath $hintedPath
+# echo "================================================"
+# ttfautohint-vf -I $ttfPath $hintedPath
 
-finalHintedFont=${hintedPath/"-hinted"/""}
-cp $hintedPath $finalHintedFont
+# finalHintedFont=${hintedPath/"-hinted"/""}
+# cp $hintedPath $finalHintedFont
 
-open ${finalHintedFont}
+# open ${finalHintedFont}
 
 # ============================================================================
 # Sort into final folder =====================================================

@@ -131,6 +131,23 @@ for instanceIndex in instancesToRemove[::-1]:
     del font.instances[instanceIndex]
 
 # ============================================================================
+# round all coordinates ======================================================
+
+for glyph in font.glyphs:
+    for layer in glyph.layers:
+        for path in layer.paths:
+            for node in path.nodes:
+                node.position.x = round(node.position.x)
+                node.position.y = round(node.position.y)
+        for anchor in layer.anchors:
+            anchor.x = round(anchor.x)
+            anchor.y = round(anchor.y)
+
+
+
+
+
+# ============================================================================
 # set instance interpolation values ==========================================
 
 # Go through Instances, setting the Negative instances to the same Weight values as their non-negative counterparts (`50, 360, 650, 920`) and their Negative values as `-1`. Set non-negative masters to a Negative value of `0`. 
@@ -171,8 +188,23 @@ for instance in font.instances:
 # save as "build" file =======================================================
 
 
+buildreadyFolder = 'sources-buildready'
+buildreadySuffix = 'prepped_designspace'
+
 fontPath = font.filepath
-buildPath = fontPath.replace(".glyphs", "-build.glyphs")
+
+if "sources-buildready" not in fontPath:    
+    fontPathHead = os.path.split(fontPath)[0] # file folder
+    fontPathTail = os.path.split(fontPath)[1] # file name
+    buildreadyPathHead = fontPathHead + "/" + buildreadyFolder + "/"
+
+    if os.path.exists(buildreadyPathHead) == False:
+        os.mkdir(buildreadyPathHead)
+
+    buildPath = buildreadyPathHead + fontPathTail.replace(".glyphs", "-" + buildreadySuffix + ".glyphs")
+else:
+    buildPath = fontPath.replace(".glyphs", "-" + buildreadySuffix + ".glyphs")
+
 font.save(buildPath)
 font.close()
 

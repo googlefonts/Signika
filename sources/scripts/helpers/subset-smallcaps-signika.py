@@ -21,6 +21,8 @@ font = Glyphs.font
 Glyphs.showMacroWindow()
 typeFamilyName = font.familyName
 
+print("subsetting smallcaps!")
+
 # build lists
 smallCaps = []
 glyphsToDelete = []
@@ -81,10 +83,13 @@ for instanceIndex in instancesToRemove[::-1]:
 
 
 # add "update" for opentype features
-
 # this works for signika because all features are set to auto – would likely need more care for other families
-for feature in font.features:
-    if feature.automatic:
+
+# remove smallcap feature (no longer applicable)
+del font.feature["smcp"]
+# update others
+for index,feature in enumerate(font.features):
+    if feature.automatic == True:
         feature.update()
 
 # add " SC" to font main family name
@@ -97,11 +102,30 @@ for index, instance in enumerate(font.instances):
         instance.customParameters["familyName"] = "Signika Negative SC"
 
 
-# make sure opentype features still work
+# ============================================================================
+# save as "build" file =======================================================
+
+
+buildreadyFolder = 'sources-buildready'
+buildreadySuffix = 'smallcaps'
 
 fontPath = font.filepath
-scSavePath = str(fontPath.replace(".glyphs","-sc.glyphs"))
-font.save(scSavePath)
+
+if buildreadyFolder not in fontPath:
+    fontPathHead = os.path.split(fontPath)[0] # file folder
+    fontPathTail = os.path.split(fontPath)[1] # file name
+    buildreadyPathHead = fontPathHead + "/" + buildreadyFolder + "/"
+
+    if os.path.exists(buildreadyPathHead) == False:
+        os.mkdir(buildreadyPathHead)
+
+    buildPath = buildreadyPathHead + fontPathTail.replace(".glyphs", "-" + buildreadySuffix + ".glyphs")
+else:
+    buildPath = fontPath.replace(".glyphs", "-" + buildreadySuffix + ".glyphs")
+
+print("saving smallcap file at " + buildPath)
+
+font.save(buildPath)
 font.close()
 
-Glyphs.open(scSavePath)
+Glyphs.open(buildPath)
