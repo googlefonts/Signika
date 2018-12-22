@@ -1,5 +1,5 @@
 name: "Signika Negative"
-designer: "Anna Giedryś"
+designer: "Anna Giedrys"
 license: "OFL"
 category: "SANS_SERIF"
 date_added: "2011-11-23"

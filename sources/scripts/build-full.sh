@@ -1,5 +1,5 @@
-### based on build script for Encode-Sans-VF, by Mike LaGuttuta
-### requires a python 2 environment, for now
+# ### based on build script for Encode-Sans-VF, by Mike LaGuttuta
+# ### requires a python 2 environment, for now
 
 
 
@@ -24,9 +24,11 @@ VFname=`python sources/scripts/helpers/get-font-name.py ${glyphsSource}`
 # checking that the name has been pulled out of the source file
 echo "VF Name: ${VFname}"
 
+# smallCapFontName, e..g 'SignikaSC-VF'
+smallCapFontName=${VFname/"-VF"/"SC-VF"}
+
 ## make temp glyphs filename with "-build" suffix
 tempGlyphsSource=${glyphsSource/".glyphs"/"-Build.glyphs"}
-
 
 ## copy Glyphs file into temp file
 cp $glyphsSource $tempGlyphsSource
@@ -57,7 +59,7 @@ rm -rf $tempGlyphsSource
 # cd variable_ttf
 
 ## fix file metadata with gftools
-gftools fix-dsig --autofix variable_ttf/${fontName}.ttf
+# gftools fix-dsig --autofix variable_ttf/${fontName}.ttf # done below, in autohinting step
 
 ## sets up temp ttx file to insert correct values into tables
 ttx variable_ttf/${VFname}.ttf
@@ -78,14 +80,11 @@ ttxPath="variable_ttf/${VFname}.ttx"
 ## copies temp ttx file back into a new ttf file
 ttx $ttxPath
 
-# removes temp ttx file
-# rm -rf $ttxPath
 
 
 # ============================================================================
 # SmallCap subsetting ========================================================
 
-smallCapFontName='SignikaSC-VF'
 
 echo making ${smallCapFontName}.ttf
 
@@ -93,55 +92,79 @@ pyftfeatfreeze.py -f 'smcp' -S -U SC variable_ttf/${VFname}.ttf variable_ttf/${s
 
 ttxPath="variable_ttf/${VFname}.ttx"
 
-
 #get glyph names, minus .smcp glyphs
 subsetGlyphNames=`python sources/scripts/helpers/get-smallcap-subset-glyphnames.py $ttxPath`
 
-echo $subsetGlyphNames
+# echo $subsetGlyphNames
+echo "subsetting smallcap font"
 
+# subsetting with subsetGlyphNames list
 pyftsubset variable_ttf/${smallCapFontName}.ttf ${subsetGlyphNames}
+
+# remove feature-frozen font & simplifying name of subset font
+
+subsetSmallCapFontName=${smallCapFontName/"VF"/"VF.subset"}
+
+rm -rf variable_ttf/${smallCapFontName}.ttf
+
+mv variable_ttf/${subsetSmallCapFontName}.ttf variable_ttf/${smallCapFontName}.ttf
+
+# removes temp ttx file
+rm -rf $ttxPath
+
 
 # ============================================================================
 # Autohinting ================================================================
 
-# ttfPath=variable_ttf/${ttxPath/".ttx"/".ttf"}
-# hintedPath=${ttxPath/".ttx"/"-hinted.ttf"}
+for file in variable_ttf/*; do 
+if [ -f "$file" ]; then 
+    # echo "fix DSIG in " ${file}
+    gftools fix-dsig --autofix ${file}
 
-# # Hint with TTFautohint-VF 
-# # currently janky – I need to find how to properly add this dependency
-# # https://groups.google.com/forum/#!searchin/googlefonts-discuss/ttfautohint%7Csort:date/googlefonts-discuss/WJX1lrzcwVs/SIzaEvntAgAJ
-# # ./Users/stephennixon/Environments/gfonts3/bin/ttfautohint-vf ${ttfPath} ${ttfPath/"-unhinted.ttf"/"-hinted.ttf"}
-# echo "================================================"
-# echo ttfautohint-vf $ttfPath $hintedPath
-# echo "================================================"
-# ttfautohint-vf -I $ttfPath $hintedPath
+    echo "TTFautohint " ${file}
+    # autohint with detailed info
+    hintedFile=${file/".ttf"/"-hinted.ttf"}
+    
+    # Hint with TTFautohint-VF ... currently janky – it would be better to properly add this dependency
+    # https://groups.google.com/forum/#!searchin/googlefonts-discuss/ttfautohint%7Csort:date/googlefonts-discuss/WJX1lrzcwVs/SIzaEvntAgAJ
+    # ./Users/stephennixon/Environments/gfonts3/bin/ttfautohint-vf ${ttfPath} ${ttfPath/"-unhinted.ttf"/"-hinted.ttf"}
+    echo "------------------------------------------------"
+    echo ttfautohint-vf $file $hintedFile  --increase-x-height 9
+    echo "------------------------------------------------"
+    ttfautohint-vf -I $file $hintedFile  --increase-x-height 9
 
-# finalHintedFont=${hintedPath/"-hinted"/""}
-# cp $hintedPath $finalHintedFont
+    cp ${hintedFile} ${file}
+    rm -rf ${hintedFile}
 
-# open ${finalHintedFont}
+    # open VF in default program; hopefully you have FontView
+    open ${file}
+fi 
+done
 
 # ============================================================================
 # Sort into final folder =====================================================
 
-# open VF in default program; hopefully you have FontView
-open ${finalHintedFont}
 
-# # set this to true/false at top of script
-# if [ $timestampAndFontbakeInDist == true ]
-# then
-#     newFontLocation=`python sources/scripts/helpers/distdate.py variable_ttf/${VFname}.ttf`
+# set this to true/false at top of script
+for file in variable_ttf/*; do 
+    if [ -f "$file" ]; then 
+        if [ $timestampAndFontbakeInDist == true ]
+        then
+            newFontLocation=`python sources/scripts/helpers/distdate.py ${file}`
 
-#     fontbakery check-googlefonts ${newFontLocation}/${VFname}.ttf --ghmarkdown ${newFontLocation}/${VFname}-fontbakery-report.md
+            fontbakery check-googlefonts ${newFontLocation}/${VFname}.ttf --ghmarkdown ${newFontLocation}/${VFname}-fontbakery-report.md
 
-#     echo "new VF location is " ${newFontLocation}
-# else
-#     ## move font into fonts/, then fontbake
-#     finalFontLocation=fonts/signika/full_vf/${VFname}.ttf
-#     cp $finalHintedFont $finalFontLocation
-#     echo "new VF location is " ${finalFontLocation}
+            echo "new VF location is " ${newFontLocation}
+        else
+            ## move font into fonts/, then fontbake
+            finalFontLocation=fonts/signika/full_vf
+            fileName=$(basename $file)
+            cp $file $finalFontLocation/$fileName
+            echo "new VF location is " $finalFontLocation/$fileName
 
-#     fontbakery check-googlefonts ${finalFontLocation} --ghmarkdown ${finalFontLocation/".ttf"/"-fontbakery-report.md"}
-# fi
+            fontbakery check-googlefonts $finalFontLocation/$fileName --ghmarkdown $finalFontLocation/${fileName/".ttf"/"-fontbakery-report.md"}
+        fi
+    fi
+done
 
 # rm -rf variable_ttf

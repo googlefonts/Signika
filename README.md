@@ -59,10 +59,10 @@ This project has a "primary" source file which has received design updates and s
 Due to [current limitations in remote scripting for GlyphsApp](https://forum.glyphsapp.com/t/instance-as-master-through-core-api/10502/12), if you wish for edits to the design to cascade into the final outputs, you must use a partially-manual build process, wherein a few processing steps are done to make "build-ready" sources. These steps are as follows, in GlyphsApp:
 
 1. Add `sources/scripts/helpers/prep-designspace-glyphs_script.py` to your Glyphs Scripts folder as a symlink with `ln -s YOUR_PATH/sources/scripts/helpers/prep-designspace-glyphs_script.py GLYPHS_SCRIPTS_PATH/prep-designspace-glyphs_script.py`
-2. Add `sources/scripts/helpers/subset-smallcaps-signika.py` to your Glyphs Scripts folder as a symlink with `ln -s YOUR_PATH/sources/scripts/helpers/subset-smallcaps-signika.py GLYPHS_SCRIPTS_PATH/subset-smallcaps-signika.py`
-3. Open the main source (`sources/Signika-MM.glyphs`) in Glyphs. Run the prep-designspace script. Then, run the smallcaps subsetting script.
 
-The font now has sources with build-ready rectangular designspace and subset smallcaps.
+2. Open the main source (`sources/Signika-MM.glyphs`) in Glyphs. Run the prep-designspace script.
+
+The font now has sources with build-ready rectangular designspace, and will build into a variable font with the build scripts.
 
 (I may convert the partially-completed remote script to a Glyphs Python Script, as this would handle all steps required. However, in the interest of time, I am using manual methods for the time being.)
 

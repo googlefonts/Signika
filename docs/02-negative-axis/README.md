@@ -339,18 +339,18 @@ New SemiBold `/a`, scaled back to 1000 UPM, then copy-pasted on top of old SemiB
 Answer: the file I was uploading had a name ("Semibold") that was slightly different from the hosted version ("SemiBold"), so it was comparing to the Regular, not to the SemiBold.
 
 - [x] determine what causes change for online regression tester (incorrect naming)
-- [ ] (verify with Dave or Marc first, but) match old vertical metrics – most likely, we might need to match old versions for line-height but follow new guidelines as much as possible for how we make the line heights
-  - [ ] Also probably do this for Encode Sans
+- [x] (verify with Dave or Marc first, but) match old vertical metrics – most likely, we might need to match old versions for line-height but follow new guidelines as much as possible for how we make the line heights
+  - [x] Also probably do this for Encode Sans
 
 
-- [ ] make GlyphsApp source with rectangular designspace
-  - [ ] make font file with masters at bold (920), light (50), and light negative (-15), and *maybe* also bold negative (843).
-  - [ ] set these masters so that the weight goes from 300 to 700, and the "Negative" (NEGA? NGTV?) axis goes from 0 to 1
-  - [ ] Test that it can export static instances that match current statics
+- [x] make GlyphsApp source with rectangular designspace
+  - [x] make font file with masters at bold (920), light (50), and light negative (-15), and *maybe* also bold negative (843).
+  - [x] set these masters so that the weight goes from 300 to 700, and the "Negative" (NEGA? NGTV?) axis goes from 0 to 1
+  - [x] Test that it can export static instances that match current statics
 
-- [ ] ? make a script to create this new glyphs file on build?
+- [x] ? make a script to create this new glyphs file on build?
 
-- [ ] figure out how to generate separate smallcaps fonts
+- [x] figure out how to generate separate smallcaps fonts
 
 ## Fixing export issues
 
@@ -358,7 +358,11 @@ Answer: the file I was uploading had a name ("Semibold") that was slightly diffe
 WARNING:glyphsLib.builder.builders.UFOBuilder:Non-existent glyph class public.kern2.hyphen found in kerning rules.
 ```
 
-- [ ] find why this warning is being fired during build (it's not blocking the VF export, but it will still be worth understanding and getting past)
+- [x] find why this warning is being fired during build (it's not blocking the VF export, but it will still be worth understanding and getting past)
+
+**Answer:** It appears that the `/hyphen` glyph was kerned against several letters, but then it was set to the `/equal` kerning class – even though there was a `hyphen` kerning group in the "Kerning" window of GlyphsApp. 
+
+I have tried changing the `/hyphen` left and right kerning groups back to the `/hyphen` class, and ... That fixes it!
 
 ## Setting "Negative" range values
 

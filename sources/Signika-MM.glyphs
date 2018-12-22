@@ -1,5 +1,8 @@
 {
 .appVersion = "1189";
+DisplayStrings = (
+"-J"
+);
 classes = (
 {
 code = "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Agrave Aacute Acircumflex Atilde Amacron Abreve Adieresis Aring Aogonek AE Cacute Ccircumflex Cdotaccent Ccaron Ccedilla Dcaron Dcroat Egrave Eacute Ecircumflex Emacron Ebreve Edotaccent Edieresis Ecaron Eogonek Gcircumflex Gbreve Gdotaccent Gcommaaccent Hcircumflex Hbar Igrave Iacute Icircumflex Itilde Imacron Ibreve Idotaccent Idieresis Iogonek IJ Jcircumflex Kcommaaccent Lacute Lcommaaccent Lcaron Ldot Lslash Nacute Ntilde Ncaron Eng Ncommaaccent Ograve Oacute Ocircumflex Otilde Omacron Obreve Odieresis Ohungarumlaut Oslash OE Racute Rcaron Rcommaaccent Sacute Scircumflex Scaron Scommaaccent Scedilla Germandbls Tcaron Tcommaaccent Tcedilla Tbar Ugrave Uacute Ucircumflex Utilde Umacron Ubreve Udieresis Uring Uhungarumlaut Uogonek Wgrave Wacute Wcircumflex Wdieresis Ygrave Yacute Ycircumflex Ydieresis Zacute Zdotaccent Zcaron Eth Thorn Q.ss02";
@@ -13,9 +16,8 @@ name = trademark;
 value = "Signika Light is a trademark of Anna Giedrys.";
 },
 {
-name = openTypeOS2Type;
+name = fsType;
 value = (
-3
 );
 },
 {
@@ -12721,7 +12723,7 @@ unicode = 002C;
 {
 color = (0,243,255,1);
 glyphname = hyphen;
-lastChange = "2018-11-23 02:18:52 +0000";
+lastChange = "2018-12-22 16:29:13 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -12774,8 +12776,8 @@ nodes = (
 width = 760;
 }
 );
-leftKerningGroup = equal;
-rightKerningGroup = equal;
+leftKerningGroup = hyphen;
+rightKerningGroup = hyphen;
 unicode = 002D;
 },
 {

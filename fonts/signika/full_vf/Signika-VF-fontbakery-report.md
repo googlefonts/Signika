@@ -5,87 +5,12 @@ Fontbakery version: 0.6.6.dev5+g6a494f59.d20181218
 <details>
 <summary><b>[25] Family checks</b></summary>
 <details>
-<summary>:broken_heart: <b>ERROR:</b> Check METADATA.pb parse correctly. </summary>
+<summary>:fire: <b>FAIL:</b> Check METADATA.pb parse correctly. </summary>
 
 * [com.google.fonts/check/metadata/parses](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/metadata/parses)
-* :broken_heart: **ERROR** Failed with IndexError: list index out of range
-
-</details>
-<details>
-<summary>:broken_heart: <b>ERROR:</b> Font designer field in METADATA.pb must not be 'unknown'.</summary>
-
-* [com.google.fonts/check/007](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/007)
-* :broken_heart: **ERROR** The condition <FontBakeryCondition:family_metadata> had an error: IndexError: list index out of range
-
-</details>
-<details>
-<summary>:broken_heart: <b>ERROR:</b> METADATA.pb: Fontfamily is listed on Google Fonts API?</summary>
-
-* [com.google.fonts/check/081](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/081)
-* :broken_heart: **ERROR** The condition <FontBakeryCondition:family_metadata> had an error: IndexError: list index out of range
-
-</details>
-<details>
-<summary>:broken_heart: <b>ERROR:</b> METADATA.pb: check if fonts field only has unique "full_name" values.</summary>
-
-* [com.google.fonts/check/083](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/083)
-* :broken_heart: **ERROR** The condition <FontBakeryCondition:family_metadata> had an error: IndexError: list index out of range
-
-</details>
-<details>
-<summary>:broken_heart: <b>ERROR:</b> METADATA.pb: check if fonts field only contains unique style:weight pairs.</summary>
-
-* [com.google.fonts/check/084](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/084)
-* :broken_heart: **ERROR** The condition <FontBakeryCondition:family_metadata> had an error: IndexError: list index out of range
-
-</details>
-<details>
-<summary>:broken_heart: <b>ERROR:</b> METADATA.pb license is "APACHE2", "UFL" or "OFL"?</summary>
-
-* [com.google.fonts/check/085](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/085)
-* :broken_heart: **ERROR** The condition <FontBakeryCondition:family_metadata> had an error: IndexError: list index out of range
-
-</details>
-<details>
-<summary>:broken_heart: <b>ERROR:</b> METADATA.pb should contain at least "menu" and "latin" subsets.</summary>
-
-* [com.google.fonts/check/086](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/086)
-* :broken_heart: **ERROR** The condition <FontBakeryCondition:family_metadata> had an error: IndexError: list index out of range
-
-</details>
-<details>
-<summary>:broken_heart: <b>ERROR:</b> METADATA.pb subsets should be alphabetically ordered.</summary>
-
-* [com.google.fonts/check/087](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/087)
-* :broken_heart: **ERROR** The condition <FontBakeryCondition:family_metadata> had an error: IndexError: list index out of range
-
-</details>
-<details>
-<summary>:broken_heart: <b>ERROR:</b> METADATA.pb: Copyright notice is the same in all fonts?</summary>
-
-* [com.google.fonts/check/088](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/088)
-* :broken_heart: **ERROR** The condition <FontBakeryCondition:family_metadata> had an error: IndexError: list index out of range
-
-</details>
-<details>
-<summary>:broken_heart: <b>ERROR:</b> Check that METADATA.pb family values are all the same.</summary>
-
-* [com.google.fonts/check/089](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/089)
-* :broken_heart: **ERROR** The condition <FontBakeryCondition:family_metadata> had an error: IndexError: list index out of range
-
-</details>
-<details>
-<summary>:broken_heart: <b>ERROR:</b> METADATA.pb: According Google Fonts standards, families should have a Regular style.</summary>
-
-* [com.google.fonts/check/090](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/090)
-* :broken_heart: **ERROR** The condition <FontBakeryCondition:family_metadata> had an error: IndexError: list index out of range
-
-</details>
-<details>
-<summary>:broken_heart: <b>ERROR:</b> METADATA.pb: Regular should be 400.</summary>
-
-* [com.google.fonts/check/091](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/091)
-* :broken_heart: **ERROR** The condition <FontBakeryCondition:family_metadata> had an error: IndexError: list index out of range
+* :fire: **FAIL** Family metadata at fonts/signika/full_vf failed to parse.
+TRACEBACK:
+10:3 : Message type "google.fonts.FontProto" has no field named "font-variation-settings".
 
 </details>
 <details>
@@ -183,260 +108,92 @@ Fontbakery version: 0.6.6.dev5+g6a494f59.d20181218
 * :bread: **PASS** Fonts have consistent underline thickness.
 
 </details>
+<details>
+<summary>:zzz: <b>SKIP:</b> Font designer field in METADATA.pb must not be 'unknown'.</summary>
+
+* [com.google.fonts/check/007](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/007)
+* :zzz: **SKIP** Unfulfilled Conditions: family_metadata
+
+</details>
+<details>
+<summary>:zzz: <b>SKIP:</b> METADATA.pb: Fontfamily is listed on Google Fonts API?</summary>
+
+* [com.google.fonts/check/081](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/081)
+* :zzz: **SKIP** Unfulfilled Conditions: family_metadata
+
+</details>
+<details>
+<summary>:zzz: <b>SKIP:</b> METADATA.pb: check if fonts field only has unique "full_name" values.</summary>
+
+* [com.google.fonts/check/083](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/083)
+* :zzz: **SKIP** Unfulfilled Conditions: family_metadata
+
+</details>
+<details>
+<summary>:zzz: <b>SKIP:</b> METADATA.pb: check if fonts field only contains unique style:weight pairs.</summary>
+
+* [com.google.fonts/check/084](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/084)
+* :zzz: **SKIP** Unfulfilled Conditions: family_metadata
+
+</details>
+<details>
+<summary>:zzz: <b>SKIP:</b> METADATA.pb license is "APACHE2", "UFL" or "OFL"?</summary>
+
+* [com.google.fonts/check/085](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/085)
+* :zzz: **SKIP** Unfulfilled Conditions: family_metadata
+
+</details>
+<details>
+<summary>:zzz: <b>SKIP:</b> METADATA.pb should contain at least "menu" and "latin" subsets.</summary>
+
+* [com.google.fonts/check/086](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/086)
+* :zzz: **SKIP** Unfulfilled Conditions: family_metadata
+
+</details>
+<details>
+<summary>:zzz: <b>SKIP:</b> METADATA.pb subsets should be alphabetically ordered.</summary>
+
+* [com.google.fonts/check/087](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/087)
+* :zzz: **SKIP** Unfulfilled Conditions: family_metadata
+
+</details>
+<details>
+<summary>:zzz: <b>SKIP:</b> METADATA.pb: Copyright notice is the same in all fonts?</summary>
+
+* [com.google.fonts/check/088](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/088)
+* :zzz: **SKIP** Unfulfilled Conditions: family_metadata
+
+</details>
+<details>
+<summary>:zzz: <b>SKIP:</b> Check that METADATA.pb family values are all the same.</summary>
+
+* [com.google.fonts/check/089](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/089)
+* :zzz: **SKIP** Unfulfilled Conditions: family_metadata
+
+</details>
+<details>
+<summary>:zzz: <b>SKIP:</b> METADATA.pb: According Google Fonts standards, families should have a Regular style.</summary>
+
+* [com.google.fonts/check/090](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/090)
+* :zzz: **SKIP** Unfulfilled Conditions: family_metadata
+
+</details>
+<details>
+<summary>:zzz: <b>SKIP:</b> METADATA.pb: Regular should be 400.</summary>
+
+* [com.google.fonts/check/091](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/091)
+* :zzz: **SKIP** Unfulfilled Conditions: family_metadata, has_regular_style
+
+</details>
 <br>
 </details>
 <details>
 <summary><b>[118] Signika-VF.ttf</b></summary>
 <details>
-<summary>:broken_heart: <b>ERROR:</b> Checks METADATA.pb font.name field matches family name declared on the name table.</summary>
+<summary>:fire: <b>FAIL:</b> Font has old ttfautohint applied?</summary>
 
-* [com.google.fonts/check/092](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/092)
-* :broken_heart: **ERROR** The condition <FontBakeryCondition:font_metadata> had an error: FailedConditionError: The condition <FontBakeryCondition:family_metadata> had an error: IndexError: list index out of range
-
-</details>
-<details>
-<summary>:broken_heart: <b>ERROR:</b> Checks METADATA.pb font.post_script_name matches postscript name declared on the name table.</summary>
-
-* [com.google.fonts/check/093](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/093)
-* :broken_heart: **ERROR** The condition <FontBakeryCondition:font_metadata> had an error: FailedConditionError: The condition <FontBakeryCondition:family_metadata> had an error: IndexError: list index out of range
-
-</details>
-<details>
-<summary>:broken_heart: <b>ERROR:</b> METADATA.pb font.full_name value matches fullname declared on the name table?</summary>
-
-* [com.google.fonts/check/094](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/094)
-* :broken_heart: **ERROR** The condition <FontBakeryCondition:font_metadata> had an error: FailedConditionError: The condition <FontBakeryCondition:family_metadata> had an error: IndexError: list index out of range
-
-</details>
-<details>
-<summary>:broken_heart: <b>ERROR:</b> METADATA.pb font.name value should be same as the family name declared on the name table.</summary>
-
-* [com.google.fonts/check/095](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/095)
-* :broken_heart: **ERROR** The condition <FontBakeryCondition:font_metadata> had an error: FailedConditionError: The condition <FontBakeryCondition:family_metadata> had an error: IndexError: list index out of range
-
-</details>
-<details>
-<summary>:broken_heart: <b>ERROR:</b> METADATA.pb font.full_name and font.post_script_name fields have equivalent values ?</summary>
-
-* [com.google.fonts/check/096](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/096)
-* :broken_heart: **ERROR** The condition <FontBakeryCondition:font_metadata> had an error: FailedConditionError: The condition <FontBakeryCondition:family_metadata> had an error: IndexError: list index out of range
-
-</details>
-<details>
-<summary>:broken_heart: <b>ERROR:</b> METADATA.pb font.filename and font.post_script_name fields have equivalent values?</summary>
-
-* [com.google.fonts/check/097](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/097)
-* :broken_heart: **ERROR** The condition <FontBakeryCondition:font_metadata> had an error: FailedConditionError: The condition <FontBakeryCondition:family_metadata> had an error: IndexError: list index out of range
-
-</details>
-<details>
-<summary>:broken_heart: <b>ERROR:</b> METADATA.pb font.name field contains font name in right format?</summary>
-
-* [com.google.fonts/check/098](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/098)
-* :broken_heart: **ERROR** The condition <FontBakeryCondition:font_metadata> had an error: FailedConditionError: The condition <FontBakeryCondition:family_metadata> had an error: IndexError: list index out of range
-
-</details>
-<details>
-<summary>:broken_heart: <b>ERROR:</b> METADATA.pb font.full_name field contains font name in right format?</summary>
-
-* [com.google.fonts/check/099](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/099)
-* :broken_heart: **ERROR** The condition <FontBakeryCondition:font_metadata> had an error: FailedConditionError: The condition <FontBakeryCondition:family_metadata> had an error: IndexError: list index out of range
-
-</details>
-<details>
-<summary>:broken_heart: <b>ERROR:</b> METADATA.pb font.filename field contains font name in right format?</summary>
-
-* [com.google.fonts/check/100](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/100)
-* :broken_heart: **ERROR** The condition <FontBakeryCondition:family_metadata> had an error: IndexError: list index out of range
-
-</details>
-<details>
-<summary>:broken_heart: <b>ERROR:</b> METADATA.pb font.post_script_name field contains font name in right format?</summary>
-
-* [com.google.fonts/check/101](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/101)
-* :broken_heart: **ERROR** The condition <FontBakeryCondition:font_metadata> had an error: FailedConditionError: The condition <FontBakeryCondition:family_metadata> had an error: IndexError: list index out of range
-
-</details>
-<details>
-<summary>:broken_heart: <b>ERROR:</b> Copyright notices match canonical pattern?</summary>
-
-* [com.google.fonts/check/102](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/102)
-* :broken_heart: **ERROR** The condition <FontBakeryCondition:font_metadata> had an error: FailedConditionError: The condition <FontBakeryCondition:family_metadata> had an error: IndexError: list index out of range
-
-</details>
-<details>
-<summary>:broken_heart: <b>ERROR:</b> Copyright notice on METADATA.pb should not contain 'Reserved Font Name'.</summary>
-
-* [com.google.fonts/check/103](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/103)
-* :broken_heart: **ERROR** The condition <FontBakeryCondition:font_metadata> had an error: FailedConditionError: The condition <FontBakeryCondition:family_metadata> had an error: IndexError: list index out of range
-
-</details>
-<details>
-<summary>:broken_heart: <b>ERROR:</b> METADATA.pb: Copyright notice shouldn't exceed 500 chars.</summary>
-
-* [com.google.fonts/check/104](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/104)
-* :broken_heart: **ERROR** The condition <FontBakeryCondition:font_metadata> had an error: FailedConditionError: The condition <FontBakeryCondition:family_metadata> had an error: IndexError: list index out of range
-
-</details>
-<details>
-<summary>:broken_heart: <b>ERROR:</b> METADATA.pb: Filename is set canonically?</summary>
-
-* [com.google.fonts/check/105](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/105)
-* :broken_heart: **ERROR** The condition <FontBakeryCondition:font_metadata> had an error: FailedConditionError: The condition <FontBakeryCondition:family_metadata> had an error: IndexError: list index out of range
-
-</details>
-<details>
-<summary>:broken_heart: <b>ERROR:</b> METADATA.pb font.style "italic" matches font internals?</summary>
-
-* [com.google.fonts/check/106](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/106)
-* :broken_heart: **ERROR** The condition <FontBakeryCondition:font_metadata> had an error: FailedConditionError: The condition <FontBakeryCondition:family_metadata> had an error: IndexError: list index out of range
-
-</details>
-<details>
-<summary>:broken_heart: <b>ERROR:</b> METADATA.pb font.style "normal" matches font internals?</summary>
-
-* [com.google.fonts/check/107](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/107)
-* :broken_heart: **ERROR** The condition <FontBakeryCondition:font_metadata> had an error: FailedConditionError: The condition <FontBakeryCondition:family_metadata> had an error: IndexError: list index out of range
-
-</details>
-<details>
-<summary>:broken_heart: <b>ERROR:</b> METADATA.pb font.name and font.full_name fields match the values declared on the name table?</summary>
-
-* [com.google.fonts/check/108](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/108)
-* :broken_heart: **ERROR** The condition <FontBakeryCondition:font_metadata> had an error: FailedConditionError: The condition <FontBakeryCondition:family_metadata> had an error: IndexError: list index out of range
-
-</details>
-<details>
-<summary>:broken_heart: <b>ERROR:</b> METADATA.pb: Check if fontname is not camel cased.</summary>
-
-* [com.google.fonts/check/109](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/109)
-* :broken_heart: **ERROR** The condition <FontBakeryCondition:font_metadata> had an error: FailedConditionError: The condition <FontBakeryCondition:family_metadata> had an error: IndexError: list index out of range
-
-</details>
-<details>
-<summary>:broken_heart: <b>ERROR:</b> METADATA.pb: Check font name is the same as family name.</summary>
-
-* [com.google.fonts/check/110](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/110)
-* :broken_heart: **ERROR** The condition <FontBakeryCondition:family_metadata> had an error: IndexError: list index out of range
-
-</details>
-<details>
-<summary>:broken_heart: <b>ERROR:</b> METADATA.pb: Check that font weight has a canonical value.</summary>
-
-* [com.google.fonts/check/111](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/111)
-* :broken_heart: **ERROR** The condition <FontBakeryCondition:font_metadata> had an error: FailedConditionError: The condition <FontBakeryCondition:family_metadata> had an error: IndexError: list index out of range
-
-</details>
-<details>
-<summary>:broken_heart: <b>ERROR:</b> Checking OS/2 usWeightClass matches weight specified at METADATA.pb.</summary>
-
-* [com.google.fonts/check/112](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/112)
-* :broken_heart: **ERROR** The condition <FontBakeryCondition:font_metadata> had an error: FailedConditionError: The condition <FontBakeryCondition:family_metadata> had an error: IndexError: list index out of range
-
-</details>
-<details>
-<summary>:broken_heart: <b>ERROR:</b> METADATA.pb weight matches postScriptName.</summary>
-
-* [com.google.fonts/check/113](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/113)
-* :broken_heart: **ERROR** The condition <FontBakeryCondition:font_metadata> had an error: FailedConditionError: The condition <FontBakeryCondition:family_metadata> had an error: IndexError: list index out of range
-
-</details>
-<details>
-<summary>:broken_heart: <b>ERROR:</b> METADATA.pb: Font styles are named canonically?</summary>
-
-* [com.google.fonts/check/115](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/115)
-* :broken_heart: **ERROR** The condition <FontBakeryCondition:font_metadata> had an error: FailedConditionError: The condition <FontBakeryCondition:family_metadata> had an error: IndexError: list index out of range
-
-</details>
-<details>
-<summary>:broken_heart: <b>ERROR:</b> Version number has increased since previous release on Google Fonts?</summary>
-
-* [com.google.fonts/check/117](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/117)
-* :broken_heart: **ERROR** The condition <FontBakeryCondition:api_gfonts_ttFont> had an error: FailedConditionError: The condition <FontBakeryCondition:remote_styles> had an error: FailedConditionError: The condition <FontBakeryCondition:family_metadata> had an error: IndexError: list index out of range
-
-</details>
-<details>
-<summary>:broken_heart: <b>ERROR:</b> Glyphs are similiar to Google Fonts version?</summary>
-
-* [com.google.fonts/check/118](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/118)
-* :broken_heart: **ERROR** The condition <FontBakeryCondition:api_gfonts_ttFont> had an error: FailedConditionError: The condition <FontBakeryCondition:remote_styles> had an error: FailedConditionError: The condition <FontBakeryCondition:family_metadata> had an error: IndexError: list index out of range
-
-</details>
-<details>
-<summary>:broken_heart: <b>ERROR:</b> TTFAutohint x-height increase value is same as in previous release on Google Fonts?</summary>
-
-* [com.google.fonts/check/119](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/119)
-* :broken_heart: **ERROR** The condition <FontBakeryCondition:api_gfonts_ttFont> had an error: FailedConditionError: The condition <FontBakeryCondition:remote_styles> had an error: FailedConditionError: The condition <FontBakeryCondition:family_metadata> had an error: IndexError: list index out of range
-
-</details>
-<details>
-<summary>:broken_heart: <b>ERROR:</b> Check font has same encoded glyphs as version hosted on fonts.google.com</summary>
-
-* [com.google.fonts/check/154](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/154)
-* :broken_heart: **ERROR** The condition <FontBakeryCondition:api_gfonts_ttFont> had an error: FailedConditionError: The condition <FontBakeryCondition:remote_styles> had an error: FailedConditionError: The condition <FontBakeryCondition:family_metadata> had an error: IndexError: list index out of range
-
-</details>
-<details>
-<summary>:broken_heart: <b>ERROR:</b> Copyright field for this font on METADATA.pb matches all copyright notice entries on the name table ?</summary>
-
-* [com.google.fonts/check/155](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/155)
-* :broken_heart: **ERROR** The condition <FontBakeryCondition:font_metadata> had an error: FailedConditionError: The condition <FontBakeryCondition:family_metadata> had an error: IndexError: list index out of range
-
-</details>
-<details>
-<summary>:fire: <b>FAIL:</b> Checking OS/2 fsType.</summary>
-
-* [com.google.fonts/check/016](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/016)
-* :fire: **FAIL** OS/2 fsType is a legacy DRM-related field.
-In this font it is set to 4 meaning that:
-The font may be embedded, and temporarily loaded on the remote system, but documents that use it must not be editable.
-No such DRM restrictions can be enabled on the Google Fonts collection, so the fsType field must be set to zero (Installable Embedding) instead.
-Fonts with this setting indicate that they may be embedded and permanently installed on the remote system by an application.
-
- More detailed info is available at:
- https://docs.microsoft.com/en-us/typography/opentype/spec/os2#fstype
-
-</details>
-<details>
-<summary>:fire: <b>FAIL:</b> Check copyright namerecords match license file.</summary>
-
-* [com.google.fonts/check/029](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/029)
-* :fire: **FAIL** License file OFL.txt exists but NameID 13 (LICENSE DESCRIPTION) value on platform 3 (WINDOWS) is not specified for that. Value was: "This Font Software is licensed under the SIL Open Font License Version 1.1. This license is available at: http://scripts.sil.org/OFL" Must be changed to "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL" [code: wrong]
-
-</details>
-<details>
-<summary>:fire: <b>FAIL:</b> "License URL matches License text on name table?</summary>
-
-* [com.google.fonts/check/030](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/030)
-* :fire: **FAIL** A known license URL must be provided in the NameID 14 (LICENSE INFO URL) entry. Currently accepted licenses are Apache or Open Font License. For a small set of legacy families the Ubuntu Font License may be acceptable as well. [code: no-license-found]
-
-</details>
-<details>
-<summary>:fire: <b>FAIL:</b> Is 'gasp' table set to optimize rendering?</summary>
-
-* [com.google.fonts/check/062](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/062)
-* :fire: **FAIL** Font is missing the 'gasp' table. Try exporting the font with autohinting enabled.
-
-</details>
-<details>
-<summary>:fire: <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/040](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/040)
-* :fire: **FAIL** OS/2.usWinAscent value should be equal or greater than 1923, but got 1700 instead [code: ascent]
-
-</details>
-<details>
-<summary>:fire: <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics.</summary>
-
-* [com.google.fonts/check/042](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/042)
-* :fire: **FAIL** OS/2 sTypoAscender and hhea ascent must be equal. [code: ascender]
-
-</details>
-<details>
-<summary>:fire: <b>FAIL:</b> Font enables smart dropout control in "prep" table instructions?</summary>
-
-* [com.google.fonts/check/072](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/072)
-* :fire: **FAIL** 'prep' table does not contain TrueType  instructions enabling smart dropout control. To fix, export the font with autohinting enabled, or run ttfautohint on the font, or run the  `gftools fix-nonhinting` script.
+* [com.google.fonts/check/056](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/056)
+* :fire: **FAIL** Failed to parse ttfautohint version values: installed = '1.8.2'; used_in_font = '1.8.1.43-b0c9' [code: parse-error]
 
 </details>
 <details>
@@ -447,24 +204,10 @@ Fonts with this setting indicate that they may be embedded and permanently insta
 
 </details>
 <details>
-<summary>:warning: <b>WARN:</b> Font contains .notdef as first glyph?</summary>
-
-* [com.google.fonts/check/046](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/046)
-* :warning: **WARN** Font should contain the .notdef glyph as the first glyph, it should not have a Unicode value assigned and should contain a drawing.
-
-</details>
-<details>
 <summary>:warning: <b>WARN:</b> Name table strings must not contain the string 'Reserved Font Name'.</summary>
 
 * [com.google.fonts/check/152](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/152)
-* :warning: **WARN** Name table entry ("Copyright (c) 2011 by Anna Giedrys. All rights reserved. Reserved Font Name: Signika.") contains "Reserved Font Name". This is an error except in a few specific rare cases.
-
-</details>
-<details>
-<summary>:warning: <b>WARN:</b> Checking Vertical Metric Linegaps.</summary>
-
-* [com.google.fonts/check/041](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/041)
-* :warning: **WARN** OS/2 sTypoLineGap is not equal to 0. [code: OS/2]
+* :warning: **WARN** Name table entry ("Copyright 2011 by Anna Giedrys. All rights reserved. Reserved Font Name: Signika.") contains "Reserved Font Name". This is an error except in a few specific rare cases.
 
 </details>
 <details>
@@ -513,10 +256,185 @@ This happens a lot when points are not extremes, which is usually bad. However, 
 
 </details>
 <details>
-<summary>:zzz: <b>SKIP:</b> Font has ttfautohint params? </summary>
+<summary>:zzz: <b>SKIP:</b> Checks METADATA.pb font.name field matches family name declared on the name table.</summary>
 
-* [com.google.fonts/check/has_ttfautohint_params](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/has_ttfautohint_params)
-* :zzz: **SKIP** Font appears to our heuristic as not hinted using ttfautohint.
+* [com.google.fonts/check/092](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/092)
+* :zzz: **SKIP** Unfulfilled Conditions: font_metadata
+
+</details>
+<details>
+<summary>:zzz: <b>SKIP:</b> Checks METADATA.pb font.post_script_name matches postscript name declared on the name table.</summary>
+
+* [com.google.fonts/check/093](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/093)
+* :zzz: **SKIP** Unfulfilled Conditions: font_metadata
+
+</details>
+<details>
+<summary>:zzz: <b>SKIP:</b> METADATA.pb font.full_name value matches fullname declared on the name table?</summary>
+
+* [com.google.fonts/check/094](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/094)
+* :zzz: **SKIP** Unfulfilled Conditions: font_metadata
+
+</details>
+<details>
+<summary>:zzz: <b>SKIP:</b> METADATA.pb font.name value should be same as the family name declared on the name table.</summary>
+
+* [com.google.fonts/check/095](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/095)
+* :zzz: **SKIP** Unfulfilled Conditions: font_metadata, style
+
+</details>
+<details>
+<summary>:zzz: <b>SKIP:</b> METADATA.pb font.full_name and font.post_script_name fields have equivalent values ?</summary>
+
+* [com.google.fonts/check/096](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/096)
+* :zzz: **SKIP** Unfulfilled Conditions: font_metadata
+
+</details>
+<details>
+<summary>:zzz: <b>SKIP:</b> METADATA.pb font.filename and font.post_script_name fields have equivalent values?</summary>
+
+* [com.google.fonts/check/097](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/097)
+* :zzz: **SKIP** Unfulfilled Conditions: font_metadata
+
+</details>
+<details>
+<summary>:zzz: <b>SKIP:</b> METADATA.pb font.name field contains font name in right format?</summary>
+
+* [com.google.fonts/check/098](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/098)
+* :zzz: **SKIP** Unfulfilled Conditions: style, font_metadata
+
+</details>
+<details>
+<summary>:zzz: <b>SKIP:</b> METADATA.pb font.full_name field contains font name in right format?</summary>
+
+* [com.google.fonts/check/099](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/099)
+* :zzz: **SKIP** Unfulfilled Conditions: style, font_metadata
+
+</details>
+<details>
+<summary>:zzz: <b>SKIP:</b> METADATA.pb font.filename field contains font name in right format?</summary>
+
+* [com.google.fonts/check/100](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/100)
+* :zzz: **SKIP** Unfulfilled Conditions: style, family_metadata
+
+</details>
+<details>
+<summary>:zzz: <b>SKIP:</b> METADATA.pb font.post_script_name field contains font name in right format?</summary>
+
+* [com.google.fonts/check/101](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/101)
+* :zzz: **SKIP** Unfulfilled Conditions: font_metadata
+
+</details>
+<details>
+<summary>:zzz: <b>SKIP:</b> Copyright notices match canonical pattern?</summary>
+
+* [com.google.fonts/check/102](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/102)
+* :zzz: **SKIP** Unfulfilled Conditions: font_metadata
+
+</details>
+<details>
+<summary>:zzz: <b>SKIP:</b> Copyright notice on METADATA.pb should not contain 'Reserved Font Name'.</summary>
+
+* [com.google.fonts/check/103](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/103)
+* :zzz: **SKIP** Unfulfilled Conditions: font_metadata
+
+</details>
+<details>
+<summary>:zzz: <b>SKIP:</b> METADATA.pb: Copyright notice shouldn't exceed 500 chars.</summary>
+
+* [com.google.fonts/check/104](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/104)
+* :zzz: **SKIP** Unfulfilled Conditions: font_metadata
+
+</details>
+<details>
+<summary>:zzz: <b>SKIP:</b> METADATA.pb: Filename is set canonically?</summary>
+
+* [com.google.fonts/check/105](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/105)
+* :zzz: **SKIP** Unfulfilled Conditions: font_metadata, canonical_filename
+
+</details>
+<details>
+<summary>:zzz: <b>SKIP:</b> METADATA.pb font.style "italic" matches font internals?</summary>
+
+* [com.google.fonts/check/106](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/106)
+* :zzz: **SKIP** Unfulfilled Conditions: font_metadata
+
+</details>
+<details>
+<summary>:zzz: <b>SKIP:</b> METADATA.pb font.style "normal" matches font internals?</summary>
+
+* [com.google.fonts/check/107](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/107)
+* :zzz: **SKIP** Unfulfilled Conditions: font_metadata
+
+</details>
+<details>
+<summary>:zzz: <b>SKIP:</b> METADATA.pb font.name and font.full_name fields match the values declared on the name table?</summary>
+
+* [com.google.fonts/check/108](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/108)
+* :zzz: **SKIP** Unfulfilled Conditions: font_metadata
+
+</details>
+<details>
+<summary>:zzz: <b>SKIP:</b> METADATA.pb: Check if fontname is not camel cased.</summary>
+
+* [com.google.fonts/check/109](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/109)
+* :zzz: **SKIP** Unfulfilled Conditions: font_metadata
+
+</details>
+<details>
+<summary>:zzz: <b>SKIP:</b> METADATA.pb: Check font name is the same as family name.</summary>
+
+* [com.google.fonts/check/110](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/110)
+* :zzz: **SKIP** Unfulfilled Conditions: family_metadata, font_metadata
+
+</details>
+<details>
+<summary>:zzz: <b>SKIP:</b> METADATA.pb: Check that font weight has a canonical value.</summary>
+
+* [com.google.fonts/check/111](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/111)
+* :zzz: **SKIP** Unfulfilled Conditions: font_metadata
+
+</details>
+<details>
+<summary>:zzz: <b>SKIP:</b> Checking OS/2 usWeightClass matches weight specified at METADATA.pb.</summary>
+
+* [com.google.fonts/check/112](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/112)
+* :zzz: **SKIP** Unfulfilled Conditions: font_metadata
+
+</details>
+<details>
+<summary>:zzz: <b>SKIP:</b> METADATA.pb weight matches postScriptName.</summary>
+
+* [com.google.fonts/check/113](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/113)
+* :zzz: **SKIP** Unfulfilled Conditions: font_metadata
+
+</details>
+<details>
+<summary>:zzz: <b>SKIP:</b> METADATA.pb: Font styles are named canonically?</summary>
+
+* [com.google.fonts/check/115](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/115)
+* :zzz: **SKIP** Unfulfilled Conditions: font_metadata
+
+</details>
+<details>
+<summary>:zzz: <b>SKIP:</b> Version number has increased since previous release on Google Fonts?</summary>
+
+* [com.google.fonts/check/117](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/117)
+* :zzz: **SKIP** Unfulfilled Conditions: api_gfonts_ttFont, github_gfonts_ttFont
+
+</details>
+<details>
+<summary>:zzz: <b>SKIP:</b> Glyphs are similiar to Google Fonts version?</summary>
+
+* [com.google.fonts/check/118](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/118)
+* :zzz: **SKIP** Unfulfilled Conditions: api_gfonts_ttFont
+
+</details>
+<details>
+<summary>:zzz: <b>SKIP:</b> TTFAutohint x-height increase value is same as in previous release on Google Fonts?</summary>
+
+* [com.google.fonts/check/119](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/119)
+* :zzz: **SKIP** Unfulfilled Conditions: api_gfonts_ttFont
 
 </details>
 <details>
@@ -545,6 +463,20 @@ This happens a lot when points are not extremes, which is usually bad. However, 
 
 * [com.google.fonts/check/153](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/153)
 * :zzz: **SKIP** Unfulfilled Conditions: not is_variable_font
+
+</details>
+<details>
+<summary>:zzz: <b>SKIP:</b> Check font has same encoded glyphs as version hosted on fonts.google.com</summary>
+
+* [com.google.fonts/check/154](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/154)
+* :zzz: **SKIP** Unfulfilled Conditions: api_gfonts_ttFont
+
+</details>
+<details>
+<summary>:zzz: <b>SKIP:</b> Copyright field for this font on METADATA.pb matches all copyright notice entries on the name table ?</summary>
+
+* [com.google.fonts/check/155](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/155)
+* :zzz: **SKIP** Unfulfilled Conditions: font_metadata
 
 </details>
 <details>
@@ -661,17 +593,10 @@ This happens a lot when points are not extremes, which is usually bad. However, 
 |  | fonts/signika/full_vf/Signika-VF.ttf |
 |:--- | ---:|
 | Dehinted Size | 200.0kb |
-| Hinted Size | 199.1kb |
-| Increase | -880 bytes |
-| Change   | -0.4 % |
+| Hinted Size | 223.9kb |
+| Increase | 23.9kb |
+| Change   | 11.9 % |
 
-
-</details>
-<details>
-<summary>:information_source: <b>INFO:</b> Font has old ttfautohint applied?</summary>
-
-* [com.google.fonts/check/056](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/056)
-* :information_source: **INFO** Could not detect which version of ttfautohint was used in this font. It is typically specified as a comment in the font version entries of the 'name' table. Such font version strings are currently: ['Version 2.000']
 
 </details>
 <details>
@@ -679,6 +604,22 @@ This happens a lot when points are not extremes, which is usually bad. However, 
 
 * [com.google.fonts/check/061](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/061)
 * :information_source: **INFO** EPAR table not present in font. To learn more see https://github.com/googlefonts/fontbakery/issues/818
+
+</details>
+<details>
+<summary>:information_source: <b>INFO:</b> Is 'gasp' table set to optimize rendering?</summary>
+
+* [com.google.fonts/check/062](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/062)
+* :information_source: **INFO** These are the ppm ranges declared on the gasp table:
+
+PPM <= 65535:
+	flag = 0x0F
+	- Use gridfitting
+	- Use grayscale rendering
+	- Use gridfitting with ClearType symmetric smoothing
+	- Use smoothing along multiple axes with ClearType®
+
+* :bread: **PASS** 'gasp' table is correctly set, with one gaspRange:value of 0xFFFF:0x0F.
 
 </details>
 <details>
@@ -693,7 +634,7 @@ Please visit http://namecheck.fontdata.com/?q=Signika for more info.
 <summary>:information_source: <b>INFO:</b> Check for font-v versioning </summary>
 
 * [com.google.fonts/check/166](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/166)
-* :information_source: **INFO** Version string is: "Version 2.000"
+* :information_source: **INFO** Version string is: "Version 1.500; ttfautohint (v1.8.1.43-b0c9) -l 8 -r 50 -G 200 -x 9 -D latn -f none -a qsq -X """
 The version string must ideally include a git commit hash and either a 'dev' or a 'release' suffix such as in the example below:
 "Version 1.3; git-0d08353-release"
 
@@ -702,8 +643,15 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 <summary>:information_source: <b>INFO:</b> Font contains all required tables?</summary>
 
 * [com.google.fonts/check/052](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/052)
-* :information_source: **INFO** This font contains the following optional tables [GSUB, GPOS, loca, DSIG]
+* :information_source: **INFO** This font contains the following optional tables [GPOS, fpgm, DSIG, loca, cvt , GSUB, gasp, prep]
 * :bread: **PASS** Font contains all required tables.
+
+</details>
+<details>
+<summary>:information_source: <b>INFO:</b> Check if OS/2 xAvgCharWidth is correct.</summary>
+
+* [com.google.fonts/check/034](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/034)
+* :information_source: **INFO** OS/2 xAvgCharWidth is 1025 but should be 1023 which corresponds to the weighted average of the widths of the latin lowercase glyphs in the font. These are similar values, which may be a symptom of the slightly different calculation of the xAvgCharWidth value in font editors. There's further discussion on this at https://github.com/googlefonts/fontbakery/issues/1622
 
 </details>
 <details>
@@ -728,10 +676,31 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 </details>
 <details>
+<summary>:bread: <b>PASS:</b> Checking OS/2 fsType.</summary>
+
+* [com.google.fonts/check/016](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/016)
+* :bread: **PASS** OS/2 fsType is properly set to zero.
+
+</details>
+<details>
 <summary>:bread: <b>PASS:</b> Substitute copyright, registered and trademark symbols in name table entries.</summary>
 
 * [com.google.fonts/check/019](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/019)
 * :bread: **PASS** No need to substitute copyright, registered and trademark symbols in name table entries of this font.
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> Check copyright namerecords match license file.</summary>
+
+* [com.google.fonts/check/029](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/029)
+* :bread: **PASS** Licensing entry on name table is correctly set.
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> "License URL matches License text on name table?</summary>
+
+* [com.google.fonts/check/030](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/030)
+* :bread: **PASS** Font has a valid license URL in NAME table.
 
 </details>
 <details>
@@ -746,6 +715,13 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 * [com.google.fonts/check/055](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/055)
 * :bread: **PASS** Version format in NAME table entries is correct.
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> Font has ttfautohint params? </summary>
+
+* [com.google.fonts/check/has_ttfautohint_params](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/has_ttfautohint_params)
+* :bread: **PASS** Font has ttfautohint params (-l 8 -r 50 -G 200 -x 9 -D latn -f none -a qsq -X "")
 
 </details>
 <details>
@@ -798,6 +774,27 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 </details>
 <details>
+<summary>:bread: <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/040](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/040)
+* :bread: **PASS** OS/2 usWinAscent & usWinDescent values look good!
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> Checking OS/2 Metrics match hhea Metrics.</summary>
+
+* [com.google.fonts/check/042](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/042)
+* :bread: **PASS** OS/2.sTypoAscender/Descender values match hhea.ascent/descent.
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> Font enables smart dropout control in "prep" table instructions?</summary>
+
+* [com.google.fonts/check/072](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/072)
+* :bread: **PASS** 'prep' table contains instructions enabling smart dropout control.
+
+</details>
+<details>
 <summary>:bread: <b>PASS:</b> There must not be VTT Talk sources in the font.</summary>
 
 * [com.google.fonts/check/vttclean](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/vttclean)
@@ -844,6 +841,13 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 * [com.google.fonts/check/036](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/036)
 * :bread: **PASS** ots-sanitize passed this file
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> Font contains .notdef as first glyph?</summary>
+
+* [com.google.fonts/check/046](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/046)
+* :bread: **PASS** Font contains the .notdef glyph as the first glyph, it does not have a Unicode value assigned and contains a drawing.
 
 </details>
 <details>
@@ -924,13 +928,6 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 </details>
 <details>
-<summary>:bread: <b>PASS:</b> Check if OS/2 xAvgCharWidth is correct.</summary>
-
-* [com.google.fonts/check/034](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/034)
-* :bread: **PASS** OS/2 xAvgCharWidth value is correct.
-
-</details>
-<details>
 <summary>:bread: <b>PASS:</b> Font has correct post table version (2 for TTF, 3 for OTF)?</summary>
 
 * [com.google.fonts/check/015](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/015)
@@ -977,6 +974,13 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 * [com.google.fonts/check/163](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/163)
 * :bread: **PASS** All name entries are good.
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> Checking Vertical Metric Linegaps.</summary>
+
+* [com.google.fonts/check/041](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/041)
+* :bread: **PASS** OS/2 sTypoLineGap and hhea lineGap are both 0.
 
 </details>
 <details>
@@ -1056,5 +1060,5 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 | :broken_heart: ERROR | :fire: FAIL | :warning: WARN | :zzz: SKIP | :information_source: INFO | :bread: PASS |
 |:-----:|:----:|:----:|:----:|:----:|:----:|
-| 40 | 7 | 7 | 21 | 7 | 61 |
-| 28% | 5% | 5% | 15% | 5% | 43% |
+| 0 | 2 | 5 | 59 | 8 | 69 |
+| 0% | 1% | 3% | 41% | 6% | 48% |
