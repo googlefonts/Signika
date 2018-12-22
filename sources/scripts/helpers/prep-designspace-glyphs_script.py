@@ -206,6 +206,40 @@ else:
     buildPath = fontPath.replace(".glyphs", "-" + buildreadySuffix + ".glyphs")
 
 font.save(buildPath)
-font.close()
 
 Glyphs.open(buildPath)
+
+# ============================================================================
+# simplify for split VF ======================================================
+
+# remove Negative instances
+
+instancesToDelete = []
+
+for index, instance in enumerate(font.instances):
+    if "Negative" in str(instance.customParameters["familyName"]):
+        instancesToDelete.append(index)
+
+for instanceIndex in instancesToDelete[::-1]:
+    del font.instances[instanceIndex]
+
+# remove Negative masters
+
+mastersToDelete = []
+
+for index, master in enumerate(font.masters):
+    if "Negative" in str(master.name):
+        mastersToDelete.append(index)
+
+for masterIndex in mastersToDelete[::-1]:
+    del font.masters[masterIndex]
+
+
+splitBuildPath = buildPath.replace(buildreadySuffix, buildreadySuffix+"-split")
+
+font.save(splitBuildPath)
+
+Glyphs.open(splitBuildPath)
+
+# close original
+font.close()

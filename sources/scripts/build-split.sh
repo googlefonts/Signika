@@ -6,7 +6,7 @@
 ##############################################################################
 ############################### set vars below ###############################
 
-glyphsSource="sources/sources-buildready/Signika-MM-simple_rectangle_ds-split.glyphs"
+glyphsSource="sources/sources-buildready/Signika-MM-prepped_designspace-split.glyphs"
 
 fontName="Signika-VF"
 
