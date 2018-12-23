@@ -30,9 +30,9 @@ https://github.com/protocolbuffers/protobuf/issues/4721
 
 * [com.google.fonts/check/102](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/102)
 * :fire: **FAIL** METADATA.pb: Copyright notices should match a pattern similar to: 'Copyright 2017 The Familyname Project Authors (git url)'
-But instead we have got: 'Copyright (c) 2011 by Anna Giedrys (info@ancymonic.com), with Reserved Font Names 'Signika'.'
+But instead we have got: 'Copyright (c) 2018 by Anna Giedrys (info@ancymonic.com), with Reserved Font Names 'Signika'.'
 * :fire: **FAIL** Name table entry: Copyright notices should match a pattern similar to: 'Copyright 2017 The Familyname Project Authors (git url)'
-But instead we have got: 'Copyright (c) 2011 by Anna Giedrys. All rights reserved. Reserved Font Name: Signika.'
+But instead we have got: 'Copyright (c) 2018 by Anna Giedrys. All rights reserved. Reserved Font Name: Signika.'
 </details>
 
 - [ ] fix as much as possible, without removing RFN

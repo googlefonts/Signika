@@ -5,12 +5,88 @@ Fontbakery version: 0.6.6.dev5+g6a494f59.d20181218
 <details>
 <summary><b>[25] Family checks</b></summary>
 <details>
-<summary>:information_source: <b>INFO:</b> Do we have the latest version of FontBakery installed?</summary>
+<summary>:broken_heart: <b>ERROR:</b> Do we have the latest version of FontBakery installed?</summary>
 
 * [com.google.fonts/check/fontbakery_version](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/fontbakery_version)
-* :information_source: **INFO** fontbakery (0.6.6)  - Well designed Font QA tool, written in Python 3
-  INSTALLED: 0.6.6.dev5+g6a494f59.d20181218
-  LATEST:    0.6.6
+* :broken_heart: **ERROR** Running 'pip search fontbakery' returned an error code. Output follows :
+
+Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.VerifiedHTTPSConnection object at 0x107bb1048>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',)': /pypi
+Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.VerifiedHTTPSConnection object at 0x107bb1ac8>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',)': /pypi
+Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.VerifiedHTTPSConnection object at 0x107bb1b00>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',)': /pypi
+Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.VerifiedHTTPSConnection object at 0x107bd13c8>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',)': /pypi
+Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.VerifiedHTTPSConnection object at 0x107bd1160>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',)': /pypi
+Exception:
+Traceback (most recent call last):
+  File "/Users/stephennixon/Environments/gfonts3/lib/python3.6/site-packages/pip/_vendor/urllib3/connection.py", line 171, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "/Users/stephennixon/Environments/gfonts3/lib/python3.6/site-packages/pip/_vendor/urllib3/util/connection.py", line 56, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/socket.py", line 745, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/stephennixon/Environments/gfonts3/lib/python3.6/site-packages/pip/_vendor/urllib3/connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "/Users/stephennixon/Environments/gfonts3/lib/python3.6/site-packages/pip/_vendor/urllib3/connectionpool.py", line 343, in _make_request
+    self._validate_conn(conn)
+  File "/Users/stephennixon/Environments/gfonts3/lib/python3.6/site-packages/pip/_vendor/urllib3/connectionpool.py", line 849, in _validate_conn
+    conn.connect()
+  File "/Users/stephennixon/Environments/gfonts3/lib/python3.6/site-packages/pip/_vendor/urllib3/connection.py", line 314, in connect
+    conn = self._new_conn()
+  File "/Users/stephennixon/Environments/gfonts3/lib/python3.6/site-packages/pip/_vendor/urllib3/connection.py", line 180, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+pip._vendor.urllib3.exceptions.NewConnectionError: <pip._vendor.urllib3.connection.VerifiedHTTPSConnection object at 0x107bd1320>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/stephennixon/Environments/gfonts3/lib/python3.6/site-packages/pip/_vendor/requests/adapters.py", line 445, in send
+    timeout=timeout
+  File "/Users/stephennixon/Environments/gfonts3/lib/python3.6/site-packages/pip/_vendor/urllib3/connectionpool.py", line 667, in urlopen
+    **response_kw)
+  File "/Users/stephennixon/Environments/gfonts3/lib/python3.6/site-packages/pip/_vendor/urllib3/connectionpool.py", line 667, in urlopen
+    **response_kw)
+  File "/Users/stephennixon/Environments/gfonts3/lib/python3.6/site-packages/pip/_vendor/urllib3/connectionpool.py", line 667, in urlopen
+    **response_kw)
+  [Previous line repeated 1 more times]
+  File "/Users/stephennixon/Environments/gfonts3/lib/python3.6/site-packages/pip/_vendor/urllib3/connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/Users/stephennixon/Environments/gfonts3/lib/python3.6/site-packages/pip/_vendor/urllib3/util/retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+pip._vendor.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='pypi.org', port=443): Max retries exceeded with url: /pypi (Caused by NewConnectionError('<pip._vendor.urllib3.connection.VerifiedHTTPSConnection object at 0x107bd1320>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/stephennixon/Environments/gfonts3/lib/python3.6/site-packages/pip/_internal/cli/base_command.py", line 143, in main
+    status = self.run(options, args)
+  File "/Users/stephennixon/Environments/gfonts3/lib/python3.6/site-packages/pip/_internal/commands/search.py", line 48, in run
+    pypi_hits = self.search(query, options)
+  File "/Users/stephennixon/Environments/gfonts3/lib/python3.6/site-packages/pip/_internal/commands/search.py", line 65, in search
+    hits = pypi.search({'name': query, 'summary': query}, 'or')
+  File "/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/xmlrpc/client.py", line 1112, in __call__
+    return self.__send(self.__name, args)
+  File "/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/xmlrpc/client.py", line 1452, in __request
+    verbose=self.__verbose
+  File "/Users/stephennixon/Environments/gfonts3/lib/python3.6/site-packages/pip/_internal/download.py", line 788, in request
+    headers=headers, stream=True)
+  File "/Users/stephennixon/Environments/gfonts3/lib/python3.6/site-packages/pip/_vendor/requests/sessions.py", line 559, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "/Users/stephennixon/Environments/gfonts3/lib/python3.6/site-packages/pip/_internal/download.py", line 396, in request
+    return super(PipSession, self).request(method, url, *args, **kwargs)
+  File "/Users/stephennixon/Environments/gfonts3/lib/python3.6/site-packages/pip/_vendor/requests/sessions.py", line 512, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/stephennixon/Environments/gfonts3/lib/python3.6/site-packages/pip/_vendor/requests/sessions.py", line 622, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/stephennixon/Environments/gfonts3/lib/python3.6/site-packages/pip/_vendor/cachecontrol/adapter.py", line 53, in send
+    resp = super(CacheControlAdapter, self).send(request, **kw)
+  File "/Users/stephennixon/Environments/gfonts3/lib/python3.6/site-packages/pip/_vendor/requests/adapters.py", line 513, in send
+    raise ConnectionError(e, request=request)
+pip._vendor.requests.exceptions.ConnectionError: HTTPSConnectionPool(host='pypi.org', port=443): Max retries exceeded with url: /pypi (Caused by NewConnectionError('<pip._vendor.urllib3.connection.VerifiedHTTPSConnection object at 0x107bd1320>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+
 
 * :bread: **PASS** Font Bakery is up-to-date
 
@@ -188,6 +264,15 @@ Fontbakery version: 0.6.6.dev5+g6a494f59.d20181218
 <details>
 <summary><b>[118] Signika-Light.ttf</b></summary>
 <details>
+<summary>:broken_heart: <b>ERROR:</b> Familyname must be unique according to namecheck.fontdata.com </summary>
+
+* [com.google.fonts/check/165](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/165)
+* :broken_heart: **ERROR** Failed to access: 'http://namecheck.fontdata.com/?q=Signika'.
+Please report this issue at:
+https://github.com/googlefonts/fontbakery/issues
+
+</details>
+<details>
 <summary>:fire: <b>FAIL:</b> Checks METADATA.pb font.name field matches family name declared on the name table.</summary>
 
 * [com.google.fonts/check/092](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/092)
@@ -199,7 +284,7 @@ Fontbakery version: 0.6.6.dev5+g6a494f59.d20181218
 
 * [com.google.fonts/check/102](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/102)
 * :fire: **FAIL** METADATA.pb: Copyright notices should match a pattern similar to: 'Copyright 2017 The Familyname Project Authors (git url)'
-But instead we have got: 'Copyright (c) 2011 by Anna Giedrys (info@ancymonic.com), with Reserved Font Names 'Signika'.'
+But instead we have got: 'Copyright (c) 2018 by Anna Giedrys (info@ancymonic.com), with Reserved Font Names 'Signika'.'
 * :fire: **FAIL** Name table entry: Copyright notices should match a pattern similar to: 'Copyright 2017 The Familyname Project Authors (git url)'
 But instead we have got: 'Copyright 2018 by Anna Giedrys. All rights reserved. Reserved Font Name: Signika.'
 
@@ -222,7 +307,7 @@ But instead we have got: 'Copyright 2018 by Anna Giedrys. All rights reserved. R
 <summary>:fire: <b>FAIL:</b> Copyright field for this font on METADATA.pb matches all copyright notice entries on the name table ?</summary>
 
 * [com.google.fonts/check/155](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/155)
-* :fire: **FAIL** Copyright field for this font on METADATA.pb ('Copyright (c) 2011 by Anna Giedrys (info@ancymonic.com), with Reserved Font Names 'Signika'.') differs from a copyright notice entry on the name table: 'Copyright 2018 by Anna Giedrys. All rights reserved. Reserved Font Name: Signika.'
+* :fire: **FAIL** Copyright field for this font on METADATA.pb ('Copyright (c) 2018 by Anna Giedrys (info@ancymonic.com), with Reserved Font Names 'Signika'.') differs from a copyright notice entry on the name table: 'Copyright 2018 by Anna Giedrys. All rights reserved. Reserved Font Name: Signika.'
 
 </details>
 <details>
@@ -236,7 +321,7 @@ But instead we have got: 'Copyright 2018 by Anna Giedrys. All rights reserved. R
 <summary>:warning: <b>WARN:</b> Copyright notice on METADATA.pb should not contain 'Reserved Font Name'.</summary>
 
 * [com.google.fonts/check/103](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/103)
-* :warning: **WARN** METADATA.pb: copyright field ("Copyright (c) 2011 by Anna Giedrys (info@ancymonic.com), with Reserved Font Names 'Signika'.") contains "Reserved Font Name". This is an error except in a few specific rare cases.
+* :warning: **WARN** METADATA.pb: copyright field ("Copyright (c) 2018 by Anna Giedrys (info@ancymonic.com), with Reserved Font Names 'Signika'.") contains "Reserved Font Name". This is an error except in a few specific rare cases.
 
 </details>
 <details>
@@ -460,14 +545,6 @@ PPM <= 65535:
 
 </details>
 <details>
-<summary>:information_source: <b>INFO:</b> Familyname must be unique according to namecheck.fontdata.com </summary>
-
-* [com.google.fonts/check/165](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/165)
-* :information_source: **INFO** The family name 'Signika' seem to be already in use.
-Please visit http://namecheck.fontdata.com/?q=Signika for more info.
-
-</details>
-<details>
 <summary>:information_source: <b>INFO:</b> Check for font-v versioning </summary>
 
 * [com.google.fonts/check/166](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/166)
@@ -480,7 +557,7 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 <summary>:information_source: <b>INFO:</b> Font contains all required tables?</summary>
 
 * [com.google.fonts/check/052](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/052)
-* :information_source: **INFO** This font contains the following optional tables [cvt , loca, gasp, GPOS, prep, fpgm, GSUB, DSIG]
+* :information_source: **INFO** This font contains the following optional tables [DSIG, GPOS, cvt , prep, loca, gasp, fpgm, GSUB]
 * :bread: **PASS** Font contains all required tables.
 
 </details>
@@ -1068,5 +1145,5 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 | :broken_heart: ERROR | :fire: FAIL | :warning: WARN | :zzz: SKIP | :information_source: INFO | :bread: PASS |
 |:-----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 5 | 8 | 17 | 8 | 105 |
-| 0% | 3% | 6% | 12% | 6% | 73% |
+| 2 | 5 | 8 | 17 | 6 | 105 |
+| 1% | 3% | 6% | 12% | 4% | 73% |

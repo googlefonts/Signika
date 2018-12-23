@@ -37,19 +37,19 @@ You can then build sources by running shell scripts in `sources/scripts/`.
 Build the full variable font (Weight + "Negative" axes) with:
 
 ```
-sources/scripts/build-full.sh
+sources/scripts/build -f
 ```
 
 Build the split variable font with (just Weight axis for "normal" version):
 
 ```
-sources/scripts/build-split.sh
+sources/scripts/build -n
 ```
 
 Build all static instances with:
 
 ```
-sources/scripts/build-statics.sh
+sources/scripts/build -s
 ```
 
 # Build steps after edits to primary source

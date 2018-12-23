@@ -5,6 +5,20 @@ Fontbakery version: 0.6.6.dev5+g6a494f59.d20181218
 <details>
 <summary><b>[25] Family checks</b></summary>
 <details>
+<summary>:broken_heart: <b>ERROR:</b> METADATA.pb: Fontfamily is listed on Google Fonts API?</summary>
+
+* [com.google.fonts/check/081](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/081)
+* :broken_heart: **ERROR** The check <FontBakeryCheck:com.google.fonts/check/081> had an error: FailedConditionError: The condition <FontBakeryCondition:listed_on_gfonts_api> had an error: ConnectionError: HTTPConnectionPool(host='fonts.googleapis.com', port=80): Max retries exceeded with url: /css?family=Signika (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10477e2b0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+
+</details>
+<details>
+<summary>:fire: <b>FAIL:</b> Does DESCRIPTION file contain broken links?</summary>
+
+* [com.google.fonts/check/003](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/003)
+* :fire: **FAIL** The following links are broken in the DESCRIPTION file: 'https://fonts.google.com/specimen/Signika+Negative'
+
+</details>
+<details>
 <summary>:information_source: <b>INFO:</b> Do we have the latest version of FontBakery installed?</summary>
 
 * [com.google.fonts/check/fontbakery_version](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/fontbakery_version)
@@ -13,13 +27,6 @@ Fontbakery version: 0.6.6.dev5+g6a494f59.d20181218
   LATEST:    0.6.6
 
 * :bread: **PASS** Font Bakery is up-to-date
-
-</details>
-<details>
-<summary>:bread: <b>PASS:</b> Does DESCRIPTION file contain broken links?</summary>
-
-* [com.google.fonts/check/003](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/003)
-* :bread: **PASS** All links in the DESCRIPTION file look good!
 
 </details>
 <details>
@@ -62,13 +69,6 @@ Fontbakery version: 0.6.6.dev5+g6a494f59.d20181218
 
 * [com.google.fonts/check/028](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/028)
 * :bread: **PASS** Found license at '/Users/stephennixon/type-repos/google-font-repos/signika-for-google/OFL.txt'
-
-</details>
-<details>
-<summary>:bread: <b>PASS:</b> METADATA.pb: Fontfamily is listed on Google Fonts API?</summary>
-
-* [com.google.fonts/check/081](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/081)
-* :bread: **PASS** Font is properly listed via Google Fonts API.
 
 </details>
 <details>
@@ -192,7 +192,7 @@ Fontbakery version: 0.6.6.dev5+g6a494f59.d20181218
 
 * [com.google.fonts/check/102](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/102)
 * :fire: **FAIL** METADATA.pb: Copyright notices should match a pattern similar to: 'Copyright 2017 The Familyname Project Authors (git url)'
-But instead we have got: 'Copyright (c) 2011 by Anna Giedrys (info@ancymonic.com), with Reserved Font Names 'Signika'.'
+But instead we have got: 'Copyright (c) 2018 by Anna Giedrys (info@ancymonic.com), with Reserved Font Names 'Signika'.'
 * :fire: **FAIL** Name table entry: Copyright notices should match a pattern similar to: 'Copyright 2017 The Familyname Project Authors (git url)'
 But instead we have got: 'Copyright 2018 by Anna Giedrys. All rights reserved. Reserved Font Name: Signika.'
 
@@ -216,7 +216,7 @@ But instead we have got: 'Copyright 2018 by Anna Giedrys. All rights reserved. R
 <summary>:fire: <b>FAIL:</b> Copyright field for this font on METADATA.pb matches all copyright notice entries on the name table ?</summary>
 
 * [com.google.fonts/check/155](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/155)
-* :fire: **FAIL** Copyright field for this font on METADATA.pb ('Copyright (c) 2011 by Anna Giedrys (info@ancymonic.com), with Reserved Font Names 'Signika'.') differs from a copyright notice entry on the name table: 'Copyright 2018 by Anna Giedrys. All rights reserved. Reserved Font Name: Signika.'
+* :fire: **FAIL** Copyright field for this font on METADATA.pb ('Copyright (c) 2018 by Anna Giedrys (info@ancymonic.com), with Reserved Font Names 'Signika'.') differs from a copyright notice entry on the name table: 'Copyright 2018 by Anna Giedrys. All rights reserved. Reserved Font Name: Signika.'
 
 </details>
 <details>
@@ -230,14 +230,14 @@ But instead we have got: 'Copyright 2018 by Anna Giedrys. All rights reserved. R
 <summary>:warning: <b>WARN:</b> Copyright notice on METADATA.pb should not contain 'Reserved Font Name'.</summary>
 
 * [com.google.fonts/check/103](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/103)
-* :warning: **WARN** METADATA.pb: copyright field ("Copyright (c) 2011 by Anna Giedrys (info@ancymonic.com), with Reserved Font Names 'Signika'.") contains "Reserved Font Name". This is an error except in a few specific rare cases.
+* :warning: **WARN** METADATA.pb: copyright field ("Copyright (c) 2018 by Anna Giedrys (info@ancymonic.com), with Reserved Font Names 'Signika'.") contains "Reserved Font Name". This is an error except in a few specific rare cases.
 
 </details>
 <details>
 <summary>:warning: <b>WARN:</b> Glyphs are similiar to Google Fonts version?</summary>
 
 * [com.google.fonts/check/118](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/118)
-* :warning: **WARN** Following glyphs differ greatly from Google Fonts version: [t, zdotaccent, ampersand, Iacute, oacute.smcp, uacute, yen, racute, e, kgreenlandic, dollar, edieresis.smcp, uacute.smcp, sacute, o.smcp, igrave.smcp, question, ecircumflex, six, Hbar, Dcaron, ucircumflex, ncaron, udieresis, O, egrave, ij, agrave, i, hbar, copyright, ecircumflex.smcp, P, onequarter, eacute.smcp, h.smcp, parenleft, ordfeminine, exclam, ecaron.smcp, N, kgreenlandic.smcp, oacute, rcaron.smcp, at, Eacute, m.smcp, W, itilde.smcp, ocircumflex, Y, p, d, ydieresis, eogonek, Zcaron, m, guillemotleft, jcircumflex, Nacute, dcaron.smcp, z.smcp, AE, Otilde, Yacute, egrave.smcp, K, U, guillemotright, J, ugrave.smcp, racute.smcp, uring.smcp, ograve.smcp, aogonek.smcp, Sacute, zacute, paragraph, a.smcp, backslash, Ldot, atilde, bar, w.smcp, ncaron.smcp, R, idieresis, IJ, Thorn, Zacute, w, aogonek, A, five, Ntilde, Tcaron, equal, oslash, c, F, Udieresis, Icircumflex, Aogonek, Oslash, ucircumflex.smcp, seven, S, s, exclamdown, eight, Eth, yacute, Egrave, g, ordmasculine, yacute.smcp, udieresis.smcp, ntilde, p.smcp, eacute, Scaron, zcaron, icircumflex, three, otilde.smcp, odieresis.smcp, Ccedilla, H, h, uring, plusminus, B, lslash.smcp, scaron.smcp, section, Eogonek, nine, q.smcp, germandbls, o, iacute.smcp, lslash, Ecircumflex, bracketleft, four, Racute, agrave.smcp, ocircumflex.smcp, itilde, eth.smcp, cacute, sacute.smcp, atilde.smcp, r, scaron, E, Q, Euro, x.smcp, Ucircumflex, threequarters, G, numbersign, Igrave, uni0237, sterling, ccedilla, Ocircumflex, Ugrave, X, v, questiondown, rcaron, oe, c.smcp, onehalf, g.smcp, e.smcp, thorn.smcp, fraction, k.smcp, x, Oacute, I, y.smcp, braceright, icircumflex.smcp, l.smcp, ae, t.smcp, z, aacute.smcp, acircumflex, Lslash, b.smcp, tcaron, currency, n.smcp, zdotaccent.smcp, jcircumflex.smcp, thorn, one, adieresis.smcp, eogonek.smcp, zacute.smcp, Aacute, k, edieresis, s.smcp, nacute, idieresis.smcp, ograve, Zdotaccent, zero, y, Agrave, v.smcp, otilde, bracketright, b, oslash.smcp, aring.smcp, ntilde.smcp, hbar.smcp, igrave, nacute.smcp, ae.smcp, Acircumflex, V, Ydieresis, q, oe.smcp, Atilde, Cacute, percent, L, Edieresis, l, ecaron, M, tcaron.smcp, slash, Rcaron, u, cent, Itilde, Aring, brokenbar, ydieresis.smcp, zcaron.smcp, aring, ugrave, Adieresis, aacute, Ncaron, Jcircumflex, .notdef, ldot, n, eth, Z, j.smcp, f, f.smcp, braceleft, registered, Idieresis, ldot.smcp, C, Uacute, ij.smcp, two, Ecaron, ccedilla.smcp, Odieresis, acircumflex.smcp, iacute, j, Uring, Ograve, ccaron, r.smcp, a, germandbls.smcp, D, d.smcp, cacute.smcp, OE, u.smcp, parenright, T, Ccaron, dcaron, adieresis, ccaron.smcp, odieresis]
+* :warning: **WARN** Following glyphs differ greatly from Google Fonts version: [J, cacute, I, ecircumflex.smcp, agrave.smcp, parenright, Thorn, p, L, rcaron.smcp, Agrave, Eth, H, odieresis, j.smcp, Acircumflex, bracketright, exclamdown, o.smcp, X, scaron.smcp, paragraph, U, acircumflex, Idieresis, e.smcp, adieresis, dcaron.smcp, equal, aacute, ldot, a.smcp, dcaron, onequarter, Ecaron, zacute, C, o, w, Yacute, eogonek.smcp, sterling, two, v, Uacute, one, r.smcp, backslash, ordmasculine, Zdotaccent, udieresis, zdotaccent.smcp, ae.smcp, aogonek, igrave.smcp, zcaron.smcp, ocircumflex, ncaron, brokenbar, AE, Z, zdotaccent, ntilde.smcp, ampersand, Ydieresis, icircumflex.smcp, ydieresis, G, Rcaron, Aogonek, r, germandbls, h, thorn, Adieresis, B, icircumflex, oe, aring, c.smcp, ij.smcp, z.smcp, ucircumflex.smcp, uring.smcp, section, otilde, odieresis.smcp, sacute.smcp, Ograve, Ecircumflex, igrave, Aacute, Itilde, b.smcp, edieresis, bracketleft, Igrave, Icircumflex, questiondown, Ccaron, Ntilde, question, oslash, A, f, scaron, b, k, Q, zero, F, eacute, lslash, ucircumflex, tcaron, Atilde, p.smcp, Sacute, ugrave.smcp, Aring, i, jcircumflex, guillemotleft, registered, D, six, guillemotright, Uring, Ccedilla, s, l.smcp, Ncaron, IJ, parenleft, ocircumflex.smcp, j, hbar, itilde, .notdef, Oslash, Cacute, aogonek.smcp, egrave, T, uni0237, u, rcaron, y, lslash.smcp, ccaron, braceleft, k.smcp, Otilde, kgreenlandic.smcp, zcaron, eth.smcp, ccaron.smcp, yacute, f.smcp, V, w.smcp, currency, plusminus, racute, oacute.smcp, M, dollar, three, d, v.smcp, eight, ccedilla, idieresis.smcp, fraction, Udieresis, E, edieresis.smcp, e, Hbar, n.smcp, m, thorn.smcp, exclam, four, Zcaron, Euro, udieresis.smcp, uacute.smcp, numbersign, nacute.smcp, otilde.smcp, z, h.smcp, agrave, cacute.smcp, R, W, Lslash, racute.smcp, nine, eogonek, ydieresis.smcp, Ldot, Zacute, sacute, ecaron, ecaron.smcp, percent, hbar.smcp, ntilde, adieresis.smcp, Ugrave, tcaron.smcp, d.smcp, ordfeminine, ccedilla.smcp, eth, g, bar, a, itilde.smcp, Oacute, n, Ocircumflex, cent, Odieresis, ae, oacute, atilde, seven, Y, x, jcircumflex.smcp, ograve.smcp, Eacute, ecircumflex, y.smcp, threequarters, x.smcp, ldot.smcp, Ucircumflex, t.smcp, ugrave, onehalf, egrave.smcp, K, ij, N, yen, OE, t, slash, iacute.smcp, s.smcp, yacute.smcp, five, iacute, Tcaron, atilde.smcp, copyright, idieresis, Jcircumflex, P, aring.smcp, nacute, uacute, O, Egrave, Iacute, eacute.smcp, acircumflex.smcp, oslash.smcp, c, Nacute, Eogonek, m.smcp, S, Dcaron, ograve, oe.smcp, kgreenlandic, at, uring, g.smcp, zacute.smcp, Racute, aacute.smcp, braceright, Scaron, germandbls.smcp, q.smcp, Edieresis, u.smcp, l, q, ncaron.smcp]
 
 </details>
 <details>
@@ -474,7 +474,7 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 <summary>:information_source: <b>INFO:</b> Font contains all required tables?</summary>
 
 * [com.google.fonts/check/052](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/052)
-* :information_source: **INFO** This font contains the following optional tables [DSIG, prep, GSUB, fpgm, loca, cvt , GPOS, gasp]
+* :information_source: **INFO** This font contains the following optional tables [DSIG, prep, gasp, loca, GSUB, fpgm, cvt , GPOS]
 * :bread: **PASS** Font contains all required tables.
 
 </details>
@@ -1069,5 +1069,5 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 | :broken_heart: ERROR | :fire: FAIL | :warning: WARN | :zzz: SKIP | :information_source: INFO | :bread: PASS |
 |:-----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 4 | 8 | 17 | 8 | 106 |
-| 0% | 3% | 6% | 12% | 6% | 74% |
+| 1 | 5 | 8 | 17 | 8 | 104 |
+| 1% | 3% | 6% | 12% | 6% | 73% |

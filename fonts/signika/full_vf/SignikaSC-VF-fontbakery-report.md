@@ -5,12 +5,10 @@ Fontbakery version: 0.6.6.dev5+g6a494f59.d20181218
 <details>
 <summary><b>[25] Family checks</b></summary>
 <details>
-<summary>:fire: <b>FAIL:</b> Check METADATA.pb parse correctly. </summary>
+<summary>:fire: <b>FAIL:</b> METADATA.pb: check if fonts field only contains unique style:weight pairs.</summary>
 
-* [com.google.fonts/check/metadata/parses](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/metadata/parses)
-* :fire: **FAIL** Family metadata at fonts/signika/full_vf failed to parse.
-TRACEBACK:
-10:3 : Message type "google.fonts.FontProto" has no field named "font-variation-settings".
+* [com.google.fonts/check/084](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/084)
+* :fire: **FAIL** Found duplicated style:weight pair in METADATA.pb fonts field.
 
 </details>
 <details>
@@ -53,10 +51,87 @@ TRACEBACK:
 
 </details>
 <details>
+<summary>:bread: <b>PASS:</b> Check METADATA.pb parse correctly. </summary>
+
+* [com.google.fonts/check/metadata/parses](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/metadata/parses)
+* :bread: **PASS** METADATA.pb parsed successfuly.
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> Font designer field in METADATA.pb must not be 'unknown'.</summary>
+
+* [com.google.fonts/check/007](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/007)
+* :bread: **PASS** Font designer field is not 'unknown'.
+
+</details>
+<details>
 <summary>:bread: <b>PASS:</b> Check font has a license.</summary>
 
 * [com.google.fonts/check/028](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/028)
 * :bread: **PASS** Found license at '/Users/stephennixon/type-repos/google-font-repos/signika-for-google/OFL.txt'
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> METADATA.pb: Fontfamily is listed on Google Fonts API?</summary>
+
+* [com.google.fonts/check/081](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/081)
+* :bread: **PASS** Font is properly listed via Google Fonts API.
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> METADATA.pb: check if fonts field only has unique "full_name" values.</summary>
+
+* [com.google.fonts/check/083](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/083)
+* :bread: **PASS** METADATA.pb "fonts" field only has unique "full_name" values.
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> METADATA.pb license is "APACHE2", "UFL" or "OFL"?</summary>
+
+* [com.google.fonts/check/085](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/085)
+* :bread: **PASS** Font license is declared in METADATA.pb as "OFL"
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> METADATA.pb should contain at least "menu" and "latin" subsets.</summary>
+
+* [com.google.fonts/check/086](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/086)
+* :bread: **PASS** METADATA.pb contains "menu" and "latin" subsets.
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> METADATA.pb subsets should be alphabetically ordered.</summary>
+
+* [com.google.fonts/check/087](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/087)
+* :bread: **PASS** METADATA.pb subsets are sorted in alphabetical order.
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> METADATA.pb: Copyright notice is the same in all fonts?</summary>
+
+* [com.google.fonts/check/088](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/088)
+* :bread: **PASS** Copyright is consistent across family
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> Check that METADATA.pb family values are all the same.</summary>
+
+* [com.google.fonts/check/089](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/089)
+* :bread: **PASS** METADATA.pb: Family name is the same in all metadata "fonts" items.
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> METADATA.pb: According Google Fonts standards, families should have a Regular style.</summary>
+
+* [com.google.fonts/check/090](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/090)
+* :bread: **PASS** Family has a Regular style.
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> METADATA.pb: Regular should be 400.</summary>
+
+* [com.google.fonts/check/091](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/091)
+* :bread: **PASS** Regular has weight = 400.
 
 </details>
 <details>
@@ -106,83 +181,6 @@ TRACEBACK:
 
 * [com.google.fonts/check/008](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/008)
 * :bread: **PASS** Fonts have consistent underline thickness.
-
-</details>
-<details>
-<summary>:zzz: <b>SKIP:</b> Font designer field in METADATA.pb must not be 'unknown'.</summary>
-
-* [com.google.fonts/check/007](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/007)
-* :zzz: **SKIP** Unfulfilled Conditions: family_metadata
-
-</details>
-<details>
-<summary>:zzz: <b>SKIP:</b> METADATA.pb: Fontfamily is listed on Google Fonts API?</summary>
-
-* [com.google.fonts/check/081](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/081)
-* :zzz: **SKIP** Unfulfilled Conditions: family_metadata
-
-</details>
-<details>
-<summary>:zzz: <b>SKIP:</b> METADATA.pb: check if fonts field only has unique "full_name" values.</summary>
-
-* [com.google.fonts/check/083](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/083)
-* :zzz: **SKIP** Unfulfilled Conditions: family_metadata
-
-</details>
-<details>
-<summary>:zzz: <b>SKIP:</b> METADATA.pb: check if fonts field only contains unique style:weight pairs.</summary>
-
-* [com.google.fonts/check/084](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/084)
-* :zzz: **SKIP** Unfulfilled Conditions: family_metadata
-
-</details>
-<details>
-<summary>:zzz: <b>SKIP:</b> METADATA.pb license is "APACHE2", "UFL" or "OFL"?</summary>
-
-* [com.google.fonts/check/085](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/085)
-* :zzz: **SKIP** Unfulfilled Conditions: family_metadata
-
-</details>
-<details>
-<summary>:zzz: <b>SKIP:</b> METADATA.pb should contain at least "menu" and "latin" subsets.</summary>
-
-* [com.google.fonts/check/086](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/086)
-* :zzz: **SKIP** Unfulfilled Conditions: family_metadata
-
-</details>
-<details>
-<summary>:zzz: <b>SKIP:</b> METADATA.pb subsets should be alphabetically ordered.</summary>
-
-* [com.google.fonts/check/087](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/087)
-* :zzz: **SKIP** Unfulfilled Conditions: family_metadata
-
-</details>
-<details>
-<summary>:zzz: <b>SKIP:</b> METADATA.pb: Copyright notice is the same in all fonts?</summary>
-
-* [com.google.fonts/check/088](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/088)
-* :zzz: **SKIP** Unfulfilled Conditions: family_metadata
-
-</details>
-<details>
-<summary>:zzz: <b>SKIP:</b> Check that METADATA.pb family values are all the same.</summary>
-
-* [com.google.fonts/check/089](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/089)
-* :zzz: **SKIP** Unfulfilled Conditions: family_metadata
-
-</details>
-<details>
-<summary>:zzz: <b>SKIP:</b> METADATA.pb: According Google Fonts standards, families should have a Regular style.</summary>
-
-* [com.google.fonts/check/090](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/090)
-* :zzz: **SKIP** Unfulfilled Conditions: family_metadata
-
-</details>
-<details>
-<summary>:zzz: <b>SKIP:</b> METADATA.pb: Regular should be 400.</summary>
-
-* [com.google.fonts/check/091](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/091)
-* :zzz: **SKIP** Unfulfilled Conditions: family_metadata, has_regular_style
 
 </details>
 <br>
@@ -315,7 +313,7 @@ This happens a lot when points are not extremes, which is usually bad. However, 
 <summary>:zzz: <b>SKIP:</b> METADATA.pb font.filename field contains font name in right format?</summary>
 
 * [com.google.fonts/check/100](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/100)
-* :zzz: **SKIP** Unfulfilled Conditions: style, family_metadata
+* :zzz: **SKIP** Unfulfilled Conditions: style
 
 </details>
 <details>
@@ -385,7 +383,7 @@ This happens a lot when points are not extremes, which is usually bad. However, 
 <summary>:zzz: <b>SKIP:</b> METADATA.pb: Check font name is the same as family name.</summary>
 
 * [com.google.fonts/check/110](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/110)
-* :zzz: **SKIP** Unfulfilled Conditions: family_metadata, font_metadata
+* :zzz: **SKIP** Unfulfilled Conditions: font_metadata
 
 </details>
 <details>
@@ -670,7 +668,7 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 <summary>:information_source: <b>INFO:</b> Font contains all required tables?</summary>
 
 * [com.google.fonts/check/052](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/052)
-* :information_source: **INFO** This font contains the following optional tables [loca, GPOS, DSIG, GSUB, prep, cvt , fpgm, gasp]
+* :information_source: **INFO** This font contains the following optional tables [prep, fpgm, gasp, GSUB, DSIG, loca, cvt , GPOS]
 * :bread: **PASS** Font contains all required tables.
 
 </details>
@@ -1045,5 +1043,5 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 | :broken_heart: ERROR | :fire: FAIL | :warning: WARN | :zzz: SKIP | :information_source: INFO | :bread: PASS |
 |:-----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 4 | 5 | 64 | 6 | 64 |
-| 0% | 3% | 3% | 45% | 4% | 45% |
+| 0 | 4 | 5 | 53 | 6 | 75 |
+| 0% | 3% | 3% | 37% | 4% | 52% |

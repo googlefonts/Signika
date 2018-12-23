@@ -1,13 +1,25 @@
-# ### based on build script for Encode-Sans-VF, by Mike LaGuttuta
-# ### requires a python 2 environment, for now
 
+while [ ! $# -eq 0 ]
+    do
+    case "$1" in
+        --full | -f)
+            glyphsSource="sources/sources-buildready/Signika-MM-prepped_designspace.glyphs"
+            finalFontLocation="fonts/signika/full_vf"
+        ;;
+        --normal | -n)
+            glyphsSource="sources/sources-buildready/Signika-MM-prepped_designspace-split.glyphs"
+            finalFontLocation="fonts/signika/split_vf"
+        ;;
+    esac
+    shift
+done
 
 
 ##############################################################################
 ############################### set vars below ###############################
 
 # glyphsSource="sources/sources-buildready/Signika-MM-simple_rectangle_ds.glyphs"
-glyphsSource="sources/sources-buildready/Signika-MM-prepped_designspace.glyphs"
+# glyphsSource="sources/sources-buildready/Signika-MM-prepped_designspace.glyphs"
 
 timestampAndFontbakeInDist=false
 
@@ -42,8 +54,6 @@ fontmake -o variable -g $tempGlyphsSource
 ## keep designspace file if you want to look at values later
 if [ $keepDesignspace == true ]
 then
-    ## move font into dist, with timestamp – probably with a python script and datetime
-    ## and fontbake the font
     echo "designspace in master_ufo folder"
 else
     rm -rf master_ufo
@@ -162,8 +172,6 @@ for file in variable_ttf/*; do
 
             echo "new VF location is " ${newFontLocation}
         else
-            ## move font into fonts/, then fontbake
-            finalFontLocation=fonts/signika/full_vf
             fileName=$(basename $file)
             cp $file $finalFontLocation/$fileName
             echo "new VF location is " $finalFontLocation/$fileName
