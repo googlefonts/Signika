@@ -1,19 +1,16 @@
 {
 .appVersion = "1189";
-DisplayStrings = (
-"-J"
-);
 classes = (
 {
 code = "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Agrave Aacute Acircumflex Atilde Amacron Abreve Adieresis Aring Aogonek AE Cacute Ccircumflex Cdotaccent Ccaron Ccedilla Dcaron Dcroat Egrave Eacute Ecircumflex Emacron Ebreve Edotaccent Edieresis Ecaron Eogonek Gcircumflex Gbreve Gdotaccent Gcommaaccent Hcircumflex Hbar Igrave Iacute Icircumflex Itilde Imacron Ibreve Idotaccent Idieresis Iogonek IJ Jcircumflex Kcommaaccent Lacute Lcommaaccent Lcaron Ldot Lslash Nacute Ntilde Ncaron Eng Ncommaaccent Ograve Oacute Ocircumflex Otilde Omacron Obreve Odieresis Ohungarumlaut Oslash OE Racute Rcaron Rcommaaccent Sacute Scircumflex Scaron Scommaaccent Scedilla Germandbls Tcaron Tcommaaccent Tcedilla Tbar Ugrave Uacute Ucircumflex Utilde Umacron Ubreve Udieresis Uring Uhungarumlaut Uogonek Wgrave Wacute Wcircumflex Wdieresis Ygrave Yacute Ycircumflex Ydieresis Zacute Zdotaccent Zcaron Eth Thorn Q.ss02";
 name = Uppercase;
 }
 );
-copyright = "Copyright 2018 by Anna Giedrys. All rights reserved. Reserved Font Name: Signika.";
+copyright = "Copyright 2018 The Signika Project Authors (https://github.com/thundernixon/Signika), with Reserved Font Names 'Signika'.";
 customParameters = (
 {
 name = trademark;
-value = "Signika Light is a trademark of Anna Giedrys.";
+value = "Signika is a trademark of Anna Giedryś.";
 },
 {
 name = fsType;
@@ -615,10 +612,14 @@ value = "http://scripts.sil.org/OFL";
 {
 name = "Use Typo Metrics";
 value = 1;
+},
+{
+name = vendorID;
+value = GOOG;
 }
 );
 date = "2018-12-22 18:35:43 +0000";
-designer = "Anna Giedrys";
+designer = "Anna Giedryś";
 designerURL = www.ancymonic.com;
 disablesAutomaticAlignment = 1;
 familyName = Signika;
@@ -49130,6 +49131,36 @@ width = 1528;
 leftMetricsKey = Ohm;
 rightMetricsKey = Ohm;
 unicode = 03A9;
+},
+{
+glyphname = CR.001;
+lastChange = "2018-12-24 00:10:47 +0000";
+layers = (
+{
+layerId = UUID0;
+width = 600;
+},
+{
+layerId = UUID1;
+width = 600;
+}
+);
+unicode = 009E;
+},
+{
+glyphname = CR.002;
+lastChange = "2018-12-24 00:00:45 +0000";
+layers = (
+{
+layerId = UUID0;
+width = 600;
+},
+{
+layerId = UUID1;
+width = 600;
+}
+);
+unicode = 008E;
 }
 );
 instances = (
@@ -60322,7 +60353,7 @@ backslash = -52;
 };
 };
 };
-manufacturer = "Anna Giedrys";
+manufacturer = "Anna Giedryś";
 manufacturerURL = www.ancymonic.com;
 unitsPerEm = 2000;
 versionMajor = 2;
