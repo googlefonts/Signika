@@ -195,14 +195,6 @@ Fontbakery version: 0.6.6.dev5+g6a494f59
 
 </details>
 <details>
-<summary>:fire: <b>FAIL:</b> Are there non-ASCII characters in ASCII-only NAME table entries?</summary>
-
-* [com.google.fonts/check/074](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :fire: **FAIL** There are 1 strings containing non-ASCII characters in the ASCII-only NAME table entries.
-* :information_source: **INFO** Bad string at [nameID 0, 'utf_16_be']: 'b'Copyright 2018 by Anna Giedry&#347;. All rights reserved. Reserved Font Name: Signika.''
-
-</details>
-<details>
 <summary>:fire: <b>FAIL:</b> Checks METADATA.pb font.post_script_name matches postscript name declared on the name table.</summary>
 
 * [com.google.fonts/check/093](https://github.com/googlefonts/fontbakery/search?q={checkid})
@@ -230,7 +222,7 @@ Fontbakery version: 0.6.6.dev5+g6a494f59
 * :fire: **FAIL** METADATA.pb: Copyright notices should match a pattern similar to: 'Copyright 2017 The Familyname Project Authors (git url)'
 But instead we have got: 'Copyright (c) 2018 by Anna Giedrys (info@ancymonic.com), with Reserved Font Names "Signika".'
 * :fire: **FAIL** Name table entry: Copyright notices should match a pattern similar to: 'Copyright 2017 The Familyname Project Authors (git url)'
-But instead we have got: 'Copyright 2018 by Anna Giedryś. All rights reserved. Reserved Font Name: Signika.'
+But instead we have got: 'Copyright 2018 by Anna Giedrys. All rights reserved. Reserved Font Name: Signika.'
 
 </details>
 <details>
@@ -272,7 +264,7 @@ But instead we have got: 'Copyright 2018 by Anna Giedryś. All rights reserved. 
 <summary>:warning: <b>WARN:</b> Name table strings must not contain the string 'Reserved Font Name'.</summary>
 
 * [com.google.fonts/check/152](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :warning: **WARN** Name table entry ("Copyright 2018 by Anna Giedryś. All rights reserved. Reserved Font Name: Signika.") contains "Reserved Font Name". This is an error except in a few specific rare cases.
+* :warning: **WARN** Name table entry ("Copyright 2018 by Anna Giedrys. All rights reserved. Reserved Font Name: Signika.") contains "Reserved Font Name". This is an error except in a few specific rare cases.
 
 </details>
 <details>
@@ -524,9 +516,9 @@ This happens a lot when points are not extremes, which is usually bad. However, 
 
 |  | fonts/signika/full_vf/Signika-VF.ttf |
 |:--- | ---:|
-| Dehinted Size | 199.8kb |
-| Hinted Size | 223.0kb |
-| Increase | 23.1kb |
+| Dehinted Size | 200.1kb |
+| Hinted Size | 223.3kb |
+| Increase | 23.2kb |
 | Change   | 11.6 % |
 
 
@@ -575,7 +567,7 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 <summary>:information_source: <b>INFO:</b> Font contains all required tables?</summary>
 
 * [com.google.fonts/check/052](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :information_source: **INFO** This font contains the following optional tables [GPOS, fpgm, GSUB, prep, gasp, cvt , DSIG, loca]
+* :information_source: **INFO** This font contains the following optional tables [prep, GPOS, fpgm, GSUB, loca, cvt , gasp, DSIG]
 * :bread: **PASS** Font contains all required tables.
 
 </details>
@@ -675,6 +667,13 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 * [com.google.fonts/check/070](https://github.com/googlefonts/fontbakery/search?q={checkid})
 * :bread: **PASS** Font has all expected currency sign characters.
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> Are there non-ASCII characters in ASCII-only NAME table entries?</summary>
+
+* [com.google.fonts/check/074](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :bread: **PASS** None of the ASCII-only NAME table entries contain non-ASCII characteres.
 
 </details>
 <details>
@@ -1062,5 +1061,5 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 | :broken_heart: ERROR | :fire: FAIL | :warning: WARN | :zzz: SKIP | :information_source: INFO | :bread: PASS |
 |:-----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 11 | 5 | 29 | 8 | 90 |
-| 0% | 8% | 3% | 20% | 6% | 63% |
+| 0 | 10 | 5 | 29 | 8 | 91 |
+| 0% | 7% | 3% | 20% | 6% | 64% |

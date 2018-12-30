@@ -138,15 +138,20 @@ insertPatch()
 
     cp $ttxPath $patchPath
     echo "---------------------------------------------------"
-
     if [[ $file != *"SC"* ]]; then
     cat $patchPath | tr '\n' '\r' | sed -e "s~<name>.*<\/name>~$(cat sources/scripts/helpers/patches/NAMEpatch.xml | tr '\n' '\r')~" | tr '\r' '\n' > $ttxPath
     fi
     if [[ $file == *"SC"* ]]; then
     cat $patchPath | tr '\n' '\r' | sed -e "s~<name>.*<\/name>~$(cat sources/scripts/helpers/patches/NAMEpatch-SC.xml | tr '\n' '\r')~" | tr '\r' '\n' > $ttxPath
     fi
-
     rm -rf $patchPath
+
+    cp $ttxPath $patchPath
+    echo "---------------------------------------------------"
+    cat $patchPath | tr '\n' '\r' | sed -e "s~<STAT>.*<\/STAT>~$(cat sources/scripts/helpers/patches/STATpatch.xml | tr '\n' '\r')~" | tr '\r' '\n' > $ttxPath
+    rm -rf $patchPath
+
+    # TODO: add patches for normal-split VF
 
     ttx $ttxPath
     rm -rf $ttxPath

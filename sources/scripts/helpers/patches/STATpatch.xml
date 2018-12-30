@@ -1,0 +1,70 @@
+<STAT>
+    <Version value="0x00010002"/>
+    <DesignAxisRecordSize value="8"/>
+    <!-- DesignAxisCount=2 -->
+    <DesignAxisRecord>
+        <Axis index="0">
+            <AxisTag value="wght"/>
+            <AxisNameID value="256"/>
+            <!-- Weight -->
+            <AxisOrdering value="0"/>
+        </Axis>
+        <Axis index="1">
+            <AxisTag value="NEGA"/>
+            <AxisNameID value="257"/>
+            <!-- Negative -->
+            <AxisOrdering value="1"/>
+        </Axis>
+    </DesignAxisRecord>
+    <!-- AxisValueCount=0 -->
+    <ElidedFallbackNameID value="2"/>
+    <!-- Regular -->
+    <AxisValueArray>
+        <!-- ===== WEIGHT ===== -->
+        <AxisValue index="0" Format="1">
+            <AxisIndex value="0"/>
+            <Flags value="0"/>
+            <!-- Light -->
+            <ValueNameID value="258"/>
+            <Value value="300.0"/>
+        </AxisValue>
+        <AxisValue index="1" Format="1">
+            <AxisIndex value="0"/>
+            <Flags value="2"/>
+            <!-- Regular -->
+            <ValueNameID value="259"/>
+            <Value value="400.0"/>
+        </AxisValue>
+        <AxisValue index="2" Format="1">
+            <AxisIndex value="0"/>
+            <Flags value="0"/>
+            <!-- SemiBold -->
+            <ValueNameID value="260"/>
+            <Value value="600.0"/>
+        </AxisValue>
+        <AxisValue index="3" Format="1">
+            <AxisIndex value="0"/>
+            <Flags value="0"/>
+            <!-- Bold -->
+            <ValueNameID value="261"/>
+            <Value value="700.0"/>
+        </AxisValue>
+
+        <!-- ===== NEGATIVE ===== -->
+        <AxisValue index="4" Format="1">
+            <AxisIndex value="1"/>
+            <!-- ElidedFallbackNameID value (Normal) -->
+            <Flags value="2"/>
+            <!-- Normal -->
+            <ValueNameID value="266"/>
+            <Value value="0.0"/>
+        </AxisValue>
+        <AxisValue index="5" Format="1">
+            <AxisIndex value="1"/>
+            <Flags value="0"/>
+            <!-- Negative -->
+            <ValueNameID value="267"/>
+            <Value value="-1.0"/>
+        </AxisValue>
+    </AxisValueArray>
+</STAT>
