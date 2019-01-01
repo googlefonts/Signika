@@ -228,7 +228,7 @@ But instead we have got: 'Copyright (c) 2018 by Anna Giedrys (info@ancymonic.com
 <summary>:warning: <b>WARN:</b> Glyphs are similiar to Google Fonts version?</summary>
 
 * [com.google.fonts/check/118](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :warning: **WARN** Following glyphs differ greatly from Google Fonts version: [.notdef, at, germandbls.smcp]
+* :warning: **WARN** Following glyphs differ greatly from Google Fonts version: [germandbls.smcp, at, .notdef]
 
 </details>
 <details>
@@ -472,7 +472,7 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 <summary>:information_source: <b>INFO:</b> Font contains all required tables?</summary>
 
 * [com.google.fonts/check/052](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :information_source: **INFO** This font contains the following optional tables [gasp, GSUB, GPOS, cvt , fpgm, prep, loca, DSIG]
+* :information_source: **INFO** This font contains the following optional tables [fpgm, cvt , GSUB, GPOS, loca, gasp, prep, DSIG]
 * :bread: **PASS** Font contains all required tables.
 
 </details>
