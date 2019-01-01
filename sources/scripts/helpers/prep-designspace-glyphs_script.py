@@ -213,6 +213,8 @@ font.save(buildPath)
 # save separate negative file
 # font.save(negativePath)
 
+# close original
+font.close()
 
 # simplify that one
 # save it with a suffix
@@ -221,45 +223,57 @@ font.save(buildPath)
 # simplify for split VF ======================================================
 
 Glyphs.open(buildPath)
+splitFont = Glyphs.font
+
+fontAxes = [
+	{"Name": "Weight", "Tag": "wght"}
+]
+splitFont.customParameters["Axes"] = fontAxes
 
 # remove Negative instances
 
 instancesToDelete = []
 
-for index, instance in enumerate(font.instances):
+for index, instance in enumerate(splitFont.instances):
     if "Negative" in str(instance.customParameters["familyName"]):
         instancesToDelete.append(index)
 
 for instanceIndex in instancesToDelete[::-1]:
-    del font.instances[instanceIndex]
+    del splitFont.instances[instanceIndex]
 
 # remove Negative masters
 
 mastersToDelete = []
 
-for index, master in enumerate(font.masters):
+for index, master in enumerate(splitFont.masters):
     if "Negative" in str(master.name):
         mastersToDelete.append(index)
 
 for masterIndex in mastersToDelete[::-1]:
-    del font.masters[masterIndex]
+    del splitFont.masters[masterIndex]
 
 
 splitBuildPath = buildPath.replace(buildreadySuffix, buildreadySuffix+"-split")
 
-font.save(splitBuildPath)
+splitFont.save(splitBuildPath)
 
 Glyphs.open(splitBuildPath)
 
-font.close()
+splitFont.close()
+
 
 # ============================================================================
 # simplify for split negative VF =============================================
 
 # open it
 Glyphs.open(buildPath)
-
 negFont = Glyphs.font
+
+fontAxes = [
+	{"Name": "Weight", "Tag": "wght"}
+]
+negFont.customParameters["Axes"] = fontAxes
+
 
 instancesToDelete = []
 
@@ -281,6 +295,10 @@ for index, master in enumerate(negFont.masters):
 for masterIndex in mastersToDelete[::-1]:
     del negFont.masters[masterIndex]
 
+for master in negFont.masters:
+    masterName = master.name
+    master.name = masterName.replace(" Negative", "")
+
 negFontName = negFont.familyName
 
 negFont.familyName = negFontName + " Negative"
@@ -293,4 +311,8 @@ negFont.save(splitNegativePath)
 Glyphs.open(splitNegativePath)
 
 # close original
-font.close()
+negFont.close()
+
+
+# Open the main prepped-designspace font
+Glyphs.open(buildPath)
