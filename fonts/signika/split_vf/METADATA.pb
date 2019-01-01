@@ -10,7 +10,7 @@ fonts {
   filename: "Signika-VF.ttf"
   post_script_name: "Signika-Light"
   full_name: "Signika Light"
-  copyright: "Copyright (c) 2018 by Anna Giedrys (info@ancymonic.com), with Reserved Font Names \"Signika\"."
+  copyright: "Copyright 2018 The Signika Project Authors (https://github.com/thundernixon/Signika), with Reserved Font Names 'Signika'."
 }
 fonts {
   name: "Signika"
@@ -19,7 +19,7 @@ fonts {
   filename: "Signika-VF.ttf"
   post_script_name: "Signika-Regular"
   full_name: "Signika Regular"
-  copyright: "Copyright (c) 2018 by Anna Giedrys (info@ancymonic.com), with Reserved Font Names \"Signika\"."
+  copyright: "Copyright 2018 The Signika Project Authors (https://github.com/thundernixon/Signika), with Reserved Font Names 'Signika'."
 }
 fonts {
   name: "Signika"
@@ -28,7 +28,7 @@ fonts {
   filename: "Signika-VF.ttf"
   post_script_name: "Signika-SemiBold"
   full_name: "Signika SemiBold"
-  copyright: "Copyright (c) 2018 by Anna Giedrys (info@ancymonic.com), with Reserved Font Names \"Signika\"."
+  copyright: "Copyright 2018 The Signika Project Authors (https://github.com/thundernixon/Signika), with Reserved Font Names 'Signika'."
 }
 fonts {
   name: "Signika"
@@ -37,7 +37,7 @@ fonts {
   filename: "Signika-VF.ttf"
   post_script_name: "Signika-Bold"
   full_name: "Signika Bold"
-  copyright: "Copyright (c) 2018 by Anna Giedrys (info@ancymonic.com), with Reserved Font Names \"Signika\"."
+  copyright: "Copyright 2018 The Signika Project Authors (https://github.com/thundernixon/Signika), with Reserved Font Names 'Signika'."
 }
 subsets: "latin"
 subsets: "latin-ext"

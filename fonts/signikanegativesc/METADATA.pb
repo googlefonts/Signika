@@ -10,7 +10,7 @@ fonts {
   filename: "SignikaNegativeSC-Light.ttf"
   post_script_name: "SignikaNegativeSC-Light"
   full_name: "Signika Negative SC Light"
-  copyright: "Copyright (c) 2018 by Anna Giedrys (info@ancymonic.com), with Reserved Font Names \"Signika\"."
+  copyright: "Copyright 2018 The Signika Project Authors (https://github.com/thundernixon/Signika), with Reserved Font Names 'Signika'."
 }
 fonts {
   name: "Signika Negative SC"
@@ -19,7 +19,7 @@ fonts {
   filename: "SignikaNegativeSC-Regular.ttf"
   post_script_name: "SignikaNegativeSC-Regular"
   full_name: "Signika Negative SC Regular"
-  copyright: "Copyright (c) 2018 by Anna Giedrys (info@ancymonic.com), with Reserved Font Names \"Signika\"."
+  copyright: "Copyright 2018 The Signika Project Authors (https://github.com/thundernixon/Signika), with Reserved Font Names 'Signika'."
 }
 fonts {
   name: "Signika Negative SC"
@@ -28,7 +28,7 @@ fonts {
   filename: "SignikaNegativeSC-SemiBold.ttf"
   post_script_name: "SignikaNegativeSC-SemiBold"
   full_name: "Signika Negative SC SemiBold"
-  copyright: "Copyright (c) 2018 by Anna Giedrys (info@ancymonic.com), with Reserved Font Names \"Signika\"."
+  copyright: "Copyright 2018 The Signika Project Authors (https://github.com/thundernixon/Signika), with Reserved Font Names 'Signika'."
 }
 fonts {
   name: "Signika Negative SC"
@@ -37,7 +37,7 @@ fonts {
   filename: "SignikaNegativeSC-Bold.ttf"
   post_script_name: "SignikaNegativeSC-Bold"
   full_name: "Signika Negative SC Bold"
-  copyright: "Copyright (c) 2018 by Anna Giedrys (info@ancymonic.com), with Reserved Font Names \"Signika\"."
+  copyright: "Copyright 2018 The Signika Project Authors (https://github.com/thundernixon/Signika), with Reserved Font Names 'Signika'."
 }
 subsets: "latin"
 subsets: "latin-ext"
