@@ -190,6 +190,7 @@ for instance in font.instances:
 
 buildreadyFolder = 'sources-buildready'
 buildreadySuffix = 'prepped_designspace'
+negativeSuffix = 'prepped_negative_ds'
 
 fontPath = font.filepath
 
@@ -202,15 +203,24 @@ if "sources-buildready" not in fontPath:
         os.mkdir(buildreadyPathHead)
 
     buildPath = buildreadyPathHead + fontPathTail.replace(".glyphs", "-" + buildreadySuffix + ".glyphs")
+
+    # negativePath = buildreadyPathHead + fontPathTail.replace(".glyphs", "-" + negativeSuffix + ".glyphs")
 else:
     buildPath = fontPath.replace(".glyphs", "-" + buildreadySuffix + ".glyphs")
+    # negativePath = fontPath.replace(".glyphs", "-" + negativeSuffix + ".glyphs")
 
 font.save(buildPath)
+# save separate negative file
+# font.save(negativePath)
 
-Glyphs.open(buildPath)
+
+# simplify that one
+# save it with a suffix
 
 # ============================================================================
 # simplify for split VF ======================================================
+
+Glyphs.open(buildPath)
 
 # remove Negative instances
 
@@ -240,6 +250,47 @@ splitBuildPath = buildPath.replace(buildreadySuffix, buildreadySuffix+"-split")
 font.save(splitBuildPath)
 
 Glyphs.open(splitBuildPath)
+
+font.close()
+
+# ============================================================================
+# simplify for split negative VF =============================================
+
+# open it
+Glyphs.open(buildPath)
+
+negFont = Glyphs.font
+
+instancesToDelete = []
+
+for index, instance in enumerate(negFont.instances):
+    if "Negative" not in str(instance.customParameters["familyName"]):
+        instancesToDelete.append(index)
+
+for instanceIndex in instancesToDelete[::-1]:
+    del negFont.instances[instanceIndex]
+
+# remove Negative masters
+
+mastersToDelete = []
+
+for index, master in enumerate(negFont.masters):
+    if "Negative" not in str(master.name):
+        mastersToDelete.append(index)
+
+for masterIndex in mastersToDelete[::-1]:
+    del negFont.masters[masterIndex]
+
+negFontName = negFont.familyName
+
+negFont.familyName = negFontName + " Negative"
+
+
+splitNegativePath = negativePath.replace(negativeSuffix, negativeSuffix+"-split")
+
+negFont.save(splitNegativePath)
+
+Glyphs.open(splitNegativePath)
 
 # close original
 font.close()
