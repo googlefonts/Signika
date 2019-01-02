@@ -22,7 +22,7 @@ https://github.com/protocolbuffers/protobuf/issues/4721
 
 </details>
 
-- [ ] test this (and maybe ask Micah about it)
+- [x] ~~test this (and maybe ask Micah about it)~~ Solved! This can just be an argument in the TTFautohint command
 
 
 <details>
@@ -35,7 +35,7 @@ But instead we have got: 'Copyright (c) 2018 by Anna Giedrys (info@ancymonic.com
 But instead we have got: 'Copyright (c) 2018 by Anna Giedrys. All rights reserved. Reserved Font Name: Signika.'
 </details>
 
-- [ ] fix as much as possible, without removing RFN
+- [x] fix as much as possible, without removing RFN
 
 <details>
 <summary>:fire: <b>FAIL:</b> Check font has same encoded glyphs as version hosted on fonts.google.com</summary>
@@ -45,7 +45,7 @@ But instead we have got: 'Copyright (c) 2018 by Anna Giedrys. All rights reserve
 
 </details>
 
-- [ ] find these glyphs and list next step
+- [x] ~~find these glyphs and list next step~~ Add these two glyphs. Not sure if really necessary.
 
 
 <details>
@@ -56,7 +56,7 @@ But instead we have got: 'Copyright (c) 2018 by Anna Giedrys. All rights reserve
 
 </details>
 
-- [ ] ~~this should be inserted by fontmake, right? check this~~
+- ~~this should be inserted by fontmake, right? check this~~
 - [x] this has been added to the main font, and it will go into the others when I split the font again
 
 
@@ -71,3 +71,56 @@ This happens a lot when points are not extremes, which is usually bad. However, 
 </details>
 
 - [x] Many of the outlines in Signika have short paths that are curved subtly, so it would damage their curvature to add extreme points
+
+<details>
+<summary>:fire: <b>FAIL:</b> Font has old ttfautohint applied?</summary>
+
+* [com.google.fonts/check/056](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :fire: **FAIL** Failed to parse ttfautohint version values: installed = '1.8.2'; used_in_font = '1.8.1.43-b0c9' [code: parse-error]
+
+</details>
+
+- [x] Nope, this is the new version for VFs
+
+<details>
+<summary>:fire: <b>FAIL:</b> Checks METADATA.pb font.post_script_name matches postscript name declared on the name table.</summary>
+
+* [com.google.fonts/check/093](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :fire: **FAIL** Unmatched postscript name in font: TTF has "Signika" while METADATA.pb has "Signika-Light". [code: mismatch]
+
+</details>
+<details>
+<summary>:fire: <b>FAIL:</b> METADATA.pb font.full_name value matches fullname declared on the name table?</summary>
+
+* [com.google.fonts/check/094](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :fire: **FAIL** Unmatched fullname in font: TTF has "Signika" while METADATA.pb has "Signika Light". [code: mismatch]
+
+</details>
+<details>
+<summary>:fire: <b>FAIL:</b> METADATA.pb font.filename and font.post_script_name fields have equivalent values?</summary>
+
+* [com.google.fonts/check/097](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :fire: **FAIL** METADATA.pb font filename="Signika-VF.ttf" does not match post_script_name="Signika-Light".
+
+</details>
+<details>
+<summary>:fire: <b>FAIL:</b> METADATA.pb: Filename is set canonically?</summary>
+
+* [com.google.fonts/check/105](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :fire: **FAIL** METADATA.pb: filename field ("Signika-VF.ttf") does not match canonical name "Signika-Light.ttf".
+
+</details>
+<details>
+<summary>:fire: <b>FAIL:</b> METADATA.pb font.name and font.full_name fields match the values declared on the name table?</summary>
+
+* [com.google.fonts/check/108](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :fire: **FAIL** METADATA.pb: Fullname ("Signika Light") does not match name table entry "Signika" ! [code: fullname-mismatch]
+
+</details>
+<details>
+<summary>:fire: <b>FAIL:</b> Checking OS/2 usWeightClass matches weight specified at METADATA.pb.</summary>
+
+* [com.google.fonts/check/112](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :fire: **FAIL** OS/2 usWeightClass (400:"Regular") does not match weight specified at METADATA.pb (300:"Light").
+
+</details>

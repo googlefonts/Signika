@@ -216,15 +216,6 @@ Fontbakery version: 0.6.6.dev5+g6a494f59
 
 </details>
 <details>
-<summary>:fire: <b>FAIL:</b> Copyright notices match canonical pattern?</summary>
-
-* [com.google.fonts/check/102](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :fire: **FAIL** Name table entry: Copyright notices should match a pattern similar to: 'Copyright 2017 The Familyname Project Authors (git url)'
-But instead we have got: 'Copyright 2018 by Anna Giedrys. All rights reserved. Reserved Font Name: Signika.'
-* :bread: **PASS** METADATA.pb: Copyright field 'Copyright 2018 The Signika Project Authors (https://github.com/thundernixon/Signika), with Reserved Font Names 'Signika'.' matches canonical pattern.
-
-</details>
-<details>
 <summary>:fire: <b>FAIL:</b> METADATA.pb: Filename is set canonically?</summary>
 
 * [com.google.fonts/check/105](https://github.com/googlefonts/fontbakery/search?q={checkid})
@@ -246,13 +237,6 @@ But instead we have got: 'Copyright 2018 by Anna Giedrys. All rights reserved. R
 
 </details>
 <details>
-<summary>:fire: <b>FAIL:</b> Copyright field for this font on METADATA.pb matches all copyright notice entries on the name table ?</summary>
-
-* [com.google.fonts/check/155](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :fire: **FAIL** Copyright field for this font on METADATA.pb ('Copyright 2018 The Signika Project Authors (https://github.com/thundernixon/Signika), with Reserved Font Names 'Signika'.') differs from a copyright notice entry on the name table: 'Copyright 2018 by Anna Giedrys. All rights reserved. Reserved Font Name: Signika.'
-
-</details>
-<details>
 <summary>:warning: <b>WARN:</b> Copyright notice on METADATA.pb should not contain 'Reserved Font Name'.</summary>
 
 * [com.google.fonts/check/103](https://github.com/googlefonts/fontbakery/search?q={checkid})
@@ -263,7 +247,7 @@ But instead we have got: 'Copyright 2018 by Anna Giedrys. All rights reserved. R
 <summary>:warning: <b>WARN:</b> Name table strings must not contain the string 'Reserved Font Name'.</summary>
 
 * [com.google.fonts/check/152](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :warning: **WARN** Name table entry ("Copyright 2018 by Anna Giedrys. All rights reserved. Reserved Font Name: Signika.") contains "Reserved Font Name". This is an error except in a few specific rare cases.
+* :warning: **WARN** Name table entry ("Copyright 2018 The Signika Project Authors (https://github.com/thundernixon/Signika), with Reserved Font Names 'Signika'.") contains "Reserved Font Name". This is an error except in a few specific rare cases.
 
 </details>
 <details>
@@ -515,8 +499,8 @@ This happens a lot when points are not extremes, which is usually bad. However, 
 
 |  | fonts/signika/full_vf/Signika-VF.ttf |
 |:--- | ---:|
-| Dehinted Size | 200.1kb |
-| Hinted Size | 223.3kb |
+| Dehinted Size | 200.2kb |
+| Hinted Size | 223.4kb |
 | Increase | 23.2kb |
 | Change   | 11.6 % |
 
@@ -566,7 +550,7 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 <summary>:information_source: <b>INFO:</b> Font contains all required tables?</summary>
 
 * [com.google.fonts/check/052](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :information_source: **INFO** This font contains the following optional tables [fpgm, GSUB, DSIG, loca, prep, GPOS, gasp, cvt ]
+* :information_source: **INFO** This font contains the following optional tables [loca, fpgm, gasp, GSUB, cvt , DSIG, prep, GPOS]
 * :bread: **PASS** Font contains all required tables.
 
 </details>
@@ -697,6 +681,15 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 </details>
 <details>
+<summary>:bread: <b>PASS:</b> Copyright notices match canonical pattern?</summary>
+
+* [com.google.fonts/check/102](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :bread: **PASS** METADATA.pb: Copyright field 'Copyright 2018 The Signika Project Authors (https://github.com/thundernixon/Signika), with Reserved Font Names 'Signika'.' matches canonical pattern.
+* :bread: **PASS** Name table entry: Copyright field 'Copyright 2018 The Signika Project Authors (https://github.com/thundernixon/Signika), with Reserved Font Names 'Signika'.' matches canonical pattern.
+* :bread: **PASS** All copyright notice strings are good.
+
+</details>
+<details>
 <summary>:bread: <b>PASS:</b> METADATA.pb: Copyright notice shouldn't exceed 500 chars.</summary>
 
 * [com.google.fonts/check/104](https://github.com/googlefonts/fontbakery/search?q={checkid})
@@ -750,6 +743,13 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 * [com.google.fonts/check/116](https://github.com/googlefonts/fontbakery/search?q={checkid})
 * :bread: **PASS** Font em size is good (unitsPerEm = 2000).
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> Copyright field for this font on METADATA.pb matches all copyright notice entries on the name table ?</summary>
+
+* [com.google.fonts/check/155](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :bread: **PASS** Copyright field for this font on METADATA.pb matches copyright notice entries on the name table.
 
 </details>
 <details>
@@ -1060,5 +1060,5 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 | :broken_heart: ERROR | :fire: FAIL | :warning: WARN | :zzz: SKIP | :information_source: INFO | :bread: PASS |
 |:-----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 10 | 5 | 29 | 8 | 91 |
-| 0% | 7% | 3% | 20% | 6% | 64% |
+| 0 | 8 | 5 | 29 | 8 | 93 |
+| 0% | 6% | 3% | 20% | 6% | 65% |
