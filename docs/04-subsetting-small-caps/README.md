@@ -13,6 +13,14 @@ But how, exactly, are Google Fonts subset?
   - replaces lowercase glyphs with smallcaps
   - otherwise, appears to leave all punctuation intact
 
+There is a mismatch in approach to the non-SC versions, however:
+- Spectral and Alegreya both have "SC" versions, with main font versions that include smallcap characters. This makes sense if we wish to support open type small cap features with these fonts, and we are just adding "SC" versions to make this feature available in Google Docs / MS Word etc.
+- Vollkorn also has "SC" versions, but the main font _excludes_ smallcaps. This would make sense if we wish to make SC versions available in word processors, _plus_ make the main versions a bit smaller (if at the expense of some level of usability).
+
+I see pros and cons for each approach. Smallcaps make up about 20–25% of the glyphs in Signika, Encode, Spectral, and Alegreya, so removing them would certainly make the files smaller. However, it would reduce the typographic flexibility of the core fonts, and perhaps render the original designers's work on these characters (even more) hidden to most users. 
+
+Critically, for both Encode and Signika, core versions exist with smallcaps included, so they should not be removed now, or they might break websites that make use of them. So, I will make "SC" versions that allow smallcaps in word processors, and I will leave the core fonts intact.
+
 ## Making a subsetting script for Glyphs
 
 ~~
