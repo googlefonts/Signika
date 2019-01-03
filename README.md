@@ -64,8 +64,6 @@ Due to [current limitations in remote scripting for GlyphsApp](https://forum.gly
 
 The font now has sources with build-ready rectangular designspace, and will build into a variable font with the build scripts.
 
-(I may convert the partially-completed remote script to a Glyphs Python Script, as this would handle all steps required. However, in the interest of time, I am using manual methods for the time being.)
-
 # Variable font upgrade project documentation
 
 Notes were taken throughout the variable font upgrade project and added to the [docs](/docs) directory. I tend to take notes while working anyway, in order to think through problems and record solutions for later reference. In this project, I have included these in the repo so that others might find references to solve similar problems, especially because variable font-making processes are relatively new, and there is a general scarcity of online knowledge on font mastering. Because they were often made alongside work, the notes can at times be a bit disjointed. Hopefully they are still helpful to others! 
