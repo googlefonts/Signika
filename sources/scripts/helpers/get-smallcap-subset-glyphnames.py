@@ -40,29 +40,3 @@ for glyphName in glyphsToRemove[::-1]:
 # print space-separated list
 for glyphName in set(glyphsInFont):
     print(glyphName, " ", end="")
-
-
-
-# find and remove any small caps that don't have lowercase correlaries (e.g. /q.ss02.smcp, in Signika)
-# loneSmallCaps = []
-# for index, glyphName in enumerate(glyphsInFont):
-#     if ".smcp" in glyphName:
-#         rootName = glyphName.replace(".smcp", "")
-
-#         if rootName not in glyphsInFont:
-#             loneSmallCaps.append(index)
-
-
-# # iterate backwards so it doesn't change index as it removes names
-# for index in loneSmallCaps[::-1]:
-#     del glyphsInFont[index]
-
-# # remove ".smcp" glyphs
-# noSmallCapsSubset = []
-# for glyphName in glyphsInFont:
-#     if ".smcp" not in glyphName:
-#         noSmallCapsSubset.append(glyphName)
-
-# # print space-separated list
-# for glyphName in set(noSmallCapsSubset):
-#     print(glyphName, " ", end="")
