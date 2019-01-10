@@ -182,7 +182,7 @@ insertPatch()
 {
     FILE=$1
 
-    echo $FILE $TABLE $PATCH
+    echo $FILE
     
     ttx $FILE
     ttxPath=${FILE/".ttf"/".ttx"}
