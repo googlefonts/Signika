@@ -60,3 +60,17 @@ http://159.65.243.73/compare/39540841-f87f-40dd-bdaf-c623c5bc9fb1
 But is it a bad thing? To me, it seems to be more accurately showing a "regular" weight. My guess is, TTFautohint has simply improved since the old fonts were built in 2011.
 
 - [ ] Ask for Micah's opinion
+
+# Missing `/Zcaron` & `/zcaron`?
+
+Marc reported to me that the `/Zcaron` & `/zcaron` outlines are missing in his font diff QA. 
+
+I don't find this to be the case so far in other apps, and I don't (yet) see any reason that this would be happening.
+
+However, one thing this did help me find is that the accents lack `top` anchors, to allow for stacking of accent marks. I'll add these.
+
+![](assets/2019-01-14-14-24-38.png)
+
+I've now added anchors for accents to stack well. 
+
+![](assets/2019-01-14-14-47-32.png)
