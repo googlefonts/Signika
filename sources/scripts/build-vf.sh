@@ -163,9 +163,9 @@ if [ -f "$file" ]; then
     # https://groups.google.com/forum/#!searchin/googlefonts-discuss/ttfautohint%7Csort:date/googlefonts-discuss/WJX1lrzcwVs/SIzaEvntAgAJ
     # ./Users/stephennixon/Environments/gfonts3/bin/ttfautohint-vf ${ttfPath} ${ttfPath/"-unhinted.ttf"/"-hinted.ttf"}
     echo "------------------------------------------------"
-    echo ttfautohint-vf $file $hintedFile  --increase-x-height 9
+    echo ttfautohint-vf $file $hintedFile  --increase-x-height 9 --stem-width-mode nnn
     echo "------------------------------------------------"
-    ttfautohint-vf -I $file $hintedFile  --increase-x-height 9
+    ttfautohint-vf -I $file $hintedFile  --increase-x-height 9 --stem-width-mode nnn
 
     cp ${hintedFile} ${file}
     rm -rf ${hintedFile}
@@ -183,8 +183,10 @@ insertPatch()
     FILE=$1
 
     echo $FILE
-    
-    ttx $FILE
+
+    ## sets up temp ttx file to insert correct values into tables # also drops MVAR table to fix vertical metrics issue
+    ttx -x "MVAR" $FILE
+
     ttxPath=${FILE/".ttf"/".ttx"}
     patchPath=${ttxPath/".ttx"/"-patch.ttx"}
     rm -rf $FILE

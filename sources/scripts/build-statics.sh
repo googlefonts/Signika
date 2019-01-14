@@ -84,10 +84,25 @@ if [ -f "$file" ]; then
     echo "TTFautohint " ${file}
     # autohint with detailed info
     hintedFile=${file/".ttf"/"-hinted.ttf"}
-    ttfautohint -I ${file} ${hintedFile} --increase-x-height 9
+    ttfautohint -I ${file} ${hintedFile} --increase-x-height 9 --stem-width-mode nnn
     cp ${hintedFile} ${file}
     rm -rf ${hintedFile}
 fi 
+done
+
+# ============================================================================
+# OpenType table fixes =======================================================
+
+for file in instance_ttf/*; do 
+if [ -f "$file" ]; then 
+    ttxPath=${file/".ttf"/".ttx"}
+    ## sets up temp ttx file to insert correct values into tables # also drops MVAR table to fix vertical metrics issue
+    ttx -x "MVAR" $file
+    rm -rf $file
+    ## copies temp ttx file back into a new ttf file
+    ttx $ttxPath
+    rm -rf $ttxPath
+fi
 done
 
 # ============================================================================
