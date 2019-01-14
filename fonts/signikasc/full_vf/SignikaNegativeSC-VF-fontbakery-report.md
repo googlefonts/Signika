@@ -186,7 +186,7 @@ Fontbakery version: 0.6.6.dev5+g6a494f59
 <br>
 </details>
 <details>
-<summary><b>[118] SignikaSC-VF.ttf</b></summary>
+<summary><b>[118] SignikaNegativeSC-VF.ttf</b></summary>
 <details>
 <summary>:fire: <b>FAIL:</b> Font has old ttfautohint applied?</summary>
 
@@ -220,6 +220,13 @@ Fontbakery version: 0.6.6.dev5+g6a494f59
 
 </details>
 <details>
+<summary>:fire: <b>FAIL:</b> The variable font 'wght' (Weight) axis coordinate must be 400 on the 'Regular' instance.</summary>
+
+* [com.google.fonts/check/167](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :fire: **FAIL** The 'wght' axis coordinate of the 'Regular' instance must be 400. Got a '600.0' coordinate instead.
+
+</details>
+<details>
 <summary>:warning: <b>WARN:</b> Font contains .notdef as first glyph?</summary>
 
 * [com.google.fonts/check/046](https://github.com/googlefonts/fontbakery/search?q={checkid})
@@ -230,7 +237,7 @@ Fontbakery version: 0.6.6.dev5+g6a494f59
 <summary>:warning: <b>WARN:</b> Check if OS/2 xAvgCharWidth is correct.</summary>
 
 * [com.google.fonts/check/034](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :warning: **WARN** OS/2 xAvgCharWidth is 1024 but it should be 1043 which corresponds to the weighted average of the widths of the latin lowercase glyphs in the font
+* :warning: **WARN** OS/2 xAvgCharWidth is 1019 but it should be 1038 which corresponds to the weighted average of the widths of the latin lowercase glyphs in the font
 
 </details>
 <details>
@@ -245,7 +252,7 @@ Fontbakery version: 0.6.6.dev5+g6a494f59
 
 * [com.google.fonts/check/075](https://github.com/googlefonts/fontbakery/search?q={checkid})
 * :warning: **WARN** The following glyphs have coordinates which are out of bounds:
-[('napostrophe', 124.47199999999998, 1488.1309999999999), ('napostrophe', 148.447, 1488.1309999999999), ('napostrophe', 170.504, 1488.1309999999999), ('approxequal', 266.49199999999996, 879.025), ('approxequal', 346.964, 879.025), ('approxequal', 385.284, 879.025), ('approxequal', 814.468, 283.925), ('approxequal', 734.954, 283.925), ('approxequal', 695.6759999999999, 283.925), ('uni2219', 368.0, 712.1800000000001), ('uni2219', 396.0, 712.1800000000001), ('uni2219', 421.0, 712.1800000000001), ('bullet', 392.18, 738.4715), ('bullet', 439.5, 738.4715), ('bullet', 481.75, 738.4715), ('bullet', 642.3, 575.5360000000001), ('bullet', 642.3, 543.307), ('bullet', 642.3, 511.078), ('bullet', 481.75, 349.933), ('bullet', 439.5, 349.933), ('bullet', 392.18, 349.933)]
+[('periodcentered', 396.28, 582.0), ('periodcentered', 396.28, 564.0), ('periodcentered', 396.28, 546.0), ('napostrophe', 125.8615, 1488.1324), ('napostrophe', 148.9087, 1488.1324), ('napostrophe', 170.0353, 1488.1324), ('approxequal', 809.9434, 290.7305), ('approxequal', 731.1742, 290.7305), ('approxequal', 691.7896, 290.7305), ('bullet', 240.79600000000002, 543.06026), ('bullet', 240.79600000000002, 575.51174), ('bullet', 392.363, 732.36056), ('bullet', 436.641, 732.36056), ('bullet', 477.51300000000003, 732.36056), ('bullet', 632.486, 575.51174), ('bullet', 632.486, 543.06026), ('bullet', 632.486, 510.60878), ('bullet', 477.51300000000003, 353.75996), ('bullet', 436.641, 353.75996), ('bullet', 392.363, 353.75996), ('bullet', 240.79600000000002, 510.60878)]
 This happens a lot when points are not extremes, which is usually bad. However, fixing this alert by adding points on extremes may do more harm than good, especially with italics, calligraphic-script, handwriting, rounded and other fonts. So it is common to ignore this message
 
 </details>
@@ -621,17 +628,24 @@ This happens a lot when points are not extremes, which is usually bad. However, 
 
 </details>
 <details>
+<summary>:zzz: <b>SKIP:</b> The variable font 'wght' (Weight) axis coordinate must be 700 on the 'Bold' instance.</summary>
+
+* [com.google.fonts/check/172](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :zzz: **SKIP** Unfulfilled Conditions: bold_wght_coord
+
+</details>
+<details>
 <summary>:information_source: <b>INFO:</b> Show hinting filesize impact.</summary>
 
 * [com.google.fonts/check/054](https://github.com/googlefonts/fontbakery/search?q={checkid})
 * :information_source: **INFO** Hinting filesize impact:
 
-|  | fonts/signikasc/full_vf/SignikaSC-VF.ttf |
+|  | fonts/signikasc/full_vf/SignikaNegativeSC-VF.ttf |
 |:--- | ---:|
-| Dehinted Size | 151.2kb |
-| Hinted Size | 171.1kb |
-| Increase | 19.9kb |
-| Change   | 13.1 % |
+| Dehinted Size | 101.2kb |
+| Hinted Size | 121.2kb |
+| Increase | 20.0kb |
+| Change   | 19.8 % |
 
 
 </details>
@@ -671,7 +685,7 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 <summary>:information_source: <b>INFO:</b> Font contains all required tables?</summary>
 
 * [com.google.fonts/check/052](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :information_source: **INFO** This font contains the following optional tables [cvt , DSIG, gasp, loca, GSUB, prep, fpgm, GPOS]
+* :information_source: **INFO** This font contains the following optional tables [gasp, GPOS, loca, DSIG, prep, fpgm, GSUB, cvt ]
 * :bread: **PASS** Font contains all required tables.
 
 </details>
@@ -679,7 +693,7 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 <summary>:bread: <b>PASS:</b> Checking file is named canonically.</summary>
 
 * [com.google.fonts/check/001](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :bread: **PASS** fonts/signikasc/full_vf/SignikaSC-VF.ttf is named canonically.
+* :bread: **PASS** fonts/signikasc/full_vf/SignikaNegativeSC-VF.ttf is named canonically.
 
 </details>
 <details>
@@ -1012,20 +1026,6 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 </details>
 <details>
-<summary>:bread: <b>PASS:</b> The variable font 'wght' (Weight) axis coordinate must be 400 on the 'Regular' instance.</summary>
-
-* [com.google.fonts/check/167](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :bread: **PASS** Regular:wght is 400.
-
-</details>
-<details>
-<summary>:bread: <b>PASS:</b> The variable font 'wght' (Weight) axis coordinate must be 700 on the 'Bold' instance.</summary>
-
-* [com.google.fonts/check/172](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :bread: **PASS** Bold:wght is 700.
-
-</details>
-<details>
 <summary>:bread: <b>PASS:</b> The variable font 'wght' (Weight) axis coordinate must be within spec range of 1 to 1000 on all instances.</summary>
 
 * [com.google.fonts/check/wght_valid_range](https://github.com/googlefonts/fontbakery/search?q={checkid})
@@ -1046,5 +1046,5 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 | :broken_heart: ERROR | :fire: FAIL | :warning: WARN | :zzz: SKIP | :information_source: INFO | :bread: PASS |
 |:-----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 5 | 4 | 53 | 6 | 75 |
-| 0% | 3% | 3% | 37% | 4% | 52% |
+| 0 | 6 | 4 | 54 | 6 | 73 |
+| 0% | 4% | 3% | 38% | 4% | 51% |

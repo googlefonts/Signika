@@ -499,10 +499,10 @@ This happens a lot when points are not extremes, which is usually bad. However, 
 
 |  | fonts/signika/full_vf/Signika-VF.ttf |
 |:--- | ---:|
-| Dehinted Size | 199.9kb |
-| Hinted Size | 222.8kb |
+| Dehinted Size | 202.5kb |
+| Hinted Size | 225.4kb |
 | Increase | 22.9kb |
-| Change   | 11.4 % |
+| Change   | 11.3 % |
 
 
 </details>
@@ -550,7 +550,7 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 <summary>:information_source: <b>INFO:</b> Font contains all required tables?</summary>
 
 * [com.google.fonts/check/052](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :information_source: **INFO** This font contains the following optional tables [GPOS, fpgm, GSUB, DSIG, gasp, loca, cvt , prep]
+* :information_source: **INFO** This font contains the following optional tables [GPOS, cvt , prep, GSUB, fpgm, loca, DSIG, gasp]
 * :bread: **PASS** Font contains all required tables.
 
 </details>

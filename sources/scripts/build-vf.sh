@@ -31,6 +31,11 @@ while [ ! $# -eq 0 ]
     shift
 done
 
+# if varfont folder exists, clean it up
+if [ -d "variable_ttf" ]; then
+  rm -rf variable_ttf
+fi
+
 
 ##############################################################################
 ############################### set vars below ###############################

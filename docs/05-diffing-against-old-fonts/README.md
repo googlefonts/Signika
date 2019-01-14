@@ -74,3 +74,21 @@ However, one thing this did help me find is that the accents lack `top` anchors,
 I've now added anchors for accents to stack well. 
 
 ![](assets/2019-01-14-14-47-32.png)
+
+...but actually, the problem seems to be deeper. While I thought that adding anchors would solve it, I'm finding that it hasn't yet been fixed.
+
+Encode Sans, a type family I am always working on, has accents that stack fairly well. This seems to be due to its OpenType feature `ccmp` (Glyph Composition). Additionally, it might have an effect that its `comb` glyphs are the ones given editable outlines and anchors, while non-comb accents are just using components that reference the `comb` ones.
+
+I'll test swapping the `comb` and non-comb outline and component, export, and test.
+
+![](assets/2019-01-14-18-29-39.png)
+
+Hmm, not yet. 
+
+Still, I'll start by following the advice in the GlyphsApp [tutorial on diacritics](https://glyphsapp.com/tutorials/diacritics) and make the non-comb accents be the components. To do this, I will make a script to:
+
+1. Give the 0-width `comb` glyphs a width of 796 (this seems to be the standard for Signika)
+1. Decompose the `comb` glyphs
+
+I should then be able to use GlyphsApp to easily make the non-comb glyphs.
+
