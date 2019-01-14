@@ -520,10 +520,10 @@ This happens a lot when points are not extremes, which is usually bad. However, 
 
 |  | fonts/signikanegative/split_vf/SignikaNegative-VF.ttf |
 |:--- | ---:|
-| Dehinted Size | 140.9kb |
-| Hinted Size | 163.0kb |
-| Increase | 22.1kb |
-| Change   | 15.7 % |
+| Dehinted Size | 140.8kb |
+| Hinted Size | 162.8kb |
+| Increase | 22.0kb |
+| Change   | 15.6 % |
 
 
 </details>
@@ -563,7 +563,7 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 <summary>:information_source: <b>INFO:</b> Font contains all required tables?</summary>
 
 * [com.google.fonts/check/052](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :information_source: **INFO** This font contains the following optional tables [prep, GSUB, GPOS, DSIG, cvt , fpgm, loca, gasp]
+* :information_source: **INFO** This font contains the following optional tables [prep, loca, cvt , GPOS, GSUB, fpgm, DSIG, gasp]
 * :bread: **PASS** Font contains all required tables.
 
 </details>

@@ -21,10 +21,12 @@ while [ ! $# -eq 0 ]
 
             negativeSplit=true
 
-            negGlyphsSource="sources/sources-buildready/Signika-MM-prepped_negative_ds-split.glyphs"
+            negGlyphsSource="sources/sources-buildready/Signika-MM-prepped_designspace-split-negative.glyphs"
             negFinalLocation="fonts/signikanegative/split_vf"
             negScFinalLocation="fonts/signikanegativesc/split_vf"
         ;;
+        *) 
+            echo "Error: please supply an argument of --normal (-n) or --full (-f)"
     esac
     shift
 done
@@ -32,9 +34,6 @@ done
 
 ##############################################################################
 ############################### set vars below ###############################
-
-# glyphsSource="sources/sources-buildready/Signika-MM-simple_rectangle_ds.glyphs"
-# glyphsSource="sources/sources-buildready/Signika-MM-prepped_designspace.glyphs"
 
 timestampAndFontbakeInDist=false
 
@@ -260,7 +259,7 @@ for file in variable_ttf/*; do
         else
             fileName=$(basename $file)
 
-            if [ $fullVF == true ]; then
+            if [[ $fullVF == true && $splitVF == false ]]; then
                 if [[ $file != *"SC"* ]]; then
                     cp $file $finalLocation/$fileName
                     echo "new VF location is " $finalLocation/$fileName
@@ -273,7 +272,7 @@ for file in variable_ttf/*; do
                 fi
             fi
 
-            if [ $splitVF=true ]; then
+            if [[ $splitVF == true && $fullVF == false ]]; then
                 if [[ $file != *"Negative"* && $file != *"SC"* ]]; then
                     cp $file $finalLocation/$fileName
                     echo "new VF location is " $finalLocation/$fileName
@@ -300,4 +299,4 @@ for file in variable_ttf/*; do
     fi
 done
 
-rm -rf variable_ttf
+# rm -rf variable_ttf
