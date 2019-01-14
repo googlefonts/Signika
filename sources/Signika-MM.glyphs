@@ -1,7 +1,8 @@
 {
-.appVersion = "1189";
+.appVersion = "1201";
 DisplayStrings = (
-a
+"/circumflex/caron/caron.alt ¯/firsttonechinese/breve ¨´`¸/dotaccent/dotaccent.alt/ring/ogonek/tilde/grave.case/acute.case/circumflex.case/dieresis.case/caron.case/ring.case/tilde.case/dotaccent.case/macron.case/breve.case/hungarumlaut.case/commaaccent.case/cedilla.case/ogonek.case/hungarumlaut/commaaccent/circumflexcomb/caroncomb/caroncomb.alt/macroncomb/brevecomb/dieresiscomb/acutecomb/gravecomb/cedillacomb/dotaccentcomb/ringcomb/ogonekcomb/tildecomb/hungarumlautcomb",
+"/circumflex/caron/caron.alt ¯/firsttonechinese/breve ¨´`¸/dotaccent/dotaccent.alt/ring/ogonek/tilde/grave.case/acute.case/circumflex.case/dieresis.case/caron.case/ring.case/tilde.case/dotaccent.case/macron.case/breve.case/hungarumlaut.case/commaaccent.case/cedilla.case/ogonek.case/hungarumlaut/commaaccent"
 );
 classes = (
 {
@@ -17034,13 +17035,17 @@ width = 1204;
 },
 {
 glyphname = circumflex;
-lastChange = "2018-12-20 23:52:59 +0000";
+lastChange = "2019-01-14 22:12:37 +0000";
 layers = (
 {
 anchors = (
 {
 name = _top;
 position = "{398, 1084}";
+},
+{
+name = top;
+position = "{398, 1493}";
 }
 );
 layerId = UUID0;
@@ -17074,6 +17079,10 @@ anchors = (
 {
 name = _top;
 position = "{398, 1084}";
+},
+{
+name = top;
+position = "{398, 1570}";
 }
 );
 layerId = UUID1;
@@ -17107,13 +17116,17 @@ unicode = 02C6;
 },
 {
 glyphname = caron;
-lastChange = "2018-12-20 23:54:17 +0000";
+lastChange = "2019-01-14 22:12:38 +0000";
 layers = (
 {
 anchors = (
 {
 name = _top;
 position = "{398, 1084}";
+},
+{
+name = top;
+position = "{398, 1493}";
 }
 );
 layerId = UUID0;
@@ -17147,6 +17160,10 @@ anchors = (
 {
 name = _top;
 position = "{398, 1084}";
+},
+{
+name = top;
+position = "{398, 1570}";
 }
 );
 layerId = UUID1;
@@ -17271,13 +17288,17 @@ width = 940;
 },
 {
 glyphname = macron;
-lastChange = "2018-11-23 02:18:52 +0000";
+lastChange = "2019-01-14 22:12:43 +0000";
 layers = (
 {
 anchors = (
 {
 name = _top;
 position = "{398, 1084}";
+},
+{
+name = top;
+position = "{398, 1383}";
 }
 );
 layerId = UUID0;
@@ -17309,6 +17330,10 @@ anchors = (
 {
 name = _top;
 position = "{398, 1084}";
+},
+{
+name = top;
+position = "{398, 1462}";
 }
 );
 layerId = UUID1;
@@ -17365,13 +17390,17 @@ unicode = 02C9;
 },
 {
 glyphname = breve;
-lastChange = "2018-11-23 02:18:52 +0000";
+lastChange = "2019-01-14 22:12:50 +0000";
 layers = (
 {
 anchors = (
 {
 name = _top;
 position = "{398, 1084}";
+},
+{
+name = top;
+position = "{398, 1448}";
 }
 );
 layerId = UUID0;
@@ -17407,6 +17436,10 @@ anchors = (
 {
 name = _top;
 position = "{398, 1084}";
+},
+{
+name = top;
+position = "{398, 1521}";
 }
 );
 layerId = UUID1;
@@ -17442,13 +17475,17 @@ unicode = 02D8;
 },
 {
 glyphname = dieresis;
-lastChange = "2018-11-23 02:18:52 +0000";
+lastChange = "2019-01-14 22:12:25 +0000";
 layers = (
 {
 anchors = (
 {
 name = _top;
 position = "{398, 1084}";
+},
+{
+name = top;
+position = "{398, 1383}";
 }
 );
 layerId = UUID0;
@@ -17519,6 +17556,10 @@ anchors = (
 {
 name = _top;
 position = "{398, 1084}";
+},
+{
+name = top;
+position = "{398, 1462}";
 }
 );
 layerId = UUID1;
@@ -17589,13 +17630,17 @@ unicode = 00A8;
 },
 {
 glyphname = acute;
-lastChange = "2018-11-23 02:18:52 +0000";
+lastChange = "2019-01-14 22:13:09 +0000";
 layers = (
 {
 anchors = (
 {
 name = _top;
 position = "{398, 1084}";
+},
+{
+name = top;
+position = "{398, 1442}";
 }
 );
 layerId = UUID0;
@@ -17621,6 +17666,10 @@ anchors = (
 {
 name = _top;
 position = "{394, 1084}";
+},
+{
+name = top;
+position = "{398, 1530}";
 }
 );
 layerId = UUID1;
@@ -17646,13 +17695,17 @@ unicode = 00B4;
 },
 {
 glyphname = grave;
-lastChange = "2018-11-23 02:18:52 +0000";
+lastChange = "2019-01-14 22:13:23 +0000";
 layers = (
 {
 anchors = (
 {
 name = _top;
 position = "{390, 1084}";
+},
+{
+name = top;
+position = "{398, 1442}";
 }
 );
 layerId = UUID0;
@@ -17678,6 +17731,10 @@ anchors = (
 {
 name = _top;
 position = "{398, 1084}";
+},
+{
+name = top;
+position = "{398, 1530}";
 }
 );
 layerId = UUID1;
@@ -17703,13 +17760,17 @@ unicode = 0060;
 },
 {
 glyphname = cedilla;
-lastChange = "2018-11-23 02:18:52 +0000";
+lastChange = "2019-01-14 22:13:57 +0000";
 layers = (
 {
 anchors = (
 {
 name = _bottom;
 position = "{398, -40}";
+},
+{
+name = bottom;
+position = "{398, -451}";
 }
 );
 layerId = UUID0;
@@ -17761,6 +17822,10 @@ anchors = (
 {
 name = _bottom;
 position = "{398, -40}";
+},
+{
+name = bottom;
+position = "{398, -486}";
 }
 );
 layerId = UUID1;
@@ -17812,13 +17877,17 @@ unicode = 00B8;
 },
 {
 glyphname = dotaccent;
-lastChange = "2018-11-23 02:18:52 +0000";
+lastChange = "2019-01-14 22:14:06 +0000";
 layers = (
 {
 anchors = (
 {
 name = _top;
 position = "{398, 1084}";
+},
+{
+name = top;
+position = "{398, 1442}";
 }
 );
 layerId = UUID0;
@@ -17860,6 +17929,10 @@ anchors = (
 {
 name = _top;
 position = "{398, 1084}";
+},
+{
+name = top;
+position = "{398, 1530}";
 }
 );
 layerId = UUID1;
@@ -17977,13 +18050,17 @@ width = 796;
 },
 {
 glyphname = ring;
-lastChange = "2018-11-23 02:18:52 +0000";
+lastChange = "2019-01-14 22:14:19 +0000";
 layers = (
 {
 anchors = (
 {
 name = _top;
 position = "{398, 1084}";
+},
+{
+name = top;
+position = "{398, 1522}";
 }
 );
 layerId = UUID0;
@@ -18030,6 +18107,10 @@ anchors = (
 {
 name = _top;
 position = "{398, 1084}";
+},
+{
+name = top;
+position = "{398, 1629}";
 }
 );
 layerId = UUID1;
@@ -18076,13 +18157,17 @@ unicode = 02DA;
 },
 {
 glyphname = ogonek;
-lastChange = "2018-11-23 02:18:52 +0000";
+lastChange = "2019-01-14 22:14:30 +0000";
 layers = (
 {
 anchors = (
 {
 name = _bottom;
 position = "{398, -40}";
+},
+{
+name = bottom;
+position = "{398, -452}";
 }
 );
 layerId = UUID0;
@@ -18124,6 +18209,10 @@ anchors = (
 {
 name = _bottom;
 position = "{398, -40}";
+},
+{
+name = bottom;
+position = "{398, -469}";
 }
 );
 layerId = UUID1;
@@ -18165,13 +18254,17 @@ unicode = 02DB;
 },
 {
 glyphname = tilde;
-lastChange = "2018-11-23 02:18:52 +0000";
+lastChange = "2019-01-14 22:14:39 +0000";
 layers = (
 {
 anchors = (
 {
 name = _top;
 position = "{398, 1084}";
+},
+{
+name = top;
+position = "{398, 1531}";
 }
 );
 layerId = UUID0;
@@ -18278,13 +18371,17 @@ unicode = 02DC;
 },
 {
 glyphname = grave.case;
-lastChange = "2018-11-23 02:18:52 +0000";
+lastChange = "2019-01-14 22:14:49 +0000";
 layers = (
 {
 anchors = (
 {
 name = _top_U;
 position = "{398, 1464}";
+},
+{
+name = top_U;
+position = "{398, 1792}";
 }
 );
 layerId = UUID0;
@@ -18310,6 +18407,10 @@ anchors = (
 {
 name = _top_U;
 position = "{398, 1464}";
+},
+{
+name = top_U;
+position = "{398, 1920}";
 }
 );
 layerId = UUID1;
@@ -18334,13 +18435,17 @@ width = 796;
 },
 {
 glyphname = acute.case;
-lastChange = "2018-11-23 02:18:52 +0000";
+lastChange = "2019-01-14 22:14:54 +0000";
 layers = (
 {
 anchors = (
 {
 name = _top_U;
 position = "{398, 1464}";
+},
+{
+name = top_U;
+position = "{398, 1792}";
 }
 );
 layerId = UUID0;
@@ -18366,6 +18471,10 @@ anchors = (
 {
 name = _top_U;
 position = "{398, 1464}";
+},
+{
+name = top_U;
+position = "{398, 1920}";
 }
 );
 layerId = UUID1;
@@ -18390,13 +18499,17 @@ width = 796;
 },
 {
 glyphname = circumflex.case;
-lastChange = "2018-12-20 23:57:05 +0000";
+lastChange = "2019-01-14 22:15:04 +0000";
 layers = (
 {
 anchors = (
 {
 name = _top_U;
 position = "{398, 1464}";
+},
+{
+name = top_U;
+position = "{398, 1843}";
 }
 );
 layerId = UUID0;
@@ -18430,6 +18543,10 @@ anchors = (
 {
 name = _top_U;
 position = "{398, 1464}";
+},
+{
+name = top_U;
+position = "{398, 1928}";
 }
 );
 layerId = UUID1;
@@ -18497,13 +18614,17 @@ width = 796;
 },
 {
 glyphname = dieresis.case;
-lastChange = "2018-11-23 02:18:52 +0000";
+lastChange = "2019-01-14 22:15:13 +0000";
 layers = (
 {
 anchors = (
 {
 name = _top_U;
 position = "{398, 1464}";
+},
+{
+name = top_U;
+position = "{398, 1793}";
 }
 );
 layerId = UUID0;
@@ -18574,6 +18695,10 @@ anchors = (
 {
 name = _top_U;
 position = "{398, 1464}";
+},
+{
+name = top_U;
+position = "{398, 1836}";
 }
 );
 layerId = UUID1;
@@ -18643,13 +18768,17 @@ width = 796;
 },
 {
 glyphname = caron.case;
-lastChange = "2018-12-20 23:57:41 +0000";
+lastChange = "2019-01-14 22:15:23 +0000";
 layers = (
 {
 anchors = (
 {
 name = _top_U;
 position = "{398, 1464}";
+},
+{
+name = top_U;
+position = "{398, 1843}";
 }
 );
 layerId = UUID0;
@@ -18683,6 +18812,10 @@ anchors = (
 {
 name = _top_U;
 position = "{398, 1464}";
+},
+{
+name = top_U;
+position = "{398, 1895}";
 }
 );
 layerId = UUID1;
@@ -18715,13 +18848,17 @@ width = 796;
 },
 {
 glyphname = ring.case;
-lastChange = "2018-11-23 02:18:52 +0000";
+lastChange = "2019-01-14 22:15:33 +0000";
 layers = (
 {
 anchors = (
 {
 name = _top_U;
 position = "{398, 1464}";
+},
+{
+name = top_U;
+position = "{398, 1803}";
 }
 );
 layerId = UUID0;
@@ -18768,6 +18905,10 @@ anchors = (
 {
 name = _top_U;
 position = "{398, 1464}";
+},
+{
+name = top_U;
+position = "{398, 1871}";
 }
 );
 layerId = UUID1;
@@ -18813,13 +18954,17 @@ width = 796;
 },
 {
 glyphname = tilde.case;
-lastChange = "2018-11-23 02:18:52 +0000";
+lastChange = "2019-01-14 22:15:46 +0000";
 layers = (
 {
 anchors = (
 {
 name = _top_U;
 position = "{398, 1464}";
+},
+{
+name = top_U;
+position = "{398, 1792}";
 }
 );
 layerId = UUID0;
@@ -18873,6 +19018,10 @@ anchors = (
 {
 name = _top_U;
 position = "{398, 1464}";
+},
+{
+name = top_U;
+position = "{398, 1887}";
 }
 );
 layerId = UUID1;
@@ -18925,13 +19074,17 @@ width = 796;
 },
 {
 glyphname = dotaccent.case;
-lastChange = "2018-11-23 02:18:52 +0000";
+lastChange = "2019-01-14 22:15:54 +0000";
 layers = (
 {
 anchors = (
 {
 name = _top_U;
 position = "{398, 1464}";
+},
+{
+name = top_U;
+position = "{398, 1792}";
 }
 );
 layerId = UUID0;
@@ -18973,6 +19126,10 @@ anchors = (
 {
 name = _top_U;
 position = "{398, 1464}";
+},
+{
+name = top_U;
+position = "{398, 1887}";
 }
 );
 layerId = UUID1;
@@ -19013,13 +19170,17 @@ width = 796;
 },
 {
 glyphname = macron.case;
-lastChange = "2018-11-23 02:18:52 +0000";
+lastChange = "2019-01-14 22:16:39 +0000";
 layers = (
 {
 anchors = (
 {
 name = _top_U;
 position = "{398, 1464}";
+},
+{
+name = top_U;
+position = "{398, 1792}";
 }
 );
 layerId = UUID0;
@@ -19051,6 +19212,10 @@ anchors = (
 {
 name = _top_U;
 position = "{398, 1464}";
+},
+{
+name = top_U;
+position = "{398, 1887}";
 }
 );
 layerId = UUID1;
@@ -19081,13 +19246,17 @@ width = 796;
 },
 {
 glyphname = breve.case;
-lastChange = "2018-11-23 02:18:52 +0000";
+lastChange = "2019-01-14 22:16:48 +0000";
 layers = (
 {
 anchors = (
 {
 name = _top_U;
 position = "{398, 1464}";
+},
+{
+name = top_U;
+position = "{398, 1792}";
 }
 );
 layerId = UUID0;
@@ -19123,6 +19292,10 @@ anchors = (
 {
 name = _top_U;
 position = "{398, 1464}";
+},
+{
+name = top_U;
+position = "{398, 1887}";
 }
 );
 layerId = UUID1;
@@ -19157,13 +19330,17 @@ width = 796;
 },
 {
 glyphname = hungarumlaut.case;
-lastChange = "2018-11-23 02:18:52 +0000";
+lastChange = "2019-01-14 22:16:57 +0000";
 layers = (
 {
 anchors = (
 {
 name = _top_U;
 position = "{398, 1464}";
+},
+{
+name = top_U;
+position = "{398, 1843}";
 }
 );
 layerId = UUID0;
@@ -19202,6 +19379,10 @@ anchors = (
 {
 name = _top_U;
 position = "{398, 1464}";
+},
+{
+name = top_U;
+position = "{398, 1928}";
 }
 );
 layerId = UUID1;
@@ -19239,13 +19420,17 @@ width = 796;
 },
 {
 glyphname = commaaccent.case;
-lastChange = "2018-12-20 23:58:34 +0000";
+lastChange = "2019-01-14 22:17:09 +0000";
 layers = (
 {
 anchors = (
 {
 name = _bottom_U;
 position = "{398, -40}";
+},
+{
+name = bottom_U;
+position = "{398, -491}";
 }
 );
 layerId = UUID0;
@@ -19284,6 +19469,10 @@ anchors = (
 {
 name = _bottom_U;
 position = "{398, -40}";
+},
+{
+name = bottom_U;
+position = "{398, -566}";
 }
 );
 layerId = UUID1;
@@ -19321,13 +19510,17 @@ width = 796;
 },
 {
 glyphname = cedilla.case;
-lastChange = "2018-11-23 02:18:52 +0000";
+lastChange = "2019-01-14 22:17:16 +0000";
 layers = (
 {
 anchors = (
 {
 name = _bottom_U;
 position = "{398, -40}";
+},
+{
+name = bottom_U;
+position = "{398, -450}";
 }
 );
 components = (
@@ -19343,6 +19536,10 @@ anchors = (
 {
 name = _bottom_U;
 position = "{398, -40}";
+},
+{
+name = bottom_U;
+position = "{398, -475}";
 }
 );
 components = (
@@ -19357,13 +19554,17 @@ width = 796;
 },
 {
 glyphname = ogonek.case;
-lastChange = "2018-11-23 02:18:52 +0000";
+lastChange = "2019-01-14 22:17:25 +0000";
 layers = (
 {
 anchors = (
 {
 name = _bottom_U;
 position = "{398, -40}";
+},
+{
+name = bottom_U;
+position = "{398, -450}";
 }
 );
 layerId = UUID0;
@@ -19405,6 +19606,10 @@ anchors = (
 {
 name = _bottom_U;
 position = "{398, -40}";
+},
+{
+name = bottom_U;
+position = "{398, -475}";
 }
 );
 layerId = UUID1;
@@ -19445,13 +19650,17 @@ width = 796;
 },
 {
 glyphname = hungarumlaut;
-lastChange = "2018-11-23 02:18:52 +0000";
+lastChange = "2019-01-14 22:17:36 +0000";
 layers = (
 {
 anchors = (
 {
 name = _top;
 position = "{398, 1084}";
+},
+{
+name = top;
+position = "{398, 1493}";
 }
 );
 layerId = UUID0;
@@ -19490,6 +19699,10 @@ anchors = (
 {
 name = _top;
 position = "{398, 1084}";
+},
+{
+name = top;
+position = "{398, 1570}";
 }
 );
 layerId = UUID1;
@@ -19528,13 +19741,17 @@ unicode = 02DD;
 },
 {
 glyphname = commaaccent;
-lastChange = "2018-12-20 23:58:46 +0000";
+lastChange = "2019-01-14 22:17:57 +0000";
 layers = (
 {
 anchors = (
 {
 name = _bottom;
 position = "{398, -40}";
+},
+{
+name = bottom_U;
+position = "{398, -490}";
 }
 );
 layerId = UUID0;
@@ -19573,6 +19790,10 @@ anchors = (
 {
 name = _bottom;
 position = "{398, -40}";
+},
+{
+name = bottom_U;
+position = "{398, -580}";
 }
 );
 layerId = UUID1;
