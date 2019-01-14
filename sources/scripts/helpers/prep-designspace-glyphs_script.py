@@ -18,7 +18,6 @@ font = Glyphs.font
 # ============================================================================
 # get light and bold weight values ===========================================
 
-
 normalWeights = []
 negativeWeights = []
 
@@ -190,7 +189,6 @@ for instance in font.instances:
 
 buildreadyFolder = 'sources-buildready'
 buildreadySuffix = 'prepped_designspace'
-negativeSuffix = 'prepped_negative_ds'
 
 fontPath = font.filepath
 
@@ -204,20 +202,13 @@ if "sources-buildready" not in fontPath:
 
     buildPath = buildreadyPathHead + fontPathTail.replace(".glyphs", "-" + buildreadySuffix + ".glyphs")
 
-    # negativePath = buildreadyPathHead + fontPathTail.replace(".glyphs", "-" + negativeSuffix + ".glyphs")
 else:
     buildPath = fontPath.replace(".glyphs", "-" + buildreadySuffix + ".glyphs")
-    # negativePath = fontPath.replace(".glyphs", "-" + negativeSuffix + ".glyphs")
 
 font.save(buildPath)
-# save separate negative file
-# font.save(negativePath)
 
 # close original
 font.close()
-
-# simplify that one
-# save it with a suffix
 
 # ============================================================================
 # simplify for split VF ======================================================
@@ -304,7 +295,7 @@ negFontName = negFont.familyName
 negFont.familyName = negFontName + " Negative"
 
 
-splitNegativePath = negativePath.replace(negativeSuffix, negativeSuffix+"-split")
+splitNegativePath = buildPath.replace(buildreadySuffix, buildreadySuffix+"-split-negative")
 
 negFont.save(splitNegativePath)
 
