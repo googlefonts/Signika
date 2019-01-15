@@ -5,13 +5,6 @@ Fontbakery version: 0.6.6.dev5+g6a494f59
 <details>
 <summary><b>[25] Family checks</b></summary>
 <details>
-<summary>:fire: <b>FAIL:</b> METADATA.pb: check if fonts field only contains unique style:weight pairs.</summary>
-
-* [com.google.fonts/check/084](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :fire: **FAIL** Found duplicated style:weight pair in METADATA.pb fonts field.
-
-</details>
-<details>
 <summary>:information_source: <b>INFO:</b> Do we have the latest version of FontBakery installed?</summary>
 
 * [com.google.fonts/check/fontbakery_version](https://github.com/googlefonts/fontbakery/search?q={checkid})
@@ -33,7 +26,7 @@ Fontbakery version: 0.6.6.dev5+g6a494f59
 <summary>:bread: <b>PASS:</b> Is this a proper HTML snippet?</summary>
 
 * [com.google.fonts/check/004](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :bread: **PASS** fonts/signikasc/full_vf/DESCRIPTION.en_us.html is a propper HTML file.
+* :bread: **PASS** fonts/signikanegativesc/DESCRIPTION.en_us.html is a propper HTML file.
 
 </details>
 <details>
@@ -72,17 +65,17 @@ Fontbakery version: 0.6.6.dev5+g6a494f59
 
 </details>
 <details>
-<summary>:bread: <b>PASS:</b> METADATA.pb: Fontfamily is listed on Google Fonts API?</summary>
-
-* [com.google.fonts/check/081](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :bread: **PASS** Font is properly listed via Google Fonts API.
-
-</details>
-<details>
 <summary>:bread: <b>PASS:</b> METADATA.pb: check if fonts field only has unique "full_name" values.</summary>
 
 * [com.google.fonts/check/083](https://github.com/googlefonts/fontbakery/search?q={checkid})
 * :bread: **PASS** METADATA.pb "fonts" field only has unique "full_name" values.
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> METADATA.pb: check if fonts field only contains unique style:weight pairs.</summary>
+
+* [com.google.fonts/check/084](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :bread: **PASS** METADATA.pb "fonts" field only has unique style:weight pairs.
 
 </details>
 <details>
@@ -183,33 +176,100 @@ Fontbakery version: 0.6.6.dev5+g6a494f59
 * :bread: **PASS** Fonts have consistent underline thickness.
 
 </details>
+<details>
+<summary>:warning: <b>WARN:</b> METADATA.pb: Fontfamily is listed on Google Fonts API?</summary>
+
+* [com.google.fonts/check/081](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :warning: **WARN** Family not found via Google Fonts API.
+
+</details>
 <br>
 </details>
 <details>
-<summary><b>[118] SignikaNegativeSC-VF.ttf</b></summary>
+<summary><b>[118] SignikaNegativeSC-SemiBold.ttf</b></summary>
 <details>
-<summary>:fire: <b>FAIL:</b> Font has old ttfautohint applied?</summary>
+<summary>:fire: <b>FAIL:</b> Check copyright namerecords match license file.</summary>
 
-* [com.google.fonts/check/056](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :fire: **FAIL** Failed to parse ttfautohint version values: installed = '1.8.2'; used_in_font = '1.8.1.43-b0c9' [code: parse-error]
+* [com.google.fonts/check/029](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :fire: **FAIL** Font lacks NameID 13 (LICENSE DESCRIPTION). A proper licensing entry must be set. [code: missing]
 
 </details>
 <details>
-<summary>:fire: <b>FAIL:</b> Are there non-ASCII characters in ASCII-only NAME table entries?</summary>
+<summary>:fire: <b>FAIL:</b> "License URL matches License text on name table?</summary>
 
-* [com.google.fonts/check/074](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :fire: **FAIL** There are 1 strings containing non-ASCII characters in the ASCII-only NAME table entries.
-* :information_source: **INFO** Bad string at [nameID 0, 'utf_16_be']: 'b'Copyright 2018 by Anna Giedry&#347;. All rights reserved. Reserved Font Name: Signika.''
+* [com.google.fonts/check/030](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :fire: **FAIL** A known license URL must be provided in the NameID 14 (LICENSE INFO URL) entry. Currently accepted licenses are Apache or Open Font License. For a small set of legacy families the Ubuntu Font License may be acceptable as well. [code: no-license-found]
 
 </details>
 <details>
-<summary>:fire: <b>FAIL:</b> Checking with fontTools.ttx</summary>
+<summary>:fire: <b>FAIL:</b> Checks METADATA.pb font.name field matches family name declared on the name table.</summary>
 
-* [com.google.fonts/check/ttx-roundtrip](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :fire: **FAIL** name id 266 missing from name table
-* :fire: **FAIL** 
-* :fire: **FAIL** name id 267 missing from name table
-* :information_source: **INFO** While converting TTF into an XML file, ttx emited the messages listed below.
+* [com.google.fonts/check/092](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :fire: **FAIL** Unmatched family name in font: TTF has "Signika Negative SemiBold SC" while METADATA.pb has "Signika Negative SC" [code: mismatch]
+
+</details>
+<details>
+<summary>:fire: <b>FAIL:</b> METADATA.pb font.full_name value matches fullname declared on the name table?</summary>
+
+* [com.google.fonts/check/094](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :fire: **FAIL** Unmatched fullname in font: TTF has "Signika Negative SemiBold SC Regular" while METADATA.pb has "Signika Negative SC SemiBold". [code: mismatch]
+
+</details>
+<details>
+<summary>:fire: <b>FAIL:</b> METADATA.pb font.name value should be same as the family name declared on the name table.</summary>
+
+* [com.google.fonts/check/095](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :fire: **FAIL** This font lacks a TYPOGRAPHIC_FAMILY_NAME entry (nameID=16) in the name table. [code: lacks-entry]
+
+</details>
+<details>
+<summary>:fire: <b>FAIL:</b> METADATA.pb font.post_script_name field contains font name in right format?</summary>
+
+* [com.google.fonts/check/101](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :fire: **FAIL** METADATA.pb postScriptName ("SignikaNegativeSC-SemiBold") does not match correct font name format ("Signika Negative SemiBold SC").
+
+</details>
+<details>
+<summary>:fire: <b>FAIL:</b> METADATA.pb font.name and font.full_name fields match the values declared on the name table?</summary>
+
+* [com.google.fonts/check/108](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :fire: **FAIL** METADATA.pb: Fullname ("Signika Negative SC SemiBold") does not match name table entry "Signika Negative SemiBold SC Regular" ! [code: fullname-mismatch]
+
+</details>
+<details>
+<summary>:fire: <b>FAIL:</b> Font has all mandatory 'name' table entries ?</summary>
+
+* [com.google.fonts/check/156](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :fire: **FAIL** Font lacks entry with nameId=16 (TYPOGRAPHIC_FAMILY_NAME)
+* :fire: **FAIL** Font lacks entry with nameId=17 (TYPOGRAPHIC_SUBFAMILY_NAME)
+
+</details>
+<details>
+<summary>:fire: <b>FAIL:</b> Check name table: FONT_FAMILY_NAME entries. </summary>
+
+* [com.google.fonts/check/157](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :fire: **FAIL** Entry [FONT_FAMILY_NAME(1):WINDOWS(3)] on the 'name' table: Expected 'Signika Negative SC SemiBold' but got 'Signika Negative SemiBold SC'.
+
+</details>
+<details>
+<summary>:fire: <b>FAIL:</b> Check name table: FULL_FONT_NAME entries. </summary>
+
+* [com.google.fonts/check/159](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :fire: **FAIL** Entry [FULL_FONT_NAME(4):WINDOWS(3)] on the 'name' table: Expected 'Signika Negative SC SemiBold' but got 'Signika Negative SemiBold SC Regular'.
+
+</details>
+<details>
+<summary>:fire: <b>FAIL:</b> Check name table: TYPOGRAPHIC_FAMILY_NAME entries. </summary>
+
+* [com.google.fonts/check/161](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :fire: **FAIL** non-RIBBI fonts must have a TYPOGRAPHIC_FAMILY_NAME entry on the name table. [code: non-ribbi-lacks-entry]
+
+</details>
+<details>
+<summary>:fire: <b>FAIL:</b> Check name table: TYPOGRAPHIC_SUBFAMILY_NAME entries. </summary>
+
+* [com.google.fonts/check/162](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :fire: **FAIL** non-RIBBI fonts must have a TYPOGRAPHIC_SUBFAMILY_NAME entry on the name table. [code: non-ribbi-lacks-entry]
 
 </details>
 <details>
@@ -220,10 +280,48 @@ Fontbakery version: 0.6.6.dev5+g6a494f59
 
 </details>
 <details>
-<summary>:fire: <b>FAIL:</b> The variable font 'wght' (Weight) axis coordinate must be 400 on the 'Regular' instance.</summary>
+<summary>:warning: <b>WARN:</b> Copyright notice on METADATA.pb should not contain 'Reserved Font Name'.</summary>
 
-* [com.google.fonts/check/167](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :fire: **FAIL** The 'wght' axis coordinate of the 'Regular' instance must be 400. Got a '600.0' coordinate instead.
+* [com.google.fonts/check/103](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :warning: **WARN** METADATA.pb: copyright field ("Copyright 2018 The Signika Project Authors (https://github.com/thundernixon/Signika), with Reserved Font Names 'Signika'.") contains "Reserved Font Name". This is an error except in a few specific rare cases.
+
+</details>
+<details>
+<summary>:warning: <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
+
+* [com.google.fonts/check/153](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :warning: **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
+
+The following glyphs do not have the recommended number of contours:
+
+Glyph name: b	Contours detected: 3	Expected: 2
+Glyph name: e	Contours detected: 1	Expected: 2
+Glyph name: g	Contours detected: 1	Expected: 2 or 3
+Glyph name: i	Contours detected: 1	Expected: 2
+Glyph name: j	Contours detected: 1	Expected: 2
+Glyph name: r	Contours detected: 2	Expected: 1
+Glyph name: ae	Contours detected: 2	Expected: 3
+Glyph name: egrave	Contours detected: 2	Expected: 3
+Glyph name: eacute	Contours detected: 2	Expected: 3
+Glyph name: ecircumflex	Contours detected: 2	Expected: 3
+Glyph name: edieresis	Contours detected: 3	Expected: 4
+Glyph name: emacron	Contours detected: 2	Expected: 3
+Glyph name: ebreve	Contours detected: 2	Expected: 3
+Glyph name: edotaccent	Contours detected: 2	Expected: 3
+Glyph name: eogonek	Contours detected: 1	Expected: 2
+Glyph name: ecaron	Contours detected: 2	Expected: 3
+Glyph name: gcircumflex	Contours detected: 2	Expected: 3 or 4
+Glyph name: gbreve	Contours detected: 2	Expected: 3 or 4
+Glyph name: gdotaccent	Contours detected: 2	Expected: 3 or 4
+Glyph name: uni0123	Contours detected: 2	Expected: 3 or 4
+Glyph name: hbar	Contours detected: 2	Expected: 1
+Glyph name: ij	Contours detected: 2	Expected: 3 or 4
+Glyph name: oe	Contours detected: 2	Expected: 3
+Glyph name: racute	Contours detected: 3	Expected: 2
+Glyph name: rcaron	Contours detected: 3	Expected: 2
+Glyph name: uni0157	Contours detected: 3	Expected: 2
+Glyph name: Uogonek	Contours detected: 2	Expected: 1
+Glyph name: uogonek	Contours detected: 2	Expected: 1
 
 </details>
 <details>
@@ -237,14 +335,21 @@ Fontbakery version: 0.6.6.dev5+g6a494f59
 <summary>:warning: <b>WARN:</b> Check if OS/2 xAvgCharWidth is correct.</summary>
 
 * [com.google.fonts/check/034](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :warning: **WARN** OS/2 xAvgCharWidth is 1019 but it should be 1038 which corresponds to the weighted average of the widths of the latin lowercase glyphs in the font
+* :warning: **WARN** OS/2 xAvgCharWidth is 1065 but it should be 1090 which corresponds to the weighted average of the widths of the latin lowercase glyphs in the font
 
 </details>
 <details>
 <summary>:warning: <b>WARN:</b> Name table strings must not contain the string 'Reserved Font Name'.</summary>
 
 * [com.google.fonts/check/152](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :warning: **WARN** Name table entry ("Copyright 2018 by Anna Giedryś. All rights reserved. Reserved Font Name: Signika.") contains "Reserved Font Name". This is an error except in a few specific rare cases.
+* :warning: **WARN** Name table entry ("Copyright 2018 The Signika Project Authors (https://github.com/thundernixon/Signika), with Reserved Font Names 'Signika'.") contains "Reserved Font Name". This is an error except in a few specific rare cases.
+
+</details>
+<details>
+<summary>:warning: <b>WARN:</b> Combined length of family and style must not exceed 20 characters.</summary>
+
+* [com.google.fonts/check/163](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :warning: **WARN** The combined length of family and style exceeds 20 chars in the following 'WINDOWS' entries: FONT_FAMILY_NAME = 'Signika Negative SemiBold SC' / SUBFAMILY_NAME = 'Regular'
 
 </details>
 <details>
@@ -252,176 +357,22 @@ Fontbakery version: 0.6.6.dev5+g6a494f59
 
 * [com.google.fonts/check/075](https://github.com/googlefonts/fontbakery/search?q={checkid})
 * :warning: **WARN** The following glyphs have coordinates which are out of bounds:
-[('periodcentered', 396.28, 582.0), ('periodcentered', 396.28, 564.0), ('periodcentered', 396.28, 546.0), ('napostrophe', 125.8615, 1488.1324), ('napostrophe', 148.9087, 1488.1324), ('napostrophe', 170.0353, 1488.1324), ('approxequal', 809.9434, 290.7305), ('approxequal', 731.1742, 290.7305), ('approxequal', 691.7896, 290.7305), ('bullet', 240.79600000000002, 543.06026), ('bullet', 240.79600000000002, 575.51174), ('bullet', 392.363, 732.36056), ('bullet', 436.641, 732.36056), ('bullet', 477.51300000000003, 732.36056), ('bullet', 632.486, 575.51174), ('bullet', 632.486, 543.06026), ('bullet', 632.486, 510.60878), ('bullet', 477.51300000000003, 353.75996), ('bullet', 436.641, 353.75996), ('bullet', 392.363, 353.75996), ('bullet', 240.79600000000002, 510.60878)]
+[('periodcentered', 459.38, 588.0), ('periodcentered', 459.38, 570.0), ('periodcentered', 459.38, 552.0), ('napostrophe', 115.1497, 1488.2805), ('napostrophe', 144.5594, 1488.2805), ('napostrophe', 173.0204, 1488.2805), ('approxequal', 1065.18208, 842.3725), ('approxequal', 1065.18208, 450.37249999999995), ('approxequal', 851.4457600000001, 227.77285), ('approxequal', 762.38896, 227.77285), ('approxequal', 686.45632, 227.77285), ('uni2219', 367.0, 754.4200000000001), ('uni2219', 402.0, 754.4200000000001), ('uni2219', 435.0, 754.4200000000001), ('uni2219', 435.0, 461.86), ('uni2219', 402.0, 461.86), ('uni2219', 367.0, 461.86), ('bullet', 400.1901, 775.0830100000001), ('bullet', 455.74559999999997, 775.0830100000001), ('bullet', 508.12649999999996, 775.0830100000001), ('bullet', 508.12649999999996, 307.83433), ('bullet', 455.74559999999997, 307.83433), ('bullet', 400.1901, 307.83433)]
 This happens a lot when points are not extremes, which is usually bad. However, fixing this alert by adding points on extremes may do more harm than good, especially with italics, calligraphic-script, handwriting, rounded and other fonts. So it is common to ignore this message
-
-</details>
-<details>
-<summary>:zzz: <b>SKIP:</b> Checking OS/2 usWeightClass.</summary>
-
-* [com.google.fonts/check/020](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :zzz: **SKIP** Unfulfilled Conditions: style
-
-</details>
-<details>
-<summary>:zzz: <b>SKIP:</b> Checks METADATA.pb font.name field matches family name declared on the name table.</summary>
-
-* [com.google.fonts/check/092](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :zzz: **SKIP** Unfulfilled Conditions: font_metadata
-
-</details>
-<details>
-<summary>:zzz: <b>SKIP:</b> Checks METADATA.pb font.post_script_name matches postscript name declared on the name table.</summary>
-
-* [com.google.fonts/check/093](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :zzz: **SKIP** Unfulfilled Conditions: font_metadata
-
-</details>
-<details>
-<summary>:zzz: <b>SKIP:</b> METADATA.pb font.full_name value matches fullname declared on the name table?</summary>
-
-* [com.google.fonts/check/094](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :zzz: **SKIP** Unfulfilled Conditions: font_metadata
-
-</details>
-<details>
-<summary>:zzz: <b>SKIP:</b> METADATA.pb font.name value should be same as the family name declared on the name table.</summary>
-
-* [com.google.fonts/check/095](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :zzz: **SKIP** Unfulfilled Conditions: font_metadata, style
-
-</details>
-<details>
-<summary>:zzz: <b>SKIP:</b> METADATA.pb font.full_name and font.post_script_name fields have equivalent values ?</summary>
-
-* [com.google.fonts/check/096](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :zzz: **SKIP** Unfulfilled Conditions: font_metadata
-
-</details>
-<details>
-<summary>:zzz: <b>SKIP:</b> METADATA.pb font.filename and font.post_script_name fields have equivalent values?</summary>
-
-* [com.google.fonts/check/097](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :zzz: **SKIP** Unfulfilled Conditions: font_metadata
-
-</details>
-<details>
-<summary>:zzz: <b>SKIP:</b> METADATA.pb font.name field contains font name in right format?</summary>
-
-* [com.google.fonts/check/098](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :zzz: **SKIP** Unfulfilled Conditions: style, font_metadata
 
 </details>
 <details>
 <summary>:zzz: <b>SKIP:</b> METADATA.pb font.full_name field contains font name in right format?</summary>
 
 * [com.google.fonts/check/099](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :zzz: **SKIP** Unfulfilled Conditions: style, font_metadata
-
-</details>
-<details>
-<summary>:zzz: <b>SKIP:</b> METADATA.pb font.filename field contains font name in right format?</summary>
-
-* [com.google.fonts/check/100](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :zzz: **SKIP** Unfulfilled Conditions: style
-
-</details>
-<details>
-<summary>:zzz: <b>SKIP:</b> METADATA.pb font.post_script_name field contains font name in right format?</summary>
-
-* [com.google.fonts/check/101](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :zzz: **SKIP** Unfulfilled Conditions: font_metadata
-
-</details>
-<details>
-<summary>:zzz: <b>SKIP:</b> Copyright notices match canonical pattern?</summary>
-
-* [com.google.fonts/check/102](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :zzz: **SKIP** Unfulfilled Conditions: font_metadata
-
-</details>
-<details>
-<summary>:zzz: <b>SKIP:</b> Copyright notice on METADATA.pb should not contain 'Reserved Font Name'.</summary>
-
-* [com.google.fonts/check/103](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :zzz: **SKIP** Unfulfilled Conditions: font_metadata
-
-</details>
-<details>
-<summary>:zzz: <b>SKIP:</b> METADATA.pb: Copyright notice shouldn't exceed 500 chars.</summary>
-
-* [com.google.fonts/check/104](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :zzz: **SKIP** Unfulfilled Conditions: font_metadata
-
-</details>
-<details>
-<summary>:zzz: <b>SKIP:</b> METADATA.pb: Filename is set canonically?</summary>
-
-* [com.google.fonts/check/105](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :zzz: **SKIP** Unfulfilled Conditions: font_metadata, canonical_filename
+* :zzz: **SKIP** No TYPOGRAPHIC_FAMILYNAME
 
 </details>
 <details>
 <summary>:zzz: <b>SKIP:</b> METADATA.pb font.style "italic" matches font internals?</summary>
 
 * [com.google.fonts/check/106](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :zzz: **SKIP** Unfulfilled Conditions: font_metadata
-
-</details>
-<details>
-<summary>:zzz: <b>SKIP:</b> METADATA.pb font.style "normal" matches font internals?</summary>
-
-* [com.google.fonts/check/107](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :zzz: **SKIP** Unfulfilled Conditions: font_metadata
-
-</details>
-<details>
-<summary>:zzz: <b>SKIP:</b> METADATA.pb font.name and font.full_name fields match the values declared on the name table?</summary>
-
-* [com.google.fonts/check/108](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :zzz: **SKIP** Unfulfilled Conditions: font_metadata
-
-</details>
-<details>
-<summary>:zzz: <b>SKIP:</b> METADATA.pb: Check if fontname is not camel cased.</summary>
-
-* [com.google.fonts/check/109](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :zzz: **SKIP** Unfulfilled Conditions: font_metadata
-
-</details>
-<details>
-<summary>:zzz: <b>SKIP:</b> METADATA.pb: Check font name is the same as family name.</summary>
-
-* [com.google.fonts/check/110](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :zzz: **SKIP** Unfulfilled Conditions: font_metadata
-
-</details>
-<details>
-<summary>:zzz: <b>SKIP:</b> METADATA.pb: Check that font weight has a canonical value.</summary>
-
-* [com.google.fonts/check/111](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :zzz: **SKIP** Unfulfilled Conditions: font_metadata
-
-</details>
-<details>
-<summary>:zzz: <b>SKIP:</b> Checking OS/2 usWeightClass matches weight specified at METADATA.pb.</summary>
-
-* [com.google.fonts/check/112](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :zzz: **SKIP** Unfulfilled Conditions: font_metadata
-
-</details>
-<details>
-<summary>:zzz: <b>SKIP:</b> METADATA.pb weight matches postScriptName.</summary>
-
-* [com.google.fonts/check/113](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :zzz: **SKIP** Unfulfilled Conditions: font_metadata
-
-</details>
-<details>
-<summary>:zzz: <b>SKIP:</b> METADATA.pb: Font styles are named canonically?</summary>
-
-* [com.google.fonts/check/115](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :zzz: **SKIP** Unfulfilled Conditions: font_metadata
+* :zzz: **SKIP** This check only applies to italic fonts.
 
 </details>
 <details>
@@ -446,34 +397,6 @@ This happens a lot when points are not extremes, which is usually bad. However, 
 
 </details>
 <details>
-<summary>:zzz: <b>SKIP:</b> Checking OS/2 fsSelection value.</summary>
-
-* [com.google.fonts/check/129](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :zzz: **SKIP** Unfulfilled Conditions: style
-
-</details>
-<details>
-<summary>:zzz: <b>SKIP:</b> Checking post.italicAngle value.</summary>
-
-* [com.google.fonts/check/130](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :zzz: **SKIP** Unfulfilled Conditions: style
-
-</details>
-<details>
-<summary>:zzz: <b>SKIP:</b> Checking head.macStyle value.</summary>
-
-* [com.google.fonts/check/131](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :zzz: **SKIP** Unfulfilled Conditions: style
-
-</details>
-<details>
-<summary>:zzz: <b>SKIP:</b> Check if each glyph has the recommended amount of contours.</summary>
-
-* [com.google.fonts/check/153](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :zzz: **SKIP** Unfulfilled Conditions: not is_variable_font
-
-</details>
-<details>
 <summary>:zzz: <b>SKIP:</b> Check font has same encoded glyphs as version hosted on fonts.google.com</summary>
 
 * [com.google.fonts/check/154](https://github.com/googlefonts/fontbakery/search?q={checkid})
@@ -481,59 +404,38 @@ This happens a lot when points are not extremes, which is usually bad. However, 
 
 </details>
 <details>
-<summary>:zzz: <b>SKIP:</b> Copyright field for this font on METADATA.pb matches all copyright notice entries on the name table ?</summary>
+<summary>:zzz: <b>SKIP:</b> Check a static ttf can be generated from a variable font. </summary>
 
-* [com.google.fonts/check/155](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :zzz: **SKIP** Unfulfilled Conditions: font_metadata
-
-</details>
-<details>
-<summary>:zzz: <b>SKIP:</b> Font has all mandatory 'name' table entries ?</summary>
-
-* [com.google.fonts/check/156](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :zzz: **SKIP** Unfulfilled Conditions: style
+* [com.google.fonts/check/174](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :zzz: **SKIP** Unfulfilled Conditions: is_variable_font
 
 </details>
 <details>
-<summary>:zzz: <b>SKIP:</b> Check name table: FONT_FAMILY_NAME entries. </summary>
+<summary>:zzz: <b>SKIP:</b> Check that variable fonts have an HVAR table. </summary>
 
-* [com.google.fonts/check/157](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :zzz: **SKIP** Unfulfilled Conditions: style
-
-</details>
-<details>
-<summary>:zzz: <b>SKIP:</b> Check name table: FONT_SUBFAMILY_NAME entries. </summary>
-
-* [com.google.fonts/check/158](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :zzz: **SKIP** Unfulfilled Conditions: style_with_spaces
+* [com.google.fonts/check/varfont/has_HVAR](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :zzz: **SKIP** Unfulfilled Conditions: is_variable_font
 
 </details>
 <details>
-<summary>:zzz: <b>SKIP:</b> Check name table: FULL_FONT_NAME entries. </summary>
+<summary>:zzz: <b>SKIP:</b> All name entries referenced by fvar instances exist on the name table?</summary>
 
-* [com.google.fonts/check/159](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :zzz: **SKIP** Unfulfilled Conditions: style_with_spaces
-
-</details>
-<details>
-<summary>:zzz: <b>SKIP:</b> Check name table: POSTSCRIPT_NAME entries. </summary>
-
-* [com.google.fonts/check/160](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :zzz: **SKIP** Unfulfilled Conditions: style
+* [com.google.fonts/check/fvar_name_entries](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :zzz: **SKIP** Unfulfilled Conditions: is_variable_font
 
 </details>
 <details>
-<summary>:zzz: <b>SKIP:</b> Check name table: TYPOGRAPHIC_FAMILY_NAME entries. </summary>
+<summary>:zzz: <b>SKIP:</b> A variable font must have named instances.</summary>
 
-* [com.google.fonts/check/161](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :zzz: **SKIP** Unfulfilled Conditions: style
+* [com.google.fonts/check/varfont_has_instances](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :zzz: **SKIP** Unfulfilled Conditions: is_variable_font
 
 </details>
 <details>
-<summary>:zzz: <b>SKIP:</b> Check name table: TYPOGRAPHIC_SUBFAMILY_NAME entries. </summary>
+<summary>:zzz: <b>SKIP:</b> Variable font weight coordinates must be multiples of 100.</summary>
 
-* [com.google.fonts/check/162](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :zzz: **SKIP** Unfulfilled Conditions: style_with_spaces
+* [com.google.fonts/check/varfont_weight_instances](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :zzz: **SKIP** Unfulfilled Conditions: is_variable_font
 
 </details>
 <details>
@@ -600,38 +502,52 @@ This happens a lot when points are not extremes, which is usually bad. However, 
 
 </details>
 <details>
+<summary>:zzz: <b>SKIP:</b> The variable font 'wght' (Weight) axis coordinate must be 400 on the 'Regular' instance.</summary>
+
+* [com.google.fonts/check/167](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :zzz: **SKIP** Unfulfilled Conditions: is_variable_font, regular_wght_coord
+
+</details>
+<details>
 <summary>:zzz: <b>SKIP:</b> The variable font 'wdth' (Width) axis coordinate must be 100 on the 'Regular' instance.</summary>
 
 * [com.google.fonts/check/168](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :zzz: **SKIP** Unfulfilled Conditions: regular_wdth_coord
+* :zzz: **SKIP** Unfulfilled Conditions: is_variable_font, regular_wdth_coord
 
 </details>
 <details>
 <summary>:zzz: <b>SKIP:</b> The variable font 'slnt' (Slant) axis coordinate must be zero on the 'Regular' instance.</summary>
 
 * [com.google.fonts/check/169](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :zzz: **SKIP** Unfulfilled Conditions: regular_slnt_coord
+* :zzz: **SKIP** Unfulfilled Conditions: is_variable_font, regular_slnt_coord
 
 </details>
 <details>
 <summary>:zzz: <b>SKIP:</b> The variable font 'ital' (Italic) axis coordinate must be zero on the 'Regular' instance.</summary>
 
 * [com.google.fonts/check/170](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :zzz: **SKIP** Unfulfilled Conditions: regular_ital_coord
+* :zzz: **SKIP** Unfulfilled Conditions: is_variable_font, regular_ital_coord
 
 </details>
 <details>
 <summary>:zzz: <b>SKIP:</b> The variable font 'opsz' (Optical Size) axis coordinate should be between 9 and 13 on the 'Regular' instance.</summary>
 
 * [com.google.fonts/check/171](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :zzz: **SKIP** Unfulfilled Conditions: regular_opsz_coord
+* :zzz: **SKIP** Unfulfilled Conditions: is_variable_font, regular_opsz_coord
 
 </details>
 <details>
 <summary>:zzz: <b>SKIP:</b> The variable font 'wght' (Weight) axis coordinate must be 700 on the 'Bold' instance.</summary>
 
 * [com.google.fonts/check/172](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :zzz: **SKIP** Unfulfilled Conditions: bold_wght_coord
+* :zzz: **SKIP** Unfulfilled Conditions: is_variable_font, bold_wght_coord
+
+</details>
+<details>
+<summary>:zzz: <b>SKIP:</b> The variable font 'wght' (Weight) axis coordinate must be within spec range of 1 to 1000 on all instances.</summary>
+
+* [com.google.fonts/check/wght_valid_range](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :zzz: **SKIP** Unfulfilled Conditions: is_variable_font
 
 </details>
 <details>
@@ -640,12 +556,12 @@ This happens a lot when points are not extremes, which is usually bad. However, 
 * [com.google.fonts/check/054](https://github.com/googlefonts/fontbakery/search?q={checkid})
 * :information_source: **INFO** Hinting filesize impact:
 
-|  | fonts/signikasc/full_vf/SignikaNegativeSC-VF.ttf |
+|  | fonts/signikanegativesc/SignikaNegativeSC-SemiBold.ttf |
 |:--- | ---:|
-| Dehinted Size | 101.2kb |
-| Hinted Size | 121.2kb |
-| Increase | 20.0kb |
-| Change   | 19.8 % |
+| Dehinted Size | 58.4kb |
+| Hinted Size | 79.4kb |
+| Increase | 21.0kb |
+| Change   | 36.0 % |
 
 
 </details>
@@ -676,7 +592,7 @@ PPM <= 65535:
 <summary>:information_source: <b>INFO:</b> Check for font-v versioning </summary>
 
 * [com.google.fonts/check/166](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :information_source: **INFO** Version string is: "Version 2.000; ttfautohint (v1.8.1.43-b0c9) -l 8 -r 50 -G 200 -x 9 -D latn -f none -a qsq -X """
+* :information_source: **INFO** Version string is: "Version 2.000; ttfautohint (v1.8.2) -l 8 -r 50 -G 200 -x 9 -D latn -f none -a nnn -X """
 The version string must ideally include a git commit hash and either a 'dev' or a 'release' suffix such as in the example below:
 "Version 1.3; git-0d08353-release"
 
@@ -685,7 +601,7 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 <summary>:information_source: <b>INFO:</b> Font contains all required tables?</summary>
 
 * [com.google.fonts/check/052](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :information_source: **INFO** This font contains the following optional tables [gasp, GPOS, loca, DSIG, prep, fpgm, GSUB, cvt ]
+* :information_source: **INFO** This font contains the following optional tables [loca, GSUB, gasp, DSIG, cvt , fpgm, GPOS, prep]
 * :bread: **PASS** Font contains all required tables.
 
 </details>
@@ -693,7 +609,7 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 <summary>:bread: <b>PASS:</b> Checking file is named canonically.</summary>
 
 * [com.google.fonts/check/001](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :bread: **PASS** fonts/signikasc/full_vf/SignikaNegativeSC-VF.ttf is named canonically.
+* :bread: **PASS** fonts/signikanegativesc/SignikaNegativeSC-SemiBold.ttf is named canonically.
 
 </details>
 <details>
@@ -732,17 +648,10 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 </details>
 <details>
-<summary>:bread: <b>PASS:</b> Check copyright namerecords match license file.</summary>
+<summary>:bread: <b>PASS:</b> Checking OS/2 usWeightClass.</summary>
 
-* [com.google.fonts/check/029](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :bread: **PASS** Licensing entry on name table is correctly set.
-
-</details>
-<details>
-<summary>:bread: <b>PASS:</b> "License URL matches License text on name table?</summary>
-
-* [com.google.fonts/check/030](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :bread: **PASS** Font has a valid license URL in NAME table.
+* [com.google.fonts/check/020](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :bread: **PASS** OS/2 usWeightClass value looks good!
 
 </details>
 <details>
@@ -763,7 +672,14 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 <summary>:bread: <b>PASS:</b> Font has ttfautohint params? </summary>
 
 * [com.google.fonts/check/has_ttfautohint_params](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :bread: **PASS** Font has ttfautohint params (-l 8 -r 50 -G 200 -x 9 -D latn -f none -a qsq -X "")
+* :bread: **PASS** Font has ttfautohint params (-l 8 -r 50 -G 200 -x 9 -D latn -f none -a nnn -X "")
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> Font has old ttfautohint applied?</summary>
+
+* [com.google.fonts/check/056](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :bread: **PASS** ttfautohint available in the system (1.8.2) is older than the one used in the font (1.8.2).
 
 </details>
 <details>
@@ -781,10 +697,169 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 </details>
 <details>
+<summary>:bread: <b>PASS:</b> Are there non-ASCII characters in ASCII-only NAME table entries?</summary>
+
+* [com.google.fonts/check/074](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :bread: **PASS** None of the ASCII-only NAME table entries contain non-ASCII characteres.
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> Checks METADATA.pb font.post_script_name matches postscript name declared on the name table.</summary>
+
+* [com.google.fonts/check/093](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :bread: **PASS** Postscript name "SignikaNegativeSC-SemiBold" is identical in METADATA.pb and on the TTF file.
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> METADATA.pb font.full_name and font.post_script_name fields have equivalent values ?</summary>
+
+* [com.google.fonts/check/096](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :bread: **PASS** METADATA.pb font fields "full_name" and "post_script_name" have equivalent values.
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> METADATA.pb font.filename and font.post_script_name fields have equivalent values?</summary>
+
+* [com.google.fonts/check/097](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :bread: **PASS** METADATA.pb font fields "filename" and "post_script_name" have equivalent values.
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> METADATA.pb font.name field contains font name in right format?</summary>
+
+* [com.google.fonts/check/098](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :bread: **PASS** METADATA.pb font.name field contains font name in right format.
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> METADATA.pb font.filename field contains font name in right format?</summary>
+
+* [com.google.fonts/check/100](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :bread: **PASS** METADATA.pb filename field contains font name in right format.
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> Copyright notices match canonical pattern?</summary>
+
+* [com.google.fonts/check/102](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :bread: **PASS** METADATA.pb: Copyright field 'Copyright 2018 The Signika Project Authors (https://github.com/thundernixon/Signika), with Reserved Font Names 'Signika'.' matches canonical pattern.
+* :bread: **PASS** Name table entry: Copyright field 'Copyright 2018 The Signika Project Authors (https://github.com/thundernixon/Signika), with Reserved Font Names 'Signika'.' matches canonical pattern.
+* :bread: **PASS** All copyright notice strings are good.
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> METADATA.pb: Copyright notice shouldn't exceed 500 chars.</summary>
+
+* [com.google.fonts/check/104](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :bread: **PASS** Copyright notice string is shorter than 500 chars.
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> METADATA.pb: Filename is set canonically?</summary>
+
+* [com.google.fonts/check/105](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :bread: **PASS** Filename in METADATA.pb is set canonically.
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> METADATA.pb font.style "normal" matches font internals?</summary>
+
+* [com.google.fonts/check/107](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :bread: **PASS** METADATA.pb font.style "normal" matches font internals.
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> METADATA.pb: Check if fontname is not camel cased.</summary>
+
+* [com.google.fonts/check/109](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :bread: **PASS** Font name is not camel-cased.
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> METADATA.pb: Check font name is the same as family name.</summary>
+
+* [com.google.fonts/check/110](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :bread: **PASS** Font name is the same as family name.
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> METADATA.pb: Check that font weight has a canonical value.</summary>
+
+* [com.google.fonts/check/111](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :bread: **PASS** Font weight has a canonical value.
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> Checking OS/2 usWeightClass matches weight specified at METADATA.pb.</summary>
+
+* [com.google.fonts/check/112](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :bread: **PASS** OS/2 usWeightClass matches weight specified at METADATA.pb
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> METADATA.pb weight matches postScriptName.</summary>
+
+* [com.google.fonts/check/113](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :bread: **PASS** Weight value matches postScriptName.
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> METADATA.pb: Font styles are named canonically?</summary>
+
+* [com.google.fonts/check/115](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :bread: **PASS** Font styles are named canonically.
+
+</details>
+<details>
 <summary>:bread: <b>PASS:</b> Stricter unitsPerEm criteria for Google Fonts. </summary>
 
 * [com.google.fonts/check/116](https://github.com/googlefonts/fontbakery/search?q={checkid})
 * :bread: **PASS** Font em size is good (unitsPerEm = 2000).
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> Checking OS/2 fsSelection value.</summary>
+
+* [com.google.fonts/check/129](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :bread: **PASS** OS/2 fsSelection REGULAR bit is properly set.
+* :bread: **PASS** OS/2 fsSelection ITALIC bit is properly set.
+* :bread: **PASS** OS/2 fsSelection BOLD bit is properly set.
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> Checking post.italicAngle value.</summary>
+
+* [com.google.fonts/check/130](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :bread: **PASS** Value of post.italicAngle is 0.0 with style='SemiBold'.
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> Checking head.macStyle value.</summary>
+
+* [com.google.fonts/check/131](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :bread: **PASS** head macStyle ITALIC bit is properly set.
+* :bread: **PASS** head macStyle BOLD bit is properly set.
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> Copyright field for this font on METADATA.pb matches all copyright notice entries on the name table ?</summary>
+
+* [com.google.fonts/check/155](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :bread: **PASS** Copyright field for this font on METADATA.pb matches copyright notice entries on the name table.
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> Check name table: FONT_SUBFAMILY_NAME entries. </summary>
+
+* [com.google.fonts/check/158](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :bread: **PASS** FONT_SUBFAMILY_NAME entries are all good.
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> Check name table: POSTSCRIPT_NAME entries. </summary>
+
+* [com.google.fonts/check/160](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :bread: **PASS** POSTCRIPT_NAME entries are all good.
 
 </details>
 <details>
@@ -799,20 +874,6 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 * [com.google.fonts/check/165](https://github.com/googlefonts/fontbakery/search?q={checkid})
 * :bread: **PASS** Font familyname seems to be unique.
-
-</details>
-<details>
-<summary>:bread: <b>PASS:</b> Check a static ttf can be generated from a variable font. </summary>
-
-* [com.google.fonts/check/174](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :bread: **PASS** fontTools.varLib.mutator generated a static font instance
-
-</details>
-<details>
-<summary>:bread: <b>PASS:</b> Check that variable fonts have an HVAR table. </summary>
-
-* [com.google.fonts/check/varfont/has_HVAR](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :bread: **PASS** This variable font contains an HVAR table.
 
 </details>
 <details>
@@ -851,27 +912,6 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 </details>
 <details>
-<summary>:bread: <b>PASS:</b> All name entries referenced by fvar instances exist on the name table?</summary>
-
-* [com.google.fonts/check/fvar_name_entries](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :bread: **PASS** OK
-
-</details>
-<details>
-<summary>:bread: <b>PASS:</b> A variable font must have named instances.</summary>
-
-* [com.google.fonts/check/varfont_has_instances](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :bread: **PASS** OK
-
-</details>
-<details>
-<summary>:bread: <b>PASS:</b> Variable font weight coordinates must be multiples of 100.</summary>
-
-* [com.google.fonts/check/varfont_weight_instances](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :bread: **PASS** OK
-
-</details>
-<details>
 <summary>:bread: <b>PASS:</b> Checking with ftxvalidator.</summary>
 
 * [com.google.fonts/check/035](https://github.com/googlefonts/fontbakery/search?q={checkid})
@@ -904,6 +944,13 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 * [com.google.fonts/check/053](https://github.com/googlefonts/fontbakery/search?q={checkid})
 * :bread: **PASS** There are no unwanted tables.
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> Checking with fontTools.ttx</summary>
+
+* [com.google.fonts/check/ttx-roundtrip](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :bread: **PASS** Hey! It all looks good!
 
 </details>
 <details>
@@ -970,13 +1017,6 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 </details>
 <details>
-<summary>:bread: <b>PASS:</b> Combined length of family and style must not exceed 20 characters.</summary>
-
-* [com.google.fonts/check/163](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :bread: **PASS** All name entries are good.
-
-</details>
-<details>
 <summary>:bread: <b>PASS:</b> Checking Vertical Metric Linegaps.</summary>
 
 * [com.google.fonts/check/041](https://github.com/googlefonts/fontbakery/search?q={checkid})
@@ -1026,13 +1066,6 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 </details>
 <details>
-<summary>:bread: <b>PASS:</b> The variable font 'wght' (Weight) axis coordinate must be within spec range of 1 to 1000 on all instances.</summary>
-
-* [com.google.fonts/check/wght_valid_range](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :bread: **PASS** OK
-
-</details>
-<details>
 <summary>:bread: <b>PASS:</b> Does the number of glyphs in the loca table match the maxp table?</summary>
 
 * [com.google.fonts/check/180](https://github.com/googlefonts/fontbakery/search?q={checkid})
@@ -1046,5 +1079,5 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 | :broken_heart: ERROR | :fire: FAIL | :warning: WARN | :zzz: SKIP | :information_source: INFO | :bread: PASS |
 |:-----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 6 | 4 | 54 | 6 | 73 |
-| 0% | 4% | 3% | 38% | 4% | 51% |
+| 0 | 13 | 8 | 27 | 6 | 89 |
+| 0% | 9% | 6% | 19% | 4% | 62% |

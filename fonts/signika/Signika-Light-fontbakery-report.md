@@ -26,7 +26,7 @@ Fontbakery version: 0.6.6.dev5+g6a494f59
 <summary>:bread: <b>PASS:</b> Is this a proper HTML snippet?</summary>
 
 * [com.google.fonts/check/004](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :bread: **PASS** fonts/signikanegative/DESCRIPTION.en_us.html is a propper HTML file.
+* :bread: **PASS** fonts/signika/DESCRIPTION.en_us.html is a propper HTML file.
 
 </details>
 <details>
@@ -186,12 +186,12 @@ Fontbakery version: 0.6.6.dev5+g6a494f59
 <br>
 </details>
 <details>
-<summary><b>[118] SignikaNegative-Light.ttf</b></summary>
+<summary><b>[118] Signika-Light.ttf</b></summary>
 <details>
 <summary>:fire: <b>FAIL:</b> Checks METADATA.pb font.name field matches family name declared on the name table.</summary>
 
 * [com.google.fonts/check/092](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :fire: **FAIL** Unmatched family name in font: TTF has "Signika Negative Light" while METADATA.pb has "Signika Negative" [code: mismatch]
+* :fire: **FAIL** Unmatched family name in font: TTF has "Signika Light" while METADATA.pb has "Signika" [code: mismatch]
 
 </details>
 <details>
@@ -207,21 +207,7 @@ But instead we have got: 'Copyright (c) 2018 by Anna Giedrys (info@ancymonic.com
 <summary>:fire: <b>FAIL:</b> METADATA.pb font.name and font.full_name fields match the values declared on the name table?</summary>
 
 * [com.google.fonts/check/108](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :fire: **FAIL** METADATA.pb Family name "Signika Negative") does not match name table entry "Signika Negative Light" ! [code: familyname-mismatch]
-
-</details>
-<details>
-<summary>:fire: <b>FAIL:</b> TTFAutohint x-height increase value is same as in previous release on Google Fonts?</summary>
-
-* [com.google.fonts/check/119](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :fire: **FAIL** TTFAutohint --increase-x-height is 9. It should match the previous version's value (None).
-
-</details>
-<details>
-<summary>:fire: <b>FAIL:</b> Check font has same encoded glyphs as version hosted on fonts.google.com</summary>
-
-* [com.google.fonts/check/154](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :fire: **FAIL** Font is missing the following glyphs from the previous release [0x0000]
+* :fire: **FAIL** METADATA.pb Family name "Signika") does not match name table entry "Signika Light" ! [code: familyname-mismatch]
 
 </details>
 <details>
@@ -242,7 +228,7 @@ But instead we have got: 'Copyright (c) 2018 by Anna Giedrys (info@ancymonic.com
 <summary>:warning: <b>WARN:</b> Glyphs are similiar to Google Fonts version?</summary>
 
 * [com.google.fonts/check/118](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :warning: **WARN** Following glyphs differ greatly from Google Fonts version: [.notdef]
+* :warning: **WARN** Following glyphs differ greatly from Google Fonts version: [.notdef, germandbls.smcp]
 
 </details>
 <details>
@@ -261,13 +247,6 @@ Glyph name: Uogonek	Contours detected: 2	Expected: 1
 
 * [com.google.fonts/check/152](https://github.com/googlefonts/fontbakery/search?q={checkid})
 * :warning: **WARN** Name table entry ("Copyright 2018 The Signika Project Authors (https://github.com/thundernixon/Signika), with Reserved Font Names 'Signika'.") contains "Reserved Font Name". This is an error except in a few specific rare cases.
-
-</details>
-<details>
-<summary>:warning: <b>WARN:</b> Combined length of family and style must not exceed 20 characters.</summary>
-
-* [com.google.fonts/check/163](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :warning: **WARN** The combined length of family and style exceeds 20 chars in the following 'WINDOWS' entries: FONT_FAMILY_NAME = 'Signika Negative Light' / SUBFAMILY_NAME = 'Regular'
 
 </details>
 <details>
@@ -304,7 +283,7 @@ Glyph name: Uogonek	Contours detected: 2	Expected: 1
 
 * [com.google.fonts/check/075](https://github.com/googlefonts/fontbakery/search?q={checkid})
 * :warning: **WARN** The following glyphs have coordinates which are out of bounds:
-[('periodcentered', 396.28, 582.0), ('periodcentered', 396.28, 564.0), ('periodcentered', 396.28, 546.0), ('uni0123', 627.8714, 1466.3863999999999), ('napostrophe', 147.8615, 1488.1324), ('napostrophe', 170.9087, 1488.1324), ('napostrophe', 192.0353, 1488.1324), ('napostrophe.smcp', 125.8615, 1488.1324), ('napostrophe.smcp', 148.9087, 1488.1324), ('napostrophe.smcp', 170.0353, 1488.1324), ('approxequal', 888.7126, 290.7305), ('approxequal', 731.1742, 290.7305), ('approxequal', 691.7896, 290.7305), ('bullet', 240.79600000000002, 543.06026), ('bullet', 240.79600000000002, 575.51174), ('bullet', 392.363, 732.36056), ('bullet', 436.641, 732.36056), ('bullet', 477.51300000000003, 732.36056), ('bullet', 632.486, 575.51174), ('bullet', 632.486, 543.06026), ('bullet', 632.486, 510.60878), ('bullet', 477.51300000000003, 353.75996), ('bullet', 436.641, 353.75996), ('bullet', 392.363, 353.75996), ('bullet', 240.79600000000002, 510.60878)]
+[('napostrophe', 146.47199999999998, 1488.1309999999999), ('napostrophe', 170.447, 1488.1309999999999), ('napostrophe', 192.504, 1488.1309999999999), ('napostrophe.smcp', 124.47199999999998, 1488.1309999999999), ('napostrophe.smcp', 148.447, 1488.1309999999999), ('napostrophe.smcp', 170.504, 1488.1309999999999), ('approxequal', 186.97799999999998, 879.025), ('approxequal', 346.964, 879.025), ('approxequal', 385.284, 879.025), ('approxequal', 893.982, 283.925), ('approxequal', 734.954, 283.925), ('approxequal', 695.6759999999999, 283.925), ('uni2219', 368.0, 712.1800000000001), ('uni2219', 396.0, 712.1800000000001), ('uni2219', 421.0, 712.1800000000001), ('bullet', 392.18, 738.4715), ('bullet', 439.5, 738.4715), ('bullet', 481.75, 738.4715), ('bullet', 642.3, 575.5360000000001), ('bullet', 642.3, 543.307), ('bullet', 642.3, 511.078), ('bullet', 481.75, 349.933), ('bullet', 439.5, 349.933), ('bullet', 392.18, 349.933)]
 This happens a lot when points are not extremes, which is usually bad. However, fixing this alert by adding points on extremes may do more harm than good, especially with italics, calligraphic-script, handwriting, rounded and other fonts. So it is common to ignore this message
 
 </details>
@@ -433,12 +412,12 @@ This happens a lot when points are not extremes, which is usually bad. However, 
 * [com.google.fonts/check/054](https://github.com/googlefonts/fontbakery/search?q={checkid})
 * :information_source: **INFO** Hinting filesize impact:
 
-|  | fonts/signikanegative/SignikaNegative-Light.ttf |
+|  | fonts/signika/Signika-Light.ttf |
 |:--- | ---:|
-| Dehinted Size | 84.5kb |
-| Hinted Size | 104.3kb |
-| Increase | 19.8kb |
-| Change   | 23.5 % |
+| Dehinted Size | 85.4kb |
+| Hinted Size | 105.8kb |
+| Increase | 20.4kb |
+| Change   | 23.9 % |
 
 
 </details>
@@ -466,6 +445,14 @@ PPM <= 65535:
 
 </details>
 <details>
+<summary>:information_source: <b>INFO:</b> Familyname must be unique according to namecheck.fontdata.com </summary>
+
+* [com.google.fonts/check/165](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :information_source: **INFO** The family name 'Signika' seem to be already in use.
+Please visit http://namecheck.fontdata.com/?q=Signika for more info.
+
+</details>
+<details>
 <summary>:information_source: <b>INFO:</b> Check for font-v versioning </summary>
 
 * [com.google.fonts/check/166](https://github.com/googlefonts/fontbakery/search?q={checkid})
@@ -478,22 +465,15 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 <summary>:information_source: <b>INFO:</b> Font contains all required tables?</summary>
 
 * [com.google.fonts/check/052](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :information_source: **INFO** This font contains the following optional tables [gasp, GPOS, GSUB, fpgm, loca, DSIG, prep, cvt ]
+* :information_source: **INFO** This font contains the following optional tables [cvt , DSIG, GPOS, GSUB, gasp, prep, fpgm, loca]
 * :bread: **PASS** Font contains all required tables.
-
-</details>
-<details>
-<summary>:information_source: <b>INFO:</b> Check if OS/2 xAvgCharWidth is correct.</summary>
-
-* [com.google.fonts/check/034](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :information_source: **INFO** OS/2 xAvgCharWidth is 1026 but should be 1024 which corresponds to the weighted average of the widths of the latin lowercase glyphs in the font. These are similar values, which may be a symptom of the slightly different calculation of the xAvgCharWidth value in font editors. There's further discussion on this at https://github.com/googlefonts/fontbakery/issues/1622
 
 </details>
 <details>
 <summary>:bread: <b>PASS:</b> Checking file is named canonically.</summary>
 
 * [com.google.fonts/check/001](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :bread: **PASS** fonts/signikanegative/SignikaNegative-Light.ttf is named canonically.
+* :bread: **PASS** fonts/signika/Signika-Light.ttf is named canonically.
 
 </details>
 <details>
@@ -605,21 +585,21 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 <summary>:bread: <b>PASS:</b> Checks METADATA.pb font.post_script_name matches postscript name declared on the name table.</summary>
 
 * [com.google.fonts/check/093](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :bread: **PASS** Postscript name "SignikaNegative-Light" is identical in METADATA.pb and on the TTF file.
+* :bread: **PASS** Postscript name "Signika-Light" is identical in METADATA.pb and on the TTF file.
 
 </details>
 <details>
 <summary>:bread: <b>PASS:</b> METADATA.pb font.full_name value matches fullname declared on the name table?</summary>
 
 * [com.google.fonts/check/094](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :bread: **PASS** Font fullname "Signika Negative Light" is identical in METADATA.pb and on the TTF file.
+* :bread: **PASS** Font fullname "Signika Light" is identical in METADATA.pb and on the TTF file.
 
 </details>
 <details>
 <summary>:bread: <b>PASS:</b> METADATA.pb font.name value should be same as the family name declared on the name table.</summary>
 
 * [com.google.fonts/check/095](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :bread: **PASS** OK: Family name "Signika Negative" is identical in METADATA.pb and on the TTF file.
+* :bread: **PASS** OK: Family name "Signika" is identical in METADATA.pb and on the TTF file.
 
 </details>
 <details>
@@ -647,7 +627,7 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 <summary>:bread: <b>PASS:</b> METADATA.pb font.full_name field contains font name in right format?</summary>
 
 * [com.google.fonts/check/099](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :bread: **PASS** METADATA.pb font.full_name field contains font name in right format. ('Signika Negative' in 'Signika Negative Light')
+* :bread: **PASS** METADATA.pb font.full_name field contains font name in right format. ('Signika' in 'Signika Light')
 
 </details>
 <details>
@@ -742,6 +722,13 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 </details>
 <details>
+<summary>:bread: <b>PASS:</b> TTFAutohint x-height increase value is same as in previous release on Google Fonts?</summary>
+
+* [com.google.fonts/check/119](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :bread: **PASS** TTFAutohint --increase-x-height is the same as in the previous Google Fonts release (9).
+
+</details>
+<details>
 <summary>:bread: <b>PASS:</b> Checking OS/2 fsSelection value.</summary>
 
 * [com.google.fonts/check/129](https://github.com/googlefonts/fontbakery/search?q={checkid})
@@ -763,6 +750,13 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 * [com.google.fonts/check/131](https://github.com/googlefonts/fontbakery/search?q={checkid})
 * :bread: **PASS** head macStyle ITALIC bit is properly set.
 * :bread: **PASS** head macStyle BOLD bit is properly set.
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> Check font has same encoded glyphs as version hosted on fonts.google.com</summary>
+
+* [com.google.fonts/check/154](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :bread: **PASS** Font has all the glyphs from the previous release
 
 </details>
 <details>
@@ -819,13 +813,6 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 * [com.google.fonts/check/164](https://github.com/googlefonts/fontbakery/search?q={checkid})
 * :bread: **PASS** All copyright notice name entries on the 'name' table are shorter than 500 characters.
-
-</details>
-<details>
-<summary>:bread: <b>PASS:</b> Familyname must be unique according to namecheck.fontdata.com </summary>
-
-* [com.google.fonts/check/165](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :bread: **PASS** Font familyname seems to be unique.
 
 </details>
 <details>
@@ -962,6 +949,13 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 </details>
 <details>
+<summary>:bread: <b>PASS:</b> Check if OS/2 xAvgCharWidth is correct.</summary>
+
+* [com.google.fonts/check/034](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :bread: **PASS** OS/2 xAvgCharWidth value is correct.
+
+</details>
+<details>
 <summary>:bread: <b>PASS:</b> Font has correct post table version (2 for TTF, 3 for OTF)?</summary>
 
 * [com.google.fonts/check/015](https://github.com/googlefonts/fontbakery/search?q={checkid})
@@ -1001,6 +995,13 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 * [com.google.fonts/check/071](https://github.com/googlefonts/fontbakery/search?q={checkid})
 * :bread: **PASS** Font follows the family naming recommendations.
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> Combined length of family and style must not exceed 20 characters.</summary>
+
+* [com.google.fonts/check/163](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :bread: **PASS** All name entries are good.
 
 </details>
 <details>
@@ -1066,5 +1067,5 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 | :broken_heart: ERROR | :fire: FAIL | :warning: WARN | :zzz: SKIP | :information_source: INFO | :bread: PASS |
 |:-----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 6 | 8 | 17 | 7 | 105 |
-| 0% | 4% | 6% | 12% | 5% | 73% |
+| 0 | 4 | 7 | 17 | 7 | 108 |
+| 0% | 3% | 5% | 12% | 5% | 76% |

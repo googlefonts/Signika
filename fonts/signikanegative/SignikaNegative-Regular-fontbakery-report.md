@@ -228,7 +228,7 @@ But instead we have got: 'Copyright (c) 2018 by Anna Giedrys (info@ancymonic.com
 <summary>:warning: <b>WARN:</b> Glyphs are similiar to Google Fonts version?</summary>
 
 * [com.google.fonts/check/118](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :warning: **WARN** Following glyphs differ greatly from Google Fonts version: [j, V, W, udieresis, copyright, Otilde, Ntilde, Edieresis, adieresis, nacute, T, Ograve, paragraph, D, o, aogonek, Racute, Jcircumflex, Zdotaccent, two, I, igrave, O, y, Eth, M, L, ldot, c, ampersand, Ugrave, oe, i, t, ograve, edieresis, n, Uacute, g, f, Y, itilde, ordmasculine, scaron, Zacute, AE, Adieresis, parenleft, ij, Oslash, s, Q, three, x, zcaron, ydieresis, Ccaron, dollar, hbar, zero, h, Ccedilla, Acircumflex, eight, seven, .notdef, onequarter, G, bar, C, atilde, section, Zcaron, IJ, U, plusminus, Idieresis, questiondown, threequarters, otilde, q, five, sterling, d, bracketright, currency, ugrave, b, aring, icircumflex, guillemotright, exclamdown, e, sacute, question, Ucircumflex, eacute, six, N, H, Lslash, brokenbar, p, guillemotleft, jcircumflex, E, braceright, Icircumflex, nine, Eogonek, tcaron, Uring, uring, racute, zdotaccent, Aacute, multiply, Aogonek, Sacute, OE, Rcaron, fraction, yacute, parenright, A, four, exclam, acircumflex, ccaron, ucircumflex, registered, ae, K, Atilde, numbersign, X, germandbls, egrave, odieresis, yen, ncaron, eth, Nacute, iacute, F, Yacute, lslash, slash, greater, percent, Oacute, Ldot, kgreenlandic, Eacute, less, w, l, Aring, ecircumflex, ccedilla, oacute, dotlessi, Agrave, cacute, Hbar, k, rcaron, v, backslash, Egrave, Ydieresis, Odieresis, ecaron, Itilde, aacute, Ecaron, Ocircumflex, Tcaron, Udieresis, Ncaron, Euro, Scaron, thorn, a, ntilde, z, cent, dcaron, asciicircum, Dcaron, u, eogonek, Z, onehalf, bracketleft, m, Igrave, J, uacute, at, S, R, Ecircumflex, Iacute, Thorn, one, agrave, B, P, braceleft, idieresis, Cacute, oslash, ocircumflex, zacute]
+* :warning: **WARN** Following glyphs differ greatly from Google Fonts version: [Tcaron, n, Jcircumflex, e, edieresis, V, braceleft, iacute, tcaron, ecircumflex, R, f, registered, Ugrave, ldot, zacute, z, four, onehalf, backslash, Igrave, Racute, paragraph, g, Thorn, Iacute, Agrave, .notdef, two, U, t, y, M, Dcaron, q, bracketright, x, IJ, ograve, G, six, questiondown, acircumflex, Scaron, D, aogonek, p, aacute, currency, sterling, ccedilla, ydieresis, dotlessi, threequarters, Hbar, thorn, ampersand, Zdotaccent, greater, Uacute, s, oslash, Zacute, T, u, Ucircumflex, Ecircumflex, exclam, Uring, guillemotleft, slash, Lslash, eth, l, Otilde, S, question, Eogonek, nacute, scaron, N, A, Egrave, asciicircum, Eacute, Itilde, j, o, agrave, idieresis, B, ecaron, E, eight, dollar, kgreenlandic, otilde, Ydieresis, c, Ncaron, h, guillemotright, zdotaccent, Yacute, rcaron, bar, five, three, oacute, plusminus, Eth, C, numbersign, J, percent, I, at, jcircumflex, Aring, ncaron, one, AE, brokenbar, Y, w, itilde, cacute, multiply, fraction, X, nine, Aacute, Ldot, i, bracketleft, m, lslash, less, b, Idieresis, atilde, cent, ocircumflex, uacute, Edieresis, racute, adieresis, zcaron, Euro, sacute, parenleft, igrave, egrave, Rcaron, eogonek, ntilde, onequarter, ugrave, germandbls, v, P, Nacute, H, Ccaron, Cacute, ordmasculine, Q, a, Z, uring, udieresis, oe, zero, exclamdown, Atilde, Adieresis, Oacute, Odieresis, aring, L, Acircumflex, dcaron, ij, Ograve, Aogonek, Ocircumflex, ucircumflex, Ecaron, k, hbar, O, icircumflex, Ccedilla, Ntilde, W, eacute, odieresis, yen, Oslash, seven, d, Icircumflex, OE, Zcaron, Sacute, F, ccaron, yacute, K, copyright, braceright, Udieresis, section, ae, parenright]
 
 </details>
 <details>
@@ -421,10 +421,10 @@ This happens a lot when points are not extremes, which is usually bad. However, 
 
 |  | fonts/signikanegative/SignikaNegative-Regular.ttf |
 |:--- | ---:|
-| Dehinted Size | 82.2kb |
-| Hinted Size | 102.9kb |
-| Increase | 20.7kb |
-| Change   | 25.2 % |
+| Dehinted Size | 85.9kb |
+| Hinted Size | 106.7kb |
+| Increase | 20.8kb |
+| Change   | 24.2 % |
 
 
 </details>
@@ -464,7 +464,7 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 <summary>:information_source: <b>INFO:</b> Font contains all required tables?</summary>
 
 * [com.google.fonts/check/052](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :information_source: **INFO** This font contains the following optional tables [fpgm, GSUB, GPOS, gasp, prep, loca, DSIG, cvt ]
+* :information_source: **INFO** This font contains the following optional tables [DSIG, loca, prep, fpgm, gasp, GPOS, GSUB, cvt ]
 * :bread: **PASS** Font contains all required tables.
 
 </details>

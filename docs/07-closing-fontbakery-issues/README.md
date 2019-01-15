@@ -124,3 +124,32 @@ This happens a lot when points are not extremes, which is usually bad. However, 
 * :fire: **FAIL** OS/2 usWeightClass (400:"Regular") does not match weight specified at METADATA.pb (300:"Light").
 
 </details>
+
+---
+
+# Smallcaps issues
+
+<details>
+<summary>:fire: <b>FAIL:</b> Font has correct post table version (2 for TTF, 3 for OTF)?</summary>
+
+* [com.google.fonts/check/015](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :fire: **FAIL** Post table should be version 2 instead of 3.0. More info at https://github.com/google/fonts/issues/215
+
+</details>
+<details>
+
+- [x] I'm not yet quite sure how to fix this ... it's described here: https://github.com/google/fonts/issues/215
+
+I am getting this `WARN` on a subset SC font which has been subset by fontTools, and as you Dave says in the opening comment,
+
+> They should be flipped to v3 when served to web browsers where file size savings do matter, and the fontTools subsetter does use v3.
+
+<details>
+<summary>:warning: <b>WARN:</b> Check if OS/2 xAvgCharWidth is correct.</summary>
+
+* [com.google.fonts/check/034](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :warning: **WARN** OS/2 xAvgCharWidth is 1024 but it should be 1043 which corresponds to the weighted average of the widths of the latin lowercase glyphs in the font
+
+</details>
+
+Subsetting out the lowercase makes the font narrower, on average, and this value is calculated from the average of all glyphs in the font, per [the MS OpenType spec](https://docs.microsoft.com/en-us/typography/opentype/spec/os2#xavgcharwidth). This made me realize that FontBakery isn't quite defining this correctly, so I filed an issue at https://github.com/googlefonts/fontbakery/issues/2285.

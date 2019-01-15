@@ -228,7 +228,7 @@ But instead we have got: 'Copyright (c) 2018 by Anna Giedrys (info@ancymonic.com
 <summary>:warning: <b>WARN:</b> Glyphs are similiar to Google Fonts version?</summary>
 
 * [com.google.fonts/check/118](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :warning: **WARN** Following glyphs differ greatly from Google Fonts version: [exclam, exclamdown, .notdef]
+* :warning: **WARN** Following glyphs differ greatly from Google Fonts version: [.notdef, exclam, exclamdown]
 
 </details>
 <details>
@@ -414,10 +414,10 @@ This happens a lot when points are not extremes, which is usually bad. However, 
 
 |  | fonts/signikanegative/SignikaNegative-Bold.ttf |
 |:--- | ---:|
-| Dehinted Size | 82.6kb |
-| Hinted Size | 104.1kb |
-| Increase | 21.5kb |
-| Change   | 26.0 % |
+| Dehinted Size | 86.3kb |
+| Hinted Size | 108.1kb |
+| Increase | 21.8kb |
+| Change   | 25.2 % |
 
 
 </details>
@@ -457,7 +457,7 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 <summary>:information_source: <b>INFO:</b> Font contains all required tables?</summary>
 
 * [com.google.fonts/check/052](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :information_source: **INFO** This font contains the following optional tables [GSUB, loca, gasp, DSIG, GPOS, prep, cvt , fpgm]
+* :information_source: **INFO** This font contains the following optional tables [gasp, cvt , GPOS, fpgm, GSUB, DSIG, loca, prep]
 * :bread: **PASS** Font contains all required tables.
 
 </details>

@@ -242,7 +242,7 @@ But instead we have got: 'Copyright (c) 2018 by Anna Giedrys (info@ancymonic.com
 <summary>:warning: <b>WARN:</b> Glyphs are similiar to Google Fonts version?</summary>
 
 * [com.google.fonts/check/118](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :warning: **WARN** Following glyphs differ greatly from Google Fonts version: [.notdef, Ecircumflex, Ecaron, at]
+* :warning: **WARN** Following glyphs differ greatly from Google Fonts version: [at, Ecircumflex, Ecaron, .notdef]
 
 </details>
 <details>
@@ -435,10 +435,10 @@ This happens a lot when points are not extremes, which is usually bad. However, 
 
 |  | fonts/signikanegative/SignikaNegative-SemiBold.ttf |
 |:--- | ---:|
-| Dehinted Size | 82.4kb |
-| Hinted Size | 103.0kb |
-| Increase | 20.6kb |
-| Change   | 25.0 % |
+| Dehinted Size | 86.1kb |
+| Hinted Size | 106.9kb |
+| Increase | 20.8kb |
+| Change   | 24.1 % |
 
 
 </details>
@@ -478,8 +478,15 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 <summary>:information_source: <b>INFO:</b> Font contains all required tables?</summary>
 
 * [com.google.fonts/check/052](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :information_source: **INFO** This font contains the following optional tables [GPOS, GSUB, prep, cvt , loca, fpgm, DSIG, gasp]
+* :information_source: **INFO** This font contains the following optional tables [DSIG, GPOS, cvt , prep, GSUB, fpgm, loca, gasp]
 * :bread: **PASS** Font contains all required tables.
+
+</details>
+<details>
+<summary>:information_source: <b>INFO:</b> Check if OS/2 xAvgCharWidth is correct.</summary>
+
+* [com.google.fonts/check/034](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :information_source: **INFO** OS/2 xAvgCharWidth is 1065 but should be 1063 which corresponds to the weighted average of the widths of the latin lowercase glyphs in the font. These are similar values, which may be a symptom of the slightly different calculation of the xAvgCharWidth value in font editors. There's further discussion on this at https://github.com/googlefonts/fontbakery/issues/1622
 
 </details>
 <details>
@@ -955,13 +962,6 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 </details>
 <details>
-<summary>:bread: <b>PASS:</b> Check if OS/2 xAvgCharWidth is correct.</summary>
-
-* [com.google.fonts/check/034](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :bread: **PASS** OS/2 xAvgCharWidth value is correct.
-
-</details>
-<details>
 <summary>:bread: <b>PASS:</b> Font has correct post table version (2 for TTF, 3 for OTF)?</summary>
 
 * [com.google.fonts/check/015](https://github.com/googlefonts/fontbakery/search?q={checkid})
@@ -1066,5 +1066,5 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 | :broken_heart: ERROR | :fire: FAIL | :warning: WARN | :zzz: SKIP | :information_source: INFO | :bread: PASS |
 |:-----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 6 | 8 | 17 | 6 | 106 |
-| 0% | 4% | 6% | 12% | 4% | 74% |
+| 0 | 6 | 8 | 17 | 7 | 105 |
+| 0% | 4% | 6% | 12% | 5% | 73% |
