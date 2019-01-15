@@ -1,4 +1,4 @@
-#MenuTitle: Prep Designspace Signika
+#MenuTitle: Signika - Prep Designspace
 # -*- coding: utf-8 -*-
 """
     Makes a copy of a GlyphsApp source, with adjustments to designspace by:

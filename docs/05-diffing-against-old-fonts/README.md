@@ -85,10 +85,32 @@ I'll test swapping the `comb` and non-comb outline and component, export, and te
 
 Hmm, not yet. 
 
-Still, I'll start by following the advice in the GlyphsApp [tutorial on diacritics](https://glyphsapp.com/tutorials/diacritics) and make the non-comb accents be the components. To do this, I will make a script to:
+Still, I'll start by following the advice in the GlyphsApp [tutorial on diacritics](https://glyphsapp.com/tutorials/diacritics) and make the non-comb accents be the components. This tutorial calls non-comb accents "Legacy" accents, because they are only included to support legacy apps -- new ones use `comb` accents.
+
+<!-- 
+To do this, I will make a script to:
 
 1. Give the 0-width `comb` glyphs a width of 796 (this seems to be the standard for Signika)
 1. Decompose the `comb` glyphs
 
-I should then be able to use GlyphsApp to easily make the non-comb glyphs.
+I should then be able to use GlyphsApp to easily make the non-comb glyphs. -->
 
+I'll delete the existing `comb` glyphs, as they aren't doing much aside from being 0-width component glyphs. Then, I'll add `comb` to all non-comb accent names. Finally, I'll remake the "legacy" accents from these. While I'm still at GlyphsApp, this all seems to work quite easily -- no component glyphs are losing accents.
+
+So, far, it's a big improvement!
+
+![](assets/2019-01-14-19-28-21.png)
+
+I found that the `tildecomb` wasn't quite working, but this led me to discover that it had a `_top` anchor but was missing a `top` anchor, so I wouldn't attach. 
+
+![](assets/2019-01-14-19-38-17.png)
+
+...so close. The caps aren't quite working, yet. I suspect it's because the `.case` accents follow the unusual format of labeling their anchors as `_top_U` and `top_U`. 
+
+![](assets/2019-01-14-19-40-07.png)
+
+I'll use scripting to change those to normal anchor names, and that should hopefully fix it.
+
+![](assets/2019-01-14-19-56-18.png)
+
+It does!

@@ -197,7 +197,7 @@ insertPatch()
 
     cp $ttxPath $patchPath
     echo "---------------------------------------------------"
-    if [ $fullVF == true ]; then
+    if [[ $fullVF == true && $splitVF == false ]]; then
         if [[ $file != *"SC"* ]]; then
         cat $patchPath | tr '\n' '\r' | sed -e "s~<name>.*<\/name>~$(cat sources/scripts/helpers/patches/NAMEpatch.xml | tr '\n' '\r')~" | tr '\r' '\n' > $ttxPath
         fi
@@ -214,7 +214,7 @@ insertPatch()
 
     # add patches for normal-split VF
 
-    if [ $splitVF == true ]; then
+    if [[ $splitVF == true && $fullVF == false ]]; then
         if [[ $file != *"Negative"* && $file != *"SC"* ]]; then
         cat $patchPath | tr '\n' '\r' | sed -e "s~<name>.*<\/name>~$(cat sources/scripts/helpers/patches/NAMEpatch-split.xml | tr '\n' '\r')~" | tr '\r' '\n' > $ttxPath
         fi
@@ -226,7 +226,7 @@ insertPatch()
         fi
     fi
 
-    if [ $negativeSplit == true ]; then
+    if [[ $negativeSplit == true && $fullVF == false ]]; then
         if [[ $file == *"Negative"* && $file != *"SC"* ]]; then
         cat $patchPath | tr '\n' '\r' | sed -e "s~<name>.*<\/name>~$(cat sources/scripts/helpers/patches/NAMEpatch-split-neg.xml | tr '\n' '\r')~" | tr '\r' '\n' > $ttxPath
         fi
@@ -304,4 +304,4 @@ for file in variable_ttf/*; do
     fi
 done
 
-# rm -rf variable_ttf
+rm -rf variable_ttf
