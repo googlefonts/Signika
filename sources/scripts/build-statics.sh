@@ -62,7 +62,7 @@ if [ -f "$file" ]; then
     
     echo "subsetting smallcap font"
     # subsetting with subsetGlyphNames list
-    pyftsubset $smallCapFile $subsetGlyphNames
+    pyftsubset $smallCapFile $subsetGlyphNames --notdef-glyph 
 
     subsetSmallCapFile=${smallCapFile/".ttf"/".subset.ttf"}
     rm -rf $smallCapFile
@@ -108,22 +108,11 @@ done
 # ============================================================================
 # Sort into final folder =====================================================
 
-copyToFontDir()
-{
-    DIRECTORY=$1
-    if [ ! -d "$DIRECTORY" ]; then
-        mkdir ${outputDir}/$DIRECTORY
-    fi
-
-    newPath=${outputDir}/$DIRECTORY/${fileName}
-    cp ${file} ${newPath}
-}
-
-fontbakeFile()
-{
-    FILEPATH=$1
-    fontbakery check-googlefonts ${FILEPATH} --ghmarkdown ${FILEPATH/".ttf"/"-fontbakery-report.md"}
-}
+# fontbakeFile()
+# {
+#     FILEPATH=$1
+#     fontbakery check-googlefonts ${FILEPATH} --ghmarkdown ${FILEPATH/".ttf"/"-fontbakery-report.md"}
+# }
 
 outputDir="fonts"
 
@@ -132,25 +121,29 @@ if [ -f "$file" ]; then
     fileName=$(basename $file)
     echo $fileName
     if [[ $file == *"Signika-"* ]]; then
-        copyToFontDir signika
-        fontbakeFile ${newPath}
+        newDirectory=signika
     fi
     if [[ $file == *"SignikaNegative-"* ]]; then
-        copyToFontDir signikanegative
-        fontbakeFile ${newPath}
+        newDirectory=signikanegative
     fi
     if [[ $file == *"SignikaSC-"* ]]; then
-        copyToFontDir signikasc
-        fontbakeFile ${newPath}
+        newDirectory=signikasc
     fi
     if [[ $file == *"SignikaNegativeSC-"* ]]; then
-        copyToFontDir signikanegativesc
-        fontbakeFile ${newPath}
+        newDirectory=signikanegativesc
     fi
+
+    newPath=$outputDir/$newDirectory/static/$fileName
+    cp ${file} ${newPath}
+        
+    fontbakePath=$outputDir/$newDirectory/static/fontbakery-checks/${fileName/".ttf"/"-fontbakery_checks.md"}
+    fontbakeFile $newPath $fontbakePath
+
+    fontbakery check-googlefonts $file --ghmarkdown $fontbakePath
 fi 
 done
 
 # # clean up build folders
 rm -rf instance_ufo
-rm -rf instance_ttf
+# rm -rf instance_ttf
 rm -rf master_ufo
