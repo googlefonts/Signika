@@ -520,7 +520,7 @@ This happens a lot when points are not extremes, which is usually bad. However, 
 
 |  | fonts/signikanegative/split_vf/SignikaNegative-VF.ttf |
 |:--- | ---:|
-| Dehinted Size | 146.0kb |
+| Dehinted Size | 145.9kb |
 | Hinted Size | 168.5kb |
 | Increase | 22.5kb |
 | Change   | 15.4 % |
@@ -563,7 +563,7 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 <summary>:information_source: <b>INFO:</b> Font contains all required tables?</summary>
 
 * [com.google.fonts/check/052](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :information_source: **INFO** This font contains the following optional tables [GSUB, gasp, fpgm, DSIG, loca, cvt , GPOS, prep]
+* :information_source: **INFO** This font contains the following optional tables [prep, DSIG, cvt , GSUB, fpgm, gasp, GPOS, loca]
 * :bread: **PASS** Font contains all required tables.
 
 </details>
@@ -571,7 +571,7 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 <summary>:information_source: <b>INFO:</b> Check if OS/2 xAvgCharWidth is correct.</summary>
 
 * [com.google.fonts/check/034](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :information_source: **INFO** OS/2 xAvgCharWidth is 1026 but should be 1024 which corresponds to the weighted average of the widths of the latin lowercase glyphs in the font. These are similar values, which may be a symptom of the slightly different calculation of the xAvgCharWidth value in font editors. There's further discussion on this at https://github.com/googlefonts/fontbakery/issues/1622
+* :information_source: **INFO** OS/2 xAvgCharWidth is 1027 but should be 1025 which corresponds to the weighted average of the widths of the latin lowercase glyphs in the font. These are similar values, which may be a symptom of the slightly different calculation of the xAvgCharWidth value in font editors. There's further discussion on this at https://github.com/googlefonts/fontbakery/issues/1622
 
 </details>
 <details>

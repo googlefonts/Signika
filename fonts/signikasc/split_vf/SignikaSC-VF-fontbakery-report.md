@@ -188,20 +188,6 @@ Fontbakery version: 0.6.6.dev5+g6a494f59
 <details>
 <summary><b>[118] SignikaSC-VF.ttf</b></summary>
 <details>
-<summary>:fire: <b>FAIL:</b> Check copyright namerecords match license file.</summary>
-
-* [com.google.fonts/check/029](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :fire: **FAIL** Font lacks NameID 13 (LICENSE DESCRIPTION). A proper licensing entry must be set. [code: missing]
-
-</details>
-<details>
-<summary>:fire: <b>FAIL:</b> "License URL matches License text on name table?</summary>
-
-* [com.google.fonts/check/030](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :fire: **FAIL** A known license URL must be provided in the NameID 14 (LICENSE INFO URL) entry. Currently accepted licenses are Apache or Open Font License. For a small set of legacy families the Ubuntu Font License may be acceptable as well. [code: no-license-found]
-
-</details>
-<details>
 <summary>:fire: <b>FAIL:</b> Font has old ttfautohint applied?</summary>
 
 * [com.google.fonts/check/056](https://github.com/googlefonts/fontbakery/search?q={checkid})
@@ -275,7 +261,7 @@ Fontbakery version: 0.6.6.dev5+g6a494f59
 <summary>:warning: <b>WARN:</b> Check if OS/2 xAvgCharWidth is correct.</summary>
 
 * [com.google.fonts/check/034](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :warning: **WARN** OS/2 xAvgCharWidth is 1030 but it should be 1052 which corresponds to the weighted average of the widths of the latin lowercase glyphs in the font
+* :warning: **WARN** OS/2 xAvgCharWidth is 1031 but it should be 1054 which corresponds to the weighted average of the widths of the latin lowercase glyphs in the font
 
 </details>
 <details>
@@ -540,10 +526,10 @@ This happens a lot when points are not extremes, which is usually bad. However, 
 
 |  | fonts/signikasc/split_vf/SignikaSC-VF.ttf |
 |:--- | ---:|
-| Dehinted Size | 104.4kb |
-| Hinted Size | 124.5kb |
-| Increase | 20.1kb |
-| Change   | 19.3 % |
+| Dehinted Size | 105.0kb |
+| Hinted Size | 125.1kb |
+| Increase | 20.0kb |
+| Change   | 19.1 % |
 
 
 </details>
@@ -583,7 +569,7 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 <summary>:information_source: <b>INFO:</b> Font contains all required tables?</summary>
 
 * [com.google.fonts/check/052](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :information_source: **INFO** This font contains the following optional tables [DSIG, cvt , loca, gasp, prep, GSUB, fpgm, GPOS]
+* :information_source: **INFO** This font contains the following optional tables [DSIG, loca, cvt , GSUB, prep, gasp, GPOS, fpgm]
 * :bread: **PASS** Font contains all required tables.
 
 </details>
@@ -627,6 +613,20 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 * [com.google.fonts/check/019](https://github.com/googlefonts/fontbakery/search?q={checkid})
 * :bread: **PASS** No need to substitute copyright, registered and trademark symbols in name table entries of this font.
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> Check copyright namerecords match license file.</summary>
+
+* [com.google.fonts/check/029](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :bread: **PASS** Licensing entry on name table is correctly set.
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> "License URL matches License text on name table?</summary>
+
+* [com.google.fonts/check/030](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :bread: **PASS** Font has a valid license URL in NAME table.
 
 </details>
 <details>
@@ -1044,5 +1044,5 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 | :broken_heart: ERROR | :fire: FAIL | :warning: WARN | :zzz: SKIP | :information_source: INFO | :bread: PASS |
 |:-----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 10 | 6 | 34 | 6 | 87 |
-| 0% | 7% | 4% | 24% | 4% | 61% |
+| 0 | 8 | 6 | 34 | 6 | 89 |
+| 0% | 6% | 4% | 24% | 4% | 62% |
