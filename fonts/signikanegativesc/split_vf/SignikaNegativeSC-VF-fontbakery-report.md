@@ -289,7 +289,7 @@ Fontbakery version: 0.6.6.dev5+g6a494f59
 <summary>:warning: <b>WARN:</b> Check if OS/2 xAvgCharWidth is correct.</summary>
 
 * [com.google.fonts/check/034](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :warning: **WARN** OS/2 xAvgCharWidth is 1019 but it should be 1038 which corresponds to the weighted average of the widths of the latin lowercase glyphs in the font
+* :warning: **WARN** OS/2 xAvgCharWidth is 1026 but it should be 1048 which corresponds to the weighted average of the widths of the latin lowercase glyphs in the font
 
 </details>
 <details>
@@ -561,10 +561,10 @@ This happens a lot when points are not extremes, which is usually bad. However, 
 
 |  | fonts/signikanegativesc/split_vf/SignikaNegativeSC-VF.ttf |
 |:--- | ---:|
-| Dehinted Size | 100.3kb |
-| Hinted Size | 120.5kb |
-| Increase | 20.2kb |
-| Change   | 20.1 % |
+| Dehinted Size | 104.2kb |
+| Hinted Size | 124.4kb |
+| Increase | 20.3kb |
+| Change   | 19.4 % |
 
 
 </details>
@@ -604,7 +604,7 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 <summary>:information_source: <b>INFO:</b> Font contains all required tables?</summary>
 
 * [com.google.fonts/check/052](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :information_source: **INFO** This font contains the following optional tables [DSIG, fpgm, GSUB, loca, gasp, prep, GPOS, cvt ]
+* :information_source: **INFO** This font contains the following optional tables [gasp, prep, fpgm, GSUB, GPOS, DSIG, loca, cvt ]
 * :bread: **PASS** Font contains all required tables.
 
 </details>
