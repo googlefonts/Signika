@@ -560,7 +560,7 @@ This happens a lot when points are not extremes, which is usually bad. However, 
 |  | instance_ttf/Signika-Regular.ttf |
 |:--- | ---:|
 | Dehinted Size | 85.7kb |
-| Hinted Size | 106.5kb |
+| Hinted Size | 106.4kb |
 | Increase | 20.7kb |
 | Change   | 24.2 % |
 
@@ -610,7 +610,7 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 <summary>:information_source: <b>INFO:</b> Font contains all required tables?</summary>
 
 * [com.google.fonts/check/052](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :information_source: **INFO** This font contains the following optional tables [DSIG, cvt , fpgm, prep, GSUB, gasp, GPOS, loca]
+* :information_source: **INFO** This font contains the following optional tables [prep, GSUB, loca, fpgm, DSIG, GPOS, gasp, cvt ]
 * :bread: **PASS** Font contains all required tables.
 
 </details>
@@ -618,7 +618,7 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 <summary>:information_source: <b>INFO:</b> Check if OS/2 xAvgCharWidth is correct.</summary>
 
 * [com.google.fonts/check/034](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :information_source: **INFO** OS/2 xAvgCharWidth is 1056 but should be 1054 which corresponds to the weighted average of the widths of the latin lowercase glyphs in the font. These are similar values, which may be a symptom of the slightly different calculation of the xAvgCharWidth value in font editors. There's further discussion on this at https://github.com/googlefonts/fontbakery/issues/1622
+* :information_source: **INFO** OS/2 xAvgCharWidth is 1057 but should be 1055 which corresponds to the weighted average of the widths of the latin lowercase glyphs in the font. These are similar values, which may be a symptom of the slightly different calculation of the xAvgCharWidth value in font editors. There's further discussion on this at https://github.com/googlefonts/fontbakery/issues/1622
 
 </details>
 <details>

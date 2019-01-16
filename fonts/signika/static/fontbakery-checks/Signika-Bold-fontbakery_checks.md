@@ -560,7 +560,7 @@ This happens a lot when points are not extremes, which is usually bad. However, 
 |  | instance_ttf/Signika-Bold.ttf |
 |:--- | ---:|
 | Dehinted Size | 86.2kb |
-| Hinted Size | 111.2kb |
+| Hinted Size | 111.1kb |
 | Increase | 25.0kb |
 | Change   | 29.0 % |
 
@@ -610,7 +610,7 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 <summary>:information_source: <b>INFO:</b> Font contains all required tables?</summary>
 
 * [com.google.fonts/check/052](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :information_source: **INFO** This font contains the following optional tables [gasp, DSIG, fpgm, cvt , loca, GSUB, prep, GPOS]
+* :information_source: **INFO** This font contains the following optional tables [prep, GPOS, cvt , DSIG, gasp, GSUB, fpgm, loca]
 * :bread: **PASS** Font contains all required tables.
 
 </details>

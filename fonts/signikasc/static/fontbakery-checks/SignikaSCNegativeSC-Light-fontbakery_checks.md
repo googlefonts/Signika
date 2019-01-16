@@ -186,7 +186,64 @@ Fontbakery version: 0.6.6.dev5+g6a494f59
 <br>
 </details>
 <details>
-<summary><b>[118] SignikaNegative-SemiBold.ttf</b></summary>
+<summary><b>[118] SignikaSCNegativeSC-Light.ttf</b></summary>
+<details>
+<summary>:fire: <b>FAIL:</b> Check copyright namerecords match license file.</summary>
+
+* [com.google.fonts/check/029](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :fire: **FAIL** Font lacks NameID 13 (LICENSE DESCRIPTION). A proper licensing entry must be set. [code: missing]
+
+</details>
+<details>
+<summary>:fire: <b>FAIL:</b> "License URL matches License text on name table?</summary>
+
+* [com.google.fonts/check/030](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :fire: **FAIL** A known license URL must be provided in the NameID 14 (LICENSE INFO URL) entry. Currently accepted licenses are Apache or Open Font License. For a small set of legacy families the Ubuntu Font License may be acceptable as well. [code: no-license-found]
+
+</details>
+<details>
+<summary>:fire: <b>FAIL:</b> Font has all mandatory 'name' table entries ?</summary>
+
+* [com.google.fonts/check/156](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :fire: **FAIL** Font lacks entry with nameId=16 (TYPOGRAPHIC_FAMILY_NAME)
+* :fire: **FAIL** Font lacks entry with nameId=17 (TYPOGRAPHIC_SUBFAMILY_NAME)
+
+</details>
+<details>
+<summary>:fire: <b>FAIL:</b> Check name table: FONT_FAMILY_NAME entries. </summary>
+
+* [com.google.fonts/check/157](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :fire: **FAIL** Entry [FONT_FAMILY_NAME(1):WINDOWS(3)] on the 'name' table: Expected 'Signika S C Negative SC Light' but got 'Signika Negative Light SC SC'.
+
+</details>
+<details>
+<summary>:fire: <b>FAIL:</b> Check name table: FULL_FONT_NAME entries. </summary>
+
+* [com.google.fonts/check/159](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :fire: **FAIL** Entry [FULL_FONT_NAME(4):WINDOWS(3)] on the 'name' table: Expected 'Signika S C Negative SC Light' but got 'Signika Negative Light SC SC Regular'.
+
+</details>
+<details>
+<summary>:fire: <b>FAIL:</b> Check name table: POSTSCRIPT_NAME entries. </summary>
+
+* [com.google.fonts/check/160](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :fire: **FAIL** Entry [POSTSCRIPT_NAME(6):WINDOWS(3)] on the 'name' table: Expected 'SignikaSCNegativeSC-Light' but got 'SignikaNegativeSCSC-Light'.
+
+</details>
+<details>
+<summary>:fire: <b>FAIL:</b> Check name table: TYPOGRAPHIC_FAMILY_NAME entries. </summary>
+
+* [com.google.fonts/check/161](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :fire: **FAIL** non-RIBBI fonts must have a TYPOGRAPHIC_FAMILY_NAME entry on the name table. [code: non-ribbi-lacks-entry]
+
+</details>
+<details>
+<summary>:fire: <b>FAIL:</b> Check name table: TYPOGRAPHIC_SUBFAMILY_NAME entries. </summary>
+
+* [com.google.fonts/check/162](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :fire: **FAIL** non-RIBBI fonts must have a TYPOGRAPHIC_SUBFAMILY_NAME entry on the name table. [code: non-ribbi-lacks-entry]
+
+</details>
 <details>
 <summary>:warning: <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
@@ -195,7 +252,48 @@ Fontbakery version: 0.6.6.dev5+g6a494f59
 
 The following glyphs do not have the recommended number of contours:
 
+Glyph name: b.smcp	Contours detected: 3	Expected: 2
+Glyph name: e.smcp	Contours detected: 1	Expected: 2
+Glyph name: g.smcp	Contours detected: 1	Expected: 2 or 3
+Glyph name: i.smcp	Contours detected: 1	Expected: 2
+Glyph name: j.smcp	Contours detected: 1	Expected: 2
+Glyph name: r.smcp	Contours detected: 2	Expected: 1
+Glyph name: ae.smcp	Contours detected: 2	Expected: 3
+Glyph name: egrave.smcp	Contours detected: 2	Expected: 3
+Glyph name: eacute.smcp	Contours detected: 2	Expected: 3
+Glyph name: ecircumflex.smcp	Contours detected: 2	Expected: 3
+Glyph name: edieresis.smcp	Contours detected: 3	Expected: 4
+Glyph name: emacron.smcp	Contours detected: 2	Expected: 3
+Glyph name: ebreve.smcp	Contours detected: 2	Expected: 3
+Glyph name: edotaccent.smcp	Contours detected: 2	Expected: 3
+Glyph name: eogonek.smcp	Contours detected: 1	Expected: 2
+Glyph name: ecaron.smcp	Contours detected: 2	Expected: 3
+Glyph name: gcircumflex.smcp	Contours detected: 2	Expected: 3 or 4
+Glyph name: gbreve.smcp	Contours detected: 2	Expected: 3 or 4
+Glyph name: gdotaccent.smcp	Contours detected: 2	Expected: 3 or 4
+Glyph name: uni0123.smcp	Contours detected: 2	Expected: 3 or 4
+Glyph name: hbar.smcp	Contours detected: 2	Expected: 1
+Glyph name: ij.smcp	Contours detected: 2	Expected: 3 or 4
+Glyph name: oe.smcp	Contours detected: 2	Expected: 3
+Glyph name: racute.smcp	Contours detected: 3	Expected: 2
+Glyph name: rcaron.smcp	Contours detected: 3	Expected: 2
+Glyph name: uni0157.smcp	Contours detected: 3	Expected: 2
 Glyph name: Uogonek	Contours detected: 2	Expected: 1
+Glyph name: uogonek.smcp	Contours detected: 2	Expected: 1
+
+</details>
+<details>
+<summary>:warning: <b>WARN:</b> Font contains .notdef as first glyph?</summary>
+
+* [com.google.fonts/check/046](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :warning: **WARN** Font should contain the .notdef glyph as the first glyph, it should not have a Unicode value assigned and should contain a drawing.
+
+</details>
+<details>
+<summary>:warning: <b>WARN:</b> Check if OS/2 xAvgCharWidth is correct.</summary>
+
+* [com.google.fonts/check/034](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :warning: **WARN** OS/2 xAvgCharWidth is 1027 but it should be 1050 which corresponds to the weighted average of the widths of the latin lowercase glyphs in the font
 
 </details>
 <details>
@@ -209,36 +307,7 @@ Glyph name: Uogonek	Contours detected: 2	Expected: 1
 <summary>:warning: <b>WARN:</b> Combined length of family and style must not exceed 20 characters.</summary>
 
 * [com.google.fonts/check/163](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :warning: **WARN** The combined length of family and style exceeds 20 chars in the following 'WINDOWS' entries: FONT_FAMILY_NAME = 'Signika Negative SemiBold' / SUBFAMILY_NAME = 'Regular'
-
-</details>
-<details>
-<summary>:warning: <b>WARN:</b> Is there kerning info for non-ligated sequences?</summary>
-
-* [com.google.fonts/check/065](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :warning: **WARN** GPOS table lacks kerning info for the following non-ligated sequences:
-	- f + f
-	- f + i
-	- i + f
-	- f + j
-	- j + f
-	- f + l
-	- l + f
-	- f + t
-	- t + f
-	- i + j
-	- j + l
-	- l + t
-	- v + i
-
-   [code: lacks-kern-info]
-
-</details>
-<details>
-<summary>:warning: <b>WARN:</b> Are there caret positions declared for every ligature?</summary>
-
-* [com.google.fonts/check/064](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :warning: **WARN** This font lacks caret position values for ligature glyphs on its GDEF table. [code: lacks-caret-pos]
+* :warning: **WARN** The combined length of family and style exceeds 20 chars in the following 'WINDOWS' entries: FONT_FAMILY_NAME = 'Signika Negative Light SC SC' / SUBFAMILY_NAME = 'Regular'
 
 </details>
 <details>
@@ -246,7 +315,7 @@ Glyph name: Uogonek	Contours detected: 2	Expected: 1
 
 * [com.google.fonts/check/075](https://github.com/googlefonts/fontbakery/search?q={checkid})
 * :warning: **WARN** The following glyphs have coordinates which are out of bounds:
-[('periodcentered', 459.38, 588.0), ('periodcentered', 459.38, 570.0), ('periodcentered', 459.38, 552.0), ('napostrophe', 136.1497, 1489.2805), ('napostrophe', 165.5594, 1489.2805), ('napostrophe', 194.0204, 1489.2805), ('napostrophe.smcp', 115.1497, 1488.2805), ('napostrophe.smcp', 144.5594, 1488.2805), ('napostrophe.smcp', 173.0204, 1488.2805), ('approxequal', 1065.18208, 842.3725), ('approxequal', 1065.18208, 450.37249999999995), ('approxequal', 851.4457600000001, 227.77285), ('approxequal', 762.38896, 227.77285), ('approxequal', 686.45632, 227.77285), ('uni2219', 367.0, 754.4200000000001), ('uni2219', 402.0, 754.4200000000001), ('uni2219', 435.0, 754.4200000000001), ('uni2219', 435.0, 461.86), ('uni2219', 402.0, 461.86), ('uni2219', 367.0, 461.86), ('bullet', 400.1901, 775.0830100000001), ('bullet', 455.74559999999997, 775.0830100000001), ('bullet', 508.12649999999996, 775.0830100000001), ('bullet', 508.12649999999996, 307.83433), ('bullet', 455.74559999999997, 307.83433), ('bullet', 400.1901, 307.83433)]
+[('periodcentered', 396.28, 582.0), ('periodcentered', 396.28, 564.0), ('periodcentered', 396.28, 546.0), ('napostrophe.smcp', 125.8615, 1488.1324), ('napostrophe.smcp', 148.9087, 1488.1324), ('napostrophe.smcp', 170.0353, 1488.1324), ('approxequal', 888.7126, 290.7305), ('approxequal', 731.1742, 290.7305), ('approxequal', 691.7896, 290.7305), ('bullet', 240.79600000000002, 543.06026), ('bullet', 240.79600000000002, 575.51174), ('bullet', 392.363, 732.36056), ('bullet', 436.641, 732.36056), ('bullet', 477.51300000000003, 732.36056), ('bullet', 632.486, 575.51174), ('bullet', 632.486, 543.06026), ('bullet', 632.486, 510.60878), ('bullet', 477.51300000000003, 353.75996), ('bullet', 436.641, 353.75996), ('bullet', 392.363, 353.75996), ('bullet', 240.79600000000002, 510.60878)]
 This happens a lot when points are not extremes, which is usually bad. However, fixing this alert by adding points on extremes may do more harm than good, especially with italics, calligraphic-script, handwriting, rounded and other fonts. So it is common to ignore this message
 
 </details>
@@ -415,7 +484,7 @@ This happens a lot when points are not extremes, which is usually bad. However, 
 <summary>:zzz: <b>SKIP:</b> Version number has increased since previous release on Google Fonts?</summary>
 
 * [com.google.fonts/check/117](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :zzz: **SKIP** Unfulfilled Conditions: api_gfonts_ttFont
+* :zzz: **SKIP** Unfulfilled Conditions: api_gfonts_ttFont, github_gfonts_ttFont
 
 </details>
 <details>
@@ -510,6 +579,20 @@ This happens a lot when points are not extremes, which is usually bad. However, 
 
 </details>
 <details>
+<summary>:zzz: <b>SKIP:</b> Is there kerning info for non-ligated sequences?</summary>
+
+* [com.google.fonts/check/065](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :zzz: **SKIP** Unfulfilled Conditions: ligatures
+
+</details>
+<details>
+<summary>:zzz: <b>SKIP:</b> Are there caret positions declared for every ligature?</summary>
+
+* [com.google.fonts/check/064](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :zzz: **SKIP** Unfulfilled Conditions: ligature_glyphs
+
+</details>
+<details>
 <summary>:zzz: <b>SKIP:</b> The variable font 'wght' (Weight) axis coordinate must be 400 on the 'Regular' instance.</summary>
 
 * [com.google.fonts/check/167](https://github.com/googlefonts/fontbakery/search?q={checkid})
@@ -564,12 +647,12 @@ This happens a lot when points are not extremes, which is usually bad. However, 
 * [com.google.fonts/check/054](https://github.com/googlefonts/fontbakery/search?q={checkid})
 * :information_source: **INFO** Hinting filesize impact:
 
-|  | instance_ttf/SignikaNegative-SemiBold.ttf |
+|  | instance_ttf/SignikaSCNegativeSC-Light.ttf |
 |:--- | ---:|
-| Dehinted Size | 86.1kb |
-| Hinted Size | 106.9kb |
-| Increase | 20.8kb |
-| Change   | 24.1 % |
+| Dehinted Size | 60.8kb |
+| Hinted Size | 78.3kb |
+| Increase | 17.5kb |
+| Change   | 28.8 % |
 
 
 </details>
@@ -609,7 +692,7 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 <summary>:information_source: <b>INFO:</b> Font contains all required tables?</summary>
 
 * [com.google.fonts/check/052](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :information_source: **INFO** This font contains the following optional tables [gasp, prep, loca, GSUB, fpgm, DSIG, GPOS, cvt ]
+* :information_source: **INFO** This font contains the following optional tables [prep, loca, GSUB, GPOS, fpgm, cvt , DSIG, gasp]
 * :bread: **PASS** Font contains all required tables.
 
 </details>
@@ -617,7 +700,7 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 <summary>:bread: <b>PASS:</b> Checking file is named canonically.</summary>
 
 * [com.google.fonts/check/001](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :bread: **PASS** instance_ttf/SignikaNegative-SemiBold.ttf is named canonically.
+* :bread: **PASS** instance_ttf/SignikaSCNegativeSC-Light.ttf is named canonically.
 
 </details>
 <details>
@@ -660,20 +743,6 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 * [com.google.fonts/check/020](https://github.com/googlefonts/fontbakery/search?q={checkid})
 * :bread: **PASS** OS/2 usWeightClass value looks good!
-
-</details>
-<details>
-<summary>:bread: <b>PASS:</b> Check copyright namerecords match license file.</summary>
-
-* [com.google.fonts/check/029](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :bread: **PASS** Licensing entry on name table is correctly set.
-
-</details>
-<details>
-<summary>:bread: <b>PASS:</b> "License URL matches License text on name table?</summary>
-
-* [com.google.fonts/check/030](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :bread: **PASS** Font has a valid license URL in NAME table.
 
 </details>
 <details>
@@ -745,7 +814,7 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 <summary>:bread: <b>PASS:</b> Checking post.italicAngle value.</summary>
 
 * [com.google.fonts/check/130](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :bread: **PASS** Value of post.italicAngle is 0.0 with style='SemiBold'.
+* :bread: **PASS** Value of post.italicAngle is 0.0 with style='Light'.
 
 </details>
 <details>
@@ -757,52 +826,10 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 </details>
 <details>
-<summary>:bread: <b>PASS:</b> Font has all mandatory 'name' table entries ?</summary>
-
-* [com.google.fonts/check/156](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :bread: **PASS** Font contains values for all mandatory name table entries.
-
-</details>
-<details>
-<summary>:bread: <b>PASS:</b> Check name table: FONT_FAMILY_NAME entries. </summary>
-
-* [com.google.fonts/check/157](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :bread: **PASS** FONT_FAMILY_NAME entries are all good.
-
-</details>
-<details>
 <summary>:bread: <b>PASS:</b> Check name table: FONT_SUBFAMILY_NAME entries. </summary>
 
 * [com.google.fonts/check/158](https://github.com/googlefonts/fontbakery/search?q={checkid})
 * :bread: **PASS** FONT_SUBFAMILY_NAME entries are all good.
-
-</details>
-<details>
-<summary>:bread: <b>PASS:</b> Check name table: FULL_FONT_NAME entries. </summary>
-
-* [com.google.fonts/check/159](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :bread: **PASS** FULL_FONT_NAME entries are all good.
-
-</details>
-<details>
-<summary>:bread: <b>PASS:</b> Check name table: POSTSCRIPT_NAME entries. </summary>
-
-* [com.google.fonts/check/160](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :bread: **PASS** POSTCRIPT_NAME entries are all good.
-
-</details>
-<details>
-<summary>:bread: <b>PASS:</b> Check name table: TYPOGRAPHIC_FAMILY_NAME entries. </summary>
-
-* [com.google.fonts/check/161](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :bread: **PASS** TYPOGRAPHIC_FAMILY_NAME entries are all good.
-
-</details>
-<details>
-<summary>:bread: <b>PASS:</b> Check name table: TYPOGRAPHIC_SUBFAMILY_NAME entries. </summary>
-
-* [com.google.fonts/check/162](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :bread: **PASS** TYPOGRAPHIC_SUBFAMILY_NAME entries are all good.
 
 </details>
 <details>
@@ -866,13 +893,6 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 * [com.google.fonts/check/036](https://github.com/googlefonts/fontbakery/search?q={checkid})
 * :bread: **PASS** ots-sanitize passed this file
-
-</details>
-<details>
-<summary>:bread: <b>PASS:</b> Font contains .notdef as first glyph?</summary>
-
-* [com.google.fonts/check/046](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :bread: **PASS** Font contains the .notdef glyph as the first glyph, it does not have a Unicode value assigned and contains a drawing.
 
 </details>
 <details>
@@ -950,13 +970,6 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 * [com.google.fonts/check/044](https://github.com/googlefonts/fontbakery/search?q={checkid})
 * :bread: **PASS** All font version fields match.
-
-</details>
-<details>
-<summary>:bread: <b>PASS:</b> Check if OS/2 xAvgCharWidth is correct.</summary>
-
-* [com.google.fonts/check/034](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :bread: **PASS** OS/2 xAvgCharWidth value is correct.
 
 </details>
 <details>
@@ -1064,5 +1077,5 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 | :broken_heart: ERROR | :fire: FAIL | :warning: WARN | :zzz: SKIP | :information_source: INFO | :bread: PASS |
 |:-----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 0 | 6 | 60 | 6 | 71 |
-| 0% | 0% | 4% | 42% | 4% | 50% |
+| 0 | 8 | 6 | 62 | 6 | 61 |
+| 0% | 6% | 4% | 43% | 4% | 43% |

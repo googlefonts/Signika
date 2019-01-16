@@ -251,13 +251,6 @@ Fontbakery version: 0.6.6.dev5+g6a494f59
 
 </details>
 <details>
-<summary>:fire: <b>FAIL:</b> Font has correct post table version (2 for TTF, 3 for OTF)?</summary>
-
-* [com.google.fonts/check/015](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :fire: **FAIL** Post table should be version 2 instead of 3.0. More info at https://github.com/google/fonts/issues/215
-
-</details>
-<details>
 <summary>:warning: <b>WARN:</b> Copyright notice on METADATA.pb should not contain 'Reserved Font Name'.</summary>
 
 * [com.google.fonts/check/103](https://github.com/googlefonts/fontbakery/search?q={checkid})
@@ -275,7 +268,7 @@ Fontbakery version: 0.6.6.dev5+g6a494f59
 <summary>:warning: <b>WARN:</b> Check if OS/2 xAvgCharWidth is correct.</summary>
 
 * [com.google.fonts/check/034](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :warning: **WARN** OS/2 xAvgCharWidth is 1027 but it should be 1049 which corresponds to the weighted average of the widths of the latin lowercase glyphs in the font
+* :warning: **WARN** OS/2 xAvgCharWidth is 1027 but it should be 1050 which corresponds to the weighted average of the widths of the latin lowercase glyphs in the font
 
 </details>
 <details>
@@ -297,7 +290,7 @@ Fontbakery version: 0.6.6.dev5+g6a494f59
 
 * [com.google.fonts/check/075](https://github.com/googlefonts/fontbakery/search?q={checkid})
 * :warning: **WARN** The following glyphs have coordinates which are out of bounds:
-[('periodcentered', 396.28, 582.0), ('periodcentered', 396.28, 564.0), ('periodcentered', 396.28, 546.0), ('napostrophe', 125.8615, 1488.1324), ('napostrophe', 148.9087, 1488.1324), ('napostrophe', 170.0353, 1488.1324), ('approxequal', 809.9434, 290.7305), ('approxequal', 731.1742, 290.7305), ('approxequal', 691.7896, 290.7305), ('bullet', 240.79600000000002, 543.06026), ('bullet', 240.79600000000002, 575.51174), ('bullet', 392.363, 732.36056), ('bullet', 436.641, 732.36056), ('bullet', 477.51300000000003, 732.36056), ('bullet', 632.486, 575.51174), ('bullet', 632.486, 543.06026), ('bullet', 632.486, 510.60878), ('bullet', 477.51300000000003, 353.75996), ('bullet', 436.641, 353.75996), ('bullet', 392.363, 353.75996), ('bullet', 240.79600000000002, 510.60878)]
+[('periodcentered', 396.28, 582.0), ('periodcentered', 396.28, 564.0), ('periodcentered', 396.28, 546.0), ('napostrophe.smcp', 125.8615, 1488.1324), ('napostrophe.smcp', 148.9087, 1488.1324), ('napostrophe.smcp', 170.0353, 1488.1324), ('approxequal', 809.9434, 290.7305), ('approxequal', 731.1742, 290.7305), ('approxequal', 691.7896, 290.7305), ('bullet', 240.79600000000002, 543.06026), ('bullet', 240.79600000000002, 575.51174), ('bullet', 392.363, 732.36056), ('bullet', 436.641, 732.36056), ('bullet', 477.51300000000003, 732.36056), ('bullet', 632.486, 575.51174), ('bullet', 632.486, 543.06026), ('bullet', 632.486, 510.60878), ('bullet', 477.51300000000003, 353.75996), ('bullet', 436.641, 353.75996), ('bullet', 392.363, 353.75996), ('bullet', 240.79600000000002, 510.60878)]
 This happens a lot when points are not extremes, which is usually bad. However, fixing this alert by adding points on extremes may do more harm than good, especially with italics, calligraphic-script, handwriting, rounded and other fonts. So it is common to ignore this message
 
 </details>
@@ -463,27 +456,6 @@ This happens a lot when points are not extremes, which is usually bad. However, 
 
 </details>
 <details>
-<summary>:zzz: <b>SKIP:</b> Font has **proper** whitespace glyph names?</summary>
-
-* [com.google.fonts/check/048](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :zzz: **SKIP** Font has version 3 post table.
-
-</details>
-<details>
-<summary>:zzz: <b>SKIP:</b> Glyph names are all valid?</summary>
-
-* [com.google.fonts/check/058](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :zzz: **SKIP** TrueType fonts with a format 3.0 post table contain no glyph names.
-
-</details>
-<details>
-<summary>:zzz: <b>SKIP:</b> Font contains unique glyph names?</summary>
-
-* [com.google.fonts/check/059](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :zzz: **SKIP** TrueType fonts with a format 3.0 post table contain no glyph names.
-
-</details>
-<details>
 <summary>:zzz: <b>SKIP:</b> CFF table FontName must match name table ID 6 (PostScript name).</summary>
 
 * [com.adobe.fonts/check/postscript_name_cff_vs_name](https://github.com/googlefonts/fontbakery/search?q={checkid})
@@ -547,10 +519,10 @@ This happens a lot when points are not extremes, which is usually bad. However, 
 
 |  | fonts/signikanegativesc/split_vf/SignikaNegativeSC-VF.ttf |
 |:--- | ---:|
-| Dehinted Size | 104.8kb |
-| Hinted Size | 125.0kb |
+| Dehinted Size | 108.5kb |
+| Hinted Size | 128.6kb |
 | Increase | 20.2kb |
-| Change   | 19.2 % |
+| Change   | 18.6 % |
 
 
 </details>
@@ -590,7 +562,7 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 <summary>:information_source: <b>INFO:</b> Font contains all required tables?</summary>
 
 * [com.google.fonts/check/052](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :information_source: **INFO** This font contains the following optional tables [gasp, cvt , GSUB, fpgm, DSIG, loca, GPOS, prep]
+* :information_source: **INFO** This font contains the following optional tables [gasp, prep, cvt , GPOS, GSUB, DSIG, fpgm, loca]
 * :bread: **PASS** Font contains all required tables.
 
 </details>
@@ -877,6 +849,13 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 </details>
 <details>
+<summary>:bread: <b>PASS:</b> Font has **proper** whitespace glyph names?</summary>
+
+* [com.google.fonts/check/048](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :bread: **PASS** Font has **proper** whitespace glyph names.
+
+</details>
+<details>
 <summary>:bread: <b>PASS:</b> Whitespace glyphs have ink?</summary>
 
 * [com.google.fonts/check/049](https://github.com/googlefonts/fontbakery/search?q={checkid})
@@ -888,6 +867,20 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 * [com.google.fonts/check/053](https://github.com/googlefonts/fontbakery/search?q={checkid})
 * :bread: **PASS** There are no unwanted tables.
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> Glyph names are all valid?</summary>
+
+* [com.google.fonts/check/058](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :bread: **PASS** Glyph names are all valid.
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> Font contains unique glyph names?</summary>
+
+* [com.google.fonts/check/059](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :bread: **PASS** Font contains unique glyph names.
 
 </details>
 <details>
@@ -923,6 +916,13 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 * [com.google.fonts/check/044](https://github.com/googlefonts/fontbakery/search?q={checkid})
 * :bread: **PASS** All font version fields match.
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> Font has correct post table version (2 for TTF, 3 for OTF)?</summary>
+
+* [com.google.fonts/check/015](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :bread: **PASS** Font has post table version 2.
 
 </details>
 <details>
@@ -1044,5 +1044,5 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 | :broken_heart: ERROR | :fire: FAIL | :warning: WARN | :zzz: SKIP | :information_source: INFO | :bread: PASS |
 |:-----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 10 | 7 | 34 | 6 | 86 |
-| 0% | 7% | 5% | 24% | 4% | 60% |
+| 0 | 9 | 7 | 31 | 6 | 90 |
+| 0% | 6% | 5% | 22% | 4% | 63% |

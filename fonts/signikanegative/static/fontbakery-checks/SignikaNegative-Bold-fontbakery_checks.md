@@ -560,7 +560,7 @@ This happens a lot when points are not extremes, which is usually bad. However, 
 |  | instance_ttf/SignikaNegative-Bold.ttf |
 |:--- | ---:|
 | Dehinted Size | 86.3kb |
-| Hinted Size | 108.1kb |
+| Hinted Size | 108.0kb |
 | Increase | 21.8kb |
 | Change   | 25.2 % |
 
@@ -602,8 +602,15 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 <summary>:information_source: <b>INFO:</b> Font contains all required tables?</summary>
 
 * [com.google.fonts/check/052](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :information_source: **INFO** This font contains the following optional tables [loca, fpgm, GSUB, prep, gasp, DSIG, cvt , GPOS]
+* :information_source: **INFO** This font contains the following optional tables [loca, gasp, GSUB, fpgm, prep, DSIG, GPOS, cvt ]
 * :bread: **PASS** Font contains all required tables.
+
+</details>
+<details>
+<summary>:information_source: <b>INFO:</b> Check if OS/2 xAvgCharWidth is correct.</summary>
+
+* [com.google.fonts/check/034](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :information_source: **INFO** OS/2 xAvgCharWidth is 1085 but should be 1083 which corresponds to the weighted average of the widths of the latin lowercase glyphs in the font. These are similar values, which may be a symptom of the slightly different calculation of the xAvgCharWidth value in font editors. There's further discussion on this at https://github.com/googlefonts/fontbakery/issues/1622
 
 </details>
 <details>
@@ -946,13 +953,6 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 </details>
 <details>
-<summary>:bread: <b>PASS:</b> Check if OS/2 xAvgCharWidth is correct.</summary>
-
-* [com.google.fonts/check/034](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :bread: **PASS** OS/2 xAvgCharWidth value is correct.
-
-</details>
-<details>
 <summary>:bread: <b>PASS:</b> Font has correct post table version (2 for TTF, 3 for OTF)?</summary>
 
 * [com.google.fonts/check/015](https://github.com/googlefonts/fontbakery/search?q={checkid})
@@ -1064,5 +1064,5 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 | :broken_heart: ERROR | :fire: FAIL | :warning: WARN | :zzz: SKIP | :information_source: INFO | :bread: PASS |
 |:-----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 0 | 5 | 60 | 6 | 72 |
-| 0% | 0% | 3% | 42% | 4% | 50% |
+| 0 | 0 | 5 | 60 | 7 | 71 |
+| 0% | 0% | 3% | 42% | 5% | 50% |

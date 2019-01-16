@@ -62,7 +62,7 @@ if [ -f "$file" ]; then
     
     echo "subsetting smallcap font"
     # subsetting with subsetGlyphNames list
-    pyftsubset $smallCapFile $subsetGlyphNames --notdef-glyph 
+    pyftsubset $smallCapFile $subsetGlyphNames --glyph-names
 
     subsetSmallCapFile=${smallCapFile/".ttf"/".subset.ttf"}
     rm -rf $smallCapFile

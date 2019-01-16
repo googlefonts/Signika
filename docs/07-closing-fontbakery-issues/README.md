@@ -140,9 +140,16 @@ This happens a lot when points are not extremes, which is usually bad. However, 
 
 - [x] I'm not yet quite sure how to fix this ... it's described here: https://github.com/google/fonts/issues/215
 
-I am getting this `WARN` on a subset SC font which has been subset by fontTools, and as you Dave says in the opening comment,
+I am getting this `WARN` on a subset SC font which has been subset by fontTools, and as Dave says in the opening comment,
 
 > They should be flipped to v3 when served to web browsers where file size savings do matter, and the fontTools subsetter does use v3.
+
+From that issue, @anthrotype helped point out that the option `--glyph-names` in the `fonttools subset`/`pyftsubset` subsetter will keep a font's post table as v2.
+
+As it turns out, the v2 post table font is actually slightly smaller (at least for Signika SC VF):
+- 174kb for v2 table TTF
+- 178kb for v3 table TTF
+
 
 <details>
 <summary>:warning: <b>WARN:</b> Check if OS/2 xAvgCharWidth is correct.</summary>
@@ -153,3 +160,5 @@ I am getting this `WARN` on a subset SC font which has been subset by fontTools,
 </details>
 
 Subsetting out the lowercase makes the font narrower, on average, and this value is calculated from the average of all glyphs in the font, per [the MS OpenType spec](https://docs.microsoft.com/en-us/typography/opentype/spec/os2#xavgcharwidth). This made me realize that FontBakery isn't quite defining this correctly, so I filed an issue at https://github.com/googlefonts/fontbakery/issues/2285.
+
+

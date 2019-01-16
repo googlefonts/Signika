@@ -23,3 +23,12 @@
 - [ ] correct NAME/STAT tables in full variable font
 
 - [ ] fix `/Germandbls` (currently this is just using a lowercase letter as a component, rather than being a proper uppercase /Germandbls)
+
+## PR structure
+
+Like [Comfortaa](https://github.com/google/fonts/tree/master/ofl/comfortaa)
+
+![](assets/2019-01-15-12-01-41.png)
+
+Each font family (e.g. signikanegativesc) should have a split VF at the top level, and a folder for `/static` fonts.
+

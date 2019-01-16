@@ -87,14 +87,6 @@ Hmm, not yet.
 
 Still, I'll start by following the advice in the GlyphsApp [tutorial on diacritics](https://glyphsapp.com/tutorials/diacritics) and make the non-comb accents be the components. This tutorial calls non-comb accents "Legacy" accents, because they are only included to support legacy apps -- new ones use `comb` accents.
 
-<!-- 
-To do this, I will make a script to:
-
-1. Give the 0-width `comb` glyphs a width of 796 (this seems to be the standard for Signika)
-1. Decompose the `comb` glyphs
-
-I should then be able to use GlyphsApp to easily make the non-comb glyphs. -->
-
 I'll delete the existing `comb` glyphs, as they aren't doing much aside from being 0-width component glyphs. Then, I'll add `comb` to all non-comb accent names. Finally, I'll remake the "legacy" accents from these. While I'm still at GlyphsApp, this all seems to work quite easily -- no component glyphs are losing accents.
 
 So, far, it's a big improvement!

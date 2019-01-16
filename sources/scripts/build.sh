@@ -12,7 +12,7 @@ while [ ! $# -eq 0 ]
         ;;
         --all | -a)
             source $(dirname ${BASH_SOURCE[0]})/build-statics.sh
-            source $(dirname ${BASH_SOURCE[0]})/build-vf.sh -s
+            source $(dirname ${BASH_SOURCE[0]})/build-vf.sh -n
             source $(dirname ${BASH_SOURCE[0]})/build-vf.sh -f
             
         ;;

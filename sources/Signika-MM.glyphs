@@ -47820,21 +47820,6 @@ rightMetricsKey = Ohm;
 unicode = 03A9;
 },
 {
-glyphname = CR.002;
-lastChange = "2018-12-24 00:00:45 +0000";
-layers = (
-{
-layerId = UUID0;
-width = 600;
-},
-{
-layerId = UUID1;
-width = 600;
-}
-);
-unicode = 008E;
-},
-{
 glyphname = dotaccentcomb.alt;
 lastChange = "2019-01-14 23:51:18 +0000";
 layers = (
