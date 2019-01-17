@@ -2,7 +2,7 @@
 # code app switching ------------------------------------------------
 
 ## if you want to run this file from a code editor & command line, comment out the following line
-runFromDrawbot = True
+# runFromDrawbot = True
 
 try:
     runFromDrawbot # checks if variable exists
@@ -124,4 +124,4 @@ textBox(fontName, (padding, 0, W-padding*2, H))
 # Save Image --------------------------------------------------------
 
 path = f"{fileRoot}/docs/08-specimen/charset-tall-alt_title.png"
-saveImage(path, imageResolution=144)
+saveImage(path, imageResolution=220)
