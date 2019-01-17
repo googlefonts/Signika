@@ -1,15 +1,22 @@
-# run with www.drawbot.com
-# run from root folder
+# -------------------------------------------------------------------
+# code app switching ------------------------------------------------
 
-## if you want to run this file from a code editor/command line, comment out the following line
+## if you want to run this file from a code editor & command line, comment out the following line
 runFromDrawbot = True
 
 try:
     runFromDrawbot # checks if variable exists
     fileRoot = "/Users/stephennixon/type-repos/google-font-repos/signika-for-google/"
+
+# if runFromDrawbot is commented out, this will set things up to run remotely
 except NameError:
+    # run with www.drawbot.com
+    # run from root folder
     from drawBot import *
     fileRoot = "."
+
+# -------------------------------------------------------------------
+# set up vars -------------------------------------------------------
 
 W, H = 800, 1200
 
@@ -34,7 +41,8 @@ lineHeight = fontSizing*1.64
 tracking = 4.30
 # color = (1,0,0)
 
-# normal charset
+# -------------------------------------------------------------------
+# normal charset ----------------------------------------------------
 
 charSet = FormattedString()
 charSet.font(f"{fileRoot}/fonts/signika/static/Signika-Regular.ttf")
@@ -59,7 +67,8 @@ stroke(1)
 
 textBox(charSet, (padding, -80, W/2-padding*2, H-padding/2))
 
-# negative charset
+# -------------------------------------------------------------------
+# negative charset --------------------------------------------------
 
 charSet2 = FormattedString()
 charSet2.font(f"{fileRoot}/fonts/signikanegative/static/SignikaNegative-Regular.ttf")
@@ -83,12 +92,14 @@ textBox(charSet2, (W/2+padding,-80, W/2-padding*2, H-padding/2))
 
 # saveImage("charset.pdf")
 
+# -------------------------------------------------------------------
+# Title -------------------------------------------------------------
 
 # fill(colorA[0],colorA[1],colorA[2])
 fill(colorB[0],colorB[1],colorB[2])
 stroke(colorA[0],colorA[1],colorA[2])
 strokeWidth(3)
-titleHeight = 56
+titleHeight = 58
 titleWidth = W-padding*2
 rect((W-titleWidth)/2, H-titleHeight-padding, titleWidth,titleHeight)
 
@@ -100,14 +111,17 @@ fontName.fill(0,0,1)
 fontName.fill(colorA[0],colorA[1],colorA[2])
 fontName.strokeWidth(0.5)
 fontName.fontSize(fontSizing)
-fontName.tracking(0)
+fontName.tracking(2.2)
 fontName.align("center")
-fontName.font(f"{fileRoot}/fonts/signikanegative/static/SignikaNegative-Bold.ttf")
+fontName.font(f"{fileRoot}/fonts/signikanegative/static/SignikaNegative-Light.ttf")
 fontName.lineHeight(fontSizing*1.55)
 fontName.openTypeFeatures(smcp=True,c2sc=True)
 fontName += "Signika & Signika Negative"
 
 textBox(fontName, (padding, 0, W-padding*2, H))
+
+# -------------------------------------------------------------------
+# Save Image --------------------------------------------------------
 
 path = f"{fileRoot}/docs/08-specimen/charset-tall-alt_title.png"
 saveImage(path, imageResolution=144)
