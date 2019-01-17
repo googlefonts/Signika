@@ -3,6 +3,10 @@ Making a variable version of Signika, from Google Fonts
 
 ![Signika VF](https://github.com/thundernixon/Signika/blob/f3ae1a5bee3735feb7f69db54833175cbb658134/dist/Signika-MM-VF-2018-10-16-16_01/signika-VF%202018-10-16%20at%2015.41.36.gif)
 
+<details>
+<summary>
+    Build Instructions
+</summary>
 
 # Build Process
 
@@ -64,8 +68,19 @@ Due to [current limitations in remote scripting for GlyphsApp](https://forum.gly
 
 The font now has sources with build-ready rectangular designspace, and will build into a variable font with the build scripts.
 
-# Variable font upgrade project documentation
+</details>
+
+<details>
+<summary>Variable font upgrade notes</summary>
+
+# Project notes
 
 Notes were taken throughout the variable font upgrade project and added to the [docs](/docs) directory. I tend to take notes while working anyway, in order to think through problems and record solutions for later reference. In this project, I have included these in the repo so that others might find references to solve similar problems, especially because variable font-making processes are relatively new, and there is a general scarcity of online knowledge on font mastering. Because they were often made alongside work, the notes can at times be a bit disjointed. Hopefully they are still helpful to others! 
 
 If you have any questions about the project or the notes, feel free to [file an issue](/issues) or to reach out to Stephen Nixon via Twitter ([@thundernixon](https://twitter.com/thundernixon)) or other social media (typically also @thundernixon).
+
+</details>
+
+---
+
+![](docs/08-specimen/charset-tall.png)
