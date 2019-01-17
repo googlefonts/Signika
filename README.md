@@ -9,15 +9,33 @@ A variable font for positive/negative typesetting, originally designed by Anna G
 
 The sources can be built with FontMake, but I've put together some specific build scripts to pass the fonts through some steps that fix metadata issues.
 
+The build process requires you to open up a terminal and navigate to this project's directory.
+
 ## Step 1: Install Requirements
+
+I suggest using a Python virtual environment to build this project. If you've never set up a virtual environment before, [read more virtualenv in this guide](https://medium.com/python-pandemonium/better-python-dependency-and-package-management-b5d8ea29dff1).
+
+First, set up a virtual environment with:
+
+```
+virtualenv -p python3 virtual_env
+```
+
+Here, `virtual_env` will be the name of the virtual environment and of the folder holding its dependencies. You need to activate it with:
+
+```
+source virtual_env/bin/activate
+```
 
 To operate the scripts within this repo, install requirements with:
 
 ```
-pip install -r sources/scripts/requirements.txt
+pip install -r requirements.txt
 ```
 
-(Caveat: this installs all Python 3 dependencies I've installed for Google Fonts work. I know this is messy – next time, I'll set up a virtual environment for each project. I hope to circle back in the future and make this requirements file cleaner. If you wish to install fewer requirements, you could alternatively install requirements when/if you run into errors.)
+You will also need to download this build of [TTFautohint-vf](https://groups.google.com/forum/#!searchin/googlefonts-discuss/ttfautohint%7Csort:date/googlefonts-discuss/WJX1lrzcwVs/SIzaEvntAgAJ), and place the file directly into the new `virtual_env/bin` within this project.
+
+To exit out of the virtual environment, you can use the command `deactivate` (just remember to start it up again if you come back).
 
 ## Step 2: Give permissions to build scripts
 
@@ -29,7 +47,7 @@ On the command line, navigate to the project folder (`cd Encode-Sans`), and then
 chmod -R +x sources/scripts
 ```
 
-The `-R` applies your permission to each of the shell scripts in the directory, and the `+x` adds execute permissions. Before you do this for shell scripts, you should probably take a look through their contents, to be sure they aren't doing anything bad. The ones in this repo simply build from the Encode Sans GlyphsApp sources.
+The `-R` applies your permission to each of the shell scripts in the directory, and the `+x` adds execute permissions. Before you do this for shell scripts, you should probably take a look through their contents, to be sure they aren't doing anything bad. The ones in this repo simply build from the GlyphsApp sources and apply various fixes to the results.
 
 ## Step 3: Run the build scripts!
 
@@ -38,19 +56,19 @@ You can then build sources by running shell scripts in `sources/scripts/`.
 Build the full variable font (Weight + "Negative" axes) with:
 
 ```
-sources/scripts/build -f
+sources/scripts/build.sh -f
 ```
 
-Build the split variable font with (just Weight axis for "normal" version):
+Build the split variable font with just the Weight axis for both the normal and Negative families:
 
 ```
-sources/scripts/build -n
+sources/scripts/build.sh -n
 ```
 
 Build all static instances with:
 
 ```
-sources/scripts/build -s
+sources/scripts/build.sh -s
 ```
 
 # Build steps after edits to primary source
