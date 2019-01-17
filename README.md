@@ -3,9 +3,7 @@
 A variable font for positive/negative typesetting, originally designed by Anna Giedryś in 2011.
 
 <details>
-<summary>
-    Build Instructions
-</summary>
+<summary>Build Instructions</summary>
 
 # Build Process
 
