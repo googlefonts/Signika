@@ -82,4 +82,4 @@ If you have any questions about the project or the notes, feel free to [file an 
 
 ---
 
-![](docs/08-specimen/charset-tall.png)
+![](docs/08-specimen/charset-tall-alt_title.png)
