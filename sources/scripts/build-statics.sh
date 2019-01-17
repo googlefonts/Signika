@@ -58,7 +58,7 @@ if [ -f "$file" ]; then
         smallCapFile=${file/"SignikaNegative"/"SignikaNegativeSC"}
     fi
 
-    pyftfeatfreeze.py -f 'smcp' -S -U SC $file $smallCapFile
+    python sources/scripts/helpers/pyftfeatfreeze.py -f 'smcp' -S -U SC $file $smallCapFile
     
     echo "subsetting smallcap font"
     # subsetting with subsetGlyphNames list

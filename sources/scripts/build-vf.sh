@@ -1,3 +1,4 @@
+set -x -e
 
 while [ ! $# -eq 0 ]
     do
@@ -116,7 +117,7 @@ subsetSmallCaps()
 
     echo making ${smallCapFontName}.ttf
 
-    pyftfeatfreeze.py -f 'smcp' -S -U SC $FILE $SC_NAME
+    python sources/scripts/helpers/pyftfeatfreeze.py -f 'smcp' -S -U SC $FILE $SC_NAME
 
     ttx $FILE
     # ttxPath="variable_ttf/${VFname}.ttx"

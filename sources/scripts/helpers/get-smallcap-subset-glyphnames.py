@@ -38,7 +38,7 @@ for hmtx in root.findall('hmtx'):
 glyphsToRemove = []
 
 for index, glyphName in enumerate(glyphsInFont):
-    if ".smcp" in glyphName:
+    if f'.{smallCapSuffix}' in glyphName:
         # erases ".smcp" suffix to make smallcaps glyphs take the place of lowercase
         rootName = glyphName.replace(f'.{smallCapSuffix}', '')
 
