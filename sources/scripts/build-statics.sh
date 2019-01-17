@@ -22,7 +22,7 @@ tempGlyphsSource=${glyphsSource/".glyphs"/"-build.glyphs"}
 cp $glyphsSource $tempGlyphsSource
 
 ## call fontmake to make all the static fonts
-fontmake -g ${tempGlyphsSource} --output ttf --interpolate --overlaps-backend booleanOperations
+fontmake -g ${tempGlyphsSource} --output ttf --interpolate --overlaps-backend booleanOperations --no-subset
 ## OR to just make one static font, as a test, use:
 # fontmake -g sources/sources-buildready/Signika-MM-prepped_designspace.glyphs -i "Signika Bold" --output ttf --overlaps-backend booleanOperations
 

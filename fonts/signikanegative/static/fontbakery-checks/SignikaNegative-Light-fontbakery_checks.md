@@ -566,10 +566,10 @@ This happens a lot when points are not extremes, which is usually bad. However, 
 
 |  | instance_ttf/SignikaNegative-Light.ttf |
 |:--- | ---:|
-| Dehinted Size | 84.4kb |
-| Hinted Size | 104.3kb |
+| Dehinted Size | 85.4kb |
+| Hinted Size | 105.2kb |
 | Increase | 19.8kb |
-| Change   | 23.5 % |
+| Change   | 23.2 % |
 
 
 </details>
@@ -609,7 +609,7 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 <summary>:information_source: <b>INFO:</b> Font contains all required tables?</summary>
 
 * [com.google.fonts/check/052](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :information_source: **INFO** This font contains the following optional tables [GPOS, GSUB, gasp, cvt , prep, loca, fpgm, DSIG]
+* :information_source: **INFO** This font contains the following optional tables [fpgm, prep, loca, GSUB, GPOS, gasp, cvt , DSIG]
 * :bread: **PASS** Font contains all required tables.
 
 </details>

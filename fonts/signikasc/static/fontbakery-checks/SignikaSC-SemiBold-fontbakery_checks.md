@@ -245,34 +245,7 @@ Fontbakery version: 0.6.6.dev5+g6a494f59
 
 The following glyphs do not have the recommended number of contours:
 
-Glyph name: b.smcp	Contours detected: 3	Expected: 2
-Glyph name: e.smcp	Contours detected: 1	Expected: 2
-Glyph name: g.smcp	Contours detected: 1	Expected: 2 or 3
-Glyph name: i.smcp	Contours detected: 1	Expected: 2
-Glyph name: j.smcp	Contours detected: 1	Expected: 2
-Glyph name: r.smcp	Contours detected: 2	Expected: 1
-Glyph name: ae.smcp	Contours detected: 2	Expected: 3
-Glyph name: egrave.smcp	Contours detected: 2	Expected: 3
-Glyph name: eacute.smcp	Contours detected: 2	Expected: 3
-Glyph name: ecircumflex.smcp	Contours detected: 2	Expected: 3
-Glyph name: edieresis.smcp	Contours detected: 3	Expected: 4
-Glyph name: emacron.smcp	Contours detected: 2	Expected: 3
-Glyph name: ebreve.smcp	Contours detected: 2	Expected: 3
-Glyph name: edotaccent.smcp	Contours detected: 2	Expected: 3
-Glyph name: eogonek.smcp	Contours detected: 1	Expected: 2
-Glyph name: ecaron.smcp	Contours detected: 2	Expected: 3
-Glyph name: gcircumflex.smcp	Contours detected: 2	Expected: 3 or 4
-Glyph name: gbreve.smcp	Contours detected: 2	Expected: 3 or 4
-Glyph name: gdotaccent.smcp	Contours detected: 2	Expected: 3 or 4
-Glyph name: uni0123.smcp	Contours detected: 2	Expected: 3 or 4
-Glyph name: hbar.smcp	Contours detected: 2	Expected: 1
-Glyph name: ij.smcp	Contours detected: 2	Expected: 3 or 4
-Glyph name: oe.smcp	Contours detected: 2	Expected: 3
-Glyph name: racute.smcp	Contours detected: 3	Expected: 2
-Glyph name: rcaron.smcp	Contours detected: 3	Expected: 2
-Glyph name: uni0157.smcp	Contours detected: 3	Expected: 2
 Glyph name: Uogonek	Contours detected: 2	Expected: 1
-Glyph name: uogonek.smcp	Contours detected: 2	Expected: 1
 
 </details>
 <details>
@@ -280,13 +253,6 @@ Glyph name: uogonek.smcp	Contours detected: 2	Expected: 1
 
 * [com.google.fonts/check/046](https://github.com/googlefonts/fontbakery/search?q={checkid})
 * :warning: **WARN** Font should contain the .notdef glyph as the first glyph, it should not have a Unicode value assigned and should contain a drawing.
-
-</details>
-<details>
-<summary>:warning: <b>WARN:</b> Check if OS/2 xAvgCharWidth is correct.</summary>
-
-* [com.google.fonts/check/034](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :warning: **WARN** OS/2 xAvgCharWidth is 1071 but it should be 1098 which corresponds to the weighted average of the widths of the latin lowercase glyphs in the font
 
 </details>
 <details>
@@ -304,11 +270,40 @@ Glyph name: uogonek.smcp	Contours detected: 2	Expected: 1
 
 </details>
 <details>
+<summary>:warning: <b>WARN:</b> Is there kerning info for non-ligated sequences?</summary>
+
+* [com.google.fonts/check/065](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :warning: **WARN** GPOS table lacks kerning info for the following non-ligated sequences:
+	- f + f
+	- f + i
+	- i + f
+	- f + j
+	- j + f
+	- f + l
+	- l + f
+	- f + t
+	- t + f
+	- i + j
+	- j + l
+	- l + t
+	- v + i
+
+   [code: lacks-kern-info]
+
+</details>
+<details>
+<summary>:warning: <b>WARN:</b> Are there caret positions declared for every ligature?</summary>
+
+* [com.google.fonts/check/064](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :warning: **WARN** This font lacks caret position values for ligature glyphs on its GDEF table. [code: lacks-caret-pos]
+
+</details>
+<details>
 <summary>:warning: <b>WARN:</b> Check for points out of bounds.</summary>
 
 * [com.google.fonts/check/075](https://github.com/googlefonts/fontbakery/search?q={checkid})
 * :warning: **WARN** The following glyphs have coordinates which are out of bounds:
-[('napostrophe.smcp', 113.66117999999997, 1489.06132), ('napostrophe.smcp', 143.97382, 1489.06132), ('napostrophe.smcp', 173.33918999999997, 1489.06132), ('uni2219', 437.0, 459.86), ('uni2219', 403.0, 459.86), ('uni2219', 367.0, 459.86), ('bullet', 400.85857, 778.2560000000001), ('bullet', 457.47325, 778.2560000000001), ('bullet', 510.94266999999996, 778.2560000000001), ('bullet', 709.09405, 571.739), ('bullet', 709.09405, 541.517), ('bullet', 709.09405, 511.295)]
+[('napostrophe', 134.66117999999997, 1490.06132), ('napostrophe', 164.97382, 1490.06132), ('napostrophe', 194.33918999999997, 1490.06132), ('uni2219', 437.0, 459.86), ('uni2219', 403.0, 459.86), ('uni2219', 367.0, 459.86), ('bullet', 400.85857, 778.2560000000001), ('bullet', 457.47325, 778.2560000000001), ('bullet', 510.94266999999996, 778.2560000000001), ('bullet', 709.09405, 571.739), ('bullet', 709.09405, 541.517), ('bullet', 709.09405, 511.295)]
 This happens a lot when points are not extremes, which is usually bad. However, fixing this alert by adding points on extremes may do more harm than good, especially with italics, calligraphic-script, handwriting, rounded and other fonts. So it is common to ignore this message
 
 </details>
@@ -572,20 +567,6 @@ This happens a lot when points are not extremes, which is usually bad. However, 
 
 </details>
 <details>
-<summary>:zzz: <b>SKIP:</b> Is there kerning info for non-ligated sequences?</summary>
-
-* [com.google.fonts/check/065](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :zzz: **SKIP** Unfulfilled Conditions: ligatures
-
-</details>
-<details>
-<summary>:zzz: <b>SKIP:</b> Are there caret positions declared for every ligature?</summary>
-
-* [com.google.fonts/check/064](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :zzz: **SKIP** Unfulfilled Conditions: ligature_glyphs
-
-</details>
-<details>
 <summary>:zzz: <b>SKIP:</b> The variable font 'wght' (Weight) axis coordinate must be 400 on the 'Regular' instance.</summary>
 
 * [com.google.fonts/check/167](https://github.com/googlefonts/fontbakery/search?q={checkid})
@@ -642,10 +623,10 @@ This happens a lot when points are not extremes, which is usually bad. However, 
 
 |  | instance_ttf/SignikaSC-SemiBold.ttf |
 |:--- | ---:|
-| Dehinted Size | 62.0kb |
-| Hinted Size | 81.4kb |
-| Increase | 19.4kb |
-| Change   | 31.3 % |
+| Dehinted Size | 62.6kb |
+| Hinted Size | 81.7kb |
+| Increase | 19.1kb |
+| Change   | 30.5 % |
 
 
 </details>
@@ -685,8 +666,15 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 <summary>:information_source: <b>INFO:</b> Font contains all required tables?</summary>
 
 * [com.google.fonts/check/052](https://github.com/googlefonts/fontbakery/search?q={checkid})
-* :information_source: **INFO** This font contains the following optional tables [GSUB, GPOS, DSIG, loca, prep, gasp, fpgm, cvt ]
+* :information_source: **INFO** This font contains the following optional tables [gasp, fpgm, GSUB, cvt , prep, GPOS, loca, DSIG]
 * :bread: **PASS** Font contains all required tables.
+
+</details>
+<details>
+<summary>:information_source: <b>INFO:</b> Check if OS/2 xAvgCharWidth is correct.</summary>
+
+* [com.google.fonts/check/034](https://github.com/googlefonts/fontbakery/search?q={checkid})
+* :information_source: **INFO** OS/2 xAvgCharWidth is 1071 but should be 1062 which corresponds to the weighted average of the widths of the latin lowercase glyphs in the font. These are similar values, which may be a symptom of the slightly different calculation of the xAvgCharWidth value in font editors. There's further discussion on this at https://github.com/googlefonts/fontbakery/issues/1622
 
 </details>
 <details>
@@ -1077,5 +1065,5 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 | :broken_heart: ERROR | :fire: FAIL | :warning: WARN | :zzz: SKIP | :information_source: INFO | :bread: PASS |
 |:-----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 7 | 6 | 62 | 6 | 62 |
-| 0% | 5% | 4% | 43% | 4% | 43% |
+| 0 | 7 | 7 | 60 | 7 | 62 |
+| 0% | 5% | 5% | 42% | 5% | 43% |
