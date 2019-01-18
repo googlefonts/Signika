@@ -53,11 +53,12 @@ keepDesignspace=true
 
 # get font name from glyphs source
 VFname=`python sources/scripts/helpers/get-font-name.py ${glyphsSource}`
+# VFname='Signika-Light'
 # checking that the name has been pulled out of the source file
 echo "VF Name: ${VFname}"
 
 # smallCapFontName, e..g 'SignikaSC-VF'
-smallCapFontName=${VFname/"-VF"/"SC-VF"}
+smallCapFontName=${VFname/"-"/"SC-"}
 
 ## make temp glyphs filename with "-build" suffix
 tempGlyphsSource=${glyphsSource/".glyphs"/"-Build.glyphs"}
@@ -69,11 +70,12 @@ if [ $negativeSplit == true ]
 then
     # get font name from glyphs source
     negVFname=`python sources/scripts/helpers/get-font-name.py ${negGlyphsSource}`
+    # negVFname='SignikaNegative-Light'
     # checking that the name has been pulled out of the source file
     echo "Negative VF Name: ${negVFname}"
 
     # smallCapFontName, e..g 'SignikaSC-VF'
-    negSmallCapFontName=${negVFname/"-VF"/"SC-VF"}
+    negSmallCapFontName=${negVFname/"-"/"SC-"}
 
     ## make temp glyphs filename with "-build" suffix
     negTempGlyphsSource=${negGlyphsSource/".glyphs"/"-Build.glyphs"}
@@ -130,7 +132,7 @@ subsetSmallCaps()
     echo "subsetting smallcap font"
 
     # subsetting with subsetGlyphNames list
-    pyftsubset $SC_NAME ${subsetGlyphNames} --glyph-names
+    pyftsubset $SC_NAME ${subsetGlyphNames} --glyph-names --notdef-glyph
 
     # remove feature-frozen font & simplifying name of subset font
 
@@ -168,15 +170,14 @@ if [ -f "$file" ]; then
     # https://groups.google.com/forum/#!searchin/googlefonts-discuss/ttfautohint%7Csort:date/googlefonts-discuss/WJX1lrzcwVs/SIzaEvntAgAJ
     # ./Users/stephennixon/Environments/gfonts3/bin/ttfautohint-vf ${ttfPath} ${ttfPath/"-unhinted.ttf"/"-hinted.ttf"}
     echo "------------------------------------------------"
-    echo ttfautohint-vf $file $hintedFile  --increase-x-height 9 --stem-width-mode nnn
+    echo ttfautohint-vf $file $hintedFile --stem-width-mode nnn #--increase-x-height 9
     echo "------------------------------------------------"
-    ttfautohint-vf -I $file $hintedFile  --increase-x-height 9 --stem-width-mode nnn
+    ttfautohint-vf -I $file $hintedFile --stem-width-mode nnn #--increase-x-height 9
 
     cp ${hintedFile} ${file}
     rm -rf ${hintedFile}
 
-    # open VF in default program; hopefully you have FontView
-    open ${file}
+    
 fi 
 done
 
@@ -196,9 +197,9 @@ insertPatch()
     patchPath=${ttxPath/".ttx"/"-patch.ttx"}
     rm -rf $FILE
 
-    cp $ttxPath $patchPath
     echo "---------------------------------------------------"
     if [[ $fullVF == true && $splitVF == false ]]; then
+        cp $ttxPath $patchPath
         if [[ $file != *"SC"* ]]; then
         cat $patchPath | tr '\n' '\r' | sed -e "s~<name>.*<\/name>~$(cat sources/scripts/helpers/patches/NAMEpatch.xml | tr '\n' '\r')~" | tr '\r' '\n' > $ttxPath
         fi
@@ -215,32 +216,38 @@ insertPatch()
 
     # add patches for normal-split VF
 
-    if [[ $splitVF == true && $fullVF == false ]]; then
-        if [[ $file != *"Negative"* && $file != *"SC"* ]]; then
-        cat $patchPath | tr '\n' '\r' | sed -e "s~<name>.*<\/name>~$(cat sources/scripts/helpers/patches/NAMEpatch-split.xml | tr '\n' '\r')~" | tr '\r' '\n' > $ttxPath
-        fi
-        if [[ $file != *"Negative"* && $file == *"SC"* ]]; then
-        cat $patchPath | tr '\n' '\r' | sed -e "s~<name>.*<\/name>~$(cat sources/scripts/helpers/patches/NAMEpatch-split-SC.xml | tr '\n' '\r')~" | tr '\r' '\n' > $ttxPath
-        fi
-        if [[ $file != *"Negative"* ]]; then
-        rm -rf $patchPath
-        fi
-    fi
+    # if [[ $splitVF == true && $fullVF == false ]]; then
+        # cp $ttxPath $patchPath
+    #     if [[ $file != *"Negative"* && $file != *"SC"* ]]; then
+    #     cat $patchPath | tr '\n' '\r' | sed -e "s~<name>.*<\/name>~$(cat sources/scripts/helpers/patches/NAMEpatch-split.xml | tr '\n' '\r')~" | tr '\r' '\n' > $ttxPath
+    #     fi
+    #     if [[ $file != *"Negative"* && $file == *"SC"* ]]; then
+    #     cat $patchPath | tr '\n' '\r' | sed -e "s~<name>.*<\/name>~$(cat sources/scripts/helpers/patches/NAMEpatch-split-SC.xml | tr '\n' '\r')~" | tr '\r' '\n' > $ttxPath
+    #     fi
+    #     if [[ $file != *"Negative"* ]]; then
+    #     rm -rf $patchPath
+    #     fi
+    # fi
 
-    if [[ $negativeSplit == true && $fullVF == false ]]; then
-        if [[ $file == *"Negative"* && $file != *"SC"* ]]; then
-        cat $patchPath | tr '\n' '\r' | sed -e "s~<name>.*<\/name>~$(cat sources/scripts/helpers/patches/NAMEpatch-split-neg.xml | tr '\n' '\r')~" | tr '\r' '\n' > $ttxPath
-        fi
-        if [[ $file == *"Negative"* && $file == *"SC"* ]]; then
-        cat $patchPath | tr '\n' '\r' | sed -e "s~<name>.*<\/name>~$(cat sources/scripts/helpers/patches/NAMEpatch-split-neg-SC.xml | tr '\n' '\r')~" | tr '\r' '\n' > $ttxPath
-        fi
-        if [[ $file == *"Negative"* ]]; then
-        rm -rf $patchPath
-        fi
-    fi
+    # if [[ $negativeSplit == true && $fullVF == false ]]; then
+        # cp $ttxPath $patchPath
+    #     if [[ $file == *"Negative"* && $file != *"SC"* ]]; then
+    #     cat $patchPath | tr '\n' '\r' | sed -e "s~<name>.*<\/name>~$(cat sources/scripts/helpers/patches/NAMEpatch-split-neg.xml | tr '\n' '\r')~" | tr '\r' '\n' > $ttxPath
+    #     fi
+    #     if [[ $file == *"Negative"* && $file == *"SC"* ]]; then
+    #     cat $patchPath | tr '\n' '\r' | sed -e "s~<name>.*<\/name>~$(cat sources/scripts/helpers/patches/NAMEpatch-split-neg-SC.xml | tr '\n' '\r')~" | tr '\r' '\n' > $ttxPath
+    #     fi
+    #     if [[ $file == *"Negative"* ]]; then
+    #     rm -rf $patchPath
+    #     fi
+    # fi
 
     ttx $ttxPath
     rm -rf $ttxPath
+
+    # Marc's solution to fix VF metadata
+    gftools fix-vf-meta $FILE
+    mv "$FILE.fix" $FILE
 }
 
 for file in variable_ttf/*; do 
@@ -255,6 +262,8 @@ done
 # set this to true/false at top of script
 for file in variable_ttf/*; do 
     if [ -f "$file" ]; then 
+        # open VF in default program; hopefully you have FontView
+        open ${file}
         if [ $timestampAndFontbakeInDist == true ]
         then
             newFontLocation=`python sources/scripts/helpers/distdate.py ${file}`
@@ -264,6 +273,7 @@ for file in variable_ttf/*; do
             echo "new VF location is " ${newFontLocation}
         else
             fileName=$(basename $file)
+            fileName=${fileName/"VF"/"Light"}
 
             if [[ $fullVF == true && $splitVF == false ]]; then
                 if [[ $file != *"SC"* ]]; then
