@@ -1,5 +1,5 @@
 {
-.appVersion = "1201";
+.appVersion = "1204";
 DisplayStrings = (
 "/caroncomb.alt/firsttonechinese/dotaccentcomb.alt/gravecomb.case/acutecomb.case/circumflexcomb.case/dieresiscomb.case/caroncomb.case/ringcomb.case/tildecomb.case/dotaccentcomb.case/macroncomb.case/brevecomb.case/hungarumlautcomb.case/commaaccentcomb.case/cedillacomb.case/ogonekcomb.case",
 "/circumflexcomb/caroncomb/caroncomb.alt/firsttonechinese/brevecomb/dieresiscomb/cedillacomb/dotaccentcomb/dotaccentcomb.alt/ringcomb/ogonekcomb/tildecomb/gravecomb.case/acutecomb.case/circumflexcomb.case/dieresiscomb.case/caroncomb.case/ringcomb.case/tildecomb.case/dotaccentcomb.case/macroncomb.case/brevecomb.case/hungarumlautcomb.case/commaaccentcomb.case/cedillacomb.case/ogonekcomb.case/hungarumlautcomb",
@@ -16,7 +16,7 @@ code = "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Agrave Aacute Acircu
 name = Uppercase;
 }
 );
-copyright = "Copyright 2018 The Signika Project Authors (https://github.com/thundernixon/Signika), with Reserved Font Names 'Signika'.";
+copyright = "Copyright 2018 The Signika Project Authors (https://github.com/googlefonts/Signika), with Reserved Font Names 'Signika'.";
 customParameters = (
 {
 name = trademark;

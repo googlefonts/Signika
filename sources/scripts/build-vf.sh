@@ -1,4 +1,4 @@
-set -x -e
+set -x
 
 while [ ! $# -eq 0 ]
     do
@@ -170,9 +170,9 @@ if [ -f "$file" ]; then
     # https://groups.google.com/forum/#!searchin/googlefonts-discuss/ttfautohint%7Csort:date/googlefonts-discuss/WJX1lrzcwVs/SIzaEvntAgAJ
     # ./Users/stephennixon/Environments/gfonts3/bin/ttfautohint-vf ${ttfPath} ${ttfPath/"-unhinted.ttf"/"-hinted.ttf"}
     echo "------------------------------------------------"
-    echo ttfautohint-vf $file $hintedFile --stem-width-mode nnn #--increase-x-height 9
+    echo ttfautohint-vf $file $hintedFile --stem-width-mode nnn --increase-x-height 9
     echo "------------------------------------------------"
-    ttfautohint-vf -I $file $hintedFile --stem-width-mode nnn #--increase-x-height 9
+    ttfautohint-vf -I $file $hintedFile --stem-width-mode nnn --increase-x-height 9
 
     cp ${hintedFile} ${file}
     rm -rf ${hintedFile}
@@ -214,40 +214,14 @@ insertPatch()
         rm -rf $patchPath
     fi
 
-    # add patches for normal-split VF
-
-    # if [[ $splitVF == true && $fullVF == false ]]; then
-        # cp $ttxPath $patchPath
-    #     if [[ $file != *"Negative"* && $file != *"SC"* ]]; then
-    #     cat $patchPath | tr '\n' '\r' | sed -e "s~<name>.*<\/name>~$(cat sources/scripts/helpers/patches/NAMEpatch-split.xml | tr '\n' '\r')~" | tr '\r' '\n' > $ttxPath
-    #     fi
-    #     if [[ $file != *"Negative"* && $file == *"SC"* ]]; then
-    #     cat $patchPath | tr '\n' '\r' | sed -e "s~<name>.*<\/name>~$(cat sources/scripts/helpers/patches/NAMEpatch-split-SC.xml | tr '\n' '\r')~" | tr '\r' '\n' > $ttxPath
-    #     fi
-    #     if [[ $file != *"Negative"* ]]; then
-    #     rm -rf $patchPath
-    #     fi
-    # fi
-
-    # if [[ $negativeSplit == true && $fullVF == false ]]; then
-        # cp $ttxPath $patchPath
-    #     if [[ $file == *"Negative"* && $file != *"SC"* ]]; then
-    #     cat $patchPath | tr '\n' '\r' | sed -e "s~<name>.*<\/name>~$(cat sources/scripts/helpers/patches/NAMEpatch-split-neg.xml | tr '\n' '\r')~" | tr '\r' '\n' > $ttxPath
-    #     fi
-    #     if [[ $file == *"Negative"* && $file == *"SC"* ]]; then
-    #     cat $patchPath | tr '\n' '\r' | sed -e "s~<name>.*<\/name>~$(cat sources/scripts/helpers/patches/NAMEpatch-split-neg-SC.xml | tr '\n' '\r')~" | tr '\r' '\n' > $ttxPath
-    #     fi
-    #     if [[ $file == *"Negative"* ]]; then
-    #     rm -rf $patchPath
-    #     fi
-    # fi
-
     ttx $ttxPath
     rm -rf $ttxPath
 
-    # Marc's solution to fix VF metadata
-    gftools fix-vf-meta $FILE
-    mv "$FILE.fix" $FILE
+    if [[ $fullVF == false && $splitVF == true ]]; then
+        # Marc's solution to fix VF metadata
+        gftools fix-vf-meta $FILE
+        mv "$FILE.fix" $FILE
+    fi
 }
 
 for file in variable_ttf/*; do 
