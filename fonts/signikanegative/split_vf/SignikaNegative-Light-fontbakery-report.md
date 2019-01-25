@@ -296,7 +296,7 @@ Fontbakery version: 0.6.6
 <summary>:warning: <b>WARN:</b> Glyphs are similiar to Google Fonts version?</summary>
 
 * [com.google.fonts/check/118](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/118)
-* :warning: **WARN** Following glyphs differ greatly from Google Fonts version: [Nacute, logicalnot, currency, Yacute, plusminus, agrave, Euro, ae, Aring, uring, Eacute, q, OE, five, Ecaron, Igrave, d, four, bracketleft, N, m, Hbar, backslash, Lslash, threequarters, dollar, one, A, braceright, p, dcaron, Adieresis, Y, yen, ring, multiply, k, H, cent, egrave, Atilde, Egrave, Eth, AE, Aogonek, x, G, Thorn, kgreenlandic, paragraph, numbersign, Ydieresis, oslash, parenright, plus, eth, Edieresis, grave, onequarter, g, lslash, oe, igrave, aring, onehalf, Oslash, b, Ncaron, Aacute, thorn, sterling, Ecircumflex, hbar, Agrave, eogonek, Eogonek, E, ugrave, bracketright, X, ograve, .notdef, Ugrave, Ograve, K, Ntilde]
+* :warning: **WARN** Following glyphs differ greatly from Google Fonts version: [multiply, Yacute, thorn, backslash, logicalnot, hbar, Adieresis, agrave, Egrave, Ecircumflex, Eacute, numbersign, Atilde, yen, ae, Aogonek, d, Eth, Ntilde, lslash, Ograve, braceright, N, Ydieresis, K, X, Ugrave, Aring, bracketright, paragraph, eogonek, cent, bracketleft, four, parenright, Thorn, G, x, E, Ecaron, H, Lslash, b, Igrave, eth, plusminus, ograve, dcaron, Aacute, sterling, plus, currency, q, Ncaron, AE, oe, m, A, Edieresis, .notdef, Hbar, one, g, ugrave, p, Y, onehalf, Nacute, k, Eogonek, kgreenlandic, aring, Agrave, onequarter, Euro, oslash, egrave, grave, igrave, uring, Oslash, threequarters, OE, dollar, ring, five]
 
 </details>
 <details>
@@ -479,7 +479,7 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 <summary>:information_source: <b>INFO:</b> Font contains all required tables?</summary>
 
 * [com.google.fonts/check/052](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/052)
-* :information_source: **INFO** This font contains the following optional tables [GSUB, cvt , prep, fpgm, loca, gasp, GPOS]
+* :information_source: **INFO** This font contains the following optional tables [GSUB, GPOS, cvt , fpgm, gasp, prep, loca]
 * :bread: **PASS** Font contains all required tables.
 
 </details>

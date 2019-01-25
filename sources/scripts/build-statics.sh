@@ -9,10 +9,13 @@ glyphsSource="sources/sources-buildready/Signika-MM-prepped_designspace.glyphs"
 ################# set vars #################
 ############################################
 
+# clear previous builds if they exist
+if [ -d "instance_ttf" ]; then
+  rm -rf instance_ttf
+fi
+
 # ============================================================================
 # Generate Variable Font =====================================================
-
-pwd
 
 echo $glyphsSource
 
@@ -53,22 +56,27 @@ if [ -f "$file" ]; then
 
     if [[ $file != *"SignikaNegative-"* ]]; then
         smallCapFile=${file/"Signika"/"SignikaSC"}
+        familyName="Signika"
     fi
     if [[ $file == *"SignikaNegative-"* ]]; then
         smallCapFile=${file/"SignikaNegative"/"SignikaNegativeSC"}
+        familyName="Signika Negative"
     fi
 
     python sources/scripts/helpers/pyftfeatfreeze.py -f 'smcp' -S -U SC $file $smallCapFile
     
     echo "subsetting smallcap font"
     # subsetting with subsetGlyphNames list
-    pyftsubset $smallCapFile $subsetGlyphNames --glyph-names
+    pyftsubset --name-IDs='*' $smallCapFile $subsetGlyphNames --glyph-names
 
     subsetSmallCapFile=${smallCapFile/".ttf"/".subset.ttf"}
     rm -rf $smallCapFile
     mv $subsetSmallCapFile $smallCapFile
 
-    # 🚨 TODO: update SC font family name with TTX patch
+    smallCapSuffix="SC"
+    # update names in font with smallcaps suffix
+    python sources/scripts/helpers/add-smallcaps-suffix.py $smallCapFile $smallCapSuffix "$familyName"
+
 fi 
 done
 

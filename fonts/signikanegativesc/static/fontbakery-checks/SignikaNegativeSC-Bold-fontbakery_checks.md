@@ -188,17 +188,24 @@ Fontbakery version: 0.6.6
 <details>
 <summary><b>[118] SignikaNegativeSC-Bold.ttf</b></summary>
 <details>
-<summary>:fire: <b>FAIL:</b> Check copyright namerecords match license file.</summary>
+<summary>:fire: <b>FAIL:</b> Check name table: FONT_FAMILY_NAME entries. </summary>
 
-* [com.google.fonts/check/029](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/029)
-* :fire: **FAIL** Font lacks NameID 13 (LICENSE DESCRIPTION). A proper licensing entry must be set. [code: missing]
+* [com.google.fonts/check/157](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/157)
+* :fire: **FAIL** Entry [FONT_FAMILY_NAME(1):WINDOWS(3)] on the 'name' table: Expected 'Signika Negative SC' but got 'Signika Negative SC SC'.
 
 </details>
 <details>
-<summary>:fire: <b>FAIL:</b> "License URL matches License text on name table?</summary>
+<summary>:fire: <b>FAIL:</b> Check name table: FULL_FONT_NAME entries. </summary>
 
-* [com.google.fonts/check/030](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/030)
-* :fire: **FAIL** A known license URL must be provided in the NameID 14 (LICENSE INFO URL) entry. Currently accepted licenses are Apache or Open Font License. For a small set of legacy families the Ubuntu Font License may be acceptable as well. [code: no-license-found]
+* [com.google.fonts/check/159](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/159)
+* :fire: **FAIL** Entry [FULL_FONT_NAME(4):WINDOWS(3)] on the 'name' table: Expected 'Signika Negative SC Bold' but got 'Signika Negative SC SC Bold'.
+
+</details>
+<details>
+<summary>:fire: <b>FAIL:</b> Check name table: POSTSCRIPT_NAME entries. </summary>
+
+* [com.google.fonts/check/160](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/160)
+* :fire: **FAIL** Entry [POSTSCRIPT_NAME(6):WINDOWS(3)] on the 'name' table: Expected 'SignikaNegativeSC-Bold' but got 'SignikaNegativeSCSC-Bold'.
 
 </details>
 <details>
@@ -264,7 +271,7 @@ Glyph name: uogonek.smcp	Contours detected: 2	Expected: 1
 <summary>:warning: <b>WARN:</b> Combined length of family and style must not exceed 20 characters.</summary>
 
 * [com.google.fonts/check/163](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/163)
-* :warning: **WARN** The combined length of family and style exceeds 20 chars in the following 'WINDOWS' entries: FONT_FAMILY_NAME = 'Signika Negative SC' / SUBFAMILY_NAME = 'Bold'
+* :warning: **WARN** The combined length of family and style exceeds 20 chars in the following 'WINDOWS' entries: FONT_FAMILY_NAME = 'Signika Negative SC SC' / SUBFAMILY_NAME = 'Bold'
 
 </details>
 <details>
@@ -621,10 +628,10 @@ This happens a lot when points are not extremes, which is usually bad. However, 
 
 |  | instance_ttf/SignikaNegativeSC-Bold.ttf |
 |:--- | ---:|
-| Dehinted Size | 83.5kb |
-| Hinted Size | 106.8kb |
+| Dehinted Size | 84.1kb |
+| Hinted Size | 107.4kb |
 | Increase | 23.3kb |
-| Change   | 27.9 % |
+| Change   | 27.7 % |
 
 
 </details>
@@ -664,7 +671,7 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 <summary>:information_source: <b>INFO:</b> Font contains all required tables?</summary>
 
 * [com.google.fonts/check/052](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/052)
-* :information_source: **INFO** This font contains the following optional tables [fpgm, prep, loca, GSUB, gasp, GPOS, cvt ]
+* :information_source: **INFO** This font contains the following optional tables [GPOS, gasp, loca, prep, GSUB, fpgm, cvt ]
 * :bread: **PASS** Font contains all required tables.
 
 </details>
@@ -715,6 +722,20 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 * [com.google.fonts/check/020](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/020)
 * :bread: **PASS** OS/2 usWeightClass value looks good!
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> Check copyright namerecords match license file.</summary>
+
+* [com.google.fonts/check/029](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/029)
+* :bread: **PASS** Licensing entry on name table is correctly set.
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> "License URL matches License text on name table?</summary>
+
+* [com.google.fonts/check/030](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/030)
+* :bread: **PASS** Font has a valid license URL in NAME table.
 
 </details>
 <details>
@@ -805,31 +826,10 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 </details>
 <details>
-<summary>:bread: <b>PASS:</b> Check name table: FONT_FAMILY_NAME entries. </summary>
-
-* [com.google.fonts/check/157](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/157)
-* :bread: **PASS** FONT_FAMILY_NAME entries are all good.
-
-</details>
-<details>
 <summary>:bread: <b>PASS:</b> Check name table: FONT_SUBFAMILY_NAME entries. </summary>
 
 * [com.google.fonts/check/158](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/158)
 * :bread: **PASS** FONT_SUBFAMILY_NAME entries are all good.
-
-</details>
-<details>
-<summary>:bread: <b>PASS:</b> Check name table: FULL_FONT_NAME entries. </summary>
-
-* [com.google.fonts/check/159](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/159)
-* :bread: **PASS** FULL_FONT_NAME entries are all good.
-
-</details>
-<details>
-<summary>:bread: <b>PASS:</b> Check name table: POSTSCRIPT_NAME entries. </summary>
-
-* [com.google.fonts/check/160](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/160)
-* :bread: **PASS** POSTCRIPT_NAME entries are all good.
 
 </details>
 <details>
@@ -1091,5 +1091,5 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 | :broken_heart: ERROR | :fire: FAIL | :warning: WARN | :zzz: SKIP | :information_source: INFO | :bread: PASS |
 |:-----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 3 | 7 | 60 | 6 | 67 |
-| 0% | 2% | 5% | 42% | 4% | 47% |
+| 0 | 4 | 7 | 60 | 6 | 66 |
+| 0% | 3% | 5% | 42% | 4% | 46% |

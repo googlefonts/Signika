@@ -188,17 +188,24 @@ Fontbakery version: 0.6.6
 <details>
 <summary><b>[118] SignikaSC-Regular.ttf</b></summary>
 <details>
-<summary>:fire: <b>FAIL:</b> Check copyright namerecords match license file.</summary>
+<summary>:fire: <b>FAIL:</b> Check name table: FONT_FAMILY_NAME entries. </summary>
 
-* [com.google.fonts/check/029](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/029)
-* :fire: **FAIL** Font lacks NameID 13 (LICENSE DESCRIPTION). A proper licensing entry must be set. [code: missing]
+* [com.google.fonts/check/157](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/157)
+* :fire: **FAIL** Entry [FONT_FAMILY_NAME(1):WINDOWS(3)] on the 'name' table: Expected 'Signika SC' but got 'Signika SC SC'.
 
 </details>
 <details>
-<summary>:fire: <b>FAIL:</b> "License URL matches License text on name table?</summary>
+<summary>:fire: <b>FAIL:</b> Check name table: FULL_FONT_NAME entries. </summary>
 
-* [com.google.fonts/check/030](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/030)
-* :fire: **FAIL** A known license URL must be provided in the NameID 14 (LICENSE INFO URL) entry. Currently accepted licenses are Apache or Open Font License. For a small set of legacy families the Ubuntu Font License may be acceptable as well. [code: no-license-found]
+* [com.google.fonts/check/159](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/159)
+* :fire: **FAIL** Entry [FULL_FONT_NAME(4):WINDOWS(3)] on the 'name' table: Expected 'Signika SC Regular' but got 'Signika SC SC Regular'.
+
+</details>
+<details>
+<summary>:fire: <b>FAIL:</b> Check name table: POSTSCRIPT_NAME entries. </summary>
+
+* [com.google.fonts/check/160](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/160)
+* :fire: **FAIL** Entry [POSTSCRIPT_NAME(6):WINDOWS(3)] on the 'name' table: Expected 'SignikaSC-Regular' but got 'SignikaSCSC-Regular'.
 
 </details>
 <details>
@@ -614,10 +621,10 @@ This happens a lot when points are not extremes, which is usually bad. However, 
 
 |  | instance_ttf/SignikaSC-Regular.ttf |
 |:--- | ---:|
-| Dehinted Size | 82.9kb |
-| Hinted Size | 106.4kb |
-| Increase | 23.5kb |
-| Change   | 28.3 % |
+| Dehinted Size | 83.5kb |
+| Hinted Size | 107.0kb |
+| Increase | 23.4kb |
+| Change   | 28.0 % |
 
 
 </details>
@@ -657,7 +664,7 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 <summary>:information_source: <b>INFO:</b> Font contains all required tables?</summary>
 
 * [com.google.fonts/check/052](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/052)
-* :information_source: **INFO** This font contains the following optional tables [GSUB, gasp, cvt , loca, fpgm, GPOS, prep]
+* :information_source: **INFO** This font contains the following optional tables [GSUB, cvt , fpgm, prep, gasp, GPOS, loca]
 * :bread: **PASS** Font contains all required tables.
 
 </details>
@@ -708,6 +715,20 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 * [com.google.fonts/check/020](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/020)
 * :bread: **PASS** OS/2 usWeightClass value looks good!
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> Check copyright namerecords match license file.</summary>
+
+* [com.google.fonts/check/029](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/029)
+* :bread: **PASS** Licensing entry on name table is correctly set.
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> "License URL matches License text on name table?</summary>
+
+* [com.google.fonts/check/030](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/030)
+* :bread: **PASS** Font has a valid license URL in NAME table.
 
 </details>
 <details>
@@ -798,31 +819,10 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 </details>
 <details>
-<summary>:bread: <b>PASS:</b> Check name table: FONT_FAMILY_NAME entries. </summary>
-
-* [com.google.fonts/check/157](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/157)
-* :bread: **PASS** FONT_FAMILY_NAME entries are all good.
-
-</details>
-<details>
 <summary>:bread: <b>PASS:</b> Check name table: FONT_SUBFAMILY_NAME entries. </summary>
 
 * [com.google.fonts/check/158](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/158)
 * :bread: **PASS** FONT_SUBFAMILY_NAME entries are all good.
-
-</details>
-<details>
-<summary>:bread: <b>PASS:</b> Check name table: FULL_FONT_NAME entries. </summary>
-
-* [com.google.fonts/check/159](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/159)
-* :bread: **PASS** FULL_FONT_NAME entries are all good.
-
-</details>
-<details>
-<summary>:bread: <b>PASS:</b> Check name table: POSTSCRIPT_NAME entries. </summary>
-
-* [com.google.fonts/check/160](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/160)
-* :bread: **PASS** POSTCRIPT_NAME entries are all good.
 
 </details>
 <details>
@@ -1091,5 +1091,5 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 | :broken_heart: ERROR | :fire: FAIL | :warning: WARN | :zzz: SKIP | :information_source: INFO | :bread: PASS |
 |:-----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 3 | 6 | 60 | 6 | 68 |
-| 0% | 2% | 4% | 42% | 4% | 48% |
+| 0 | 4 | 6 | 60 | 6 | 67 |
+| 0% | 3% | 4% | 42% | 4% | 47% |

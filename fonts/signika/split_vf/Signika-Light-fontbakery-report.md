@@ -261,7 +261,7 @@ Fontbakery version: 0.6.6
 <summary>:warning: <b>WARN:</b> Glyphs are similiar to Google Fonts version?</summary>
 
 * [com.google.fonts/check/118](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/118)
-* :warning: **WARN** Following glyphs differ greatly from Google Fonts version: [f.smcp, Aring, aring.smcp, f, Adieresis, backslash, k.smcp, Aacute, tcaron, Ydieresis, four, eacute.smcp, Y, kgreenlandic, k, Eth, aogonek, H, Nacute, five, ugrave.smcp, uring, eth.smcp, kgreenlandic.smcp, Agrave, egrave.smcp, Lslash, t, Igrave, germandbls.smcp, Aogonek, oslash, Egrave, agrave, Ecaron, K, acircumflex.smcp, bracketright, aogonek.smcp, logicalnot, eth, plus, Ntilde, section, e.smcp, aacute.smcp, oslash.smcp, igrave.smcp, egrave, p, grave, Ncaron, onequarter, Hbar, onehalf, ncaron.smcp, x.smcp, adieresis.smcp, .notdef, OE, thorn, currency, N, oe.smcp, E, agrave.smcp, A, dcaron, cent, paragraph, b, atilde.smcp, Oslash, ring, Ugrave, eogonek, sterling, X, Eogonek, lslash.smcp, h.smcp, numbersign, parenright, dollar, ugrave, edieresis.smcp, lslash, g.smcp, Ecircumflex, braceright, Euro, germandbls, Ldot, Thorn, eogonek.smcp, G, m, Yacute, q, g, aring, igrave, yen, thorn.smcp, AE, d, plusminus, threequarters, ograve, L, multiply, bracketleft, n.smcp, ograve.smcp, one, Ograve, Acircumflex, ae, Atilde, uni2074, a.smcp, ecircumflex.smcp, F, hbar, x, uring.smcp, ydieresis.smcp, ae.smcp, oe, Edieresis, Eacute, ecaron.smcp, hbar.smcp]
+* :warning: **WARN** Following glyphs differ greatly from Google Fonts version: [four, oe.smcp, Ydieresis, Ntilde, dollar, ae.smcp, eogonek, k, braceright, thorn.smcp, currency, paragraph, atilde.smcp, parenright, ograve, E, Ncaron, ecaron.smcp, germandbls.smcp, kgreenlandic, acircumflex.smcp, oe, aacute.smcp, aring.smcp, Ograve, L, ring, Acircumflex, t, multiply, onehalf, grave, A, K, x.smcp, Y, Eogonek, q, g.smcp, adieresis.smcp, m, ydieresis.smcp, Euro, onequarter, yen, hbar, .notdef, a.smcp, dcaron, Aacute, N, Hbar, edieresis.smcp, sterling, Aogonek, threequarters, Oslash, egrave, lslash.smcp, Yacute, Aring, eth, n.smcp, k.smcp, hbar.smcp, ograve.smcp, AE, Adieresis, p, backslash, eacute.smcp, kgreenlandic.smcp, Nacute, oslash.smcp, aogonek.smcp, OE, Ecaron, eth.smcp, tcaron, aring, thorn, Eth, X, eogonek.smcp, Lslash, Egrave, Igrave, b, f.smcp, G, agrave.smcp, Ecircumflex, igrave.smcp, uni2074, ugrave.smcp, Ldot, lslash, bracketleft, F, section, x, one, H, g, Atilde, Ugrave, e.smcp, ae, ecircumflex.smcp, plus, logicalnot, numbersign, f, Thorn, cent, h.smcp, igrave, ncaron.smcp, five, ugrave, plusminus, Eacute, germandbls, uring.smcp, Edieresis, bracketright, d, uring, egrave.smcp, agrave, oslash, Agrave, aogonek]
 
 </details>
 <details>
@@ -445,7 +445,7 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 <summary>:information_source: <b>INFO:</b> Font contains all required tables?</summary>
 
 * [com.google.fonts/check/052](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/052)
-* :information_source: **INFO** This font contains the following optional tables [gasp, fpgm, GPOS, prep, cvt , loca, GSUB]
+* :information_source: **INFO** This font contains the following optional tables [loca, GSUB, prep, fpgm, cvt , gasp, GPOS]
 * :bread: **PASS** Font contains all required tables.
 
 </details>
