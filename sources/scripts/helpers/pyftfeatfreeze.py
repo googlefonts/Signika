@@ -351,6 +351,13 @@ class RemapByOTL(object):
                 else:
                     nr.string = newpsname.encode("utf_8")
         for nr in name.names:
+            ## TODO? nameID 3, unique font identifier
+            # if nr.nameID == 3:
+            # if value includes font name with spaces
+                # insert f" {suffix}" # with space
+            # else if value includes font name without spaces
+                # insert f"{suffix}" # without space
+
             # Full name
             if nr.nameID == 4:
                 nrfam = name.getName(1, nr.platformID, nr.platEncID, nr.langID)

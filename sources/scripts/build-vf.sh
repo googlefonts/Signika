@@ -37,17 +37,6 @@ if [ -d "variable_ttf" ]; then
   rm -rf variable_ttf
 fi
 
-
-##############################################################################
-############################### set vars below ###############################
-
-timestampAndFontbakeInDist=false
-
-keepDesignspace=true
-
-############################### set vars above ###############################
-##############################################################################
-
 # ============================================================================
 # Set up names ===============================================================
 
@@ -94,14 +83,6 @@ then
     fontmake -o variable -g $negTempGlyphsSource
 fi
 
-## keep designspace file if you want to look at values later
-if [ $keepDesignspace == true ]
-then
-    echo "designspace in master_ufo folder"
-else
-    rm -rf master_ufo
-fi
-
 ## clean up temp glyphs file
 rm -rf $tempGlyphsSource
 if [ $negativeSplit == true ]
@@ -109,49 +90,51 @@ then
     rm -rf $negTempGlyphsSource
 fi
 
+for file in variable_ttf/*; do 
+    cp $file ${file/"VF"/"Light"}
+    rm $file
+done
 # ============================================================================
 # SmallCap subsetting ========================================================
 
-subsetSmallCaps()
-{
-    FILE=$1
-    SC_NAME=$2
+ttx variable_ttf/Signika-Light.ttf
+ttxPath="variable_ttf/Signika-Light.ttx"
 
-    echo making ${smallCapFontName}.ttf
+#get glyph names, minus .smcp glyphs
+subsetGlyphNames=`python sources/scripts/helpers/get-smallcap-subset-glyphnames.py $ttxPath`
+rm -rf $ttxPath
 
-    python sources/scripts/helpers/pyftfeatfreeze.py -f 'smcp' -S -U SC $FILE $SC_NAME
+echo $subsetGlyphNames
 
-    ttx $FILE
-    # ttxPath="variable_ttf/${VFname}.ttx"
-    ttxPath=${FILE/".ttf"/".ttx"}
+for file in variable_ttf/*; do 
+if [ -f "$file" ]; then 
 
-    #get glyph names, minus .smcp glyphs
-    subsetGlyphNames=`python sources/scripts/helpers/get-smallcap-subset-glyphnames.py $ttxPath`
+    if [[ $file != *"SignikaNegative-"* ]]; then
+        smallCapFile=${file/"Signika"/"SignikaSC"}
+        familyName="Signika"
+    fi
+    if [[ $file == *"SignikaNegative-"* ]]; then
+        smallCapFile=${file/"SignikaNegative"/"SignikaNegativeSC"}
+        familyName="Signika Negative"
+    fi
 
-    # echo $subsetGlyphNames
+    python sources/scripts/helpers/pyftfeatfreeze.py -f 'smcp' $file $smallCapFile
+    
     echo "subsetting smallcap font"
-
     # subsetting with subsetGlyphNames list
-    pyftsubset $SC_NAME ${subsetGlyphNames} --glyph-names --notdef-glyph
+    pyftsubset --name-IDs='*' $smallCapFile $subsetGlyphNames --glyph-names --notdef-glyph
 
-    # remove feature-frozen font & simplifying name of subset font
+    subsetSmallCapFile=${smallCapFile/".ttf"/".subset.ttf"}
+    rm -rf $smallCapFile
+    mv $subsetSmallCapFile $smallCapFile
 
-    subsetSmallCapFontName=${SC_NAME/"VF"/"VF.subset"}
+    smallCapSuffix="SC"
+    # update names in font with smallcaps suffix
+    python sources/scripts/helpers/add-smallcaps-suffix.py $smallCapFile $smallCapSuffix "$familyName"
 
-    rm -rf $SC_NAME
+fi 
+done
 
-    mv ${subsetSmallCapFontName} $SC_NAME
-
-    # removes temp ttx file
-    rm -rf $ttxPath
-}
-
-subsetSmallCaps variable_ttf/${VFname}.ttf variable_ttf/${smallCapFontName}.ttf
-
-if [ $negativeSplit == true ]
-then
-    subsetSmallCaps variable_ttf/${negVFname}.ttf variable_ttf/${negSmallCapFontName}.ttf
-fi
 
 
 # ============================================================================
@@ -238,55 +221,47 @@ for file in variable_ttf/*; do
     if [ -f "$file" ]; then 
         # open VF in default program; hopefully you have FontView
         open ${file}
-        if [ $timestampAndFontbakeInDist == true ]
-        then
-            newFontLocation=`python sources/scripts/helpers/distdate.py ${file}`
+        
+        fileName=$(basename $file)
+        fileName=${fileName/"VF"/"Light"}
 
-            fontbakery check-googlefonts ${newFontLocation}/${VFname}.ttf --ghmarkdown ${newFontLocation}/${VFname}-fontbakery-report.md
-
-            echo "new VF location is " ${newFontLocation}
-        else
-            fileName=$(basename $file)
-            fileName=${fileName/"VF"/"Light"}
-
-            if [[ $fullVF == true && $splitVF == false ]]; then
-                if [[ $file != *"SC"* ]]; then
-                    cp $file $finalLocation/$fileName
-                    echo "new VF location is " $finalLocation/$fileName
-                    fontbakery check-googlefonts $finalLocation/$fileName --ghmarkdown $finalLocation/${fileName/".ttf"/"-fontbakery-report.md"}
-                fi
-                if [[ $file == *"SC"* ]]; then
-                    cp $file $scFinalLocation/$fileName
-                    echo "new VF location is " $scFinalLocation/$fileName
-                    fontbakery check-googlefonts $scFinalLocation/$fileName --ghmarkdown $scFinalLocation/${fileName/".ttf"/"-fontbakery-report.md"}
-                fi
+        if [[ $fullVF == true && $splitVF == false ]]; then
+            if [[ $file != *"SC"* ]]; then
+                cp $file $finalLocation/$fileName
+                echo "new VF location is " $finalLocation/$fileName
+                fontbakery check-googlefonts $finalLocation/$fileName --ghmarkdown $finalLocation/${fileName/".ttf"/"-fontbakery-report.md"}
             fi
-
-            if [[ $splitVF == true && $fullVF == false ]]; then
-                if [[ $file != *"Negative"* && $file != *"SC"* ]]; then
-                    cp $file $finalLocation/$fileName
-                    echo "new VF location is " $finalLocation/$fileName
-                    fontbakery check-googlefonts $finalLocation/$fileName --ghmarkdown $finalLocation/${fileName/".ttf"/"-fontbakery-report.md"}
-                fi
-                if [[ $file != *"Negative"* && $file == *"SC"* ]]; then
-                    cp $file $scFinalLocation/$fileName
-                    echo "new VF location is " $scFinalLocation/$fileName
-                    fontbakery check-googlefonts $scFinalLocation/$fileName --ghmarkdown $scFinalLocation/${fileName/".ttf"/"-fontbakery-report.md"}
-                fi
-                if [[ $file == *"Negative"* && $file != *"SC"* ]]; then
-                    cp $file $negFinalLocation/$fileName
-                    echo "new VF location is " $negFinalLocation/$fileName
-                    fontbakery check-googlefonts $negFinalLocation/$fileName --ghmarkdown $negFinalLocation/${fileName/".ttf"/"-fontbakery-report.md"}
-                fi
-                if [[ $file == *"Negative"* && $file == *"SC"* ]]; then
-                    cp $file $negScFinalLocation/$fileName
-                    echo "new VF location is " $negScFinalLocation/$fileName
-                    fontbakery check-googlefonts $negScFinalLocation/$fileName --ghmarkdown $negScFinalLocation/${fileName/".ttf"/"-fontbakery-report.md"}
-                fi
+            if [[ $file == *"SC"* ]]; then
+                cp $file $scFinalLocation/$fileName
+                echo "new VF location is " $scFinalLocation/$fileName
+                fontbakery check-googlefonts $scFinalLocation/$fileName --ghmarkdown $scFinalLocation/${fileName/".ttf"/"-fontbakery-report.md"}
             fi
-
         fi
+
+        if [[ $splitVF == true && $fullVF == false ]]; then
+            if [[ $file != *"Negative"* && $file != *"SC"* ]]; then
+                cp $file $finalLocation/$fileName
+                echo "new VF location is " $finalLocation/$fileName
+                fontbakery check-googlefonts $finalLocation/$fileName --ghmarkdown $finalLocation/${fileName/".ttf"/"-fontbakery-report.md"}
+            fi
+            if [[ $file != *"Negative"* && $file == *"SC"* ]]; then
+                cp $file $scFinalLocation/$fileName
+                echo "new VF location is " $scFinalLocation/$fileName
+                fontbakery check-googlefonts $scFinalLocation/$fileName --ghmarkdown $scFinalLocation/${fileName/".ttf"/"-fontbakery-report.md"}
+            fi
+            if [[ $file == *"Negative"* && $file != *"SC"* ]]; then
+                cp $file $negFinalLocation/$fileName
+                echo "new VF location is " $negFinalLocation/$fileName
+                fontbakery check-googlefonts $negFinalLocation/$fileName --ghmarkdown $negFinalLocation/${fileName/".ttf"/"-fontbakery-report.md"}
+            fi
+            if [[ $file == *"Negative"* && $file == *"SC"* ]]; then
+                cp $file $negScFinalLocation/$fileName
+                echo "new VF location is " $negScFinalLocation/$fileName
+                fontbakery check-googlefonts $negScFinalLocation/$fileName --ghmarkdown $negScFinalLocation/${fileName/".ttf"/"-fontbakery-report.md"}
+            fi
+        fi
+
     fi
 done
 
-rm -rf variable_ttf
+# rm -rf variable_ttf

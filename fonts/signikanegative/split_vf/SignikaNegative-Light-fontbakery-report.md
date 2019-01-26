@@ -195,13 +195,6 @@ Fontbakery version: 0.6.6
 
 </details>
 <details>
-<summary>:fire: <b>FAIL:</b> Checking OS/2 usWeightClass.</summary>
-
-* [com.google.fonts/check/020](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/020)
-* :fire: **FAIL** OS/2 usWeightClass expected value for 'Light' is 300 but this font has 400.
-
-</details>
-<details>
 <summary>:fire: <b>FAIL:</b> Font has old ttfautohint applied?</summary>
 
 * [com.google.fonts/check/056](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/056)
@@ -209,17 +202,17 @@ Fontbakery version: 0.6.6
 
 </details>
 <details>
-<summary>:fire: <b>FAIL:</b> Checks METADATA.pb font.name field matches family name declared on the name table.</summary>
-
-* [com.google.fonts/check/092](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/092)
-* :fire: **FAIL** Unmatched family name in font: TTF has "Signika Negative Light" while METADATA.pb has "Signika Negative" [code: mismatch]
-
-</details>
-<details>
 <summary>:fire: <b>FAIL:</b> Checks METADATA.pb font.post_script_name matches postscript name declared on the name table.</summary>
 
 * [com.google.fonts/check/093](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/093)
 * :fire: **FAIL** Unmatched postscript name in font: TTF has "SignikaNegative-Light" while METADATA.pb has "Signika-Light". [code: mismatch]
+
+</details>
+<details>
+<summary>:fire: <b>FAIL:</b> METADATA.pb font.name value should be same as the family name declared on the name table.</summary>
+
+* [com.google.fonts/check/095](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/095)
+* :fire: **FAIL** This font lacks a TYPOGRAPHIC_FAMILY_NAME entry (nameID=16) in the name table. [code: lacks-entry]
 
 </details>
 <details>
@@ -240,21 +233,7 @@ Fontbakery version: 0.6.6
 <summary>:fire: <b>FAIL:</b> METADATA.pb font.post_script_name field contains font name in right format?</summary>
 
 * [com.google.fonts/check/101](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/101)
-* :fire: **FAIL** METADATA.pb postScriptName ("Signika-Light") does not match correct font name format ("Signika Negative Light").
-
-</details>
-<details>
-<summary>:fire: <b>FAIL:</b> METADATA.pb font.name and font.full_name fields match the values declared on the name table?</summary>
-
-* [com.google.fonts/check/108](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/108)
-* :fire: **FAIL** METADATA.pb Family name "Signika Negative") does not match name table entry "Signika Negative Light" ! [code: familyname-mismatch]
-
-</details>
-<details>
-<summary>:fire: <b>FAIL:</b> Checking OS/2 usWeightClass matches weight specified at METADATA.pb.</summary>
-
-* [com.google.fonts/check/112](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/112)
-* :fire: **FAIL** OS/2 usWeightClass (400:"Regular") does not match weight specified at METADATA.pb (300:"Light").
+* :fire: **FAIL** METADATA.pb postScriptName ("Signika-Light") does not match correct font name format ("Signika Negative").
 
 </details>
 <details>
@@ -279,10 +258,39 @@ Fontbakery version: 0.6.6
 
 </details>
 <details>
-<summary>:fire: <b>FAIL:</b> Does the font have a DSIG table?</summary>
+<summary>:fire: <b>FAIL:</b> Font has all mandatory 'name' table entries ?</summary>
 
-* [com.google.fonts/check/045](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/045)
-* :fire: **FAIL** This font lacks a digital signature (DSIG table). Some applications may require one (even if only a dummy placeholder) in order to work properly.
+* [com.google.fonts/check/156](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/156)
+* :fire: **FAIL** Font lacks entry with nameId=16 (TYPOGRAPHIC_FAMILY_NAME)
+* :fire: **FAIL** Font lacks entry with nameId=17 (TYPOGRAPHIC_SUBFAMILY_NAME)
+
+</details>
+<details>
+<summary>:fire: <b>FAIL:</b> Check name table: FONT_FAMILY_NAME entries. </summary>
+
+* [com.google.fonts/check/157](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/157)
+* :fire: **FAIL** Entry [FONT_FAMILY_NAME(1):WINDOWS(3)] on the 'name' table: Expected 'Signika Negative Light' but got 'Signika Negative'.
+
+</details>
+<details>
+<summary>:fire: <b>FAIL:</b> Check name table: FONT_SUBFAMILY_NAME entries. </summary>
+
+* [com.google.fonts/check/158](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/158)
+* :fire: **FAIL** Entry [FONT_SUBFAMILY_NAME(2):WINDOWS(3)] on the 'name' table: Expected 'Regular' but got 'Light'. [code: bad-familyname]
+
+</details>
+<details>
+<summary>:fire: <b>FAIL:</b> Check name table: TYPOGRAPHIC_FAMILY_NAME entries. </summary>
+
+* [com.google.fonts/check/161](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/161)
+* :fire: **FAIL** non-RIBBI fonts must have a TYPOGRAPHIC_FAMILY_NAME entry on the name table. [code: non-ribbi-lacks-entry]
+
+</details>
+<details>
+<summary>:fire: <b>FAIL:</b> Check name table: TYPOGRAPHIC_SUBFAMILY_NAME entries. </summary>
+
+* [com.google.fonts/check/162](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/162)
+* :fire: **FAIL** non-RIBBI fonts must have a TYPOGRAPHIC_SUBFAMILY_NAME entry on the name table. [code: non-ribbi-lacks-entry]
 
 </details>
 <details>
@@ -296,7 +304,7 @@ Fontbakery version: 0.6.6
 <summary>:warning: <b>WARN:</b> Glyphs are similiar to Google Fonts version?</summary>
 
 * [com.google.fonts/check/118](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/118)
-* :warning: **WARN** Following glyphs differ greatly from Google Fonts version: [multiply, Yacute, thorn, backslash, logicalnot, hbar, Adieresis, agrave, Egrave, Ecircumflex, Eacute, numbersign, Atilde, yen, ae, Aogonek, d, Eth, Ntilde, lslash, Ograve, braceright, N, Ydieresis, K, X, Ugrave, Aring, bracketright, paragraph, eogonek, cent, bracketleft, four, parenright, Thorn, G, x, E, Ecaron, H, Lslash, b, Igrave, eth, plusminus, ograve, dcaron, Aacute, sterling, plus, currency, q, Ncaron, AE, oe, m, A, Edieresis, .notdef, Hbar, one, g, ugrave, p, Y, onehalf, Nacute, k, Eogonek, kgreenlandic, aring, Agrave, onequarter, Euro, oslash, egrave, grave, igrave, uring, Oslash, threequarters, OE, dollar, ring, five]
+* :warning: **WARN** Following glyphs differ greatly from Google Fonts version: [Eth, Egrave, multiply, Igrave, logicalnot, Hbar, x, backslash, Agrave, AE, d, bracketright, igrave, kgreenlandic, b, Thorn, p, one, K, parenright, paragraph, dollar, agrave, dcaron, m, Ecircumflex, Adieresis, Ncaron, Euro, onehalf, Ograve, eogonek, Edieresis, X, threequarters, oslash, numbersign, bracketleft, four, Oslash, lslash, sterling, braceright, k, eth, Y, Aogonek, uring, N, grave, plusminus, Atilde, q, Eacute, E, onequarter, Ugrave, oe, cent, Ecaron, Lslash, OE, hbar, currency, ograve, H, Nacute, Ydieresis, Aring, g, Eogonek, plus, A, five, egrave, ugrave, G, Ntilde, .notdef, aring, yen, ring, ae, thorn, Aacute, Yacute]
 
 </details>
 <details>
@@ -310,7 +318,7 @@ Fontbakery version: 0.6.6
 <summary>:warning: <b>WARN:</b> Combined length of family and style must not exceed 20 characters.</summary>
 
 * [com.google.fonts/check/163](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/163)
-* :warning: **WARN** The combined length of family and style exceeds 20 chars in the following 'WINDOWS' entries: FONT_FAMILY_NAME = 'Signika Negative Light' / SUBFAMILY_NAME = 'Regular'
+* :warning: **WARN** The combined length of family and style exceeds 20 chars in the following 'WINDOWS' entries: FONT_FAMILY_NAME = 'Signika Negative' / SUBFAMILY_NAME = 'Light'
 
 </details>
 <details>
@@ -356,6 +364,13 @@ This happens a lot when points are not extremes, which is usually bad. However, 
 
 * [com.google.fonts/check/011](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/011)
 * :zzz: **SKIP** Unfulfilled Conditions: stylenames_are_canonical
+
+</details>
+<details>
+<summary>:zzz: <b>SKIP:</b> METADATA.pb font.full_name field contains font name in right format?</summary>
+
+* [com.google.fonts/check/099](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/099)
+* :zzz: **SKIP** No TYPOGRAPHIC_FAMILYNAME
 
 </details>
 <details>
@@ -436,8 +451,8 @@ This happens a lot when points are not extremes, which is usually bad. However, 
 
 |  | fonts/signikanegative/split_vf/SignikaNegative-Light.ttf |
 |:--- | ---:|
-| Dehinted Size | 145.9kb |
-| Hinted Size | 168.5kb |
+| Dehinted Size | 146.0kb |
+| Hinted Size | 168.6kb |
 | Increase | 22.6kb |
 | Change   | 15.5 % |
 
@@ -479,7 +494,7 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 <summary>:information_source: <b>INFO:</b> Font contains all required tables?</summary>
 
 * [com.google.fonts/check/052](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/052)
-* :information_source: **INFO** This font contains the following optional tables [GSUB, GPOS, cvt , fpgm, gasp, prep, loca]
+* :information_source: **INFO** This font contains the following optional tables [fpgm, cvt , GPOS, loca, GSUB, prep, gasp, DSIG]
 * :bread: **PASS** Font contains all required tables.
 
 </details>
@@ -509,6 +524,13 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 * [com.google.fonts/check/019](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/019)
 * :bread: **PASS** No need to substitute copyright, registered and trademark symbols in name table entries of this font.
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> Checking OS/2 usWeightClass.</summary>
+
+* [com.google.fonts/check/020](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/020)
+* :bread: **PASS** OS/2 usWeightClass value looks good!
 
 </details>
 <details>
@@ -568,6 +590,13 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 </details>
 <details>
+<summary>:bread: <b>PASS:</b> Checks METADATA.pb font.name field matches family name declared on the name table.</summary>
+
+* [com.google.fonts/check/092](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/092)
+* :bread: **PASS** Family name "Signika Negative" is identical in METADATA.pb and on the TTF file.
+
+</details>
+<details>
 <summary>:bread: <b>PASS:</b> METADATA.pb font.full_name value matches fullname declared on the name table?</summary>
 
 * [com.google.fonts/check/094](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/094)
@@ -575,24 +604,10 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 </details>
 <details>
-<summary>:bread: <b>PASS:</b> METADATA.pb font.name value should be same as the family name declared on the name table.</summary>
-
-* [com.google.fonts/check/095](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/095)
-* :bread: **PASS** OK: Family name "Signika Negative" is identical in METADATA.pb and on the TTF file.
-
-</details>
-<details>
 <summary>:bread: <b>PASS:</b> METADATA.pb font.name field contains font name in right format?</summary>
 
 * [com.google.fonts/check/098](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/098)
 * :bread: **PASS** METADATA.pb font.name field contains font name in right format.
-
-</details>
-<details>
-<summary>:bread: <b>PASS:</b> METADATA.pb font.full_name field contains font name in right format?</summary>
-
-* [com.google.fonts/check/099](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/099)
-* :bread: **PASS** METADATA.pb font.full_name field contains font name in right format. ('Signika Negative' in 'Signika Negative Light')
 
 </details>
 <details>
@@ -633,6 +648,13 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 </details>
 <details>
+<summary>:bread: <b>PASS:</b> METADATA.pb font.name and font.full_name fields match the values declared on the name table?</summary>
+
+* [com.google.fonts/check/108](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/108)
+* :bread: **PASS** METADATA.pb familyname and fullName fields match corresponding name table entries.
+
+</details>
+<details>
 <summary>:bread: <b>PASS:</b> METADATA.pb: Check if fontname is not camel cased.</summary>
 
 * [com.google.fonts/check/109](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/109)
@@ -651,6 +673,13 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 * [com.google.fonts/check/111](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/111)
 * :bread: **PASS** Font weight has a canonical value.
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> Checking OS/2 usWeightClass matches weight specified at METADATA.pb.</summary>
+
+* [com.google.fonts/check/112](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/112)
+* :bread: **PASS** OS/2 usWeightClass matches weight specified at METADATA.pb
 
 </details>
 <details>
@@ -706,27 +735,6 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 </details>
 <details>
-<summary>:bread: <b>PASS:</b> Font has all mandatory 'name' table entries ?</summary>
-
-* [com.google.fonts/check/156](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/156)
-* :bread: **PASS** Font contains values for all mandatory name table entries.
-
-</details>
-<details>
-<summary>:bread: <b>PASS:</b> Check name table: FONT_FAMILY_NAME entries. </summary>
-
-* [com.google.fonts/check/157](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/157)
-* :bread: **PASS** FONT_FAMILY_NAME entries are all good.
-
-</details>
-<details>
-<summary>:bread: <b>PASS:</b> Check name table: FONT_SUBFAMILY_NAME entries. </summary>
-
-* [com.google.fonts/check/158](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/158)
-* :bread: **PASS** FONT_SUBFAMILY_NAME entries are all good.
-
-</details>
-<details>
 <summary>:bread: <b>PASS:</b> Check name table: FULL_FONT_NAME entries. </summary>
 
 * [com.google.fonts/check/159](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/159)
@@ -738,20 +746,6 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 * [com.google.fonts/check/160](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/160)
 * :bread: **PASS** POSTCRIPT_NAME entries are all good.
-
-</details>
-<details>
-<summary>:bread: <b>PASS:</b> Check name table: TYPOGRAPHIC_FAMILY_NAME entries. </summary>
-
-* [com.google.fonts/check/161](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/161)
-* :bread: **PASS** TYPOGRAPHIC_FAMILY_NAME entries are all good.
-
-</details>
-<details>
-<summary>:bread: <b>PASS:</b> Check name table: TYPOGRAPHIC_SUBFAMILY_NAME entries. </summary>
-
-* [com.google.fonts/check/162](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/162)
-* :bread: **PASS** TYPOGRAPHIC_SUBFAMILY_NAME entries are all good.
 
 </details>
 <details>
@@ -1000,6 +994,13 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 </details>
 <details>
+<summary>:bread: <b>PASS:</b> Does the font have a DSIG table?</summary>
+
+* [com.google.fonts/check/045](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/045)
+* :bread: **PASS** Digital Signature (DSIG) exists.
+
+</details>
+<details>
 <summary>:bread: <b>PASS:</b> Whitespace and non-breaking space have the same width?</summary>
 
 * [com.google.fonts/check/050](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/050)
@@ -1062,5 +1063,5 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 | :broken_heart: ERROR | :fire: FAIL | :warning: WARN | :zzz: SKIP | :information_source: INFO | :bread: PASS |
 |:-----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 15 | 7 | 12 | 6 | 103 |
-| 0% | 10% | 5% | 8% | 4% | 72% |
+| 0 | 16 | 7 | 13 | 6 | 101 |
+| 0% | 11% | 5% | 9% | 4% | 71% |

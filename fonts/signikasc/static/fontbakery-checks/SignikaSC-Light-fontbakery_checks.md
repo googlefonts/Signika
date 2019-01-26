@@ -188,41 +188,6 @@ Fontbakery version: 0.6.6
 <details>
 <summary><b>[118] SignikaSC-Light.ttf</b></summary>
 <details>
-<summary>:fire: <b>FAIL:</b> Check name table: FONT_FAMILY_NAME entries. </summary>
-
-* [com.google.fonts/check/157](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/157)
-* :fire: **FAIL** Entry [FONT_FAMILY_NAME(1):WINDOWS(3)] on the 'name' table: Expected 'Signika SC Light' but got 'Signika SC Light SC'.
-
-</details>
-<details>
-<summary>:fire: <b>FAIL:</b> Check name table: FULL_FONT_NAME entries. </summary>
-
-* [com.google.fonts/check/159](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/159)
-* :fire: **FAIL** Entry [FULL_FONT_NAME(4):WINDOWS(3)] on the 'name' table: Expected 'Signika SC Light' but got 'Signika SC Light SC Regular'.
-
-</details>
-<details>
-<summary>:fire: <b>FAIL:</b> Check name table: POSTSCRIPT_NAME entries. </summary>
-
-* [com.google.fonts/check/160](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/160)
-* :fire: **FAIL** Entry [POSTSCRIPT_NAME(6):WINDOWS(3)] on the 'name' table: Expected 'SignikaSC-Light' but got 'SignikaSCSC-Light'.
-
-</details>
-<details>
-<summary>:fire: <b>FAIL:</b> Check name table: TYPOGRAPHIC_FAMILY_NAME entries. </summary>
-
-* [com.google.fonts/check/161](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/161)
-* :fire: **FAIL** Entry [TYPOGRAPHIC_FAMILY_NAME(16):WINDOWS(3)] on the 'name' table: Expected 'Signika SC' but got 'Signika SC SC'. [code: non-ribbi-bad-value]
-
-</details>
-<details>
-<summary>:fire: <b>FAIL:</b> Does the font have a DSIG table?</summary>
-
-* [com.google.fonts/check/045](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/045)
-* :fire: **FAIL** This font lacks a digital signature (DSIG table). Some applications may require one (even if only a dummy placeholder) in order to work properly.
-
-</details>
-<details>
 <summary>:warning: <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
 * [com.google.fonts/check/153](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/153)
@@ -278,7 +243,7 @@ Glyph name: uogonek.smcp	Contours detected: 2	Expected: 1
 <summary>:warning: <b>WARN:</b> Combined length of family and style must not exceed 20 characters.</summary>
 
 * [com.google.fonts/check/163](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/163)
-* :warning: **WARN** The combined length of family and style exceeds 20 chars in the following 'WINDOWS' entries: FONT_FAMILY_NAME = 'Signika SC Light SC' / SUBFAMILY_NAME = 'Regular'
+* :warning: **WARN** The combined length of family and style exceeds 20 chars in the following 'WINDOWS' entries: FONT_FAMILY_NAME = 'Signika SC Light' / SUBFAMILY_NAME = 'Regular'
 
 </details>
 <details>
@@ -636,7 +601,7 @@ This happens a lot when points are not extremes, which is usually bad. However, 
 |  | instance_ttf/SignikaSC-Light.ttf |
 |:--- | ---:|
 | Dehinted Size | 83.2kb |
-| Hinted Size | 103.6kb |
+| Hinted Size | 103.5kb |
 | Increase | 20.3kb |
 | Change   | 24.4 % |
 
@@ -678,7 +643,7 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 <summary>:information_source: <b>INFO:</b> Font contains all required tables?</summary>
 
 * [com.google.fonts/check/052](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/052)
-* :information_source: **INFO** This font contains the following optional tables [GSUB, gasp, fpgm, cvt , GPOS, loca, prep]
+* :information_source: **INFO** This font contains the following optional tables [DSIG, fpgm, cvt , loca, GPOS, prep, GSUB, gasp]
 * :bread: **PASS** Font contains all required tables.
 
 </details>
@@ -833,10 +798,38 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 </details>
 <details>
+<summary>:bread: <b>PASS:</b> Check name table: FONT_FAMILY_NAME entries. </summary>
+
+* [com.google.fonts/check/157](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/157)
+* :bread: **PASS** FONT_FAMILY_NAME entries are all good.
+
+</details>
+<details>
 <summary>:bread: <b>PASS:</b> Check name table: FONT_SUBFAMILY_NAME entries. </summary>
 
 * [com.google.fonts/check/158](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/158)
 * :bread: **PASS** FONT_SUBFAMILY_NAME entries are all good.
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> Check name table: FULL_FONT_NAME entries. </summary>
+
+* [com.google.fonts/check/159](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/159)
+* :bread: **PASS** FULL_FONT_NAME entries are all good.
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> Check name table: POSTSCRIPT_NAME entries. </summary>
+
+* [com.google.fonts/check/160](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/160)
+* :bread: **PASS** POSTCRIPT_NAME entries are all good.
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> Check name table: TYPOGRAPHIC_FAMILY_NAME entries. </summary>
+
+* [com.google.fonts/check/161](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/161)
+* :bread: **PASS** TYPOGRAPHIC_FAMILY_NAME entries are all good.
 
 </details>
 <details>
@@ -1050,6 +1043,13 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 </details>
 <details>
+<summary>:bread: <b>PASS:</b> Does the font have a DSIG table?</summary>
+
+* [com.google.fonts/check/045](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/045)
+* :bread: **PASS** Digital Signature (DSIG) exists.
+
+</details>
+<details>
 <summary>:bread: <b>PASS:</b> Whitespace and non-breaking space have the same width?</summary>
 
 * [com.google.fonts/check/050](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/050)
@@ -1091,5 +1091,5 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 | :broken_heart: ERROR | :fire: FAIL | :warning: WARN | :zzz: SKIP | :information_source: INFO | :bread: PASS |
 |:-----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 5 | 7 | 60 | 6 | 65 |
-| 0% | 3% | 5% | 42% | 4% | 45% |
+| 0 | 0 | 7 | 60 | 6 | 70 |
+| 0% | 0% | 5% | 42% | 4% | 49% |

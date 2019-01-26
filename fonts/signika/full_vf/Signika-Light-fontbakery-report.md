@@ -237,13 +237,6 @@ Fontbakery version: 0.6.6
 
 </details>
 <details>
-<summary>:fire: <b>FAIL:</b> Does the font have a DSIG table?</summary>
-
-* [com.google.fonts/check/045](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/045)
-* :fire: **FAIL** This font lacks a digital signature (DSIG table). Some applications may require one (even if only a dummy placeholder) in order to work properly.
-
-</details>
-<details>
 <summary>:warning: <b>WARN:</b> Copyright notice on METADATA.pb should not contain 'Reserved Font Name'.</summary>
 
 * [com.google.fonts/check/103](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/103)
@@ -254,7 +247,7 @@ Fontbakery version: 0.6.6
 <summary>:warning: <b>WARN:</b> Glyphs are similiar to Google Fonts version?</summary>
 
 * [com.google.fonts/check/118](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/118)
-* :warning: **WARN** Following glyphs differ greatly from Google Fonts version: [tcaron, F, Hbar, L, multiply, Eacute, aogonek, f, cent, lslash, onehalf, ograve, oe, t, Thorn, Adieresis, thorn.smcp, bracketleft, Ldot, dollar, ring, b, g, x, p, numbersign, Aogonek, threequarters, ncaron.smcp, uring.smcp, ecaron.smcp, a.smcp, igrave.smcp, acircumflex.smcp, hbar.smcp, oe.smcp, Edieresis, f.smcp, Ecaron, Oslash, Euro, igrave, thorn, e.smcp, germandbls, Egrave, eth, kgreenlandic.smcp, bracketright, Ncaron, aogonek.smcp, five, H, Acircumflex, ograve.smcp, oslash.smcp, logicalnot, one, hbar, plus, k, backslash, Aacute, Ntilde, ugrave, sterling, Igrave, AE, ecircumflex.smcp, Atilde, uni2074, onequarter, .notdef, eacute.smcp, Aring, Agrave, A, K, Yacute, h.smcp, agrave, aring.smcp, ae, n.smcp, eth.smcp, q, four, egrave, ydieresis.smcp, germandbls.smcp, ae.smcp, Ugrave, braceright, aacute.smcp, Ograve, uring, aring, Ecircumflex, eogonek, grave, eogonek.smcp, Eogonek, Nacute, Lslash, Y, G, dcaron, d, Ydieresis, ugrave.smcp, oslash, atilde.smcp, N, k.smcp, x.smcp, X, egrave.smcp, parenright, kgreenlandic, adieresis.smcp, edieresis.smcp, g.smcp, plusminus, m, lslash.smcp, paragraph, currency, yen, OE, Eth, agrave.smcp, E, section]
+* :warning: **WARN** Following glyphs differ greatly from Google Fonts version: [eth.smcp, ring, Adieresis, m, p, g, ugrave.smcp, Ntilde, OE, a.smcp, lslash, aogonek.smcp, Thorn, parenright, Ydieresis, atilde.smcp, e.smcp, dollar, Ecircumflex, edieresis.smcp, Atilde, threequarters, Oslash, Aogonek, bracketright, ae.smcp, x.smcp, onequarter, germandbls, G, Eogonek, acircumflex.smcp, aogonek, one, AE, numbersign, q, eogonek.smcp, Euro, f, H, tcaron, Eth, igrave, lslash.smcp, t, n.smcp, igrave.smcp, ecircumflex.smcp, currency, section, k, Ecaron, ograve.smcp, Aring, egrave, A, Ldot, uring, .notdef, Igrave, kgreenlandic.smcp, Eacute, Y, Ograve, egrave.smcp, aring.smcp, ecaron.smcp, five, k.smcp, thorn, Agrave, X, kgreenlandic, eth, onehalf, logicalnot, eacute.smcp, Nacute, h.smcp, d, Edieresis, Ncaron, Yacute, hbar.smcp, N, multiply, plus, plusminus, ugrave, Lslash, ncaron.smcp, yen, uni2074, oe.smcp, b, Acircumflex, paragraph, uring.smcp, backslash, sterling, F, Egrave, g.smcp, ograve, adieresis.smcp, oslash.smcp, grave, aacute.smcp, agrave, E, eogonek, x, hbar, Aacute, oe, thorn.smcp, dcaron, braceright, f.smcp, oslash, four, aring, germandbls.smcp, bracketleft, K, Ugrave, Hbar, L, ae, ydieresis.smcp, agrave.smcp, cent]
 
 </details>
 <details>
@@ -438,7 +431,7 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 <summary>:information_source: <b>INFO:</b> Font contains all required tables?</summary>
 
 * [com.google.fonts/check/052](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/052)
-* :information_source: **INFO** This font contains the following optional tables [GPOS, prep, fpgm, loca, gasp, cvt , GSUB]
+* :information_source: **INFO** This font contains the following optional tables [prep, fpgm, cvt , gasp, DSIG, GSUB, GPOS, loca]
 * :bread: **PASS** Font contains all required tables.
 
 </details>
@@ -1001,6 +994,13 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 </details>
 <details>
+<summary>:bread: <b>PASS:</b> Does the font have a DSIG table?</summary>
+
+* [com.google.fonts/check/045](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/045)
+* :bread: **PASS** Digital Signature (DSIG) exists.
+
+</details>
+<details>
 <summary>:bread: <b>PASS:</b> Whitespace and non-breaking space have the same width?</summary>
 
 * [com.google.fonts/check/050](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/050)
@@ -1063,5 +1063,5 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 | :broken_heart: ERROR | :fire: FAIL | :warning: WARN | :zzz: SKIP | :information_source: INFO | :bread: PASS |
 |:-----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 9 | 6 | 12 | 8 | 108 |
+| 0 | 8 | 6 | 12 | 8 | 109 |
 | 0% | 6% | 4% | 8% | 6% | 76% |

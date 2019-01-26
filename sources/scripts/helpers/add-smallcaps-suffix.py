@@ -86,14 +86,23 @@ namesToEdit = dictFromNameIDs("namesToEdit", 1,3,4,6,16)
 
 print(namesToEdit)
 
+def newName(nameValue):
+    return namesToEdit[nameID].replace(familyName, familyName + ' ' + suffix)
+
+def newNameNoSpaces(nameValue):
+    return namesToEdit[nameID].replace(familyName.replace(' ',''), familyName.replace(' ','') + suffix)
+
 def addSuffix(suffix):
-    for nameID in namesToEdit:
-        if ' ' in namesToEdit[nameID]:
-            newName = namesToEdit[nameID].replace(familyName, familyName + ' SC')
-            namesToEdit[nameID] = newName
-        else:
-            newName = namesToEdit[nameID].replace(familyName.replace(' ',''), familyName.replace(' ','') + 'SC')
-            namesToEdit[nameID] = newName
+    for nameID, nameValue in namesToEdit.items():
+        if nameID in [1, 4, 16]:
+            namesToEdit[nameID] = newName(nameValue)
+        if nameID == 6:
+            namesToEdit[nameID] = newNameNoSpaces(nameValue)
+        if nameID == 3:
+            if ' ' in nameValue
+                namesToEdit[nameID] = newName(nameValue)
+            else:
+                namesToEdit[nameID] = newNameNoSpaces(nameValue)
 
 addSuffix(namesToEdit)
 print(namesToEdit)

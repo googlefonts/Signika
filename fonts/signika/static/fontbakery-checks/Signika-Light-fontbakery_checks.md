@@ -188,13 +188,6 @@ Fontbakery version: 0.6.6
 <details>
 <summary><b>[118] Signika-Light.ttf</b></summary>
 <details>
-<summary>:fire: <b>FAIL:</b> Does the font have a DSIG table?</summary>
-
-* [com.google.fonts/check/045](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/045)
-* :fire: **FAIL** This font lacks a digital signature (DSIG table). Some applications may require one (even if only a dummy placeholder) in order to work properly.
-
-</details>
-<details>
 <summary>:warning: <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
 * [com.google.fonts/check/153](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/153)
@@ -569,7 +562,7 @@ This happens a lot when points are not extremes, which is usually bad. However, 
 | Dehinted Size | 86.3kb |
 | Hinted Size | 106.7kb |
 | Increase | 20.4kb |
-| Change   | 23.7 % |
+| Change   | 23.6 % |
 
 
 </details>
@@ -617,7 +610,7 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 <summary>:information_source: <b>INFO:</b> Font contains all required tables?</summary>
 
 * [com.google.fonts/check/052](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/052)
-* :information_source: **INFO** This font contains the following optional tables [GPOS, gasp, fpgm, prep, cvt , loca, GSUB]
+* :information_source: **INFO** This font contains the following optional tables [fpgm, GPOS, cvt , DSIG, GSUB, loca, gasp, prep]
 * :bread: **PASS** Font contains all required tables.
 
 </details>
@@ -1024,6 +1017,13 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 </details>
 <details>
+<summary>:bread: <b>PASS:</b> Does the font have a DSIG table?</summary>
+
+* [com.google.fonts/check/045](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/045)
+* :bread: **PASS** Digital Signature (DSIG) exists.
+
+</details>
+<details>
 <summary>:bread: <b>PASS:</b> Whitespace and non-breaking space have the same width?</summary>
 
 * [com.google.fonts/check/050](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/050)
@@ -1065,5 +1065,5 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 | :broken_heart: ERROR | :fire: FAIL | :warning: WARN | :zzz: SKIP | :information_source: INFO | :bread: PASS |
 |:-----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 1 | 5 | 60 | 7 | 70 |
-| 0% | 1% | 3% | 42% | 5% | 49% |
+| 0 | 0 | 5 | 60 | 7 | 71 |
+| 0% | 0% | 3% | 42% | 5% | 50% |
