@@ -1,16 +1,15 @@
 ## Fontbakery report
 
-Fontbakery version: 0.6.6
+Fontbakery version: 0.6.8
 
 <details>
-<summary><b>[25] Family checks</b></summary>
+<summary><b>[26] Family checks</b></summary>
 <details>
 <summary>:information_source: <b>INFO:</b> Do we have the latest version of FontBakery installed?</summary>
 
 * [com.google.fonts/check/fontbakery_version](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/fontbakery_version)
-* :information_source: **INFO** fontbakery (0.6.7)  - Well designed Font QA tool, written in Python 3
-  INSTALLED: 0.6.6
-  LATEST:    0.6.7
+* :information_source: **INFO** fontbakery (0.6.8)  - Well designed Font QA tool, written in Python 3
+  INSTALLED: 0.6.8 (latest)
 
 * :bread: **PASS** Font Bakery is up-to-date
 
@@ -20,6 +19,13 @@ Fontbakery version: 0.6.6
 
 * [com.google.fonts/check/028](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/028)
 * :bread: **PASS** Found license at '/Users/stephennixon/type-repos/google-font-repos/signika-for-google/OFL.txt'
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> All tabular figures must have the same width across the RIBBI-family.</summary>
+
+* [com.google.fonts/check/tnum_horizontal_metrics](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/tnum_horizontal_metrics)
+* :bread: **PASS** OK
 
 </details>
 <details>
@@ -186,7 +192,7 @@ Fontbakery version: 0.6.6
 <br>
 </details>
 <details>
-<summary><b>[118] SignikaNegativeSC-Regular.ttf</b></summary>
+<summary><b>[117] SignikaNegativeSC-Regular.ttf</b></summary>
 <details>
 <summary>:warning: <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
@@ -460,13 +466,6 @@ This happens a lot when points are not extremes, which is usually bad. However, 
 
 </details>
 <details>
-<summary>:zzz: <b>SKIP:</b> TTFAutohint x-height increase value is same as in previous release on Google Fonts?</summary>
-
-* [com.google.fonts/check/119](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/119)
-* :zzz: **SKIP** Unfulfilled Conditions: api_gfonts_ttFont
-
-</details>
-<details>
 <summary>:zzz: <b>SKIP:</b> Check font has same encoded glyphs as version hosted on fonts.google.com</summary>
 
 * [com.google.fonts/check/154](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/154)
@@ -643,7 +642,7 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 <summary>:information_source: <b>INFO:</b> Font contains all required tables?</summary>
 
 * [com.google.fonts/check/052](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/052)
-* :information_source: **INFO** This font contains the following optional tables [GPOS, DSIG, GSUB, loca, prep, fpgm, cvt , gasp]
+* :information_source: **INFO** This font contains the following optional tables [gasp, loca, DSIG, GSUB, fpgm, cvt , prep, GPOS]
 * :bread: **PASS** Font contains all required tables.
 
 </details>
@@ -1091,5 +1090,5 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 | :broken_heart: ERROR | :fire: FAIL | :warning: WARN | :zzz: SKIP | :information_source: INFO | :bread: PASS |
 |:-----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 0 | 7 | 60 | 6 | 70 |
-| 0% | 0% | 5% | 42% | 4% | 49% |
+| 0 | 0 | 7 | 59 | 6 | 71 |
+| 0% | 0% | 5% | 41% | 4% | 50% |

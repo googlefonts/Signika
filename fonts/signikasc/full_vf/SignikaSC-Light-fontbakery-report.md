@@ -1,9 +1,9 @@
 ## Fontbakery report
 
-Fontbakery version: 0.6.6
+Fontbakery version: 0.6.8
 
 <details>
-<summary><b>[25] Family checks</b></summary>
+<summary><b>[26] Family checks</b></summary>
 <details>
 <summary>:fire: <b>FAIL:</b> METADATA.pb: According Google Fonts standards, families should have a Regular style.</summary>
 
@@ -15,9 +15,8 @@ Fontbakery version: 0.6.6
 <summary>:information_source: <b>INFO:</b> Do we have the latest version of FontBakery installed?</summary>
 
 * [com.google.fonts/check/fontbakery_version](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/fontbakery_version)
-* :information_source: **INFO** fontbakery (0.6.7)  - Well designed Font QA tool, written in Python 3
-  INSTALLED: 0.6.6
-  LATEST:    0.6.7
+* :information_source: **INFO** fontbakery (0.6.8)  - Well designed Font QA tool, written in Python 3
+  INSTALLED: 0.6.8 (latest)
 
 * :bread: **PASS** Font Bakery is up-to-date
 
@@ -128,6 +127,13 @@ Fontbakery version: 0.6.6
 
 </details>
 <details>
+<summary>:bread: <b>PASS:</b> All tabular figures must have the same width across the RIBBI-family.</summary>
+
+* [com.google.fonts/check/tnum_horizontal_metrics](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/tnum_horizontal_metrics)
+* :bread: **PASS** OK
+
+</details>
+<details>
 <summary>:bread: <b>PASS:</b> Checking all files are in the same directory.</summary>
 
 * [com.google.fonts/check/002](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/002)
@@ -186,7 +192,7 @@ Fontbakery version: 0.6.6
 <br>
 </details>
 <details>
-<summary><b>[118] SignikaSC-Light.ttf</b></summary>
+<summary><b>[117] SignikaSC-Light.ttf</b></summary>
 <details>
 <summary>:fire: <b>FAIL:</b> Checking file is named canonically.</summary>
 
@@ -293,7 +299,6 @@ But instead we have got: 'Copyright 2018 by Anna Giedryś. All rights reserved. 
 
 * [com.google.fonts/check/ttx-roundtrip](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/ttx-roundtrip)
 * :fire: **FAIL** name id 266 missing from name table
-* :fire: **FAIL** 
 * :fire: **FAIL** name id 267 missing from name table
 * :information_source: **INFO** While converting TTF into an XML file, ttx emited the messages listed below.
 
@@ -309,7 +314,7 @@ But instead we have got: 'Copyright 2018 by Anna Giedryś. All rights reserved. 
 <summary>:warning: <b>WARN:</b> Glyphs are similiar to Google Fonts version?</summary>
 
 * [com.google.fonts/check/118](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/118)
-* :warning: **WARN** Following glyphs differ greatly from Google Fonts version: [paragraph, eogonek, onequarter, aring.smcp, q, Ntilde, yen, plusminus, onehalf, bracketleft, g.smcp, F, sterling, Atilde, Y, currency, Egrave, dollar, numbersign, thorn, Lslash, Ugrave, Oslash, germandbls.smcp, kgreenlandic.smcp, Aring, Ecircumflex, threequarters, grave, oslash, H, Ydieresis, ae.smcp, parenright, d, a.smcp, oslash.smcp, L, backslash, Acircumflex, h.smcp, egrave, Adieresis, E, K, Igrave, ae, adieresis.smcp, ecircumflex.smcp, b, ncaron.smcp, lslash.smcp, Edieresis, aogonek.smcp, Aogonek, ugrave, agrave, braceright, aacute.smcp, Agrave, ograve, oe.smcp, OE, tcaron, ograve.smcp, cent, p, igrave, uring, ydieresis.smcp, eacute.smcp, dcaron, hbar.smcp, logicalnot, f.smcp, Thorn, g, Hbar, A, x, egrave.smcp, x.smcp, agrave.smcp, eth.smcp, Eth, bracketright, k, uni2074, f, plus, multiply, Ecaron, Euro, atilde.smcp, n.smcp, e.smcp, N, k.smcp, ugrave.smcp, eogonek.smcp, five, t, Ograve, uring.smcp, Ldot, G, one, oe, four, Yacute, eth, kgreenlandic, acircumflex.smcp, Ncaron, AE, Eacute, aogonek, section, germandbls, Eogonek, hbar, igrave.smcp, Nacute, X, m, ecaron.smcp, ring, thorn.smcp, edieresis.smcp, Aacute, aring, lslash]
+* :warning: **WARN** Following glyphs differ greatly from Google Fonts version: [ugrave.smcp, Ecaron, ncaron.smcp, n.smcp, agrave.smcp, ae.smcp, f.smcp, oslash.smcp, kgreenlandic, Adieresis, Eacute, adieresis.smcp, agrave, tcaron, k, ugrave, Ydieresis, germandbls, ae, uring, oe.smcp, OE, Euro, g, ecaron.smcp, Hbar, h.smcp, dcaron, ograve.smcp, Eogonek, onehalf, oslash, Nacute, aogonek.smcp, numbersign, Ldot, sterling, oe, Oslash, bracketright, Igrave, Thorn, hbar, currency, grave, hbar.smcp, dollar, yen, t, edieresis.smcp, eth, Ograve, bracketleft, germandbls.smcp, Acircumflex, eogonek, eacute.smcp, Eth, K, plusminus, ograve, aring.smcp, plus, section, H, g.smcp, Ntilde, AE, k.smcp, p, G, braceright, multiply, thorn, onequarter, eth.smcp, x, F, thorn.smcp, egrave, m, igrave.smcp, backslash, Lslash, aogonek, x.smcp, ydieresis.smcp, Atilde, q, ecircumflex.smcp, A, Yacute, uni2074, one, Aacute, four, Ecircumflex, f, Aring, lslash.smcp, acircumflex.smcp, a.smcp, Edieresis, Aogonek, threequarters, d, Y, igrave, lslash, aring, E, b, L, aacute.smcp, X, egrave.smcp, parenright, atilde.smcp, cent, Egrave, ring, logicalnot, uring.smcp, N, kgreenlandic.smcp, paragraph, Ugrave, Ncaron, e.smcp, Agrave, five, eogonek.smcp]
 
 </details>
 <details>
@@ -499,7 +504,7 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 <summary>:information_source: <b>INFO:</b> Font contains all required tables?</summary>
 
 * [com.google.fonts/check/052](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/052)
-* :information_source: **INFO** This font contains the following optional tables [fpgm, DSIG, GPOS, loca, prep, GSUB, cvt , gasp]
+* :information_source: **INFO** This font contains the following optional tables [gasp, prep, GSUB, GPOS, DSIG, cvt , fpgm, loca]
 * :bread: **PASS** Font contains all required tables.
 
 </details>
@@ -704,13 +709,6 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 * [com.google.fonts/check/116](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/116)
 * :bread: **PASS** Font em size is good (unitsPerEm = 2000).
-
-</details>
-<details>
-<summary>:bread: <b>PASS:</b> TTFAutohint x-height increase value is same as in previous release on Google Fonts?</summary>
-
-* [com.google.fonts/check/119](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/119)
-* :bread: **PASS** TTFAutohint --increase-x-height is the same as in the previous Google Fonts release (9).
 
 </details>
 <details>

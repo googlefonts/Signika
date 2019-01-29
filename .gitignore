@@ -1,7 +1,8 @@
 .DS_Store
 *(Autosaved)*
 .vscode
-virtual_env
+venv
+venv/*
 master_ufo/*.*
 instance_ufo/*.*
 instance_ttf/*.*

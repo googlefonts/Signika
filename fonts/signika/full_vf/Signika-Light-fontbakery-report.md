@@ -1,9 +1,9 @@
 ## Fontbakery report
 
-Fontbakery version: 0.6.6
+Fontbakery version: 0.6.8
 
 <details>
-<summary><b>[25] Family checks</b></summary>
+<summary><b>[26] Family checks</b></summary>
 <details>
 <summary>:fire: <b>FAIL:</b> METADATA.pb: According Google Fonts standards, families should have a Regular style.</summary>
 
@@ -15,9 +15,8 @@ Fontbakery version: 0.6.6
 <summary>:information_source: <b>INFO:</b> Do we have the latest version of FontBakery installed?</summary>
 
 * [com.google.fonts/check/fontbakery_version](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/fontbakery_version)
-* :information_source: **INFO** fontbakery (0.6.7)  - Well designed Font QA tool, written in Python 3
-  INSTALLED: 0.6.6
-  LATEST:    0.6.7
+* :information_source: **INFO** fontbakery (0.6.8)  - Well designed Font QA tool, written in Python 3
+  INSTALLED: 0.6.8 (latest)
 
 * :bread: **PASS** Font Bakery is up-to-date
 
@@ -128,6 +127,13 @@ Fontbakery version: 0.6.6
 
 </details>
 <details>
+<summary>:bread: <b>PASS:</b> All tabular figures must have the same width across the RIBBI-family.</summary>
+
+* [com.google.fonts/check/tnum_horizontal_metrics](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/tnum_horizontal_metrics)
+* :bread: **PASS** OK
+
+</details>
+<details>
 <summary>:bread: <b>PASS:</b> Checking all files are in the same directory.</summary>
 
 * [com.google.fonts/check/002](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/002)
@@ -186,7 +192,7 @@ Fontbakery version: 0.6.6
 <br>
 </details>
 <details>
-<summary><b>[118] Signika-Light.ttf</b></summary>
+<summary><b>[117] Signika-Light.ttf</b></summary>
 <details>
 <summary>:fire: <b>FAIL:</b> Checking file is named canonically.</summary>
 
@@ -247,7 +253,7 @@ Fontbakery version: 0.6.6
 <summary>:warning: <b>WARN:</b> Glyphs are similiar to Google Fonts version?</summary>
 
 * [com.google.fonts/check/118](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/118)
-* :warning: **WARN** Following glyphs differ greatly from Google Fonts version: [eth.smcp, ring, Adieresis, m, p, g, ugrave.smcp, Ntilde, OE, a.smcp, lslash, aogonek.smcp, Thorn, parenright, Ydieresis, atilde.smcp, e.smcp, dollar, Ecircumflex, edieresis.smcp, Atilde, threequarters, Oslash, Aogonek, bracketright, ae.smcp, x.smcp, onequarter, germandbls, G, Eogonek, acircumflex.smcp, aogonek, one, AE, numbersign, q, eogonek.smcp, Euro, f, H, tcaron, Eth, igrave, lslash.smcp, t, n.smcp, igrave.smcp, ecircumflex.smcp, currency, section, k, Ecaron, ograve.smcp, Aring, egrave, A, Ldot, uring, .notdef, Igrave, kgreenlandic.smcp, Eacute, Y, Ograve, egrave.smcp, aring.smcp, ecaron.smcp, five, k.smcp, thorn, Agrave, X, kgreenlandic, eth, onehalf, logicalnot, eacute.smcp, Nacute, h.smcp, d, Edieresis, Ncaron, Yacute, hbar.smcp, N, multiply, plus, plusminus, ugrave, Lslash, ncaron.smcp, yen, uni2074, oe.smcp, b, Acircumflex, paragraph, uring.smcp, backslash, sterling, F, Egrave, g.smcp, ograve, adieresis.smcp, oslash.smcp, grave, aacute.smcp, agrave, E, eogonek, x, hbar, Aacute, oe, thorn.smcp, dcaron, braceright, f.smcp, oslash, four, aring, germandbls.smcp, bracketleft, K, Ugrave, Hbar, L, ae, ydieresis.smcp, agrave.smcp, cent]
+* :warning: **WARN** Following glyphs differ greatly from Google Fonts version: [dollar, Ncaron, ograve, Igrave, Ydieresis, Ecircumflex, h.smcp, n.smcp, Yacute, section, onehalf, aogonek.smcp, Agrave, plusminus, x, paragraph, ugrave, ncaron.smcp, g.smcp, Ntilde, eogonek.smcp, x.smcp, ae, Lslash, Ecaron, ecaron.smcp, a.smcp, A, Ugrave, acircumflex.smcp, hbar, igrave.smcp, uring.smcp, logicalnot, g, Ograve, currency, f, X, ae.smcp, Atilde, uring, f.smcp, germandbls, threequarters, Y, lslash.smcp, d, Eth, aring, oslash.smcp, q, eth.smcp, egrave, germandbls.smcp, eacute.smcp, e.smcp, Ldot, Aacute, agrave.smcp, multiply, kgreenlandic, ugrave.smcp, Eogonek, ring, plus, eth, ydieresis.smcp, E, aring.smcp, L, m, igrave, aacute.smcp, ograve.smcp, Edieresis, oe, tcaron, bracketright, adieresis.smcp, braceright, K, Egrave, uni2074, Eacute, onequarter, five, Aring, cent, H, numbersign, Oslash, t, Euro, egrave.smcp, G, dcaron, N, lslash, Adieresis, kgreenlandic.smcp, oslash, p, one, F, Nacute, k.smcp, atilde.smcp, sterling, k, four, b, edieresis.smcp, ecircumflex.smcp, oe.smcp, hbar.smcp, OE, parenright, Acircumflex, AE, agrave, thorn.smcp, thorn, aogonek, backslash, Hbar, eogonek, Thorn, .notdef, yen, Aogonek, grave, bracketleft]
 
 </details>
 <details>
@@ -431,7 +437,7 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 <summary>:information_source: <b>INFO:</b> Font contains all required tables?</summary>
 
 * [com.google.fonts/check/052](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/052)
-* :information_source: **INFO** This font contains the following optional tables [prep, fpgm, cvt , gasp, DSIG, GSUB, GPOS, loca]
+* :information_source: **INFO** This font contains the following optional tables [fpgm, loca, cvt , gasp, prep, GSUB, GPOS, DSIG]
 * :bread: **PASS** Font contains all required tables.
 
 </details>
@@ -680,13 +686,6 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 * [com.google.fonts/check/117](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/117)
 * :bread: **PASS** Version number 2.0 is greater than version on Google Fonts GitHub (1.002) and production servers (1.002).
-
-</details>
-<details>
-<summary>:bread: <b>PASS:</b> TTFAutohint x-height increase value is same as in previous release on Google Fonts?</summary>
-
-* [com.google.fonts/check/119](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/119)
-* :bread: **PASS** TTFAutohint --increase-x-height is the same as in the previous Google Fonts release (9).
 
 </details>
 <details>

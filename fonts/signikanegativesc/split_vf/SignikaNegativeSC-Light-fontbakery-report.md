@@ -1,9 +1,9 @@
 ## Fontbakery report
 
-Fontbakery version: 0.6.6
+Fontbakery version: 0.6.8
 
 <details>
-<summary><b>[25] Family checks</b></summary>
+<summary><b>[26] Family checks</b></summary>
 <details>
 <summary>:fire: <b>FAIL:</b> METADATA.pb: According Google Fonts standards, families should have a Regular style.</summary>
 
@@ -15,9 +15,8 @@ Fontbakery version: 0.6.6
 <summary>:information_source: <b>INFO:</b> Do we have the latest version of FontBakery installed?</summary>
 
 * [com.google.fonts/check/fontbakery_version](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/fontbakery_version)
-* :information_source: **INFO** fontbakery (0.6.7)  - Well designed Font QA tool, written in Python 3
-  INSTALLED: 0.6.6
-  LATEST:    0.6.7
+* :information_source: **INFO** fontbakery (0.6.8)  - Well designed Font QA tool, written in Python 3
+  INSTALLED: 0.6.8 (latest)
 
 * :bread: **PASS** Font Bakery is up-to-date
 
@@ -121,6 +120,13 @@ Fontbakery version: 0.6.6
 
 </details>
 <details>
+<summary>:bread: <b>PASS:</b> All tabular figures must have the same width across the RIBBI-family.</summary>
+
+* [com.google.fonts/check/tnum_horizontal_metrics](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/tnum_horizontal_metrics)
+* :bread: **PASS** OK
+
+</details>
+<details>
 <summary>:bread: <b>PASS:</b> Checking all files are in the same directory.</summary>
 
 * [com.google.fonts/check/002](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/002)
@@ -186,7 +192,7 @@ Fontbakery version: 0.6.6
 <br>
 </details>
 <details>
-<summary><b>[118] SignikaNegativeSC-Light.ttf</b></summary>
+<summary><b>[117] SignikaNegativeSC-Light.ttf</b></summary>
 <details>
 <summary>:fire: <b>FAIL:</b> Checking file is named canonically.</summary>
 
@@ -209,13 +215,6 @@ Fontbakery version: 0.6.6
 
 </details>
 <details>
-<summary>:fire: <b>FAIL:</b> METADATA.pb font.name value should be same as the family name declared on the name table.</summary>
-
-* [com.google.fonts/check/095](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/095)
-* :fire: **FAIL** This font lacks a TYPOGRAPHIC_FAMILY_NAME entry (nameID=16) in the name table. [code: lacks-entry]
-
-</details>
-<details>
 <summary>:fire: <b>FAIL:</b> METADATA.pb font.full_name and font.post_script_name fields have equivalent values ?</summary>
 
 * [com.google.fonts/check/096](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/096)
@@ -233,7 +232,7 @@ Fontbakery version: 0.6.6
 <summary>:fire: <b>FAIL:</b> METADATA.pb font.post_script_name field contains font name in right format?</summary>
 
 * [com.google.fonts/check/101](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/101)
-* :fire: **FAIL** METADATA.pb postScriptName ("Signika-Light") does not match correct font name format ("Signika Negative SC").
+* :fire: **FAIL** METADATA.pb postScriptName ("Signika-Light") does not match correct font name format ("Signika Negative SC Light").
 
 </details>
 <details>
@@ -241,42 +240,6 @@ Fontbakery version: 0.6.6
 
 * [com.google.fonts/check/155](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/155)
 * :fire: **FAIL** Copyright field for this font on METADATA.pb ('Copyright 2018 The Signika Project Authors (https://github.com/thundernixon/Signika), with Reserved Font Names 'Signika'.') differs from a copyright notice entry on the name table: 'Copyright 2018 The Signika Project Authors (https://github.com/googlefonts/Signika), with Reserved Font Names 'Signika'.'
-
-</details>
-<details>
-<summary>:fire: <b>FAIL:</b> Font has all mandatory 'name' table entries ?</summary>
-
-* [com.google.fonts/check/156](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/156)
-* :fire: **FAIL** Font lacks entry with nameId=16 (TYPOGRAPHIC_FAMILY_NAME)
-* :fire: **FAIL** Font lacks entry with nameId=17 (TYPOGRAPHIC_SUBFAMILY_NAME)
-
-</details>
-<details>
-<summary>:fire: <b>FAIL:</b> Check name table: FONT_FAMILY_NAME entries. </summary>
-
-* [com.google.fonts/check/157](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/157)
-* :fire: **FAIL** Entry [FONT_FAMILY_NAME(1):WINDOWS(3)] on the 'name' table: Expected 'Signika Negative SC Light' but got 'Signika Negative SC'.
-
-</details>
-<details>
-<summary>:fire: <b>FAIL:</b> Check name table: FONT_SUBFAMILY_NAME entries. </summary>
-
-* [com.google.fonts/check/158](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/158)
-* :fire: **FAIL** Entry [FONT_SUBFAMILY_NAME(2):WINDOWS(3)] on the 'name' table: Expected 'Regular' but got 'Light'. [code: bad-familyname]
-
-</details>
-<details>
-<summary>:fire: <b>FAIL:</b> Check name table: TYPOGRAPHIC_FAMILY_NAME entries. </summary>
-
-* [com.google.fonts/check/161](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/161)
-* :fire: **FAIL** non-RIBBI fonts must have a TYPOGRAPHIC_FAMILY_NAME entry on the name table. [code: non-ribbi-lacks-entry]
-
-</details>
-<details>
-<summary>:fire: <b>FAIL:</b> Check name table: TYPOGRAPHIC_SUBFAMILY_NAME entries. </summary>
-
-* [com.google.fonts/check/162](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/162)
-* :fire: **FAIL** non-RIBBI fonts must have a TYPOGRAPHIC_SUBFAMILY_NAME entry on the name table. [code: non-ribbi-lacks-entry]
 
 </details>
 <details>
@@ -304,7 +267,7 @@ Fontbakery version: 0.6.6
 <summary>:warning: <b>WARN:</b> Combined length of family and style must not exceed 20 characters.</summary>
 
 * [com.google.fonts/check/163](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/163)
-* :warning: **WARN** The combined length of family and style exceeds 20 chars in the following 'WINDOWS' entries: FONT_FAMILY_NAME = 'Signika Negative SC' / SUBFAMILY_NAME = 'Light'
+* :warning: **WARN** The combined length of family and style exceeds 20 chars in the following 'WINDOWS' entries: FONT_FAMILY_NAME = 'Signika Negative SC Light' / SUBFAMILY_NAME = 'Regular'
 
 </details>
 <details>
@@ -353,13 +316,6 @@ This happens a lot when points are not extremes, which is usually bad. However, 
 
 </details>
 <details>
-<summary>:zzz: <b>SKIP:</b> METADATA.pb font.full_name field contains font name in right format?</summary>
-
-* [com.google.fonts/check/099](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/099)
-* :zzz: **SKIP** No TYPOGRAPHIC_FAMILYNAME
-
-</details>
-<details>
 <summary>:zzz: <b>SKIP:</b> METADATA.pb font.style "italic" matches font internals?</summary>
 
 * [com.google.fonts/check/106](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/106)
@@ -377,13 +333,6 @@ This happens a lot when points are not extremes, which is usually bad. However, 
 <summary>:zzz: <b>SKIP:</b> Glyphs are similiar to Google Fonts version?</summary>
 
 * [com.google.fonts/check/118](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/118)
-* :zzz: **SKIP** Unfulfilled Conditions: api_gfonts_ttFont
-
-</details>
-<details>
-<summary>:zzz: <b>SKIP:</b> TTFAutohint x-height increase value is same as in previous release on Google Fonts?</summary>
-
-* [com.google.fonts/check/119](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/119)
 * :zzz: **SKIP** Unfulfilled Conditions: api_gfonts_ttFont
 
 </details>
@@ -465,10 +414,10 @@ This happens a lot when points are not extremes, which is usually bad. However, 
 
 |  | fonts/signikanegativesc/split_vf/SignikaNegativeSC-Light.ttf |
 |:--- | ---:|
-| Dehinted Size | 143.5kb |
+| Dehinted Size | 143.6kb |
 | Hinted Size | 166.6kb |
-| Increase | 23.1kb |
-| Change   | 16.1 % |
+| Increase | 23.0kb |
+| Change   | 16.0 % |
 
 
 </details>
@@ -508,7 +457,7 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 <summary>:information_source: <b>INFO:</b> Font contains all required tables?</summary>
 
 * [com.google.fonts/check/052](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/052)
-* :information_source: **INFO** This font contains the following optional tables [fpgm, DSIG, loca, gasp, GPOS, prep, cvt , GSUB]
+* :information_source: **INFO** This font contains the following optional tables [fpgm, GSUB, DSIG, loca, GPOS, cvt , prep, gasp]
 * :bread: **PASS** Font contains all required tables.
 
 </details>
@@ -618,10 +567,24 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 </details>
 <details>
+<summary>:bread: <b>PASS:</b> METADATA.pb font.name value should be same as the family name declared on the name table.</summary>
+
+* [com.google.fonts/check/095](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/095)
+* :bread: **PASS** OK: Family name "Signika Negative SC" is identical in METADATA.pb and on the TTF file.
+
+</details>
+<details>
 <summary>:bread: <b>PASS:</b> METADATA.pb font.name field contains font name in right format?</summary>
 
 * [com.google.fonts/check/098](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/098)
 * :bread: **PASS** METADATA.pb font.name field contains font name in right format.
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> METADATA.pb font.full_name field contains font name in right format?</summary>
+
+* [com.google.fonts/check/099](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/099)
+* :bread: **PASS** METADATA.pb font.full_name field contains font name in right format. ('Signika Negative SC' in 'Signika Negative SC Light')
 
 </details>
 <details>
@@ -742,6 +705,27 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 </details>
 <details>
+<summary>:bread: <b>PASS:</b> Font has all mandatory 'name' table entries ?</summary>
+
+* [com.google.fonts/check/156](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/156)
+* :bread: **PASS** Font contains values for all mandatory name table entries.
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> Check name table: FONT_FAMILY_NAME entries. </summary>
+
+* [com.google.fonts/check/157](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/157)
+* :bread: **PASS** FONT_FAMILY_NAME entries are all good.
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> Check name table: FONT_SUBFAMILY_NAME entries. </summary>
+
+* [com.google.fonts/check/158](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/158)
+* :bread: **PASS** FONT_SUBFAMILY_NAME entries are all good.
+
+</details>
+<details>
 <summary>:bread: <b>PASS:</b> Check name table: FULL_FONT_NAME entries. </summary>
 
 * [com.google.fonts/check/159](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/159)
@@ -753,6 +737,20 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 * [com.google.fonts/check/160](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/160)
 * :bread: **PASS** POSTCRIPT_NAME entries are all good.
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> Check name table: TYPOGRAPHIC_FAMILY_NAME entries. </summary>
+
+* [com.google.fonts/check/161](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/161)
+* :bread: **PASS** TYPOGRAPHIC_FAMILY_NAME entries are all good.
+
+</details>
+<details>
+<summary>:bread: <b>PASS:</b> Check name table: TYPOGRAPHIC_SUBFAMILY_NAME entries. </summary>
+
+* [com.google.fonts/check/162](https://github.com/googlefonts/fontbakery/search?q=com.google.fonts/check/162)
+* :bread: **PASS** TYPOGRAPHIC_SUBFAMILY_NAME entries are all good.
 
 </details>
 <details>
@@ -1063,5 +1061,5 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 | :broken_heart: ERROR | :fire: FAIL | :warning: WARN | :zzz: SKIP | :information_source: INFO | :bread: PASS |
 |:-----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 14 | 8 | 17 | 6 | 98 |
-| 0% | 10% | 6% | 12% | 4% | 69% |
+| 0 | 8 | 8 | 15 | 6 | 106 |
+| 0% | 6% | 6% | 10% | 4% | 74% |
