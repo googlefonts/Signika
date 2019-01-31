@@ -1,3 +1,5 @@
+set -x -e
+
 ############################################
 ################# set vars #################
 
@@ -9,10 +11,13 @@ glyphsSource="sources/sources-buildready/Signika-MM-prepped_designspace.glyphs"
 ################# set vars #################
 ############################################
 
+# clear previous builds if they exist
+if [ -d "instance_ttf" ]; then
+  rm -rf instance_ttf
+fi
+
 # ============================================================================
 # Generate Variable Font =====================================================
-
-pwd
 
 echo $glyphsSource
 
@@ -24,7 +29,7 @@ cp $glyphsSource $tempGlyphsSource
 ## call fontmake to make all the static fonts
 fontmake -g ${tempGlyphsSource} --output ttf --interpolate --overlaps-backend booleanOperations --no-subset
 ## OR to just make one static font, as a test, use:
-# fontmake -g sources/sources-buildready/Signika-MM-prepped_designspace.glyphs -i "Signika Bold" --output ttf --overlaps-backend booleanOperations
+# fontmake -g sources/sources-buildready/Signika-MM-prepped_designspace.glyphs -i "Signika Light" --output ttf --overlaps-backend booleanOperations
 
 ## clean up temp glyphs file
 rm -rf $tempGlyphsSource
@@ -37,8 +42,8 @@ rm -rf $tempGlyphsSource
 
 
 # TODO?: get this dynamically
-ttx instance_ttf/Signika-Bold.ttf
-ttxPath="instance_ttf/Signika-Bold.ttx"
+ttx instance_ttf/Signika-Light.ttf
+ttxPath="instance_ttf/Signika-Light.ttx"
 
 #get glyph names, minus .smcp glyphs
 subsetGlyphNames=`python sources/scripts/helpers/get-smallcap-subset-glyphnames.py $ttxPath`
@@ -49,26 +54,29 @@ echo $subsetGlyphNames
 for file in instance_ttf/*; do 
 if [ -f "$file" ]; then 
 
-    smallCapFile=${file/"Signika"/"SignikaSC"}
-
     if [[ $file != *"SignikaNegative-"* ]]; then
         smallCapFile=${file/"Signika"/"SignikaSC"}
+        familyName="Signika"
     fi
     if [[ $file == *"SignikaNegative-"* ]]; then
         smallCapFile=${file/"SignikaNegative"/"SignikaNegativeSC"}
+        familyName="Signika Negative"
     fi
 
-    python sources/scripts/helpers/pyftfeatfreeze.py -f 'smcp' -S -U SC $file $smallCapFile
+    python sources/scripts/helpers/pyftfeatfreeze.py -f 'smcp' $file $smallCapFile
     
     echo "subsetting smallcap font"
     # subsetting with subsetGlyphNames list
-    pyftsubset $smallCapFile $subsetGlyphNames --glyph-names
+    pyftsubset --name-IDs='*' $smallCapFile $subsetGlyphNames --glyph-names
 
     subsetSmallCapFile=${smallCapFile/".ttf"/".subset.ttf"}
     rm -rf $smallCapFile
     mv $subsetSmallCapFile $smallCapFile
 
-    # 🚨 TODO: update SC font family name with TTX patch
+    smallCapSuffix="SC"
+    # update names in font with smallcaps suffix
+    python sources/scripts/helpers/add-smallcaps-suffix.py $smallCapFile $smallCapSuffix "$familyName"
+
 fi 
 done
 
@@ -108,12 +116,6 @@ done
 # ============================================================================
 # Sort into final folder =====================================================
 
-# fontbakeFile()
-# {
-#     FILEPATH=$1
-#     fontbakery check-googlefonts ${FILEPATH} --ghmarkdown ${FILEPATH/".ttf"/"-fontbakery-report.md"}
-# }
-
 outputDir="fonts"
 
 for file in instance_ttf/*; do 
@@ -137,7 +139,6 @@ if [ -f "$file" ]; then
     cp ${file} ${newPath}
         
     fontbakePath=$outputDir/$newDirectory/static/fontbakery-checks/${fileName/".ttf"/"-fontbakery_checks.md"}
-    fontbakeFile $newPath $fontbakePath
 
     fontbakery check-googlefonts $file --ghmarkdown $fontbakePath
 fi 
