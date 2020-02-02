@@ -30990,7 +30990,7 @@ rightKerningGroup = h.smcp;
 },
 {
 glyphname = o.smcp;
-lastChange = "2019-12-08 10:44:14 +0000";
+lastChange = "2020-02-02 13:33:09 +0000";
 layers = (
 {
 anchors = (
@@ -31005,6 +31005,10 @@ position = "{736, 0}";
 {
 name = top;
 position = "{578, 1188}";
+},
+{
+name = topright;
+position = "{883, 1068}";
 }
 );
 background = {
@@ -31107,6 +31111,10 @@ position = "{817, 0}";
 {
 name = top;
 position = "{608, 1188}";
+},
+{
+name = topright;
+position = "{1001, 1074}";
 }
 );
 background = {
@@ -32785,7 +32793,7 @@ rightKerningGroup = t.smcp;
 },
 {
 glyphname = u.smcp;
-lastChange = "2019-12-08 10:45:30 +0000";
+lastChange = "2020-02-02 14:01:41 +0000";
 layers = (
 {
 anchors = (
@@ -32800,6 +32808,10 @@ position = "{772, 0}";
 {
 name = top;
 position = "{596, 1188}";
+},
+{
+name = topright;
+position = "{1030, 1084}";
 }
 );
 background = {
@@ -32898,6 +32910,10 @@ position = "{826, 0}";
 {
 name = top;
 position = "{606, 1188}";
+},
+{
+name = topright;
+position = "{1104, 1104}";
 }
 );
 background = {
@@ -40914,149 +40930,6 @@ width = 796;
 }
 );
 unicode = 02DB;
-},
-{
-color = 0;
-glyphname = dotaccentcomb.alt;
-lastChange = "2020-01-28 15:50:44 +0000";
-layers = (
-{
-background = {
-paths = (
-{
-closed = 1;
-nodes = (
-"300 676 OFFCURVE",
-"306 632 OFFCURVE",
-"314 618 CURVE",
-"330 608 OFFCURVE",
-"368 598 OFFCURVE",
-"398 598 CURVE SMOOTH",
-"426 598 OFFCURVE",
-"470 608 OFFCURVE",
-"482 618 CURVE",
-"490 632 OFFCURVE",
-"496 676 OFFCURVE",
-"496 698 CURVE SMOOTH",
-"496 720 OFFCURVE",
-"490 762 OFFCURVE",
-"482 778 CURVE",
-"468 786 OFFCURVE",
-"426 796 OFFCURVE",
-"398 796 CURVE SMOOTH",
-"368 796 OFFCURVE",
-"330 786 OFFCURVE",
-"314 778 CURVE",
-"306 762 OFFCURVE",
-"300 720 OFFCURVE",
-"300 698 CURVE SMOOTH"
-);
-}
-);
-};
-layerId = UUID0;
-paths = (
-{
-closed = 1;
-nodes = (
-"300 676 OFFCURVE",
-"306 632 OFFCURVE",
-"314 618 CURVE",
-"330 608 OFFCURVE",
-"368 598 OFFCURVE",
-"398 598 CURVE SMOOTH",
-"426 598 OFFCURVE",
-"470 608 OFFCURVE",
-"482 618 CURVE",
-"490 632 OFFCURVE",
-"496 676 OFFCURVE",
-"496 698 CURVE SMOOTH",
-"496 720 OFFCURVE",
-"490 762 OFFCURVE",
-"482 778 CURVE",
-"468 786 OFFCURVE",
-"426 796 OFFCURVE",
-"398 796 CURVE SMOOTH",
-"368 796 OFFCURVE",
-"330 786 OFFCURVE",
-"314 778 CURVE",
-"306 762 OFFCURVE",
-"300 720 OFFCURVE",
-"300 698 CURVE SMOOTH"
-);
-}
-);
-width = 796;
-},
-{
-background = {
-paths = (
-{
-closed = 1;
-nodes = (
-"238 704 OFFCURVE",
-"242 644 OFFCURVE",
-"258 608 CURVE",
-"294 582 OFFCURVE",
-"350 570 OFFCURVE",
-"398 570 CURVE SMOOTH",
-"444 570 OFFCURVE",
-"500 582 OFFCURVE",
-"536 608 CURVE",
-"552 644 OFFCURVE",
-"558 704 OFFCURVE",
-"558 728 CURVE SMOOTH",
-"558 752 OFFCURVE",
-"552 812 OFFCURVE",
-"536 848 CURVE",
-"500 872 OFFCURVE",
-"444 884 OFFCURVE",
-"398 884 CURVE SMOOTH",
-"350 884 OFFCURVE",
-"294 872 OFFCURVE",
-"258 848 CURVE",
-"242 812 OFFCURVE",
-"238 752 OFFCURVE",
-"238 728 CURVE SMOOTH"
-);
-}
-);
-};
-layerId = UUID1;
-paths = (
-{
-closed = 1;
-nodes = (
-"238 704 OFFCURVE",
-"242 644 OFFCURVE",
-"258 608 CURVE",
-"294 582 OFFCURVE",
-"350 570 OFFCURVE",
-"398 570 CURVE SMOOTH",
-"444 570 OFFCURVE",
-"500 582 OFFCURVE",
-"536 608 CURVE",
-"552 644 OFFCURVE",
-"558 704 OFFCURVE",
-"558 728 CURVE SMOOTH",
-"558 752 OFFCURVE",
-"552 812 OFFCURVE",
-"536 848 CURVE",
-"500 872 OFFCURVE",
-"444 884 OFFCURVE",
-"398 884 CURVE SMOOTH",
-"350 884 OFFCURVE",
-"294 872 OFFCURVE",
-"258 848 CURVE",
-"242 812 OFFCURVE",
-"238 752 OFFCURVE",
-"238 728 CURVE SMOOTH"
-);
-}
-);
-width = 796;
-}
-);
 },
 {
 glyphname = dieresiscomb.case;
@@ -108063,6 +107936,45 @@ leftKerningGroup = a.smcp;
 rightKerningGroup = a.smcp;
 },
 {
+glyphname = aringacute.smcp;
+layers = (
+{
+components = (
+{
+name = a.smcp;
+},
+{
+name = ringcomb;
+transform = "{1, 0, 0, 1, 126, 104}";
+},
+{
+name = acutecomb;
+transform = "{1, 0, 0, 1, 126, 547}";
+}
+);
+layerId = UUID0;
+width = 1048;
+},
+{
+components = (
+{
+name = a.smcp;
+},
+{
+name = ringcomb;
+transform = "{1, 0, 0, 1, 194, 104}";
+},
+{
+name = acutecomb;
+transform = "{1, 0, 0, 1, 198, 657}";
+}
+);
+layerId = UUID1;
+width = 1160;
+}
+);
+},
+{
 glyphname = atilde.smcp;
 lastChange = "2019-11-16 15:15:23 +0000";
 layers = (
@@ -108327,10 +108239,404 @@ leftKerningGroup = a.smcp;
 rightKerningGroup = a.smcp;
 },
 {
-glyphname = ae.smcp;
-lastChange = "2020-01-31 11:24:24 +0000";
+glyphname = abreveacute.smcp;
 layers = (
 {
+components = (
+{
+name = a.smcp;
+},
+{
+name = brevecomb_acutecomb;
+transform = "{1, 0, 0, 1, 126, 104}";
+}
+);
+layerId = UUID0;
+width = 1048;
+},
+{
+components = (
+{
+name = a.smcp;
+},
+{
+name = brevecomb_acutecomb;
+transform = "{1, 0, 0, 1, 194, 104}";
+}
+);
+layerId = UUID1;
+width = 1160;
+}
+);
+},
+{
+glyphname = abrevedotbelow.smcp;
+layers = (
+{
+components = (
+{
+name = a.smcp;
+},
+{
+name = dotbelowcomb;
+transform = "{1, 0, 0, 1, 126, 0}";
+},
+{
+name = brevecomb;
+transform = "{1, 0, 0, 1, 126, 104}";
+}
+);
+layerId = UUID0;
+width = 1048;
+},
+{
+components = (
+{
+name = a.smcp;
+},
+{
+name = dotbelowcomb;
+transform = "{1, 0, 0, 1, 182, 0}";
+},
+{
+name = brevecomb;
+transform = "{1, 0, 0, 1, 194, 104}";
+}
+);
+layerId = UUID1;
+width = 1160;
+}
+);
+},
+{
+glyphname = abrevegrave.smcp;
+layers = (
+{
+components = (
+{
+name = a.smcp;
+},
+{
+name = brevecomb_gravecomb;
+transform = "{1, 0, 0, 1, 127, 104}";
+}
+);
+layerId = UUID0;
+width = 1048;
+},
+{
+components = (
+{
+name = a.smcp;
+},
+{
+name = brevecomb_gravecomb;
+transform = "{1, 0, 0, 1, 194, 104}";
+}
+);
+layerId = UUID1;
+width = 1160;
+}
+);
+},
+{
+glyphname = abrevehookabove.smcp;
+layers = (
+{
+components = (
+{
+name = a.smcp;
+},
+{
+name = brevecomb_hookabovecomb;
+transform = "{1, 0, 0, 1, 126, 104}";
+}
+);
+layerId = UUID0;
+width = 1048;
+},
+{
+components = (
+{
+name = a.smcp;
+},
+{
+name = brevecomb_hookabovecomb;
+transform = "{1, 0, 0, 1, 194, 104}";
+}
+);
+layerId = UUID1;
+width = 1160;
+}
+);
+},
+{
+glyphname = abrevetilde.smcp;
+layers = (
+{
+components = (
+{
+name = a.smcp;
+},
+{
+name = brevecomb_tildecomb;
+transform = "{1, 0, 0, 1, 126, 104}";
+}
+);
+layerId = UUID0;
+width = 1048;
+},
+{
+components = (
+{
+name = a.smcp;
+},
+{
+name = brevecomb_tildecomb;
+transform = "{1, 0, 0, 1, 194, 104}";
+}
+);
+layerId = UUID1;
+width = 1160;
+}
+);
+},
+{
+glyphname = acircumflexacute.smcp;
+layers = (
+{
+components = (
+{
+name = a.smcp;
+},
+{
+name = circumflexcomb_acutecomb;
+transform = "{1, 0, 0, 1, 126, 104}";
+}
+);
+layerId = UUID0;
+width = 1048;
+},
+{
+components = (
+{
+name = a.smcp;
+},
+{
+name = circumflexcomb_acutecomb;
+transform = "{1, 0, 0, 1, 194, 104}";
+}
+);
+layerId = UUID1;
+width = 1160;
+}
+);
+},
+{
+glyphname = acircumflexdotbelow.smcp;
+layers = (
+{
+components = (
+{
+name = a.smcp;
+},
+{
+name = dotbelowcomb;
+transform = "{1, 0, 0, 1, 126, 0}";
+},
+{
+name = circumflexcomb;
+transform = "{1, 0, 0, 1, 126, 104}";
+}
+);
+layerId = UUID0;
+width = 1048;
+},
+{
+components = (
+{
+name = a.smcp;
+},
+{
+name = dotbelowcomb;
+transform = "{1, 0, 0, 1, 182, 0}";
+},
+{
+name = circumflexcomb;
+transform = "{1, 0, 0, 1, 194, 104}";
+}
+);
+layerId = UUID1;
+width = 1160;
+}
+);
+},
+{
+glyphname = acircumflexgrave.smcp;
+layers = (
+{
+components = (
+{
+name = a.smcp;
+},
+{
+name = circumflexcomb_gravecomb;
+transform = "{1, 0, 0, 1, 126, 104}";
+}
+);
+layerId = UUID0;
+width = 1048;
+},
+{
+components = (
+{
+name = a.smcp;
+},
+{
+name = circumflexcomb_gravecomb;
+transform = "{1, 0, 0, 1, 194, 104}";
+}
+);
+layerId = UUID1;
+width = 1160;
+}
+);
+},
+{
+glyphname = acircumflexhookabove.smcp;
+layers = (
+{
+components = (
+{
+name = a.smcp;
+},
+{
+name = circumflexcomb_hookabovecomb;
+transform = "{1, 0, 0, 1, 126, 104}";
+}
+);
+layerId = UUID0;
+width = 1048;
+},
+{
+components = (
+{
+name = a.smcp;
+},
+{
+name = circumflexcomb_hookabovecomb;
+transform = "{1, 0, 0, 1, 194, 104}";
+}
+);
+layerId = UUID1;
+width = 1160;
+}
+);
+},
+{
+glyphname = acircumflextilde.smcp;
+layers = (
+{
+components = (
+{
+name = a.smcp;
+},
+{
+name = circumflexcomb_tildecomb;
+transform = "{1, 0, 0, 1, 126, 104}";
+}
+);
+layerId = UUID0;
+width = 1048;
+},
+{
+components = (
+{
+name = a.smcp;
+},
+{
+name = circumflexcomb_tildecomb;
+transform = "{1, 0, 0, 1, 194, 104}";
+}
+);
+layerId = UUID1;
+width = 1160;
+}
+);
+},
+{
+glyphname = adotbelow.smcp;
+layers = (
+{
+components = (
+{
+name = a.smcp;
+},
+{
+name = dotbelowcomb;
+transform = "{1, 0, 0, 1, 126, 0}";
+}
+);
+layerId = UUID0;
+width = 1048;
+},
+{
+components = (
+{
+name = a.smcp;
+},
+{
+name = dotbelowcomb;
+transform = "{1, 0, 0, 1, 182, 0}";
+}
+);
+layerId = UUID1;
+width = 1160;
+}
+);
+},
+{
+glyphname = ahookabove.smcp;
+layers = (
+{
+components = (
+{
+name = a.smcp;
+},
+{
+name = hookabovecomb;
+transform = "{1, 0, 0, 1, 136, 104}";
+}
+);
+layerId = UUID0;
+width = 1048;
+},
+{
+components = (
+{
+name = a.smcp;
+},
+{
+name = hookabovecomb;
+transform = "{1, 0, 0, 1, 220, 104}";
+}
+);
+layerId = UUID1;
+width = 1160;
+}
+);
+},
+{
+glyphname = ae.smcp;
+lastChange = "2020-02-02 13:05:25 +0000";
+layers = (
+{
+anchors = (
+{
+name = top;
+position = "{859, 1188}";
+}
+);
 background = {
 paths = (
 {
@@ -108581,6 +108887,12 @@ nodes = (
 width = 1538;
 },
 {
+anchors = (
+{
+name = top;
+position = "{879, 1188}";
+}
+);
 background = {
 paths = (
 {
@@ -108832,6 +109144,38 @@ width = 1612;
 }
 );
 rightKerningGroup = e.smcp;
+},
+{
+glyphname = aeacute.smcp;
+lastChange = "2020-02-02 13:05:50 +0000";
+layers = (
+{
+components = (
+{
+name = ae.smcp;
+},
+{
+name = acutecomb;
+transform = "{1, 0, 0, 1, 461, 104}";
+}
+);
+layerId = UUID0;
+width = 1538;
+},
+{
+components = (
+{
+name = ae.smcp;
+},
+{
+name = acutecomb;
+transform = "{1, 0, 0, 1, 485, 104}";
+}
+);
+layerId = UUID1;
+width = 1612;
+}
+);
 },
 {
 glyphname = cacute.smcp;
@@ -112826,6 +113170,262 @@ leftKerningGroup = b.smcp;
 rightKerningGroup = e.smcp;
 },
 {
+glyphname = etilde.smcp;
+layers = (
+{
+components = (
+{
+name = e.smcp;
+},
+{
+name = tildecomb;
+transform = "{1, 0, 0, 1, 142, 104}";
+}
+);
+layerId = UUID0;
+width = 1000;
+},
+{
+components = (
+{
+name = e.smcp;
+},
+{
+name = tildecomb;
+transform = "{1, 0, 0, 1, 158, 104}";
+}
+);
+layerId = UUID1;
+width = 1062;
+}
+);
+},
+{
+glyphname = ecircumflexacute.smcp;
+layers = (
+{
+components = (
+{
+name = e.smcp;
+},
+{
+name = circumflexcomb_acutecomb;
+transform = "{1, 0, 0, 1, 142, 104}";
+}
+);
+layerId = UUID0;
+width = 1000;
+},
+{
+components = (
+{
+name = e.smcp;
+},
+{
+name = circumflexcomb_acutecomb;
+transform = "{1, 0, 0, 1, 158, 104}";
+}
+);
+layerId = UUID1;
+width = 1062;
+}
+);
+},
+{
+glyphname = ecircumflexdotbelow.smcp;
+layers = (
+{
+components = (
+{
+name = e.smcp;
+},
+{
+name = dotbelowcomb;
+transform = "{1, 0, 0, 1, 144, 0}";
+},
+{
+name = circumflexcomb;
+transform = "{1, 0, 0, 1, 142, 104}";
+}
+);
+layerId = UUID0;
+width = 1000;
+},
+{
+components = (
+{
+name = e.smcp;
+},
+{
+name = dotbelowcomb;
+transform = "{1, 0, 0, 1, 158, 0}";
+},
+{
+name = circumflexcomb;
+transform = "{1, 0, 0, 1, 158, 104}";
+}
+);
+layerId = UUID1;
+width = 1062;
+}
+);
+},
+{
+glyphname = ecircumflexgrave.smcp;
+layers = (
+{
+components = (
+{
+name = e.smcp;
+},
+{
+name = circumflexcomb_gravecomb;
+transform = "{1, 0, 0, 1, 142, 104}";
+}
+);
+layerId = UUID0;
+width = 1000;
+},
+{
+components = (
+{
+name = e.smcp;
+},
+{
+name = circumflexcomb_gravecomb;
+transform = "{1, 0, 0, 1, 158, 104}";
+}
+);
+layerId = UUID1;
+width = 1062;
+}
+);
+},
+{
+glyphname = ecircumflexhookabove.smcp;
+layers = (
+{
+components = (
+{
+name = e.smcp;
+},
+{
+name = circumflexcomb_hookabovecomb;
+transform = "{1, 0, 0, 1, 142, 104}";
+}
+);
+layerId = UUID0;
+width = 1000;
+},
+{
+components = (
+{
+name = e.smcp;
+},
+{
+name = circumflexcomb_hookabovecomb;
+transform = "{1, 0, 0, 1, 158, 104}";
+}
+);
+layerId = UUID1;
+width = 1062;
+}
+);
+},
+{
+glyphname = ecircumflextilde.smcp;
+layers = (
+{
+components = (
+{
+name = e.smcp;
+},
+{
+name = circumflexcomb_tildecomb;
+transform = "{1, 0, 0, 1, 142, 104}";
+}
+);
+layerId = UUID0;
+width = 1000;
+},
+{
+components = (
+{
+name = e.smcp;
+},
+{
+name = circumflexcomb_tildecomb;
+transform = "{1, 0, 0, 1, 158, 104}";
+}
+);
+layerId = UUID1;
+width = 1062;
+}
+);
+},
+{
+glyphname = edotbelow.smcp;
+layers = (
+{
+components = (
+{
+name = e.smcp;
+},
+{
+name = dotbelowcomb;
+transform = "{1, 0, 0, 1, 144, 0}";
+}
+);
+layerId = UUID0;
+width = 1000;
+},
+{
+components = (
+{
+name = e.smcp;
+},
+{
+name = dotbelowcomb;
+transform = "{1, 0, 0, 1, 158, 0}";
+}
+);
+layerId = UUID1;
+width = 1062;
+}
+);
+},
+{
+glyphname = ehookabove.smcp;
+layers = (
+{
+components = (
+{
+name = e.smcp;
+},
+{
+name = hookabovecomb;
+transform = "{1, 0, 0, 1, 152, 104}";
+}
+);
+layerId = UUID0;
+width = 1000;
+},
+{
+components = (
+{
+name = e.smcp;
+},
+{
+name = hookabovecomb;
+transform = "{1, 0, 0, 1, 184, 104}";
+}
+);
+layerId = UUID1;
+width = 1062;
+}
+);
+},
+{
 glyphname = gbreve.smcp;
 lastChange = "2019-11-16 15:15:23 +0000";
 layers = (
@@ -116080,6 +116680,68 @@ width = 620;
 );
 leftKerningGroup = b.smcp;
 rightKerningGroup = h.smcp;
+},
+{
+glyphname = idotbelow.smcp;
+layers = (
+{
+components = (
+{
+name = i.smcp;
+},
+{
+name = dotbelowcomb;
+transform = "{1, 0, 0, 1, -136, 0}";
+}
+);
+layerId = UUID0;
+width = 526;
+},
+{
+components = (
+{
+name = i.smcp;
+},
+{
+name = dotbelowcomb;
+transform = "{1, 0, 0, 1, -84, 0}";
+}
+);
+layerId = UUID1;
+width = 620;
+}
+);
+},
+{
+glyphname = ihookabove.smcp;
+layers = (
+{
+components = (
+{
+name = i.smcp;
+},
+{
+name = hookabovecomb;
+transform = "{1, 0, 0, 1, -126, 104}";
+}
+);
+layerId = UUID0;
+width = 526;
+},
+{
+components = (
+{
+name = i.smcp;
+},
+{
+name = hookabovecomb;
+transform = "{1, 0, 0, 1, -58, 104}";
+}
+);
+layerId = UUID1;
+width = 620;
+}
+);
 },
 {
 glyphname = jcircumflex.smcp;
@@ -119899,9 +120561,23 @@ rightKerningGroup = o.smcp;
 },
 {
 glyphname = oslash.smcp;
-lastChange = "2019-11-16 15:15:23 +0000";
+lastChange = "2020-02-02 13:02:35 +0000";
 layers = (
 {
+anchors = (
+{
+name = bottom;
+position = "{578, 0}";
+},
+{
+name = ogonek;
+position = "{736, 0}";
+},
+{
+name = top;
+position = "{578, 1188}";
+}
+);
 background = {
 paths = (
 {
@@ -120014,6 +120690,20 @@ nodes = (
 width = 1158;
 },
 {
+anchors = (
+{
+name = bottom;
+position = "{608, 0}";
+},
+{
+name = ogonek;
+position = "{817, 0}";
+},
+{
+name = top;
+position = "{608, 1188}";
+}
+);
 background = {
 paths = (
 {
@@ -120128,6 +120818,38 @@ width = 1218;
 );
 leftKerningGroup = c.smcp;
 rightKerningGroup = o.smcp;
+},
+{
+glyphname = oslashacute.smcp;
+lastChange = "2020-02-02 13:02:51 +0000";
+layers = (
+{
+components = (
+{
+name = oslash.smcp;
+},
+{
+name = acutecomb;
+transform = "{1, 0, 0, 1, 180, 104}";
+}
+);
+layerId = UUID0;
+width = 1158;
+},
+{
+components = (
+{
+name = oslash.smcp;
+},
+{
+name = acutecomb;
+transform = "{1, 0, 0, 1, 214, 104}";
+}
+);
+layerId = UUID1;
+width = 1218;
+}
+);
 },
 {
 glyphname = otilde.smcp;
@@ -120340,6 +121062,169 @@ width = 1218;
 );
 leftKerningGroup = c.smcp;
 rightKerningGroup = o.smcp;
+},
+{
+glyphname = ocircumflexacute.smcp;
+layers = (
+{
+components = (
+{
+name = o.smcp;
+},
+{
+name = circumflexcomb_acutecomb;
+transform = "{1, 0, 0, 1, 180, 104}";
+}
+);
+layerId = UUID0;
+width = 1158;
+},
+{
+components = (
+{
+name = o.smcp;
+},
+{
+name = circumflexcomb_acutecomb;
+transform = "{1, 0, 0, 1, 210, 104}";
+}
+);
+layerId = UUID1;
+width = 1218;
+}
+);
+},
+{
+glyphname = ocircumflexdotbelow.smcp;
+layers = (
+{
+components = (
+{
+name = o.smcp;
+},
+{
+name = dotbelowcomb;
+transform = "{1, 0, 0, 1, 180, 0}";
+},
+{
+name = circumflexcomb;
+transform = "{1, 0, 0, 1, 180, 104}";
+}
+);
+layerId = UUID0;
+width = 1158;
+},
+{
+components = (
+{
+name = o.smcp;
+},
+{
+name = dotbelowcomb;
+transform = "{1, 0, 0, 1, 210, 0}";
+},
+{
+name = circumflexcomb;
+transform = "{1, 0, 0, 1, 210, 104}";
+}
+);
+layerId = UUID1;
+width = 1218;
+}
+);
+},
+{
+glyphname = ocircumflexgrave.smcp;
+layers = (
+{
+components = (
+{
+name = o.smcp;
+},
+{
+name = circumflexcomb_gravecomb;
+transform = "{1, 0, 0, 1, 180, 104}";
+}
+);
+layerId = UUID0;
+width = 1158;
+},
+{
+components = (
+{
+name = o.smcp;
+},
+{
+name = circumflexcomb_gravecomb;
+transform = "{1, 0, 0, 1, 210, 104}";
+}
+);
+layerId = UUID1;
+width = 1218;
+}
+);
+},
+{
+glyphname = ocircumflexhookabove.smcp;
+layers = (
+{
+components = (
+{
+name = o.smcp;
+},
+{
+name = circumflexcomb_hookabovecomb;
+transform = "{1, 0, 0, 1, 180, 104}";
+}
+);
+layerId = UUID0;
+width = 1158;
+},
+{
+components = (
+{
+name = o.smcp;
+},
+{
+name = circumflexcomb_hookabovecomb;
+transform = "{1, 0, 0, 1, 210, 104}";
+}
+);
+layerId = UUID1;
+width = 1218;
+}
+);
+},
+{
+glyphname = ocircumflextilde.smcp;
+layers = (
+{
+components = (
+{
+name = o.smcp;
+},
+{
+name = circumflexcomb_tildecomb;
+transform = "{1, 0, 0, 1, 180, 104}";
+}
+);
+layerId = UUID0;
+width = 1158;
+},
+{
+components = (
+{
+name = o.smcp;
+},
+{
+name = circumflexcomb_tildecomb;
+transform = "{1, 0, 0, 1, 210, 104}";
+}
+);
+layerId = UUID1;
+width = 1218;
+}
+);
 },
 {
 glyphname = oe.smcp;
@@ -120764,6 +121649,499 @@ width = 1708;
 );
 leftKerningGroup = c.smcp;
 rightKerningGroup = e.smcp;
+},
+{
+glyphname = odotbelow.smcp;
+layers = (
+{
+components = (
+{
+name = o.smcp;
+},
+{
+name = dotbelowcomb;
+transform = "{1, 0, 0, 1, 180, 0}";
+}
+);
+layerId = UUID0;
+width = 1158;
+},
+{
+components = (
+{
+name = o.smcp;
+},
+{
+name = dotbelowcomb;
+transform = "{1, 0, 0, 1, 210, 0}";
+}
+);
+layerId = UUID1;
+width = 1218;
+}
+);
+},
+{
+glyphname = ohookabove.smcp;
+layers = (
+{
+components = (
+{
+name = o.smcp;
+},
+{
+name = hookabovecomb;
+transform = "{1, 0, 0, 1, 190, 104}";
+}
+);
+layerId = UUID0;
+width = 1158;
+},
+{
+components = (
+{
+name = o.smcp;
+},
+{
+name = hookabovecomb;
+transform = "{1, 0, 0, 1, 236, 104}";
+}
+);
+layerId = UUID1;
+width = 1218;
+}
+);
+},
+{
+glyphname = ohorn.smcp;
+lastChange = "2020-02-02 15:31:08 +0000";
+layers = (
+{
+anchors = (
+{
+name = bottom;
+position = "{578, 0}";
+},
+{
+name = ogonek;
+position = "{736, 0}";
+},
+{
+name = top;
+position = "{578, 1188}";
+}
+);
+background = {
+paths = (
+{
+closed = 1;
+nodes = (
+"242 742 OFFCURVE",
+"308 992 OFFCURVE",
+"578 992 CURVE SMOOTH",
+"850 992 OFFCURVE",
+"914 742 OFFCURVE",
+"914 542 CURVE SMOOTH",
+"914 342 OFFCURVE",
+"850 92 OFFCURVE",
+"578 92 CURVE SMOOTH",
+"308 92 OFFCURVE",
+"242 342 OFFCURVE",
+"242 542 CURVE SMOOTH"
+);
+},
+{
+closed = 1;
+nodes = (
+"92 222 OFFCURVE",
+"263 -24 OFFCURVE",
+"578 -24 CURVE SMOOTH",
+"893 -24 OFFCURVE",
+"1066 218 OFFCURVE",
+"1066 542 CURVE SMOOTH",
+"1066 866 OFFCURVE",
+"898 1108 OFFCURVE",
+"578 1108 CURVE SMOOTH",
+"262 1108 OFFCURVE",
+"92 866 OFFCURVE",
+"92 542 CURVE SMOOTH"
+);
+},
+{
+closed = 1;
+nodes = (
+"764 1081 OFFCURVE",
+"684 1108 OFFCURVE",
+"578 1108 CURVE",
+"761 973 LINE",
+"846 973 LINE SMOOTH",
+"1011 973 OFFCURVE",
+"1089 1069 OFFCURVE",
+"1089 1172 CURVE SMOOTH",
+"1089 1232 OFFCURVE",
+"1061 1295 OFFCURVE",
+"1037 1322 CURVE",
+"994 1323 OFFCURVE",
+"954 1304 OFFCURVE",
+"925 1272 CURVE",
+"942 1245 OFFCURVE",
+"960 1207 OFFCURVE",
+"960 1173 CURVE SMOOTH",
+"960 1116 OFFCURVE",
+"911 1081 OFFCURVE",
+"835 1081 CURVE SMOOTH"
+);
+}
+);
+};
+layerId = UUID0;
+paths = (
+{
+closed = 1;
+nodes = (
+"92 222 OFFCURVE",
+"263 -24 OFFCURVE",
+"578 -24 CURVE SMOOTH",
+"893 -24 OFFCURVE",
+"1066 218 OFFCURVE",
+"1066 542 CURVE SMOOTH",
+"1066 722 OFFCURVE",
+"1014 877 OFFCURVE",
+"912 980 CURVE",
+"1035 1002 OFFCURVE",
+"1089 1082 OFFCURVE",
+"1089 1172 CURVE SMOOTH",
+"1089 1232 OFFCURVE",
+"1061 1295 OFFCURVE",
+"1037 1322 CURVE",
+"994 1323 OFFCURVE",
+"954 1304 OFFCURVE",
+"925 1272 CURVE",
+"942 1245 OFFCURVE",
+"960 1207 OFFCURVE",
+"960 1173 CURVE SMOOTH",
+"960 1113 OFFCURVE",
+"911 1076 OFFCURVE",
+"828 1076 CURVE SMOOTH",
+"747 1076 OFFCURVE",
+"694 1108 OFFCURVE",
+"578 1108 CURVE SMOOTH",
+"262 1108 OFFCURVE",
+"92 866 OFFCURVE",
+"92 542 CURVE SMOOTH"
+);
+},
+{
+closed = 1;
+nodes = (
+"242 742 OFFCURVE",
+"308 992 OFFCURVE",
+"578 992 CURVE SMOOTH",
+"850 992 OFFCURVE",
+"914 742 OFFCURVE",
+"914 542 CURVE SMOOTH",
+"914 342 OFFCURVE",
+"850 92 OFFCURVE",
+"578 92 CURVE SMOOTH",
+"308 92 OFFCURVE",
+"242 342 OFFCURVE",
+"242 542 CURVE SMOOTH"
+);
+}
+);
+width = 1158;
+},
+{
+anchors = (
+{
+name = bottom;
+position = "{608, 0}";
+},
+{
+name = ogonek;
+position = "{817, 0}";
+},
+{
+name = top;
+position = "{608, 1188}";
+}
+);
+background = {
+paths = (
+{
+closed = 1;
+nodes = (
+"398 700 OFFCURVE",
+"422 892 OFFCURVE",
+"610 892 CURVE SMOOTH",
+"798 892 OFFCURVE",
+"820 700 OFFCURVE",
+"820 550 CURVE SMOOTH",
+"820 402 OFFCURVE",
+"798 212 OFFCURVE",
+"610 212 CURVE SMOOTH",
+"422 212 OFFCURVE",
+"398 402 OFFCURVE",
+"398 550 CURVE SMOOTH"
+);
+},
+{
+closed = 1;
+nodes = (
+"60 190 OFFCURVE",
+"244 -30 OFFCURVE",
+"608 -30 CURVE SMOOTH",
+"971 -30 OFFCURVE",
+"1158 186 OFFCURVE",
+"1158 550 CURVE SMOOTH",
+"1158 912 OFFCURVE",
+"972 1134 OFFCURVE",
+"608 1134 CURVE SMOOTH",
+"250 1134 OFFCURVE",
+"60 910 OFFCURVE",
+"60 550 CURVE SMOOTH"
+);
+},
+{
+closed = 1;
+nodes = (
+"828 1092 OFFCURVE",
+"778 1134 OFFCURVE",
+"608 1134 CURVE",
+"673 905 LINE",
+"876 905 LINE SMOOTH",
+"1125 905 OFFCURVE",
+"1243 1023 OFFCURVE",
+"1243 1165 CURVE SMOOTH",
+"1243 1237 OFFCURVE",
+"1213 1311 OFFCURVE",
+"1189 1347 CURVE",
+"1086 1355 OFFCURVE",
+"992 1320 OFFCURVE",
+"954 1276 CURVE",
+"970 1246 OFFCURVE",
+"986 1206 OFFCURVE",
+"986 1173 CURVE SMOOTH",
+"986 1124 OFFCURVE",
+"950 1092 OFFCURVE",
+"889 1092 CURVE SMOOTH"
+);
+}
+);
+};
+layerId = UUID1;
+paths = (
+{
+closed = 1;
+nodes = (
+"60 190 OFFCURVE",
+"244 -30 OFFCURVE",
+"609 -30 CURVE SMOOTH",
+"971 -30 OFFCURVE",
+"1158 186 OFFCURVE",
+"1158 550 CURVE SMOOTH",
+"1158 705 OFFCURVE",
+"1126 831 OFFCURVE",
+"1052 934 CURVE",
+"1182 974 OFFCURVE",
+"1243 1063 OFFCURVE",
+"1243 1165 CURVE SMOOTH",
+"1243 1237 OFFCURVE",
+"1213 1311 OFFCURVE",
+"1189 1347 CURVE",
+"1086 1355 OFFCURVE",
+"992 1320 OFFCURVE",
+"954 1276 CURVE",
+"970 1246 OFFCURVE",
+"986 1206 OFFCURVE",
+"986 1173 CURVE SMOOTH",
+"986 1124 OFFCURVE",
+"955 1093 OFFCURVE",
+"894 1093 CURVE SMOOTH",
+"825 1093 OFFCURVE",
+"752 1134 OFFCURVE",
+"604 1134 CURVE SMOOTH",
+"250 1134 OFFCURVE",
+"60 910 OFFCURVE",
+"60 547 CURVE SMOOTH"
+);
+},
+{
+closed = 1;
+nodes = (
+"398 700 OFFCURVE",
+"422 892 OFFCURVE",
+"610 892 CURVE SMOOTH",
+"798 892 OFFCURVE",
+"820 700 OFFCURVE",
+"820 550 CURVE SMOOTH",
+"820 402 OFFCURVE",
+"798 212 OFFCURVE",
+"610 212 CURVE SMOOTH",
+"422 212 OFFCURVE",
+"398 402 OFFCURVE",
+"398 550 CURVE SMOOTH"
+);
+}
+);
+width = 1218;
+}
+);
+},
+{
+glyphname = ohornacute.smcp;
+layers = (
+{
+components = (
+{
+name = ohorn.smcp;
+},
+{
+name = acutecomb;
+transform = "{1, 0, 0, 1, 180, 104}";
+}
+);
+layerId = UUID0;
+width = 1158;
+},
+{
+components = (
+{
+name = ohorn.smcp;
+},
+{
+name = acutecomb;
+transform = "{1, 0, 0, 1, 214, 104}";
+}
+);
+layerId = UUID1;
+width = 1218;
+}
+);
+},
+{
+glyphname = ohorndotbelow.smcp;
+layers = (
+{
+components = (
+{
+name = ohorn.smcp;
+},
+{
+name = dotbelowcomb;
+transform = "{1, 0, 0, 1, 180, 0}";
+}
+);
+layerId = UUID0;
+width = 1158;
+},
+{
+components = (
+{
+name = ohorn.smcp;
+},
+{
+name = dotbelowcomb;
+transform = "{1, 0, 0, 1, 210, 0}";
+}
+);
+layerId = UUID1;
+width = 1218;
+}
+);
+},
+{
+glyphname = ohorngrave.smcp;
+layers = (
+{
+components = (
+{
+name = ohorn.smcp;
+},
+{
+name = gravecomb;
+transform = "{1, 0, 0, 1, 188, 104}";
+}
+);
+layerId = UUID0;
+width = 1158;
+},
+{
+components = (
+{
+name = ohorn.smcp;
+},
+{
+name = gravecomb;
+transform = "{1, 0, 0, 1, 210, 104}";
+}
+);
+layerId = UUID1;
+width = 1218;
+}
+);
+},
+{
+glyphname = ohornhookabove.smcp;
+layers = (
+{
+components = (
+{
+name = ohorn.smcp;
+},
+{
+name = hookabovecomb;
+transform = "{1, 0, 0, 1, 190, 104}";
+}
+);
+layerId = UUID0;
+width = 1158;
+},
+{
+components = (
+{
+name = ohorn.smcp;
+},
+{
+name = hookabovecomb;
+transform = "{1, 0, 0, 1, 236, 104}";
+}
+);
+layerId = UUID1;
+width = 1218;
+}
+);
+},
+{
+glyphname = ohorntilde.smcp;
+layers = (
+{
+components = (
+{
+name = ohorn.smcp;
+},
+{
+name = tildecomb;
+transform = "{1, 0, 0, 1, 180, 104}";
+}
+);
+layerId = UUID0;
+width = 1158;
+},
+{
+components = (
+{
+name = ohorn.smcp;
+},
+{
+name = tildecomb;
+transform = "{1, 0, 0, 1, 210, 104}";
+}
+);
+layerId = UUID1;
+width = 1218;
+}
+);
 },
 {
 glyphname = racute.smcp;
@@ -122450,6 +123828,21 @@ width = 1022;
 );
 leftKerningGroup = s.smcp;
 rightKerningGroup = s.smcp;
+},
+{
+color = 0;
+glyphname = schwa.smcp;
+lastChange = "2020-01-31 16:43:49 +0000";
+layers = (
+{
+layerId = UUID0;
+width = 1200;
+},
+{
+layerId = UUID1;
+width = 1200;
+}
+);
 },
 {
 glyphname = germandbls.smcp;
@@ -125807,6 +127200,359 @@ leftKerningGroup = u.smcp;
 rightKerningGroup = u.smcp;
 },
 {
+glyphname = udotbelow.smcp;
+layers = (
+{
+components = (
+{
+name = u.smcp;
+},
+{
+name = dotbelowcomb;
+transform = "{1, 0, 0, 1, 202, 0}";
+}
+);
+layerId = UUID0;
+width = 1200;
+},
+{
+components = (
+{
+name = u.smcp;
+},
+{
+name = dotbelowcomb;
+transform = "{1, 0, 0, 1, 216, 0}";
+}
+);
+layerId = UUID1;
+width = 1228;
+}
+);
+},
+{
+glyphname = uhookabove.smcp;
+layers = (
+{
+components = (
+{
+name = u.smcp;
+},
+{
+name = hookabovecomb;
+transform = "{1, 0, 0, 1, 208, 104}";
+}
+);
+layerId = UUID0;
+width = 1200;
+},
+{
+components = (
+{
+name = u.smcp;
+},
+{
+name = hookabovecomb;
+transform = "{1, 0, 0, 1, 234, 104}";
+}
+);
+layerId = UUID1;
+width = 1228;
+}
+);
+},
+{
+glyphname = uhorn.smcp;
+lastChange = "2020-02-02 15:31:04 +0000";
+layers = (
+{
+anchors = (
+{
+name = bottom;
+position = "{600, 0}";
+},
+{
+name = ogonek;
+position = "{772, 0}";
+},
+{
+name = top;
+position = "{596, 1188}";
+}
+);
+layerId = UUID0;
+paths = (
+{
+closed = 1;
+nodes = (
+"166 110 OFFCURVE",
+"344 -24 OFFCURVE",
+"600 -24 CURVE SMOOTH",
+"858 -24 OFFCURVE",
+"1034 110 OFFCURVE",
+"1034 374 CURVE SMOOTH",
+"1034 989 LINE",
+"1177 1006 OFFCURVE",
+"1236 1092 OFFCURVE",
+"1236 1188 CURVE SMOOTH",
+"1236 1248 OFFCURVE",
+"1208 1311 OFFCURVE",
+"1184 1338 CURVE",
+"1141 1339 OFFCURVE",
+"1101 1320 OFFCURVE",
+"1072 1288 CURVE",
+"1091 1261 OFFCURVE",
+"1107 1223 OFFCURVE",
+"1107 1189 CURVE SMOOTH",
+"1107 1123 OFFCURVE",
+"1060 1090 OFFCURVE",
+"977 1090 CURVE SMOOTH",
+"960 1090 LINE SMOOTH",
+"936 1090 OFFCURVE",
+"910 1088 OFFCURVE",
+"892 1084 CURVE",
+"892 374 LINE SMOOTH",
+"892 190 OFFCURVE",
+"788 92 OFFCURVE",
+"600 92 CURVE SMOOTH",
+"414 92 OFFCURVE",
+"308 190 OFFCURVE",
+"308 374 CURVE SMOOTH",
+"308 998 LINE SMOOTH",
+"308 1060 OFFCURVE",
+"294 1090 OFFCURVE",
+"232 1090 CURVE SMOOTH",
+"176 1090 LINE",
+"166 1080 LINE",
+"166 374 LINE SMOOTH"
+);
+}
+);
+width = 1200;
+},
+{
+anchors = (
+{
+name = bottom;
+position = "{614, 0}";
+},
+{
+name = ogonek;
+position = "{826, 0}";
+},
+{
+name = top;
+position = "{606, 1188}";
+}
+);
+layerId = UUID1;
+paths = (
+{
+closed = 1;
+nodes = (
+"120 140 OFFCURVE",
+"286 -30 OFFCURVE",
+"614 -30 CURVE SMOOTH",
+"942 -30 OFFCURVE",
+"1108 140 OFFCURVE",
+"1108 416 CURVE SMOOTH",
+"1108 941 LINE",
+"1269 973 OFFCURVE",
+"1346 1077 OFFCURVE",
+"1346 1195 CURVE SMOOTH",
+"1346 1267 OFFCURVE",
+"1316 1341 OFFCURVE",
+"1292 1377 CURVE",
+"1189 1385 OFFCURVE",
+"1095 1350 OFFCURVE",
+"1057 1306 CURVE",
+"1073 1276 OFFCURVE",
+"1089 1236 OFFCURVE",
+"1089 1203 CURVE SMOOTH",
+"1089 1154 OFFCURVE",
+"1053 1116 OFFCURVE",
+"979 1116 CURVE SMOOTH",
+"938 1116 LINE SMOOTH",
+"896 1116 OFFCURVE",
+"832 1114 OFFCURVE",
+"776 1104 CURVE",
+"776 418 LINE SMOOTH",
+"776 302 OFFCURVE",
+"740 230 OFFCURVE",
+"614 230 CURVE SMOOTH",
+"490 230 OFFCURVE",
+"452 302 OFFCURVE",
+"452 418 CURVE SMOOTH",
+"452 906 LINE SMOOTH",
+"452 1058 OFFCURVE",
+"378 1116 OFFCURVE",
+"252 1116 CURVE SMOOTH",
+"132 1116 LINE",
+"120 1104 LINE",
+"120 416 LINE SMOOTH"
+);
+}
+);
+width = 1228;
+}
+);
+},
+{
+glyphname = uhornacute.smcp;
+layers = (
+{
+components = (
+{
+name = uhorn.smcp;
+},
+{
+name = acutecomb;
+transform = "{1, 0, 0, 1, 198, 104}";
+}
+);
+layerId = UUID0;
+width = 1200;
+},
+{
+components = (
+{
+name = uhorn.smcp;
+},
+{
+name = acutecomb;
+transform = "{1, 0, 0, 1, 212, 104}";
+}
+);
+layerId = UUID1;
+width = 1228;
+}
+);
+},
+{
+glyphname = uhorndotbelow.smcp;
+layers = (
+{
+components = (
+{
+name = uhorn.smcp;
+},
+{
+name = dotbelowcomb;
+transform = "{1, 0, 0, 1, 202, 0}";
+}
+);
+layerId = UUID0;
+width = 1200;
+},
+{
+components = (
+{
+name = uhorn.smcp;
+},
+{
+name = dotbelowcomb;
+transform = "{1, 0, 0, 1, 216, 0}";
+}
+);
+layerId = UUID1;
+width = 1228;
+}
+);
+},
+{
+glyphname = uhorngrave.smcp;
+layers = (
+{
+components = (
+{
+name = uhorn.smcp;
+},
+{
+name = gravecomb;
+transform = "{1, 0, 0, 1, 206, 104}";
+}
+);
+layerId = UUID0;
+width = 1200;
+},
+{
+components = (
+{
+name = uhorn.smcp;
+},
+{
+name = gravecomb;
+transform = "{1, 0, 0, 1, 208, 104}";
+}
+);
+layerId = UUID1;
+width = 1228;
+}
+);
+},
+{
+glyphname = uhornhookabove.smcp;
+layers = (
+{
+components = (
+{
+name = uhorn.smcp;
+},
+{
+name = hookabovecomb;
+transform = "{1, 0, 0, 1, 208, 104}";
+}
+);
+layerId = UUID0;
+width = 1200;
+},
+{
+components = (
+{
+name = uhorn.smcp;
+},
+{
+name = hookabovecomb;
+transform = "{1, 0, 0, 1, 234, 104}";
+}
+);
+layerId = UUID1;
+width = 1228;
+}
+);
+},
+{
+glyphname = uhorntilde.smcp;
+layers = (
+{
+components = (
+{
+name = uhorn.smcp;
+},
+{
+name = tildecomb;
+transform = "{1, 0, 0, 1, 198, 104}";
+}
+);
+layerId = UUID0;
+width = 1200;
+},
+{
+components = (
+{
+name = uhorn.smcp;
+},
+{
+name = tildecomb;
+transform = "{1, 0, 0, 1, 208, 104}";
+}
+);
+layerId = UUID1;
+width = 1228;
+}
+);
+},
+{
 glyphname = wacute.smcp;
 lastChange = "2019-11-16 15:15:23 +0000";
 layers = (
@@ -127577,6 +129323,99 @@ width = 960;
 );
 leftKerningGroup = y.smcp;
 rightKerningGroup = y.smcp;
+},
+{
+glyphname = ytilde.smcp;
+layers = (
+{
+components = (
+{
+name = y.smcp;
+},
+{
+name = tildecomb;
+transform = "{1, 0, 0, 1, 34, 104}";
+}
+);
+layerId = UUID0;
+width = 848;
+},
+{
+components = (
+{
+name = y.smcp;
+},
+{
+name = tildecomb;
+transform = "{1, 0, 0, 1, 86, 104}";
+}
+);
+layerId = UUID1;
+width = 960;
+}
+);
+},
+{
+glyphname = ydotbelow.smcp;
+layers = (
+{
+components = (
+{
+name = y.smcp;
+},
+{
+name = dotbelowcomb;
+transform = "{1, 0, 0, 1, 28, 0}";
+}
+);
+layerId = UUID0;
+width = 848;
+},
+{
+components = (
+{
+name = y.smcp;
+},
+{
+name = dotbelowcomb;
+transform = "{1, 0, 0, 1, 84, 0}";
+}
+);
+layerId = UUID1;
+width = 960;
+}
+);
+},
+{
+glyphname = yhookabove.smcp;
+layers = (
+{
+components = (
+{
+name = y.smcp;
+},
+{
+name = hookabovecomb;
+transform = "{1, 0, 0, 1, 44, 104}";
+}
+);
+layerId = UUID0;
+width = 848;
+},
+{
+components = (
+{
+name = y.smcp;
+},
+{
+name = hookabovecomb;
+transform = "{1, 0, 0, 1, 112, 104}";
+}
+);
+layerId = UUID1;
+width = 960;
+}
+);
 },
 {
 glyphname = zacute.smcp;
@@ -168880,6 +170719,153 @@ width = 928;
 );
 },
 {
+glyphname = ordfeminine.c2sc;
+layers = (
+{
+components = (
+{
+name = a.smcp;
+}
+);
+layerId = UUID0;
+width = 1048;
+},
+{
+components = (
+{
+name = a.smcp;
+}
+);
+layerId = UUID1;
+width = 1160;
+}
+);
+},
+{
+glyphname = ordmasculine.c2sc;
+layers = (
+{
+components = (
+{
+name = o.smcp;
+}
+);
+layerId = UUID0;
+width = 1158;
+},
+{
+components = (
+{
+name = o.smcp;
+}
+);
+layerId = UUID1;
+width = 1218;
+}
+);
+},
+{
+glyphname = adblgrave.smcp;
+layers = (
+{
+components = (
+{
+name = a.smcp;
+},
+{
+name = dblgravecomb;
+transform = "{1, 0, 0, 1, 45, 104}";
+}
+);
+layerId = UUID0;
+width = 1048;
+},
+{
+components = (
+{
+name = a.smcp;
+},
+{
+name = dblgravecomb;
+transform = "{1, 0, 0, 1, 18, 104}";
+}
+);
+layerId = UUID1;
+width = 1160;
+}
+);
+},
+{
+glyphname = ainvertedbreve.smcp;
+layers = (
+{
+components = (
+{
+name = a.smcp;
+},
+{
+name = breveinvertedcomb;
+transform = "{1, 0, 0, 1, 126, 104}";
+}
+);
+layerId = UUID0;
+width = 1048;
+},
+{
+components = (
+{
+name = a.smcp;
+},
+{
+name = breveinvertedcomb;
+transform = "{1, 0, 0, 1, 194, 104}";
+}
+);
+layerId = UUID1;
+width = 1160;
+}
+);
+},
+{
+glyphname = ccedillaacute.smcp;
+layers = (
+{
+components = (
+{
+name = c.smcp;
+},
+{
+name = cedillacomb;
+transform = "{1, 0, 0, 1, 154, 0}";
+},
+{
+name = acutecomb;
+transform = "{1, 0, 0, 1, 170, 104}";
+}
+);
+layerId = UUID0;
+width = 1060;
+},
+{
+components = (
+{
+name = c.smcp;
+},
+{
+name = cedillacomb;
+transform = "{1, 0, 0, 1, 178, 0}";
+},
+{
+name = acutecomb;
+transform = "{1, 0, 0, 1, 202, 104}";
+}
+);
+layerId = UUID1;
+width = 1096;
+}
+);
+},
+{
 glyphname = ddotbelow.smcp;
 lastChange = "2019-11-17 11:35:56 +0000";
 layers = (
@@ -168908,6 +170894,279 @@ transform = "{1, 0, 0, 1, 196, 0}";
 );
 layerId = UUID1;
 width = 1220;
+}
+);
+},
+{
+glyphname = dlinebelow.smcp;
+layers = (
+{
+components = (
+{
+name = d.smcp;
+},
+{
+name = macronbelowcomb;
+transform = "{1, 0, 0, 1, 156, 0}";
+}
+);
+layerId = UUID0;
+width = 1138;
+},
+{
+components = (
+{
+name = d.smcp;
+},
+{
+name = macronbelowcomb;
+transform = "{1, 0, 0, 1, 197, 0}";
+}
+);
+layerId = UUID1;
+width = 1220;
+}
+);
+},
+{
+glyphname = dzcaron.smcp;
+lastChange = "2020-02-02 13:06:24 +0000";
+layers = (
+{
+components = (
+{
+name = d.smcp;
+},
+{
+name = zcaron.smcp;
+transform = "{1, 0, 0, 1, 1104, 0}";
+}
+);
+layerId = UUID0;
+width = 2080;
+},
+{
+components = (
+{
+name = d.smcp;
+},
+{
+name = zcaron.smcp;
+transform = "{1, 0, 0, 1, 1196, 0}";
+}
+);
+layerId = UUID1;
+width = 2250;
+}
+);
+},
+{
+glyphname = ecedillabreve.smcp;
+layers = (
+{
+components = (
+{
+name = e.smcp;
+},
+{
+name = cedillacomb;
+transform = "{1, 0, 0, 1, 144, 0}";
+},
+{
+name = brevecomb;
+transform = "{1, 0, 0, 1, 142, 104}";
+}
+);
+layerId = UUID0;
+width = 1000;
+},
+{
+components = (
+{
+name = e.smcp;
+},
+{
+name = cedillacomb;
+transform = "{1, 0, 0, 1, 158, 0}";
+},
+{
+name = brevecomb;
+transform = "{1, 0, 0, 1, 158, 104}";
+}
+);
+layerId = UUID1;
+width = 1062;
+}
+);
+},
+{
+glyphname = edblgrave.smcp;
+layers = (
+{
+components = (
+{
+name = e.smcp;
+},
+{
+name = dblgravecomb;
+transform = "{1, 0, 0, 1, 61, 104}";
+}
+);
+layerId = UUID0;
+width = 1000;
+},
+{
+components = (
+{
+name = e.smcp;
+},
+{
+name = dblgravecomb;
+transform = "{1, 0, 0, 1, -18, 104}";
+}
+);
+layerId = UUID1;
+width = 1062;
+}
+);
+},
+{
+glyphname = einvertedbreve.smcp;
+layers = (
+{
+components = (
+{
+name = e.smcp;
+},
+{
+name = breveinvertedcomb;
+transform = "{1, 0, 0, 1, 142, 104}";
+}
+);
+layerId = UUID0;
+width = 1000;
+},
+{
+components = (
+{
+name = e.smcp;
+},
+{
+name = breveinvertedcomb;
+transform = "{1, 0, 0, 1, 158, 104}";
+}
+);
+layerId = UUID1;
+width = 1062;
+}
+);
+},
+{
+glyphname = emacronacute.smcp;
+layers = (
+{
+components = (
+{
+name = e.smcp;
+},
+{
+name = macroncomb;
+transform = "{1, 0, 0, 1, 142, 104}";
+},
+{
+name = acutecomb;
+transform = "{1, 0, 0, 1, 142, 404}";
+}
+);
+layerId = UUID0;
+width = 1000;
+},
+{
+components = (
+{
+name = e.smcp;
+},
+{
+name = macroncomb;
+transform = "{1, 0, 0, 1, 158, 104}";
+},
+{
+name = acutecomb;
+transform = "{1, 0, 0, 1, 162, 478}";
+}
+);
+layerId = UUID1;
+width = 1062;
+}
+);
+},
+{
+glyphname = emacrongrave.smcp;
+layers = (
+{
+components = (
+{
+name = e.smcp;
+},
+{
+name = macroncomb;
+transform = "{1, 0, 0, 1, 142, 104}";
+},
+{
+name = gravecomb;
+transform = "{1, 0, 0, 1, 150, 404}";
+}
+);
+layerId = UUID0;
+width = 1000;
+},
+{
+components = (
+{
+name = e.smcp;
+},
+{
+name = macroncomb;
+transform = "{1, 0, 0, 1, 158, 104}";
+},
+{
+name = gravecomb;
+transform = "{1, 0, 0, 1, 158, 478}";
+}
+);
+layerId = UUID1;
+width = 1062;
+}
+);
+},
+{
+glyphname = gcaron.smcp;
+layers = (
+{
+components = (
+{
+name = g.smcp;
+},
+{
+name = caroncomb;
+transform = "{1, 0, 0, 1, 194, 104}";
+}
+);
+layerId = UUID0;
+width = 1098;
+},
+{
+components = (
+{
+name = g.smcp;
+},
+{
+name = caroncomb;
+transform = "{1, 0, 0, 1, 240, 104}";
+}
+);
+layerId = UUID1;
+width = 1184;
 }
 );
 },
@@ -168944,6 +171203,37 @@ width = 1184;
 );
 },
 {
+glyphname = hbrevebelow.smcp;
+layers = (
+{
+components = (
+{
+name = h.smcp;
+},
+{
+name = brevebelowcomb;
+transform = "{1, 0, 0, 1, 206, 0}";
+}
+);
+layerId = UUID0;
+width = 1208;
+},
+{
+components = (
+{
+name = h.smcp;
+},
+{
+name = brevebelowcomb;
+transform = "{1, 0, 0, 1, 236, 0}";
+}
+);
+layerId = UUID1;
+width = 1270;
+}
+);
+},
+{
 glyphname = hdotbelow.smcp;
 lastChange = "2019-11-17 11:35:56 +0000";
 layers = (
@@ -168972,6 +171262,107 @@ transform = "{1, 0, 0, 1, 236, 0}";
 );
 layerId = UUID1;
 width = 1270;
+}
+);
+},
+{
+glyphname = idblgrave.smcp;
+layers = (
+{
+components = (
+{
+name = i.smcp;
+},
+{
+name = dblgravecomb;
+transform = "{1, 0, 0, 1, -217, 104}";
+}
+);
+layerId = UUID0;
+width = 526;
+},
+{
+components = (
+{
+name = i.smcp;
+},
+{
+name = dblgravecomb;
+transform = "{1, 0, 0, 1, -260, 104}";
+}
+);
+layerId = UUID1;
+width = 620;
+}
+);
+},
+{
+glyphname = idieresisacute.smcp;
+layers = (
+{
+components = (
+{
+name = i.smcp;
+},
+{
+name = dieresiscomb;
+transform = "{1, 0, 0, 1, -136, 104}";
+},
+{
+name = acutecomb;
+transform = "{1, 0, 0, 1, -136, 391}";
+}
+);
+layerId = UUID0;
+width = 526;
+},
+{
+components = (
+{
+name = i.smcp;
+},
+{
+name = dieresiscomb;
+transform = "{1, 0, 0, 1, -84, 104}";
+},
+{
+name = acutecomb;
+transform = "{1, 0, 0, 1, -80, 467}";
+}
+);
+layerId = UUID1;
+width = 620;
+}
+);
+},
+{
+glyphname = iinvertedbreve.smcp;
+layers = (
+{
+components = (
+{
+name = i.smcp;
+},
+{
+name = breveinvertedcomb;
+transform = "{1, 0, 0, 1, -136, 104}";
+}
+);
+layerId = UUID0;
+width = 526;
+},
+{
+components = (
+{
+name = i.smcp;
+},
+{
+name = breveinvertedcomb;
+transform = "{1, 0, 0, 1, -84, 104}";
+}
+);
+layerId = UUID1;
+width = 620;
 }
 );
 },
@@ -169304,6 +171695,69 @@ name = l.smcp;
 {
 name = dotbelowcomb;
 transform = "{1, 0, 0, 1, 124, 0}";
+}
+);
+layerId = UUID1;
+width = 970;
+}
+);
+},
+{
+glyphname = lj.smcp;
+lastChange = "2020-01-31 16:27:30 +0000";
+layers = (
+{
+components = (
+{
+name = l.smcp;
+},
+{
+name = j.smcp;
+transform = "{1, 0, 0, 1, 912, 0}";
+}
+);
+layerId = UUID0;
+width = 1672;
+},
+{
+components = (
+{
+name = l.smcp;
+},
+{
+name = j.smcp;
+transform = "{1, 0, 0, 1, 970, 0}";
+}
+);
+layerId = UUID1;
+width = 1838;
+}
+);
+},
+{
+glyphname = llinebelow.smcp;
+layers = (
+{
+components = (
+{
+name = l.smcp;
+},
+{
+name = macronbelowcomb;
+transform = "{1, 0, 0, 1, 120, 0}";
+}
+);
+layerId = UUID0;
+width = 912;
+},
+{
+components = (
+{
+name = l.smcp;
+},
+{
+name = macronbelowcomb;
+transform = "{1, 0, 0, 1, 125, 0}";
 }
 );
 layerId = UUID1;
@@ -169850,6 +172304,286 @@ width = 1286;
 );
 },
 {
+glyphname = nj.smcp;
+layers = (
+{
+components = (
+{
+name = n.smcp;
+},
+{
+name = j.smcp;
+transform = "{1, 0, 0, 1, 1218, 0}";
+}
+);
+layerId = UUID0;
+width = 1978;
+},
+{
+components = (
+{
+name = n.smcp;
+},
+{
+name = j.smcp;
+transform = "{1, 0, 0, 1, 1286, 0}";
+}
+);
+layerId = UUID1;
+width = 2154;
+}
+);
+},
+{
+glyphname = nlinebelow.smcp;
+layers = (
+{
+components = (
+{
+name = n.smcp;
+},
+{
+name = macronbelowcomb;
+transform = "{1, 0, 0, 1, 202, 0}";
+}
+);
+layerId = UUID0;
+width = 1218;
+},
+{
+components = (
+{
+name = n.smcp;
+},
+{
+name = macronbelowcomb;
+transform = "{1, 0, 0, 1, 239, 0}";
+}
+);
+layerId = UUID1;
+width = 1286;
+}
+);
+},
+{
+glyphname = odblgrave.smcp;
+layers = (
+{
+components = (
+{
+name = o.smcp;
+},
+{
+name = dblgravecomb;
+transform = "{1, 0, 0, 1, 99, 104}";
+}
+);
+layerId = UUID0;
+width = 1158;
+},
+{
+components = (
+{
+name = o.smcp;
+},
+{
+name = dblgravecomb;
+transform = "{1, 0, 0, 1, 34, 104}";
+}
+);
+layerId = UUID1;
+width = 1218;
+}
+);
+},
+{
+glyphname = odieresismacron.smcp;
+layers = (
+{
+components = (
+{
+name = o.smcp;
+},
+{
+name = dieresiscomb;
+transform = "{1, 0, 0, 1, 180, 104}";
+},
+{
+name = macroncomb;
+transform = "{1, 0, 0, 1, 180, 391}";
+}
+);
+layerId = UUID0;
+width = 1158;
+},
+{
+components = (
+{
+name = o.smcp;
+},
+{
+name = dieresiscomb;
+transform = "{1, 0, 0, 1, 210, 104}";
+},
+{
+name = macroncomb;
+transform = "{1, 0, 0, 1, 210, 467}";
+}
+);
+layerId = UUID1;
+width = 1218;
+}
+);
+},
+{
+glyphname = odotaccentmacron.smcp;
+layers = (
+{
+components = (
+{
+name = o.smcp;
+},
+{
+name = dotaccentcomb;
+transform = "{1, 0, 0, 1, 180, 104}";
+},
+{
+name = macroncomb;
+transform = "{1, 0, 0, 1, 180, 449}";
+}
+);
+layerId = UUID0;
+width = 1158;
+},
+{
+components = (
+{
+name = o.smcp;
+},
+{
+name = dotaccentcomb;
+transform = "{1, 0, 0, 1, 210, 104}";
+},
+{
+name = macroncomb;
+transform = "{1, 0, 0, 1, 210, 528}";
+}
+);
+layerId = UUID1;
+width = 1218;
+}
+);
+},
+{
+glyphname = oinvertedbreve.smcp;
+layers = (
+{
+components = (
+{
+name = o.smcp;
+},
+{
+name = breveinvertedcomb;
+transform = "{1, 0, 0, 1, 180, 104}";
+}
+);
+layerId = UUID0;
+width = 1158;
+},
+{
+components = (
+{
+name = o.smcp;
+},
+{
+name = breveinvertedcomb;
+transform = "{1, 0, 0, 1, 210, 104}";
+}
+);
+layerId = UUID1;
+width = 1218;
+}
+);
+},
+{
+glyphname = omacronacute.smcp;
+layers = (
+{
+components = (
+{
+name = o.smcp;
+},
+{
+name = macroncomb;
+transform = "{1, 0, 0, 1, 180, 104}";
+},
+{
+name = acutecomb;
+transform = "{1, 0, 0, 1, 180, 404}";
+}
+);
+layerId = UUID0;
+width = 1158;
+},
+{
+components = (
+{
+name = o.smcp;
+},
+{
+name = macroncomb;
+transform = "{1, 0, 0, 1, 210, 104}";
+},
+{
+name = acutecomb;
+transform = "{1, 0, 0, 1, 214, 478}";
+}
+);
+layerId = UUID1;
+width = 1218;
+}
+);
+},
+{
+glyphname = omacrongrave.smcp;
+layers = (
+{
+components = (
+{
+name = o.smcp;
+},
+{
+name = macroncomb;
+transform = "{1, 0, 0, 1, 180, 104}";
+},
+{
+name = gravecomb;
+transform = "{1, 0, 0, 1, 188, 404}";
+}
+);
+layerId = UUID0;
+width = 1158;
+},
+{
+components = (
+{
+name = o.smcp;
+},
+{
+name = macroncomb;
+transform = "{1, 0, 0, 1, 210, 104}";
+},
+{
+name = gravecomb;
+transform = "{1, 0, 0, 1, 210, 478}";
+}
+);
+layerId = UUID1;
+width = 1218;
+}
+);
+},
+{
 glyphname = oogonek.smcp;
 lastChange = "2019-12-07 20:50:07 +0000";
 layers = (
@@ -170140,6 +172874,154 @@ width = 1218;
 );
 },
 {
+glyphname = otildeacute.smcp;
+layers = (
+{
+components = (
+{
+name = o.smcp;
+},
+{
+name = tildecomb;
+transform = "{1, 0, 0, 1, 180, 104}";
+},
+{
+name = acutecomb;
+transform = "{1, 0, 0, 1, 180, 447}";
+}
+);
+layerId = UUID0;
+width = 1158;
+},
+{
+components = (
+{
+name = o.smcp;
+},
+{
+name = tildecomb;
+transform = "{1, 0, 0, 1, 210, 104}";
+},
+{
+name = acutecomb;
+transform = "{1, 0, 0, 1, 214, 520}";
+}
+);
+layerId = UUID1;
+width = 1218;
+}
+);
+},
+{
+glyphname = otildedieresis.smcp;
+layers = (
+{
+components = (
+{
+name = o.smcp;
+},
+{
+name = tildecomb;
+transform = "{1, 0, 0, 1, 180, 104}";
+},
+{
+name = dieresiscomb;
+transform = "{1, 0, 0, 1, 180, 447}";
+}
+);
+layerId = UUID0;
+width = 1158;
+},
+{
+components = (
+{
+name = o.smcp;
+},
+{
+name = tildecomb;
+transform = "{1, 0, 0, 1, 210, 104}";
+},
+{
+name = dieresiscomb;
+transform = "{1, 0, 0, 1, 210, 520}";
+}
+);
+layerId = UUID1;
+width = 1218;
+}
+);
+},
+{
+glyphname = otildemacron.smcp;
+layers = (
+{
+components = (
+{
+name = o.smcp;
+},
+{
+name = tildecomb;
+transform = "{1, 0, 0, 1, 180, 104}";
+},
+{
+name = macroncomb;
+transform = "{1, 0, 0, 1, 180, 447}";
+}
+);
+layerId = UUID0;
+width = 1158;
+},
+{
+components = (
+{
+name = o.smcp;
+},
+{
+name = tildecomb;
+transform = "{1, 0, 0, 1, 210, 104}";
+},
+{
+name = macroncomb;
+transform = "{1, 0, 0, 1, 210, 520}";
+}
+);
+layerId = UUID1;
+width = 1218;
+}
+);
+},
+{
+glyphname = rdblgrave.smcp;
+layers = (
+{
+components = (
+{
+name = r.smcp;
+},
+{
+name = dblgravecomb;
+transform = "{1, 0, 0, 1, 53, 104}";
+}
+);
+layerId = UUID0;
+width = 1064;
+},
+{
+components = (
+{
+name = r.smcp;
+},
+{
+name = dblgravecomb;
+transform = "{1, 0, 0, 1, -16, 104}";
+}
+);
+layerId = UUID1;
+width = 1146;
+}
+);
+},
+{
 glyphname = rdotbelow.smcp;
 lastChange = "2019-11-17 11:35:56 +0000";
 layers = (
@@ -170168,6 +173050,148 @@ transform = "{1, 0, 0, 1, 188, 0}";
 );
 layerId = UUID1;
 width = 1146;
+}
+);
+},
+{
+glyphname = rinvertedbreve.smcp;
+layers = (
+{
+components = (
+{
+name = r.smcp;
+},
+{
+name = breveinvertedcomb;
+transform = "{1, 0, 0, 1, 134, 104}";
+}
+);
+layerId = UUID0;
+width = 1064;
+},
+{
+components = (
+{
+name = r.smcp;
+},
+{
+name = breveinvertedcomb;
+transform = "{1, 0, 0, 1, 160, 104}";
+}
+);
+layerId = UUID1;
+width = 1146;
+}
+);
+},
+{
+glyphname = rlinebelow.smcp;
+layers = (
+{
+components = (
+{
+name = r.smcp;
+},
+{
+name = macronbelowcomb;
+transform = "{1, 0, 0, 1, 142, 0}";
+}
+);
+layerId = UUID0;
+width = 1064;
+},
+{
+components = (
+{
+name = r.smcp;
+},
+{
+name = macronbelowcomb;
+transform = "{1, 0, 0, 1, 189, 0}";
+}
+);
+layerId = UUID1;
+width = 1146;
+}
+);
+},
+{
+color = 0;
+glyphname = sacutedotaccent.smcp;
+lastChange = "2020-01-31 16:43:18 +0000";
+layers = (
+{
+components = (
+{
+name = s.smcp;
+},
+{
+name = acutecomb;
+transform = "{1, 0, 0, 1, 78, 104}";
+},
+{
+name = dotaccentcomb;
+transform = "{1, 0, 0, 1, 78, 478}";
+}
+);
+layerId = UUID0;
+width = 972;
+},
+{
+components = (
+{
+name = s.smcp;
+},
+{
+name = acutecomb;
+transform = "{1, 0, 0, 1, 126, 104}";
+},
+{
+name = dotaccentcomb;
+transform = "{1, 0, 0, 1, 122, 590}";
+}
+);
+layerId = UUID1;
+width = 1022;
+}
+);
+},
+{
+glyphname = scarondotaccent.smcp;
+layers = (
+{
+components = (
+{
+name = s.smcp;
+},
+{
+name = caroncomb;
+transform = "{1, 0, 0, 1, 78, 104}";
+},
+{
+name = dotaccentcomb;
+transform = "{1, 0, 0, 1, 78, 478}";
+}
+);
+layerId = UUID0;
+width = 972;
+},
+{
+components = (
+{
+name = s.smcp;
+},
+{
+name = caroncomb;
+transform = "{1, 0, 0, 1, 122, 104}";
+},
+{
+name = dotaccentcomb;
+transform = "{1, 0, 0, 1, 122, 560}";
+}
+);
+layerId = UUID1;
+width = 1022;
 }
 );
 },
@@ -170236,6 +173260,76 @@ width = 1022;
 );
 },
 {
+glyphname = sdotbelowdotaccent.smcp;
+layers = (
+{
+components = (
+{
+name = s.smcp;
+},
+{
+name = dotbelowcomb;
+transform = "{1, 0, 0, 1, 92, 0}";
+},
+{
+name = dotaccentcomb;
+transform = "{1, 0, 0, 1, 78, 104}";
+}
+);
+layerId = UUID0;
+width = 972;
+},
+{
+components = (
+{
+name = s.smcp;
+},
+{
+name = dotbelowcomb;
+transform = "{1, 0, 0, 1, 112, 0}";
+},
+{
+name = dotaccentcomb;
+transform = "{1, 0, 0, 1, 122, 104}";
+}
+);
+layerId = UUID1;
+width = 1022;
+}
+);
+},
+{
+glyphname = tdieresis.smcp;
+layers = (
+{
+components = (
+{
+name = t.smcp;
+},
+{
+name = dieresiscomb;
+transform = "{1, 0, 0, 1, 30, 104}";
+}
+);
+layerId = UUID0;
+width = 846;
+},
+{
+components = (
+{
+name = t.smcp;
+},
+{
+name = dieresiscomb;
+transform = "{1, 0, 0, 1, 76, 104}";
+}
+);
+layerId = UUID1;
+width = 930;
+}
+);
+},
+{
 glyphname = tdotbelow.smcp;
 lastChange = "2019-11-17 11:35:56 +0000";
 layers = (
@@ -170268,6 +173362,177 @@ width = 930;
 );
 },
 {
+glyphname = tlinebelow.smcp;
+layers = (
+{
+components = (
+{
+name = t.smcp;
+},
+{
+name = macronbelowcomb;
+transform = "{1, 0, 0, 1, 30, 0}";
+}
+);
+layerId = UUID0;
+width = 846;
+},
+{
+components = (
+{
+name = t.smcp;
+},
+{
+name = macronbelowcomb;
+transform = "{1, 0, 0, 1, 77, 0}";
+}
+);
+layerId = UUID1;
+width = 930;
+}
+);
+},
+{
+glyphname = udblgrave.smcp;
+layers = (
+{
+components = (
+{
+name = u.smcp;
+},
+{
+name = dblgravecomb;
+transform = "{1, 0, 0, 1, 117, 104}";
+}
+);
+layerId = UUID0;
+width = 1200;
+},
+{
+components = (
+{
+name = u.smcp;
+},
+{
+name = dblgravecomb;
+transform = "{1, 0, 0, 1, 32, 104}";
+}
+);
+layerId = UUID1;
+width = 1228;
+}
+);
+},
+{
+glyphname = uinvertedbreve.smcp;
+layers = (
+{
+components = (
+{
+name = u.smcp;
+},
+{
+name = breveinvertedcomb;
+transform = "{1, 0, 0, 1, 198, 104}";
+}
+);
+layerId = UUID0;
+width = 1200;
+},
+{
+components = (
+{
+name = u.smcp;
+},
+{
+name = breveinvertedcomb;
+transform = "{1, 0, 0, 1, 208, 104}";
+}
+);
+layerId = UUID1;
+width = 1228;
+}
+);
+},
+{
+glyphname = umacrondieresis.smcp;
+layers = (
+{
+components = (
+{
+name = u.smcp;
+},
+{
+name = macroncomb;
+transform = "{1, 0, 0, 1, 198, 104}";
+},
+{
+name = dieresiscomb;
+transform = "{1, 0, 0, 1, 198, 404}";
+}
+);
+layerId = UUID0;
+width = 1200;
+},
+{
+components = (
+{
+name = u.smcp;
+},
+{
+name = macroncomb;
+transform = "{1, 0, 0, 1, 208, 104}";
+},
+{
+name = dieresiscomb;
+transform = "{1, 0, 0, 1, 208, 478}";
+}
+);
+layerId = UUID1;
+width = 1228;
+}
+);
+},
+{
+glyphname = utildeacute.smcp;
+layers = (
+{
+components = (
+{
+name = u.smcp;
+},
+{
+name = tildecomb;
+transform = "{1, 0, 0, 1, 198, 104}";
+},
+{
+name = acutecomb;
+transform = "{1, 0, 0, 1, 198, 447}";
+}
+);
+layerId = UUID0;
+width = 1200;
+},
+{
+components = (
+{
+name = u.smcp;
+},
+{
+name = tildecomb;
+transform = "{1, 0, 0, 1, 208, 104}";
+},
+{
+name = acutecomb;
+transform = "{1, 0, 0, 1, 212, 520}";
+}
+);
+layerId = UUID1;
+width = 1228;
+}
+);
+},
+{
 glyphname = ydotaccent.smcp;
 lastChange = "2019-11-17 11:35:56 +0000";
 layers = (
@@ -170291,6 +173556,37 @@ name = y.smcp;
 },
 {
 name = dotaccentcomb;
+transform = "{1, 0, 0, 1, 86, 104}";
+}
+);
+layerId = UUID1;
+width = 960;
+}
+);
+},
+{
+glyphname = ymacron.smcp;
+layers = (
+{
+components = (
+{
+name = y.smcp;
+},
+{
+name = macroncomb;
+transform = "{1, 0, 0, 1, 34, 104}";
+}
+);
+layerId = UUID0;
+width = 848;
+},
+{
+components = (
+{
+name = y.smcp;
+},
+{
+name = macroncomb;
 transform = "{1, 0, 0, 1, 86, 104}";
 }
 );
@@ -170906,6 +174202,443 @@ nodes = (
 }
 );
 width = 0;
+}
+);
+},
+{
+glyphname = parenleft.c2sc;
+layers = (
+{
+layerId = UUID0;
+width = 1200;
+},
+{
+layerId = UUID1;
+width = 1200;
+}
+);
+},
+{
+glyphname = parenright.c2sc;
+layers = (
+{
+layerId = UUID0;
+width = 1200;
+},
+{
+layerId = UUID1;
+width = 1200;
+}
+);
+},
+{
+glyphname = braceleft.c2sc;
+layers = (
+{
+layerId = UUID0;
+width = 1200;
+},
+{
+layerId = UUID1;
+width = 1200;
+}
+);
+},
+{
+glyphname = braceright.c2sc;
+layers = (
+{
+layerId = UUID0;
+width = 1200;
+},
+{
+layerId = UUID1;
+width = 1200;
+}
+);
+},
+{
+glyphname = bracketleft.c2sc;
+layers = (
+{
+layerId = UUID0;
+width = 1200;
+},
+{
+layerId = UUID1;
+width = 1200;
+}
+);
+},
+{
+glyphname = bracketright.c2sc;
+layers = (
+{
+layerId = UUID0;
+width = 1200;
+},
+{
+layerId = UUID1;
+width = 1200;
+}
+);
+},
+{
+glyphname = exclam.c2sc;
+layers = (
+{
+layerId = UUID0;
+width = 1200;
+},
+{
+layerId = UUID1;
+width = 1200;
+}
+);
+},
+{
+glyphname = exclamdown.c2sc;
+layers = (
+{
+layerId = UUID0;
+width = 1200;
+},
+{
+layerId = UUID1;
+width = 1200;
+}
+);
+},
+{
+glyphname = question.c2sc;
+layers = (
+{
+layerId = UUID0;
+width = 1200;
+},
+{
+layerId = UUID1;
+width = 1200;
+}
+);
+},
+{
+glyphname = questiondown.c2sc;
+layers = (
+{
+layerId = UUID0;
+width = 1200;
+},
+{
+layerId = UUID1;
+width = 1200;
+}
+);
+},
+{
+glyphname = quotedblleft.c2sc;
+layers = (
+{
+components = (
+{
+name = quoteleft;
+},
+{
+name = quoteleft;
+}
+);
+layerId = UUID0;
+width = 404;
+},
+{
+components = (
+{
+name = quoteleft;
+},
+{
+name = quoteleft;
+}
+);
+layerId = UUID1;
+width = 548;
+}
+);
+},
+{
+glyphname = quotedblright.c2sc;
+layers = (
+{
+components = (
+{
+name = quoteright;
+},
+{
+name = quoteright;
+}
+);
+layerId = UUID0;
+width = 404;
+},
+{
+components = (
+{
+name = quoteright;
+},
+{
+name = quoteright;
+}
+);
+layerId = UUID1;
+width = 548;
+}
+);
+},
+{
+glyphname = quoteleft.c2sc;
+layers = (
+{
+layerId = UUID0;
+width = 1200;
+},
+{
+layerId = UUID1;
+width = 1200;
+}
+);
+},
+{
+glyphname = quoteright.c2sc;
+layers = (
+{
+layerId = UUID0;
+width = 1200;
+},
+{
+layerId = UUID1;
+width = 1200;
+}
+);
+},
+{
+glyphname = asterisk.c2sc;
+layers = (
+{
+layerId = UUID0;
+width = 1200;
+},
+{
+layerId = UUID1;
+width = 1200;
+}
+);
+},
+{
+glyphname = slash.c2sc;
+layers = (
+{
+layerId = UUID0;
+width = 1200;
+},
+{
+layerId = UUID1;
+width = 1200;
+}
+);
+},
+{
+glyphname = backslash.c2sc;
+layers = (
+{
+layerId = UUID0;
+width = 1200;
+},
+{
+layerId = UUID1;
+width = 1200;
+}
+);
+},
+{
+glyphname = anoteleia.c2sc;
+layers = (
+{
+components = (
+{
+name = periodcentered;
+}
+);
+layerId = UUID0;
+width = 578;
+},
+{
+components = (
+{
+name = periodcentered;
+}
+);
+layerId = UUID1;
+width = 666;
+}
+);
+},
+{
+glyphname = copyright.c2sc;
+layers = (
+{
+layerId = UUID0;
+width = 1200;
+},
+{
+layerId = UUID1;
+width = 1200;
+}
+);
+},
+{
+glyphname = degree.c2sc;
+layers = (
+{
+layerId = UUID0;
+width = 1200;
+},
+{
+layerId = UUID1;
+width = 1200;
+}
+);
+},
+{
+glyphname = minute.c2sc;
+layers = (
+{
+layerId = UUID0;
+width = 1200;
+},
+{
+layerId = UUID1;
+width = 1200;
+}
+);
+},
+{
+glyphname = second.c2sc;
+layers = (
+{
+components = (
+{
+name = minute;
+},
+{
+name = minute;
+}
+);
+layerId = UUID0;
+width = 386;
+},
+{
+components = (
+{
+name = minute;
+},
+{
+name = minute;
+}
+);
+layerId = UUID1;
+width = 467;
+}
+);
+},
+{
+glyphname = numero.c2sc;
+layers = (
+{
+components = (
+{
+name = N;
+},
+{
+name = o.smcp;
+transform = "{1, 0, 0, 1, 1340, 0}";
+}
+);
+layerId = UUID0;
+width = 2498;
+},
+{
+components = (
+{
+name = N;
+},
+{
+name = o.smcp;
+transform = "{1, 0, 0, 1, 1396, 0}";
+}
+);
+layerId = UUID1;
+width = 2614;
+}
+);
+},
+{
+glyphname = hryvnia.c2sc;
+layers = (
+{
+layerId = UUID0;
+width = 1200;
+},
+{
+layerId = UUID1;
+width = 1200;
+}
+);
+},
+{
+glyphname = percent.c2sc;
+layers = (
+{
+layerId = UUID0;
+width = 1200;
+},
+{
+layerId = UUID1;
+width = 1200;
+}
+);
+},
+{
+glyphname = perthousand.c2sc;
+layers = (
+{
+layerId = UUID0;
+width = 1200;
+},
+{
+layerId = UUID1;
+width = 1200;
+}
+);
+},
+{
+glyphname = "numeral-greek.c2sc";
+layers = (
+{
+components = (
+{
+name = minute;
+}
+);
+layerId = UUID0;
+width = 386;
+},
+{
+components = (
+{
+name = minute;
+}
+);
+layerId = UUID1;
+width = 467;
 }
 );
 }
