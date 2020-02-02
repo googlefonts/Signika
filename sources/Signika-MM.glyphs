@@ -5,8 +5,7 @@ DisplayStrings = (
 "H/periodcentered.case H/bullet.case H/parenleft.case H/parenright.case H/braceleft.case H/braceright.case H/bracketleft.case H/bracketright.case H/endash.case H/emdash.case H/guillemetleft.case H/guillemetright.case H/guilsinglleft.case H/guilsinglright.case H/at.case H\012H/slash.case H/backslash.case H\012\012n·n/bullet n(nihgne)n{n}n[n]n/endash n/emdash nn»n/guilsinglleft n/guilsinglright n@n\012n//neurony/backslash hn\012\012Track /numero  \012H|/numero |H\012\012STRHBH/Germandbls HE \012/s.smcp/u.smcp/r.smcp/h.smcp/b.smcp/h.smcp/germandbls.smcp/h.smcp/e.smcp \012/zero.zero.ss01/zero.c2sc/zero.zero.c2sc/h.smcp Ø\012|]|}|)|/rightanglebracket-math/rightanglebracket-math.case |/leftanglebracket-math/leftanglebracket-math.case/parenleft.case un|\012\012CEFHGH/Schwa He/schwa n/schwa uaH'\"HH/primemod H/doubleprimemod H2/second  2/doubleprimemod \012÷HH/commercialMinusSign H//% 50°0/minute 0/second  /product/summation/Ohm A×/emptyset  Øøn\012/endash  i/strokeshortcomb  n\012/firsttonechinese/secondtonechinese/fourthtonechinese ´`/ringhalfleft ba/amacron/ringhalfright h/amacron d/amacron d/amacron/verticallinelowmod m/ringhalfright d/apostrophemodifier n d/napostrophe/napostrophe.smcp/napostrophe.smcp  /ringhalfleft H/doubleprimemod H/primemod H/apostrophemodifier H/commaturnedmod H/ringhalfright H/verticallinemod H/primemod Hp/verticallinelowmod .,pAH/verticallinemod H/commaturnedmod n\012/Ldot  /ldot  /ldot.smcp  HL/periodcentered.CAT.case Ll/periodcentered.CAT ll/l.smcp/periodcentered.CAT.c2sc/l.smcp \012\012\012\012/Sacutedotaccent/sacutedotaccent/periodcentered.CAT.case",
 "Å/Aringacute/Idieresisacute/Umacrondieresis/Emacronacute/Emacrongrave/Omacronacute/Omacrongrave/Otildeacute/Otildedieresis/Utildeacute/Scarondotaccent  /Sacutedotaccent \012/circumflexcomb_acutecomb/circumflexcomb_gravecomb/brevecomb_acutecomb/brevecomb_gravecomb/circumflexcomb_hookabovecomb/brevecomb_hookabovecomb/circumflexcomb_tildecomb/brevecomb_tildecomb/brevecomb \012/circumflexcomb_acutecomb.case/circumflexcomb_gravecomb.case/brevecomb_acutecomb.case/brevecomb_gravecomb.case/brevecomb_hookabovecomb.case/brevecomb_tildecomb.case/circumflexcomb_tildecomb.case/circumflexcomb_hookabovecomb.case \012/acircumflexacute/abrevetilde/acircumflexhookabove/ecircumflexgrave/acircumflextilde/abrevehookabove/abreveacute/ecircumflextilde/ecircumflexhookabove/abrevegrave/ocircumflexhookabove/ocircumflextilde \012/acircumflexacute/acircumflexgrave/acircumflextilde/acircumflexacute á/abrevegrave/ecircumflexacute/ecircumflexgrave/ocircumflexacute/ocircumflexgrave \012/Acircumflexacute/Acircumflexgrave/Acircumflexhookabove/Acircumflextilde/Abreveacute/Abrevegrave/Abrevehookabove/Abrevetilde  \012/Ecircumflexacute/Ecircumflexgrave/Ecircumflexhookabove/Ecircumflextilde/Ocircumflexacute/Ocircumflexgrave/Ocircumflexhookabove/Ocircumflextilde \012O/Ohorn OOU/Uhorn UUUo/ohorn ooo u/uhorn uu \012/Ohornacute  /Ohorngrave  /Ohorntilde  /Uhornacute  /Uhorngrave  /Uhorntilde \012/ohornacute  /ohorngrave  /ohorntilde  /uhornacute  /uhorngrave  /uhorntilde \012/ahookabove/ahookabove àáã/abreve/ehookabove/ihookabove/ohookabove/uhookabove/yhookabove \012ÈÉ/Ecaron/Etilde/Ebreve/Ehookabove/Ahookabove/Ihookabove/Ohookabove/Uhookabove/Yhookabove \012/aringacute/idieresisacute/umacrondieresis/emacronacute/emacrongrave/omacronacute/omacrongrave/otildeacute/otildedieresis/utildeacute/scarondotaccent  /sacutedotaccent \012\012\012 \012",
 "/numero H/numero 50/zero.zero 123745689\012/euro $¢£¥/florin ¤/cedi/colonsign/dong/franc/guarani/kip/lira/liraTurkish/peso/ruble/rupeeIndian/manat/naira/won/peseta \012345/euro  Euro 00/euro 00\012156$ Dollar 00$00\012134¢ Cent 00¢00\012278£ Sterling 00£00\012154£ Yen 00c00\012623/florin  Florin 00/florin 00 \012652¤ Currency 00¤00\012829/naira  Naira 00/naira 00 \012652/lira  Sterling 00/lira 00\012986/franc  Franc 00/franc 00\012876/peso  Peso 00/peso 00\012264/ruble  Ruble 00/ruble 00\012123/cedi  Cedi 00/cedi 00\012543/kip  Kip 00/kip 00\012654/dong  Dong 00/dong 00\012765/liraTurkish  Lira 00/liraTurkish 00\012876/guarani  Guarani 00/guarani 00\012986/manat  Manat 00/manat 00\012678/rupeeIndian  Rupee 00/rupeeIndian 00\012234/colonsign  Colonsign 00/colonsign 00\012456/peseta  Peseta 00/peseta 00\012345/won  Won 00/won 00\012\012\012Hello /zero.ss01/zero.zero.ss01/one.ss01/two.ss01/three.ss01/four.ss01/five.ss01/six.ss01/seven.ss01/eight.ss01/nine.ss01 \012\012/numero 5\012/numero/five.ss01 \012\0125a+6b/minus 10±÷×=/approxequal/notequal <>/lessequal/greaterequal ¬55/radical 5/infinity 5\012#0  5°C 5+5 a+b\0125/minus 5/figuredash 50-5/endash 5 \012\012/horizontalbar Fancy a tea?\012/horizontalbar Fancy a tea?\012\012/zero.ss01/zero.zero.ss01/one.ss01/two.ss01/three.ss01/four.ss01 +/five.ss01 °\0125n 5a\012\012",
-"(H¹/foursuperior ²³/fivesuperior/sixsuperior/sevensuperior/eightsuperior/ninesuperior/zerosuperior )\012(H/zeroinferior/oneinferior/twoinferior/threeinferior/fourinferior/fiveinferior/sixinferior/seveninferior/eightinferior/nineinferior )\012H/zero.dnom/one.dnom/two.dnom/three.dnom/four.dnom/five.dnom/six.dnom/seven.dnom/eight.dnom/nine.dnom \012H/three.numr/zero.numr/one.numr/two.numr/four.numr/five.numr/six.numr/seven.numr/eight.numr/nine.numr \012\012/h.smcp/copyright.c2sc/h.smcp/slash.c2sc/h.smcp/h.smcp/backslash.c2sc/h.smcp/numero.c2sc/h.smcp/minute.c2sc/h.smcp/second.c2sc/h.smcp/degree.c2sc/h.smcp/asterisk.c2sc/h.smcp \012/parenleft.c2sc/h.smcp/parenright.c2sc/h.smcp/braceleft.c2sc/h.smcp/braceright.c2sc/h.smcp/bracketleft.c2sc/h.smcp/bracketright.c2sc/h.smcp/exclam.c2sc/h.smcp/exclamdown.c2sc/h.smcp/question.c2sc/h.smcp/questiondown.c2sc/h.smcp \012/h.smcp/quotedblleft.c2sc/h.smcp/quotedblright.c2sc/h.smcp/quoteleft.c2sc/h.smcp/quoteright.c2sc/h.smcp/percent.c2sc/h.smcp/perthousand.c2sc/h.smcp \012",
-"/caroncomb.case  /Tcaron/Rcaron"
+"(H¹/foursuperior ²³/fivesuperior/sixsuperior/sevensuperior/eightsuperior/ninesuperior/zerosuperior )\012(H/zeroinferior/oneinferior/twoinferior/threeinferior/fourinferior/fiveinferior/sixinferior/seveninferior/eightinferior/nineinferior )\012H/zero.dnom/one.dnom/two.dnom/three.dnom/four.dnom/five.dnom/six.dnom/seven.dnom/eight.dnom/nine.dnom \012H/three.numr/zero.numr/one.numr/two.numr/four.numr/five.numr/six.numr/seven.numr/eight.numr/nine.numr \012\012/Schwa/h.smcp/e.smcp/schwa.smcp/h.smcp/copyright.c2sc/h.smcp/slash.c2sc/h.smcp/h.smcp/backslash.c2sc/h.smcp/numero.c2sc/h.smcp/minute.c2sc/h.smcp/second.c2sc/h.smcp/degree.c2sc/h.smcp/asterisk.c2sc/h.smcp \012/parenleft.c2sc/h.smcp/parenright.c2sc/h.smcp/braceleft.c2sc/h.smcp/braceright.c2sc/h.smcp/bracketleft.c2sc/h.smcp/bracketright.c2sc/h.smcp/exclam.c2sc/h.smcp/exclamdown.c2sc/h.smcp/question.c2sc/h.smcp/questiondown.c2sc/h.smcp \012/h.smcp/quotedblleft.c2sc/h.smcp/quotedblright.c2sc/h.smcp/quoteleft.c2sc/h.smcp/quoteright.c2sc/h.smcp/percent.c2sc/h.smcp/perthousand.c2sc/h.smcp \012"
 );
 classes = (
 {
@@ -70012,7 +70011,7 @@ unicode = 1E9E;
 },
 {
 glyphname = Schwa;
-lastChange = "2020-01-19 20:00:43 +0000";
+lastChange = "2020-02-02 22:40:02 +0000";
 layers = (
 {
 background = {
@@ -123840,19 +123839,210 @@ leftKerningGroup = s.smcp;
 rightKerningGroup = s.smcp;
 },
 {
-color = 0;
 glyphname = schwa.smcp;
-lastChange = "2020-01-31 16:43:49 +0000";
+lastChange = "2020-02-02 22:52:08 +0000";
 layers = (
 {
-layerId = UUID0;
-width = 1200;
-},
+background = {
+paths = (
 {
-layerId = UUID1;
-width = 1200;
+closed = 1;
+nodes = (
+"107 599 LINE",
+"100 553 OFFCURVE",
+"97 500 OFFCURVE",
+"97 461 CURVE SMOOTH",
+"97 156 OFFCURVE",
+"251 -20 OFFCURVE",
+"526 -20 CURVE SMOOTH",
+"818 -20 OFFCURVE",
+"1007 178 OFFCURVE",
+"1007 543 CURVE SMOOTH",
+"1007 913 OFFCURVE",
+"817 1112 OFFCURVE",
+"501 1112 CURVE SMOOTH",
+"365 1112 OFFCURVE",
+"235 1075 OFFCURVE",
+"124 1022 CURVE",
+"124 983 OFFCURVE",
+"145 937 OFFCURVE",
+"182 911 CURVE",
+"280 963 OFFCURVE",
+"385 993 OFFCURVE",
+"487 993 CURVE SMOOTH",
+"715 993 OFFCURVE",
+"852 849 OFFCURVE",
+"852 578 CURVE SMOOTH",
+"852 501 LINE SMOOTH",
+"852 245 OFFCURVE",
+"726 92 OFFCURVE",
+"529 92 CURVE SMOOTH",
+"352 92 OFFCURVE",
+"252 216 OFFCURVE",
+"252 417 CURVE SMOOTH",
+"252 484 LINE",
+"893 484 LINE",
+"893 599 LINE"
+);
 }
 );
+};
+layerId = UUID0;
+paths = (
+{
+closed = 1;
+nodes = (
+"107 599 LINE",
+"100 553 OFFCURVE",
+"97 500 OFFCURVE",
+"97 458 CURVE SMOOTH",
+"97 151 OFFCURVE",
+"253 -23 OFFCURVE",
+"529 -23 CURVE SMOOTH",
+"830 -23 OFFCURVE",
+"1007 185 OFFCURVE",
+"1007 543 CURVE SMOOTH",
+"1007 910 OFFCURVE",
+"825 1108 OFFCURVE",
+"506 1108 CURVE SMOOTH",
+"364 1108 OFFCURVE",
+"235 1069 OFFCURVE",
+"124 1012 CURVE",
+"124 972 OFFCURVE",
+"145 925 OFFCURVE",
+"182 898 CURVE",
+"280 954 OFFCURVE",
+"383 984 OFFCURVE",
+"491 984 CURVE SMOOTH",
+"723 984 OFFCURVE",
+"852 838 OFFCURVE",
+"852 578 CURVE SMOOTH",
+"852 501 LINE SMOOTH",
+"852 250 OFFCURVE",
+"738 92 OFFCURVE",
+"531 92 CURVE SMOOTH",
+"353 92 OFFCURVE",
+"251 210 OFFCURVE",
+"251 417 CURVE SMOOTH",
+"251 479 LINE",
+"893 479 LINE",
+"893 599 LINE"
+);
+}
+);
+userData = {
+RMXScaler = {
+height = 80;
+weight = 110;
+width = 87;
+};
+};
+width = 1099;
+},
+{
+background = {
+paths = (
+{
+closed = 1;
+nodes = (
+"87 676 LINE",
+"74 636 OFFCURVE",
+"61 557 OFFCURVE",
+"61 466 CURVE SMOOTH",
+"61 176 OFFCURVE",
+"222 -26 OFFCURVE",
+"550 -26 CURVE SMOOTH",
+"905 -26 OFFCURVE",
+"1083 201 OFFCURVE",
+"1083 529 CURVE SMOOTH",
+"1083 922 OFFCURVE",
+"860 1132 OFFCURVE",
+"496 1132 CURVE SMOOTH",
+"367 1132 OFFCURVE",
+"226 1103 OFFCURVE",
+"103 1042 CURVE",
+"94 964 OFFCURVE",
+"135 867 OFFCURVE",
+"197 815 CURVE",
+"282 850 OFFCURVE",
+"374 873 OFFCURVE",
+"457 873 CURVE SMOOTH",
+"636 873 OFFCURVE",
+"740 774 OFFCURVE",
+"740 634 CURVE SMOOTH",
+"740 449 LINE SMOOTH",
+"740 300 OFFCURVE",
+"679 214 OFFCURVE",
+"561 214 CURVE SMOOTH",
+"448 214 OFFCURVE",
+"399 295 OFFCURVE",
+"399 375 CURVE SMOOTH",
+"399 420 LINE",
+"851 420 LINE",
+"851 676 LINE"
+);
+}
+);
+};
+layerId = UUID1;
+paths = (
+{
+closed = 1;
+nodes = (
+"92 666 LINE",
+"79 626 OFFCURVE",
+"66 545 OFFCURVE",
+"66 462 CURVE SMOOTH",
+"66 170 OFFCURVE",
+"225 -29 OFFCURVE",
+"554 -29 CURVE SMOOTH",
+"895 -29 OFFCURVE",
+"1083 184 OFFCURVE",
+"1083 548 CURVE SMOOTH",
+"1083 930 OFFCURVE",
+"876 1134 OFFCURVE",
+"515 1134 CURVE SMOOTH",
+"363 1134 OFFCURVE",
+"225 1098 OFFCURVE",
+"101 1035 CURVE",
+"92 957 OFFCURVE",
+"133 860 OFFCURVE",
+"195 808 CURVE",
+"281 846 OFFCURVE",
+"371 873 OFFCURVE",
+"466 873 CURVE SMOOTH",
+"645 873 OFFCURVE",
+"744 784 OFFCURVE",
+"744 644 CURVE SMOOTH",
+"744 431 LINE SMOOTH",
+"744 288 OFFCURVE",
+"688 211 OFFCURVE",
+"562 211 CURVE SMOOTH",
+"440 211 OFFCURVE",
+"392 285 OFFCURVE",
+"392 375 CURVE SMOOTH",
+"392 410 LINE",
+"851 410 LINE",
+"851 666 LINE"
+);
+}
+);
+userData = {
+RMXScaler = {
+height = 81;
+weight = 50;
+width = 89;
+};
+};
+width = 1143;
+}
+);
+rightMetricsKey = o.smcp;
+userData = {
+RMXScaler = {
+source = Schwa;
+};
+};
 },
 {
 glyphname = germandbls.smcp;
