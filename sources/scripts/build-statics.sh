@@ -95,6 +95,13 @@ if [ -f "$file" ]; then
     ttfautohint -I ${file} ${hintedFile} --increase-x-height 9 --stem-width-mode nnn
     cp ${hintedFile} ${file}
     rm -rf ${hintedFile}
+
+    fixedFile=${file/".ttf"/".ttf.fix"}
+    echo "fix hinting in " ${file}
+    gftools fix-hinting ${file}
+    echo "fixed file " ${fixedFile}
+    cp ${fixedFile} ${file}
+    rm -rf ${fixedFile}
 fi 
 done
 
