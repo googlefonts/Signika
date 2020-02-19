@@ -179065,7 +179065,6 @@ UUID1 = 0.1;
 name = "--------";
 },
 {
-exports = 0;
 customParameters = (
 {
 name = familyName;
@@ -179081,7 +179080,6 @@ name = Light;
 weightClass = Light;
 },
 {
-exports = 0;
 customParameters = (
 {
 name = familyName;
@@ -179096,7 +179094,6 @@ UUID1 = 0.291;
 name = Regular;
 },
 {
-exports = 0;
 customParameters = (
 {
 name = familyName;
@@ -179112,7 +179109,6 @@ name = Semibold;
 weightClass = SemiBold;
 },
 {
-exports = 0;
 customParameters = (
 {
 name = familyName;
@@ -179169,7 +179165,6 @@ UUID1 = 0.1;
 name = "--------";
 },
 {
-exports = 0;
 customParameters = (
 {
 name = familyName;
@@ -179736,7 +179731,6 @@ name = Light;
 weightClass = Light;
 },
 {
-exports = 0;
 customParameters = (
 {
 name = familyName;
@@ -180302,7 +180296,6 @@ UUID1 = 0.36;
 name = Regular;
 },
 {
-exports = 0;
 customParameters = (
 {
 name = familyName;
@@ -180869,7 +180862,6 @@ name = Semibold;
 weightClass = SemiBold;
 },
 {
-exports = 0;
 customParameters = (
 {
 name = familyName;
@@ -182579,7 +182571,6 @@ UUID1 = 0.1;
 name = "--------";
 },
 {
-exports = 0;
 customParameters = (
 {
 name = familyName;
@@ -183146,7 +183137,6 @@ name = Light;
 weightClass = Light;
 },
 {
-exports = 0;
 customParameters = (
 {
 name = familyName;
@@ -183712,7 +183702,6 @@ UUID1 = 0.291;
 name = Regular;
 },
 {
-exports = 0;
 customParameters = (
 {
 name = familyName;
@@ -184279,7 +184268,6 @@ name = Semibold;
 weightClass = SemiBold;
 },
 {
-exports = 0;
 customParameters = (
 {
 name = familyName;
