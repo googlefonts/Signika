@@ -197,29 +197,45 @@ https://github.com/googlefonts/fontbakery/blob/master/prebuilt/workarounds/ftxva
 <br>
 </details>
 <details>
-<summary><b>[153] SignikaVF[NEGA,wght].ttf</b></summary>
+<summary><b>[153] Signika[NEGA,wght].ttf</b></summary>
 <details>
-<summary>🔥 <b>FAIL:</b> Checking file is named canonically.</summary>
+<summary>🔥 <b>FAIL:</b> Does DESCRIPTION file contain a upstream Git repo URL?</summary>
 
-* [com.google.fonts/check/canonical_filename](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/canonical_filename)
+* [com.google.fonts/check/description/git_url](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/git_url)
 <pre>--- Rationale ---
 
-A font&#x27;s filename must be composed in the following manner:
-&lt;familyname&gt;-&lt;stylename&gt;.ttf
+The contents of the DESCRIPTION.en-us.html file are displayed on the Google
+Fonts website in the about section of each font family specimen page.
 
-- Nunito-Regular.ttf,
-- Oswald-BoldItalic.ttf
+Since all of the Google Fonts collection is composed of libre-licensed fonts,
+this check enforces a policy that there must be a hypertext link in that page
+directing users to the repository where the font project files are made
+available.
 
-Variable fonts must list the axis tags in alphabetical order in square brackets
-and separated by commas:
-
-- Roboto[wdth,wght].ttf
-- Familyname-Italic[wght].ttf
+Such hosting is typically done on sites like Github, Gitlab, GNU Savannah or
+any other git-based version control service.
 
 
 </pre>
 
-* 🔥 **FAIL** The file 'SignikaVF[NEGA,wght].ttf' must be renamed to 'Signika[NEGA,wght].ttf' according to the Google Fonts naming policy for variable fonts. [code: bad-varfont-filename]
+* 🔥 **FAIL** Please host your font project on a public Git repo (such as GitHub or GitLab) and place a link in the DESCRIPTION.en_us.html file. [code: lacks-git-url]
+
+</details>
+<details>
+<summary>🔥 <b>FAIL:</b> Does DESCRIPTION file mention when a family is available as variable font?</summary>
+
+* [com.google.fonts/check/description/variable_font](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/variable_font)
+<pre>--- Rationale ---
+
+Families with variable fonts do not always mention that in their descriptions.
+Therefore, this check ensures that a standard boilerplate sentence is present
+in the DESCRIPTION.en_us.html files for all those families which are available
+as variable fonts.
+
+
+</pre>
+
+* 🔥 **FAIL** Please mention in the DESCRIPTION.en-us.html that the family is a variable font. This check expects the words 'variable font' to be present in the text e.g 'This font is now available as a variable font.' [code: should-mention-varfonts]
 
 </details>
 <details>
@@ -239,65 +255,19 @@ An OFL.txt file&#x27;s first line should be the font copyright e.g:
 
 </details>
 <details>
-<summary>🔥 <b>FAIL:</b> Is the Grid-fitting and Scan-conversion Procedure ('gasp') table set to optimize rendering?</summary>
+<summary>🔥 <b>FAIL:</b> Font has old ttfautohint applied?</summary>
 
-* [com.google.fonts/check/gasp](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/gasp)
+* [com.google.fonts/check/old_ttfautohint](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/old_ttfautohint)
 <pre>--- Rationale ---
 
-Traditionally version 0 &#x27;gasp&#x27; tables were set so that font sizes below 8 ppem
-had no grid fitting but did have antialiasing. From 9-16 ppem, just grid
-fitting. And fonts above 17ppem had both antialiasing and grid fitting toggled
-on. The use of accelerated graphics cards and higher resolution screens make
-this approach obsolete. Microsoft&#x27;s DirectWrite pushed this even further with
-much improved rendering built into the OS and apps.
-
-In this scenario it makes sense to simply toggle all 4 flags ON for all font
-sizes.
+This check finds which version of ttfautohint was used, by inspecting name
+table entries and then finds which version of ttfautohint is currently
+installed in the system.
 
 
 </pre>
 
-* 🔥 **FAIL** Font is missing the 'gasp' table. Try exporting the font with autohinting enabled.
-If you are dealing with an unhinted font, it can be fixed by running the fonts through the command 'gftools fix-nonhinting'
-GFTools is available at https://pypi.org/project/gftools/ [code: lacks-gasp]
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Font enables smart dropout control in "prep" table instructions?</summary>
-
-* [com.google.fonts/check/smart_dropout](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/smart_dropout)
-<pre>--- Rationale ---
-
-This setup is meant to ensure consistent rendering quality for fonts across all
-devices (with different rendering/hinting capabilities).
-
-Below is the snippet of instructions we expect to see in the fonts:
-B8 01 FF    PUSHW 0x01FF
-85          SCANCTRL (unconditinally turn on
-                      dropout control mode)
-B0 04       PUSHB 0x04
-8D          SCANTYPE (enable smart dropout control)
-
-&quot;Smart dropout control&quot; means activating rules 1, 2 and 5:
-Rule 1: If a pixel&#x27;s center falls within the glyph outline,
-        that pixel is turned on.
-Rule 2: If a contour falls exactly on a pixel&#x27;s center,
-        that pixel is turned on.
-Rule 5: If a scan line between two adjacent pixel centers
-        (either vertical or horizontal) is intersected
-        by both an on-Transition contour and an off-Transition
-        contour and neither of the pixels was already turned on
-        by rules 1 and 2, turn on the pixel which is closer to
-        the midpoint between the on-Transition contour and
-        off-Transition contour. This is &quot;Smart&quot; dropout control.
-
-For more detailed info (such as other rules not enabled in this snippet),
-please refer to the TrueType Instruction Set documentation.
-
-
-</pre>
-
-* 🔥 **FAIL** The 'prep' table does not contain TrueType instructions enabling smart dropout control. To fix, export the font with autohinting enabled, or run ttfautohint on the font, or run the `gftools fix-nonhinting` script. [code: lacks-smart-dropout]
+* 🔥 **FAIL** Failed to parse ttfautohint version values: installed = '1.8.3'; used_in_font = '1.8.1.43-b0c9' [code: parse-error]
 
 </details>
 <details>
@@ -325,6 +295,32 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
+<summary>🔥 <b>FAIL:</b> Font has correct post table version?</summary>
+
+* [com.google.fonts/check/post_table_version](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/post.html#com.google.fonts/check/post_table_version)
+<pre>--- Rationale ---
+
+Apple recommends against using &#x27;post&#x27; table format 3 under most circumstances,
+as it can create problems with some printer drivers and PDF documents. The
+savings in disk space usually does not justify the potential loss in
+functionality.
+Source:
+https://developer.apple.com/fonts/TrueType-Reference-Manual/RM06/Chap6post.html
+
+The CFF2 table does not contain glyph names, so variable OTFs should be allowed
+to use post table version 2.
+
+This check expects:
+- Version 2 for TTF or OTF CFF2 Variable fonts
+- Version 3 for OTF
+
+
+</pre>
+
+* 🔥 **FAIL** Post table should be version 2 instead of 3.0.
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences?</summary>
 
 * [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
@@ -349,94 +345,23 @@ https://github.com/impallari/Raleway/issues/14).
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Does DESCRIPTION file contain broken links?</summary>
+<summary>⚠ <b>WARN:</b> Font contains .notdef as first glyph?</summary>
 
-* [com.google.fonts/check/description/broken_links](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/broken_links)
+* [com.google.fonts/check/mandatory_glyphs](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/mandatory_glyphs)
 <pre>--- Rationale ---
 
-The snippet of HTML in the DESCRIPTION.en_us.html file is added to the font
-family webpage on the Google Fonts website. For that reason, all hyperlinks in
-it must be properly working. 
+The OpenType specification v1.8.2 recommends that the first glyph is the
+.notdef glyph without a codepoint assigned and with a drawing.
+
+https://docs.microsoft.com/en-us/typography/opentype/spec/recom#glyph-0-the-notdef-glyph
+
+Pre-v1.8, it was recommended that a font should also contain a .null, CR and
+space glyph. This might have been relevant for applications on MacOS 9.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: description
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Does DESCRIPTION file contain a upstream Git repo URL?</summary>
-
-* [com.google.fonts/check/description/git_url](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/git_url)
-<pre>--- Rationale ---
-
-The contents of the DESCRIPTION.en-us.html file are displayed on the Google
-Fonts website in the about section of each font family specimen page.
-
-Since all of the Google Fonts collection is composed of libre-licensed fonts,
-this check enforces a policy that there must be a hypertext link in that page
-directing users to the repository where the font project files are made
-available.
-
-Such hosting is typically done on sites like Github, Gitlab, GNU Savannah or
-any other git-based version control service.
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: description
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Does DESCRIPTION file mention when a family is available as variable font?</summary>
-
-* [com.google.fonts/check/description/variable_font](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/variable_font)
-<pre>--- Rationale ---
-
-Families with variable fonts do not always mention that in their descriptions.
-Therefore, this check ensures that a standard boilerplate sentence is present
-in the DESCRIPTION.en_us.html files for all those families which are available
-as variable fonts.
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: description
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Is this a proper HTML snippet?</summary>
-
-* [com.google.fonts/check/description/valid_html](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/valid_html)
-<pre>--- Rationale ---
-
-When packaging families for being pushed to the `google/fonts` git repo, if
-there is no DESCRIPTION.en_us.html file, some older versions of the
-`add_font.py` tool insert a dummy description file which contains invalid html.
-
-This file needs to either be replaced with an existing description file or
-edited by hand.
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: descfile
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> DESCRIPTION.en_us.html must have more than 200 bytes.</summary>
-
-* [com.google.fonts/check/description/min_length](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/min_length)
-
-* 💤 **SKIP** Unfulfilled Conditions: description
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> DESCRIPTION.en_us.html must have less than 1000 bytes.</summary>
-
-* [com.google.fonts/check/description/max_length](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/max_length)
-
-* 💤 **SKIP** Unfulfilled Conditions: description
+* ⚠ **WARN** Font should contain the .notdef glyph as the first glyph, it should not have a Unicode value assigned and should contain a drawing.
 
 </details>
 <details>
@@ -564,14 +489,6 @@ When in doubt, please choose OFL for new font projects.
 </pre>
 
 * 💤 **SKIP** Unfulfilled Conditions: familyname
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Font has ttfautohint params?</summary>
-
-* [com.google.fonts/check/has_ttfautohint_params](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/has_ttfautohint_params)
-
-* 💤 **SKIP** Font appears to our heuristic as not hinted using ttfautohint. [code: not-hinted]
 
 </details>
 <details>
@@ -1022,28 +939,6 @@ that is http://namecheck.fontdata.com
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: is_hinted
-
-</details>
-<details>
 <summary>💤 <b>SKIP:</b> Directory name in GFonts repo structure must match NameID 1 of the regular.</summary>
 
 * [com.google.fonts/check/repo/dirname_matches_nameid_1](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/dirname_matches_nameid_1)
@@ -1089,23 +984,46 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Each font in set of sibling families must have the same set of vertical metrics values.</summary>
+<summary>💤 <b>SKIP:</b> Font has **proper** whitespace glyph names?</summary>
 
-* [com.google.fonts/check/superfamily/vertical_metrics](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/superfamily/vertical_metrics)
+* [com.google.fonts/check/whitespace_glyphnames](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_glyphnames)
+
+* 💤 **SKIP** Font has version 3 post table.
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Glyph names are all valid?</summary>
+
+* [com.google.fonts/check/valid_glyphnames](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/valid_glyphnames)
 <pre>--- Rationale ---
 
-We may want all fonts within a super-family (all sibling families) to have the
-same vertical metrics so their line spacing is consistent across the
-super-family.
+Microsoft&#x27;s recommendations for OpenType Fonts states the following:
 
-This is an experimental extended version of
-com.google.fonts/check/superfamily/vertical_metrics and for now it will only
-result in WARNs.
+&#x27;NOTE: The PostScript glyph name must be no longer than 31 characters, include
+only uppercase or lowercase English letters, European digits, the period or the
+underscore, i.e. from the set [A-Za-z0-9_.] and should start with a letter,
+except the special glyph name &quot;.notdef&quot; which starts with a period.&#x27;
+
+https://docs.microsoft.com/en-us/typography/opentype/spec/recom#post-table
 
 
 </pre>
 
-* 💤 **SKIP** Sibling families were not detected.
+* 💤 **SKIP** TrueType fonts with a format 3.0 post table contain no glyph names.
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Font contains unique glyph names?</summary>
+
+* [com.google.fonts/check/unique_glyphnames](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/unique_glyphnames)
+<pre>--- Rationale ---
+
+Duplicate glyph names prevent font installation on Mac OS X.
+
+
+</pre>
+
+* 💤 **SKIP** TrueType fonts with a format 3.0 post table contain no glyph names.
 
 </details>
 <details>
@@ -1267,29 +1185,13 @@ after ttfautohint usage versus unhinted font files.
 
 * ℹ **INFO** Hinting filesize impact:
 
-|  | fonts/signikavf/SignikaVF[NEGA,wght].ttf |
+|  | fonts/signikavf/Signika[NEGA,wght].ttf |
 |:--- | ---:|
-| Dehinted Size | 334.3kb |
-| Hinted Size | 333.5kb |
-| Increase | -772 bytes |
-| Change   | -0.2 % |
+| Dehinted Size | 206.3kb |
+| Hinted Size | 231.6kb |
+| Increase | 25.3kb |
+| Change   | 12.3 % |
  [code: size-impact]
-
-</details>
-<details>
-<summary>ℹ <b>INFO:</b> Font has old ttfautohint applied?</summary>
-
-* [com.google.fonts/check/old_ttfautohint](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/old_ttfautohint)
-<pre>--- Rationale ---
-
-This check finds which version of ttfautohint was used, by inspecting name
-table entries and then finds which version of ttfautohint is currently
-installed in the system.
-
-
-</pre>
-
-* ℹ **INFO** Could not detect which version of ttfautohint was used in this font. It is typically specified as a comment in the font version entries of the 'name' table. Such font version strings are currently: ['Version 2.000'] [code: version-not-detected]
 
 </details>
 <details>
@@ -1313,6 +1215,37 @@ https://davelab6.github.io/epar/
 
 </details>
 <details>
+<summary>ℹ <b>INFO:</b> Is the Grid-fitting and Scan-conversion Procedure ('gasp') table set to optimize rendering?</summary>
+
+* [com.google.fonts/check/gasp](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/gasp)
+<pre>--- Rationale ---
+
+Traditionally version 0 &#x27;gasp&#x27; tables were set so that font sizes below 8 ppem
+had no grid fitting but did have antialiasing. From 9-16 ppem, just grid
+fitting. And fonts above 17ppem had both antialiasing and grid fitting toggled
+on. The use of accelerated graphics cards and higher resolution screens make
+this approach obsolete. Microsoft&#x27;s DirectWrite pushed this even further with
+much improved rendering built into the OS and apps.
+
+In this scenario it makes sense to simply toggle all 4 flags ON for all font
+sizes.
+
+
+</pre>
+
+* ℹ **INFO** These are the ppm ranges declared on the gasp table:
+
+PPM <= 65535:
+	flag = 0x0F
+	- Use grid-fitting
+	- Use grayscale rendering
+	- Use gridfitting with ClearType symmetric smoothing
+	- Use smoothing along multiple axes with ClearType®
+ [code: ranges]
+* 🍞 **PASS** The 'gasp' table is correctly set, with one gaspRange:value of 0xFFFF:0x0F.
+
+</details>
+<details>
 <summary>ℹ <b>INFO:</b> Check for font-v versioning.</summary>
 
 * [com.google.fonts/check/fontv](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fontv)
@@ -1327,7 +1260,7 @@ enforcing it.
 
 </pre>
 
-* ℹ **INFO** Version string is: "Version 2.000"
+* ℹ **INFO** Version string is: "Version 2.000; ttfautohint (v1.8.1.43-b0c9) -l 8 -r 50 -G 200 -x 9 -D latn -f none -a nnn -X """
 The version string must ideally include a git commit hash and either a "dev" or a "release" suffix such as in the example below:
 "Version 1.3; git-0d08353-release" [code: bad-format]
 
@@ -1349,7 +1282,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [DSIG, GSUB, loca, GPOS]
+* ℹ **INFO** This font contains the following optional tables [cvt , gasp, GPOS, GSUB, DSIG, prep, loca, fpgm]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -1369,6 +1302,90 @@ checks.
 </pre>
 
 * ℹ **INFO** fonts/signikavf [code: family-path]
+* ℹ **INFO** fonts/signikavfsc [code: family-path]
+
+</details>
+<details>
+<summary>ℹ <b>INFO:</b> Check if OS/2 xAvgCharWidth is correct.</summary>
+
+* [com.google.fonts/check/xavgcharwidth](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/os2.html#com.google.fonts/check/xavgcharwidth)
+
+* ℹ **INFO** OS/2 xAvgCharWidth is 1041 but it should be 1045 which corresponds to the average of the widths of all glyphs in the font. These are similar values, which may be a symptom of the slightly different calculation of the xAvgCharWidth value in font editors. There's further discussion on this at https://github.com/googlefonts/fontbakery/issues/1622
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Checking file is named canonically.</summary>
+
+* [com.google.fonts/check/canonical_filename](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/canonical_filename)
+<pre>--- Rationale ---
+
+A font&#x27;s filename must be composed in the following manner:
+&lt;familyname&gt;-&lt;stylename&gt;.ttf
+
+- Nunito-Regular.ttf,
+- Oswald-BoldItalic.ttf
+
+Variable fonts must list the axis tags in alphabetical order in square brackets
+and separated by commas:
+
+- Roboto[wdth,wght].ttf
+- Familyname-Italic[wght].ttf
+
+
+</pre>
+
+* 🍞 **PASS** fonts/signikavf/Signika[NEGA,wght].ttf is named canonically.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Does DESCRIPTION file contain broken links?</summary>
+
+* [com.google.fonts/check/description/broken_links](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/broken_links)
+<pre>--- Rationale ---
+
+The snippet of HTML in the DESCRIPTION.en_us.html file is added to the font
+family webpage on the Google Fonts website. For that reason, all hyperlinks in
+it must be properly working. 
+
+
+</pre>
+
+* 🍞 **PASS** All links in the DESCRIPTION file look good!
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Is this a proper HTML snippet?</summary>
+
+* [com.google.fonts/check/description/valid_html](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/valid_html)
+<pre>--- Rationale ---
+
+When packaging families for being pushed to the `google/fonts` git repo, if
+there is no DESCRIPTION.en_us.html file, some older versions of the
+`add_font.py` tool insert a dummy description file which contains invalid html.
+
+This file needs to either be replaced with an existing description file or
+edited by hand.
+
+
+</pre>
+
+* 🍞 **PASS** fonts/signikavf/DESCRIPTION.en_us.html is a propper HTML file.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> DESCRIPTION.en_us.html must have more than 200 bytes.</summary>
+
+* [com.google.fonts/check/description/min_length](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/min_length)
+
+* 🍞 **PASS** DESCRIPTION.en_us.html is larger than 200 bytes.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> DESCRIPTION.en_us.html must have less than 1000 bytes.</summary>
+
+* [com.google.fonts/check/description/max_length](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/max_length)
+
+* 🍞 **PASS** DESCRIPTION.en_us.html is smaller than 1000 bytes.
 
 </details>
 <details>
@@ -1490,6 +1507,14 @@ Longer strings are likely instances of the FontLab bug.
 * [com.google.fonts/check/name/version_format](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/version_format)
 
 * 🍞 **PASS** Version format in NAME table entries is correct.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Font has ttfautohint params?</summary>
+
+* [com.google.fonts/check/has_ttfautohint_params](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/has_ttfautohint_params)
+
+* 🍞 **PASS** Font has ttfautohint params (-l 8 -r 50 -G 200 -x 9 -D latn -f none -a nnn -X "") [code: ok]
 
 </details>
 <details>
@@ -1654,6 +1679,44 @@ https://docs.microsoft.com/en-us/typography/opentype/spec/otvaroverview#variatio
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> Font enables smart dropout control in "prep" table instructions?</summary>
+
+* [com.google.fonts/check/smart_dropout](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/smart_dropout)
+<pre>--- Rationale ---
+
+This setup is meant to ensure consistent rendering quality for fonts across all
+devices (with different rendering/hinting capabilities).
+
+Below is the snippet of instructions we expect to see in the fonts:
+B8 01 FF    PUSHW 0x01FF
+85          SCANCTRL (unconditinally turn on
+                      dropout control mode)
+B0 04       PUSHB 0x04
+8D          SCANTYPE (enable smart dropout control)
+
+&quot;Smart dropout control&quot; means activating rules 1, 2 and 5:
+Rule 1: If a pixel&#x27;s center falls within the glyph outline,
+        that pixel is turned on.
+Rule 2: If a contour falls exactly on a pixel&#x27;s center,
+        that pixel is turned on.
+Rule 5: If a scan line between two adjacent pixel centers
+        (either vertical or horizontal) is intersected
+        by both an on-Transition contour and an off-Transition
+        contour and neither of the pixels was already turned on
+        by rules 1 and 2, turn on the pixel which is closer to
+        the midpoint between the on-Transition contour and
+        off-Transition contour. This is &quot;Smart&quot; dropout control.
+
+For more detailed info (such as other rules not enabled in this snippet),
+please refer to the TrueType Instruction Set documentation.
+
+
+</pre>
+
+* 🍞 **PASS** 'prep' table contains instructions enabling smart dropout control.
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> There must not be VTT Talk sources in the font.</summary>
 
 * [com.google.fonts/check/vttclean](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vttclean)
@@ -1729,6 +1792,28 @@ the users&#x27; typical expectations of a traditional static font workflow.
 
 The named instances on the weight axis of a variable font must have coordinates
 that are multiples of 100 on the design space.
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
 
 
 </pre>
@@ -1901,39 +1986,11 @@ take care of their own situation.
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Font contains .notdef as first glyph?</summary>
-
-* [com.google.fonts/check/mandatory_glyphs](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/mandatory_glyphs)
-<pre>--- Rationale ---
-
-The OpenType specification v1.8.2 recommends that the first glyph is the
-.notdef glyph without a codepoint assigned and with a drawing.
-
-https://docs.microsoft.com/en-us/typography/opentype/spec/recom#glyph-0-the-notdef-glyph
-
-Pre-v1.8, it was recommended that a font should also contain a .null, CR and
-space glyph. This might have been relevant for applications on MacOS 9.
-
-
-</pre>
-
-* 🍞 **PASS** Font contains the .notdef glyph as the first glyph, it does not have a Unicode value assigned and contains a drawing.
-
-</details>
-<details>
 <summary>🍞 <b>PASS:</b> Font contains glyphs for whitespace characters?</summary>
 
 * [com.google.fonts/check/whitespace_glyphs](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_glyphs)
 
 * 🍞 **PASS** Font contains glyphs for whitespace characters.
-
-</details>
-<details>
-<summary>🍞 <b>PASS:</b> Font has **proper** whitespace glyph names?</summary>
-
-* [com.google.fonts/check/whitespace_glyphnames](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_glyphnames)
-
-* 🍞 **PASS** Font has **proper** whitespace glyph names.
 
 </details>
 <details>
@@ -1961,46 +2018,31 @@ tables.
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Glyph names are all valid?</summary>
-
-* [com.google.fonts/check/valid_glyphnames](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/valid_glyphnames)
-<pre>--- Rationale ---
-
-Microsoft&#x27;s recommendations for OpenType Fonts states the following:
-
-&#x27;NOTE: The PostScript glyph name must be no longer than 31 characters, include
-only uppercase or lowercase English letters, European digits, the period or the
-underscore, i.e. from the set [A-Za-z0-9_.] and should start with a letter,
-except the special glyph name &quot;.notdef&quot; which starts with a period.&#x27;
-
-https://docs.microsoft.com/en-us/typography/opentype/spec/recom#post-table
-
-
-</pre>
-
-* 🍞 **PASS** Glyph names are all valid.
-
-</details>
-<details>
-<summary>🍞 <b>PASS:</b> Font contains unique glyph names?</summary>
-
-* [com.google.fonts/check/unique_glyphnames](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/unique_glyphnames)
-<pre>--- Rationale ---
-
-Duplicate glyph names prevent font installation on Mac OS X.
-
-
-</pre>
-
-* 🍞 **PASS** Font contains unique glyph names.
-
-</details>
-<details>
 <summary>🍞 <b>PASS:</b> Checking with fontTools.ttx</summary>
 
 * [com.google.fonts/check/ttx-roundtrip](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/ttx-roundtrip)
 
 * 🍞 **PASS** Hey! It all looks good!
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Each font in set of sibling families must have the same set of vertical metrics values.</summary>
+
+* [com.google.fonts/check/superfamily/vertical_metrics](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/superfamily/vertical_metrics)
+<pre>--- Rationale ---
+
+We may want all fonts within a super-family (all sibling families) to have the
+same vertical metrics so their line spacing is consistent across the
+super-family.
+
+This is an experimental extended version of
+com.google.fonts/check/superfamily/vertical_metrics and for now it will only
+result in WARNs.
+
+
+</pre>
+
+* 🍞 **PASS** Vertical metrics are the same across the super-family.
 
 </details>
 <details>
@@ -2040,14 +2082,6 @@ on Variable Fonts.
 * [com.google.fonts/check/font_version](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/head.html#com.google.fonts/check/font_version)
 
 * 🍞 **PASS** All font version fields match.
-
-</details>
-<details>
-<summary>🍞 <b>PASS:</b> Check if OS/2 xAvgCharWidth is correct.</summary>
-
-* [com.google.fonts/check/xavgcharwidth](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/os2.html#com.google.fonts/check/xavgcharwidth)
-
-* 🍞 **PASS** OS/2 xAvgCharWidth value is correct.
 
 </details>
 <details>
@@ -2091,32 +2125,6 @@ at all.
 </pre>
 
 * 🍞 **PASS** At least one code page is defined.
-
-</details>
-<details>
-<summary>🍞 <b>PASS:</b> Font has correct post table version?</summary>
-
-* [com.google.fonts/check/post_table_version](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/post.html#com.google.fonts/check/post_table_version)
-<pre>--- Rationale ---
-
-Apple recommends against using &#x27;post&#x27; table format 3 under most circumstances,
-as it can create problems with some printer drivers and PDF documents. The
-savings in disk space usually does not justify the potential loss in
-functionality.
-Source:
-https://developer.apple.com/fonts/TrueType-Reference-Manual/RM06/Chap6post.html
-
-The CFF2 table does not contain glyph names, so variable OTFs should be allowed
-to use post table version 2.
-
-This check expects:
-- Version 2 for TTF or OTF CFF2 Variable fonts
-- Version 3 for OTF
-
-
-</pre>
-
-* 🍞 **PASS** Font has post table version 2.
 
 </details>
 <details>
@@ -2433,5 +2441,5 @@ On the &#x27;wdth&#x27; (Width) axis, the valid coordinate range is 1-1000
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 5 | 2 | 76 | 7 | 76 | 0 |
-| 0% | 3% | 1% | 46% | 4% | 46% | 0% |
+| 0 | 6 | 3 | 70 | 8 | 79 | 0 |
+| 0% | 4% | 2% | 42% | 5% | 48% | 0% |
