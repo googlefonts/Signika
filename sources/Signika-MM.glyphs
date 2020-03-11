@@ -1,15 +1,16 @@
 {
-.appVersion = "1295";
+.appVersion = "1300";
 DisplayStrings = (
-"Å/Aringacute/Idieresisacute/Umacrondieresis/Emacronacute/Emacrongrave/Omacronacute/Omacrongrave/Otildeacute/Otildedieresis/Utildeacute/Scarondotaccent  /Sacutedotaccent \012/circumflexcomb_acutecomb/circumflexcomb_gravecomb/brevecomb_acutecomb/brevecomb_gravecomb/circumflexcomb_hookabovecomb/brevecomb_hookabovecomb/circumflexcomb_tildecomb/brevecomb_tildecomb/brevecomb \012/circumflexcomb_acutecomb.case/circumflexcomb_gravecomb.case/brevecomb_acutecomb.case/brevecomb_gravecomb.case/brevecomb_hookabovecomb.case/brevecomb_tildecomb.case/circumflexcomb_tildecomb.case/circumflexcomb_hookabovecomb.case \012/acircumflexacute/abrevetilde/acircumflexhookabove/ecircumflexgrave/acircumflextilde/abrevehookabove/abreveacute/ecircumflextilde/ecircumflexhookabove/abrevegrave/ocircumflexhookabove/ocircumflextilde \012/acircumflexacute/acircumflexgrave/acircumflextilde/acircumflexacute á/abrevegrave/ecircumflexacute/ecircumflexgrave/ocircumflexacute/ocircumflexgrave \012/Acircumflexacute/Acircumflexgrave/Acircumflexhookabove/Acircumflextilde/Abreveacute/Abrevegrave/Abrevehookabove/Abrevetilde  \012/Ecircumflexacute/Ecircumflexgrave/Ecircumflexhookabove/Ecircumflextilde/Ocircumflexacute/Ocircumflexgrave/Ocircumflexhookabove/Ocircumflextilde \012O/Ohorn OOU/Uhorn UUUo/ohorn ooo u/uhorn uu \012/Ohornacute  /Ohorngrave  /Ohorntilde  /Uhornacute  /Uhorngrave  /Uhorntilde \012/ohornacute  /ohorngrave  /ohorntilde  /uhornacute  /uhorngrave  /uhorntilde \012/ahookabove/ahookabove àáã/abreve/ehookabove/ihookabove/ohookabove/uhookabove/yhookabove \012ÈÉ/Ecaron/Etilde/Ebreve/Ehookabove/Ahookabove/Ihookabove/Ohookabove/Uhookabove/Yhookabove \012/aringacute/idieresisacute/umacrondieresis/emacronacute/emacrongrave/omacronacute/omacrongrave/otildeacute/otildedieresis/utildeacute/scarondotaccent  /sacutedotaccent \012\012\012 \012",
-"/numero H/numero 50/zero.zero 123745689\012/euro $¢£¥/florin ¤/cedi/colonsign/dong/franc/guarani/kip/lira/liraTurkish/peso/ruble/rupeeIndian/manat/naira/won/peseta \012345/euro  Euro 00/euro 00\012156$ Dollar 00$00\012134¢ Cent 00¢00\012278£ Sterling 00£00\012154£ Yen 00c00\012623/florin  Florin 00/florin 00 \012652¤ Currency 00¤00\012829/naira  Naira 00/naira 00 \012652/lira  Sterling 00/lira 00\012986/franc  Franc 00/franc 00\012876/peso  Peso 00/peso 00\012264/ruble  Ruble 00/ruble 00\012123/cedi  Cedi 00/cedi 00\012543/kip  Kip 00/kip 00\012654/dong  Dong 00/dong 00\012765/liraTurkish  Lira 00/liraTurkish 00\012876/guarani  Guarani 00/guarani 00\012986/manat  Manat 00/manat 00\012678/rupeeIndian  Rupee 00/rupeeIndian 00\012234/colonsign  Colonsign 00/colonsign 00\012456/peseta  Peseta 00/peseta 00\012345/won  Won 00/won 00\012\012\012Hello /zero.ss01/zero.zero.ss01/one.ss01/two.ss01/three.ss01/four.ss01/five.ss01/six.ss01/seven.ss01/eight.ss01/nine.ss01 \012\012/numero 5\012/numero/five.ss01 \012\0125a+6b/minus 10±÷×=/approxequal/notequal <>/lessequal/greaterequal ¬55/radical 5/infinity 5\012#0  5°C 5+5 a+b\0125/minus 5/figuredash 50-5/endash 5 \012\012/horizontalbar Fancy a tea?\012/horizontalbar Fancy a tea?\012\012/zero.ss01/zero.zero.ss01/one.ss01/two.ss01/three.ss01/four.ss01 +/five.ss01 °\0125n 5a\012\012",
-"Number 0/zero.zero 123456789\0125/numero ªº°/minute/second %/perthousand $¥£/florin/euro/franc/cedi/guarani/lira ¢¤/colonsign/dong/euro/liraTurkish/naira/won/peseta/peso/ruble/rupeeIndian/manat/kip 0\012\012Number /zero.ss01/zero.zero.ss01/one.ss01/two.ss01/three.ss01/four.ss01/five.ss01/six.ss01/seven.ss01/eight.ss01/nine.ss01 \012/five.ss01/one.ss01/numero.ss01/ordfeminine.ss01/ordmasculine.ss01/degree.ss01/minute.ss01/second.ss01/percent.ss01/perthousand.ss01  /dollar.ss01/cent.ss01/yen.ss01/sterling.ss01/currency.ss01/cedi.ss01/manat.ss01/euro.ss01/franc.ss01/guarani.ss01/kip.ss01/lira.ss01/colonsign.ss01/dong.ss01/florin.ss01/liraTurkish.ss01/naira.ss01/peseta.ss01/peso.ss01/ruble.ss01/rupeeIndian.ss01/won.ss01 \012/zero.ss01/peseta.ss01/zero.ss01/dollar.ss01/zero.ss01/yen.ss01/zero.ss01/cent.ss01/zero.ss01/sterling.ss01/zero.ss01/currency.ss01/zero.ss01/cedi.ss01/zero.ss01/colonsign.ss01/zero.ss01/rupeeIndian.ss01/zero.ss01/zero.ss01/florin.ss01/zero.ss01/euro.ss01/zero.ss01/dong.ss01/zero.ss01/franc.ss01/zero.ss01/manat.ss01/zero.ss01/kip.ss01/zero.ss01/lira.ss01/zero.ss01/guarani.ss01/zero.ss01/euro.ss01/zero.ss01/naira.ss01/zero.ss01/won.ss01/zero.ss01/ruble.ss01/zero.ss01/peso.ss01/zero.ss01/liraTurkish.ss01/zero.ss01 \012\012/zero.c2sc/zero.zero.c2sc/one.c2sc/two.c2sc/three.c2sc/four.c2sc/five.c2sc/six.c2sc/seven.c2sc/eight.c2sc/nine.c2sc \012/numero.c2sc/ordfeminine.c2sc/ordmasculine.c2sc/degree.c2sc/minute.c2sc/second.c2sc/percent.c2sc/perthousand.c2sc \012\012/zerosuperior ¹²³/foursuperior/fivesuperior/sixsuperior/sevensuperior/eightsuperior/ninesuperior \012/zeroinferior/oneinferior/twoinferior/threeinferior/fourinferior/fiveinferior/sixinferior/seveninferior/eightinferior/nineinferior \012/zero.dnom/one.dnom/two.dnom/three.dnom/four.dnom/five.dnom/six.dnom/seven.dnom/eight.dnom/nine.dnom \012/zero.numr/one.numr/two.numr/three.numr/four.numr/five.numr/six.numr/seven.numr/eight.numr/nine.numr \012/fraction  2½  /two.ss01/onethird   /twothirds ¼¾/oneeighth/threeeighths/fiveeighths/seveneighths",
-"\012/h.smcp/h.smcp/uhorn.smcp/a.smcp/h.smcp/h.smcp/uhorn.smcp/b.smcp/h.smcp/h.smcp/uhorn.smcp/c.smcp/h.smcp/h.smcp/uhorn.smcp/d.smcp/h.smcp/h.smcp/uhorn.smcp/e.smcp/h.smcp/h.smcp/uhorn.smcp/f.smcp/h.smcp/h.smcp/uhorn.smcp/g.smcp  /h.smcp/h.smcp/uhorn.smcp/h.smcp/h.smcp/h.smcp/uhorn.smcp/i.smcp/h.smcp/h.smcp/uhorn.smcp/j.smcp/h.smcp/h.smcp/uhorn.smcp/k.smcp/h.smcp/h.smcp/uhorn.smcp/l.smcp/h.smcp/h.smcp/uhorn.smcp/m.smcp/h.smcp/h.smcp/uhorn.smcp/n.smcp  /h.smcp/h.smcp/uhorn.smcp/o.smcp/h.smcp/h.smcp/uhorn.smcp/p.smcp/h.smcp/h.smcp/uhorn.smcp/q.smcp/h.smcp/h.smcp/uhorn.smcp/q.smcp.ss02/h.smcp/h.smcp/uhorn.smcp/r.smcp/h.smcp/h.smcp/uhorn.smcp/s.smcp/h.smcp/h.smcp/uhorn.smcp/t.smcp  /h.smcp/h.smcp/uhorn.smcp/u.smcp A/h.smcp/h.smcp/uhorn.smcp/v.smcp/h.smcp/h.smcp/uhorn.smcp/w.smcp/h.smcp/h.smcp/uhorn.smcp/x.smcp/h.smcp/h.smcp/uhorn.smcp/y.smcp/h.smcp/h.smcp/uhorn.smcp/z.smcp \012\012/h.smcp/h.smcp/uhorn.smcp A/h.smcp/h.smcp/uhorn.smcp B/h.smcp/h.smcp/uhorn.smcp C/h.smcp/h.smcp/uhorn.smcp D/h.smcp/h.smcp/uhorn.smcp E/h.smcp/h.smcp/uhorn.smcp F/h.smcp/h.smcp/uhorn.smcp G/h.smcp/h.smcp/uhorn.smcp H/h.smcp/h.smcp/uhorn.smcp I/h.smcp/h.smcp/uhorn.smcp J/h.smcp/h.smcp/uhorn.smcp K/h.smcp/h.smcp/uhorn.smcp L/h.smcp/h.smcp/uhorn.smcp M/h.smcp/h.smcp/uhorn.smcp N/h.smcp/h.smcp/uhorn.smcp O/h.smcp/h.smcp/uhorn.smcp P/h.smcp/h.smcp/uhorn.smcp Q/h.smcp/h.smcp/uhorn.smcp/Q.ss02/h.smcp/h.smcp/uhorn.smcp R/h.smcp/h.smcp/uhorn.smcp S/h.smcp/h.smcp/uhorn.smcp T\012/h.smcp/h.smcp/uhorn.smcp U/h.smcp/h.smcp/uhorn.smcp V/h.smcp/h.smcp/uhorn.smcp W\012/h.smcp/h.smcp/uhorn.smcp X/h.smcp/h.smcp/uhorn.smcp Y/h.smcp/h.smcp/uhorn.smcp Z\012\012UJAHH/Uhorn AHH/Uhorn BHH/Uhorn CHH/Uhorn DHH/Uhorn EHH/Uhorn FHH/Uhorn GHH/Uhorn HHH/Uhorn IHH/Uhorn JHH/Uhorn KHH/Uhorn LHH/Uhorn MHH/Uhorn NH\012H/Uhorn OHH/Uhorn PHH/Uhorn QHH/Uhorn/Q.ss02 HH/Uhorn RHH/Uhorn SHH/Uhorn THH/Uhorn UHH/Uhorn VHH/Uhorn WHH/Uhorn XHH/Uhorn YHH/Uhorn Z\012\012HH/Uhorn/a.smcp/h.smcp/h.smcp   HH/Uhorn/b.smcp/h.smcp/h.smcp  HH/Uhorn/c.smcp/h.smcp/h.smcp  HH/Uhorn/d.smcp/h.smcp/h.smcp  HH/Uhorn/e.smcp/h.smcp/h.smcp  HH/Uhorn/f.smcp/h.smcp/h.smcp  HH/Uhorn/g.smcp/h.smcp/h.smcp  HH/Uhorn/h.smcp/h.smcp/h.smcp  HH/Uhorn/i.smcp/h.smcp/h.smcp  HH/Uhorn/j.smcp/h.smcp/h.smcp  HH/Uhorn/k.smcp/h.smcp/h.smcp  HH/Uhorn/l.smcp/h.smcp/h.smcp  HH/Uhorn/m.smcp/h.smcp/h.smcp  HH/Uhorn/n.smcp/h.smcp/h.smcp  HH/Uhorn/o.smcp/h.smcp/h.smcp  HH/Uhorn/p.smcp/h.smcp/h.smcp  HH/Uhorn/q.smcp/h.smcp/h.smcp  HH/Uhorn/q.smcp.ss02/h.smcp/h.smcp  HH/Uhorn/r.smcp/h.smcp/h.smcp  HH/Uhorn/s.smcp/h.smcp/h.smcp  HH/Uhorn/t.smcp/h.smcp/h.smcp  HH/Uhorn/u.smcp/h.smcp/h.smcp  HH/Uhorn/v.smcp/h.smcp/h.smcp  HH/Uhorn/w.smcp/h.smcp/h.smcp  HH/Uhorn/x.smcp/h.smcp/h.smcp  HH/Uhorn/y.smcp/h.smcp/h.smcp  HH/Uhorn///z.smcp/h.smcp/h.smcp  \012\012HH/Uhorn ann HH/Uhorn bnn HH/Uhorn cnn HH/Uhorn dnn HH/Uhorn enn HH/Uhorn fnn HH/Uhorn gnn HH/Uhorn hnn HH/Uhorn inn HH/Uhorn jnn HH/Uhorn knn HH/Uhorn lnn HH/Uhorn mnn HH/Uhorn nnn HH/Uhorn onn HH/Uhorn pnn HH/Uhorn qnn HH/Uhorn rnn HH/Uhorn snn HH/Uhorn tnn HH/Uhorn unn HH/Uhorn vnn HH/Uhorn wnn HH/Uhorn xnn HH/Uhorn ynn HH/Uhorn znn \012\012/uhorn ann /uhorn bnn /uhorn cnn /uhorn dnn /uhorn enn /uhorn fnn /uhorn gnn /uhorn hnn /uhorn inn /uhorn jnn /uhorn knn /uhorn lnn /uhorn mnn /uhorn nnn /uhorn onn /uhorn pnn /uhorn qnn /uhorn rnn /uhorn snn /uhorn tnn /uhorn unn /uhorn vnn /uhorn wnn /uhorn xnn /uhorn ynn /uhorn znn",
-"\012/h.smcp/h.smcp/ohorn.smcp/a.smcp/h.smcp/h.smcp/o.smcp/a.smcp/h.smcp/h.smcp/ohorn.smcp/b.smcp/h.smcp/h.smcp/ohorn.smcp/c.smcp/h.smcp/h.smcp/ohorn.smcp/d.smcp/h.smcp/h.smcp/ohorn.smcp/e.smcp/h.smcp/h.smcp/ohorn.smcp/f.smcp/h.smcp/h.smcp/ohorn.smcp/g.smcp  /h.smcp/h.smcp/ohorn.smcp/h.smcp/h.smcp/h.smcp/ohorn.smcp/i.smcp/h.smcp/h.smcp/ohorn.smcp/j.smcp/h.smcp/h.smcp/ohorn.smcp/k.smcp/h.smcp/h.smcp/ohorn.smcp/l.smcp/h.smcp/h.smcp/ohorn.smcp/m.smcp/h.smcp/h.smcp/ohorn.smcp/n.smcp  /h.smcp/h.smcp/ohorn.smcp/o.smcp/h.smcp/h.smcp/ohorn.smcp/p.smcp/h.smcp/h.smcp/ohorn.smcp/q.smcp/h.smcp/h.smcp/ohorn.smcp/q.smcp.ss02/h.smcp/h.smcp/ohorn.smcp/r.smcp/h.smcp/h.smcp/ohorn.smcp/s.smcp/h.smcp/h.smcp/ohorn.smcp/t.smcp  /h.smcp/h.smcp/ohorn.smcp/u.smcp A/h.smcp/h.smcp/ohorn.smcp/v.smcp/h.smcp/h.smcp/ohorn.smcp/w.smcp/h.smcp/h.smcp/ohorn.smcp/x.smcp/h.smcp/h.smcp/ohorn.smcp/y.smcp/h.smcp/h.smcp/ohorn.smcp/z.smcp \012\012/h.smcp/h.smcp/ohorn.smcp A/o.smcp/h.smcp/h.smcp/ohorn.smcp B/h.smcp/h.smcp/ohorn.smcp C/h.smcp/h.smcp/ohorn.smcp D/h.smcp/h.smcp/ohorn.smcp E/h.smcp/h.smcp/ohorn.smcp F/h.smcp/h.smcp/ohorn.smcp G/h.smcp/h.smcp/ohorn.smcp H/h.smcp/h.smcp/ohorn.smcp I/h.smcp/h.smcp/ohorn.smcp J/h.smcp/h.smcp/ohorn.smcp K/h.smcp/h.smcp/ohorn.smcp L/h.smcp/h.smcp/ohorn.smcp M/h.smcp/h.smcp/ohorn.smcp N/h.smcp/h.smcp/ohorn.smcp O/h.smcp/h.smcp/ohorn.smcp P/h.smcp/h.smcp/ohorn.smcp Q/h.smcp/h.smcp/ohorn.smcp/Q.ss02/h.smcp/h.smcp/ohorn.smcp R/h.smcp/h.smcp/ohorn.smcp S/h.smcp/h.smcp/ohorn.smcp T\012/h.smcp/h.smcp/ohorn.smcp U/h.smcp/h.smcp/ohorn.smcp V/h.smcp/h.smcp/ohorn.smcp W\012/h.smcp/h.smcp/ohorn.smcp X/h.smcp/h.smcp/ohorn.smcp Y/h.smcp/h.smcp/ohorn.smcp Z\012\012UJAHH/Ohorn AHH/Ohorn BHH/Ohorn CHH/Ohorn DHH/Ohorn EHH/Ohorn FHH/Ohorn GHH/Ohorn HHH/Ohorn IHH/Ohorn JHH/Ohorn KHH/Ohorn LHH/Ohorn MHH/Ohorn NH\012H/Ohorn OHH/Ohorn PHH/Ohorn QHH/Ohorn/Q.ss02 HH/Ohorn RHH/Ohorn SHH/Ohorn THH/Ohorn UHH/Ohorn VHH/Ohorn WHH/Ohorn XHH/Ohorn YHH/Ohorn Z\012\012HH/o.smcp/quotesinglbase HH\012HH/Ohorn/quotesinglbase HH\012\012HH/Ohorn/a.smcp/h.smcp/h.smcp   HH/Ohorn/b.smcp/h.smcp/h.smcp  HH/Ohorn/c.smcp/h.smcp/h.smcp  HH/Ohorn/d.smcp/h.smcp/h.smcp  HH/Ohorn/e.smcp/h.smcp/h.smcp  HH/Ohorn/f.smcp/h.smcp/h.smcp  HH/Ohorn/g.smcp/h.smcp/h.smcp  HH/Ohorn/h.smcp/h.smcp/h.smcp  HH/Ohorn/i.smcp/h.smcp/h.smcp  HH/Ohorn/j.smcp/h.smcp/h.smcp  HH/Ohorn/k.smcp/h.smcp/h.smcp  HH/Ohorn/l.smcp/h.smcp/h.smcp  HH/Ohorn/m.smcp/h.smcp/h.smcp  HH/Ohorn/n.smcp/h.smcp/h.smcp  HH/Ohorn/o.smcp/h.smcp/h.smcp  HH/Ohorn/p.smcp/h.smcp/h.smcp  HH/Ohorn/q.smcp/h.smcp/h.smcp  HH/Ohorn/q.smcp.ss02/h.smcp/h.smcp  HH/Ohorn/r.smcp/h.smcp/h.smcp  HH/Ohorn/s.smcp/h.smcp/h.smcp  HH/Ohorn/t.smcp/h.smcp/h.smcp  HH/Ohorn/u.smcp/h.smcp/h.smcp  HH/Ohorn/v.smcp/h.smcp/h.smcp  HH/Ohorn/w.smcp/h.smcp/h.smcp  HH/Ohorn/x.smcp/h.smcp/h.smcp  HH/Ohorn/y.smcp/h.smcp/h.smcp  HH/Ohorn/z.smcp/h.smcp/h.smcp  \012\012HH/Ohorn ann HH/Ohorn bnn HH/Ohorn cnn HH/Ohorn dnn HH/Ohorn enn HH/Ohorn fnn HH/Ohorn gnn HH/Ohorn hnn HH/Ohorn inn HH/Ohorn jnn HH/Ohorn knn HH/Ohorn lnn HH/Ohorn mnn HH/Ohorn nnn HH/Ohorn onn HH/Ohorn pnn HH/Ohorn qnn HH/Ohorn rnn HH/Ohorn snn HH/Ohorn tnn HH/Ohorn unn HH/Ohorn vnn HH/Ohorn wnn HH/Ohorn xnn HH/Ohorn ynn HH/Ohorn znn \012HHOann HHObnn HHOcnn HHOdnn HHOenn HHOfnn HHOgnn HHOhnn HHOinn HHOjnn HHOknn HHOlnn HHOmnn HHOnnn HHOonn HHOpnn HHOqnn HHOrnn HHOsnn HHOtnn HHOunn HHOvnn HHOwnn HHOxnn HHOynn HHOznn\012nuno/backslash nun\012nun/ohorn/backslash nun\012nn/ohorn ann/ohorn bnn/ohorn cnn/ohorn dnn/ohorn enn/ohorn fnn/ohorn gnn/ohorn hnn/ohorn inn/ohorn jnn/ohorn knn/ohorn lnn/ohorn mnn/ohorn nnn/ohorn onn/ohorn pnn/ohorn qnn/ohorn rnn/ohorn snn/ohorn tnn/ohorn unn/ohorn vnn/ohorn wnn/ohorn xnn/ohorn ynn/ohorn z\012\012nnoannobnnocnnodnnoennofnnognnohnnoinnojnnoknnolnnomnnonnnoonnopnnoqnnornnosnnotnnounnovnnownnoxnnoynnoz\012\012",
-"HHA/zerosuperior  HHB/fivesuperior  HHC/fivesuperior  HHD/fivesuperior  HHE/fivesuperior  HHF/fivesuperior  HHG/fivesuperior  HHH/fivesuperior  HHI/fivesuperior  HHJ/fivesuperior  HHK/fivesuperior  HHL/fivesuperior  HHM/fivesuperior  HHN/fivesuperior  HHO/fivesuperior  HHP/fivesuperior  HHQ/fivesuperior  HH/Q.ss02/fivesuperior  HHR/fivesuperior  HHS/fivesuperior  HHT/fivesuperior  HHU/fivesuperior  HHV/fivesuperior  HHW/fivesuperior  HHX/fivesuperior  HHY/fivesuperior  HHZ/fivesuperior  HH\012nna/fivesuperior  nnb/fivesuperior  nnc/fivesuperior  nnd/fivesuperior  nne/fivesuperior  nnf/fivesuperior  nng/fivesuperior  nnh/fivesuperior  nni/fivesuperior  nnj/fivesuperior  nnk/fivesuperior  nnl/fivesuperior  nnm/fivesuperior  nnn/fivesuperior  nno/fivesuperior  nnp/fivesuperior  nnq/fivesuperior  nnr/fivesuperior  nns/fivesuperior  nnt/fivesuperior  nnu/fivesuperior  nnv/fivesuperior  nnw/fivesuperior  nnx/fivesuperior  nny/fivesuperior  nnz/fivesuperior  nn\012/fivesuperior AHH /fivesuperior BHH /fivesuperior CHH /fivesuperior DHH /fivesuperior EHH /fivesuperior FHH /fivesuperior GHH /fivesuperior HHH /fivesuperior IHH /fivesuperior JHH /fivesuperior KHH /fivesuperior LHH /fivesuperior M/fivesuperior HH /fivesuperior NHH /fivesuperior OHH /fivesuperior PHH /fivesuperior QHH /fivesuperior/Q.ss02 HH /fivesuperior RHH /fivesuperior SHH /fivesuperior THH /fivesuperior UHH /fivesuperior VHH /fivesuperior WHH /fivesuperior XHH /fivesuperior YHH /fivesuperior ZHH\012/fivesuperior ann /fivesuperior bnn /fivesuperior cnn /fivesuperior dnn /fivesuperior enn /fivesuperior fnn /fivesuperior gnn /fivesuperior hnn /fivesuperior inn /fivesuperior jnn /fivesuperior knn /fivesuperior lnn /fivesuperior mnn /fivesuperior nnn /fivesuperior onn /fivesuperior pnn /fivesuperior qnn /fivesuperior rnn /fivesuperior snn /fivesuperior tnn /fivesuperior unn /fivesuperior vnn /fivesuperior wnn /fivesuperior xnn /fivesuperior ynn /fivesuperior znn\012HHA/fiveinferior  HHB/fiveinferior  HHC/fiveinferior  HHD/fiveinferior  HHE/fiveinferior  HHF/fiveinferior  HHG/fiveinferior  HHH/fiveinferior  HHI/fiveinferior  HHJ/fiveinferior  HHK/fiveinferior  HHL/fiveinferior  HHM/fiveinferior  HHN/fiveinferior  HHO/fiveinferior  HHP/fiveinferior  HHQ/fiveinferior  HH/Q.ss02/fiveinferior  HHR/fiveinferior  HHS/fiveinferior  HH/fiveinferior T/fiveinferior  HHU/fiveinferior  HH/fiveinferior V/fiveinferior  HH/fiveinferior W/fiveinferior  HHX/fiveinferior  HH/fiveinferior Y/fiveinferior  HHZ/fiveinferior \012a/fiveinferior  nnb/fiveinferior  nnc/fiveinferior  nnd/fiveinferior  nne/fiveinferior  nnf/fiveinferior  nng/fiveinferior  nnh/fiveinferior  nni/fiveinferior  nnj/fiveinferior  nnk/fiveinferior  nnl/fiveinferior  nnm/fiveinferior  nnn/fiveinferior  nno/fiveinferior  nnp/fiveinferior  nnq/fiveinferior  nnr/fiveinferior  nns/fiveinferior  nnt/fiveinferior  nnu/fiveinferior  nnv/fiveinferior  nnw/fiveinferior  nnx/fiveinferior  nny/fiveinferior  nnz/fiveinferior \012/fiveinferior AHH /fiveinferior BHH /fiveinferior CHH /fiveinferior DHH /fiveinferior EHH /fiveinferior FHH /fiveinferior GHH /fiveinferior HHH /fiveinferior IHH /fiveinferior JHH /fiveinferior KHH /fiveinferior LHH /fiveinferior MHH /fiveinferior NHH /fiveinferior OHH /fiveinferior PHH /fiveinferior QHH /fiveinferior/Q.ss02 HH /fiveinferior RHH /fiveinferior SHH /fiveinferior T/fiveinferior HH /fiveinferior UHH /fiveinferior V/fiveinferior HH /fiveinferior W/fiveinferior HH /fiveinferior XHH /fiveinferior Y/fiveinferior HH /fiveinferior ZHH \012/fiveinferior ann /fiveinferior bnn /fiveinferior cnn /fiveinferior dnn /fiveinferior enn /fiveinferior fnn /fiveinferior gnn /fiveinferior hnn /fiveinferior inn /fiveinferior jnn /fiveinferior knn /fiveinferior lnn /fiveinferior mnn /fiveinferior nnn /fiveinferior o/fiveinferior nn /fiveinferior pnn /fiveinferior qnn /fiveinferior rnn /fiveinferior snn /fiveinferior tnn /fiveinferior unn /fiveinferior v/fiveinferior nn /fiveinferior w/fiveinferior nn /fiveinferior xnn /fiveinferior ynn /fiveinferior znn",
+"Å/Aringacute/Idieresisacute/Umacrondieresis/Emacronacute/Emacrongrave/Omacronacute/Omacrongrave/Otildeacute/Otildedieresis/Utildeacute/Scarondotaccent/space/Sacutedotaccent \012/circumflexcomb_acutecomb/circumflexcomb_gravecomb/brevecomb_acutecomb/brevecomb_gravecomb/circumflexcomb_hookabovecomb/brevecomb_hookabovecomb/circumflexcomb_tildecomb/brevecomb_tildecomb/brevecomb \012/circumflexcomb_acutecomb.case/circumflexcomb_gravecomb.case/brevecomb_acutecomb.case/brevecomb_gravecomb.case/brevecomb_hookabovecomb.case/brevecomb_tildecomb.case/circumflexcomb_tildecomb.case/circumflexcomb_hookabovecomb.case \012/acircumflexacute/abrevetilde/acircumflexhookabove/ecircumflexgrave/acircumflextilde/abrevehookabove/abreveacute/ecircumflextilde/ecircumflexhookabove/abrevegrave/ocircumflexhookabove/ocircumflextilde \012/acircumflexacute/acircumflexgrave/acircumflextilde/acircumflexacute á/abrevegrave/ecircumflexacute/ecircumflexgrave/ocircumflexacute/ocircumflexgrave \012/Acircumflexacute/Acircumflexgrave/Acircumflexhookabove/Acircumflextilde/Abreveacute/Abrevegrave/Abrevehookabove/Abrevetilde/space \012/Ecircumflexacute/Ecircumflexgrave/Ecircumflexhookabove/Ecircumflextilde/Ocircumflexacute/Ocircumflexgrave/Ocircumflexhookabove/Ocircumflextilde \012O/Ohorn OOU/Uhorn UUUo/ohorn ooo/space u/uhorn uu/space \012/Ohornacute/space/Ohorngrave/space/Ohorntilde/space/Uhornacute/space/Uhorngrave/space/Uhorntilde \012/ohornacute/space/ohorngrave/space/ohorntilde/space/uhornacute/space/uhorngrave/space/uhorntilde \012/ahookabove/ahookabove àáã/abreve/ehookabove/ihookabove/ohookabove/uhookabove/yhookabove \012ÈÉ/Ecaron/Etilde/Ebreve/Ehookabove/Ahookabove/Ihookabove/Ohookabove/Uhookabove/Yhookabove \012/aringacute/idieresisacute/umacrondieresis/emacronacute/emacrongrave/omacronacute/omacrongrave/otildeacute/otildedieresis/utildeacute/scarondotaccent/space/sacutedotaccent \012\012\012/space \012",
+"/numero H/numero 50/zero.zero 123745689\012/euro $¢£¥/florin ¤/cedi/colonsign/dong/franc/guarani/kip/lira/liraTurkish/peso/ruble/rupeeIndian/manat/naira/won/peseta \012345/euro/space Euro/space 00/euro 00\012156$/space Dollar/space 00$00\012134¢/space Cent/space 00¢00\012278£/space Sterling/space 00£00\012154£/space Yen/space 00c00\012623/florin/space Florin/space 00/florin 00/space \012652¤/space Currency/space 00¤00\012829/naira/space Naira/space 00/naira 00/space \012652/lira/space Sterling/space 00/lira 00\012986/franc/space Franc/space 00/franc 00\012876/peso/space Peso/space 00/peso 00\012264/ruble/space Ruble/space 00/ruble 00\012123/cedi/space Cedi/space 00/cedi 00\012543/kip/space Kip/space 00/kip 00\012654/dong/space Dong/space 00/dong 00\012765/liraTurkish/space Lira/space 00/liraTurkish 00\012876/guarani/space Guarani/space 00/guarani 00\012986/manat/space Manat/space 00/manat 00\012678/rupeeIndian/space Rupee/space 00/rupeeIndian 00\012234/colonsign/space Colonsign/space 00/colonsign 00\012456/peseta/space Peseta/space 00/peseta 00\012345/won/space Won/space 00/won 00\012\012\012Hello/space/zero.ss01/zero.zero.ss01/one.ss01/two.ss01/three.ss01/four.ss01/five.ss01/six.ss01/seven.ss01/eight.ss01/nine.ss01 \012\012/numero 5\012/numero/five.ss01 \012\0125a+6b/minus 10±÷×=/approxequal/notequal <>/lessequal/greaterequal ¬55/radical 5/infinity 5\012#0/space/space 5°C/space 5+5/space a+b\0125/minus 5/figuredash 50-5/endash 5/space \012\012/horizontalbar Fancy/space a/space tea?\012/horizontalbar Fancy/space a/space tea?\012\012/zero.ss01/zero.zero.ss01/one.ss01/two.ss01/three.ss01/four.ss01 +/five.ss01 °\0125n/space 5a\012\012",
+"Number/space 0/zero.zero 123456789\0125/numero ªº°/minute/second %/perthousand $¥£/florin/euro/franc/cedi/guarani/lira ¢¤/colonsign/dong/euro/liraTurkish/naira/won/peseta/peso/ruble/rupeeIndian/manat/kip 0\012\012Number/space/zero.ss01/zero.zero.ss01/one.ss01/two.ss01/three.ss01/four.ss01/five.ss01/six.ss01/seven.ss01/eight.ss01/nine.ss01 \012/five.ss01/one.ss01/numero.ss01/ordfeminine.ss01/ordmasculine.ss01/degree.ss01/minute.ss01/second.ss01/percent.ss01/perthousand.ss01/space/dollar.ss01/cent.ss01/yen.ss01/sterling.ss01/currency.ss01/cedi.ss01/manat.ss01/euro.ss01/franc.ss01/guarani.ss01/kip.ss01/lira.ss01/colonsign.ss01/dong.ss01/florin.ss01/liraTurkish.ss01/naira.ss01/peseta.ss01/peso.ss01/ruble.ss01/rupeeIndian.ss01/won.ss01 \012/zero.ss01/peseta.ss01/zero.ss01/dollar.ss01/zero.ss01/yen.ss01/zero.ss01/cent.ss01/zero.ss01/sterling.ss01/zero.ss01/currency.ss01/zero.ss01/cedi.ss01/zero.ss01/colonsign.ss01/zero.ss01/rupeeIndian.ss01/zero.ss01/zero.ss01/florin.ss01/zero.ss01/euro.ss01/zero.ss01/dong.ss01/zero.ss01/franc.ss01/zero.ss01/manat.ss01/zero.ss01/kip.ss01/zero.ss01/lira.ss01/zero.ss01/guarani.ss01/zero.ss01/euro.ss01/zero.ss01/naira.ss01/zero.ss01/won.ss01/zero.ss01/ruble.ss01/zero.ss01/peso.ss01/zero.ss01/liraTurkish.ss01/zero.ss01 \012\012/zero.c2sc/zero.zero.c2sc/one.c2sc/two.c2sc/three.c2sc/four.c2sc/five.c2sc/six.c2sc/seven.c2sc/eight.c2sc/nine.c2sc \012/numero.c2sc/ordfeminine.c2sc/ordmasculine.c2sc/degree.c2sc/minute.c2sc/second.c2sc/percent.c2sc/perthousand.c2sc \012\012/zerosuperior ¹²³/foursuperior/fivesuperior/sixsuperior/sevensuperior/eightsuperior/ninesuperior \012/zeroinferior/oneinferior/twoinferior/threeinferior/fourinferior/fiveinferior/sixinferior/seveninferior/eightinferior/nineinferior \012/zero.dnom/one.dnom/two.dnom/three.dnom/four.dnom/five.dnom/six.dnom/seven.dnom/eight.dnom/nine.dnom \012/zero.numr/one.numr/two.numr/three.numr/four.numr/five.numr/six.numr/seven.numr/eight.numr/nine.numr \012/fraction/space 2½/space/space/two.ss01/onethird/space/space/twothirds ¼¾/oneeighth/threeeighths/fiveeighths/seveneighths",
+"\012/h.smcp/h.smcp/uhorn.smcp/a.smcp/h.smcp/h.smcp/uhorn.smcp/b.smcp/h.smcp/h.smcp/uhorn.smcp/c.smcp/h.smcp/h.smcp/uhorn.smcp/d.smcp/h.smcp/h.smcp/uhorn.smcp/e.smcp/h.smcp/h.smcp/uhorn.smcp/f.smcp/h.smcp/h.smcp/uhorn.smcp/g.smcp/space/h.smcp/h.smcp/uhorn.smcp/h.smcp/h.smcp/h.smcp/uhorn.smcp/i.smcp/h.smcp/h.smcp/uhorn.smcp/j.smcp/h.smcp/h.smcp/uhorn.smcp/k.smcp/h.smcp/h.smcp/uhorn.smcp/l.smcp/h.smcp/h.smcp/uhorn.smcp/m.smcp/h.smcp/h.smcp/uhorn.smcp/n.smcp/space/h.smcp/h.smcp/uhorn.smcp/o.smcp/h.smcp/h.smcp/uhorn.smcp/p.smcp/h.smcp/h.smcp/uhorn.smcp/q.smcp/h.smcp/h.smcp/uhorn.smcp/q.smcp.ss02/h.smcp/h.smcp/uhorn.smcp/r.smcp/h.smcp/h.smcp/uhorn.smcp/s.smcp/h.smcp/h.smcp/uhorn.smcp/t.smcp/space/h.smcp/h.smcp/uhorn.smcp/u.smcp A/h.smcp/h.smcp/uhorn.smcp/v.smcp/h.smcp/h.smcp/uhorn.smcp/w.smcp/h.smcp/h.smcp/uhorn.smcp/x.smcp/h.smcp/h.smcp/uhorn.smcp/y.smcp/h.smcp/h.smcp/uhorn.smcp/z.smcp \012\012/h.smcp/h.smcp/uhorn.smcp A/h.smcp/h.smcp/uhorn.smcp B/h.smcp/h.smcp/uhorn.smcp C/h.smcp/h.smcp/uhorn.smcp D/h.smcp/h.smcp/uhorn.smcp E/h.smcp/h.smcp/uhorn.smcp F/h.smcp/h.smcp/uhorn.smcp G/h.smcp/h.smcp/uhorn.smcp H/h.smcp/h.smcp/uhorn.smcp I/h.smcp/h.smcp/uhorn.smcp J/h.smcp/h.smcp/uhorn.smcp K/h.smcp/h.smcp/uhorn.smcp L/h.smcp/h.smcp/uhorn.smcp M/h.smcp/h.smcp/uhorn.smcp N/h.smcp/h.smcp/uhorn.smcp O/h.smcp/h.smcp/uhorn.smcp P/h.smcp/h.smcp/uhorn.smcp Q/h.smcp/h.smcp/uhorn.smcp/Q.ss02/h.smcp/h.smcp/uhorn.smcp R/h.smcp/h.smcp/uhorn.smcp S/h.smcp/h.smcp/uhorn.smcp T\012/h.smcp/h.smcp/uhorn.smcp U/h.smcp/h.smcp/uhorn.smcp V/h.smcp/h.smcp/uhorn.smcp W\012/h.smcp/h.smcp/uhorn.smcp X/h.smcp/h.smcp/uhorn.smcp Y/h.smcp/h.smcp/uhorn.smcp Z\012\012UJAHH/Uhorn AHH/Uhorn BHH/Uhorn CHH/Uhorn DHH/Uhorn EHH/Uhorn FHH/Uhorn GHH/Uhorn HHH/Uhorn IHH/Uhorn JHH/Uhorn KHH/Uhorn LHH/Uhorn MHH/Uhorn NH\012H/Uhorn OHH/Uhorn PHH/Uhorn QHH/Uhorn/Q.ss02 HH/Uhorn RHH/Uhorn SHH/Uhorn THH/Uhorn UHH/Uhorn VHH/Uhorn WHH/Uhorn XHH/Uhorn YHH/Uhorn Z\012\012HH/Uhorn/a.smcp/h.smcp/h.smcp/space/space HH/Uhorn/b.smcp/h.smcp/h.smcp/space HH/Uhorn/c.smcp/h.smcp/h.smcp/space HH/Uhorn/d.smcp/h.smcp/h.smcp/space HH/Uhorn/e.smcp/h.smcp/h.smcp/space HH/Uhorn/f.smcp/h.smcp/h.smcp/space HH/Uhorn/g.smcp/h.smcp/h.smcp/space HH/Uhorn/h.smcp/h.smcp/h.smcp/space HH/Uhorn/i.smcp/h.smcp/h.smcp/space HH/Uhorn/j.smcp/h.smcp/h.smcp/space HH/Uhorn/k.smcp/h.smcp/h.smcp/space HH/Uhorn/l.smcp/h.smcp/h.smcp/space HH/Uhorn/m.smcp/h.smcp/h.smcp/space HH/Uhorn/n.smcp/h.smcp/h.smcp/space HH/Uhorn/o.smcp/h.smcp/h.smcp/space HH/Uhorn/p.smcp/h.smcp/h.smcp/space HH/Uhorn/q.smcp/h.smcp/h.smcp/space HH/Uhorn/q.smcp.ss02/h.smcp/h.smcp/space HH/Uhorn/r.smcp/h.smcp/h.smcp/space HH/Uhorn/s.smcp/h.smcp/h.smcp/space HH/Uhorn/t.smcp/h.smcp/h.smcp/space HH/Uhorn/u.smcp/h.smcp/h.smcp/space HH/Uhorn/v.smcp/h.smcp/h.smcp/space HH/Uhorn/w.smcp/h.smcp/h.smcp/space HH/Uhorn/x.smcp/h.smcp/h.smcp/space HH/Uhorn/y.smcp/h.smcp/h.smcp/space HH/Uhorn///z.smcp/h.smcp/h.smcp/space \012\012HH/Uhorn ann/space HH/Uhorn bnn/space HH/Uhorn cnn/space HH/Uhorn dnn/space HH/Uhorn enn/space HH/Uhorn fnn/space HH/Uhorn gnn/space HH/Uhorn hnn/space HH/Uhorn inn/space HH/Uhorn jnn/space HH/Uhorn knn/space HH/Uhorn lnn/space HH/Uhorn mnn/space HH/Uhorn nnn/space HH/Uhorn onn/space HH/Uhorn pnn/space HH/Uhorn qnn/space HH/Uhorn rnn/space HH/Uhorn snn/space HH/Uhorn tnn/space HH/Uhorn unn/space HH/Uhorn vnn/space HH/Uhorn wnn/space HH/Uhorn xnn/space HH/Uhorn ynn/space HH/Uhorn znn/space \012\012/uhorn ann/space/uhorn bnn/space/uhorn cnn/space/uhorn dnn/space/uhorn enn/space/uhorn fnn/space/uhorn gnn/space/uhorn hnn/space/uhorn inn/space/uhorn jnn/space/uhorn knn/space/uhorn lnn/space/uhorn mnn/space/uhorn nnn/space/uhorn onn/space/uhorn pnn/space/uhorn qnn/space/uhorn rnn/space/uhorn snn/space/uhorn tnn/space/uhorn unn/space/uhorn vnn/space/uhorn wnn/space/uhorn xnn/space/uhorn ynn/space/uhorn znn",
+"\012/h.smcp/h.smcp/ohorn.smcp/a.smcp/h.smcp/h.smcp/o.smcp/a.smcp/h.smcp/h.smcp/ohorn.smcp/b.smcp/h.smcp/h.smcp/ohorn.smcp/c.smcp/h.smcp/h.smcp/ohorn.smcp/d.smcp/h.smcp/h.smcp/ohorn.smcp/e.smcp/h.smcp/h.smcp/ohorn.smcp/f.smcp/h.smcp/h.smcp/ohorn.smcp/g.smcp/space/h.smcp/h.smcp/ohorn.smcp/h.smcp/h.smcp/h.smcp/ohorn.smcp/i.smcp/h.smcp/h.smcp/ohorn.smcp/j.smcp/h.smcp/h.smcp/ohorn.smcp/k.smcp/h.smcp/h.smcp/ohorn.smcp/l.smcp/h.smcp/h.smcp/ohorn.smcp/m.smcp/h.smcp/h.smcp/ohorn.smcp/n.smcp/space/h.smcp/h.smcp/ohorn.smcp/o.smcp/h.smcp/h.smcp/ohorn.smcp/p.smcp/h.smcp/h.smcp/ohorn.smcp/q.smcp/h.smcp/h.smcp/ohorn.smcp/q.smcp.ss02/h.smcp/h.smcp/ohorn.smcp/r.smcp/h.smcp/h.smcp/ohorn.smcp/s.smcp/h.smcp/h.smcp/ohorn.smcp/t.smcp/space/h.smcp/h.smcp/ohorn.smcp/u.smcp A/h.smcp/h.smcp/ohorn.smcp/v.smcp/h.smcp/h.smcp/ohorn.smcp/w.smcp/h.smcp/h.smcp/ohorn.smcp/x.smcp/h.smcp/h.smcp/ohorn.smcp/y.smcp/h.smcp/h.smcp/ohorn.smcp/z.smcp \012\012/h.smcp/h.smcp/ohorn.smcp A/o.smcp/h.smcp/h.smcp/ohorn.smcp B/h.smcp/h.smcp/ohorn.smcp C/h.smcp/h.smcp/ohorn.smcp D/h.smcp/h.smcp/ohorn.smcp E/h.smcp/h.smcp/ohorn.smcp F/h.smcp/h.smcp/ohorn.smcp G/h.smcp/h.smcp/ohorn.smcp H/h.smcp/h.smcp/ohorn.smcp I/h.smcp/h.smcp/ohorn.smcp J/h.smcp/h.smcp/ohorn.smcp K/h.smcp/h.smcp/ohorn.smcp L/h.smcp/h.smcp/ohorn.smcp M/h.smcp/h.smcp/ohorn.smcp N/h.smcp/h.smcp/ohorn.smcp O/h.smcp/h.smcp/ohorn.smcp P/h.smcp/h.smcp/ohorn.smcp Q/h.smcp/h.smcp/ohorn.smcp/Q.ss02/h.smcp/h.smcp/ohorn.smcp R/h.smcp/h.smcp/ohorn.smcp S/h.smcp/h.smcp/ohorn.smcp T\012/h.smcp/h.smcp/ohorn.smcp U/h.smcp/h.smcp/ohorn.smcp V/h.smcp/h.smcp/ohorn.smcp W\012/h.smcp/h.smcp/ohorn.smcp X/h.smcp/h.smcp/ohorn.smcp Y/h.smcp/h.smcp/ohorn.smcp Z\012\012UJAHH/Ohorn AHH/Ohorn BHH/Ohorn CHH/Ohorn DHH/Ohorn EHH/Ohorn FHH/Ohorn GHH/Ohorn HHH/Ohorn IHH/Ohorn JHH/Ohorn KHH/Ohorn LHH/Ohorn MHH/Ohorn NH\012H/Ohorn OHH/Ohorn PHH/Ohorn QHH/Ohorn/Q.ss02 HH/Ohorn RHH/Ohorn SHH/Ohorn THH/Ohorn UHH/Ohorn VHH/Ohorn WHH/Ohorn XHH/Ohorn YHH/Ohorn Z\012\012HH/o.smcp/quotesinglbase HH\012HH/Ohorn/quotesinglbase HH\012\012HH/Ohorn/a.smcp/h.smcp/h.smcp/space/space HH/Ohorn/b.smcp/h.smcp/h.smcp/space HH/Ohorn/c.smcp/h.smcp/h.smcp/space HH/Ohorn/d.smcp/h.smcp/h.smcp/space HH/Ohorn/e.smcp/h.smcp/h.smcp/space HH/Ohorn/f.smcp/h.smcp/h.smcp/space HH/Ohorn/g.smcp/h.smcp/h.smcp/space HH/Ohorn/h.smcp/h.smcp/h.smcp/space HH/Ohorn/i.smcp/h.smcp/h.smcp/space HH/Ohorn/j.smcp/h.smcp/h.smcp/space HH/Ohorn/k.smcp/h.smcp/h.smcp/space HH/Ohorn/l.smcp/h.smcp/h.smcp/space HH/Ohorn/m.smcp/h.smcp/h.smcp/space HH/Ohorn/n.smcp/h.smcp/h.smcp/space HH/Ohorn/o.smcp/h.smcp/h.smcp/space HH/Ohorn/p.smcp/h.smcp/h.smcp/space HH/Ohorn/q.smcp/h.smcp/h.smcp/space HH/Ohorn/q.smcp.ss02/h.smcp/h.smcp/space HH/Ohorn/r.smcp/h.smcp/h.smcp/space HH/Ohorn/s.smcp/h.smcp/h.smcp/space HH/Ohorn/t.smcp/h.smcp/h.smcp/space HH/Ohorn/u.smcp/h.smcp/h.smcp/space HH/Ohorn/v.smcp/h.smcp/h.smcp/space HH/Ohorn/w.smcp/h.smcp/h.smcp/space HH/Ohorn/x.smcp/h.smcp/h.smcp/space HH/Ohorn/y.smcp/h.smcp/h.smcp/space HH/Ohorn/z.smcp/h.smcp/h.smcp/space \012\012HH/Ohorn ann/space HH/Ohorn bnn/space HH/Ohorn cnn/space HH/Ohorn dnn/space HH/Ohorn enn/space HH/Ohorn fnn/space HH/Ohorn gnn/space HH/Ohorn hnn/space HH/Ohorn inn/space HH/Ohorn jnn/space HH/Ohorn knn/space HH/Ohorn lnn/space HH/Ohorn mnn/space HH/Ohorn nnn/space HH/Ohorn onn/space HH/Ohorn pnn/space HH/Ohorn qnn/space HH/Ohorn rnn/space HH/Ohorn snn/space HH/Ohorn tnn/space HH/Ohorn unn/space HH/Ohorn vnn/space HH/Ohorn wnn/space HH/Ohorn xnn/space HH/Ohorn ynn/space HH/Ohorn znn/space \012HHOann/space HHObnn/space HHOcnn/space HHOdnn/space HHOenn/space HHOfnn/space HHOgnn/space HHOhnn/space HHOinn/space HHOjnn/space HHOknn/space HHOlnn/space HHOmnn/space HHOnnn/space HHOonn/space HHOpnn/space HHOqnn/space HHOrnn/space HHOsnn/space HHOtnn/space HHOunn/space HHOvnn/space HHOwnn/space HHOxnn/space HHOynn/space HHOznn\012nuno/backslash nun\012nun/ohorn/backslash nun\012nn/ohorn ann/ohorn bnn/ohorn cnn/ohorn dnn/ohorn enn/ohorn fnn/ohorn gnn/ohorn hnn/ohorn inn/ohorn jnn/ohorn knn/ohorn lnn/ohorn mnn/ohorn nnn/ohorn onn/ohorn pnn/ohorn qnn/ohorn rnn/ohorn snn/ohorn tnn/ohorn unn/ohorn vnn/ohorn wnn/ohorn xnn/ohorn ynn/ohorn z\012\012nnoannobnnocnnodnnoennofnnognnohnnoinnojnnoknnolnnomnnonnnoonnopnnoqnnornnosnnotnnounnovnnownnoxnnoynnoz\012\012",
+"HHA/zerosuperior/space HHB/fivesuperior/space HHC/fivesuperior/space HHD/fivesuperior/space HHE/fivesuperior/space HHF/fivesuperior/space HHG/fivesuperior/space HHH/fivesuperior/space HHI/fivesuperior/space HHJ/fivesuperior/space HHK/fivesuperior/space HHL/fivesuperior/space HHM/fivesuperior/space HHN/fivesuperior/space HHO/fivesuperior/space HHP/fivesuperior/space HHQ/fivesuperior/space HH/Q.ss02/fivesuperior/space HHR/fivesuperior/space HHS/fivesuperior/space HHT/fivesuperior/space HHU/fivesuperior/space HHV/fivesuperior/space HHW/fivesuperior/space HHX/fivesuperior/space HHY/fivesuperior/space HHZ/fivesuperior/space HH\012nna/fivesuperior/space nnb/fivesuperior/space nnc/fivesuperior/space nnd/fivesuperior/space nne/fivesuperior/space nnf/fivesuperior/space nng/fivesuperior/space nnh/fivesuperior/space nni/fivesuperior/space nnj/fivesuperior/space nnk/fivesuperior/space nnl/fivesuperior/space nnm/fivesuperior/space nnn/fivesuperior/space nno/fivesuperior/space nnp/fivesuperior/space nnq/fivesuperior/space nnr/fivesuperior/space nns/fivesuperior/space nnt/fivesuperior/space nnu/fivesuperior/space nnv/fivesuperior/space nnw/fivesuperior/space nnx/fivesuperior/space nny/fivesuperior/space nnz/fivesuperior/space nn\012/fivesuperior AHH/space/fivesuperior BHH/space/fivesuperior CHH/space/fivesuperior DHH/space/fivesuperior EHH/space/fivesuperior FHH/space/fivesuperior GHH/space/fivesuperior HHH/space/fivesuperior IHH/space/fivesuperior JHH/space/fivesuperior KHH/space/fivesuperior LHH/space/fivesuperior M/fivesuperior HH/space/fivesuperior NHH/space/fivesuperior OHH/space/fivesuperior PHH/space/fivesuperior QHH/space/fivesuperior/Q.ss02 HH/space/fivesuperior RHH/space/fivesuperior SHH/space/fivesuperior THH/space/fivesuperior UHH/space/fivesuperior VHH/space/fivesuperior WHH/space/fivesuperior XHH/space/fivesuperior YHH/space/fivesuperior ZHH\012/fivesuperior ann/space/fivesuperior bnn/space/fivesuperior cnn/space/fivesuperior dnn/space/fivesuperior enn/space/fivesuperior fnn/space/fivesuperior gnn/space/fivesuperior hnn/space/fivesuperior inn/space/fivesuperior jnn/space/fivesuperior knn/space/fivesuperior lnn/space/fivesuperior mnn/space/fivesuperior nnn/space/fivesuperior onn/space/fivesuperior pnn/space/fivesuperior qnn/space/fivesuperior rnn/space/fivesuperior snn/space/fivesuperior tnn/space/fivesuperior unn/space/fivesuperior vnn/space/fivesuperior wnn/space/fivesuperior xnn/space/fivesuperior ynn/space/fivesuperior znn\012HHA/fiveinferior/space HHB/fiveinferior/space HHC/fiveinferior/space HHD/fiveinferior/space HHE/fiveinferior/space HHF/fiveinferior/space HHG/fiveinferior/space HHH/fiveinferior/space HHI/fiveinferior/space HHJ/fiveinferior/space HHK/fiveinferior/space HHL/fiveinferior/space HHM/fiveinferior/space HHN/fiveinferior/space HHO/fiveinferior/space HHP/fiveinferior/space HHQ/fiveinferior/space HH/Q.ss02/fiveinferior/space HHR/fiveinferior/space HHS/fiveinferior/space HH/fiveinferior T/fiveinferior/space HHU/fiveinferior/space HH/fiveinferior V/fiveinferior/space HH/fiveinferior W/fiveinferior/space HHX/fiveinferior/space HH/fiveinferior Y/fiveinferior/space HHZ/fiveinferior \012a/fiveinferior/space nnb/fiveinferior/space nnc/fiveinferior/space nnd/fiveinferior/space nne/fiveinferior/space nnf/fiveinferior/space nng/fiveinferior/space nnh/fiveinferior/space nni/fiveinferior/space nnj/fiveinferior/space nnk/fiveinferior/space nnl/fiveinferior/space nnm/fiveinferior/space nnn/fiveinferior/space nno/fiveinferior/space nnp/fiveinferior/space nnq/fiveinferior/space nnr/fiveinferior/space nns/fiveinferior/space nnt/fiveinferior/space nnu/fiveinferior/space nnv/fiveinferior/space nnw/fiveinferior/space nnx/fiveinferior/space nny/fiveinferior/space nnz/fiveinferior \012/fiveinferior AHH/space/fiveinferior BHH/space/fiveinferior CHH/space/fiveinferior DHH/space/fiveinferior EHH/space/fiveinferior FHH/space/fiveinferior GHH/space/fiveinferior HHH/space/fiveinferior IHH/space/fiveinferior JHH/space/fiveinferior KHH/space/fiveinferior LHH/space/fiveinferior MHH/space/fiveinferior NHH/space/fiveinferior OHH/space/fiveinferior PHH/space/fiveinferior QHH/space/fiveinferior/Q.ss02 HH/space/fiveinferior RHH/space/fiveinferior SHH/space/fiveinferior T/fiveinferior HH/space/fiveinferior UHH/space/fiveinferior V/fiveinferior HH/space/fiveinferior W/fiveinferior HH/space/fiveinferior XHH/space/fiveinferior Y/fiveinferior HH/space/fiveinferior ZHH/space \012/fiveinferior ann/space/fiveinferior bnn/space/fiveinferior cnn/space/fiveinferior dnn/space/fiveinferior enn/space/fiveinferior fnn/space/fiveinferior gnn/space/fiveinferior hnn/space/fiveinferior inn/space/fiveinferior jnn/space/fiveinferior knn/space/fiveinferior lnn/space/fiveinferior mnn/space/fiveinferior nnn/space/fiveinferior o/fiveinferior nn/space/fiveinferior pnn/space/fiveinferior qnn/space/fiveinferior rnn/space/fiveinferior snn/space/fiveinferior tnn/space/fiveinferior unn/space/fiveinferior v/fiveinferior nn/space/fiveinferior w/fiveinferior nn/space/fiveinferior xnn/space/fiveinferior ynn/space/fiveinferior znn",
 "HH/Germandbls AHH/Germandbls BHH/Germandbls CHH/Germandbls DHH/Germandbls EHH/Germandbls FHH/Germandbls GHH/Germandbls HHH/Germandbls IHH/Germandbls JHH/Germandbls KHH/Germandbls LHH/Germandbls MHH/Germandbls NHH/Germandbls OHH/Germandbls PHH/Germandbls QHH/Germandbls/Q.ss02 HH/Germandbls RHH/Germandbls SHH/Germandbls THH/Germandbls UHH/Germandbls VHH/Germandbls WHH/Germandbls XHH/Germandbls YHH/Germandbls ZHH/Germandbls \012\012A/Germandbls HHB/Germandbls HHC/Germandbls HHD/Germandbls HHE/Germandbls HHF/Germandbls HHG/Germandbls H\012HH/Germandbls HHI/Germandbls HHJ/Germandbls HHK/Germandbls HHL/Germandbls HHM/Germandbls HHN/Germandbls HHO/Germandbls HHHHP/Germandbls HHQ/Germandbls HH/Q.ss02/Germandbls HHR/Germandbls HHS/Germandbls HHT/Germandbls HHU/Germandbls H\012HV/Germandbls HHW/Germandbls HHX/Germandbls HHY/Germandbls HHZ/Germandbls HH\012\012nnßannnßbnnnßcnnnßdnnnßennnßfnnnßgnnnßhnnnßinnnßjnnnßknnnßlnnnßmnnnßnnnnßonnnßpnnnßqnnnßrnnnßsnnnßtnnnßun\012nnßvnnnßwnnnßxnnnßynnnßznnn\012nn/germandbls.ss03 annn/germandbls.ss03 bnnn/germandbls.ss03 cnnn/germandbls.ss03 dnnn/germandbls.ss03 ennn/germandbls.ss03 fnnn/germandbls.ss03 gnnn/germandbls.ss03 hnnn/germandbls.ss03 innn/germandbls.ss03 jnnn/germandbls.ss03 knnn/germandbls.ss03 lnnn/germandbls.ss03 mnnn/germandbls.ss03 nnnn/germandbls.ss03 onnn/germandbls.ss03 pnnn/germandbls.ss03 qnnn/germandbls.ss03 rnnn/germandbls.ss03 snnn/germandbls.ss03 tnnn/germandbls.ss03 unnn/germandbls.ss03 vnnn/germandbls.ss03 wnnn/germandbls.ss03 xnnn/germandbls.ss03 ynnn/germandbls.ss03 znnn\012",
-"a/schwa nn b/schwa nn c/schwa nn d/schwa nn e/schwa nn f/schwa nn g/schwa nn h/schwa nn i/schwa nn j/schwa nn k/schwa nn l/schwa nn m/schwa nn n/schwa nn o/schwa nn p/schwa nn q/schwa nn r/schwa nn s/schwa nn t/schwa nn u/schwa nn v/schwa nn w/schwa nn x/schwa nn y/schwa nn z/schwa nn /schwa nn \012HHA/schwa nn HHB/schwa nn HHC/schwa nn HHD/schwa nn HHE/schwa nn HHF/schwa nn HHG/schwa nn HHH/schwa nn HHI/schwa nn HHJ/schwa nn HHK/schwa nn HHL/schwa nn HHM/schwa nn HHN/schwa nn HHO/schwa nn HHP/schwa nn HHQ/schwa nn HH/Q.ss02/schwa nn HHR/schwa nn HHS/schwa nn HHT/schwa nn HHU/schwa nn HHV/schwa nn HHW/schwa nn HHX/schwa nn HHY/schwa nn HHZ/schwa nn HHu/backslash o./schwa . /backslash o. n.\012\012HHA/Schwa HH HHB/Schwa HH HHC/Schwa HH HHD/Schwa HH HHE/Schwa HH HHF/Schwa HH HHG/Schwa HH HHH/Schwa HH HHI/Schwa HH HHJ/Schwa HH HHK/Schwa HH HHL/Schwa HH HHM/Schwa HH HHN/Schwa HH HHO/Schwa HH HHP/Schwa HH HHQ/Schwa HH HH/Q.ss02/Schwa HH HHR/Schwa HH HHS/Schwa HH HHT/Schwa HH HHU/Schwa HH HHV/Schwa HH HHW/Schwa HH HHX/Schwa HH HHY/Schwa HH HHZ/Schwa HH HH///Schwa",
-"½ /onethird  /twothirds  ¼ ¾ /oneeighth  /threeeighths  /fiveeighths  /seveneighths"
+"a/schwa nn/space b/schwa nn/space c/schwa nn/space d/schwa nn/space e/schwa nn/space f/schwa nn/space g/schwa nn/space h/schwa nn/space i/schwa nn/space j/schwa nn/space k/schwa nn/space l/schwa nn/space m/schwa nn/space n/schwa nn/space o/schwa nn/space p/schwa nn/space q/schwa nn/space r/schwa nn/space s/schwa nn/space t/schwa nn/space u/schwa nn/space v/schwa nn/space w/schwa nn/space x/schwa nn/space y/schwa nn/space z/schwa nn/space/schwa nn/space \012HHA/schwa nn/space HHB/schwa nn/space HHC/schwa nn/space HHD/schwa nn/space HHE/schwa nn/space HHF/schwa nn/space HHG/schwa nn/space HHH/schwa nn/space HHI/schwa nn/space HHJ/schwa nn/space HHK/schwa nn/space HHL/schwa nn/space HHM/schwa nn/space HHN/schwa nn/space HHO/schwa nn/space HHP/schwa nn/space HHQ/schwa nn/space HH/Q.ss02/schwa nn/space HHR/schwa nn/space HHS/schwa nn/space HHT/schwa nn/space HHU/schwa nn/space HHV/schwa nn/space HHW/schwa nn/space HHX/schwa nn/space HHY/schwa nn/space HHZ/schwa nn/space HHu/backslash o./schwa ./space/backslash o./space n.\012\012HHA/Schwa HH/space HHB/Schwa HH/space HHC/Schwa HH/space HHD/Schwa HH/space HHE/Schwa HH/space HHF/Schwa HH/space HHG/Schwa HH/space HHH/Schwa HH/space HHI/Schwa HH/space HHJ/Schwa HH/space HHK/Schwa HH/space HHL/Schwa HH/space HHM/Schwa HH/space HHN/Schwa HH/space HHO/Schwa HH/space HHP/Schwa HH/space HHQ/Schwa HH/space HH/Q.ss02/Schwa HH/space HHR/Schwa HH/space HHS/Schwa HH/space HHT/Schwa HH/space HHU/Schwa HH/space HHV/Schwa HH/space HHW/Schwa HH/space HHX/Schwa HH/space HHY/Schwa HH/space HHZ/Schwa HH/space HH///Schwa",
+"½/space/onethird/space/twothirds/space ¼/space ¾/space/oneeighth/space/threeeighths/space/fiveeighths/space/seveneighths",
+"/f_f/f_f_i/f_f_j/f_f_l/f_f_t/f_i/f_j/f_l/f_t"
 );
 classes = (
 {
@@ -1138,7 +1139,7 @@ familyName = Signika;
 featurePrefixes = (
 {
 automatic = 1;
-code = "languagesystem DFLT dflt;\012\012languagesystem latn dflt;\012languagesystem latn ROM;\012languagesystem latn MOL;\012languagesystem latn KAZ;\012languagesystem latn TAT;\012languagesystem latn TRK;\012languagesystem latn CRT;\012languagesystem latn AZE;\012languagesystem latn CAT;\012";
+code = "languagesystem DFLT dflt;\012\012languagesystem latn dflt;\012languagesystem latn AZE;\012languagesystem latn CRT;\012languagesystem latn KAZ;\012languagesystem latn TAT;\012languagesystem latn TRK;\012languagesystem latn ROM;\012languagesystem latn MOL;\012languagesystem latn CAT;\012";
 name = Languagesystems;
 }
 );
@@ -1155,7 +1156,7 @@ name = ccmp;
 },
 {
 automatic = 1;
-code = "lookup locl_latn_0 {\012	script latn;\012	language ROM;\012	sub Scedilla by Scommaaccent;\012	sub scedilla by scommaaccent;\012	sub Tcedilla by Tcommaaccent;\012	sub tcedilla by tcommaaccent;\012	language MOL;\012	sub Scedilla by Scommaaccent;\012	sub scedilla by scommaaccent;\012	sub Tcedilla by Tcommaaccent;\012	sub tcedilla by tcommaaccent;\012	language KAZ;\012	sub i by idotaccent;\012	language TAT;\012	sub i by idotaccent;\012	language TRK;\012	sub i by idotaccent;\012	language CRT;\012	sub i by idotaccent;\012	language AZE;\012	sub i by idotaccent;\012} locl_latn_0;\012\012lookup locl_latn_1 {\012	script latn;\012	language CAT;\012	sub  l' periodcentered' l by ldot;\012	sub  L' periodcentered' L by Ldot;\012} locl_latn_1;\012";
+code = "lookup locl_latn_0 {\012	script latn;\012	language AZE;\012	language CRT;\012	language KAZ;\012	language TAT;\012	language TRK;\012	sub i by idotaccent;\012} locl_latn_0;\012\012lookup locl_latn_1 {\012	script latn;\012	language ROM;\012	language MOL;\012	sub Scedilla by Scommaaccent;\012	sub scedilla by scommaaccent;\012	sub Tcedilla by Tcommaaccent;\012	sub tcedilla by tcommaaccent;\012} locl_latn_1;\012\012lookup locl_latn_2 {\012	script latn;\012	language CAT;\012	sub  l' periodcentered' l by ldot;\012	sub  L' periodcentered' L by Ldot;\012} locl_latn_2;\012";
 name = locl;
 },
 {
@@ -1195,7 +1196,7 @@ name = ordn;
 },
 {
 automatic = 1;
-code = "sub A by a.smcp;\012sub B by b.smcp;\012sub C by c.smcp;\012sub D by d.smcp;\012sub E by e.smcp;\012sub F by f.smcp;\012sub G by g.smcp;\012sub H by h.smcp;\012sub I by i.smcp;\012sub J by j.smcp;\012sub K by k.smcp;\012sub L by l.smcp;\012sub M by m.smcp;\012sub N by n.smcp;\012sub O by o.smcp;\012sub P by p.smcp;\012sub Q by q.smcp;\012sub R by r.smcp;\012sub S by s.smcp;\012sub T by t.smcp;\012sub U by u.smcp;\012sub V by v.smcp;\012sub W by w.smcp;\012sub X by x.smcp;\012sub Y by y.smcp;\012sub Z by z.smcp;\012sub Aacute by aacute.smcp;\012sub Abreve by abreve.smcp;\012sub Abreveacute by abreveacute.smcp;\012sub Abrevedotbelow by abrevedotbelow.smcp;\012sub Abrevegrave by abrevegrave.smcp;\012sub Abrevehookabove by abrevehookabove.smcp;\012sub Abrevetilde by abrevetilde.smcp;\012sub Acircumflex by acircumflex.smcp;\012sub Acircumflexacute by acircumflexacute.smcp;\012sub Acircumflexdotbelow by acircumflexdotbelow.smcp;\012sub Acircumflexgrave by acircumflexgrave.smcp;\012sub Acircumflexhookabove by acircumflexhookabove.smcp;\012sub Acircumflextilde by acircumflextilde.smcp;\012sub Adblgrave by adblgrave.smcp;\012sub Adieresis by adieresis.smcp;\012sub Adotbelow by adotbelow.smcp;\012sub Agrave by agrave.smcp;\012sub Ahookabove by ahookabove.smcp;\012sub Ainvertedbreve by ainvertedbreve.smcp;\012sub Amacron by amacron.smcp;\012sub Aogonek by aogonek.smcp;\012sub Aring by aring.smcp;\012sub Aringacute by aringacute.smcp;\012sub Atilde by atilde.smcp;\012sub AE by ae.smcp;\012sub AEacute by aeacute.smcp;\012sub Cacute by cacute.smcp;\012sub Ccaron by ccaron.smcp;\012sub Ccedilla by ccedilla.smcp;\012sub Ccedillaacute by ccedillaacute.smcp;\012sub Ccircumflex by ccircumflex.smcp;\012sub Cdotaccent by cdotaccent.smcp;\012sub Eth by eth.smcp;\012sub Dcaron by dcaron.smcp;\012sub Dcroat by dcroat.smcp;\012sub Ddotbelow by ddotbelow.smcp;\012sub Dlinebelow by dlinebelow.smcp;\012sub Eacute by eacute.smcp;\012sub Ebreve by ebreve.smcp;\012sub Ecaron by ecaron.smcp;\012sub Ecedillabreve by ecedillabreve.smcp;\012sub Ecircumflex by ecircumflex.smcp;\012sub Ecircumflexacute by ecircumflexacute.smcp;\012sub Ecircumflexdotbelow by ecircumflexdotbelow.smcp;\012sub Ecircumflexgrave by ecircumflexgrave.smcp;\012sub Ecircumflexhookabove by ecircumflexhookabove.smcp;\012sub Ecircumflextilde by ecircumflextilde.smcp;\012sub Edblgrave by edblgrave.smcp;\012sub Edieresis by edieresis.smcp;\012sub Edotaccent by edotaccent.smcp;\012sub Edotbelow by edotbelow.smcp;\012sub Egrave by egrave.smcp;\012sub Ehookabove by ehookabove.smcp;\012sub Einvertedbreve by einvertedbreve.smcp;\012sub Emacron by emacron.smcp;\012sub Emacronacute by emacronacute.smcp;\012sub Emacrongrave by emacrongrave.smcp;\012sub Eogonek by eogonek.smcp;\012sub Etilde by etilde.smcp;\012sub Gbreve by gbreve.smcp;\012sub Gcaron by gcaron.smcp;\012sub Gcircumflex by gcircumflex.smcp;\012sub Gcommaaccent by gcommaaccent.smcp;\012sub Gdotaccent by gdotaccent.smcp;\012sub Gmacron by gmacron.smcp;\012sub Hbar by hbar.smcp;\012sub Hbrevebelow by hbrevebelow.smcp;\012sub Hcircumflex by hcircumflex.smcp;\012sub Hdotbelow by hdotbelow.smcp;\012sub IJ by ij.smcp;\012sub Iacute by iacute.smcp;\012sub Ibreve by ibreve.smcp;\012sub Icircumflex by icircumflex.smcp;\012sub Idblgrave by idblgrave.smcp;\012sub Idieresis by idieresis.smcp;\012sub Idieresisacute by idieresisacute.smcp;\012sub Idotaccent by idotaccent.smcp;\012sub Idotbelow by idotbelow.smcp;\012sub Igrave by igrave.smcp;\012sub Ihookabove by ihookabove.smcp;\012sub Iinvertedbreve by iinvertedbreve.smcp;\012sub Imacron by imacron.smcp;\012sub Iogonek by iogonek.smcp;\012sub Itilde by itilde.smcp;\012sub Jcircumflex by jcircumflex.smcp;\012sub Kcommaaccent by kcommaaccent.smcp;\012sub Lacute by lacute.smcp;\012sub Lcaron by lcaron.smcp;\012sub Lcommaaccent by lcommaaccent.smcp;\012sub Ldot by ldot.smcp;\012sub Ldotbelow by ldotbelow.smcp;\012sub Llinebelow by llinebelow.smcp;\012sub Lslash by lslash.smcp;\012sub Mdotbelow by mdotbelow.smcp;\012sub Nacute by nacute.smcp;\012sub Ncaron by ncaron.smcp;\012sub Ncommaaccent by ncommaaccent.smcp;\012sub Ndotaccent by ndotaccent.smcp;\012sub Ndotbelow by ndotbelow.smcp;\012sub Nlinebelow by nlinebelow.smcp;\012sub Ntilde by ntilde.smcp;\012sub Eng by eng.smcp;\012sub Oacute by oacute.smcp;\012sub Obreve by obreve.smcp;\012sub Ocircumflex by ocircumflex.smcp;\012sub Ocircumflexacute by ocircumflexacute.smcp;\012sub Ocircumflexdotbelow by ocircumflexdotbelow.smcp;\012sub Ocircumflexgrave by ocircumflexgrave.smcp;\012sub Ocircumflexhookabove by ocircumflexhookabove.smcp;\012sub Ocircumflextilde by ocircumflextilde.smcp;\012sub Odblgrave by odblgrave.smcp;\012sub Odieresis by odieresis.smcp;\012sub Odieresismacron by odieresismacron.smcp;\012sub Odotaccentmacron by odotaccentmacron.smcp;\012sub Odotbelow by odotbelow.smcp;\012sub Ograve by ograve.smcp;\012sub Ohookabove by ohookabove.smcp;\012sub Ohorn by ohorn.smcp;\012sub Ohornacute by ohornacute.smcp;\012sub Ohorndotbelow by ohorndotbelow.smcp;\012sub Ohorngrave by ohorngrave.smcp;\012sub Ohornhookabove by ohornhookabove.smcp;\012sub Ohorntilde by ohorntilde.smcp;\012sub Ohungarumlaut by ohungarumlaut.smcp;\012sub Oinvertedbreve by oinvertedbreve.smcp;\012sub Omacron by omacron.smcp;\012sub Omacronacute by omacronacute.smcp;\012sub Omacrongrave by omacrongrave.smcp;\012sub Oogonek by oogonek.smcp;\012sub Oslash by oslash.smcp;\012sub Oslashacute by oslashacute.smcp;\012sub Otilde by otilde.smcp;\012sub Otildeacute by otildeacute.smcp;\012sub Otildedieresis by otildedieresis.smcp;\012sub Otildemacron by otildemacron.smcp;\012sub OE by oe.smcp;\012sub Thorn by thorn.smcp;\012sub Racute by racute.smcp;\012sub Rcaron by rcaron.smcp;\012sub Rcommaaccent by rcommaaccent.smcp;\012sub Rdblgrave by rdblgrave.smcp;\012sub Rdotbelow by rdotbelow.smcp;\012sub Rinvertedbreve by rinvertedbreve.smcp;\012sub Rlinebelow by rlinebelow.smcp;\012sub Sacute by sacute.smcp;\012sub Sacutedotaccent by sacutedotaccent.smcp;\012sub Scaron by scaron.smcp;\012sub Scarondotaccent by scarondotaccent.smcp;\012sub Scedilla by scedilla.smcp;\012sub Scircumflex by scircumflex.smcp;\012sub Scommaaccent by scommaaccent.smcp;\012sub Sdotaccent by sdotaccent.smcp;\012sub Sdotbelow by sdotbelow.smcp;\012sub Sdotbelowdotaccent by sdotbelowdotaccent.smcp;\012sub Germandbls by germandbls.smcp;\012sub Schwa by schwa.smcp;\012sub Tbar by tbar.smcp;\012sub Tcaron by tcaron.smcp;\012sub Tcedilla by tcedilla.smcp;\012sub Tcommaaccent by tcommaaccent.smcp;\012sub Tdotbelow by tdotbelow.smcp;\012sub Tlinebelow by tlinebelow.smcp;\012sub Uacute by uacute.smcp;\012sub Ubreve by ubreve.smcp;\012sub Ucircumflex by ucircumflex.smcp;\012sub Udblgrave by udblgrave.smcp;\012sub Udieresis by udieresis.smcp;\012sub Udotbelow by udotbelow.smcp;\012sub Ugrave by ugrave.smcp;\012sub Uhookabove by uhookabove.smcp;\012sub Uhorn by uhorn.smcp;\012sub Uhornacute by uhornacute.smcp;\012sub Uhorndotbelow by uhorndotbelow.smcp;\012sub Uhorngrave by uhorngrave.smcp;\012sub Uhornhookabove by uhornhookabove.smcp;\012sub Uhorntilde by uhorntilde.smcp;\012sub Uhungarumlaut by uhungarumlaut.smcp;\012sub Uinvertedbreve by uinvertedbreve.smcp;\012sub Umacron by umacron.smcp;\012sub Umacrondieresis by umacrondieresis.smcp;\012sub Uogonek by uogonek.smcp;\012sub Uring by uring.smcp;\012sub Utilde by utilde.smcp;\012sub Utildeacute by utildeacute.smcp;\012sub Wacute by wacute.smcp;\012sub Wcircumflex by wcircumflex.smcp;\012sub Wdieresis by wdieresis.smcp;\012sub Wgrave by wgrave.smcp;\012sub Yacute by yacute.smcp;\012sub Ycircumflex by ycircumflex.smcp;\012sub Ydieresis by ydieresis.smcp;\012sub Ydotaccent by ydotaccent.smcp;\012sub Ydotbelow by ydotbelow.smcp;\012sub Ygrave by ygrave.smcp;\012sub Yhookabove by yhookabove.smcp;\012sub Ymacron by ymacron.smcp;\012sub Ytilde by ytilde.smcp;\012sub Zacute by zacute.smcp;\012sub Zcaron by zcaron.smcp;\012sub Zdotaccent by zdotaccent.smcp;\012sub Zdotbelow by zdotbelow.smcp;\012sub DZcaron by dzcaron.smcp;\012sub Dzcaron by dzcaron.smcp;\012sub LJ by lj.smcp;\012sub Lj by lj.smcp;\012sub NJ by nj.smcp;\012sub Nj by nj.smcp;\012sub ampersand by ampersand.c2sc;\012sub asterisk by asterisk.c2sc;\012sub exclam by exclam.c2sc;\012sub exclamdown by exclamdown.c2sc;\012sub question by question.c2sc;\012sub questiondown by questiondown.c2sc;\012sub parenleft by parenleft.c2sc;\012sub parenright by parenright.c2sc;\012sub braceleft by braceleft.c2sc;\012sub braceright by braceright.c2sc;\012sub bracketleft by bracketleft.c2sc;\012sub bracketright by bracketright.c2sc;\012sub leftanglebracket-math by leftanglebracket-math.c2sc;\012sub rightanglebracket-math by rightanglebracket-math.c2sc;\012sub copyright by copyright.c2sc;\012sub numero by numero.c2sc;\012sub quotedblleft by quotedblleft.c2sc;\012sub quotedblright by quotedblright.c2sc;\012sub quoteleft by quoteleft.c2sc;\012sub quoteright by quoteright.c2sc;\012sub slash by slash.c2sc;\012sub backslash by backslash.c2sc;\012sub periodcentered.CAT by periodcentered.CAT.c2sc;\012sub zero by zero.c2sc;\012sub zero.zero by zero.zero.c2sc;\012sub one by one.c2sc;\012sub two by two.c2sc;\012sub three by three.c2sc;\012sub four by four.c2sc;\012sub five by five.c2sc;\012sub six by six.c2sc;\012sub seven by seven.c2sc;\012sub eight by eight.c2sc;\012sub nine by nine.c2sc;\012sub cent by cent.c2sc;\012sub dollar by dollar.c2sc;\012sub euro by euro.c2sc;\012sub sterling by sterling.c2sc;\012sub yen by yen.c2sc;\012sub degree by degree.c2sc;\012sub minute by minute.c2sc;\012sub second by second.c2sc;\012sub percent by percent.c2sc;\012sub perthousand by perthousand.c2sc;\012";
+code = "sub A by a.smcp;\012sub B by b.smcp;\012sub C by c.smcp;\012sub D by d.smcp;\012sub E by e.smcp;\012sub F by f.smcp;\012sub G by g.smcp;\012sub H by h.smcp;\012sub I by i.smcp;\012sub J by j.smcp;\012sub K by k.smcp;\012sub L by l.smcp;\012sub M by m.smcp;\012sub N by n.smcp;\012sub O by o.smcp;\012sub P by p.smcp;\012sub Q by q.smcp;\012sub R by r.smcp;\012sub S by s.smcp;\012sub T by t.smcp;\012sub U by u.smcp;\012sub V by v.smcp;\012sub W by w.smcp;\012sub X by x.smcp;\012sub Y by y.smcp;\012sub Z by z.smcp;\012sub Aacute by aacute.smcp;\012sub Abreve by abreve.smcp;\012sub Abreveacute by abreveacute.smcp;\012sub Abrevedotbelow by abrevedotbelow.smcp;\012sub Abrevegrave by abrevegrave.smcp;\012sub Abrevehookabove by abrevehookabove.smcp;\012sub Abrevetilde by abrevetilde.smcp;\012sub Acircumflex by acircumflex.smcp;\012sub Acircumflexacute by acircumflexacute.smcp;\012sub Acircumflexdotbelow by acircumflexdotbelow.smcp;\012sub Acircumflexgrave by acircumflexgrave.smcp;\012sub Acircumflexhookabove by acircumflexhookabove.smcp;\012sub Acircumflextilde by acircumflextilde.smcp;\012sub Adblgrave by adblgrave.smcp;\012sub Adieresis by adieresis.smcp;\012sub Adotbelow by adotbelow.smcp;\012sub Agrave by agrave.smcp;\012sub Ahookabove by ahookabove.smcp;\012sub Amacron by amacron.smcp;\012sub Aogonek by aogonek.smcp;\012sub Aring by aring.smcp;\012sub Aringacute by aringacute.smcp;\012sub Atilde by atilde.smcp;\012sub AE by ae.smcp;\012sub AEacute by aeacute.smcp;\012sub Cacute by cacute.smcp;\012sub Ccaron by ccaron.smcp;\012sub Ccedilla by ccedilla.smcp;\012sub Ccedillaacute by ccedillaacute.smcp;\012sub Ccircumflex by ccircumflex.smcp;\012sub Cdotaccent by cdotaccent.smcp;\012sub Eth by eth.smcp;\012sub Dcaron by dcaron.smcp;\012sub Dcroat by dcroat.smcp;\012sub Ddotbelow by ddotbelow.smcp;\012sub Eacute by eacute.smcp;\012sub Ebreve by ebreve.smcp;\012sub Ecaron by ecaron.smcp;\012sub Ecedillabreve by ecedillabreve.smcp;\012sub Ecircumflex by ecircumflex.smcp;\012sub Ecircumflexacute by ecircumflexacute.smcp;\012sub Ecircumflexdotbelow by ecircumflexdotbelow.smcp;\012sub Ecircumflexgrave by ecircumflexgrave.smcp;\012sub Ecircumflexhookabove by ecircumflexhookabove.smcp;\012sub Ecircumflextilde by ecircumflextilde.smcp;\012sub Edblgrave by edblgrave.smcp;\012sub Edieresis by edieresis.smcp;\012sub Edotaccent by edotaccent.smcp;\012sub Edotbelow by edotbelow.smcp;\012sub Egrave by egrave.smcp;\012sub Ehookabove by ehookabove.smcp;\012sub Emacron by emacron.smcp;\012sub Emacronacute by emacronacute.smcp;\012sub Emacrongrave by emacrongrave.smcp;\012sub Eogonek by eogonek.smcp;\012sub Etilde by etilde.smcp;\012sub Gbreve by gbreve.smcp;\012sub Gcaron by gcaron.smcp;\012sub Gcircumflex by gcircumflex.smcp;\012sub Gcommaaccent by gcommaaccent.smcp;\012sub Gdotaccent by gdotaccent.smcp;\012sub Gmacron by gmacron.smcp;\012sub Hbar by hbar.smcp;\012sub Hbrevebelow by hbrevebelow.smcp;\012sub Hcircumflex by hcircumflex.smcp;\012sub Hdotbelow by hdotbelow.smcp;\012sub IJ by ij.smcp;\012sub Iacute by iacute.smcp;\012sub Ibreve by ibreve.smcp;\012sub Icircumflex by icircumflex.smcp;\012sub Idblgrave by idblgrave.smcp;\012sub Idieresis by idieresis.smcp;\012sub Idieresisacute by idieresisacute.smcp;\012sub Idotaccent by idotaccent.smcp;\012sub Idotbelow by idotbelow.smcp;\012sub Igrave by igrave.smcp;\012sub Ihookabove by ihookabove.smcp;\012sub Imacron by imacron.smcp;\012sub Iogonek by iogonek.smcp;\012sub Itilde by itilde.smcp;\012sub Jcircumflex by jcircumflex.smcp;\012sub Kcommaaccent by kcommaaccent.smcp;\012sub Lacute by lacute.smcp;\012sub Lcaron by lcaron.smcp;\012sub Lcommaaccent by lcommaaccent.smcp;\012sub Ldot by ldot.smcp;\012sub Ldotbelow by ldotbelow.smcp;\012sub Lslash by lslash.smcp;\012sub Mdotbelow by mdotbelow.smcp;\012sub Nacute by nacute.smcp;\012sub Ncaron by ncaron.smcp;\012sub Ncommaaccent by ncommaaccent.smcp;\012sub Ndotaccent by ndotaccent.smcp;\012sub Ndotbelow by ndotbelow.smcp;\012sub Nlinebelow by nlinebelow.smcp;\012sub Ntilde by ntilde.smcp;\012sub Eng by eng.smcp;\012sub Oacute by oacute.smcp;\012sub Obreve by obreve.smcp;\012sub Ocircumflex by ocircumflex.smcp;\012sub Ocircumflexacute by ocircumflexacute.smcp;\012sub Ocircumflexdotbelow by ocircumflexdotbelow.smcp;\012sub Ocircumflexgrave by ocircumflexgrave.smcp;\012sub Ocircumflexhookabove by ocircumflexhookabove.smcp;\012sub Ocircumflextilde by ocircumflextilde.smcp;\012sub Odblgrave by odblgrave.smcp;\012sub Odieresis by odieresis.smcp;\012sub Odieresismacron by odieresismacron.smcp;\012sub Odotaccentmacron by odotaccentmacron.smcp;\012sub Odotbelow by odotbelow.smcp;\012sub Ograve by ograve.smcp;\012sub Ohookabove by ohookabove.smcp;\012sub Ohorn by ohorn.smcp;\012sub Ohornacute by ohornacute.smcp;\012sub Ohorndotbelow by ohorndotbelow.smcp;\012sub Ohorngrave by ohorngrave.smcp;\012sub Ohornhookabove by ohornhookabove.smcp;\012sub Ohorntilde by ohorntilde.smcp;\012sub Ohungarumlaut by ohungarumlaut.smcp;\012sub Omacron by omacron.smcp;\012sub Omacronacute by omacronacute.smcp;\012sub Omacrongrave by omacrongrave.smcp;\012sub Oogonek by oogonek.smcp;\012sub Oslash by oslash.smcp;\012sub Oslashacute by oslashacute.smcp;\012sub Otilde by otilde.smcp;\012sub Otildeacute by otildeacute.smcp;\012sub Otildedieresis by otildedieresis.smcp;\012sub Otildemacron by otildemacron.smcp;\012sub OE by oe.smcp;\012sub Thorn by thorn.smcp;\012sub Racute by racute.smcp;\012sub Rcaron by rcaron.smcp;\012sub Rcommaaccent by rcommaaccent.smcp;\012sub Rdblgrave by rdblgrave.smcp;\012sub Rdotbelow by rdotbelow.smcp;\012sub Rlinebelow by rlinebelow.smcp;\012sub Sacute by sacute.smcp;\012sub Sacutedotaccent by sacutedotaccent.smcp;\012sub Scaron by scaron.smcp;\012sub Scarondotaccent by scarondotaccent.smcp;\012sub Scedilla by scedilla.smcp;\012sub Scircumflex by scircumflex.smcp;\012sub Scommaaccent by scommaaccent.smcp;\012sub Sdotaccent by sdotaccent.smcp;\012sub Sdotbelow by sdotbelow.smcp;\012sub Sdotbelowdotaccent by sdotbelowdotaccent.smcp;\012sub Germandbls by germandbls.smcp;\012sub Schwa by schwa.smcp;\012sub Tbar by tbar.smcp;\012sub Tcaron by tcaron.smcp;\012sub Tcedilla by tcedilla.smcp;\012sub Tcommaaccent by tcommaaccent.smcp;\012sub Tdotbelow by tdotbelow.smcp;\012sub Uacute by uacute.smcp;\012sub Ubreve by ubreve.smcp;\012sub Ucircumflex by ucircumflex.smcp;\012sub Udblgrave by udblgrave.smcp;\012sub Udieresis by udieresis.smcp;\012sub Udotbelow by udotbelow.smcp;\012sub Ugrave by ugrave.smcp;\012sub Uhookabove by uhookabove.smcp;\012sub Uhorn by uhorn.smcp;\012sub Uhornacute by uhornacute.smcp;\012sub Uhorndotbelow by uhorndotbelow.smcp;\012sub Uhorngrave by uhorngrave.smcp;\012sub Uhornhookabove by uhornhookabove.smcp;\012sub Uhorntilde by uhorntilde.smcp;\012sub Uhungarumlaut by uhungarumlaut.smcp;\012sub Umacron by umacron.smcp;\012sub Umacrondieresis by umacrondieresis.smcp;\012sub Uogonek by uogonek.smcp;\012sub Uring by uring.smcp;\012sub Utilde by utilde.smcp;\012sub Utildeacute by utildeacute.smcp;\012sub Wacute by wacute.smcp;\012sub Wcircumflex by wcircumflex.smcp;\012sub Wdieresis by wdieresis.smcp;\012sub Wgrave by wgrave.smcp;\012sub Yacute by yacute.smcp;\012sub Ycircumflex by ycircumflex.smcp;\012sub Ydieresis by ydieresis.smcp;\012sub Ydotaccent by ydotaccent.smcp;\012sub Ydotbelow by ydotbelow.smcp;\012sub Ygrave by ygrave.smcp;\012sub Yhookabove by yhookabove.smcp;\012sub Ymacron by ymacron.smcp;\012sub Ytilde by ytilde.smcp;\012sub Zacute by zacute.smcp;\012sub Zcaron by zcaron.smcp;\012sub Zdotaccent by zdotaccent.smcp;\012sub Zdotbelow by zdotbelow.smcp;\012sub DZcaron by dzcaron.smcp;\012sub Dzcaron by dzcaron.smcp;\012sub LJ by lj.smcp;\012sub Lj by lj.smcp;\012sub NJ by nj.smcp;\012sub Nj by nj.smcp;\012sub ampersand by ampersand.c2sc;\012sub asterisk by asterisk.c2sc;\012sub exclam by exclam.c2sc;\012sub exclamdown by exclamdown.c2sc;\012sub question by question.c2sc;\012sub questiondown by questiondown.c2sc;\012sub parenleft by parenleft.c2sc;\012sub parenright by parenright.c2sc;\012sub braceleft by braceleft.c2sc;\012sub braceright by braceright.c2sc;\012sub bracketleft by bracketleft.c2sc;\012sub bracketright by bracketright.c2sc;\012sub leftanglebracket-math by leftanglebracket-math.c2sc;\012sub rightanglebracket-math by rightanglebracket-math.c2sc;\012sub copyright by copyright.c2sc;\012sub numero by numero.c2sc;\012sub quotedblleft by quotedblleft.c2sc;\012sub quotedblright by quotedblright.c2sc;\012sub quoteleft by quoteleft.c2sc;\012sub quoteright by quoteright.c2sc;\012sub slash by slash.c2sc;\012sub backslash by backslash.c2sc;\012sub periodcentered.CAT by periodcentered.CAT.c2sc;\012sub zero by zero.c2sc;\012sub zero.zero by zero.zero.c2sc;\012sub one by one.c2sc;\012sub two by two.c2sc;\012sub three by three.c2sc;\012sub four by four.c2sc;\012sub five by five.c2sc;\012sub six by six.c2sc;\012sub seven by seven.c2sc;\012sub eight by eight.c2sc;\012sub nine by nine.c2sc;\012sub degree by degree.c2sc;\012sub minute by minute.c2sc;\012sub second by second.c2sc;\012sub percent by percent.c2sc;\012sub perthousand by perthousand.c2sc;\012";
 name = c2sc;
 },
 {
@@ -138478,9 +138479,15 @@ rightKerningGroup = u.smcp;
 },
 {
 glyphname = f_f;
-lastChange = "2020-03-08 11:17:31 +0000";
+lastChange = "2020-03-11 11:44:14 +0000";
 layers = (
 {
+anchors = (
+{
+name = caret_1;
+position = "{612, 0}";
+}
+);
 background = {
 paths = (
 {
@@ -138681,6 +138688,12 @@ nodes = (
 width = 1246;
 },
 {
+anchors = (
+{
+name = caret_1;
+position = "{642, 0}";
+}
+);
 background = {
 paths = (
 {
@@ -138887,9 +138900,19 @@ unicode = FB00;
 },
 {
 glyphname = f_f_i;
-lastChange = "2020-03-08 11:18:35 +0000";
+lastChange = "2020-03-11 11:44:30 +0000";
 layers = (
 {
+anchors = (
+{
+name = caret_1;
+position = "{644, 0}";
+},
+{
+name = caret_2;
+position = "{1253, 0}";
+}
+);
 background = {
 anchors = (
 {
@@ -139182,6 +139205,16 @@ nodes = (
 width = 1734;
 },
 {
+anchors = (
+{
+name = caret_1;
+position = "{644, 0}";
+},
+{
+name = caret_2;
+position = "{1253, 0}";
+}
+);
 background = {
 anchors = (
 {
@@ -139408,7 +139441,7 @@ nodes = (
 "1638 1008 OFFCURVE",
 "1496 1008 CURVE SMOOTH",
 "1448 1008 LINE SMOOTH",
-"1280 1005 OFFCURVE",
+"1280 1008 OFFCURVE",
 "1112 1001 OFFCURVE",
 "944 998 CURVE",
 "664 1002 LINE",
@@ -139480,9 +139513,19 @@ unicode = FB03;
 },
 {
 glyphname = f_f_j;
-lastChange = "2020-01-31 14:46:14 +0000";
+lastChange = "2020-03-11 11:44:36 +0000";
 layers = (
 {
+anchors = (
+{
+name = caret_1;
+position = "{594, 0}";
+},
+{
+name = caret_2;
+position = "{1203, 0}";
+}
+);
 background = {
 anchors = (
 {
@@ -139781,6 +139824,16 @@ nodes = (
 width = 1740;
 },
 {
+anchors = (
+{
+name = caret_1;
+position = "{624, 0}";
+},
+{
+name = caret_2;
+position = "{1233, 0}";
+}
+);
 background = {
 anchors = (
 {
@@ -140084,9 +140137,19 @@ rightKerningGroup = i;
 },
 {
 glyphname = f_f_l;
-lastChange = "2020-03-08 11:21:15 +0000";
+lastChange = "2020-03-11 11:44:42 +0000";
 layers = (
 {
+anchors = (
+{
+name = caret_1;
+position = "{644, 0}";
+},
+{
+name = caret_2;
+position = "{1253, 0}";
+}
+);
 background = {
 paths = (
 {
@@ -140331,6 +140394,16 @@ nodes = (
 width = 1804;
 },
 {
+anchors = (
+{
+name = caret_1;
+position = "{644, 0}";
+},
+{
+name = caret_2;
+position = "{1253, 0}";
+}
+);
 background = {
 paths = (
 {
@@ -140581,9 +140654,19 @@ unicode = FB04;
 },
 {
 glyphname = f_f_t;
-lastChange = "2020-01-31 14:46:14 +0000";
+lastChange = "2020-03-11 11:44:48 +0000";
 layers = (
 {
+anchors = (
+{
+name = caret_1;
+position = "{614, 0}";
+},
+{
+name = caret_2;
+position = "{1223, 0}";
+}
+);
 background = {
 paths = (
 {
@@ -140852,6 +140935,16 @@ nodes = (
 width = 1882;
 },
 {
+anchors = (
+{
+name = caret_1;
+position = "{634, 0}";
+},
+{
+name = caret_2;
+position = "{1243, 0}";
+}
+);
 background = {
 paths = (
 {
@@ -141125,9 +141218,15 @@ rightKerningGroup = t;
 },
 {
 glyphname = f_i;
-lastChange = "2020-03-07 09:48:39 +0000";
+lastChange = "2020-03-11 11:44:58 +0000";
 layers = (
 {
+anchors = (
+{
+name = caret_1;
+position = "{635, 0}";
+}
+);
 background = {
 anchors = (
 {
@@ -141340,6 +141439,12 @@ nodes = (
 width = 1124;
 },
 {
+anchors = (
+{
+name = caret_1;
+position = "{635, 0}";
+}
+);
 background = {
 anchors = (
 {
@@ -141558,9 +141663,15 @@ unicode = FB01;
 },
 {
 glyphname = f_j;
-lastChange = "2020-01-31 14:46:14 +0000";
+lastChange = "2020-03-11 11:45:01 +0000";
 layers = (
 {
+anchors = (
+{
+name = caret_1;
+position = "{635, 0}";
+}
+);
 background = {
 anchors = (
 {
@@ -141781,6 +141892,12 @@ nodes = (
 width = 1130;
 },
 {
+anchors = (
+{
+name = caret_1;
+position = "{635, 0}";
+}
+);
 background = {
 anchors = (
 {
@@ -142006,9 +142123,15 @@ rightKerningGroup = i;
 },
 {
 glyphname = f_l;
-lastChange = "2020-03-07 09:49:15 +0000";
+lastChange = "2020-03-11 11:45:06 +0000";
 layers = (
 {
+anchors = (
+{
+name = caret_1;
+position = "{635, 0}";
+}
+);
 background = {
 paths = (
 {
@@ -142173,6 +142296,12 @@ nodes = (
 width = 1196;
 },
 {
+anchors = (
+{
+name = caret_1;
+position = "{635, 0}";
+}
+);
 background = {
 paths = (
 {
@@ -142343,9 +142472,15 @@ unicode = FB02;
 },
 {
 glyphname = f_t;
-lastChange = "2020-01-31 14:46:14 +0000";
+lastChange = "2020-03-11 11:45:09 +0000";
 layers = (
 {
+anchors = (
+{
+name = caret_1;
+position = "{635, 0}";
+}
+);
 background = {
 paths = (
 {
@@ -142590,6 +142725,12 @@ nodes = (
 width = 1272;
 },
 {
+anchors = (
+{
+name = caret_1;
+position = "{635, 0}";
+}
+);
 background = {
 paths = (
 {
@@ -142839,9 +142980,15 @@ rightKerningGroup = t;
 },
 {
 glyphname = v_i;
-lastChange = "2020-01-31 14:46:14 +0000";
+lastChange = "2020-03-11 12:08:55 +0000";
 layers = (
 {
+anchors = (
+{
+name = caret_1;
+position = "{839, 0}";
+}
+);
 background = {
 paths = (
 {
@@ -142944,14 +143091,14 @@ nodes = (
 "378 346 OFFCURVE",
 "340 460 CURVE SMOOTH",
 "178 942 LINE SMOOTH",
-"166 980 OFFCURVE",
+"165 980 OFFCURVE",
 "142 994 OFFCURVE",
 "110 994 CURVE SMOOTH",
 "86 994 OFFCURVE",
 "64 990 OFFCURVE",
 "24 970 CURVE",
 "326 84 LINE SMOOTH",
-"354 0 OFFCURVE",
+"355 0 OFFCURVE",
 "374 -10 OFFCURVE",
 "432 -10 CURVE SMOOTH",
 "462 -10 OFFCURVE",
@@ -143004,6 +143151,12 @@ nodes = (
 width = 1372;
 },
 {
+anchors = (
+{
+name = caret_1;
+position = "{859, 0}";
+}
+);
 background = {
 paths = (
 {
@@ -143103,7 +143256,7 @@ nodes = (
 "484 251 OFFCURVE",
 "482 264 CURVE SMOOTH",
 "472 324 OFFCURVE",
-"460 426 OFFCURVE",
+"459 426 OFFCURVE",
 "442 500 CURVE SMOOTH",
 "358 864 LINE SMOOTH",
 "332 978 OFFCURVE",
@@ -143113,7 +143266,7 @@ nodes = (
 "44 998 OFFCURVE",
 "-12 974 CURVE",
 "222 142 LINE SMOOTH",
-"256 18 OFFCURVE",
+"257 18 OFFCURVE",
 "324 -12 OFFCURVE",
 "448 -12 CURVE SMOOTH",
 "532 -12 OFFCURVE",
@@ -143171,9 +143324,15 @@ rightKerningGroup = i;
 },
 {
 glyphname = v_j;
-lastChange = "2020-01-31 14:46:14 +0000";
+lastChange = "2020-03-11 12:09:00 +0000";
 layers = (
 {
+anchors = (
+{
+name = caret_1;
+position = "{839, 0}";
+}
+);
 background = {
 paths = (
 {
@@ -143342,6 +143501,12 @@ nodes = (
 width = 1380;
 },
 {
+anchors = (
+{
+name = caret_1;
+position = "{859, 0}";
+}
+);
 background = {
 paths = (
 {
@@ -143469,7 +143634,7 @@ nodes = (
 "484 251 OFFCURVE",
 "482 264 CURVE SMOOTH",
 "472 324 OFFCURVE",
-"460 426 OFFCURVE",
+"459 426 OFFCURVE",
 "442 500 CURVE SMOOTH",
 "358 864 LINE SMOOTH",
 "332 978 OFFCURVE",
@@ -143479,7 +143644,7 @@ nodes = (
 "44 998 OFFCURVE",
 "-12 974 CURVE",
 "222 142 LINE SMOOTH",
-"256 18 OFFCURVE",
+"257 18 OFFCURVE",
 "324 -12 OFFCURVE",
 "448 -12 CURVE SMOOTH",
 "532 -12 OFFCURVE",
@@ -195406,13 +195571,17 @@ v.smcp = 0;
 };
 "@MMK_L_D" = {
 "@MMK_R_A" = -30;
+"@MMK_R_AE" = -70;
 "@MMK_R_J" = -40;
+"@MMK_R_M" = -10;
 "@MMK_R_T" = -44;
 "@MMK_R_Y" = -24;
 "@MMK_R_Z" = -46;
 "@MMK_R_a" = -16;
 "@MMK_R_a.smcp" = -40;
+"@MMK_R_ae.smcp" = -40;
 "@MMK_R_comma" = -60;
+"@MMK_R_f" = 0;
 "@MMK_R_guillemetleft" = 0;
 "@MMK_R_j.smcp" = -32;
 "@MMK_R_y.smcp" = -10;
@@ -195427,10 +195596,6 @@ slash = -50;
 v.smcp = -14;
 x = -16;
 x.smcp = -18;
-"@MMK_R_AE" = -70;
-"@MMK_R_M" = -10;
-"@MMK_R_ae.smcp" = -40;
-"@MMK_R_f" = 0;
 };
 "@MMK_L_E" = {
 "@MMK_R_C" = -10;
@@ -195438,6 +195603,7 @@ x.smcp = -18;
 "@MMK_R_c" = -24;
 "@MMK_R_c.smcp" = -34;
 "@MMK_R_d" = -24;
+"@MMK_R_f" = -20;
 "@MMK_R_guillemetleft" = -20;
 "@MMK_R_t" = -16;
 "@MMK_R_u" = -24;
@@ -195451,16 +195617,15 @@ Germandbls = -20;
 eth = -16;
 oslash = -10;
 v.smcp = -30;
-"@MMK_R_f" = -20;
 };
 "@MMK_L_G" = {
 "@MMK_R_Y" = -20;
+"@MMK_R_f" = 10;
 "@MMK_R_v" = -20;
 "@MMK_R_y" = -20;
 Germandbls = 10;
 V = -30;
 germandbls.smcp = 20;
-"@MMK_R_f" = 10;
 };
 "@MMK_L_K" = {
 "@MMK_R_C" = -20;
@@ -195468,6 +195633,7 @@ germandbls.smcp = 20;
 "@MMK_R_c" = -40;
 "@MMK_R_c.smcp" = -36;
 "@MMK_R_d" = -36;
+"@MMK_R_f" = -20;
 "@MMK_R_guillemetleft" = -60;
 "@MMK_R_hyphen" = -30;
 "@MMK_R_t" = -50;
@@ -195485,7 +195651,6 @@ eth = -22;
 oslash = -20;
 oslash.smcp = -16;
 v.smcp = -80;
-"@MMK_R_f" = -20;
 };
 "@MMK_L_L" = {
 "@MMK_R_C" = -40;
@@ -195532,6 +195697,7 @@ backslash = -40;
 };
 "@MMK_L_O" = {
 "@MMK_R_A" = -28;
+"@MMK_R_AE" = -50;
 "@MMK_R_J" = -50;
 "@MMK_R_T" = -70;
 "@MMK_R_W" = -10;
@@ -195539,9 +195705,14 @@ backslash = -40;
 "@MMK_R_Z" = -46;
 "@MMK_R_a" = -32;
 "@MMK_R_a.smcp" = -30;
+"@MMK_R_ae.smcp" = -62;
 "@MMK_R_comma" = -70;
+"@MMK_R_f" = 0;
 "@MMK_R_guillemetleft" = 0;
+"@MMK_R_i" = 0;
 "@MMK_R_j.smcp" = -60;
+"@MMK_R_m.smcp" = -40;
+"@MMK_R_y" = 0;
 "@MMK_R_y.smcp" = -20;
 "@MMK_R_z" = -36;
 Germandbls = 0;
@@ -195550,17 +195721,11 @@ V = -28;
 X = -50;
 backslash = -60;
 germandbls.smcp = 0;
+jcircumflex = 10;
 quotesinglbase = -60;
 slash = -60;
 x = -26;
 x.smcp = -30;
-"@MMK_R_AE" = -50;
-"@MMK_R_m.smcp" = -40;
-"@MMK_R_ae.smcp" = -62;
-"@MMK_R_f" = 0;
-"@MMK_R_y" = 0;
-jcircumflex = 10;
-"@MMK_R_i" = 0;
 };
 "@MMK_L_Ohorn" = {
 "@MMK_R_A" = -28;
@@ -195605,6 +195770,7 @@ x.smcp = -20;
 "@MMK_R_c" = -44;
 "@MMK_R_c.smcp" = -22;
 "@MMK_R_d" = -32;
+"@MMK_R_f" = 20;
 "@MMK_R_guillemetleft" = -60;
 "@MMK_R_hyphen" = -30;
 "@MMK_R_u" = -52;
@@ -195615,10 +195781,14 @@ V = -34;
 backslash = -50;
 germandbls.smcp = -10;
 oslash = -24;
-"@MMK_R_f" = 20;
 };
 "@MMK_L_S" = {
+"@MMK_R_C" = 0;
+"@MMK_R_M" = -30;
+"@MMK_R_T" = -60;
+"@MMK_R_W" = -52;
 "@MMK_R_Y" = -20;
+"@MMK_R_Z" = -40;
 "@MMK_R_b.smcp" = -16;
 "@MMK_R_guillemetleft" = 20;
 "@MMK_R_v" = -48;
@@ -195627,6 +195797,7 @@ oslash = -24;
 "@MMK_R_y" = -48;
 "@MMK_R_y.smcp" = -26;
 "@MMK_R_z" = -20;
+V = -74;
 X = -10;
 germandbls.smcp = 0;
 itilde.smcp = 30;
@@ -195634,12 +195805,6 @@ napostrophe.smcp = 0;
 v.smcp = -36;
 x = -36;
 x.smcp = -20;
-"@MMK_R_C" = 0;
-"@MMK_R_T" = -60;
-"@MMK_R_W" = -52;
-"@MMK_R_Z" = -40;
-V = -74;
-"@MMK_R_M" = -30;
 };
 "@MMK_L_T" = {
 "@MMK_R_A" = -126;
@@ -195730,11 +195895,16 @@ zcaron.smcp = -40;
 };
 "@MMK_L_U" = {
 "@MMK_R_A" = -42;
+"@MMK_R_AE" = -40;
+"@MMK_R_C" = -20;
 "@MMK_R_J" = -34;
+"@MMK_R_M" = -10;
 "@MMK_R_Z" = -40;
 "@MMK_R_a" = -60;
 "@MMK_R_a.smcp" = -60;
+"@MMK_R_ae.smcp" = -62;
 "@MMK_R_comma" = -50;
+"@MMK_R_f" = -14;
 "@MMK_R_j.smcp" = -40;
 "@MMK_R_s" = -60;
 "@MMK_R_s.smcp" = -14;
@@ -195747,11 +195917,6 @@ X = -30;
 slash = -60;
 x = -66;
 x.smcp = -36;
-"@MMK_R_AE" = -40;
-"@MMK_R_M" = -10;
-"@MMK_R_ae.smcp" = -62;
-"@MMK_R_C" = -20;
-"@MMK_R_f" = -14;
 };
 "@MMK_L_Uhorn" = {
 "@MMK_R_A" = -40;
@@ -195905,6 +196070,7 @@ zcaron = -48;
 "@MMK_R_c" = -80;
 "@MMK_R_c.smcp" = -32;
 "@MMK_R_d" = -68;
+"@MMK_R_f" = -20;
 "@MMK_R_guillemetleft" = -70;
 "@MMK_R_hyphen" = -80;
 "@MMK_R_r" = -40;
@@ -195922,11 +196088,11 @@ itilde.smcp = 20;
 napostrophe.smcp = 0;
 oslash = -48;
 v.smcp = -24;
-"@MMK_R_f" = -20;
 };
 "@MMK_L_a" = {
 "@MMK_R_c" = -32;
 "@MMK_R_d" = -20;
+"@MMK_R_i" = 0;
 "@MMK_R_quoteright" = -16;
 "@MMK_R_t" = -26;
 "@MMK_R_v" = -32;
@@ -195935,7 +196101,6 @@ v.smcp = -24;
 backslash = -120;
 eth = -16;
 oslash = -20;
-"@MMK_R_i" = 0;
 };
 "@MMK_L_a.smcp" = {
 "@MMK_R_C" = -30;
@@ -196013,6 +196178,7 @@ v.smcp = -130;
 "@MMK_L_d.smcp" = {
 "@MMK_R_T" = -60;
 "@MMK_R_a.smcp" = -26;
+"@MMK_R_ae.smcp" = -46;
 "@MMK_R_comma" = -50;
 "@MMK_R_guillemetleft" = 10;
 "@MMK_R_j.smcp" = -24;
@@ -196025,7 +196191,6 @@ germandbls.smcp = 24;
 tbar.smcp = -28;
 v.smcp = -28;
 x.smcp = -28;
-"@MMK_R_ae.smcp" = -46;
 };
 "@MMK_L_e" = {
 "@MMK_R_v" = -28;
@@ -196096,14 +196261,17 @@ V = -50;
 "@MMK_L_guillemetright" = {
 "@MMK_R_C" = 0;
 "@MMK_R_J" = -40;
+"@MMK_R_M" = -20;
 "@MMK_R_S" = -30;
 "@MMK_R_T" = -120;
 "@MMK_R_W" = -60;
 "@MMK_R_Y" = -120;
 "@MMK_R_Z" = -40;
 "@MMK_R_a.smcp" = -40;
+"@MMK_R_ae.smcp" = -80;
 "@MMK_R_c.smcp" = 0;
 "@MMK_R_j.smcp" = -80;
+"@MMK_R_m.smcp" = -20;
 "@MMK_R_s.smcp" = -20;
 "@MMK_R_t.smcp" = -90;
 "@MMK_R_w.smcp" = -28;
@@ -196116,9 +196284,6 @@ X = -80;
 v.smcp = -50;
 x = -80;
 x.smcp = -80;
-"@MMK_R_M" = -20;
-"@MMK_R_m.smcp" = -20;
-"@MMK_R_ae.smcp" = -80;
 };
 "@MMK_L_h" = {
 "@MMK_R_v" = -34;
@@ -196274,10 +196439,12 @@ x = -44;
 "@MMK_R_W" = -46;
 "@MMK_R_Z" = -32;
 "@MMK_R_a.smcp" = -36;
+"@MMK_R_ae.smcp" = -30;
 "@MMK_R_comma" = -50;
 "@MMK_R_guillemetleft" = 0;
 "@MMK_R_guillemetright" = -20;
 "@MMK_R_j.smcp" = -26;
+"@MMK_R_m.smcp" = 0;
 "@MMK_R_t.smcp" = -40;
 "@MMK_R_w.smcp" = -20;
 "@MMK_R_y.smcp" = -36;
@@ -196289,8 +196456,6 @@ quotesinglbase = -40;
 tbar.smcp = -24;
 v.smcp = -30;
 x.smcp = -30;
-"@MMK_R_m.smcp" = 0;
-"@MMK_R_ae.smcp" = -30;
 };
 "@MMK_L_ohorn" = {
 "@MMK_R_f" = 0;
@@ -196302,11 +196467,11 @@ x.smcp = -30;
 "@MMK_R_v" = 0;
 "@MMK_R_w" = 0;
 backslash = 20;
+idieresis = 50;
+idieresisacute = 50;
 iinvertedbreve = 50;
 imacron = 40;
 itilde = 60;
-idieresis = 50;
-idieresisacute = 50;
 };
 "@MMK_L_ohorn.smcp" = {
 "@MMK_R_C" = 40;
@@ -196334,15 +196499,15 @@ x = -30;
 };
 "@MMK_L_quoteleft" = {
 "@MMK_R_A" = -120;
+"@MMK_R_AE" = -200;
 "@MMK_R_J" = -120;
 "@MMK_R_a.smcp" = -120;
+"@MMK_R_ae.smcp" = -200;
 "@MMK_R_c" = -70;
 "@MMK_R_d" = -50;
 "@MMK_R_j.smcp" = -120;
 "@MMK_R_m" = -50;
 "@MMK_R_s" = -50;
-"@MMK_R_AE" = -200;
-"@MMK_R_ae.smcp" = -200;
 };
 "@MMK_L_quoteright" = {
 "@MMK_R_A" = -184;
@@ -196400,26 +196565,26 @@ germandbls.smcp = 12;
 backslash = -100;
 };
 "@MMK_L_s.smcp" = {
+"@MMK_R_S" = 0;
 "@MMK_R_T" = -76;
 "@MMK_R_W" = -20;
 "@MMK_R_Y" = -28;
+"@MMK_R_a.smcp" = 12;
+"@MMK_R_c.smcp" = 0;
 "@MMK_R_guillemetleft" = 0;
 "@MMK_R_guillemetright" = 0;
 "@MMK_R_j.smcp" = 20;
-Tbar = -56;
-V = -20;
-ampersand.c2sc = 0;
-germandbls.smcp = 0;
-"@MMK_R_S" = 0;
-"@MMK_R_a.smcp" = 12;
-"@MMK_R_c.smcp" = 0;
+"@MMK_R_m.smcp" = -16;
 "@MMK_R_s.smcp" = 20;
 "@MMK_R_t.smcp" = -34;
 "@MMK_R_w.smcp" = -30;
 "@MMK_R_y.smcp" = -40;
+Tbar = -56;
+V = -20;
+ampersand.c2sc = 0;
+germandbls.smcp = 0;
 v.smcp = -48;
 x.smcp = 0;
-"@MMK_R_m.smcp" = -16;
 };
 "@MMK_L_superior" = {
 "@MMK_R_A" = -140;
@@ -196434,22 +196599,21 @@ x.smcp = 0;
 "@MMK_R_t.smcp" = 50;
 };
 "@MMK_L_t" = {
+"@MMK_R_a" = 0;
 "@MMK_R_c" = -20;
+"@MMK_R_d" = 0;
 "@MMK_R_f" = 24;
 "@MMK_R_i" = 24;
-"@MMK_R_v" = 0;
-"@MMK_R_w" = 0;
-"@MMK_R_y" = 0;
-"@MMK_R_z" = 0;
-backslash = -50;
-x = 30;
-"@MMK_R_a" = 0;
-"@MMK_R_d" = 0;
 "@MMK_R_m" = 0;
 "@MMK_R_r" = 0;
 "@MMK_R_s" = 0;
 "@MMK_R_u" = 0;
+"@MMK_R_v" = 0;
+"@MMK_R_w" = 0;
+"@MMK_R_y" = 0;
+"@MMK_R_z" = 0;
 at = 0;
+backslash = -50;
 eth = 0;
 ibreve = 52;
 icircumflex = 12;
@@ -196459,6 +196623,7 @@ imacron = 52;
 itilde = 72;
 jcircumflex = 12;
 oslash = 0;
+x = 30;
 };
 "@MMK_L_t.smcp" = {
 "@MMK_R_A" = -94;
@@ -196513,7 +196678,6 @@ x.smcp = -20;
 "@MMK_R_v" = 40;
 "@MMK_R_w" = 40;
 "@MMK_R_y" = 40;
-x = 20;
 ibreve = 70;
 icircumflex = 90;
 idblgrave = 90;
@@ -196523,6 +196687,7 @@ iinvertedbreve = 130;
 imacron = 120;
 itilde = 130;
 jcircumflex = 80;
+x = 20;
 };
 "@MMK_L_uhorn.smcp" = {
 "@MMK_R_A" = -15;
@@ -196643,13 +196808,16 @@ eth = -16;
 "@MMK_L_z.smcp" = {
 "@MMK_R_T" = -48;
 "@MMK_R_Y" = -24;
+"@MMK_R_b.smcp" = 0;
 "@MMK_R_c.smcp" = -40;
 "@MMK_R_guillemetleft" = -80;
 V = -32;
-"@MMK_R_b.smcp" = 0;
 };
 B = {
+"@MMK_R_AE" = 0;
+"@MMK_R_C" = -12;
 "@MMK_R_J" = -10;
+"@MMK_R_M" = -14;
 "@MMK_R_T" = -50;
 "@MMK_R_W" = -18;
 "@MMK_R_Y" = -54;
@@ -196673,9 +196841,6 @@ germandbls = -36;
 v.smcp = -44;
 x = -28;
 x.smcp = -28;
-"@MMK_R_AE" = 0;
-"@MMK_R_M" = -14;
-"@MMK_R_C" = -12;
 };
 F = {
 "@MMK_R_A" = -120;
@@ -196797,19 +196962,21 @@ x = -10;
 };
 Q.ss02 = {
 "@MMK_R_A" = -16;
+"@MMK_R_AE" = -40;
 "@MMK_R_J" = -30;
 "@MMK_R_a.smcp" = -20;
+"@MMK_R_m.smcp" = -30;
 "@MMK_R_y" = -10;
 X = -34;
 x = -20;
 x.smcp = -18;
-"@MMK_R_AE" = -40;
-"@MMK_R_m.smcp" = -30;
 };
 Tbar = {
 "@MMK_R_A" = -106;
+"@MMK_R_AE" = -100;
 "@MMK_R_C" = -40;
 "@MMK_R_J" = -130;
+"@MMK_R_M" = -28;
 "@MMK_R_a" = -110;
 "@MMK_R_c" = -100;
 "@MMK_R_colon" = -60;
@@ -196830,8 +196997,6 @@ ampersand = -20;
 v.smcp = -64;
 x = -70;
 x.smcp = -60;
-"@MMK_R_AE" = -100;
-"@MMK_R_M" = -28;
 };
 Tcedilla = {
 "@MMK_R_comma" = -160;
@@ -196839,15 +197004,18 @@ Tcedilla = {
 Thorn = {
 "@MMK_R_A" = -80;
 "@MMK_R_J" = -130;
+"@MMK_R_M" = -44;
 "@MMK_R_S" = -36;
 "@MMK_R_T" = -110;
 "@MMK_R_Y" = -70;
 "@MMK_R_Z" = -80;
 "@MMK_R_a" = -40;
 "@MMK_R_a.smcp" = -80;
+"@MMK_R_ae.smcp" = -120;
 "@MMK_R_c" = -24;
 "@MMK_R_d" = -20;
 "@MMK_R_j.smcp" = -168;
+"@MMK_R_m.smcp" = -40;
 "@MMK_R_s" = -22;
 "@MMK_R_z" = -44;
 "@MMK_R_z.smcp" = -60;
@@ -196856,9 +197024,6 @@ V = -60;
 X = -80;
 x = -40;
 x.smcp = -50;
-"@MMK_R_M" = -44;
-"@MMK_R_m.smcp" = -40;
-"@MMK_R_ae.smcp" = -120;
 };
 V = {
 "@MMK_R_A" = -102;
@@ -196993,6 +197158,7 @@ seven.ss01 = -80;
 };
 asterisk = {
 "@MMK_R_A" = -130;
+"@MMK_R_AE" = -140;
 "@MMK_R_J" = -140;
 "@MMK_R_T" = 40;
 "@MMK_R_W" = 0;
@@ -197002,10 +197168,10 @@ asterisk = {
 "@MMK_R_t.smcp" = 40;
 "@MMK_R_y.smcp" = 0;
 V = 0;
-"@MMK_R_AE" = -140;
 };
 at = {
 "@MMK_R_J" = -40;
+"@MMK_R_M" = 0;
 "@MMK_R_S" = -26;
 "@MMK_R_T" = -100;
 "@MMK_R_W" = -40;
@@ -197023,7 +197189,6 @@ X = -44;
 tbar.smcp = -20;
 x = -36;
 x.smcp = -20;
-"@MMK_R_M" = 0;
 };
 atilde.smcp = {
 "@MMK_R_T" = -80;
@@ -197038,6 +197203,7 @@ b.smcp = {
 "@MMK_R_W" = -40;
 "@MMK_R_Y" = -64;
 "@MMK_R_Z" = -32;
+"@MMK_R_ae.smcp" = 0;
 "@MMK_R_j.smcp" = -10;
 "@MMK_R_t.smcp" = -44;
 "@MMK_R_w.smcp" = -16;
@@ -197046,7 +197212,6 @@ V = -66;
 tbar.smcp = -40;
 v.smcp = -44;
 x.smcp = -30;
-"@MMK_R_ae.smcp" = 0;
 };
 backslash = {
 "@MMK_R_C" = -60;
@@ -197065,12 +197230,12 @@ Oslash = -20;
 V = -140;
 };
 braceleft = {
-"@MMK_R_y" = 40;
 "@MMK_R_i" = 20;
+"@MMK_R_y" = 40;
 };
 bracketleft = {
-"@MMK_R_y" = 20;
 "@MMK_R_i" = 20;
+"@MMK_R_y" = 20;
 };
 d = {
 "@MMK_R_i" = -10;
@@ -197283,6 +197448,7 @@ longs = {
 "@MMK_R_a" = -80;
 "@MMK_R_c" = -120;
 "@MMK_R_d" = -90;
+"@MMK_R_h" = 0;
 "@MMK_R_i" = 0;
 "@MMK_R_m" = -88;
 "@MMK_R_r" = -90;
@@ -197294,7 +197460,6 @@ longs = {
 "@MMK_R_y" = -80;
 "@MMK_R_z" = -100;
 x = -70;
-"@MMK_R_h" = 0;
 };
 lslash = {
 "@MMK_R_i" = 28;
@@ -197355,8 +197520,8 @@ germandbls.smcp = 6;
 x.smcp = -36;
 };
 parenleft = {
-"@MMK_R_y" = 40;
 "@MMK_R_i" = 20;
+"@MMK_R_y" = 40;
 };
 plusminus = {
 seven.ss01 = -30;
@@ -197411,9 +197576,9 @@ tbar.smcp = {
 "@MMK_R_J" = -80;
 "@MMK_R_a.smcp" = -70;
 "@MMK_R_c.smcp" = -10;
+"@MMK_R_m.smcp" = -40;
 ampersand.c2sc = -20;
 at = -20;
-"@MMK_R_m.smcp" = -40;
 };
 tcaron = {
 "@MMK_R_c" = -10;
@@ -197425,13 +197590,13 @@ tcedilla.smcp = {
 };
 thorn.smcp = {
 "@MMK_R_a.smcp" = -24;
+"@MMK_R_ae.smcp" = -50;
 "@MMK_R_j.smcp" = -52;
 "@MMK_R_t.smcp" = -40;
 "@MMK_R_y.smcp" = -20;
 "@MMK_R_z.smcp" = -40;
 v.smcp = -20;
 x.smcp = -24;
-"@MMK_R_ae.smcp" = -50;
 };
 two.ss01 = {
 "@MMK_R_equal" = -50;
@@ -197566,6 +197731,7 @@ v.smcp = 26;
 };
 "@MMK_L_D" = {
 "@MMK_R_A" = -20;
+"@MMK_R_AE" = -56;
 "@MMK_R_J" = -40;
 "@MMK_R_M" = 0;
 "@MMK_R_T" = -28;
@@ -197573,7 +197739,9 @@ v.smcp = 26;
 "@MMK_R_Z" = -14;
 "@MMK_R_a" = -24;
 "@MMK_R_a.smcp" = -36;
+"@MMK_R_ae.smcp" = -40;
 "@MMK_R_comma" = -36;
+"@MMK_R_f" = 20;
 "@MMK_R_guillemetleft" = 20;
 "@MMK_R_j.smcp" = -40;
 "@MMK_R_y.smcp" = 0;
@@ -197587,9 +197755,6 @@ slash = -50;
 v.smcp = 0;
 x = -24;
 x.smcp = -16;
-"@MMK_R_AE" = -56;
-"@MMK_R_ae.smcp" = -40;
-"@MMK_R_f" = 20;
 };
 "@MMK_L_E" = {
 "@MMK_R_C" = -20;
@@ -197597,6 +197762,7 @@ x.smcp = -16;
 "@MMK_R_c" = -20;
 "@MMK_R_c.smcp" = -20;
 "@MMK_R_d" = -18;
+"@MMK_R_f" = 0;
 "@MMK_R_guillemetleft" = 0;
 "@MMK_R_t" = -20;
 "@MMK_R_u" = -26;
@@ -197610,16 +197776,15 @@ Germandbls = 0;
 Oslash = -10;
 oslash = -10;
 v.smcp = -24;
-"@MMK_R_f" = 0;
 };
 "@MMK_L_G" = {
 "@MMK_R_Y" = 0;
+"@MMK_R_f" = 10;
 "@MMK_R_v" = -14;
 "@MMK_R_y" = -14;
 Germandbls = 10;
 V = -12;
 germandbls.smcp = 28;
-"@MMK_R_f" = 10;
 };
 "@MMK_L_K" = {
 "@MMK_R_C" = -16;
@@ -197627,6 +197792,7 @@ germandbls.smcp = 28;
 "@MMK_R_c" = -22;
 "@MMK_R_c.smcp" = -20;
 "@MMK_R_d" = -20;
+"@MMK_R_f" = -20;
 "@MMK_R_guillemetleft" = -24;
 "@MMK_R_hyphen" = -20;
 "@MMK_R_t" = -36;
@@ -197645,7 +197811,6 @@ oslash = -10;
 oslash.smcp = 0;
 tbar.smcp = 0;
 v.smcp = -56;
-"@MMK_R_f" = -20;
 };
 "@MMK_L_L" = {
 "@MMK_R_C" = -26;
@@ -197692,6 +197857,7 @@ backslash = -28;
 };
 "@MMK_L_O" = {
 "@MMK_R_A" = -20;
+"@MMK_R_AE" = -30;
 "@MMK_R_J" = -40;
 "@MMK_R_T" = -26;
 "@MMK_R_W" = 0;
@@ -197699,10 +197865,14 @@ backslash = -28;
 "@MMK_R_Z" = -34;
 "@MMK_R_a" = -22;
 "@MMK_R_a.smcp" = -24;
+"@MMK_R_ae.smcp" = -40;
 "@MMK_R_comma" = -40;
+"@MMK_R_f" = 20;
 "@MMK_R_guillemetleft" = 20;
+"@MMK_R_i" = 20;
 "@MMK_R_j.smcp" = -30;
 "@MMK_R_m.smcp" = -20;
+"@MMK_R_y" = 16;
 "@MMK_R_y.smcp" = 0;
 "@MMK_R_z" = -24;
 Germandbls = 20;
@@ -197711,16 +197881,11 @@ V = -20;
 X = -32;
 backslash = -40;
 germandbls.smcp = 30;
+jcircumflex = 40;
 quotesinglbase = -60;
 slash = -40;
 x = -24;
 x.smcp = -22;
-"@MMK_R_AE" = -30;
-"@MMK_R_ae.smcp" = -40;
-"@MMK_R_f" = 20;
-"@MMK_R_y" = 16;
-jcircumflex = 40;
-"@MMK_R_i" = 20;
 };
 "@MMK_L_Ohorn" = {
 "@MMK_R_A" = -20;
@@ -197766,6 +197931,7 @@ x.smcp = -20;
 "@MMK_R_c" = -32;
 "@MMK_R_c.smcp" = -16;
 "@MMK_R_d" = -28;
+"@MMK_R_f" = 24;
 "@MMK_R_guillemetleft" = -24;
 "@MMK_R_hyphen" = -30;
 "@MMK_R_u" = -36;
@@ -197776,10 +197942,14 @@ V = -36;
 backslash = -50;
 germandbls.smcp = 0;
 oslash = -12;
-"@MMK_R_f" = 24;
 };
 "@MMK_L_S" = {
+"@MMK_R_C" = -20;
+"@MMK_R_M" = -10;
+"@MMK_R_T" = -40;
+"@MMK_R_W" = -28;
 "@MMK_R_Y" = 0;
+"@MMK_R_Z" = -10;
 "@MMK_R_b.smcp" = 0;
 "@MMK_R_guillemetleft" = 20;
 "@MMK_R_v" = -30;
@@ -197788,6 +197958,7 @@ oslash = -12;
 "@MMK_R_y" = -30;
 "@MMK_R_y.smcp" = -10;
 "@MMK_R_z" = 0;
+V = -60;
 X = 0;
 germandbls.smcp = 24;
 idieresis.smcp = 48;
@@ -197797,12 +197968,6 @@ napostrophe.smcp = 40;
 v.smcp = 0;
 x = -24;
 x.smcp = 0;
-"@MMK_R_C" = -20;
-"@MMK_R_M" = -10;
-"@MMK_R_T" = -40;
-"@MMK_R_W" = -28;
-"@MMK_R_Z" = -10;
-V = -60;
 };
 "@MMK_L_T" = {
 "@MMK_R_A" = -120;
@@ -197895,12 +198060,16 @@ zcaron.smcp = 0;
 };
 "@MMK_L_U" = {
 "@MMK_R_A" = -30;
+"@MMK_R_AE" = -40;
+"@MMK_R_C" = -10;
 "@MMK_R_J" = -40;
 "@MMK_R_M" = 0;
 "@MMK_R_Z" = -20;
 "@MMK_R_a" = -40;
 "@MMK_R_a.smcp" = -40;
+"@MMK_R_ae.smcp" = -26;
 "@MMK_R_comma" = -50;
+"@MMK_R_f" = 0;
 "@MMK_R_j.smcp" = -16;
 "@MMK_R_s" = -40;
 "@MMK_R_s.smcp" = 0;
@@ -197913,10 +198082,6 @@ X = -20;
 slash = -50;
 x = -44;
 x.smcp = -14;
-"@MMK_R_AE" = -40;
-"@MMK_R_ae.smcp" = -26;
-"@MMK_R_C" = -10;
-"@MMK_R_f" = 0;
 };
 "@MMK_L_Uhorn" = {
 "@MMK_R_A" = -50;
@@ -198081,6 +198246,7 @@ zcaron = -44;
 "@MMK_R_c" = -20;
 "@MMK_R_c.smcp" = -24;
 "@MMK_R_d" = -20;
+"@MMK_R_f" = -20;
 "@MMK_R_guillemetleft" = -16;
 "@MMK_R_hyphen" = -40;
 "@MMK_R_r" = -14;
@@ -198096,11 +198262,11 @@ Oslash = -12;
 napostrophe.smcp = 40;
 oslash = -10;
 v.smcp = 0;
-"@MMK_R_f" = -20;
 };
 "@MMK_L_a" = {
 "@MMK_R_c" = -20;
 "@MMK_R_d" = -16;
+"@MMK_R_i" = 10;
 "@MMK_R_quoteright" = -12;
 "@MMK_R_t" = -14;
 "@MMK_R_v" = -28;
@@ -198110,7 +198276,6 @@ backslash = -100;
 eth = -10;
 oslash = -10;
 tbar = 0;
-"@MMK_R_i" = 10;
 };
 "@MMK_L_a.smcp" = {
 "@MMK_R_C" = -24;
@@ -198188,6 +198353,7 @@ v.smcp = -110;
 "@MMK_L_d.smcp" = {
 "@MMK_R_T" = -48;
 "@MMK_R_a.smcp" = -20;
+"@MMK_R_ae.smcp" = -28;
 "@MMK_R_comma" = -24;
 "@MMK_R_guillemetleft" = 20;
 "@MMK_R_j.smcp" = -20;
@@ -198200,7 +198366,6 @@ germandbls.smcp = 48;
 tbar.smcp = -10;
 v.smcp = -24;
 x.smcp = -30;
-"@MMK_R_ae.smcp" = -28;
 };
 "@MMK_L_e" = {
 "@MMK_R_v" = -14;
@@ -198281,6 +198446,7 @@ V = -40;
 "@MMK_R_Y" = -100;
 "@MMK_R_Z" = -10;
 "@MMK_R_a.smcp" = -20;
+"@MMK_R_ae.smcp" = -40;
 "@MMK_R_c.smcp" = 20;
 "@MMK_R_j.smcp" = -50;
 "@MMK_R_m.smcp" = 0;
@@ -198295,7 +198461,6 @@ X = -60;
 v.smcp = -22;
 x = -48;
 x.smcp = -48;
-"@MMK_R_ae.smcp" = -40;
 };
 "@MMK_L_h" = {
 "@MMK_R_v" = -16;
@@ -198453,6 +198618,7 @@ x = -22;
 "@MMK_R_W" = -24;
 "@MMK_R_Z" = -24;
 "@MMK_R_a.smcp" = -30;
+"@MMK_R_ae.smcp" = -40;
 "@MMK_R_comma" = -36;
 "@MMK_R_guillemetleft" = 20;
 "@MMK_R_guillemetright" = 0;
@@ -198469,7 +198635,6 @@ quotesinglbase = -32;
 tbar.smcp = 0;
 v.smcp = -24;
 x.smcp = -32;
-"@MMK_R_ae.smcp" = -40;
 };
 "@MMK_L_ohorn" = {
 "@MMK_R_f" = 70;
@@ -198483,11 +198648,11 @@ x.smcp = -32;
 "@MMK_R_w" = 50;
 "@MMK_R_y" = 40;
 backslash = 60;
+idieresis = 120;
+idieresisacute = 120;
 iinvertedbreve = 90;
 imacron = 90;
 itilde = 130;
-idieresis = 120;
-idieresisacute = 120;
 };
 "@MMK_L_ohorn.smcp" = {
 "@MMK_R_C" = 50;
@@ -198516,15 +198681,15 @@ x = -26;
 };
 "@MMK_L_quoteleft" = {
 "@MMK_R_A" = -130;
+"@MMK_R_AE" = -200;
 "@MMK_R_J" = -180;
 "@MMK_R_a.smcp" = -130;
+"@MMK_R_ae.smcp" = -200;
 "@MMK_R_c" = -90;
 "@MMK_R_d" = -80;
 "@MMK_R_j.smcp" = -180;
 "@MMK_R_m" = -40;
 "@MMK_R_s" = -40;
-"@MMK_R_AE" = -200;
-"@MMK_R_ae.smcp" = -200;
 };
 "@MMK_L_quoteright" = {
 "@MMK_R_A" = -180;
@@ -198582,23 +198747,23 @@ germandbls.smcp = 12;
 backslash = -100;
 };
 "@MMK_L_s.smcp" = {
+"@MMK_R_S" = 20;
 "@MMK_R_T" = -32;
 "@MMK_R_W" = 0;
 "@MMK_R_Y" = -28;
+"@MMK_R_a.smcp" = 32;
+"@MMK_R_c.smcp" = 12;
 "@MMK_R_guillemetleft" = 20;
 "@MMK_R_guillemetright" = -10;
 "@MMK_R_j.smcp" = 10;
 "@MMK_R_m.smcp" = 0;
-Tbar = 0;
-V = -20;
-ampersand.c2sc = 16;
-"@MMK_R_S" = 20;
-"@MMK_R_a.smcp" = 32;
-"@MMK_R_c.smcp" = 12;
 "@MMK_R_s.smcp" = 28;
 "@MMK_R_t.smcp" = -30;
 "@MMK_R_w.smcp" = -20;
 "@MMK_R_y.smcp" = -28;
+Tbar = 0;
+V = -20;
+ampersand.c2sc = 16;
 v.smcp = -24;
 x.smcp = 10;
 };
@@ -198615,22 +198780,20 @@ x.smcp = 10;
 "@MMK_R_t.smcp" = 50;
 };
 "@MMK_L_t" = {
+"@MMK_R_a" = -70;
 "@MMK_R_c" = -14;
+"@MMK_R_d" = -84;
 "@MMK_R_f" = 60;
 "@MMK_R_i" = 40;
+"@MMK_R_r" = -76;
+"@MMK_R_s" = -68;
+"@MMK_R_u" = -70;
 "@MMK_R_v" = 56;
 "@MMK_R_w" = 44;
 "@MMK_R_y" = 24;
 "@MMK_R_z" = 28;
-backslash = -50;
-oslash = 0;
-x = 40;
-"@MMK_R_a" = -70;
-"@MMK_R_d" = -84;
-"@MMK_R_r" = -76;
-"@MMK_R_s" = -68;
-"@MMK_R_u" = -70;
 at = -76;
+backslash = -50;
 eth = -68;
 ibreve = 120;
 icircumflex = 60;
@@ -198640,8 +198803,10 @@ imacron = 90;
 itilde = 120;
 jcircumflex = 54;
 o = -94;
+oslash = 0;
 rcaron = -36;
 scaron = -48;
+x = 40;
 };
 "@MMK_L_t.smcp" = {
 "@MMK_R_A" = -80;
@@ -198701,7 +198866,6 @@ x.smcp = -16;
 "@MMK_R_v" = 80;
 "@MMK_R_w" = 60;
 "@MMK_R_y" = 60;
-x = 20;
 ibreve = 90;
 icircumflex = 130;
 idblgrave = 130;
@@ -198711,6 +198875,7 @@ iinvertedbreve = 160;
 imacron = 150;
 itilde = 170;
 jcircumflex = 120;
+x = 20;
 };
 "@MMK_L_uhorn.smcp" = {
 "@MMK_R_A" = -30;
@@ -198836,12 +199001,14 @@ eth = 0;
 "@MMK_L_z.smcp" = {
 "@MMK_R_T" = -10;
 "@MMK_R_Y" = -20;
+"@MMK_R_b.smcp" = 20;
 "@MMK_R_c.smcp" = -22;
 "@MMK_R_guillemetleft" = -16;
 V = 0;
-"@MMK_R_b.smcp" = 20;
 };
 B = {
+"@MMK_R_AE" = -16;
+"@MMK_R_C" = -14;
 "@MMK_R_J" = 0;
 "@MMK_R_M" = -10;
 "@MMK_R_T" = -24;
@@ -198866,8 +199033,6 @@ germandbls = 0;
 v.smcp = -32;
 x = -28;
 x.smcp = -26;
-"@MMK_R_AE" = -16;
-"@MMK_R_C" = -14;
 };
 F = {
 "@MMK_R_A" = -130;
@@ -198989,6 +199154,7 @@ X = -10;
 x = 0;
 };
 Q.ss02 = {
+"@MMK_R_AE" = -20;
 "@MMK_R_J" = -20;
 "@MMK_R_Z" = -20;
 "@MMK_R_a.smcp" = 0;
@@ -198997,10 +199163,10 @@ Q.ss02 = {
 X = -20;
 x = -14;
 x.smcp = 0;
-"@MMK_R_AE" = -20;
 };
 Tbar = {
 "@MMK_R_A" = -80;
+"@MMK_R_AE" = -70;
 "@MMK_R_C" = 0;
 "@MMK_R_J" = -120;
 "@MMK_R_M" = -14;
@@ -199021,7 +199187,6 @@ Tbar = {
 "@MMK_R_z" = -52;
 ampersand = 0;
 x = -60;
-"@MMK_R_AE" = -70;
 };
 Tcedilla = {
 "@MMK_R_comma" = -110;
@@ -199036,6 +199201,7 @@ Thorn = {
 "@MMK_R_Z" = -60;
 "@MMK_R_a" = -24;
 "@MMK_R_a.smcp" = -66;
+"@MMK_R_ae.smcp" = -80;
 "@MMK_R_c" = -14;
 "@MMK_R_d" = -14;
 "@MMK_R_j.smcp" = -144;
@@ -199048,7 +199214,6 @@ V = -40;
 X = -70;
 x = -22;
 x.smcp = -40;
-"@MMK_R_ae.smcp" = -80;
 };
 V = {
 "@MMK_R_A" = -100;
@@ -199187,6 +199352,7 @@ aogonek.smcp = {
 };
 asterisk = {
 "@MMK_R_A" = -130;
+"@MMK_R_AE" = -130;
 "@MMK_R_J" = -120;
 "@MMK_R_T" = 60;
 "@MMK_R_W" = 20;
@@ -199196,7 +199362,6 @@ asterisk = {
 "@MMK_R_t.smcp" = 40;
 "@MMK_R_y.smcp" = 40;
 V = 40;
-"@MMK_R_AE" = -130;
 };
 at = {
 "@MMK_R_J" = -40;
@@ -199231,6 +199396,7 @@ b.smcp = {
 "@MMK_R_W" = -16;
 "@MMK_R_Y" = -56;
 "@MMK_R_Z" = -14;
+"@MMK_R_ae.smcp" = -10;
 "@MMK_R_j.smcp" = 0;
 "@MMK_R_t.smcp" = -20;
 "@MMK_R_w.smcp" = -10;
@@ -199239,7 +199405,6 @@ V = -46;
 tbar.smcp = -16;
 v.smcp = -34;
 x.smcp = -22;
-"@MMK_R_ae.smcp" = -10;
 };
 backslash = {
 "@MMK_R_C" = -40;
@@ -199258,12 +199423,12 @@ Oslash = 0;
 V = -140;
 };
 braceleft = {
-"@MMK_R_y" = 40;
 "@MMK_R_i" = 40;
+"@MMK_R_y" = 40;
 };
 bracketleft = {
-"@MMK_R_y" = 40;
 "@MMK_R_i" = 40;
+"@MMK_R_y" = 40;
 };
 d = {
 "@MMK_R_i" = 0;
@@ -199515,6 +199680,7 @@ longs = {
 "@MMK_R_a" = -60;
 "@MMK_R_c" = -100;
 "@MMK_R_d" = -90;
+"@MMK_R_h" = 0;
 "@MMK_R_i" = 60;
 "@MMK_R_m" = -60;
 "@MMK_R_r" = -80;
@@ -199526,7 +199692,6 @@ longs = {
 "@MMK_R_y" = -50;
 "@MMK_R_z" = -60;
 x = -60;
-"@MMK_R_h" = 0;
 };
 lslash = {
 "@MMK_R_i" = 36;
@@ -199594,8 +199759,8 @@ germandbls.smcp = -2;
 x.smcp = -30;
 };
 parenleft = {
-"@MMK_R_y" = 20;
 "@MMK_R_i" = 40;
+"@MMK_R_y" = 20;
 };
 plus = {
 seven.ss01 = -60;
@@ -199678,13 +199843,13 @@ tcedilla.smcp = {
 };
 thorn.smcp = {
 "@MMK_R_a.smcp" = -24;
+"@MMK_R_ae.smcp" = -60;
 "@MMK_R_j.smcp" = -42;
 "@MMK_R_t.smcp" = -20;
 "@MMK_R_y.smcp" = -32;
 "@MMK_R_z.smcp" = -20;
 v.smcp = -20;
 x.smcp = -32;
-"@MMK_R_ae.smcp" = -60;
 };
 two.ss01 = {
 "@MMK_R_equal" = -20;
