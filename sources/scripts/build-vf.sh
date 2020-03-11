@@ -1,36 +1,36 @@
 set -x
 
-while [ ! $# -eq 0 ]
-    do
-    case "$1" in
-        --full | -f)
-            fullVF=true
-            splitVF=false
-            negativeSplit=false
+# while [ ! $# -eq 0 ]
+#     do
+#     case "$1" in
+#         --full | -f)
+fullVF=true
+splitVF=false
+negativeSplit=false
 
-            glyphsSource="sources/sources-buildready/Signika-MM-prepped_designspace.glyphs"
-            finalLocation="fonts/signika/full_vf"
-            scFinalLocation="fonts/signikasc/full_vf"
-        ;;
-        --normal | -n)
-            fullVF=false
-            splitVF=true
+glyphsSource="sources/sources-buildready/Signika-MM-prepped_designspace.glyphs"
+finalLocation="fonts/signikavf"
+scFinalLocation="fonts/signikascvf"
+#         ;;
+#         --normal | -n)
+#             fullVF=false
+#             splitVF=true
 
-            glyphsSource="sources/sources-buildready/Signika-MM-prepped_designspace-split.glyphs"
-            finalLocation="fonts/signika/split_vf"
-            scFinalLocation="fonts/signikasc/split_vf"
+#             glyphsSource="sources/sources-buildready/Signika-MM-prepped_designspace-split.glyphs"
+#             finalLocation="fonts/signika/split_vf"
+#             scFinalLocation="fonts/signikasc/split_vf"
 
-            negativeSplit=true
+#             negativeSplit=true
 
-            negGlyphsSource="sources/sources-buildready/Signika-MM-prepped_designspace-split-negative.glyphs"
-            negFinalLocation="fonts/signikanegative/split_vf"
-            negScFinalLocation="fonts/signikanegativesc/split_vf"
-        ;;
-        *) 
-            echo "Error: please supply an argument of --normal (-n) or --full (-f)"
-    esac
-    shift
-done
+#             negGlyphsSource="sources/sources-buildready/Signika-MM-prepped_designspace-split-negative.glyphs"
+#             negFinalLocation="fonts/signikanegative/split_vf"
+#             negScFinalLocation="fonts/signikanegativesc/split_vf"
+#         ;;
+#         *) 
+#             echo "Error: please supply an argument of --normal (-n) or --full (-f)"
+#     esac
+#     shift
+# done
 
 # if varfont folder exists, clean it up
 if [ -d "variable_ttf" ]; then
@@ -42,12 +42,12 @@ fi
 
 # get font name from glyphs source
 VFname=`python sources/scripts/helpers/get-font-name.py ${glyphsSource}`
-# VFname='Signika-Light'
+# VFname='SignikaVF'
 # checking that the name has been pulled out of the source file
 echo "VF Name: ${VFname}"
 
-# smallCapFontName, e..g 'SignikaSC-VF'
-smallCapFontName=${VFname/"-"/"SC-"}
+# smallCapFontName, e..g 'SignikaSCVF'
+smallCapFontName=${VFname/"VF"/"SCVF"}
 
 ## make temp glyphs filename with "-build" suffix
 tempGlyphsSource=${glyphsSource/".glyphs"/"-Build.glyphs"}
@@ -59,12 +59,12 @@ if [ $negativeSplit == true ]
 then
     # get font name from glyphs source
     negVFname=`python sources/scripts/helpers/get-font-name.py ${negGlyphsSource}`
-    # negVFname='SignikaNegative-Light'
+    # negVFname='SignikaNegativeVF[wght]'
     # checking that the name has been pulled out of the source file
     echo "Negative VF Name: ${negVFname}"
 
-    # smallCapFontName, e..g 'SignikaSC-VF'
-    negSmallCapFontName=${negVFname/"-"/"SC-"}
+    # smallCapFontName, e..g 'SignikaSCVF'
+    negSmallCapFontName=${negVFname/"VF"/"SCVF"}
 
     ## make temp glyphs filename with "-build" suffix
     negTempGlyphsSource=${negGlyphsSource/".glyphs"/"-Build.glyphs"}
@@ -90,15 +90,16 @@ then
     rm -rf $negTempGlyphsSource
 fi
 
+# Add the [wght] to all names according to GF naming scheme
 for file in variable_ttf/*; do 
-    cp $file ${file/"VF"/"Light"}
+    cp $file ${file/"-VF"/"VF[NEGA,wght]"}
     rm $file
 done
 # ============================================================================
 # SmallCap subsetting ========================================================
 
-ttx variable_ttf/Signika-Light.ttf
-ttxPath="variable_ttf/Signika-Light.ttx"
+ttx variable_ttf/SignikaVF[NEGA,wght].ttf
+ttxPath="variable_ttf/SignikaVF[NEGA,wght].ttx"
 
 #get glyph names, minus .smcp glyphs
 subsetGlyphNames=`python sources/scripts/helpers/get-smallcap-subset-glyphnames.py $ttxPath`
@@ -109,11 +110,11 @@ echo $subsetGlyphNames
 for file in variable_ttf/*; do 
 if [ -f "$file" ]; then 
 
-    if [[ $file != *"SignikaNegative-"* ]]; then
+    if [[ $file != *"SignikaNegative"* ]]; then
         smallCapFile=${file/"Signika"/"SignikaSC"}
         familyName="Signika"
     fi
-    if [[ $file == *"SignikaNegative-"* ]]; then
+    if [[ $file == *"SignikaNegative"* ]]; then
         smallCapFile=${file/"SignikaNegative"/"SignikaNegativeSC"}
         familyName="Signika Negative"
     fi
@@ -142,20 +143,17 @@ done
 
 for file in variable_ttf/*; do 
 if [ -f "$file" ]; then 
-    # echo "fix DSIG in " ${file}
+    echo "fix DSIG in " ${file}
     gftools fix-dsig --autofix ${file}
 
     echo "TTFautohint " ${file}
     # autohint with detailed info
     hintedFile=${file/".ttf"/"-hinted.ttf"}
     
-    # Hint with TTFautohint-VF ... currently janky – it would be better to properly add this dependency
-    # https://groups.google.com/forum/#!searchin/googlefonts-discuss/ttfautohint%7Csort:date/googlefonts-discuss/WJX1lrzcwVs/SIzaEvntAgAJ
-    # ./Users/stephennixon/Environments/gfonts3/bin/ttfautohint-vf ${ttfPath} ${ttfPath/"-unhinted.ttf"/"-hinted.ttf"}
     echo "------------------------------------------------"
-    echo ttfautohint-vf $file $hintedFile --stem-width-mode nnn --increase-x-height 9
+    echo ttfautohint $file $hintedFile --stem-width-mode nnn --increase-x-height 9
     echo "------------------------------------------------"
-    ttfautohint-vf -I $file $hintedFile --stem-width-mode nnn --increase-x-height 9
+    ttfautohint -I $file $hintedFile --stem-width-mode nnn --increase-x-height 9
 
     cp ${hintedFile} ${file}
     rm -rf ${hintedFile}
@@ -218,12 +216,9 @@ done
 
 # set this to true/false at top of script
 for file in variable_ttf/*; do 
-    if [ -f "$file" ]; then 
-        # open VF in default program; hopefully you have FontView
-        open ${file}
-        
+    if [ -f "$file" ]; then
         fileName=$(basename $file)
-        fileName=${fileName/"VF"/"Light"}
+        # fileName=${fileName/"Light"/"[wght]"}
 
         if [[ $fullVF == true && $splitVF == false ]]; then
             if [[ $file != *"SC"* ]]; then
@@ -264,4 +259,4 @@ for file in variable_ttf/*; do
     fi
 done
 
-# rm -rf variable_ttf
+rm -rf variable_ttf

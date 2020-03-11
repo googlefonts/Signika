@@ -5,7 +5,7 @@ filename = sys.argv[-1]
 font = GSFont(filename)
 
 # get font name, remove spaces # add default instance name
-varFontName = font.familyName.replace(' ','') + '-Light'
+varFontName = font.familyName.replace(' ','') + 'VF'
 
 print(varFontName)
 

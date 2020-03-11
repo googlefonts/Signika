@@ -142,10 +142,10 @@ if [ -f "$file" ]; then
         newDirectory=signikanegativesc
     fi
 
-    newPath=$outputDir/$newDirectory/static/$fileName
+    newPath=$outputDir/$newDirectory/$fileName
     cp ${file} ${newPath}
         
-    fontbakePath=$outputDir/$newDirectory/static/fontbakery-checks/${fileName/".ttf"/"-fontbakery_checks.md"}
+    fontbakePath=$outputDir/$newDirectory/fontbakery-checks/${fileName/".ttf"/"-fontbakery_checks.md"}
 
     fontbakery check-googlefonts $file --ghmarkdown $fontbakePath
 fi 
@@ -153,5 +153,5 @@ done
 
 # # clean up build folders
 rm -rf instance_ufo
-# rm -rf instance_ttf
+rm -rf instance_ttf
 rm -rf master_ufo
