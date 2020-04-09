@@ -1,23 +1,19 @@
 set -x -e
 
-############################################
-################# set vars #################
-
-glyphsSource="sources/sources-buildready/Signika-MM-prepped_designspace.glyphs"
-
-# ## if the Glyphs source has a non-rectangular master/instance arrangement, this fixes it (WIP)
-# fixGlyphsDesignspace=true
-
-################# set vars #################
-############################################
+#------------------------------------------------------------------------------
+# Remove previous build folder
+#------------------------------------------------------------------------------
 
 # clear previous builds if they exist
 if [ -d "instance_ttf" ]; then
   rm -rf instance_ttf
 fi
 
-# ============================================================================
-# Generate Variable Font =====================================================
+#------------------------------------------------------------------------------
+# Generated TTFs from glyph source
+#------------------------------------------------------------------------------
+
+glyphsSource="sources/sources-buildready/Signika-MM-prepped_designspace.glyphs"
 
 echo $glyphsSource
 
@@ -34,41 +30,37 @@ fontmake -g ${tempGlyphsSource} --output ttf --interpolate --overlaps-backend bo
 ## clean up temp glyphs file
 rm -rf $tempGlyphsSource
 
-# python sources/scripts/helpers/shorten-nameID-4-6.py instance_ttf
-
-
-# ============================================================================
-# SmallCap subsetting ========================================================
-
-
-# TODO?: get this dynamically
-ttx instance_ttf/Signika-Light.ttf
-ttxPath="instance_ttf/Signika-Light.ttx"
-
-#get glyph names, minus .smcp glyphs
-subsetGlyphNames=`python sources/scripts/helpers/get-smallcap-subset-glyphnames.py $ttxPath`
-rm -rf $ttxPath
-
-echo $subsetGlyphNames
+#------------------------------------------------------------------------------
+# Generate SC file versions and remove SC glyphs from non-SC files
+#------------------------------------------------------------------------------
 
 for file in instance_ttf/*; do 
 if [ -f "$file" ]; then 
+    echo "FILE"
+    echo $file
 
+    # For all Signika files the new file should be SignikaSC
     if [[ $file != *"SignikaNegative-"* ]]; then
         smallCapFile=${file/"Signika"/"SignikaSC"}
         familyName="Signika"
     fi
+
+    # For all SignikaNegative files the new file should be SignikaNegativeSC
     if [[ $file == *"SignikaNegative-"* ]]; then
         smallCapFile=${file/"SignikaNegative"/"SignikaNegativeSC"}
         familyName="Signika Negative"
     fi
 
+    # Freeze smcp feature from $file into $smallCapFile
+    # This means all glyphs of the smcp features will be swapped as if the smcp
+    # feature was on
     python sources/scripts/helpers/pyftfeatfreeze.py -f 'smcp' $file $smallCapFile
     
     echo "subsetting smallcap font"
-    # subsetting with subsetGlyphNames list
-    pyftsubset --name-IDs='*' $smallCapFile $subsetGlyphNames --glyph-names
+    echo $smallCapFile
+    pyftsubset $smallCapFile --glyphs='*' --name-IDs='*' --layout-features-='smcp'
 
+    # Replace the SC file with the pyftsubset output from the generated file
     subsetSmallCapFile=${smallCapFile/".ttf"/".subset.ttf"}
     rm -rf $smallCapFile
     mv $subsetSmallCapFile $smallCapFile
@@ -80,48 +72,38 @@ if [ -f "$file" ]; then
 fi 
 done
 
-
-# ============================================================================
-# Autohinting ================================================================
+#------------------------------------------------------------------------------
+# Autohinting & fixes
+#------------------------------------------------------------------------------
 
 for file in instance_ttf/*; do 
 if [ -f "$file" ]; then 
+    # add dsig if needed
     echo "fix DSIG in " ${file}
     gftools fix-dsig --autofix ${file}
 
-    echo "TTFautohint " ${file}
     # autohint with detailed info
+    echo "TTFautohint " ${file}
     hintedFile=${file/".ttf"/"-hinted.ttf"}
     ttfautohint -I ${file} ${hintedFile} --increase-x-height 9 --stem-width-mode nnn
     cp ${hintedFile} ${file}
     rm -rf ${hintedFile}
 
-    fixedFile=${file/".ttf"/".ttf.fix"}
+    # fixing some hinting issues with gftools
     echo "fix hinting in " ${file}
     gftools fix-hinting ${file}
-    echo "fixed file " ${fixedFile}
-    cp ${fixedFile} ${file}
-    rm -rf ${fixedFile}
+    fixedFile=${file/".ttf"/".ttf.fix"}
+    if [ -f "$fixedFile" ]; then
+        echo "fixed file " ${fixedFile}
+        cp ${fixedFile} ${file}
+        rm -rf ${fixedFile}
+    fi
 fi 
 done
 
-# ============================================================================
-# OpenType table fixes =======================================================
-
-for file in instance_ttf/*; do 
-if [ -f "$file" ]; then 
-    ttxPath=${file/".ttf"/".ttx"}
-    ## sets up temp ttx file to insert correct values into tables # also drops MVAR table to fix vertical metrics issue
-    ttx -x "MVAR" $file
-    rm -rf $file
-    ## copies temp ttx file back into a new ttf file
-    ttx $ttxPath
-    rm -rf $ttxPath
-fi
-done
-
-# ============================================================================
-# Sort into final folder =====================================================
+#------------------------------------------------------------------------------
+# Sort into final folder
+#------------------------------------------------------------------------------
 
 outputDir="fonts"
 
@@ -147,8 +129,8 @@ if [ -f "$file" ]; then
         
     fontbakePath=$outputDir/$newDirectory/fontbakery-checks/${fileName/".ttf"/"-fontbakery_checks.md"}
 
-    fontbakery check-googlefonts $file --ghmarkdown $fontbakePath
-fi 
+    fontbakery check-googlefonts ${newPath} --ghmarkdown $fontbakePath
+fi
 done
 
 # # clean up build folders
