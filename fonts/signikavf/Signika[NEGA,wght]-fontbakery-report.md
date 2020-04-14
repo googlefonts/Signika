@@ -1,18 +1,36 @@
 ## Fontbakery report
 
-Fontbakery version: 0.7.21
+Fontbakery version: 0.7.23.dev7+ga779abba
 
 <details>
-<summary><b>[13] Family checks</b></summary>
+<summary><b>[14] Family checks</b></summary>
 <details>
 <summary>ℹ <b>INFO:</b> Do we have the latest version of FontBakery installed?</summary>
 
 * [com.google.fonts/check/fontbakery_version](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/fontbakery_version)
 
-* ℹ **INFO** fontbakery (0.7.21)  - Well designed Font QA tool, written in Python 3
-  INSTALLED: 0.7.21 (latest)
+* ℹ **INFO** fontbakery (0.7.22)  - Well designed Font QA tool, written in Python 3
+  INSTALLED: 0.7.23.dev7+ga779abba
+  LATEST:    0.7.22
 
 * 🍞 **PASS** Font Bakery is up-to-date
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Ensure that all variable font files have the same set of axes and axis ranges.</summary>
+
+* [com.google.fonts/check/varfont/consistent_axes](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont/consistent_axes)
+<pre>--- Rationale ---
+
+In order to facilitate the construction of intuitive and friendly user
+interfaces, all variable font files in a given family should have the same set
+of variation axes. Also, each axis must have a consistent setting of min/max
+value ranges accross all the files.
+
+
+</pre>
+
+* 🍞 **PASS** All looks good!
 
 </details>
 <details>
@@ -199,63 +217,24 @@ https://github.com/googlefonts/fontbakery/blob/master/prebuilt/workarounds/ftxva
 <details>
 <summary><b>[153] Signika[NEGA,wght].ttf</b></summary>
 <details>
-<summary>🔥 <b>FAIL:</b> Does DESCRIPTION file contain a upstream Git repo URL?</summary>
+<summary>🔥 <b>FAIL:</b> A static fonts directory with at least two fonts must accompany variable fonts</summary>
 
-* [com.google.fonts/check/description/git_url](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/git_url)
+* [com.google.fonts/check/repo/vf_has_static_fonts](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/vf_has_static_fonts)
 <pre>--- Rationale ---
 
-The contents of the DESCRIPTION.en-us.html file are displayed on the Google
-Fonts website in the about section of each font family specimen page.
-
-Since all of the Google Fonts collection is composed of libre-licensed fonts,
-this check enforces a policy that there must be a hypertext link in that page
-directing users to the repository where the font project files are made
-available.
-
-Such hosting is typically done on sites like Github, Gitlab, GNU Savannah or
-any other git-based version control service.
+Variable font family directories kept in the google/fonts git repo must include
+a static/ subdir containing static fonts.
+These files are meant to be served for users that still lack support for
+variable fonts in their web browsers.
 
 
 </pre>
 
-* 🔥 **FAIL** Please host your font project on a public Git repo (such as GitHub or GitLab) and place a link in the DESCRIPTION.en_us.html file. [code: lacks-git-url]
+* 🔥 **FAIL** Please create a subdirectory called "static/" and include in it static font files. [code: missing]
 
 </details>
 <details>
-<summary>🔥 <b>FAIL:</b> Does DESCRIPTION file mention when a family is available as variable font?</summary>
-
-* [com.google.fonts/check/description/variable_font](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/variable_font)
-<pre>--- Rationale ---
-
-Families with variable fonts do not always mention that in their descriptions.
-Therefore, this check ensures that a standard boilerplate sentence is present
-in the DESCRIPTION.en_us.html files for all those families which are available
-as variable fonts.
-
-
-</pre>
-
-* 🔥 **FAIL** Please mention in the DESCRIPTION.en-us.html that the family is a variable font. This check expects the words 'variable font' to be present in the text e.g 'This font is now available as a variable font.' [code: should-mention-varfonts]
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Check license file has good copyright string.</summary>
-
-* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
-<pre>--- Rationale ---
-
-An OFL.txt file&#x27;s first line should be the font copyright e.g:
-&quot;Copyright 2019 The Montserrat Project Authors
-(https://github.com/julietaula/montserrat)&quot;
-
-
-</pre>
-
-* 🔥 **FAIL** First line in license file does not match expected format: "copyright (c) 2018 by anna giedryś (http://ancymonic.com),"
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Font has old ttfautohint applied?</summary>
+<summary>⚠ <b>WARN:</b> Font has old ttfautohint applied?</summary>
 
 * [com.google.fonts/check/old_ttfautohint](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/old_ttfautohint)
 <pre>--- Rationale ---
@@ -267,57 +246,7 @@ installed in the system.
 
 </pre>
 
-* 🔥 **FAIL** Failed to parse ttfautohint version values: installed = '1.8.3'; used_in_font = '1.8.1.43-b0c9' [code: parse-error]
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Name table strings must not contain the string 'Reserved Font Name'.</summary>
-
-* [com.google.fonts/check/name/rfn](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/rfn)
-<pre>--- Rationale ---
-
-Some designers adopt the &quot;Reserved Font Name&quot; clause of the OFL license. This
-means that the original author reserves the rights to the family name and other
-people can only distribute modified versions using a different family name.
-
-Google Fonts published updates to the fonts in the collection in order to fix
-issues and/or implement further improvements to the fonts. It is important to
-keep the family name so that users of the webfonts can benefit from the
-updates. Since it would forbid such usage scenario, all families in the GFonts
-collection are required to not adopt the RFN clause.
-
-This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name table.
-
-
-</pre>
-
-* 🔥 **FAIL** Name table entry ("Copyright 2018 The Signika Project Authors (https://github.com/googlefonts/Signika), with Reserved Font Names 'Signika'.") contains "Reserved Font Name". This is an error except in a few specific rare cases. [code: rfn]
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Font has correct post table version?</summary>
-
-* [com.google.fonts/check/post_table_version](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/post.html#com.google.fonts/check/post_table_version)
-<pre>--- Rationale ---
-
-Apple recommends against using &#x27;post&#x27; table format 3 under most circumstances,
-as it can create problems with some printer drivers and PDF documents. The
-savings in disk space usually does not justify the potential loss in
-functionality.
-Source:
-https://developer.apple.com/fonts/TrueType-Reference-Manual/RM06/Chap6post.html
-
-The CFF2 table does not contain glyph names, so variable OTFs should be allowed
-to use post table version 2.
-
-This check expects:
-- Version 2 for TTF or OTF CFF2 Variable fonts
-- Version 3 for OTF
-
-
-</pre>
-
-* 🔥 **FAIL** Post table should be version 2 instead of 3.0.
+* ⚠ **WARN** ttfautohint used in font = 1.8.1.43-b0c9; installed = 1.8.3; Need to re-run with the newer version! [code: old-ttfa]
 
 </details>
 <details>
@@ -342,26 +271,6 @@ https://github.com/impallari/Raleway/issues/14).
 	- i + l
 
    [code: lacks-kern-info]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Font contains .notdef as first glyph?</summary>
-
-* [com.google.fonts/check/mandatory_glyphs](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/mandatory_glyphs)
-<pre>--- Rationale ---
-
-The OpenType specification v1.8.2 recommends that the first glyph is the
-.notdef glyph without a codepoint assigned and with a drawing.
-
-https://docs.microsoft.com/en-us/typography/opentype/spec/recom#glyph-0-the-notdef-glyph
-
-Pre-v1.8, it was recommended that a font should also contain a .null, CR and
-space glyph. This might have been relevant for applications on MacOS 9.
-
-
-</pre>
-
-* ⚠ **WARN** Font should contain the .notdef glyph as the first glyph, it should not have a Unicode value assigned and should contain a drawing.
 
 </details>
 <details>
@@ -458,37 +367,6 @@ not placed on subdirectories.
 * [com.google.fonts/check/family/has_license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/family/has_license)
 
 * 💤 **SKIP** Unfulfilled Conditions: gfonts_repo_structure
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> License URL matches License text on name table?</summary>
-
-* [com.google.fonts/check/name/license_url](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license_url)
-<pre>--- Rationale ---
-
-A known license URL must be provided in the NameID 14 (LICENSE INFO URL) entry
-of the name table.
-
-The source of truth for this check is the licensing text found on the NameID 13
-entry (LICENSE DESCRIPTION).
-
-The string snippets used for detecting licensing terms are:
-- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
-This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
-- &quot;Licensed under the Apache License, Version 2.0&quot;
-- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
-
-
-Currently accepted licenses are Apache or Open Font License.
-For a small set of legacy families the Ubuntu Font License may be acceptable as
-well.
-
-When in doubt, please choose OFL for new font projects.
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: familyname
 
 </details>
 <details>
@@ -896,7 +774,7 @@ checks that nameID 1 is the family name + the style name.
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: style, familyname_with_spaces
+* 💤 **SKIP** Unfulfilled Conditions: style
 
 </details>
 <details>
@@ -904,7 +782,7 @@ checks that nameID 1 is the family name + the style name.
 
 * [com.google.fonts/check/name/fullfontname](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/fullfontname)
 
-* 💤 **SKIP** Unfulfilled Conditions: style_with_spaces, familyname_with_spaces
+* 💤 **SKIP** Unfulfilled Conditions: style_with_spaces
 
 </details>
 <details>
@@ -912,7 +790,7 @@ checks that nameID 1 is the family name + the style name.
 
 * [com.google.fonts/check/name/postscriptname](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/postscriptname)
 
-* 💤 **SKIP** Unfulfilled Conditions: style, familyname
+* 💤 **SKIP** Unfulfilled Conditions: style
 
 </details>
 <details>
@@ -920,22 +798,7 @@ checks that nameID 1 is the family name + the style name.
 
 * [com.google.fonts/check/name/typographicfamilyname](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/typographicfamilyname)
 
-* 💤 **SKIP** Unfulfilled Conditions: style, familyname_with_spaces
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Familyname must be unique according to namecheck.fontdata.com</summary>
-
-* [com.google.fonts/check/fontdata_namecheck](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fontdata_namecheck)
-<pre>--- Rationale ---
-
-We need to check names are not already used, and today the best place to check
-that is http://namecheck.fontdata.com
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: familyname
+* 💤 **SKIP** Unfulfilled Conditions: style
 
 </details>
 <details>
@@ -947,83 +810,11 @@ that is http://namecheck.fontdata.com
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Check if the vertical metrics of a family are similar to the same family hosted on Google Fonts.</summary>
-
-* [com.google.fonts/check/vertical_metrics_regressions](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics_regressions)
-<pre>--- Rationale ---
-
-If the family already exists on Google Fonts, we need to ensure that the
-checked family&#x27;s vertical metrics are similar. This check will test the
-following schema which was outlined in Fontbakery issue #1162 [1]:
-
-- The family should visually have the same vertical metrics as the
-  Regular style hosted on Google Fonts.
-- If the family on Google Fonts has differing hhea and typo metrics,
-  the family being checked should use the typo metrics for both the
-  hhea and typo entries.
-- If the family on Google Fonts has use typo metrics not enabled and the
-  family being checked has it enabled, the hhea and typo metrics
-  should use the family on Google Fonts winAscent and winDescent values.
-- If the upms differ, the values must be scaled so the visual appearance
-  is the same.
-
-[1] https://github.com/googlefonts/fontbakery/issues/1162
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: remote_styles
-
-</details>
-<details>
 <summary>💤 <b>SKIP:</b> Checking with ftxvalidator.</summary>
 
 * [com.google.fonts/check/ftxvalidator](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/ftxvalidator)
 
 * 💤 **SKIP** Unfulfilled Conditions: ftxvalidator_is_available
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Font has **proper** whitespace glyph names?</summary>
-
-* [com.google.fonts/check/whitespace_glyphnames](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_glyphnames)
-
-* 💤 **SKIP** Font has version 3 post table.
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Glyph names are all valid?</summary>
-
-* [com.google.fonts/check/valid_glyphnames](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/valid_glyphnames)
-<pre>--- Rationale ---
-
-Microsoft&#x27;s recommendations for OpenType Fonts states the following:
-
-&#x27;NOTE: The PostScript glyph name must be no longer than 31 characters, include
-only uppercase or lowercase English letters, European digits, the period or the
-underscore, i.e. from the set [A-Za-z0-9_.] and should start with a letter,
-except the special glyph name &quot;.notdef&quot; which starts with a period.&#x27;
-
-https://docs.microsoft.com/en-us/typography/opentype/spec/recom#post-table
-
-
-</pre>
-
-* 💤 **SKIP** TrueType fonts with a format 3.0 post table contain no glyph names.
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Font contains unique glyph names?</summary>
-
-* [com.google.fonts/check/unique_glyphnames](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/unique_glyphnames)
-<pre>--- Rationale ---
-
-Duplicate glyph names prevent font installation on Mac OS X.
-
-
-</pre>
-
-* 💤 **SKIP** TrueType fonts with a format 3.0 post table contain no glyph names.
 
 </details>
 <details>
@@ -1172,25 +963,49 @@ scale used for the italicAngle field in the post table.
 
 </details>
 <details>
+<summary>ℹ <b>INFO:</b> Does DESCRIPTION file contain a upstream Git repo URL?</summary>
+
+* [com.google.fonts/check/description/git_url](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/git_url)
+<pre>--- Rationale ---
+
+The contents of the DESCRIPTION.en-us.html file are displayed on the Google
+Fonts website in the about section of each font family specimen page.
+
+Since all of the Google Fonts collection is composed of libre-licensed fonts,
+this check enforces a policy that there must be a hypertext link in that page
+directing users to the repository where the font project files are made
+available.
+
+Such hosting is typically done on sites like Github, Gitlab, GNU Savannah or
+any other git-based version control service.
+
+
+</pre>
+
+* ℹ **INFO** Found a git repo URL: https://github.com/Ancymonic/Signika [code: url-found]
+* 🍞 **PASS** Looks great!
+
+</details>
+<details>
 <summary>ℹ <b>INFO:</b> Show hinting filesize impact.</summary>
 
 * [com.google.fonts/check/hinting_impact](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/hinting_impact)
 <pre>--- Rationale ---
 
 This check is merely informative, displaying and useful comparison of filesizes
-after ttfautohint usage versus unhinted font files.
+of hinted versus unhinted font files.
 
 
 </pre>
 
 * ℹ **INFO** Hinting filesize impact:
 
-|  | fonts/signikavf/Signika[NEGA,wght].ttf |
-|:--- | ---:|
-| Dehinted Size | 206.3kb |
-| Hinted Size | 231.6kb |
-| Increase | 25.3kb |
-| Change   | 12.3 % |
+	|  | fonts/signikavf/Signika[NEGA,wght].ttf |
+	|:--- | ---:|
+	| Dehinted Size | 598.6kb |
+	| Hinted Size | 678.1kb |
+	| Increase | 79.4kb |
+	| Change   | 13.3 % |
  [code: size-impact]
 
 </details>
@@ -1246,6 +1061,22 @@ PPM <= 65535:
 
 </details>
 <details>
+<summary>ℹ <b>INFO:</b> Familyname must be unique according to namecheck.fontdata.com</summary>
+
+* [com.google.fonts/check/fontdata_namecheck](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fontdata_namecheck)
+<pre>--- Rationale ---
+
+We need to check names are not already used, and today the best place to check
+that is http://namecheck.fontdata.com
+
+
+</pre>
+
+* ℹ **INFO** The family name "Signika" seems to be already in use.
+Please visit http://namecheck.fontdata.com for more info. [code: name-collision]
+
+</details>
+<details>
 <summary>ℹ <b>INFO:</b> Check for font-v versioning.</summary>
 
 * [com.google.fonts/check/fontv](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fontv)
@@ -1282,7 +1113,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [cvt , gasp, GPOS, GSUB, DSIG, prep, loca, fpgm]
+* ℹ **INFO** This font contains the following optional tables [DSIG, fpgm, gasp, GSUB, GPOS, prep, cvt , loca]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -1303,14 +1134,6 @@ checks.
 
 * ℹ **INFO** fonts/signikavf [code: family-path]
 * ℹ **INFO** fonts/signikavfsc [code: family-path]
-
-</details>
-<details>
-<summary>ℹ <b>INFO:</b> Check if OS/2 xAvgCharWidth is correct.</summary>
-
-* [com.google.fonts/check/xavgcharwidth](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/os2.html#com.google.fonts/check/xavgcharwidth)
-
-* ℹ **INFO** OS/2 xAvgCharWidth is 1041 but it should be 1045 which corresponds to the average of the widths of all glyphs in the font. These are similar values, which may be a symptom of the slightly different calculation of the xAvgCharWidth value in font editors. There's further discussion on this at https://github.com/googlefonts/fontbakery/issues/1622
 
 </details>
 <details>
@@ -1351,6 +1174,23 @@ it must be properly working.
 </pre>
 
 * 🍞 **PASS** All links in the DESCRIPTION file look good!
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Does DESCRIPTION file mention when a family is available as variable font?</summary>
+
+* [com.google.fonts/check/description/variable_font](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/variable_font)
+<pre>--- Rationale ---
+
+Families with variable fonts do not always mention that in their descriptions.
+Therefore, this check ensures that a standard boilerplate sentence is present
+in the DESCRIPTION.en_us.html files for all those families which are available
+as variable fonts.
+
+
+</pre>
+
+* 🍞 **PASS** Looks good!
 
 </details>
 <details>
@@ -1448,6 +1288,22 @@ set of characters defined in the `GF-latin-core` glyph-set.
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> Check license file has good copyright string.</summary>
+
+* [com.google.fonts/check/license/OFL_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright)
+<pre>--- Rationale ---
+
+An OFL.txt file&#x27;s first line should be the font copyright e.g:
+&quot;Copyright 2019 The Montserrat Project Authors
+(https://github.com/julietaula/montserrat)&quot;
+
+
+</pre>
+
+* 🍞 **PASS** looks good
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Check copyright namerecords match license file.</summary>
 
 * [com.google.fonts/check/name/license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license)
@@ -1478,6 +1334,37 @@ When in doubt, please choose OFL for new font projects.
 </pre>
 
 * 🍞 **PASS** Licensing entry on name table is correctly set.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> License URL matches License text on name table?</summary>
+
+* [com.google.fonts/check/name/license_url](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license_url)
+<pre>--- Rationale ---
+
+A known license URL must be provided in the NameID 14 (LICENSE INFO URL) entry
+of the name table.
+
+The source of truth for this check is the licensing text found on the NameID 13
+entry (LICENSE DESCRIPTION).
+
+The string snippets used for detecting licensing terms are:
+- &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is available with a FAQ at: https://scripts.sil.org/OFL&quot;
+- &quot;Licensed under the Apache License, Version 2.0&quot;
+- &quot;Licensed under the Ubuntu Font Licence 1.0.&quot;
+
+
+Currently accepted licenses are Apache or Open Font License.
+For a small set of legacy families the Ubuntu Font License may be acceptable as
+well.
+
+When in doubt, please choose OFL for new font projects.
+
+
+</pre>
+
+* 🍞 **PASS** Font has a valid license URL in NAME table.
 
 </details>
 <details>
@@ -1559,7 +1446,7 @@ Arabic / etc.
 
 * [com.google.fonts/check/font_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright)
 
-* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2018 The Signika Project Authors (https://github.com/googlefonts/Signika), with Reserved Font Names 'Signika'.' matches canonical pattern.
+* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2018 The Signika Project Authors (https://github.com/googlefonts/Signika).' matches canonical pattern.
 * 🍞 **PASS** Name table copyright entries are good
 
 </details>
@@ -1884,20 +1771,56 @@ com.google.fonts/check/font_copyright
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> A static fonts directory with at least two fonts must accompany variable fonts</summary>
+<summary>🍞 <b>PASS:</b> Name table strings must not contain the string 'Reserved Font Name'.</summary>
 
-* [com.google.fonts/check/repo/vf_has_static_fonts](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/vf_has_static_fonts)
+* [com.google.fonts/check/name/rfn](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/rfn)
 <pre>--- Rationale ---
 
-Variable font family directories kept in the google/fonts git repo must include
-a static/ subdir containing static fonts.
-These files are meant to be served for users that still lack support for
-variable fonts in their web browsers.
+Some designers adopt the &quot;Reserved Font Name&quot; clause of the OFL license. This
+means that the original author reserves the rights to the family name and other
+people can only distribute modified versions using a different family name.
+
+Google Fonts published updates to the fonts in the collection in order to fix
+issues and/or implement further improvements to the fonts. It is important to
+keep the family name so that users of the webfonts can benefit from the
+updates. Since it would forbid such usage scenario, all families in the GFonts
+collection are required to not adopt the RFN clause.
+
+This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name table.
 
 
 </pre>
 
-* 🍞 **PASS** OK
+* 🍞 **PASS** None of the name table strings contain "Reserved Font Name".
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check if the vertical metrics of a family are similar to the same family hosted on Google Fonts.</summary>
+
+* [com.google.fonts/check/vertical_metrics_regressions](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics_regressions)
+<pre>--- Rationale ---
+
+If the family already exists on Google Fonts, we need to ensure that the
+checked family&#x27;s vertical metrics are similar. This check will test the
+following schema which was outlined in Fontbakery issue #1162 [1]:
+
+- The family should visually have the same vertical metrics as the
+  Regular style hosted on Google Fonts.
+- If the family on Google Fonts has differing hhea and typo metrics,
+  the family being checked should use the typo metrics for both the
+  hhea and typo entries.
+- If the family on Google Fonts has use typo metrics not enabled and the
+  family being checked has it enabled, the hhea and typo metrics
+  should use the family on Google Fonts winAscent and winDescent values.
+- If the upms differ, the values must be scaled so the visual appearance
+  is the same.
+
+[1] https://github.com/googlefonts/fontbakery/issues/1162
+
+
+</pre>
+
+* 🍞 **PASS** Vertical metrics have not regressed.
 
 </details>
 <details>
@@ -1986,11 +1909,39 @@ take care of their own situation.
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> Font contains .notdef as first glyph?</summary>
+
+* [com.google.fonts/check/mandatory_glyphs](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/mandatory_glyphs)
+<pre>--- Rationale ---
+
+The OpenType specification v1.8.2 recommends that the first glyph is the
+.notdef glyph without a codepoint assigned and with a drawing.
+
+https://docs.microsoft.com/en-us/typography/opentype/spec/recom#glyph-0-the-notdef-glyph
+
+Pre-v1.8, it was recommended that a font should also contain a .null, CR and
+space glyph. This might have been relevant for applications on MacOS 9.
+
+
+</pre>
+
+* 🍞 **PASS** Font contains the .notdef glyph as the first glyph, it does not have a Unicode value assigned and contains a drawing.
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Font contains glyphs for whitespace characters?</summary>
 
 * [com.google.fonts/check/whitespace_glyphs](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_glyphs)
 
 * 🍞 **PASS** Font contains glyphs for whitespace characters.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Font has **proper** whitespace glyph names?</summary>
+
+* [com.google.fonts/check/whitespace_glyphnames](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_glyphnames)
+
+* 🍞 **PASS** Font has **proper** whitespace glyph names.
 
 </details>
 <details>
@@ -2015,6 +1966,41 @@ tables.
 </pre>
 
 * 🍞 **PASS** There are no unwanted tables.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Glyph names are all valid?</summary>
+
+* [com.google.fonts/check/valid_glyphnames](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/valid_glyphnames)
+<pre>--- Rationale ---
+
+Microsoft&#x27;s recommendations for OpenType Fonts states the following:
+
+&#x27;NOTE: The PostScript glyph name must be no longer than 31 characters, include
+only uppercase or lowercase English letters, European digits, the period or the
+underscore, i.e. from the set [A-Za-z0-9_.] and should start with a letter,
+except the special glyph name &quot;.notdef&quot; which starts with a period.&#x27;
+
+https://docs.microsoft.com/en-us/typography/opentype/spec/recom#post-table
+
+
+</pre>
+
+* 🍞 **PASS** Glyph names are all valid.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Font contains unique glyph names?</summary>
+
+* [com.google.fonts/check/unique_glyphnames](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/unique_glyphnames)
+<pre>--- Rationale ---
+
+Duplicate glyph names prevent font installation on Mac OS X.
+
+
+</pre>
+
+* 🍞 **PASS** Font contains unique glyph names.
 
 </details>
 <details>
@@ -2085,6 +2071,14 @@ on Variable Fonts.
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> Check if OS/2 xAvgCharWidth is correct.</summary>
+
+* [com.google.fonts/check/xavgcharwidth](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/os2.html#com.google.fonts/check/xavgcharwidth)
+
+* 🍞 **PASS** OS/2 xAvgCharWidth value is correct.
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Check if OS/2 fsSelection matches head macStyle bold and italic bits.</summary>
 
 * [com.adobe.fonts/check/fsselection_matches_macstyle](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/os2.html#com.adobe.fonts/check/fsselection_matches_macstyle)
@@ -2125,6 +2119,32 @@ at all.
 </pre>
 
 * 🍞 **PASS** At least one code page is defined.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Font has correct post table version?</summary>
+
+* [com.google.fonts/check/post_table_version](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/post.html#com.google.fonts/check/post_table_version)
+<pre>--- Rationale ---
+
+Apple recommends against using &#x27;post&#x27; table format 3 under most circumstances,
+as it can create problems with some printer drivers and PDF documents. The
+savings in disk space usually does not justify the potential loss in
+functionality.
+Source:
+https://developer.apple.com/fonts/TrueType-Reference-Manual/RM06/Chap6post.html
+
+The CFF2 table does not contain glyph names, so variable OTFs should be allowed
+to use post table version 2.
+
+This check expects:
+- Version 2 for TTF or OTF CFF2 Variable fonts
+- Version 3 for OTF
+
+
+</pre>
+
+* 🍞 **PASS** Font has post table version 2.
 
 </details>
 <details>
@@ -2441,5 +2461,5 @@ On the &#x27;wdth&#x27; (Width) axis, the valid coordinate range is 1-1000
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 6 | 3 | 70 | 8 | 79 | 0 |
-| 0% | 4% | 2% | 42% | 5% | 48% | 0% |
+| 0 | 1 | 3 | 64 | 9 | 90 | 0 |
+| 0% | 1% | 2% | 38% | 5% | 54% | 0% |
