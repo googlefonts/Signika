@@ -64,7 +64,7 @@ if [ -f "$file" ]; then
     
     echo "subsetting smallcap font"
     echo $smallCapFile
-    pyftsubset $smallCapFile --unicodes='*' --name-IDs='*' --glyph-names --layout-features="*" --layout-features-='smcp'
+    pyftsubset $smallCapFile --unicodes='*' --name-IDs='*' --glyph-names --layout-features="*" --layout-features-='smcp' --recalc-bounds --recalc-average-width
 
     # Replace the SC file with the pyftsubset output from the generated file
     rm -rf $smallCapFile

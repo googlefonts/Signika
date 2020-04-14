@@ -3,7 +3,7 @@ set -x -e
 
 source="sources/sources-buildready/Signika-MM-prepped_designspace.glyphs"
 pathNOSC="fonts/signikavf/Signika[NEGA,wght].ttf"
-pathSC="fonts/signikavfsc/Signika[NEGA,wght]SC.ttf"
+pathSC="fonts/signikavfsc/SignikaSC[NEGA,wght].ttf"
 tmp="variable_ttf/Signika-VF.ttf"
 tmpSC="variable_ttf/Signika-VFSC.ttf"
 
@@ -40,7 +40,7 @@ python sources/scripts/helpers/pyftfeatfreeze.py -f 'smcp' $tmp $tmpSC
 # This removes the smcp features and involved glyphs
 echo "subsetting smallcap font"
 echo $tmpSC
-pyftsubset $tmpSC --unicodes="*" --name-IDs='*' --glyph-names --layout-features="*" --layout-features-="smcp"
+pyftsubset $tmpSC --unicodes="*" --name-IDs='*' --glyph-names --layout-features="*" --layout-features-="smcp" --recalc-bounds --recalc-average-width
 
 # Replace the SC file with the pyftsubset generated .subset file
 rm -rf $tmpSC
@@ -101,5 +101,5 @@ cp $tmpSC $pathSC
 # Run fontbakery checks on the final files
 #------------------------------------------------------------------------------
 echo "Run fontbakery checks"
-fontbakery check-googlefonts $pathNOSC --ghmarkdown ${pathNOSC/".ttf"/"-fontbakery-report.md"}
-fontbakery check-googlefonts $pathSC --ghmarkdown ${pathSC/".ttf"/"-fontbakery-report.md"}
+fontbakery check-googlefonts $pathNOSC --ghmarkdown "fonts/signikavf/fontbakery-checks/Signika[NEGA,wght]-fontbakery-report.md"
+fontbakery check-googlefonts $pathSC --ghmarkdown "fonts/signikavfsc/fontbakery-checks/SignikaSC[NEGA,wght]-fontbakery-report.md"

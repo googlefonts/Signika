@@ -221,7 +221,7 @@ https://github.com/googlefonts/fontbakery/blob/master/prebuilt/workarounds/ftxva
 
 * [com.google.fonts/check/production_glyphs_similarity](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity)
 
-* ⚠ **WARN** Following glyphs differ greatly from Google Fonts version: [exclam, dollar, threequarters, sterling, percent, yen, onequarter, currency, degree, Euro, exclamdown, fraction, onehalf, uni2074, .notdef]
+* ⚠ **WARN** Following glyphs differ greatly from Google Fonts version: [threequarters, exclam, fraction, onequarter, sterling, currency, onehalf, exclamdown, uni2074, Euro, .notdef, percent, degree, yen, dollar]
 
 </details>
 <details>
@@ -1100,8 +1100,8 @@ of hinted versus unhinted font files.
 
 	|  | fonts/signika/Signika-Bold.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 236.2kb |
-	| Hinted Size | 312.3kb |
+	| Dehinted Size | 236.4kb |
+	| Hinted Size | 312.5kb |
 	| Increase | 76.1kb |
 	| Change   | 32.2 % |
  [code: size-impact]
@@ -1211,7 +1211,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [GPOS, DSIG, cvt , fpgm, loca, prep, GSUB, gasp]
+* ℹ **INFO** This font contains the following optional tables [fpgm, cvt , loca, DSIG, gasp, GPOS, prep, GSUB]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>

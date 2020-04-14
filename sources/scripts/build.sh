@@ -10,7 +10,6 @@ while [ ! $# -eq 0 ]
         --all | -a)
             source $(dirname ${BASH_SOURCE[0]})/build-statics.sh
             source $(dirname ${BASH_SOURCE[0]})/build-vf.sh -f
-            
         ;;
     esac
     shift

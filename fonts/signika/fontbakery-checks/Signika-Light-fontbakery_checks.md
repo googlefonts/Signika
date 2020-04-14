@@ -221,7 +221,7 @@ https://github.com/googlefonts/fontbakery/blob/master/prebuilt/workarounds/ftxva
 
 * [com.google.fonts/check/production_glyphs_similarity](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity)
 
-* ⚠ **WARN** Following glyphs differ greatly from Google Fonts version: [degree, fraction, .notdef, Euro, sterling, currency]
+* ⚠ **WARN** Following glyphs differ greatly from Google Fonts version: [Euro, currency, .notdef, fraction, sterling, degree]
 
 </details>
 <details>
@@ -254,10 +254,10 @@ Glyph name: uni1E08	Contours detected: 3	Expected: 2
 Glyph name: uni1E09	Contours detected: 3	Expected: 2
 Glyph name: uni1E1C	Contours detected: 3	Expected: 2
 Glyph name: uni1E1D	Contours detected: 4	Expected: 3
-Glyph name: uni1E08	Contours detected: 3	Expected: 2
-Glyph name: uni1E1C	Contours detected: 3	Expected: 2
 Glyph name: uni1E1D	Contours detected: 4	Expected: 3
-Glyph name: uni1E09	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1E09	Contours detected: 3	Expected: 2
+Glyph name: uni1E08	Contours detected: 3	Expected: 2
+Glyph name: uni1E1C	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -1100,8 +1100,8 @@ of hinted versus unhinted font files.
 
 	|  | fonts/signika/Signika-Light.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 234.2kb |
-	| Hinted Size | 299.9kb |
+	| Dehinted Size | 234.3kb |
+	| Hinted Size | 300.1kb |
 	| Increase | 65.7kb |
 	| Change   | 28.1 % |
  [code: size-impact]
@@ -1211,7 +1211,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [gasp, GPOS, DSIG, GSUB, prep, cvt , fpgm, loca]
+* ℹ **INFO** This font contains the following optional tables [cvt , GPOS, gasp, loca, prep, GSUB, fpgm, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>

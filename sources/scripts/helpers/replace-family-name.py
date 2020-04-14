@@ -33,7 +33,7 @@ for id in [1, 3, 4, 6, 16]:
 
     if id in [3, 6]:
         # No spaces in these name tables
-        old = oldFamilyName.replace(" ", "-")
+        old = oldFamilyName.replace(" ", "")
         newFam = newFamilyName.replace(" ", "")
 
     newName = name.replace(old, newFam)

@@ -215,7 +215,7 @@ https://github.com/googlefonts/fontbakery/blob/master/prebuilt/workarounds/ftxva
 <br>
 </details>
 <details>
-<summary><b>[153] Signika[NEGA,wght].ttf</b></summary>
+<summary><b>[153] SignikaSC[NEGA,wght].ttf</b></summary>
 <details>
 <summary>🔥 <b>FAIL:</b> A static fonts directory with at least two fonts must accompany variable fonts</summary>
 
@@ -250,27 +250,23 @@ installed in the system.
 
 </details>
 <details>
-<summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences?</summary>
+<summary>⚠ <b>WARN:</b> Font contains .notdef as first glyph?</summary>
 
-* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
+* [com.google.fonts/check/mandatory_glyphs](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/mandatory_glyphs)
 <pre>--- Rationale ---
 
-Fonts with ligatures should have kerning on the corresponding non-ligated
-sequences for text where ligatures aren&#x27;t used (eg
-https://github.com/impallari/Raleway/issues/14).
+The OpenType specification v1.8.2 recommends that the first glyph is the
+.notdef glyph without a codepoint assigned and with a drawing.
+
+https://docs.microsoft.com/en-us/typography/opentype/spec/recom#glyph-0-the-notdef-glyph
+
+Pre-v1.8, it was recommended that a font should also contain a .null, CR and
+space glyph. This might have been relevant for applications on MacOS 9.
 
 
 </pre>
 
-* ⚠ **WARN** GPOS table lacks kerning info for the following non-ligated sequences:
-	- f + f
-	- f + i
-	- i + f
-	- f + l
-	- l + f
-	- i + l
-
-   [code: lacks-kern-info]
+* ⚠ **WARN** Font should contain the .notdef glyph as the first glyph, it should not have a Unicode value assigned and should contain a drawing.
 
 </details>
 <details>
@@ -285,7 +281,7 @@ malformed.
 
 </pre>
 
-* 💤 **SKIP** Font family at 'fonts/signikavf' lacks a METADATA.pb file.
+* 💤 **SKIP** Font family at 'fonts/signikavfsc' lacks a METADATA.pb file.
 
 </details>
 <details>
@@ -802,11 +798,72 @@ checks that nameID 1 is the family name + the style name.
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Are there caret positions declared for every ligature?</summary>
+
+* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+<pre>--- Rationale ---
+
+All ligatures in a font must have corresponding caret (text cursor) positions
+defined in the GDEF table, otherwhise, users may experience issues with caret
+rendering.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligature_glyphs
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Is there kerning info for non-ligated sequences?</summary>
+
+* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
+<pre>--- Rationale ---
+
+Fonts with ligatures should have kerning on the corresponding non-ligated
+sequences for text where ligatures aren&#x27;t used (eg
+https://github.com/impallari/Raleway/issues/14).
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligatures
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Directory name in GFonts repo structure must match NameID 1 of the regular.</summary>
 
 * [com.google.fonts/check/repo/dirname_matches_nameid_1](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/dirname_matches_nameid_1)
 
 * 💤 **SKIP** Unfulfilled Conditions: gfonts_repo_structure, not is_variable_font
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Check if the vertical metrics of a family are similar to the same family hosted on Google Fonts.</summary>
+
+* [com.google.fonts/check/vertical_metrics_regressions](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics_regressions)
+<pre>--- Rationale ---
+
+If the family already exists on Google Fonts, we need to ensure that the
+checked family&#x27;s vertical metrics are similar. This check will test the
+following schema which was outlined in Fontbakery issue #1162 [1]:
+
+- The family should visually have the same vertical metrics as the
+  Regular style hosted on Google Fonts.
+- If the family on Google Fonts has differing hhea and typo metrics,
+  the family being checked should use the typo metrics for both the
+  hhea and typo entries.
+- If the family on Google Fonts has use typo metrics not enabled and the
+  family being checked has it enabled, the hhea and typo metrics
+  should use the family on Google Fonts winAscent and winDescent values.
+- If the upms differ, the values must be scaled so the visual appearance
+  is the same.
+
+[1] https://github.com/googlefonts/fontbakery/issues/1162
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: remote_styles
 
 </details>
 <details>
@@ -1000,12 +1057,12 @@ of hinted versus unhinted font files.
 
 * ℹ **INFO** Hinting filesize impact:
 
-	|  | fonts/signikavf/Signika[NEGA,wght].ttf |
+	|  | fonts/signikavfsc/SignikaSC[NEGA,wght].ttf |
 	|:--- | ---:|
-	| Dehinted Size | 598.5kb |
-	| Hinted Size | 677.9kb |
-	| Increase | 79.4kb |
-	| Change   | 13.3 % |
+	| Dehinted Size | 491.0kb |
+	| Hinted Size | 562.0kb |
+	| Increase | 71.1kb |
+	| Change   | 14.5 % |
  [code: size-impact]
 
 </details>
@@ -1061,22 +1118,6 @@ PPM <= 65535:
 
 </details>
 <details>
-<summary>ℹ <b>INFO:</b> Familyname must be unique according to namecheck.fontdata.com</summary>
-
-* [com.google.fonts/check/fontdata_namecheck](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fontdata_namecheck)
-<pre>--- Rationale ---
-
-We need to check names are not already used, and today the best place to check
-that is http://namecheck.fontdata.com
-
-
-</pre>
-
-* ℹ **INFO** The family name "Signika" seems to be already in use.
-Please visit http://namecheck.fontdata.com for more info. [code: name-collision]
-
-</details>
-<details>
 <summary>ℹ <b>INFO:</b> Check for font-v versioning.</summary>
 
 * [com.google.fonts/check/fontv](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fontv)
@@ -1113,7 +1154,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [cvt , DSIG, gasp, loca, GPOS, fpgm, prep, GSUB]
+* ℹ **INFO** This font contains the following optional tables [DSIG, GSUB, gasp, fpgm, cvt , loca, prep, GPOS]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -1157,7 +1198,7 @@ and separated by commas:
 
 </pre>
 
-* 🍞 **PASS** fonts/signikavf/Signika[NEGA,wght].ttf is named canonically.
+* 🍞 **PASS** fonts/signikavfsc/SignikaSC[NEGA,wght].ttf is named canonically.
 
 </details>
 <details>
@@ -1209,7 +1250,7 @@ edited by hand.
 
 </pre>
 
-* 🍞 **PASS** fonts/signikavf/DESCRIPTION.en_us.html is a propper HTML file.
+* 🍞 **PASS** fonts/signikavfsc/DESCRIPTION.en_us.html is a propper HTML file.
 
 </details>
 <details>
@@ -1517,6 +1558,21 @@ characters.
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> Familyname must be unique according to namecheck.fontdata.com</summary>
+
+* [com.google.fonts/check/fontdata_namecheck](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fontdata_namecheck)
+<pre>--- Rationale ---
+
+We need to check names are not already used, and today the best place to check
+that is http://namecheck.fontdata.com
+
+
+</pre>
+
+* 🍞 **PASS** Font familyname seems to be unique.
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Check a static ttf can be generated from a variable font.</summary>
 
 * [com.google.fonts/check/varfont/generate_static](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont/generate_static)
@@ -1709,22 +1765,6 @@ Bit 3 = Force ppem to integer values for all internal scaler math;
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Are there caret positions declared for every ligature?</summary>
-
-* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
-<pre>--- Rationale ---
-
-All ligatures in a font must have corresponding caret (text cursor) positions
-defined in the GDEF table, otherwhise, users may experience issues with caret
-rendering.
-
-
-</pre>
-
-* 🍞 **PASS** Looks good!
-
-</details>
-<details>
 <summary>🍞 <b>PASS:</b> Combined length of family and style must not exceed 27 characters.</summary>
 
 * [com.google.fonts/check/name/family_and_style_max_length](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length)
@@ -1792,35 +1832,6 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 </pre>
 
 * 🍞 **PASS** None of the name table strings contain "Reserved Font Name".
-
-</details>
-<details>
-<summary>🍞 <b>PASS:</b> Check if the vertical metrics of a family are similar to the same family hosted on Google Fonts.</summary>
-
-* [com.google.fonts/check/vertical_metrics_regressions](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics_regressions)
-<pre>--- Rationale ---
-
-If the family already exists on Google Fonts, we need to ensure that the
-checked family&#x27;s vertical metrics are similar. This check will test the
-following schema which was outlined in Fontbakery issue #1162 [1]:
-
-- The family should visually have the same vertical metrics as the
-  Regular style hosted on Google Fonts.
-- If the family on Google Fonts has differing hhea and typo metrics,
-  the family being checked should use the typo metrics for both the
-  hhea and typo entries.
-- If the family on Google Fonts has use typo metrics not enabled and the
-  family being checked has it enabled, the hhea and typo metrics
-  should use the family on Google Fonts winAscent and winDescent values.
-- If the upms differ, the values must be scaled so the visual appearance
-  is the same.
-
-[1] https://github.com/googlefonts/fontbakery/issues/1162
-
-
-</pre>
-
-* 🍞 **PASS** Vertical metrics have not regressed.
 
 </details>
 <details>
@@ -1906,26 +1917,6 @@ take care of their own situation.
 * [com.google.fonts/check/ots](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/ots)
 
 * 🍞 **PASS** ots-sanitize passed this file
-
-</details>
-<details>
-<summary>🍞 <b>PASS:</b> Font contains .notdef as first glyph?</summary>
-
-* [com.google.fonts/check/mandatory_glyphs](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/mandatory_glyphs)
-<pre>--- Rationale ---
-
-The OpenType specification v1.8.2 recommends that the first glyph is the
-.notdef glyph without a codepoint assigned and with a drawing.
-
-https://docs.microsoft.com/en-us/typography/opentype/spec/recom#glyph-0-the-notdef-glyph
-
-Pre-v1.8, it was recommended that a font should also contain a .null, CR and
-space glyph. This might have been relevant for applications on MacOS 9.
-
-
-</pre>
-
-* 🍞 **PASS** Font contains the .notdef glyph as the first glyph, it does not have a Unicode value assigned and contains a drawing.
 
 </details>
 <details>
@@ -2461,5 +2452,5 @@ On the &#x27;wdth&#x27; (Width) axis, the valid coordinate range is 1-1000
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 1 | 3 | 64 | 9 | 90 | 0 |
-| 0% | 1% | 2% | 38% | 5% | 54% | 0% |
+| 0 | 1 | 3 | 67 | 8 | 88 | 0 |
+| 0% | 1% | 2% | 40% | 5% | 53% | 0% |

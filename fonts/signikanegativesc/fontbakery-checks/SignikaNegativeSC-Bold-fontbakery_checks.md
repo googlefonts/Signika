@@ -217,14 +217,6 @@ https://github.com/googlefonts/fontbakery/blob/master/prebuilt/workarounds/ftxva
 <details>
 <summary><b>[153] SignikaNegativeSC-Bold.ttf</b></summary>
 <details>
-<summary>🔥 <b>FAIL:</b> Check name table: POSTSCRIPT_NAME entries.</summary>
-
-* [com.google.fonts/check/name/postscriptname](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/postscriptname)
-
-* 🔥 **FAIL** Entry [POSTSCRIPT_NAME(6):WINDOWS(3)] on the "name" table: Expected "SignikaNegativeSC-Bold" but got "SignikaNegative-Bold". [code: bad-entry]
-
-</details>
-<details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
 * [com.google.fonts/check/contour_count](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/contour_count)
@@ -323,14 +315,6 @@ space glyph. This might have been relevant for applications on MacOS 9.
 </pre>
 
 * ⚠ **WARN** Font should contain the .notdef glyph as the first glyph, it should not have a Unicode value assigned and should contain a drawing.
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check if OS/2 xAvgCharWidth is correct.</summary>
-
-* [com.google.fonts/check/xavgcharwidth](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/os2.html#com.google.fonts/check/xavgcharwidth)
-
-* ⚠ **WARN** OS/2 xAvgCharWidth is 1289 but it should be 1349 which corresponds to the average of the widths of all glyphs in the font.
 
 </details>
 <details>
@@ -1226,10 +1210,10 @@ of hinted versus unhinted font files.
 
 	|  | fonts/signikanegativesc/SignikaNegativeSC-Bold.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 197.9kb |
-	| Hinted Size | 267.5kb |
-	| Increase | 69.6kb |
-	| Change   | 35.2 % |
+	| Dehinted Size | 186.0kb |
+	| Hinted Size | 252.0kb |
+	| Increase | 66.1kb |
+	| Change   | 35.5 % |
  [code: size-impact]
 
 </details>
@@ -1321,7 +1305,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, DSIG, gasp, loca, GPOS, prep, cvt ]
+* ℹ **INFO** This font contains the following optional tables [prep, GPOS, fpgm, GSUB, loca, DSIG, cvt , gasp]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -1776,6 +1760,14 @@ checks that nameID 1 is the family name + the style name.
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> Check name table: POSTSCRIPT_NAME entries.</summary>
+
+* [com.google.fonts/check/name/postscriptname](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/postscriptname)
+
+* 🍞 **PASS** POSTCRIPT_NAME entries are all good.
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Check name table: TYPOGRAPHIC_FAMILY_NAME entries.</summary>
 
 * [com.google.fonts/check/name/typographicfamilyname](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/typographicfamilyname)
@@ -2203,6 +2195,14 @@ on Variable Fonts.
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> Check if OS/2 xAvgCharWidth is correct.</summary>
+
+* [com.google.fonts/check/xavgcharwidth](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/os2.html#com.google.fonts/check/xavgcharwidth)
+
+* 🍞 **PASS** OS/2 xAvgCharWidth value is correct.
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Check if OS/2 fsSelection matches head macStyle bold and italic bits.</summary>
 
 * [com.adobe.fonts/check/fsselection_matches_macstyle](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/os2.html#com.adobe.fonts/check/fsselection_matches_macstyle)
@@ -2511,5 +2511,5 @@ the same x,y coordinates.
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 1 | 4 | 70 | 8 | 84 | 0 |
-| 0% | 1% | 2% | 42% | 5% | 50% | 0% |
+| 0 | 0 | 3 | 70 | 8 | 86 | 0 |
+| 0% | 0% | 2% | 42% | 5% | 51% | 0% |

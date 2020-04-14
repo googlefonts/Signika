@@ -1,16 +1,17 @@
 ## Fontbakery report
 
-Fontbakery version: 0.7.22
+Fontbakery version: 0.7.23.dev7+ga779abba
 
 <details>
-<summary><b>[13] Family checks</b></summary>
+<summary><b>[14] Family checks</b></summary>
 <details>
 <summary>ℹ <b>INFO:</b> Do we have the latest version of FontBakery installed?</summary>
 
 * [com.google.fonts/check/fontbakery_version](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/fontbakery_version)
 
 * ℹ **INFO** fontbakery (0.7.22)  - Well designed Font QA tool, written in Python 3
-  INSTALLED: 0.7.22 (latest)
+  INSTALLED: 0.7.23.dev7+ga779abba
+  LATEST:    0.7.22
 
 * 🍞 **PASS** Font Bakery is up-to-date
 
@@ -132,6 +133,23 @@ only in weight or style ...&#x27;
 </pre>
 
 * 🍞 **PASS** There were no more than 4 fonts per family name.
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure that all variable font files have the same set of axes and axis ranges.</summary>
+
+* [com.google.fonts/check/varfont/consistent_axes](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont/consistent_axes)
+<pre>--- Rationale ---
+
+In order to facilitate the construction of intuitive and friendly user
+interfaces, all variable font files in a given family should have the same set
+of variation axes. Also, each axis must have a consistent setting of min/max
+value ranges accross all the files.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: VFs
 
 </details>
 <details>
@@ -277,30 +295,6 @@ Glyph name: uni1EC7.smcp	Contours detected: 3	Expected: 4
 Glyph name: uni1ECB.smcp	Contours detected: 2	Expected: 3
 Glyph name: uni1E1C	Contours detected: 3	Expected: 2
 Glyph name: uni1E08	Contours detected: 3	Expected: 2 [code: contour-count]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences?</summary>
-
-* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
-<pre>--- Rationale ---
-
-Fonts with ligatures should have kerning on the corresponding non-ligated
-sequences for text where ligatures aren&#x27;t used (eg
-https://github.com/impallari/Raleway/issues/14).
-
-
-</pre>
-
-* ⚠ **WARN** GPOS table lacks kerning info for the following non-ligated sequences:
-	- f + f
-	- f + i
-	- i + f
-	- f + l
-	- l + f
-	- i + l
-
-   [code: lacks-kern-info]
 
 </details>
 <details>
@@ -876,6 +870,38 @@ that are multiples of 100 on the design space.
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Are there caret positions declared for every ligature?</summary>
+
+* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+<pre>--- Rationale ---
+
+All ligatures in a font must have corresponding caret (text cursor) positions
+defined in the GDEF table, otherwhise, users may experience issues with caret
+rendering.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligature_glyphs
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Is there kerning info for non-ligated sequences?</summary>
+
+* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
+<pre>--- Rationale ---
+
+Fonts with ligatures should have kerning on the corresponding non-ligated
+sequences for text where ligatures aren&#x27;t used (eg
+https://github.com/impallari/Raleway/issues/14).
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligatures
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Directory name in GFonts repo structure must match NameID 1 of the regular.</summary>
 
 * [com.google.fonts/check/repo/dirname_matches_nameid_1](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/dirname_matches_nameid_1)
@@ -1212,10 +1238,10 @@ of hinted versus unhinted font files.
 
 	|  | fonts/signikanegativesc/SignikaNegativeSC-Light.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 229.1kb |
-	| Hinted Size | 296.0kb |
-	| Increase | 67.0kb |
-	| Change   | 29.2 % |
+	| Dehinted Size | 183.9kb |
+	| Hinted Size | 242.6kb |
+	| Increase | 58.7kb |
+	| Change   | 31.9 % |
  [code: size-impact]
 
 </details>
@@ -1307,7 +1333,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [GPOS, GSUB, prep, fpgm, cvt , gasp, loca, DSIG]
+* ℹ **INFO** This font contains the following optional tables [gasp, DSIG, GSUB, prep, fpgm, cvt , loca, GPOS]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -1916,22 +1942,6 @@ Bit 3 = Force ppem to integer values for all internal scaler math;
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Are there caret positions declared for every ligature?</summary>
-
-* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
-<pre>--- Rationale ---
-
-All ligatures in a font must have corresponding caret (text cursor) positions
-defined in the GDEF table, otherwhise, users may experience issues with caret
-rendering.
-
-
-</pre>
-
-* 🍞 **PASS** Looks good!
-
-</details>
-<details>
 <summary>🍞 <b>PASS:</b> Name table entries should not contain line-breaks.</summary>
 
 * [com.google.fonts/check/name/line_breaks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/line_breaks)
@@ -2504,5 +2514,5 @@ the same x,y coordinates.
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 0 | 5 | 69 | 8 | 84 | 0 |
-| 0% | 0% | 3% | 42% | 5% | 51% | 0% |
+| 0 | 0 | 4 | 72 | 8 | 83 | 0 |
+| 0% | 0% | 2% | 43% | 5% | 50% | 0% |

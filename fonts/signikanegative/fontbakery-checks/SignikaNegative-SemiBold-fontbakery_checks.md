@@ -221,7 +221,7 @@ https://github.com/googlefonts/fontbakery/blob/master/prebuilt/workarounds/ftxva
 
 * [com.google.fonts/check/production_glyphs_similarity](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity)
 
-* ⚠ **WARN** Following glyphs differ greatly from Google Fonts version: [yen, exclam, currency, onequarter, onehalf, degree, exclamdown, Euro, threequarters, sterling, fraction, percent, eight, .notdef]
+* ⚠ **WARN** Following glyphs differ greatly from Google Fonts version: [Euro, currency, exclamdown, sterling, degree, .notdef, onequarter, onehalf, exclam, yen, percent, threequarters, fraction, eight]
 
 </details>
 <details>
@@ -254,10 +254,10 @@ Glyph name: uni1E08	Contours detected: 3	Expected: 2
 Glyph name: uni1E09	Contours detected: 3	Expected: 2
 Glyph name: uni1E1C	Contours detected: 3	Expected: 2
 Glyph name: uni1E1D	Contours detected: 4	Expected: 3
+Glyph name: uni1E08	Contours detected: 3	Expected: 2
 Glyph name: uni1E1D	Contours detected: 4	Expected: 3
 Glyph name: uni1E09	Contours detected: 3	Expected: 2
-Glyph name: uni1E1C	Contours detected: 3	Expected: 2
-Glyph name: uni1E08	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1E1C	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -1128,8 +1128,8 @@ of hinted versus unhinted font files.
 
 	|  | fonts/signikanegative/SignikaNegative-SemiBold.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 235.6kb |
-	| Hinted Size | 311.1kb |
+	| Dehinted Size | 235.8kb |
+	| Hinted Size | 311.3kb |
 	| Increase | 75.5kb |
 	| Change   | 32.0 % |
  [code: size-impact]
@@ -1223,7 +1223,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [fpgm, DSIG, prep, loca, GPOS, GSUB, gasp, cvt ]
+* ℹ **INFO** This font contains the following optional tables [cvt , prep, GPOS, GSUB, gasp, loca, fpgm, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>

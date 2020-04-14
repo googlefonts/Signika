@@ -17,6 +17,23 @@ Fontbakery version: 0.7.23.dev7+ga779abba
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> Ensure that all variable font files have the same set of axes and axis ranges.</summary>
+
+* [com.google.fonts/check/varfont/consistent_axes](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont/consistent_axes)
+<pre>--- Rationale ---
+
+In order to facilitate the construction of intuitive and friendly user
+interfaces, all variable font files in a given family should have the same set
+of variation axes. Also, each axis must have a consistent setting of min/max
+value ranges accross all the files.
+
+
+</pre>
+
+* 🍞 **PASS** All looks good!
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Does font file include unacceptable control character glyphs?</summary>
 
 * [com.google.fonts/check/family/control_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/family/control_chars)
@@ -136,23 +153,6 @@ only in weight or style ...&#x27;
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Ensure that all variable font files have the same set of axes and axis ranges.</summary>
-
-* [com.google.fonts/check/varfont/consistent_axes](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont/consistent_axes)
-<pre>--- Rationale ---
-
-In order to facilitate the construction of intuitive and friendly user
-interfaces, all variable font files in a given family should have the same set
-of variation axes. Also, each axis must have a consistent setting of min/max
-value ranges accross all the files.
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: VFs
-
-</details>
-<details>
 <summary>💤 <b>SKIP:</b> All tabular figures must have the same width across the RIBBI-family.</summary>
 
 * [com.google.fonts/check/family/tnum_horizontal_metrics](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/family/tnum_horizontal_metrics)
@@ -215,49 +215,38 @@ https://github.com/googlefonts/fontbakery/blob/master/prebuilt/workarounds/ftxva
 <br>
 </details>
 <details>
-<summary><b>[153] Signika-SemiBold.ttf</b></summary>
+<summary><b>[153] Signika[NEGA,wght].ttf</b></summary>
 <details>
-<summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version?</summary>
+<summary>🔥 <b>FAIL:</b> A static fonts directory with at least two fonts must accompany variable fonts</summary>
 
-* [com.google.fonts/check/production_glyphs_similarity](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity)
-
-* ⚠ **WARN** Following glyphs differ greatly from Google Fonts version: [currency, .notdef, threequarters, uni2074, percent, onehalf, sterling, yen, exclamdown, degree, fraction, exclam, onequarter, Euro]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
-
-* [com.google.fonts/check/contour_count](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/contour_count)
+* [com.google.fonts/check/repo/vf_has_static_fonts](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/vf_has_static_fonts)
 <pre>--- Rationale ---
 
-Visually QAing thousands of glyphs by hand is tiring. Most glyphs can only be
-constructured in a handful of ways. This means a glyph&#x27;s contour count will
-only differ slightly amongst different fonts, e.g a &#x27;g&#x27; could either be 2 or 3
-contours, depending on whether its double story or single story.
-
-However, a quotedbl should have 2 contours, unless the font belongs to a
-display family.
-
-This check currently does not cover variable fonts because there&#x27;s plenty of
-alternative ways of constructing glyphs with multiple outlines for each feature
-in a VarFont. The expected contour count data for this check is currently
-optimized for the typical construction of glyphs in static fonts.
+Variable font family directories kept in the google/fonts git repo must include
+a static/ subdir containing static fonts.
+These files are meant to be served for users that still lack support for
+variable fonts in their web browsers.
 
 
 </pre>
 
-* ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
+* 🔥 **FAIL** Please create a subdirectory called "static/" and include in it static font files. [code: missing]
 
-The following glyphs do not have the recommended number of contours:
+</details>
+<details>
+<summary>⚠ <b>WARN:</b> Font has old ttfautohint applied?</summary>
 
-Glyph name: uni1E08	Contours detected: 3	Expected: 2
-Glyph name: uni1E09	Contours detected: 3	Expected: 2
-Glyph name: uni1E1C	Contours detected: 3	Expected: 2
-Glyph name: uni1E1D	Contours detected: 4	Expected: 3
-Glyph name: uni1E09	Contours detected: 3	Expected: 2
-Glyph name: uni1E1D	Contours detected: 4	Expected: 3
-Glyph name: uni1E08	Contours detected: 3	Expected: 2
-Glyph name: uni1E1C	Contours detected: 3	Expected: 2 [code: contour-count]
+* [com.google.fonts/check/old_ttfautohint](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/old_ttfautohint)
+<pre>--- Rationale ---
+
+This check finds which version of ttfautohint was used, by inspecting name
+table entries and then finds which version of ttfautohint is currently
+installed in the system.
+
+
+</pre>
+
+* ⚠ **WARN** ttfautohint used in font = 1.8.1.43-b0c9; installed = 1.8.3; Need to re-run with the newer version! [code: old-ttfa]
 
 </details>
 <details>
@@ -285,23 +274,6 @@ https://github.com/impallari/Raleway/issues/14).
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Does DESCRIPTION file mention when a family is available as variable font?</summary>
-
-* [com.google.fonts/check/description/variable_font](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/variable_font)
-<pre>--- Rationale ---
-
-Families with variable fonts do not always mention that in their descriptions.
-Therefore, this check ensures that a standard boilerplate sentence is present
-in the DESCRIPTION.en_us.html files for all those families which are available
-as variable fonts.
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: is_variable_font
-
-</details>
-<details>
 <summary>💤 <b>SKIP:</b> Check METADATA.pb parse correctly.</summary>
 
 * [com.google.fonts/check/metadata/parses](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/parses)
@@ -313,7 +285,7 @@ malformed.
 
 </pre>
 
-* 💤 **SKIP** Font family at 'fonts/signika' lacks a METADATA.pb file.
+* 💤 **SKIP** Font family at 'fonts/signikavf' lacks a METADATA.pb file.
 
 </details>
 <details>
@@ -506,7 +478,7 @@ not placed on subdirectories.
 
 * [com.google.fonts/check/metadata/nameid/font_name](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/nameid/font_name)
 
-* 💤 **SKIP** Unfulfilled Conditions: font_metadata
+* 💤 **SKIP** Unfulfilled Conditions: font_metadata, style
 
 </details>
 <details>
@@ -522,7 +494,7 @@ not placed on subdirectories.
 
 * [com.google.fonts/check/metadata/match_filename_postscript](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/match_filename_postscript)
 
-* 💤 **SKIP** Unfulfilled Conditions: font_metadata
+* 💤 **SKIP** Unfulfilled Conditions: font_metadata, not is_variable_font
 
 </details>
 <details>
@@ -530,7 +502,7 @@ not placed on subdirectories.
 
 * [com.google.fonts/check/metadata/valid_name_values](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/valid_name_values)
 
-* 💤 **SKIP** Unfulfilled Conditions: font_metadata
+* 💤 **SKIP** Unfulfilled Conditions: style, font_metadata
 
 </details>
 <details>
@@ -538,7 +510,7 @@ not placed on subdirectories.
 
 * [com.google.fonts/check/metadata/valid_full_name_values](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/valid_full_name_values)
 
-* 💤 **SKIP** Unfulfilled Conditions: font_metadata
+* 💤 **SKIP** Unfulfilled Conditions: style, font_metadata
 
 </details>
 <details>
@@ -546,7 +518,7 @@ not placed on subdirectories.
 
 * [com.google.fonts/check/metadata/valid_filename_values](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/valid_filename_values)
 
-* 💤 **SKIP** Unfulfilled Conditions: family_metadata
+* 💤 **SKIP** Unfulfilled Conditions: style, family_metadata
 
 </details>
 <details>
@@ -691,6 +663,89 @@ We may want to merge them all into a single check.
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Version number has increased since previous release on Google Fonts?</summary>
+
+* [com.google.fonts/check/version_bump](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/version_bump)
+
+* 💤 **SKIP** Unfulfilled Conditions: api_gfonts_ttFont, github_gfonts_ttFont
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Glyphs are similiar to Google Fonts version?</summary>
+
+* [com.google.fonts/check/production_glyphs_similarity](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity)
+
+* 💤 **SKIP** Unfulfilled Conditions: api_gfonts_ttFont
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Checking OS/2 fsSelection value.</summary>
+
+* [com.google.fonts/check/fsselection](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fsselection)
+
+* 💤 **SKIP** Unfulfilled Conditions: style
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Checking post.italicAngle value.</summary>
+
+* [com.google.fonts/check/italic_angle](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/italic_angle)
+<pre>--- Rationale ---
+
+The &#x27;post&#x27; table italicAngle property should be a reasonable amount, likely not
+more than -20°, never more than -30°, and never greater than 0°. Note that in
+the OpenType specification, the value is negative for a lean rightwards.
+
+https://docs.microsoft.com/en-us/typography/opentype/spec/post
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: style
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Checking head.macStyle value.</summary>
+
+* [com.google.fonts/check/mac_style](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/mac_style)
+<pre>--- Rationale ---
+
+The values of the flags on the macStyle entry on the &#x27;head&#x27; OpenType table that
+describe whether a font is bold and/or italic must be coherent with the actual
+style of the font as inferred by its filename.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: style
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Check if each glyph has the recommended amount of contours.</summary>
+
+* [com.google.fonts/check/contour_count](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/contour_count)
+<pre>--- Rationale ---
+
+Visually QAing thousands of glyphs by hand is tiring. Most glyphs can only be
+constructured in a handful of ways. This means a glyph&#x27;s contour count will
+only differ slightly amongst different fonts, e.g a &#x27;g&#x27; could either be 2 or 3
+contours, depending on whether its double story or single story.
+
+However, a quotedbl should have 2 contours, unless the font belongs to a
+display family.
+
+This check currently does not cover variable fonts because there&#x27;s plenty of
+alternative ways of constructing glyphs with multiple outlines for each feature
+in a VarFont. The expected contour count data for this check is currently
+optimized for the typical construction of glyphs in static fonts.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: not is_variable_font
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Copyright field for this font on METADATA.pb matches all copyright notice entries on the name table ?</summary>
 
 * [com.google.fonts/check/metadata/nameid/copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/nameid/copyright)
@@ -699,97 +754,51 @@ We may want to merge them all into a single check.
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Check a static ttf can be generated from a variable font.</summary>
+<summary>💤 <b>SKIP:</b> Font has all mandatory 'name' table entries?</summary>
 
-* [com.google.fonts/check/varfont/generate_static](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont/generate_static)
-<pre>--- Rationale ---
+* [com.google.fonts/check/name/mandatory_entries](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/mandatory_entries)
 
-Google Fonts may serve static fonts which have been generated from variable
-fonts. This test will attempt to generate a static ttf using fontTool&#x27;s varLib
-mutator.
-
-The target font will be the mean of each axis e.g:
-
-**VF font axes**
-
-- min weight, max weight = 400, 800
-- min width, max width = 50, 100
-
-**Target Instance**
-
-- weight = 600
-- width = 75
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: is_variable_font
+* 💤 **SKIP** Unfulfilled Conditions: style
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Check that variable fonts have an HVAR table.</summary>
+<summary>💤 <b>SKIP:</b> Check name table: FONT_FAMILY_NAME entries.</summary>
 
-* [com.google.fonts/check/varfont/has_HVAR](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont/has_HVAR)
+* [com.google.fonts/check/name/familyname](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/familyname)
 <pre>--- Rationale ---
 
-Not having a HVAR table can lead to costly text-layout operations on some
-platforms, which we want to avoid.
-
-So, all variable fonts on the Google Fonts collection should have an HVAR with
-valid values.
-
-More info on the HVAR table can be found at:
-https://docs.microsoft.com/en-us/typography/opentype/spec/otvaroverview#variation-data-tables-and-miscellaneous-requirements
+Checks that the family name infered from the font filename matches the string
+at nameID 1 (NAMEID_FONT_FAMILY_NAME) if it conforms to RIBBI and otherwise
+checks that nameID 1 is the family name + the style name.
 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: is_variable_font
+* 💤 **SKIP** Unfulfilled Conditions: style
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> All name entries referenced by fvar instances exist on the name table?</summary>
+<summary>💤 <b>SKIP:</b> Check name table: FULL_FONT_NAME entries.</summary>
 
-* [com.google.fonts/check/fvar_name_entries](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fvar_name_entries)
-<pre>--- Rationale ---
+* [com.google.fonts/check/name/fullfontname](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/fullfontname)
 
-The purpose of this check is to make sure that all name entries referenced by
-variable font instances do exist in the name table.
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: is_variable_font
+* 💤 **SKIP** Unfulfilled Conditions: style_with_spaces
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> A variable font must have named instances.</summary>
+<summary>💤 <b>SKIP:</b> Check name table: POSTSCRIPT_NAME entries.</summary>
 
-* [com.google.fonts/check/varfont_has_instances](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont_has_instances)
-<pre>--- Rationale ---
+* [com.google.fonts/check/name/postscriptname](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/postscriptname)
 
-Named instances must be present in all variable fonts in order not to frustrate
-the users&#x27; typical expectations of a traditional static font workflow.
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: is_variable_font
+* 💤 **SKIP** Unfulfilled Conditions: style
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Variable font weight coordinates must be multiples of 100.</summary>
+<summary>💤 <b>SKIP:</b> Check name table: TYPOGRAPHIC_FAMILY_NAME entries.</summary>
 
-* [com.google.fonts/check/varfont_weight_instances](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont_weight_instances)
-<pre>--- Rationale ---
+* [com.google.fonts/check/name/typographicfamilyname](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/typographicfamilyname)
 
-The named instances on the weight axis of a variable font must have coordinates
-that are multiples of 100 on the design space.
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: is_variable_font
+* 💤 **SKIP** Unfulfilled Conditions: style
 
 </details>
 <details>
@@ -797,40 +806,7 @@ that are multiples of 100 on the design space.
 
 * [com.google.fonts/check/repo/dirname_matches_nameid_1](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/dirname_matches_nameid_1)
 
-* 💤 **SKIP** Unfulfilled Conditions: gfonts_repo_structure
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> A static fonts directory with at least two fonts must accompany variable fonts</summary>
-
-* [com.google.fonts/check/repo/vf_has_static_fonts](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/vf_has_static_fonts)
-<pre>--- Rationale ---
-
-Variable font family directories kept in the google/fonts git repo must include
-a static/ subdir containing static fonts.
-These files are meant to be served for users that still lack support for
-variable fonts in their web browsers.
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: is_variable_font
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check variable font instances have correct coordinate values</summary>
-
-* [com.google.fonts/check/varfont_instance_coordinates](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont_instance_coordinates)
-
-* 💤 **SKIP** Unfulfilled Conditions: is_variable_font
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Check variable font instances have correct names</summary>
-
-* [com.google.fonts/check/varfont_instance_names](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont_instance_names)
-
-* 💤 **SKIP** Unfulfilled Conditions: is_variable_font
+* 💤 **SKIP** Unfulfilled Conditions: gfonts_repo_structure, not is_variable_font
 
 </details>
 <details>
@@ -890,25 +866,6 @@ guarantee which table an app will get the data from.
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> The variable font 'wght' (Weight) axis coordinate must be 400 on the 'Regular' instance.</summary>
-
-* [com.google.fonts/check/varfont/regular_wght_coord](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/fvar.html#com.google.fonts/check/varfont/regular_wght_coord)
-<pre>--- Rationale ---
-
-According to the Open-Type spec&#x27;s registered design-variation tag &#x27;wght&#x27;
-available at
-https://docs.microsoft.com/en-gb/typography/opentype/spec/dvaraxistag_wght
-
-If a variable font has a &#x27;wght&#x27; (Weight) axis, then the coordinate of its
-&#x27;Regular&#x27; instance is required to be 400.
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: is_variable_font, regular_wght_coord
-
-</details>
-<details>
 <summary>💤 <b>SKIP:</b> The variable font 'wdth' (Width) axis coordinate must be 100 on the 'Regular' instance.</summary>
 
 * [com.google.fonts/check/varfont/regular_wdth_coord](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/fvar.html#com.google.fonts/check/varfont/regular_wdth_coord)
@@ -924,7 +881,7 @@ If a variable font has a &#x27;wdth&#x27; (Width) axis, then the coordinate of i
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: is_variable_font, regular_wdth_coord
+* 💤 **SKIP** Unfulfilled Conditions: regular_wdth_coord
 
 </details>
 <details>
@@ -943,7 +900,7 @@ If a variable font has a &#x27;slnt&#x27; (Slant) axis, then the coordinate of i
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: is_variable_font, regular_slnt_coord
+* 💤 **SKIP** Unfulfilled Conditions: regular_slnt_coord
 
 </details>
 <details>
@@ -962,7 +919,7 @@ If a variable font has a &#x27;ital&#x27; (Italic) axis, then the coordinate of 
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: is_variable_font, regular_ital_coord
+* 💤 **SKIP** Unfulfilled Conditions: regular_ital_coord
 
 </details>
 <details>
@@ -981,62 +938,7 @@ If a variable font has a &#x27;opsz&#x27; (Optical Size) axis, then the coordina
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: is_variable_font, regular_opsz_coord
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> The variable font 'wght' (Weight) axis coordinate must be 700 on the 'Bold' instance.</summary>
-
-* [com.google.fonts/check/varfont/bold_wght_coord](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/fvar.html#com.google.fonts/check/varfont/bold_wght_coord)
-<pre>--- Rationale ---
-
-The Open-Type spec&#x27;s registered design-variation tag &#x27;wght&#x27; available at
-https://docs.microsoft.com/en-gb/typography/opentype/spec/dvaraxistag_wght does
-not specify a required value for the &#x27;Bold&#x27; instance of a variable font.
-
-But Dave Crossland suggested that we should enforce a required value of 700 in
-this case.
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: is_variable_font, bold_wght_coord
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> The variable font 'wght' (Weight) axis coordinate must be within spec range of 1 to 1000 on all instances.</summary>
-
-* [com.google.fonts/check/varfont/wght_valid_range](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/fvar.html#com.google.fonts/check/varfont/wght_valid_range)
-<pre>--- Rationale ---
-
-According to the Open-Type spec&#x27;s registered design-variation tag &#x27;wght&#x27;
-available at
-https://docs.microsoft.com/en-gb/typography/opentype/spec/dvaraxistag_wght
-
-On the &#x27;wght&#x27; (Weight) axis, the valid coordinate range is 1-1000.
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: is_variable_font
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> The variable font 'wdth' (Weight) axis coordinate must be within spec range of 1 to 1000 on all instances.</summary>
-
-* [com.google.fonts/check/varfont/wdth_valid_range](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/fvar.html#com.google.fonts/check/varfont/wdth_valid_range)
-<pre>--- Rationale ---
-
-According to the Open-Type spec&#x27;s registered design-variation tag &#x27;wdth&#x27;
-available at
-https://docs.microsoft.com/en-gb/typography/opentype/spec/dvaraxistag_wdth
-
-On the &#x27;wdth&#x27; (Width) axis, the valid coordinate range is 1-1000
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: is_variable_font
+* 💤 **SKIP** Unfulfilled Conditions: regular_opsz_coord
 
 </details>
 <details>
@@ -1057,7 +959,7 @@ scale used for the italicAngle field in the post table.
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: is_variable_font, slnt_axis
+* 💤 **SKIP** Unfulfilled Conditions: slnt_axis
 
 </details>
 <details>
@@ -1098,12 +1000,12 @@ of hinted versus unhinted font files.
 
 * ℹ **INFO** Hinting filesize impact:
 
-	|  | fonts/signika/Signika-SemiBold.ttf |
+	|  | fonts/signikavf/Signika[NEGA,wght].ttf |
 	|:--- | ---:|
-	| Dehinted Size | 235.9kb |
-	| Hinted Size | 308.9kb |
-	| Increase | 73.0kb |
-	| Change   | 30.9 % |
+	| Dehinted Size | 598.6kb |
+	| Hinted Size | 678.1kb |
+	| Increase | 79.4kb |
+	| Change   | 13.3 % |
  [code: size-impact]
 
 </details>
@@ -1189,7 +1091,7 @@ enforcing it.
 
 </pre>
 
-* ℹ **INFO** Version string is: "Version 2.000; ttfautohint (v1.8.3) -l 8 -r 50 -G 200 -x 9 -D latn -f none -a nnn -X """
+* ℹ **INFO** Version string is: "Version 2.000; ttfautohint (v1.8.1.43-b0c9) -l 8 -r 50 -G 200 -x 9 -D latn -f none -a nnn -X """
 The version string must ideally include a git commit hash and either a "dev" or a "release" suffix such as in the example below:
 "Version 1.3; git-0d08353-release" [code: bad-format]
 
@@ -1211,7 +1113,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [GSUB, cvt , DSIG, gasp, loca, fpgm, prep, GPOS]
+* ℹ **INFO** This font contains the following optional tables [cvt , fpgm, loca, gasp, GSUB, GPOS, prep, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -1230,8 +1132,8 @@ checks.
 
 </pre>
 
-* ℹ **INFO** fonts/signika [code: family-path]
-* ℹ **INFO** fonts/signikasc [code: family-path]
+* ℹ **INFO** fonts/signikavf [code: family-path]
+* ℹ **INFO** fonts/signikavfsc [code: family-path]
 
 </details>
 <details>
@@ -1255,7 +1157,7 @@ and separated by commas:
 
 </pre>
 
-* 🍞 **PASS** fonts/signika/Signika-SemiBold.ttf is named canonically.
+* 🍞 **PASS** fonts/signikavf/Signika[NEGA,wght].ttf is named canonically.
 
 </details>
 <details>
@@ -1275,6 +1177,23 @@ it must be properly working.
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> Does DESCRIPTION file mention when a family is available as variable font?</summary>
+
+* [com.google.fonts/check/description/variable_font](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/variable_font)
+<pre>--- Rationale ---
+
+Families with variable fonts do not always mention that in their descriptions.
+Therefore, this check ensures that a standard boilerplate sentence is present
+in the DESCRIPTION.en_us.html files for all those families which are available
+as variable fonts.
+
+
+</pre>
+
+* 🍞 **PASS** Looks good!
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Is this a proper HTML snippet?</summary>
 
 * [com.google.fonts/check/description/valid_html](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/valid_html)
@@ -1290,7 +1209,7 @@ edited by hand.
 
 </pre>
 
-* 🍞 **PASS** fonts/signika/DESCRIPTION.en_us.html is a propper HTML file.
+* 🍞 **PASS** fonts/signikavf/DESCRIPTION.en_us.html is a propper HTML file.
 
 </details>
 <details>
@@ -1486,22 +1405,6 @@ Longer strings are likely instances of the FontLab bug.
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Font has old ttfautohint applied?</summary>
-
-* [com.google.fonts/check/old_ttfautohint](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/old_ttfautohint)
-<pre>--- Rationale ---
-
-This check finds which version of ttfautohint was used, by inspecting name
-table entries and then finds which version of ttfautohint is currently
-installed in the system.
-
-
-</pre>
-
-* 🍞 **PASS** ttfautohint available in the system (1.8.3) is older than the one used in the font (1.8.3).
-
-</details>
-<details>
 <summary>🍞 <b>PASS:</b> Make sure family name does not begin with a digit.</summary>
 
 * [com.google.fonts/check/name/familyname_first_char](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/familyname_first_char)
@@ -1581,112 +1484,11 @@ much added benefit.
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Version number has increased since previous release on Google Fonts?</summary>
-
-* [com.google.fonts/check/version_bump](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/version_bump)
-
-* 🍞 **PASS** Version number 2.0 is greater than version on Google Fonts GitHub (1.0019989013671875) and production servers (1.0019989013671875).
-
-</details>
-<details>
-<summary>🍞 <b>PASS:</b> Checking OS/2 fsSelection value.</summary>
-
-* [com.google.fonts/check/fsselection](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fsselection)
-
-* 🍞 **PASS** OS/2 fsSelection REGULAR bit is properly set.
-* 🍞 **PASS** OS/2 fsSelection ITALIC bit is properly set.
-* 🍞 **PASS** OS/2 fsSelection BOLD bit is properly set.
-
-</details>
-<details>
-<summary>🍞 <b>PASS:</b> Checking post.italicAngle value.</summary>
-
-* [com.google.fonts/check/italic_angle](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/italic_angle)
-<pre>--- Rationale ---
-
-The &#x27;post&#x27; table italicAngle property should be a reasonable amount, likely not
-more than -20°, never more than -30°, and never greater than 0°. Note that in
-the OpenType specification, the value is negative for a lean rightwards.
-
-https://docs.microsoft.com/en-us/typography/opentype/spec/post
-
-
-</pre>
-
-* 🍞 **PASS** Value of post.italicAngle is 0.0 with style="SemiBold".
-
-</details>
-<details>
-<summary>🍞 <b>PASS:</b> Checking head.macStyle value.</summary>
-
-* [com.google.fonts/check/mac_style](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/mac_style)
-<pre>--- Rationale ---
-
-The values of the flags on the macStyle entry on the &#x27;head&#x27; OpenType table that
-describe whether a font is bold and/or italic must be coherent with the actual
-style of the font as inferred by its filename.
-
-
-</pre>
-
-* 🍞 **PASS** head macStyle ITALIC bit is properly set.
-* 🍞 **PASS** head macStyle BOLD bit is properly set.
-
-</details>
-<details>
-<summary>🍞 <b>PASS:</b> Font has all mandatory 'name' table entries?</summary>
-
-* [com.google.fonts/check/name/mandatory_entries](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/mandatory_entries)
-
-* 🍞 **PASS** Font contains values for all mandatory name table entries.
-
-</details>
-<details>
-<summary>🍞 <b>PASS:</b> Check name table: FONT_FAMILY_NAME entries.</summary>
-
-* [com.google.fonts/check/name/familyname](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/familyname)
-<pre>--- Rationale ---
-
-Checks that the family name infered from the font filename matches the string
-at nameID 1 (NAMEID_FONT_FAMILY_NAME) if it conforms to RIBBI and otherwise
-checks that nameID 1 is the family name + the style name.
-
-
-</pre>
-
-* 🍞 **PASS** FONT_FAMILY_NAME entries are all good. [code: ok]
-
-</details>
-<details>
 <summary>🍞 <b>PASS:</b> Check name table: FONT_SUBFAMILY_NAME entries.</summary>
 
 * [com.google.fonts/check/name/subfamilyname](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/subfamilyname)
 
 * 🍞 **PASS** FONT_SUBFAMILY_NAME entries are all good.
-
-</details>
-<details>
-<summary>🍞 <b>PASS:</b> Check name table: FULL_FONT_NAME entries.</summary>
-
-* [com.google.fonts/check/name/fullfontname](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/fullfontname)
-
-* 🍞 **PASS** FULL_FONT_NAME entries are all good.
-
-</details>
-<details>
-<summary>🍞 <b>PASS:</b> Check name table: POSTSCRIPT_NAME entries.</summary>
-
-* [com.google.fonts/check/name/postscriptname](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/postscriptname)
-
-* 🍞 **PASS** POSTCRIPT_NAME entries are all good.
-
-</details>
-<details>
-<summary>🍞 <b>PASS:</b> Check name table: TYPOGRAPHIC_FAMILY_NAME entries.</summary>
-
-* [com.google.fonts/check/name/typographicfamilyname](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/typographicfamilyname)
-
-* 🍞 **PASS** TYPOGRAPHIC_FAMILY_NAME entries are all good.
 
 </details>
 <details>
@@ -1712,6 +1514,55 @@ characters.
 </pre>
 
 * 🍞 **PASS** All copyright notice name entries on the 'name' table are shorter than 500 characters.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check a static ttf can be generated from a variable font.</summary>
+
+* [com.google.fonts/check/varfont/generate_static](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont/generate_static)
+<pre>--- Rationale ---
+
+Google Fonts may serve static fonts which have been generated from variable
+fonts. This test will attempt to generate a static ttf using fontTool&#x27;s varLib
+mutator.
+
+The target font will be the mean of each axis e.g:
+
+**VF font axes**
+
+- min weight, max weight = 400, 800
+- min width, max width = 50, 100
+
+**Target Instance**
+
+- weight = 600
+- width = 75
+
+
+</pre>
+
+* 🍞 **PASS** fontTools.varLib.mutator generated a static font instance
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check that variable fonts have an HVAR table.</summary>
+
+* [com.google.fonts/check/varfont/has_HVAR](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont/has_HVAR)
+<pre>--- Rationale ---
+
+Not having a HVAR table can lead to costly text-layout operations on some
+platforms, which we want to avoid.
+
+So, all variable fonts on the Google Fonts collection should have an HVAR with
+valid values.
+
+More info on the HVAR table can be found at:
+https://docs.microsoft.com/en-us/typography/opentype/spec/otvaroverview#variation-data-tables-and-miscellaneous-requirements
+
+
+</pre>
+
+* 🍞 **PASS** This variable font contains an HVAR table.
 
 </details>
 <details>
@@ -1788,6 +1639,51 @@ release files, but Google Fonts should only have OpenType tables.
 </pre>
 
 * 🍞 **PASS** There are no unwanted AAT tables.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> All name entries referenced by fvar instances exist on the name table?</summary>
+
+* [com.google.fonts/check/fvar_name_entries](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fvar_name_entries)
+<pre>--- Rationale ---
+
+The purpose of this check is to make sure that all name entries referenced by
+variable font instances do exist in the name table.
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> A variable font must have named instances.</summary>
+
+* [com.google.fonts/check/varfont_has_instances](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont_has_instances)
+<pre>--- Rationale ---
+
+Named instances must be present in all variable fonts in order not to frustrate
+the users&#x27; typical expectations of a traditional static font workflow.
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Variable font weight coordinates must be multiples of 100.</summary>
+
+* [com.google.fonts/check/varfont_weight_instances](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont_weight_instances)
+<pre>--- Rationale ---
+
+The named instances on the weight axis of a variable font must have coordinates
+that are multiples of 100 on the design space.
+
+
+</pre>
+
+* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -1925,6 +1821,22 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 </pre>
 
 * 🍞 **PASS** Vertical metrics have not regressed.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check variable font instances have correct coordinate values</summary>
+
+* [com.google.fonts/check/varfont_instance_coordinates](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont_instance_coordinates)
+
+* 🍞 **PASS** Instance coordinates are correct
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check variable font instances have correct names</summary>
+
+* [com.google.fonts/check/varfont_instance_names](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont_instance_names)
+
+* 🍞 **PASS** Instance names are correct
 
 </details>
 <details>
@@ -2468,6 +2380,80 @@ the same x,y coordinates.
 * 🍞 **PASS** Glyphs do not contain duplicate components which have the same x,y coordinates.
 
 </details>
+<details>
+<summary>🍞 <b>PASS:</b> The variable font 'wght' (Weight) axis coordinate must be 400 on the 'Regular' instance.</summary>
+
+* [com.google.fonts/check/varfont/regular_wght_coord](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/fvar.html#com.google.fonts/check/varfont/regular_wght_coord)
+<pre>--- Rationale ---
+
+According to the Open-Type spec&#x27;s registered design-variation tag &#x27;wght&#x27;
+available at
+https://docs.microsoft.com/en-gb/typography/opentype/spec/dvaraxistag_wght
+
+If a variable font has a &#x27;wght&#x27; (Weight) axis, then the coordinate of its
+&#x27;Regular&#x27; instance is required to be 400.
+
+
+</pre>
+
+* 🍞 **PASS** Regular:wght is 400.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> The variable font 'wght' (Weight) axis coordinate must be 700 on the 'Bold' instance.</summary>
+
+* [com.google.fonts/check/varfont/bold_wght_coord](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/fvar.html#com.google.fonts/check/varfont/bold_wght_coord)
+<pre>--- Rationale ---
+
+The Open-Type spec&#x27;s registered design-variation tag &#x27;wght&#x27; available at
+https://docs.microsoft.com/en-gb/typography/opentype/spec/dvaraxistag_wght does
+not specify a required value for the &#x27;Bold&#x27; instance of a variable font.
+
+But Dave Crossland suggested that we should enforce a required value of 700 in
+this case.
+
+
+</pre>
+
+* 🍞 **PASS** Bold:wght is 700.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> The variable font 'wght' (Weight) axis coordinate must be within spec range of 1 to 1000 on all instances.</summary>
+
+* [com.google.fonts/check/varfont/wght_valid_range](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/fvar.html#com.google.fonts/check/varfont/wght_valid_range)
+<pre>--- Rationale ---
+
+According to the Open-Type spec&#x27;s registered design-variation tag &#x27;wght&#x27;
+available at
+https://docs.microsoft.com/en-gb/typography/opentype/spec/dvaraxistag_wght
+
+On the &#x27;wght&#x27; (Weight) axis, the valid coordinate range is 1-1000.
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> The variable font 'wdth' (Weight) axis coordinate must be within spec range of 1 to 1000 on all instances.</summary>
+
+* [com.google.fonts/check/varfont/wdth_valid_range](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/fvar.html#com.google.fonts/check/varfont/wdth_valid_range)
+<pre>--- Rationale ---
+
+According to the Open-Type spec&#x27;s registered design-variation tag &#x27;wdth&#x27;
+available at
+https://docs.microsoft.com/en-gb/typography/opentype/spec/dvaraxistag_wdth
+
+On the &#x27;wdth&#x27; (Width) axis, the valid coordinate range is 1-1000
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
 <br>
 </details>
 
@@ -2475,5 +2461,5 @@ the same x,y coordinates.
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 0 | 4 | 67 | 9 | 87 | 0 |
-| 0% | 0% | 2% | 40% | 5% | 52% | 0% |
+| 0 | 1 | 3 | 64 | 9 | 90 | 0 |
+| 0% | 1% | 2% | 38% | 5% | 54% | 0% |
