@@ -199,81 +199,6 @@ https://github.com/googlefonts/fontbakery/blob/master/prebuilt/workarounds/ftxva
 <details>
 <summary><b>[153] SignikaNegativeSC-Bold.ttf</b></summary>
 <details>
-<summary>🔥 <b>FAIL:</b> Check name table: FULL_FONT_NAME entries.</summary>
-
-* [com.google.fonts/check/name/fullfontname](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/fullfontname)
-
-* 🔥 **FAIL** Entry [FULL_FONT_NAME(4):WINDOWS(3)] on the "name" table: Expected "Signika Negative SC Bold"  but got "Signika Negative Bold SC". [code: bad-entry]
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Check name table: POSTSCRIPT_NAME entries.</summary>
-
-* [com.google.fonts/check/name/postscriptname](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/postscriptname)
-
-* 🔥 **FAIL** Entry [POSTSCRIPT_NAME(6):WINDOWS(3)] on the "name" table: Expected "SignikaNegativeSC-Bold" but got "SignikaNegative-BoldSC". [code: bad-entry]
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Font has correct post table version?</summary>
-
-* [com.google.fonts/check/post_table_version](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/post.html#com.google.fonts/check/post_table_version)
-<pre>--- Rationale ---
-
-Apple recommends against using &#x27;post&#x27; table format 3 under most circumstances,
-as it can create problems with some printer drivers and PDF documents. The
-savings in disk space usually does not justify the potential loss in
-functionality.
-Source:
-https://developer.apple.com/fonts/TrueType-Reference-Manual/RM06/Chap6post.html
-
-The CFF2 table does not contain glyph names, so variable OTFs should be allowed
-to use post table version 2.
-
-This check expects:
-- Version 2 for TTF or OTF CFF2 Variable fonts
-- Version 3 for OTF
-
-
-</pre>
-
-* 🔥 **FAIL** Post table should be version 2 instead of 3.0.
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Does full font name begin with the font family name?</summary>
-
-* [com.google.fonts/check/name/match_familyname_fullfont](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/name.html#com.google.fonts/check/name/match_familyname_fullfont)
-
-* 🔥 **FAIL** On the 'name' table, the full font name (NameID 4 - FULL_FONT_NAME: 'Signika Negative SC') does not begin with font family name (NameID 1 - FONT_FAMILY_NAME: 'Signika Negative Bold SC') [code: does-not]
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Does the font have a DSIG table?</summary>
-
-* [com.google.fonts/check/dsig](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/dsig.html#com.google.fonts/check/dsig)
-<pre>--- Rationale ---
-
-Microsoft Office 2013 and below products expect fonts to have a digital
-signature declared in a DSIG table in order to implement OpenType features. The
-EOL date for Microsoft Office 2013 products is 4/11/2023. This issue does not
-impact Microsoft Office 2016 and above products. 
-
-This checks verifies that this signature is available in the font.
-
-A fake signature is enough to address this issue. If needed, a dummy table can
-be added to the font with the `gftools fix-dsig` script available at
-https://github.com/googlefonts/gftools
-
-Reference: https://github.com/googlefonts/fontbakery/issues/1845
-
-
-</pre>
-
-* 🔥 **FAIL** This font lacks a digital signature (DSIG table). Some applications may require one (even if only a dummy placeholder) in order to work properly. You can add a DSIG table by running the `gftools fix-dsig` script. [code: lacks-signature]
-
-</details>
-<details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
 * [com.google.fonts/check/contour_count](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/contour_count)
@@ -299,104 +224,59 @@ optimized for the typical construction of glyphs in static fonts.
 
 The following glyphs do not have the recommended number of contours:
 
-Glyph name: b	Contours detected: 3	Expected: 2
-Glyph name: e	Contours detected: 1	Expected: 2
-Glyph name: g	Contours detected: 1	Expected: 2 or 3
-Glyph name: i	Contours detected: 1	Expected: 2
-Glyph name: j	Contours detected: 1	Expected: 2
-Glyph name: r	Contours detected: 2	Expected: 1
-Glyph name: ae	Contours detected: 2	Expected: 3
-Glyph name: egrave	Contours detected: 2	Expected: 3
-Glyph name: eacute	Contours detected: 2	Expected: 3
-Glyph name: ecircumflex	Contours detected: 2	Expected: 3
-Glyph name: edieresis	Contours detected: 3	Expected: 4
-Glyph name: emacron	Contours detected: 2	Expected: 3
-Glyph name: ebreve	Contours detected: 2	Expected: 3
-Glyph name: edotaccent	Contours detected: 2	Expected: 3
-Glyph name: ecaron	Contours detected: 2	Expected: 3
-Glyph name: eogonek	Contours detected: 1	Expected: 2
-Glyph name: gbreve	Contours detected: 2	Expected: 3 or 4
-Glyph name: gcircumflex	Contours detected: 2	Expected: 3 or 4
-Glyph name: uni0123	Contours detected: 2	Expected: 3 or 4
-Glyph name: gdotaccent	Contours detected: 2	Expected: 3 or 4
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: ij	Contours detected: 2	Expected: 3 or 4
-Glyph name: oe	Contours detected: 2	Expected: 3
-Glyph name: racute	Contours detected: 3	Expected: 2
-Glyph name: rcaron	Contours detected: 3	Expected: 2
-Glyph name: uni0157	Contours detected: 3	Expected: 2
-Glyph name: uni01C9	Contours detected: 2	Expected: 3
-Glyph name: uni01CC	Contours detected: 2	Expected: 3
-Glyph name: gcaron	Contours detected: 2	Expected: 3 or 4
-Glyph name: aeacute	Contours detected: 3	Expected: 4
-Glyph name: uni0205	Contours detected: 3	Expected: 4
-Glyph name: uni0207	Contours detected: 2	Expected: 3
-Glyph name: uni0211	Contours detected: 4	Expected: 3
-Glyph name: uni0213	Contours detected: 3	Expected: 2
+Glyph name: b.smcp	Contours detected: 3	Expected: 2
+Glyph name: e.smcp	Contours detected: 1	Expected: 2
+Glyph name: g.smcp	Contours detected: 1	Expected: 2 or 3
+Glyph name: i.smcp	Contours detected: 1	Expected: 2
+Glyph name: j.smcp	Contours detected: 1	Expected: 2
+Glyph name: r.smcp	Contours detected: 2	Expected: 1
+Glyph name: ae.smcp	Contours detected: 2	Expected: 3
+Glyph name: egrave.smcp	Contours detected: 2	Expected: 3
+Glyph name: eacute.smcp	Contours detected: 2	Expected: 3
+Glyph name: ecircumflex.smcp	Contours detected: 2	Expected: 3
+Glyph name: edieresis.smcp	Contours detected: 3	Expected: 4
+Glyph name: emacron.smcp	Contours detected: 2	Expected: 3
+Glyph name: ebreve.smcp	Contours detected: 2	Expected: 3
+Glyph name: edotaccent.smcp	Contours detected: 2	Expected: 3
+Glyph name: ecaron.smcp	Contours detected: 2	Expected: 3
+Glyph name: eogonek.smcp	Contours detected: 1	Expected: 2
+Glyph name: gbreve.smcp	Contours detected: 2	Expected: 3 or 4
+Glyph name: gcircumflex.smcp	Contours detected: 2	Expected: 3 or 4
+Glyph name: uni0123.smcp	Contours detected: 2	Expected: 3 or 4
+Glyph name: gdotaccent.smcp	Contours detected: 2	Expected: 3 or 4
+Glyph name: hbar.smcp	Contours detected: 2	Expected: 1
+Glyph name: ij.smcp	Contours detected: 2	Expected: 3 or 4
+Glyph name: oe.smcp	Contours detected: 2	Expected: 3
+Glyph name: racute.smcp	Contours detected: 3	Expected: 2
+Glyph name: rcaron.smcp	Contours detected: 3	Expected: 2
+Glyph name: uni0157.smcp	Contours detected: 3	Expected: 2
+Glyph name: uni01C9.smcp	Contours detected: 2	Expected: 3
+Glyph name: uni01CC.smcp	Contours detected: 2	Expected: 3
+Glyph name: gcaron.smcp	Contours detected: 2	Expected: 3 or 4
+Glyph name: aeacute.smcp	Contours detected: 3	Expected: 4
+Glyph name: uni0205.smcp	Contours detected: 3	Expected: 4
+Glyph name: uni0207.smcp	Contours detected: 2	Expected: 3
+Glyph name: uni0211.smcp	Contours detected: 4	Expected: 3
+Glyph name: uni0213.smcp	Contours detected: 3	Expected: 2
 Glyph name: uni1E08	Contours detected: 3	Expected: 2
-Glyph name: uni1E09	Contours detected: 3	Expected: 2
-Glyph name: uni1E15	Contours detected: 3	Expected: 4
-Glyph name: uni1E17	Contours detected: 3	Expected: 4
+Glyph name: uni1E09.smcp	Contours detected: 3	Expected: 2
+Glyph name: uni1E15.smcp	Contours detected: 3	Expected: 4
+Glyph name: uni1E17.smcp	Contours detected: 3	Expected: 4
 Glyph name: uni1E1C	Contours detected: 3	Expected: 2
-Glyph name: uni1E21	Contours detected: 2	Expected: 3 or 4
-Glyph name: uni1E5B	Contours detected: 3	Expected: 2
-Glyph name: uni1E5F	Contours detected: 3	Expected: 2
-Glyph name: uni1EB9	Contours detected: 2	Expected: 3
-Glyph name: uni1EBB	Contours detected: 2	Expected: 3
-Glyph name: uni1EBD	Contours detected: 2	Expected: 3
-Glyph name: uni1EBF	Contours detected: 3	Expected: 4
-Glyph name: uni1EC1	Contours detected: 3	Expected: 4
-Glyph name: uni1EC3	Contours detected: 3	Expected: 4
-Glyph name: uni1EC5	Contours detected: 3	Expected: 4
-Glyph name: uni1EC7	Contours detected: 3	Expected: 4
-Glyph name: uni1ECB	Contours detected: 2	Expected: 3
-Glyph name: e	Contours detected: 1	Expected: 2
+Glyph name: uni1E21.smcp	Contours detected: 2	Expected: 3 or 4
+Glyph name: uni1E5B.smcp	Contours detected: 3	Expected: 2
+Glyph name: uni1E5F.smcp	Contours detected: 3	Expected: 2
+Glyph name: uni1EB9.smcp	Contours detected: 2	Expected: 3
+Glyph name: uni1EBB.smcp	Contours detected: 2	Expected: 3
+Glyph name: uni1EBD.smcp	Contours detected: 2	Expected: 3
+Glyph name: uni1EBF.smcp	Contours detected: 3	Expected: 4
+Glyph name: uni1EC1.smcp	Contours detected: 3	Expected: 4
+Glyph name: uni1EC3.smcp	Contours detected: 3	Expected: 4
+Glyph name: uni1EC5.smcp	Contours detected: 3	Expected: 4
+Glyph name: uni1EC7.smcp	Contours detected: 3	Expected: 4
+Glyph name: uni1ECB.smcp	Contours detected: 2	Expected: 3
 Glyph name: uni1E1C	Contours detected: 3	Expected: 2
-Glyph name: uni1ECB	Contours detected: 2	Expected: 3
-Glyph name: egrave	Contours detected: 2	Expected: 3
-Glyph name: uni1EBF	Contours detected: 3	Expected: 4
-Glyph name: oe	Contours detected: 2	Expected: 3
-Glyph name: gbreve	Contours detected: 2	Expected: 3 or 4
-Glyph name: uni1E5F	Contours detected: 3	Expected: 2
-Glyph name: ij	Contours detected: 2	Expected: 3 or 4
-Glyph name: uni1EBB	Contours detected: 2	Expected: 3
-Glyph name: uni1EC7	Contours detected: 3	Expected: 4
-Glyph name: uni1E5B	Contours detected: 3	Expected: 2
-Glyph name: uni1E21	Contours detected: 2	Expected: 3 or 4
-Glyph name: hbar	Contours detected: 2	Expected: 1
-Glyph name: gcaron	Contours detected: 2	Expected: 3 or 4
-Glyph name: ae	Contours detected: 2	Expected: 3
-Glyph name: eacute	Contours detected: 2	Expected: 3
-Glyph name: uni0123	Contours detected: 2	Expected: 3 or 4
-Glyph name: eogonek	Contours detected: 1	Expected: 2
-Glyph name: uni1EC5	Contours detected: 3	Expected: 4
-Glyph name: edotaccent	Contours detected: 2	Expected: 3
-Glyph name: r	Contours detected: 2	Expected: 1
-Glyph name: ebreve	Contours detected: 2	Expected: 3
-Glyph name: uni01CC	Contours detected: 2	Expected: 3
-Glyph name: uni1EC1	Contours detected: 3	Expected: 4
-Glyph name: gcircumflex	Contours detected: 2	Expected: 3 or 4
-Glyph name: i	Contours detected: 1	Expected: 2
-Glyph name: aeacute	Contours detected: 3	Expected: 4
-Glyph name: ecircumflex	Contours detected: 2	Expected: 3
-Glyph name: gdotaccent	Contours detected: 2	Expected: 3 or 4
-Glyph name: uni1E09	Contours detected: 3	Expected: 2
-Glyph name: g	Contours detected: 1	Expected: 2 or 3
-Glyph name: b	Contours detected: 3	Expected: 2
-Glyph name: uni0157	Contours detected: 3	Expected: 2
-Glyph name: uni1E17	Contours detected: 3	Expected: 4
-Glyph name: uni01C9	Contours detected: 2	Expected: 3
-Glyph name: edieresis	Contours detected: 3	Expected: 4
-Glyph name: racute	Contours detected: 3	Expected: 2
-Glyph name: uni1E15	Contours detected: 3	Expected: 4
-Glyph name: ecaron	Contours detected: 2	Expected: 3
-Glyph name: uni1EC3	Contours detected: 3	Expected: 4
-Glyph name: uni1EBD	Contours detected: 2	Expected: 3
-Glyph name: uni1EB9	Contours detected: 2	Expected: 3
-Glyph name: uni1E08	Contours detected: 3	Expected: 2
-Glyph name: rcaron	Contours detected: 3	Expected: 2
-Glyph name: emacron	Contours detected: 2	Expected: 3
-Glyph name: j	Contours detected: 1	Expected: 2 [code: contour-count]
+Glyph name: uni1E08	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -413,12 +293,12 @@ https://github.com/impallari/Raleway/issues/14).
 </pre>
 
 * ⚠ **WARN** GPOS table lacks kerning info for the following non-ligated sequences:
-	- glyph00044 + glyph00044
-	- glyph00044 + glyph00047
-	- glyph00047 + glyph00044
-	- glyph00044 + glyph00050
-	- glyph00050 + glyph00044
-	- glyph00047 + glyph00050
+	- f + f
+	- f + i
+	- i + f
+	- f + l
+	- l + f
+	- i + l
 
    [code: lacks-kern-info]
 
@@ -444,45 +324,6 @@ space glyph. This might have been relevant for applications on MacOS 9.
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Does DESCRIPTION file contain broken links?</summary>
-
-* [com.google.fonts/check/description/broken_links](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/broken_links)
-<pre>--- Rationale ---
-
-The snippet of HTML in the DESCRIPTION.en_us.html file is added to the font
-family webpage on the Google Fonts website. For that reason, all hyperlinks in
-it must be properly working. 
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: description
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Does DESCRIPTION file contain a upstream Git repo URL?</summary>
-
-* [com.google.fonts/check/description/git_url](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/git_url)
-<pre>--- Rationale ---
-
-The contents of the DESCRIPTION.en-us.html file are displayed on the Google
-Fonts website in the about section of each font family specimen page.
-
-Since all of the Google Fonts collection is composed of libre-licensed fonts,
-this check enforces a policy that there must be a hypertext link in that page
-directing users to the repository where the font project files are made
-available.
-
-Such hosting is typically done on sites like Github, Gitlab, GNU Savannah or
-any other git-based version control service.
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: description
-
-</details>
-<details>
 <summary>💤 <b>SKIP:</b> Does DESCRIPTION file mention when a family is available as variable font?</summary>
 
 * [com.google.fonts/check/description/variable_font](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/variable_font)
@@ -496,42 +337,7 @@ as variable fonts.
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: is_variable_font, description
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Is this a proper HTML snippet?</summary>
-
-* [com.google.fonts/check/description/valid_html](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/valid_html)
-<pre>--- Rationale ---
-
-When packaging families for being pushed to the `google/fonts` git repo, if
-there is no DESCRIPTION.en_us.html file, some older versions of the
-`add_font.py` tool insert a dummy description file which contains invalid html.
-
-This file needs to either be replaced with an existing description file or
-edited by hand.
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: descfile
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> DESCRIPTION.en_us.html must have more than 200 bytes.</summary>
-
-* [com.google.fonts/check/description/min_length](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/min_length)
-
-* 💤 **SKIP** Unfulfilled Conditions: description
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> DESCRIPTION.en_us.html must have less than 1000 bytes.</summary>
-
-* [com.google.fonts/check/description/max_length](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/max_length)
-
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: is_variable_font
 
 </details>
 <details>
@@ -546,7 +352,7 @@ malformed.
 
 </pre>
 
-* 💤 **SKIP** Font family at 'instance_ttf' lacks a METADATA.pb file.
+* 💤 **SKIP** Font family at 'fonts/signikanegativesc' lacks a METADATA.pb file.
 
 </details>
 <details>
@@ -1120,69 +926,6 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Font has **proper** whitespace glyph names?</summary>
-
-* [com.google.fonts/check/whitespace_glyphnames](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_glyphnames)
-
-* 💤 **SKIP** Font has version 3 post table.
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Glyph names are all valid?</summary>
-
-* [com.google.fonts/check/valid_glyphnames](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/valid_glyphnames)
-<pre>--- Rationale ---
-
-Microsoft&#x27;s recommendations for OpenType Fonts states the following:
-
-&#x27;NOTE: The PostScript glyph name must be no longer than 31 characters, include
-only uppercase or lowercase English letters, European digits, the period or the
-underscore, i.e. from the set [A-Za-z0-9_.] and should start with a letter,
-except the special glyph name &quot;.notdef&quot; which starts with a period.&#x27;
-
-https://docs.microsoft.com/en-us/typography/opentype/spec/recom#post-table
-
-
-</pre>
-
-* 💤 **SKIP** TrueType fonts with a format 3.0 post table contain no glyph names.
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Font contains unique glyph names?</summary>
-
-* [com.google.fonts/check/unique_glyphnames](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/unique_glyphnames)
-<pre>--- Rationale ---
-
-Duplicate glyph names prevent font installation on Mac OS X.
-
-
-</pre>
-
-* 💤 **SKIP** TrueType fonts with a format 3.0 post table contain no glyph names.
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Each font in set of sibling families must have the same set of vertical metrics values.</summary>
-
-* [com.google.fonts/check/superfamily/vertical_metrics](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/superfamily/vertical_metrics)
-<pre>--- Rationale ---
-
-We may want all fonts within a super-family (all sibling families) to have the
-same vertical metrics so their line spacing is consistent across the
-super-family.
-
-This is an experimental extended version of
-com.google.fonts/check/superfamily/vertical_metrics and for now it will only
-result in WARNs.
-
-
-</pre>
-
-* 💤 **SKIP** Sibling families were not detected.
-
-</details>
-<details>
 <summary>💤 <b>SKIP:</b> Is the CFF subr/gsubr call depth > 10?</summary>
 
 * [com.adobe.fonts/check/cff_call_depth](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/cff.html#com.adobe.fonts/check/cff_call_depth)
@@ -1402,6 +1145,30 @@ scale used for the italicAngle field in the post table.
 
 </details>
 <details>
+<summary>ℹ <b>INFO:</b> Does DESCRIPTION file contain a upstream Git repo URL?</summary>
+
+* [com.google.fonts/check/description/git_url](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/git_url)
+<pre>--- Rationale ---
+
+The contents of the DESCRIPTION.en-us.html file are displayed on the Google
+Fonts website in the about section of each font family specimen page.
+
+Since all of the Google Fonts collection is composed of libre-licensed fonts,
+this check enforces a policy that there must be a hypertext link in that page
+directing users to the repository where the font project files are made
+available.
+
+Such hosting is typically done on sites like Github, Gitlab, GNU Savannah or
+any other git-based version control service.
+
+
+</pre>
+
+* ℹ **INFO** Found a git repo URL: https://github.com/Ancymonic/Signika [code: url-found]
+* 🍞 **PASS** Looks great!
+
+</details>
+<details>
 <summary>ℹ <b>INFO:</b> Show hinting filesize impact.</summary>
 
 * [com.google.fonts/check/hinting_impact](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/hinting_impact)
@@ -1415,12 +1182,12 @@ of hinted versus unhinted font files.
 
 * ℹ **INFO** Hinting filesize impact:
 
-	|  | instance_ttf/SignikaNegativeSC-Bold.ttf |
+	|  | fonts/signikanegativesc/SignikaNegativeSC-Bold.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 216.0kb |
-	| Hinted Size | 291.9kb |
+	| Dehinted Size | 231.5kb |
+	| Hinted Size | 307.4kb |
 	| Increase | 75.9kb |
-	| Change   | 35.1 % |
+	| Change   | 32.8 % |
  [code: size-impact]
 
 </details>
@@ -1512,7 +1279,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, fpgm, GPOS, gasp, cvt , prep, GSUB]
+* ℹ **INFO** This font contains the following optional tables [GSUB, GPOS, cvt , fpgm, DSIG, gasp, loca, prep]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -1531,7 +1298,8 @@ checks.
 
 </pre>
 
-* ℹ **INFO** instance_ttf [code: family-path]
+* ℹ **INFO** fonts/signikanegative [code: family-path]
+* ℹ **INFO** fonts/signikanegativesc [code: family-path]
 
 </details>
 <details>
@@ -1555,7 +1323,58 @@ and separated by commas:
 
 </pre>
 
-* 🍞 **PASS** instance_ttf/SignikaNegativeSC-Bold.ttf is named canonically.
+* 🍞 **PASS** fonts/signikanegativesc/SignikaNegativeSC-Bold.ttf is named canonically.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Does DESCRIPTION file contain broken links?</summary>
+
+* [com.google.fonts/check/description/broken_links](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/broken_links)
+<pre>--- Rationale ---
+
+The snippet of HTML in the DESCRIPTION.en_us.html file is added to the font
+family webpage on the Google Fonts website. For that reason, all hyperlinks in
+it must be properly working. 
+
+
+</pre>
+
+* 🍞 **PASS** All links in the DESCRIPTION file look good!
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Is this a proper HTML snippet?</summary>
+
+* [com.google.fonts/check/description/valid_html](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/valid_html)
+<pre>--- Rationale ---
+
+When packaging families for being pushed to the `google/fonts` git repo, if
+there is no DESCRIPTION.en_us.html file, some older versions of the
+`add_font.py` tool insert a dummy description file which contains invalid html.
+
+This file needs to either be replaced with an existing description file or
+edited by hand.
+
+
+</pre>
+
+* 🍞 **PASS** fonts/signikanegativesc/DESCRIPTION.en_us.html is a propper HTML file.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> DESCRIPTION.en_us.html must have more than 200 bytes.</summary>
+
+* [com.google.fonts/check/description/min_length](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/min_length)
+
+* 🍞 **PASS** DESCRIPTION.en_us.html is larger than 200 bytes.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> DESCRIPTION.en_us.html must have less than 1000 bytes.</summary>
+
+* [com.google.fonts/check/description/max_length](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/max_length)
+
+* 🍞 **PASS** DESCRIPTION.en_us.html is smaller than 1000 bytes.
 
 </details>
 <details>
@@ -1907,6 +1726,22 @@ checks that nameID 1 is the family name + the style name.
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> Check name table: FULL_FONT_NAME entries.</summary>
+
+* [com.google.fonts/check/name/fullfontname](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/fullfontname)
+
+* 🍞 **PASS** FULL_FONT_NAME entries are all good.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check name table: POSTSCRIPT_NAME entries.</summary>
+
+* [com.google.fonts/check/name/postscriptname](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/postscriptname)
+
+* 🍞 **PASS** POSTCRIPT_NAME entries are all good.
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Check name table: TYPOGRAPHIC_FAMILY_NAME entries.</summary>
 
 * [com.google.fonts/check/name/typographicfamilyname](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/typographicfamilyname)
@@ -2216,6 +2051,14 @@ take care of their own situation.
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> Font has **proper** whitespace glyph names?</summary>
+
+* [com.google.fonts/check/whitespace_glyphnames](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_glyphnames)
+
+* 🍞 **PASS** Font has **proper** whitespace glyph names.
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Whitespace glyphs have ink?</summary>
 
 * [com.google.fonts/check/whitespace_ink](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_ink)
@@ -2240,11 +2083,66 @@ tables.
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> Glyph names are all valid?</summary>
+
+* [com.google.fonts/check/valid_glyphnames](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/valid_glyphnames)
+<pre>--- Rationale ---
+
+Microsoft&#x27;s recommendations for OpenType Fonts states the following:
+
+&#x27;NOTE: The PostScript glyph name must be no longer than 31 characters, include
+only uppercase or lowercase English letters, European digits, the period or the
+underscore, i.e. from the set [A-Za-z0-9_.] and should start with a letter,
+except the special glyph name &quot;.notdef&quot; which starts with a period.&#x27;
+
+https://docs.microsoft.com/en-us/typography/opentype/spec/recom#post-table
+
+
+</pre>
+
+* 🍞 **PASS** Glyph names are all valid.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Font contains unique glyph names?</summary>
+
+* [com.google.fonts/check/unique_glyphnames](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/unique_glyphnames)
+<pre>--- Rationale ---
+
+Duplicate glyph names prevent font installation on Mac OS X.
+
+
+</pre>
+
+* 🍞 **PASS** Font contains unique glyph names.
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Checking with fontTools.ttx</summary>
 
 * [com.google.fonts/check/ttx-roundtrip](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/ttx-roundtrip)
 
 * 🍞 **PASS** Hey! It all looks good!
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Each font in set of sibling families must have the same set of vertical metrics values.</summary>
+
+* [com.google.fonts/check/superfamily/vertical_metrics](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/superfamily/vertical_metrics)
+<pre>--- Rationale ---
+
+We may want all fonts within a super-family (all sibling families) to have the
+same vertical metrics so their line spacing is consistent across the
+super-family.
+
+This is an experimental extended version of
+com.google.fonts/check/superfamily/vertical_metrics and for now it will only
+result in WARNs.
+
+
+</pre>
+
+* 🍞 **PASS** Vertical metrics are the same across the super-family.
 
 </details>
 <details>
@@ -2338,6 +2236,32 @@ at all.
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> Font has correct post table version?</summary>
+
+* [com.google.fonts/check/post_table_version](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/post.html#com.google.fonts/check/post_table_version)
+<pre>--- Rationale ---
+
+Apple recommends against using &#x27;post&#x27; table format 3 under most circumstances,
+as it can create problems with some printer drivers and PDF documents. The
+savings in disk space usually does not justify the potential loss in
+functionality.
+Source:
+https://developer.apple.com/fonts/TrueType-Reference-Manual/RM06/Chap6post.html
+
+The CFF2 table does not contain glyph names, so variable OTFs should be allowed
+to use post table version 2.
+
+This check expects:
+- Version 2 for TTF or OTF CFF2 Variable fonts
+- Version 3 for OTF
+
+
+</pre>
+
+* 🍞 **PASS** Font has post table version 2.
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Check name table for empty records.</summary>
 
 * [com.adobe.fonts/check/name/empty_records](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/name.html#com.adobe.fonts/check/name/empty_records)
@@ -2408,6 +2332,14 @@ https://typedrawers.com/discussion/comment/45140/#Comment_45140
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> Does full font name begin with the font family name?</summary>
+
+* [com.google.fonts/check/name/match_familyname_fullfont](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/name.html#com.google.fonts/check/name/match_familyname_fullfont)
+
+* 🍞 **PASS** Full font name begins with the font family name.
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Font follows the family naming recommendations?</summary>
 
 * [com.google.fonts/check/family_naming_recommendations](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/name.html#com.google.fonts/check/family_naming_recommendations)
@@ -2454,6 +2386,31 @@ This is the TTF/CFF2 equivalent of the CFF &#x27;postscript_name_cff_vs_name&#x2
 * [com.google.fonts/check/maxadvancewidth](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/hhea.html#com.google.fonts/check/maxadvancewidth)
 
 * 🍞 **PASS** MaxAdvanceWidth is consistent with values in the Hmtx and Hhea tables.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Does the font have a DSIG table?</summary>
+
+* [com.google.fonts/check/dsig](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/dsig.html#com.google.fonts/check/dsig)
+<pre>--- Rationale ---
+
+Microsoft Office 2013 and below products expect fonts to have a digital
+signature declared in a DSIG table in order to implement OpenType features. The
+EOL date for Microsoft Office 2013 products is 4/11/2023. This issue does not
+impact Microsoft Office 2016 and above products. 
+
+This checks verifies that this signature is available in the font.
+
+A fake signature is enough to address this issue. If needed, a dummy table can
+be added to the font with the `gftools fix-dsig` script available at
+https://github.com/googlefonts/gftools
+
+Reference: https://github.com/googlefonts/fontbakery/issues/1845
+
+
+</pre>
+
+* 🍞 **PASS** Digital Signature (DSIG) exists.
 
 </details>
 <details>
@@ -2544,5 +2501,5 @@ the same x,y coordinates.
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 5 | 4 | 76 | 7 | 74 | 0 |
-| 0% | 3% | 2% | 46% | 4% | 45% | 0% |
+| 0 | 0 | 4 | 67 | 8 | 87 | 0 |
+| 0% | 0% | 2% | 40% | 5% | 52% | 0% |

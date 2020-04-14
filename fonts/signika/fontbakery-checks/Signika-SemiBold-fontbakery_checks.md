@@ -203,7 +203,7 @@ https://github.com/googlefonts/fontbakery/blob/master/prebuilt/workarounds/ftxva
 
 * [com.google.fonts/check/production_glyphs_similarity](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity)
 
-* ⚠ **WARN** Following glyphs differ greatly from Google Fonts version: [exclam, Euro, uni2074, onehalf, yen, .notdef, currency, degree, threequarters, fraction, percent, onequarter, sterling, exclamdown]
+* ⚠ **WARN** Following glyphs differ greatly from Google Fonts version: [Euro, sterling, fraction, exclamdown, percent, .notdef, yen, onehalf, onequarter, degree, exclam, threequarters, uni2074, currency]
 
 </details>
 <details>
@@ -237,8 +237,8 @@ Glyph name: uni1E09	Contours detected: 3	Expected: 2
 Glyph name: uni1E1C	Contours detected: 3	Expected: 2
 Glyph name: uni1E1D	Contours detected: 4	Expected: 3
 Glyph name: uni1E09	Contours detected: 3	Expected: 2
-Glyph name: uni1E1D	Contours detected: 4	Expected: 3
 Glyph name: uni1E1C	Contours detected: 3	Expected: 2
+Glyph name: uni1E1D	Contours detected: 4	Expected: 3
 Glyph name: uni1E08	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
@@ -267,45 +267,6 @@ https://github.com/impallari/Raleway/issues/14).
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Does DESCRIPTION file contain broken links?</summary>
-
-* [com.google.fonts/check/description/broken_links](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/broken_links)
-<pre>--- Rationale ---
-
-The snippet of HTML in the DESCRIPTION.en_us.html file is added to the font
-family webpage on the Google Fonts website. For that reason, all hyperlinks in
-it must be properly working. 
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: description
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Does DESCRIPTION file contain a upstream Git repo URL?</summary>
-
-* [com.google.fonts/check/description/git_url](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/git_url)
-<pre>--- Rationale ---
-
-The contents of the DESCRIPTION.en-us.html file are displayed on the Google
-Fonts website in the about section of each font family specimen page.
-
-Since all of the Google Fonts collection is composed of libre-licensed fonts,
-this check enforces a policy that there must be a hypertext link in that page
-directing users to the repository where the font project files are made
-available.
-
-Such hosting is typically done on sites like Github, Gitlab, GNU Savannah or
-any other git-based version control service.
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: description
-
-</details>
-<details>
 <summary>💤 <b>SKIP:</b> Does DESCRIPTION file mention when a family is available as variable font?</summary>
 
 * [com.google.fonts/check/description/variable_font](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/variable_font)
@@ -319,42 +280,7 @@ as variable fonts.
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: is_variable_font, description
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> Is this a proper HTML snippet?</summary>
-
-* [com.google.fonts/check/description/valid_html](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/valid_html)
-<pre>--- Rationale ---
-
-When packaging families for being pushed to the `google/fonts` git repo, if
-there is no DESCRIPTION.en_us.html file, some older versions of the
-`add_font.py` tool insert a dummy description file which contains invalid html.
-
-This file needs to either be replaced with an existing description file or
-edited by hand.
-
-
-</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: descfile
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> DESCRIPTION.en_us.html must have more than 200 bytes.</summary>
-
-* [com.google.fonts/check/description/min_length](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/min_length)
-
-* 💤 **SKIP** Unfulfilled Conditions: description
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> DESCRIPTION.en_us.html must have less than 1000 bytes.</summary>
-
-* [com.google.fonts/check/description/max_length](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/max_length)
-
-* 💤 **SKIP** Unfulfilled Conditions: description
+* 💤 **SKIP** Unfulfilled Conditions: is_variable_font
 
 </details>
 <details>
@@ -369,7 +295,7 @@ malformed.
 
 </pre>
 
-* 💤 **SKIP** Font family at 'instance_ttf' lacks a METADATA.pb file.
+* 💤 **SKIP** Font family at 'fonts/signika' lacks a METADATA.pb file.
 
 </details>
 <details>
@@ -898,26 +824,6 @@ variable fonts in their web browsers.
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Each font in set of sibling families must have the same set of vertical metrics values.</summary>
-
-* [com.google.fonts/check/superfamily/vertical_metrics](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/superfamily/vertical_metrics)
-<pre>--- Rationale ---
-
-We may want all fonts within a super-family (all sibling families) to have the
-same vertical metrics so their line spacing is consistent across the
-super-family.
-
-This is an experimental extended version of
-com.google.fonts/check/superfamily/vertical_metrics and for now it will only
-result in WARNs.
-
-
-</pre>
-
-* 💤 **SKIP** Sibling families were not detected.
-
-</details>
-<details>
 <summary>💤 <b>SKIP:</b> Is the CFF subr/gsubr call depth > 10?</summary>
 
 * [com.adobe.fonts/check/cff_call_depth](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/cff.html#com.adobe.fonts/check/cff_call_depth)
@@ -1137,6 +1043,30 @@ scale used for the italicAngle field in the post table.
 
 </details>
 <details>
+<summary>ℹ <b>INFO:</b> Does DESCRIPTION file contain a upstream Git repo URL?</summary>
+
+* [com.google.fonts/check/description/git_url](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/git_url)
+<pre>--- Rationale ---
+
+The contents of the DESCRIPTION.en-us.html file are displayed on the Google
+Fonts website in the about section of each font family specimen page.
+
+Since all of the Google Fonts collection is composed of libre-licensed fonts,
+this check enforces a policy that there must be a hypertext link in that page
+directing users to the repository where the font project files are made
+available.
+
+Such hosting is typically done on sites like Github, Gitlab, GNU Savannah or
+any other git-based version control service.
+
+
+</pre>
+
+* ℹ **INFO** Found a git repo URL: https://github.com/Ancymonic/Signika [code: url-found]
+* 🍞 **PASS** Looks great!
+
+</details>
+<details>
 <summary>ℹ <b>INFO:</b> Show hinting filesize impact.</summary>
 
 * [com.google.fonts/check/hinting_impact](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/hinting_impact)
@@ -1150,7 +1080,7 @@ of hinted versus unhinted font files.
 
 * ℹ **INFO** Hinting filesize impact:
 
-	|  | instance_ttf/Signika-SemiBold.ttf |
+	|  | fonts/signika/Signika-SemiBold.ttf |
 	|:--- | ---:|
 	| Dehinted Size | 235.8kb |
 	| Hinted Size | 308.8kb |
@@ -1263,7 +1193,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [cvt , fpgm, DSIG, prep, GPOS, GSUB, loca, gasp]
+* ℹ **INFO** This font contains the following optional tables [DSIG, gasp, fpgm, GPOS, prep, loca, GSUB, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -1282,7 +1212,8 @@ checks.
 
 </pre>
 
-* ℹ **INFO** instance_ttf [code: family-path]
+* ℹ **INFO** fonts/signika [code: family-path]
+* ℹ **INFO** fonts/signikasc [code: family-path]
 
 </details>
 <details>
@@ -1306,7 +1237,58 @@ and separated by commas:
 
 </pre>
 
-* 🍞 **PASS** instance_ttf/Signika-SemiBold.ttf is named canonically.
+* 🍞 **PASS** fonts/signika/Signika-SemiBold.ttf is named canonically.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Does DESCRIPTION file contain broken links?</summary>
+
+* [com.google.fonts/check/description/broken_links](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/broken_links)
+<pre>--- Rationale ---
+
+The snippet of HTML in the DESCRIPTION.en_us.html file is added to the font
+family webpage on the Google Fonts website. For that reason, all hyperlinks in
+it must be properly working. 
+
+
+</pre>
+
+* 🍞 **PASS** All links in the DESCRIPTION file look good!
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Is this a proper HTML snippet?</summary>
+
+* [com.google.fonts/check/description/valid_html](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/valid_html)
+<pre>--- Rationale ---
+
+When packaging families for being pushed to the `google/fonts` git repo, if
+there is no DESCRIPTION.en_us.html file, some older versions of the
+`add_font.py` tool insert a dummy description file which contains invalid html.
+
+This file needs to either be replaced with an existing description file or
+edited by hand.
+
+
+</pre>
+
+* 🍞 **PASS** fonts/signika/DESCRIPTION.en_us.html is a propper HTML file.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> DESCRIPTION.en_us.html must have more than 200 bytes.</summary>
+
+* [com.google.fonts/check/description/min_length](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/min_length)
+
+* 🍞 **PASS** DESCRIPTION.en_us.html is larger than 200 bytes.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> DESCRIPTION.en_us.html must have less than 1000 bytes.</summary>
+
+* [com.google.fonts/check/description/max_length](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/max_length)
+
+* 🍞 **PASS** DESCRIPTION.en_us.html is smaller than 1000 bytes.
 
 </details>
 <details>
@@ -2100,6 +2082,26 @@ Duplicate glyph names prevent font installation on Mac OS X.
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> Each font in set of sibling families must have the same set of vertical metrics values.</summary>
+
+* [com.google.fonts/check/superfamily/vertical_metrics](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/superfamily/vertical_metrics)
+<pre>--- Rationale ---
+
+We may want all fonts within a super-family (all sibling families) to have the
+same vertical metrics so their line spacing is consistent across the
+super-family.
+
+This is an experimental extended version of
+com.google.fonts/check/superfamily/vertical_metrics and for now it will only
+result in WARNs.
+
+
+</pre>
+
+* 🍞 **PASS** Vertical metrics are the same across the super-family.
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Check all glyphs have codepoints assigned.</summary>
 
 * [com.google.fonts/check/all_glyphs_have_codepoints](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/cmap.html#com.google.fonts/check/all_glyphs_have_codepoints)
@@ -2455,5 +2457,5 @@ the same x,y coordinates.
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 0 | 4 | 72 | 8 | 82 | 0 |
-| 0% | 0% | 2% | 43% | 5% | 49% | 0% |
+| 0 | 0 | 4 | 66 | 9 | 87 | 0 |
+| 0% | 0% | 2% | 40% | 5% | 52% | 0% |

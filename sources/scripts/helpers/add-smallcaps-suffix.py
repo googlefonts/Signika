@@ -27,13 +27,15 @@ fileName = os.path.basename(filePath)
 f = TTFont(filePath)
 for id in [1, 3, 4, 6, 16]:
     name = f["name"].getDebugName(id)
-    print(id, "name", name)
+    newFamilyName = familyName
     if not name:
         continue
     if id in [3, 6]:
-        newname = name + suffix
+        # No spaces in these name tables
+        newFamilyName = familyName.replace(" ", "")
+        newName = name.replace(newFamilyName, newFamilyName + suffix)
     else:
-        newname = name + " " + suffix
-    name = name.replace(name, newname)
-    f["name"].setName(name, id, 3, 1, 0x409)
+        newName = name.replace(newFamilyName, newFamilyName + " " + suffix)
+    f["name"].setName(newName, id, 3, 1, 0x409)
+    print("replaced name ID %d '%s' with '%s'" % (id, name, newName))
 f.save(filePath)

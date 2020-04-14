@@ -58,7 +58,7 @@ if [ -f "$file" ]; then
     
     echo "subsetting smallcap font"
     echo $smallCapFile
-    pyftsubset $smallCapFile --glyphs='*' --name-IDs='*' --layout-features-='smcp'
+    pyftsubset $smallCapFile --glyphs='*' --name-IDs='*' --glyph-names --layout-features-='smcp'
 
     # Replace the SC file with the pyftsubset output from the generated file
     subsetSmallCapFile=${smallCapFile/".ttf"/".subset.ttf"}
@@ -72,9 +72,9 @@ if [ -f "$file" ]; then
 fi 
 done
 
-#------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 # Autohinting & fixes
-#------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 
 for file in instance_ttf/*; do 
 if [ -f "$file" ]; then 

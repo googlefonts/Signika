@@ -197,15 +197,7 @@ https://github.com/googlefonts/fontbakery/blob/master/prebuilt/workarounds/ftxva
 <br>
 </details>
 <details>
-<summary><b>[153] Signika-Bold.ttf</b></summary>
-<details>
-<summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version?</summary>
-
-* [com.google.fonts/check/production_glyphs_similarity](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity)
-
-* ⚠ **WARN** Following glyphs differ greatly from Google Fonts version: [fraction, currency, onehalf, Euro, exclamdown, sterling, dollar, degree, onequarter, exclam, percent, .notdef, yen, uni2074, threequarters]
-
-</details>
+<summary><b>[153] SignikaSC-Bold.ttf</b></summary>
 <details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
@@ -232,13 +224,58 @@ optimized for the typical construction of glyphs in static fonts.
 
 The following glyphs do not have the recommended number of contours:
 
+Glyph name: b.smcp	Contours detected: 3	Expected: 2
+Glyph name: e.smcp	Contours detected: 1	Expected: 2
+Glyph name: g.smcp	Contours detected: 1	Expected: 2 or 3
+Glyph name: i.smcp	Contours detected: 1	Expected: 2
+Glyph name: j.smcp	Contours detected: 1	Expected: 2
+Glyph name: r.smcp	Contours detected: 2	Expected: 1
+Glyph name: ae.smcp	Contours detected: 2	Expected: 3
+Glyph name: egrave.smcp	Contours detected: 2	Expected: 3
+Glyph name: eacute.smcp	Contours detected: 2	Expected: 3
+Glyph name: ecircumflex.smcp	Contours detected: 2	Expected: 3
+Glyph name: edieresis.smcp	Contours detected: 3	Expected: 4
+Glyph name: emacron.smcp	Contours detected: 2	Expected: 3
+Glyph name: ebreve.smcp	Contours detected: 2	Expected: 3
+Glyph name: edotaccent.smcp	Contours detected: 2	Expected: 3
+Glyph name: ecaron.smcp	Contours detected: 2	Expected: 3
+Glyph name: eogonek.smcp	Contours detected: 1	Expected: 2
+Glyph name: gbreve.smcp	Contours detected: 2	Expected: 3 or 4
+Glyph name: gcircumflex.smcp	Contours detected: 2	Expected: 3 or 4
+Glyph name: uni0123.smcp	Contours detected: 2	Expected: 3 or 4
+Glyph name: gdotaccent.smcp	Contours detected: 2	Expected: 3 or 4
+Glyph name: hbar.smcp	Contours detected: 2	Expected: 1
+Glyph name: ij.smcp	Contours detected: 2	Expected: 3 or 4
+Glyph name: oe.smcp	Contours detected: 2	Expected: 3
+Glyph name: racute.smcp	Contours detected: 3	Expected: 2
+Glyph name: rcaron.smcp	Contours detected: 3	Expected: 2
+Glyph name: uni0157.smcp	Contours detected: 3	Expected: 2
+Glyph name: uni01C9.smcp	Contours detected: 2	Expected: 3
+Glyph name: uni01CC.smcp	Contours detected: 2	Expected: 3
+Glyph name: gcaron.smcp	Contours detected: 2	Expected: 3 or 4
+Glyph name: aeacute.smcp	Contours detected: 3	Expected: 4
+Glyph name: uni0205.smcp	Contours detected: 3	Expected: 4
+Glyph name: uni0207.smcp	Contours detected: 2	Expected: 3
+Glyph name: uni0211.smcp	Contours detected: 4	Expected: 3
+Glyph name: uni0213.smcp	Contours detected: 3	Expected: 2
 Glyph name: uni1E08	Contours detected: 3	Expected: 2
-Glyph name: uni1E09	Contours detected: 3	Expected: 2
+Glyph name: uni1E09.smcp	Contours detected: 3	Expected: 2
+Glyph name: uni1E15.smcp	Contours detected: 3	Expected: 4
+Glyph name: uni1E17.smcp	Contours detected: 3	Expected: 4
 Glyph name: uni1E1C	Contours detected: 3	Expected: 2
-Glyph name: uni1E1D	Contours detected: 4	Expected: 3
-Glyph name: uni1E1D	Contours detected: 4	Expected: 3
+Glyph name: uni1E21.smcp	Contours detected: 2	Expected: 3 or 4
+Glyph name: uni1E5B.smcp	Contours detected: 3	Expected: 2
+Glyph name: uni1E5F.smcp	Contours detected: 3	Expected: 2
+Glyph name: uni1EB9.smcp	Contours detected: 2	Expected: 3
+Glyph name: uni1EBB.smcp	Contours detected: 2	Expected: 3
+Glyph name: uni1EBD.smcp	Contours detected: 2	Expected: 3
+Glyph name: uni1EBF.smcp	Contours detected: 3	Expected: 4
+Glyph name: uni1EC1.smcp	Contours detected: 3	Expected: 4
+Glyph name: uni1EC3.smcp	Contours detected: 3	Expected: 4
+Glyph name: uni1EC5.smcp	Contours detected: 3	Expected: 4
+Glyph name: uni1EC7.smcp	Contours detected: 3	Expected: 4
+Glyph name: uni1ECB.smcp	Contours detected: 2	Expected: 3
 Glyph name: uni1E1C	Contours detected: 3	Expected: 2
-Glyph name: uni1E09	Contours detected: 3	Expected: 2
 Glyph name: uni1E08	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
@@ -264,6 +301,26 @@ https://github.com/impallari/Raleway/issues/14).
 	- i + l
 
    [code: lacks-kern-info]
+
+</details>
+<details>
+<summary>⚠ <b>WARN:</b> Font contains .notdef as first glyph?</summary>
+
+* [com.google.fonts/check/mandatory_glyphs](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/mandatory_glyphs)
+<pre>--- Rationale ---
+
+The OpenType specification v1.8.2 recommends that the first glyph is the
+.notdef glyph without a codepoint assigned and with a drawing.
+
+https://docs.microsoft.com/en-us/typography/opentype/spec/recom#glyph-0-the-notdef-glyph
+
+Pre-v1.8, it was recommended that a font should also contain a .null, CR and
+space glyph. This might have been relevant for applications on MacOS 9.
+
+
+</pre>
+
+* ⚠ **WARN** Font should contain the .notdef glyph as the first glyph, it should not have a Unicode value assigned and should contain a drawing.
 
 </details>
 <details>
@@ -295,7 +352,7 @@ malformed.
 
 </pre>
 
-* 💤 **SKIP** Font family at 'fonts/signika' lacks a METADATA.pb file.
+* 💤 **SKIP** Font family at 'fonts/signikasc' lacks a METADATA.pb file.
 
 </details>
 <details>
@@ -673,6 +730,22 @@ We may want to merge them all into a single check.
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Version number has increased since previous release on Google Fonts?</summary>
+
+* [com.google.fonts/check/version_bump](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/version_bump)
+
+* 💤 **SKIP** Unfulfilled Conditions: api_gfonts_ttFont, github_gfonts_ttFont
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Glyphs are similiar to Google Fonts version?</summary>
+
+* [com.google.fonts/check/production_glyphs_similarity](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity)
+
+* 💤 **SKIP** Unfulfilled Conditions: api_gfonts_ttFont
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Copyright field for this font on METADATA.pb matches all copyright notice entries on the name table ?</summary>
 
 * [com.google.fonts/check/metadata/nameid/copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/nameid/copyright)
@@ -797,6 +870,35 @@ variable fonts in their web browsers.
 </pre>
 
 * 💤 **SKIP** Unfulfilled Conditions: is_variable_font
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Check if the vertical metrics of a family are similar to the same family hosted on Google Fonts.</summary>
+
+* [com.google.fonts/check/vertical_metrics_regressions](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics_regressions)
+<pre>--- Rationale ---
+
+If the family already exists on Google Fonts, we need to ensure that the
+checked family&#x27;s vertical metrics are similar. This check will test the
+following schema which was outlined in Fontbakery issue #1162 [1]:
+
+- The family should visually have the same vertical metrics as the
+  Regular style hosted on Google Fonts.
+- If the family on Google Fonts has differing hhea and typo metrics,
+  the family being checked should use the typo metrics for both the
+  hhea and typo entries.
+- If the family on Google Fonts has use typo metrics not enabled and the
+  family being checked has it enabled, the hhea and typo metrics
+  should use the family on Google Fonts winAscent and winDescent values.
+- If the upms differ, the values must be scaled so the visual appearance
+  is the same.
+
+[1] https://github.com/googlefonts/fontbakery/issues/1162
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: remote_styles
 
 </details>
 <details>
@@ -1080,12 +1182,12 @@ of hinted versus unhinted font files.
 
 * ℹ **INFO** Hinting filesize impact:
 
-	|  | fonts/signika/Signika-Bold.ttf |
+	|  | fonts/signikasc/SignikaSC-Bold.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 236.2kb |
-	| Hinted Size | 312.3kb |
-	| Increase | 76.1kb |
-	| Change   | 32.2 % |
+	| Dehinted Size | 231.3kb |
+	| Hinted Size | 304.2kb |
+	| Increase | 72.9kb |
+	| Change   | 31.5 % |
  [code: size-impact]
 
 </details>
@@ -1141,22 +1243,6 @@ PPM <= 65535:
 
 </details>
 <details>
-<summary>ℹ <b>INFO:</b> Familyname must be unique according to namecheck.fontdata.com</summary>
-
-* [com.google.fonts/check/fontdata_namecheck](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fontdata_namecheck)
-<pre>--- Rationale ---
-
-We need to check names are not already used, and today the best place to check
-that is http://namecheck.fontdata.com
-
-
-</pre>
-
-* ℹ **INFO** The family name "Signika" seems to be already in use.
-Please visit http://namecheck.fontdata.com for more info. [code: name-collision]
-
-</details>
-<details>
 <summary>ℹ <b>INFO:</b> Check for font-v versioning.</summary>
 
 * [com.google.fonts/check/fontv](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fontv)
@@ -1193,7 +1279,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [fpgm, cvt , prep, loca, gasp, DSIG, GSUB, GPOS]
+* ℹ **INFO** This font contains the following optional tables [prep, DSIG, GPOS, gasp, GSUB, loca, fpgm, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -1237,7 +1323,7 @@ and separated by commas:
 
 </pre>
 
-* 🍞 **PASS** fonts/signika/Signika-Bold.ttf is named canonically.
+* 🍞 **PASS** fonts/signikasc/SignikaSC-Bold.ttf is named canonically.
 
 </details>
 <details>
@@ -1272,7 +1358,7 @@ edited by hand.
 
 </pre>
 
-* 🍞 **PASS** fonts/signika/DESCRIPTION.en_us.html is a propper HTML file.
+* 🍞 **PASS** fonts/signikasc/DESCRIPTION.en_us.html is a propper HTML file.
 
 </details>
 <details>
@@ -1563,14 +1649,6 @@ much added benefit.
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Version number has increased since previous release on Google Fonts?</summary>
-
-* [com.google.fonts/check/version_bump](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/version_bump)
-
-* 🍞 **PASS** Version number 2.0 is greater than version on Google Fonts GitHub (1.0019989013671875) and production servers (1.0019989013671875).
-
-</details>
-<details>
 <summary>🍞 <b>PASS:</b> Checking OS/2 fsSelection value.</summary>
 
 * [com.google.fonts/check/fsselection](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fsselection)
@@ -1694,6 +1772,21 @@ characters.
 </pre>
 
 * 🍞 **PASS** All copyright notice name entries on the 'name' table are shorter than 500 characters.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Familyname must be unique according to namecheck.fontdata.com</summary>
+
+* [com.google.fonts/check/fontdata_namecheck](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fontdata_namecheck)
+<pre>--- Rationale ---
+
+We need to check names are not already used, and today the best place to check
+that is http://namecheck.fontdata.com
+
+
+</pre>
+
+* 🍞 **PASS** Font familyname seems to be unique.
 
 </details>
 <details>
@@ -1881,35 +1974,6 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Check if the vertical metrics of a family are similar to the same family hosted on Google Fonts.</summary>
-
-* [com.google.fonts/check/vertical_metrics_regressions](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics_regressions)
-<pre>--- Rationale ---
-
-If the family already exists on Google Fonts, we need to ensure that the
-checked family&#x27;s vertical metrics are similar. This check will test the
-following schema which was outlined in Fontbakery issue #1162 [1]:
-
-- The family should visually have the same vertical metrics as the
-  Regular style hosted on Google Fonts.
-- If the family on Google Fonts has differing hhea and typo metrics,
-  the family being checked should use the typo metrics for both the
-  hhea and typo entries.
-- If the family on Google Fonts has use typo metrics not enabled and the
-  family being checked has it enabled, the hhea and typo metrics
-  should use the family on Google Fonts winAscent and winDescent values.
-- If the upms differ, the values must be scaled so the visual appearance
-  is the same.
-
-[1] https://github.com/googlefonts/fontbakery/issues/1162
-
-
-</pre>
-
-* 🍞 **PASS** Vertical metrics have not regressed.
-
-</details>
-<details>
 <summary>🍞 <b>PASS:</b> Name table records must not have trailing spaces.</summary>
 
 * [com.google.fonts/check/name/trailing_spaces](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/name/trailing_spaces)
@@ -1976,26 +2040,6 @@ take care of their own situation.
 * [com.google.fonts/check/ots](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/ots)
 
 * 🍞 **PASS** ots-sanitize passed this file
-
-</details>
-<details>
-<summary>🍞 <b>PASS:</b> Font contains .notdef as first glyph?</summary>
-
-* [com.google.fonts/check/mandatory_glyphs](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/mandatory_glyphs)
-<pre>--- Rationale ---
-
-The OpenType specification v1.8.2 recommends that the first glyph is the
-.notdef glyph without a codepoint assigned and with a drawing.
-
-https://docs.microsoft.com/en-us/typography/opentype/spec/recom#glyph-0-the-notdef-glyph
-
-Pre-v1.8, it was recommended that a font should also contain a .null, CR and
-space glyph. This might have been relevant for applications on MacOS 9.
-
-
-</pre>
-
-* 🍞 **PASS** Font contains the .notdef glyph as the first glyph, it does not have a Unicode value assigned and contains a drawing.
 
 </details>
 <details>
@@ -2457,5 +2501,5 @@ the same x,y coordinates.
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 0 | 4 | 64 | 9 | 89 | 0 |
-| 0% | 0% | 2% | 39% | 5% | 54% | 0% |
+| 0 | 0 | 4 | 67 | 8 | 87 | 0 |
+| 0% | 0% | 2% | 40% | 5% | 52% | 0% |
