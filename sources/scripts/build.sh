@@ -4,15 +4,11 @@ while [ ! $# -eq 0 ]
         --statics | -s)
             source $(dirname ${BASH_SOURCE[0]})/build-statics.sh
         ;;
-        # --normal | -n)
-        #     source $(dirname ${BASH_SOURCE[0]})/build-vf.sh -n
-        # ;;
-        --full | -f)
+        --vf | -vf)
             source $(dirname ${BASH_SOURCE[0]})/build-vf.sh -f
         ;;
         --all | -a)
             source $(dirname ${BASH_SOURCE[0]})/build-statics.sh
-            # source $(dirname ${BASH_SOURCE[0]})/build-vf.sh -n
             source $(dirname ${BASH_SOURCE[0]})/build-vf.sh -f
             
         ;;

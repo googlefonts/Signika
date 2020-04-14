@@ -1,3 +1,4 @@
+# Set bash to exit on errors and print all commands
 set -x -e
 
 source="sources/sources-buildready/Signika-MM-prepped_designspace.glyphs"
@@ -24,6 +25,7 @@ tmpSource=${source/".glyphs"/"-Build.glyphs"}
 cp $source $tmpSource
 fontmake -g $tmpSource -o variable
 
+# Replace the TTF VFs name table entries which inherit frmo the Light master
 python sources/scripts/helpers/replace-family-name.py $tmp "Signika Light" "Signika"
 
 #------------------------------------------------------------------------------
@@ -47,7 +49,7 @@ mv ${tmpSC/".ttf"/".subset.ttf"} $tmpSC
 #--------------------------------------------------------------------------
 # Update names in font with smallcaps suffix
 #--------------------------------------------------------------------------
-python sources/scripts/helpers/add-smallcaps-suffix.py $tmpSC "SC" "Signika"
+python sources/scripts/helpers/replace-family-name.py "$tmpSC" "Signika" "Signika SC"
 
 
 for file in variable_ttf/*; do 

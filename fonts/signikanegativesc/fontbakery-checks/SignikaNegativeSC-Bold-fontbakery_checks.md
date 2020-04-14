@@ -1,16 +1,17 @@
 ## Fontbakery report
 
-Fontbakery version: 0.7.22
+Fontbakery version: 0.7.23.dev7+ga779abba
 
 <details>
-<summary><b>[13] Family checks</b></summary>
+<summary><b>[14] Family checks</b></summary>
 <details>
 <summary>ℹ <b>INFO:</b> Do we have the latest version of FontBakery installed?</summary>
 
 * [com.google.fonts/check/fontbakery_version](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/fontbakery_version)
 
 * ℹ **INFO** fontbakery (0.7.22)  - Well designed Font QA tool, written in Python 3
-  INSTALLED: 0.7.22 (latest)
+  INSTALLED: 0.7.23.dev7+ga779abba
+  LATEST:    0.7.22
 
 * 🍞 **PASS** Font Bakery is up-to-date
 
@@ -173,6 +174,23 @@ only in weight or style ...&#x27;
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Ensure that all variable font files have the same set of axes and axis ranges.</summary>
+
+* [com.google.fonts/check/varfont/consistent_axes](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont/consistent_axes)
+<pre>--- Rationale ---
+
+In order to facilitate the construction of intuitive and friendly user
+interfaces, all variable font files in a given family should have the same set
+of variation axes. Also, each axis must have a consistent setting of min/max
+value ranges accross all the files.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: VFs
+
+</details>
+<details>
 <summary>⚠ <b>WARN:</b> Is the command `ftxvalidator` (Apple Font Tool Suite) available?</summary>
 
 * [com.google.fonts/check/ftxvalidator_is_available](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/ftxvalidator_is_available)
@@ -198,6 +216,14 @@ https://github.com/googlefonts/fontbakery/blob/master/prebuilt/workarounds/ftxva
 </details>
 <details>
 <summary><b>[153] SignikaNegativeSC-Bold.ttf</b></summary>
+<details>
+<summary>🔥 <b>FAIL:</b> Check name table: POSTSCRIPT_NAME entries.</summary>
+
+* [com.google.fonts/check/name/postscriptname](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/postscriptname)
+
+* 🔥 **FAIL** Entry [POSTSCRIPT_NAME(6):WINDOWS(3)] on the "name" table: Expected "SignikaNegativeSC-Bold" but got "SignikaNegative-Bold". [code: bad-entry]
+
+</details>
 <details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
@@ -275,32 +301,8 @@ Glyph name: uni1EC3.smcp	Contours detected: 3	Expected: 4
 Glyph name: uni1EC5.smcp	Contours detected: 3	Expected: 4
 Glyph name: uni1EC7.smcp	Contours detected: 3	Expected: 4
 Glyph name: uni1ECB.smcp	Contours detected: 2	Expected: 3
-Glyph name: uni1E1C	Contours detected: 3	Expected: 2
-Glyph name: uni1E08	Contours detected: 3	Expected: 2 [code: contour-count]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences?</summary>
-
-* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
-<pre>--- Rationale ---
-
-Fonts with ligatures should have kerning on the corresponding non-ligated
-sequences for text where ligatures aren&#x27;t used (eg
-https://github.com/impallari/Raleway/issues/14).
-
-
-</pre>
-
-* ⚠ **WARN** GPOS table lacks kerning info for the following non-ligated sequences:
-	- f + f
-	- f + i
-	- i + f
-	- f + l
-	- l + f
-	- i + l
-
-   [code: lacks-kern-info]
+Glyph name: uni1E08	Contours detected: 3	Expected: 2
+Glyph name: uni1E1C	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -321,6 +323,14 @@ space glyph. This might have been relevant for applications on MacOS 9.
 </pre>
 
 * ⚠ **WARN** Font should contain the .notdef glyph as the first glyph, it should not have a Unicode value assigned and should contain a drawing.
+
+</details>
+<details>
+<summary>⚠ <b>WARN:</b> Check if OS/2 xAvgCharWidth is correct.</summary>
+
+* [com.google.fonts/check/xavgcharwidth](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/os2.html#com.google.fonts/check/xavgcharwidth)
+
+* ⚠ **WARN** OS/2 xAvgCharWidth is 1289 but it should be 1349 which corresponds to the average of the widths of all glyphs in the font.
 
 </details>
 <details>
@@ -848,6 +858,38 @@ that are multiples of 100 on the design space.
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Are there caret positions declared for every ligature?</summary>
+
+* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+<pre>--- Rationale ---
+
+All ligatures in a font must have corresponding caret (text cursor) positions
+defined in the GDEF table, otherwhise, users may experience issues with caret
+rendering.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligature_glyphs
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Is there kerning info for non-ligated sequences?</summary>
+
+* [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
+<pre>--- Rationale ---
+
+Fonts with ligatures should have kerning on the corresponding non-ligated
+sequences for text where ligatures aren&#x27;t used (eg
+https://github.com/impallari/Raleway/issues/14).
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: ligatures
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Directory name in GFonts repo structure must match NameID 1 of the regular.</summary>
 
 * [com.google.fonts/check/repo/dirname_matches_nameid_1](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/dirname_matches_nameid_1)
@@ -1184,10 +1226,10 @@ of hinted versus unhinted font files.
 
 	|  | fonts/signikanegativesc/SignikaNegativeSC-Bold.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 231.5kb |
-	| Hinted Size | 307.4kb |
-	| Increase | 75.9kb |
-	| Change   | 32.8 % |
+	| Dehinted Size | 197.9kb |
+	| Hinted Size | 267.5kb |
+	| Increase | 69.6kb |
+	| Change   | 35.2 % |
  [code: size-impact]
 
 </details>
@@ -1279,7 +1321,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [GSUB, GPOS, cvt , fpgm, DSIG, gasp, loca, prep]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, DSIG, gasp, loca, GPOS, prep, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -1734,14 +1776,6 @@ checks that nameID 1 is the family name + the style name.
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Check name table: POSTSCRIPT_NAME entries.</summary>
-
-* [com.google.fonts/check/name/postscriptname](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/postscriptname)
-
-* 🍞 **PASS** POSTCRIPT_NAME entries are all good.
-
-</details>
-<details>
 <summary>🍞 <b>PASS:</b> Check name table: TYPOGRAPHIC_FAMILY_NAME entries.</summary>
 
 * [com.google.fonts/check/name/typographicfamilyname](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/typographicfamilyname)
@@ -1885,22 +1919,6 @@ Bit 3 = Force ppem to integer values for all internal scaler math;
 </pre>
 
 * 🍞 **PASS** OK
-
-</details>
-<details>
-<summary>🍞 <b>PASS:</b> Are there caret positions declared for every ligature?</summary>
-
-* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
-<pre>--- Rationale ---
-
-All ligatures in a font must have corresponding caret (text cursor) positions
-defined in the GDEF table, otherwhise, users may experience issues with caret
-rendering.
-
-
-</pre>
-
-* 🍞 **PASS** Looks good!
 
 </details>
 <details>
@@ -2182,14 +2200,6 @@ on Variable Fonts.
 * [com.google.fonts/check/font_version](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/head.html#com.google.fonts/check/font_version)
 
 * 🍞 **PASS** All font version fields match.
-
-</details>
-<details>
-<summary>🍞 <b>PASS:</b> Check if OS/2 xAvgCharWidth is correct.</summary>
-
-* [com.google.fonts/check/xavgcharwidth](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/os2.html#com.google.fonts/check/xavgcharwidth)
-
-* 🍞 **PASS** OS/2 xAvgCharWidth value is correct.
 
 </details>
 <details>
@@ -2501,5 +2511,5 @@ the same x,y coordinates.
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 0 | 4 | 67 | 8 | 87 | 0 |
-| 0% | 0% | 2% | 40% | 5% | 52% | 0% |
+| 0 | 1 | 4 | 70 | 8 | 84 | 0 |
+| 0% | 1% | 2% | 42% | 5% | 50% | 0% |

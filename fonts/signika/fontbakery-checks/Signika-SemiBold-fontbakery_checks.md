@@ -1,16 +1,17 @@
 ## Fontbakery report
 
-Fontbakery version: 0.7.22
+Fontbakery version: 0.7.23.dev7+ga779abba
 
 <details>
-<summary><b>[13] Family checks</b></summary>
+<summary><b>[14] Family checks</b></summary>
 <details>
 <summary>ℹ <b>INFO:</b> Do we have the latest version of FontBakery installed?</summary>
 
 * [com.google.fonts/check/fontbakery_version](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/fontbakery_version)
 
 * ℹ **INFO** fontbakery (0.7.22)  - Well designed Font QA tool, written in Python 3
-  INSTALLED: 0.7.22 (latest)
+  INSTALLED: 0.7.23.dev7+ga779abba
+  LATEST:    0.7.22
 
 * 🍞 **PASS** Font Bakery is up-to-date
 
@@ -135,6 +136,23 @@ only in weight or style ...&#x27;
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> Ensure that all variable font files have the same set of axes and axis ranges.</summary>
+
+* [com.google.fonts/check/varfont/consistent_axes](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont/consistent_axes)
+<pre>--- Rationale ---
+
+In order to facilitate the construction of intuitive and friendly user
+interfaces, all variable font files in a given family should have the same set
+of variation axes. Also, each axis must have a consistent setting of min/max
+value ranges accross all the files.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: VFs
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> All tabular figures must have the same width across the RIBBI-family.</summary>
 
 * [com.google.fonts/check/family/tnum_horizontal_metrics](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/family/tnum_horizontal_metrics)
@@ -203,7 +221,7 @@ https://github.com/googlefonts/fontbakery/blob/master/prebuilt/workarounds/ftxva
 
 * [com.google.fonts/check/production_glyphs_similarity](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity)
 
-* ⚠ **WARN** Following glyphs differ greatly from Google Fonts version: [Euro, sterling, fraction, exclamdown, percent, .notdef, yen, onehalf, onequarter, degree, exclam, threequarters, uni2074, currency]
+* ⚠ **WARN** Following glyphs differ greatly from Google Fonts version: [currency, percent, threequarters, fraction, exclamdown, onequarter, .notdef, sterling, uni2074, yen, Euro, exclam, degree, onehalf]
 
 </details>
 <details>
@@ -236,8 +254,8 @@ Glyph name: uni1E08	Contours detected: 3	Expected: 2
 Glyph name: uni1E09	Contours detected: 3	Expected: 2
 Glyph name: uni1E1C	Contours detected: 3	Expected: 2
 Glyph name: uni1E1D	Contours detected: 4	Expected: 3
-Glyph name: uni1E09	Contours detected: 3	Expected: 2
 Glyph name: uni1E1C	Contours detected: 3	Expected: 2
+Glyph name: uni1E09	Contours detected: 3	Expected: 2
 Glyph name: uni1E1D	Contours detected: 4	Expected: 3
 Glyph name: uni1E08	Contours detected: 3	Expected: 2 [code: contour-count]
 
@@ -1193,7 +1211,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [DSIG, gasp, fpgm, GPOS, prep, loca, GSUB, cvt ]
+* ℹ **INFO** This font contains the following optional tables [loca, GPOS, cvt , prep, GSUB, DSIG, gasp, fpgm]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -2457,5 +2475,5 @@ the same x,y coordinates.
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 0 | 4 | 66 | 9 | 87 | 0 |
+| 0 | 0 | 4 | 67 | 9 | 87 | 0 |
 | 0% | 0% | 2% | 40% | 5% | 52% | 0% |

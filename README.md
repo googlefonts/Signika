@@ -33,7 +33,7 @@ To operate the scripts within this repo, install requirements with:
 pip install -r requirements.txt
 ```
 
-You will also need to download this build of [TTFautohint-vf](https://groups.google.com/forum/#!searchin/googlefonts-discuss/ttfautohint%7Csort:date/googlefonts-discuss/WJX1lrzcwVs/SIzaEvntAgAJ), and place the file directly into the new `venv/bin` within this project.
+The `sources/scripts/helpers` contains a copy of [TTFautohint-vf](https://groups.google.com/forum/#!searchin/googlefonts-discuss/ttfautohint%7Csort:date/googlefonts-discuss/WJX1lrzcwVs/SIzaEvntAgAJ).
 
 To exit out of the virtual environment, you can use the command `deactivate` (just remember to start it up again if you come back).
 
@@ -56,13 +56,7 @@ You can then build sources by running shell scripts in `sources/scripts/`.
 Build the full variable font (Weight + "Negative" axes) with:
 
 ```
-sources/scripts/build.sh -f
-```
-
-Build the split variable font with just the Weight axis for both the normal and Negative families:
-
-```
-sources/scripts/build.sh -n
+sources/scripts/build.sh -vf
 ```
 
 Build all static instances with:
@@ -93,6 +87,8 @@ The font now has sources with build-ready rectangular designspace, and will buil
 Notes were taken throughout the variable font upgrade project and added to the [docs](/docs) directory. I tend to take notes while working anyway, in order to think through problems and record solutions for later reference. In this project, I have included these in the repo so that others might find references to solve similar problems, especially because variable font-making processes are relatively new, and there is a general scarcity of online knowledge on font mastering. Because they were often made alongside work, the notes can at times be a bit disjointed. Hopefully they are still helpful to others! 
 
 If you have any questions about the project or the notes, feel free to [file an issue](/issues) or to reach out to Stephen Nixon via Twitter ([@thundernixon](https://twitter.com/thundernixon)) or other social media (typically also @thundernixon).
+
+Further updates to the production code were undertaken in a 2020 refactor and extension of the font family by [Johannes Neumeier](https://github.com/kontur) — feel free to be in touch. Some of those changes superseed or replace parts of Stephen's original notes and code.
 
 </details>
 

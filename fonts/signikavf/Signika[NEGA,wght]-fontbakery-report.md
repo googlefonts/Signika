@@ -1002,8 +1002,8 @@ of hinted versus unhinted font files.
 
 	|  | fonts/signikavf/Signika[NEGA,wght].ttf |
 	|:--- | ---:|
-	| Dehinted Size | 598.6kb |
-	| Hinted Size | 678.1kb |
+	| Dehinted Size | 598.5kb |
+	| Hinted Size | 677.9kb |
 	| Increase | 79.4kb |
 	| Change   | 13.3 % |
  [code: size-impact]
@@ -1113,7 +1113,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [DSIG, fpgm, gasp, GSUB, GPOS, prep, cvt , loca]
+* ℹ **INFO** This font contains the following optional tables [cvt , DSIG, gasp, loca, GPOS, fpgm, prep, GSUB]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
