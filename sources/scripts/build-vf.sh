@@ -6,6 +6,7 @@ pathNOSC="fonts/signikavf/Signika[NEGA,wght].ttf"
 pathSC="fonts/signikavfsc/SignikaSC[NEGA,wght].ttf"
 tmp="variable_ttf/Signika-VF.ttf"
 tmpSC="variable_ttf/Signika-VFSC.ttf"
+dsPath="master_ufo/Signika.designspace"
 
 #------------------------------------------------------------------------------
 # Remove previous build folder
@@ -13,20 +14,38 @@ tmpSC="variable_ttf/Signika-VFSC.ttf"
 if [ -d "variable_ttf" ]; then
   rm -rf variable_ttf
 fi
+if [ -d "master_ufo" ]; then
+  rm -rf variable_ttf
+fi
+if [ -d "instance_ufo" ]; then
+  rm -rf variable_ttf
+fi
+
+rm -rf dsPath
 
 
 #------------------------------------------------------------------------------
 # Compile from sources
 #------------------------------------------------------------------------------
-## make temp glyphs file with "-build" suffix
+# make temp glyphs file with "-build" suffix
 tmpSource=${source/".glyphs"/"-Build.glyphs"}
 
-## copy Glyphs file into temp file
+# copy Glyphs file into temp file
 cp $source $tmpSource
-fontmake -g $tmpSource -o variable
+# fontmake -g $tmpSource -o variable
+fontmake -g $tmpSource -o ufo --designspace-path=$dsPath
 
-# Replace the TTF VFs name table entries which inherit frmo the Light master
+# add rules
+# python sources/scripts/helpers/add-rules-to-designspace.py
+
+# compute variable fonts
+fontmake -m $dsPath -o variable
+
+exit
+
+# Replace the TTF VFs name table entries which inherit from the Light master
 python sources/scripts/helpers/replace-family-name.py $tmp "Signika Light" "Signika"
+
 
 #------------------------------------------------------------------------------
 # Smallcap subsetting
@@ -34,7 +53,8 @@ python sources/scripts/helpers/replace-family-name.py $tmp "Signika Light" "Sign
 
 # Making a SC "frozen" font
 # This mapps all smcp glyphs to their "substitute" and also renames their names with suffix "SC"
-python sources/scripts/helpers/pyftfeatfreeze.py -f 'smcp' $tmp $tmpSC
+# python sources/scripts/helpers/pyftfeatfreeze.py -f 'smcp' $tmp $tmpSC
+cp $tmp $tmpSC
 
 # Removing SC from the font
 # This removes the smcp features and involved glyphs

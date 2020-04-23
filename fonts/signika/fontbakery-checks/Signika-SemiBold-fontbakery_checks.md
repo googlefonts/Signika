@@ -1,6 +1,6 @@
 ## Fontbakery report
 
-Fontbakery version: 0.7.25.dev3+g2b9dc662
+Fontbakery version: 0.7.24
 
 <details>
 <summary><b>[14] Family checks</b></summary>
@@ -10,8 +10,7 @@ Fontbakery version: 0.7.25.dev3+g2b9dc662
 * [com.google.fonts/check/fontbakery_version](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/fontbakery_version)
 
 * ℹ **INFO** fontbakery (0.7.24)  - Well designed Font QA tool, written in Python 3
-  INSTALLED: 0.7.25.dev3+g2b9dc662
-  LATEST:    0.7.24
+  INSTALLED: 0.7.24 (latest)
 
 * 🍞 **PASS** Font Bakery is up-to-date
 
@@ -222,7 +221,7 @@ https://github.com/googlefonts/fontbakery/blob/master/prebuilt/workarounds
 
 * [com.google.fonts/check/production_glyphs_similarity](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity)
 
-* ⚠ **WARN** Following glyphs differ greatly from Google Fonts version: [sterling, threequarters, Euro, exclam, fraction, percent, currency, onequarter, uni2074, degree, onehalf, yen, .notdef, exclamdown]
+* ⚠ **WARN** Following glyphs differ greatly from Google Fonts version: [fraction, exclamdown, degree, Euro, currency, onequarter, sterling, uni2074, exclam, threequarters, percent, yen, onehalf]
 
 </details>
 <details>
@@ -255,10 +254,10 @@ Glyph name: uni1E08	Contours detected: 3	Expected: 2
 Glyph name: uni1E09	Contours detected: 3	Expected: 2
 Glyph name: uni1E1C	Contours detected: 3	Expected: 2
 Glyph name: uni1E1D	Contours detected: 4	Expected: 3
-Glyph name: uni1E1D	Contours detected: 4	Expected: 3
+Glyph name: uni1E09	Contours detected: 3	Expected: 2
 Glyph name: uni1E1C	Contours detected: 3	Expected: 2
-Glyph name: uni1E08	Contours detected: 3	Expected: 2
-Glyph name: uni1E09	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1E1D	Contours detected: 4	Expected: 3
+Glyph name: uni1E08	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -283,6 +282,27 @@ https://github.com/impallari/Raleway/issues/14).
 	- i + l
 
    [code: lacks-kern-info]
+
+</details>
+<details>
+<summary>⚠ <b>WARN:</b> Font contains .notdef as first glyph?</summary>
+
+* [com.google.fonts/check/mandatory_glyphs](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/mandatory_glyphs)
+<pre>--- Rationale ---
+
+The OpenType specification v1.8.2 recommends that the first glyph is the
+.notdef glyph without a codepoint assigned and with a drawing.
+
+https://docs.microsoft.com/en-us/typography/opentype/spec
+/recom#glyph-0-the-notdef-glyph
+
+Pre-v1.8, it was recommended that a font should also contain a .null, CR and
+space glyph. This might have been relevant for applications on MacOS 9.
+
+
+</pre>
+
+* ⚠ **WARN** Font should contain the .notdef glyph as the first glyph, it should not have a Unicode value assigned and should contain a drawing.
 
 </details>
 <details>
@@ -1102,9 +1122,9 @@ of hinted versus unhinted font files.
 
 	|  | fonts/signika/Signika-SemiBold.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 245.6kb |
-	| Hinted Size | 318.6kb |
-	| Increase | 73.1kb |
+	| Dehinted Size | 244.7kb |
+	| Hinted Size | 317.5kb |
+	| Increase | 72.8kb |
 	| Change   | 29.8 % |
  [code: size-impact]
 
@@ -1213,7 +1233,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, GPOS, prep, DSIG, cvt , gasp, loca]
+* ℹ **INFO** This font contains the following optional tables [GSUB, GPOS, fpgm, prep, gasp, cvt , DSIG, loca]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -1999,27 +2019,6 @@ take care of their own situation.
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Font contains .notdef as first glyph?</summary>
-
-* [com.google.fonts/check/mandatory_glyphs](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/mandatory_glyphs)
-<pre>--- Rationale ---
-
-The OpenType specification v1.8.2 recommends that the first glyph is the
-.notdef glyph without a codepoint assigned and with a drawing.
-
-https://docs.microsoft.com/en-us/typography/opentype/spec
-/recom#glyph-0-the-notdef-glyph
-
-Pre-v1.8, it was recommended that a font should also contain a .null, CR and
-space glyph. This might have been relevant for applications on MacOS 9.
-
-
-</pre>
-
-* 🍞 **PASS** Font contains the .notdef glyph as the first glyph, it does not have a Unicode value assigned and contains a drawing.
-
-</details>
-<details>
 <summary>🍞 <b>PASS:</b> Font contains glyphs for whitespace characters?</summary>
 
 * [com.google.fonts/check/whitespace_glyphs](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_glyphs)
@@ -2485,5 +2484,5 @@ the same x,y coordinates.
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 0 | 4 | 67 | 9 | 87 | 0 |
-| 0% | 0% | 2% | 40% | 5% | 52% | 0% |
+| 0 | 0 | 5 | 67 | 9 | 86 | 0 |
+| 0% | 0% | 3% | 40% | 5% | 51% | 0% |
