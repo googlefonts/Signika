@@ -1,6 +1,6 @@
 ## Fontbakery report
 
-Fontbakery version: 0.7.23.dev7+ga779abba
+Fontbakery version: 0.7.25.dev3+g2b9dc662
 
 <details>
 <summary><b>[14] Family checks</b></summary>
@@ -9,9 +9,9 @@ Fontbakery version: 0.7.23.dev7+ga779abba
 
 * [com.google.fonts/check/fontbakery_version](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/fontbakery_version)
 
-* ℹ **INFO** fontbakery (0.7.22)  - Well designed Font QA tool, written in Python 3
-  INSTALLED: 0.7.23.dev7+ga779abba
-  LATEST:    0.7.22
+* ℹ **INFO** fontbakery (0.7.24)  - Well designed Font QA tool, written in Python 3
+  INSTALLED: 0.7.25.dev3+g2b9dc662
+  LATEST:    0.7.24
 
 * 🍞 **PASS** Font Bakery is up-to-date
 
@@ -204,12 +204,13 @@ Bakery could access `ftxvalidator` on OSX, e.g. via ssh or a remote procedure
 call (rpc).
 
 There&#x27;s an ssh example implementation at:
-https://github.com/googlefonts/fontbakery/blob/master/prebuilt/workarounds/ftxvalidator/ssh-implementation/ftxvalidator
+https://github.com/googlefonts/fontbakery/blob/master/prebuilt/workarounds
+/ftxvalidator/ssh-implementation/ftxvalidator
 
 
 </pre>
 
-* ⚠ **WARN** ftxvalidator is not available.
+* ⚠ **WARN** Could not find ftxvalidator.
 
 </details>
 <br>
@@ -293,8 +294,8 @@ Glyph name: uni1EC3.smcp	Contours detected: 3	Expected: 4
 Glyph name: uni1EC5.smcp	Contours detected: 3	Expected: 4
 Glyph name: uni1EC7.smcp	Contours detected: 3	Expected: 4
 Glyph name: uni1ECB.smcp	Contours detected: 2	Expected: 3
-Glyph name: uni1E1C	Contours detected: 3	Expected: 2
-Glyph name: uni1E08	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1E08	Contours detected: 3	Expected: 2
+Glyph name: uni1E1C	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -306,7 +307,8 @@ Glyph name: uni1E08	Contours detected: 3	Expected: 2 [code: contour-count]
 The OpenType specification v1.8.2 recommends that the first glyph is the
 .notdef glyph without a codepoint assigned and with a drawing.
 
-https://docs.microsoft.com/en-us/typography/opentype/spec/recom#glyph-0-the-notdef-glyph
+https://docs.microsoft.com/en-us/typography/opentype/spec
+/recom#glyph-0-the-notdef-glyph
 
 Pre-v1.8, it was recommended that a font should also contain a .null, CR and
 space glyph. This might have been relevant for applications on MacOS 9.
@@ -788,7 +790,8 @@ So, all variable fonts on the Google Fonts collection should have an HVAR with
 valid values.
 
 More info on the HVAR table can be found at:
-https://docs.microsoft.com/en-us/typography/opentype/spec/otvaroverview#variation-data-tables-and-miscellaneous-requirements
+https://docs.microsoft.com/en-us/typography/opentype/spec
+/otvaroverview#variation-data-tables-and-miscellaneous-requirements
 
 
 </pre>
@@ -948,7 +951,7 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 * [com.google.fonts/check/ftxvalidator](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/ftxvalidator)
 
-* 💤 **SKIP** Unfulfilled Conditions: ftxvalidator_is_available
+* 💤 **SKIP** Unfulfilled Conditions: ftxvalidator_cmd
 
 </details>
 <details>
@@ -1210,10 +1213,10 @@ of hinted versus unhinted font files.
 
 	|  | fonts/signikasc/SignikaSC-Regular.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 184.5kb |
-	| Hinted Size | 248.1kb |
+	| Dehinted Size | 192.3kb |
+	| Hinted Size | 255.9kb |
 	| Increase | 63.7kb |
-	| Change   | 34.5 % |
+	| Change   | 33.1 % |
  [code: size-impact]
 
 </details>
@@ -1305,7 +1308,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [GSUB, cvt , prep, loca, gasp, GPOS, DSIG, fpgm]
+* ℹ **INFO** This font contains the following optional tables [prep, cvt , GPOS, loca, fpgm, GSUB, gasp, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -2108,6 +2111,13 @@ except the special glyph name &quot;.notdef&quot; which starts with a period.&#x
 https://docs.microsoft.com/en-us/typography/opentype/spec/recom#post-table
 
 
+In practice, though, particularly in modern environments, glyph names can be as
+long as 63 characters.
+According to the &quot;Adobe Glyph List Specification&quot; available at:
+
+https://github.com/adobe-type-tools/agl-specification
+
+
 </pre>
 
 * 🍞 **PASS** Glyph names are all valid.
@@ -2424,11 +2434,11 @@ Reference: https://github.com/googlefonts/fontbakery/issues/1845
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Whitespace and non-breaking space have the same width?</summary>
+<summary>🍞 <b>PASS:</b> Space and non-breaking space have the same width?</summary>
 
 * [com.google.fonts/check/whitespace_widths](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/hmtx.html#com.google.fonts/check/whitespace_widths)
 
-* 🍞 **PASS** Whitespace and non-breaking space have the same width.
+* 🍞 **PASS** Space and non-breaking space have the same width.
 
 </details>
 <details>
