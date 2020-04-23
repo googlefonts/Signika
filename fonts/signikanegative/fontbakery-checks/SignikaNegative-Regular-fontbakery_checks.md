@@ -1,6 +1,6 @@
 ## Fontbakery report
 
-Fontbakery version: 0.7.25.dev3+g2b9dc662
+Fontbakery version: 0.7.24
 
 <details>
 <summary><b>[14] Family checks</b></summary>
@@ -10,8 +10,7 @@ Fontbakery version: 0.7.25.dev3+g2b9dc662
 * [com.google.fonts/check/fontbakery_version](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/fontbakery_version)
 
 * ℹ **INFO** fontbakery (0.7.24)  - Well designed Font QA tool, written in Python 3
-  INSTALLED: 0.7.25.dev3+g2b9dc662
-  LATEST:    0.7.24
+  INSTALLED: 0.7.24 (latest)
 
 * 🍞 **PASS** Font Bakery is up-to-date
 
@@ -222,7 +221,7 @@ https://github.com/googlefonts/fontbakery/blob/master/prebuilt/workarounds
 
 * [com.google.fonts/check/production_glyphs_similarity](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity)
 
-* ⚠ **WARN** Following glyphs differ greatly from Google Fonts version: [Euro, sterling, degree, currency, percent, .notdef, fraction]
+* ⚠ **WARN** Following glyphs differ greatly from Google Fonts version: [percent, degree, Euro, .notdef, fraction, currency, sterling]
 
 </details>
 <details>
@@ -255,10 +254,10 @@ Glyph name: uni1E08	Contours detected: 3	Expected: 2
 Glyph name: uni1E09	Contours detected: 3	Expected: 2
 Glyph name: uni1E1C	Contours detected: 3	Expected: 2
 Glyph name: uni1E1D	Contours detected: 4	Expected: 3
-Glyph name: uni1E1D	Contours detected: 4	Expected: 3
 Glyph name: uni1E09	Contours detected: 3	Expected: 2
-Glyph name: uni1E1C	Contours detected: 3	Expected: 2
-Glyph name: uni1E08	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1E1D	Contours detected: 4	Expected: 3
+Glyph name: uni1E08	Contours detected: 3	Expected: 2
+Glyph name: uni1E1C	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -1197,7 +1196,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [fpgm, DSIG, gasp, loca, GSUB, prep, GPOS, cvt ]
+* ℹ **INFO** This font contains the following optional tables [prep, fpgm, loca, gasp, cvt , DSIG, GPOS, GSUB]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>

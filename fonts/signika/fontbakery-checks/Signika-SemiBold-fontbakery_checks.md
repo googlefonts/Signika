@@ -1,6 +1,6 @@
 ## Fontbakery report
 
-Fontbakery version: 0.7.25.dev3+g2b9dc662
+Fontbakery version: 0.7.24
 
 <details>
 <summary><b>[14] Family checks</b></summary>
@@ -10,8 +10,7 @@ Fontbakery version: 0.7.25.dev3+g2b9dc662
 * [com.google.fonts/check/fontbakery_version](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/fontbakery_version)
 
 * ℹ **INFO** fontbakery (0.7.24)  - Well designed Font QA tool, written in Python 3
-  INSTALLED: 0.7.25.dev3+g2b9dc662
-  LATEST:    0.7.24
+  INSTALLED: 0.7.24 (latest)
 
 * 🍞 **PASS** Font Bakery is up-to-date
 
@@ -222,7 +221,7 @@ https://github.com/googlefonts/fontbakery/blob/master/prebuilt/workarounds
 
 * [com.google.fonts/check/production_glyphs_similarity](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity)
 
-* ⚠ **WARN** Following glyphs differ greatly from Google Fonts version: [sterling, threequarters, Euro, exclam, fraction, percent, currency, onequarter, uni2074, degree, onehalf, yen, .notdef, exclamdown]
+* ⚠ **WARN** Following glyphs differ greatly from Google Fonts version: [yen, exclamdown, Euro, uni2074, currency, threequarters, onehalf, sterling, onequarter, exclam, percent, degree, .notdef, fraction]
 
 </details>
 <details>
@@ -255,9 +254,9 @@ Glyph name: uni1E08	Contours detected: 3	Expected: 2
 Glyph name: uni1E09	Contours detected: 3	Expected: 2
 Glyph name: uni1E1C	Contours detected: 3	Expected: 2
 Glyph name: uni1E1D	Contours detected: 4	Expected: 3
-Glyph name: uni1E1D	Contours detected: 4	Expected: 3
 Glyph name: uni1E1C	Contours detected: 3	Expected: 2
 Glyph name: uni1E08	Contours detected: 3	Expected: 2
+Glyph name: uni1E1D	Contours detected: 4	Expected: 3
 Glyph name: uni1E09	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
@@ -1103,7 +1102,7 @@ of hinted versus unhinted font files.
 	|  | fonts/signika/Signika-SemiBold.ttf |
 	|:--- | ---:|
 	| Dehinted Size | 245.6kb |
-	| Hinted Size | 318.6kb |
+	| Hinted Size | 318.7kb |
 	| Increase | 73.1kb |
 	| Change   | 29.8 % |
  [code: size-impact]
@@ -1213,7 +1212,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, GPOS, prep, DSIG, cvt , gasp, loca]
+* ℹ **INFO** This font contains the following optional tables [GPOS, DSIG, gasp, fpgm, cvt , prep, GSUB, loca]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>

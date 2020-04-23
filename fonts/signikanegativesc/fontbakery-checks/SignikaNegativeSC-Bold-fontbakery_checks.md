@@ -1,6 +1,6 @@
 ## Fontbakery report
 
-Fontbakery version: 0.7.25.dev3+g2b9dc662
+Fontbakery version: 0.7.24
 
 <details>
 <summary><b>[14] Family checks</b></summary>
@@ -10,8 +10,7 @@ Fontbakery version: 0.7.25.dev3+g2b9dc662
 * [com.google.fonts/check/fontbakery_version](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/fontbakery_version)
 
 * ℹ **INFO** fontbakery (0.7.24)  - Well designed Font QA tool, written in Python 3
-  INSTALLED: 0.7.25.dev3+g2b9dc662
-  LATEST:    0.7.24
+  INSTALLED: 0.7.24 (latest)
 
 * 🍞 **PASS** Font Bakery is up-to-date
 
@@ -1308,7 +1307,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [loca, GSUB, GPOS, fpgm, gasp, DSIG, prep, cvt ]
+* ℹ **INFO** This font contains the following optional tables [fpgm, GPOS, prep, DSIG, gasp, loca, cvt , GSUB]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
