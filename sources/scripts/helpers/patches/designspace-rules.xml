@@ -1,14 +1,14 @@
   <rules>
     <rule name="icon-alternates-escalator">
       <conditionset>
-        <condition minimum="650" maximum="700" name="Weight" />
-        <sub name="ico.escalator" with="ico.escalator.bold" />
+        <condition minimum="845" name="Weight" />
       </conditionset>
+      <sub name="ico.escalator" with="ico.escalator.bold" />
     </rule>
     <rule name="icon-alternates-disabled">
       <conditionset>
-        <condition minimum="450" maximum="700" name="Weight" />
-        <sub name="ico.disabled" with="ico.disabled.bold" />
+        <condition minimum="576" name="Weight" />
       </conditionset>
+      <sub name="ico.disabled" with="ico.disabled.bold" />
     </rule>
   </rules>

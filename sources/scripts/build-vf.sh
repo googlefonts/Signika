@@ -32,16 +32,13 @@ tmpSource=${source/".glyphs"/"-Build.glyphs"}
 
 # copy Glyphs file into temp file
 cp $source $tmpSource
-# fontmake -g $tmpSource -o variable
 fontmake -g $tmpSource -o ufo --designspace-path=$dsPath
 
 # add rules
-# python sources/scripts/helpers/add-rules-to-designspace.py
+python sources/scripts/helpers/add-rules-to-designspace.py
 
 # compute variable fonts
 fontmake -m $dsPath -o variable
-
-exit
 
 # Replace the TTF VFs name table entries which inherit from the Light master
 python sources/scripts/helpers/replace-family-name.py $tmp "Signika Light" "Signika"
@@ -53,8 +50,7 @@ python sources/scripts/helpers/replace-family-name.py $tmp "Signika Light" "Sign
 
 # Making a SC "frozen" font
 # This mapps all smcp glyphs to their "substitute" and also renames their names with suffix "SC"
-# python sources/scripts/helpers/pyftfeatfreeze.py -f 'smcp' $tmp $tmpSC
-cp $tmp $tmpSC
+python sources/scripts/helpers/pyftfeatfreeze.py -f 'smcp' $tmp $tmpSC
 
 # Removing SC from the font
 # This removes the smcp features and involved glyphs
@@ -121,5 +117,6 @@ cp $tmpSC $pathSC
 # Run fontbakery checks on the final files
 #------------------------------------------------------------------------------
 echo "Run fontbakery checks"
-fontbakery check-googlefonts $pathNOSC --ghmarkdown "fonts/signikavf/fontbakery-checks/Signika[NEGA,wght]-fontbakery-report.md"
-fontbakery check-googlefonts $pathSC --ghmarkdown "fonts/signikavfsc/fontbakery-checks/SignikaSC[NEGA,wght]-fontbakery-report.md"
+# Exclude the static folder check; not relevant in this source repo
+fontbakery check-googlefonts $pathNOSC --exclude-checkid "com.google.fonts/check/repo/vf_has_static_fonts" --ghmarkdown "fonts/signikavf/fontbakery-checks/Signika[NEGA,wght]-fontbakery-report.md"
+fontbakery check-googlefonts $pathSC --exclude-checkid "com.google.fonts/check/repo/vf_has_static_fonts" --ghmarkdown "fonts/signikavfsc/fontbakery-checks/SignikaSC[NEGA,wght]-fontbakery-report.md"
