@@ -70,6 +70,29 @@ the files from a single family spreaded in several separate directories).
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> Is the command `ftxvalidator` (Apple Font Tool Suite) available?</summary>
+
+* [com.google.fonts/check/ftxvalidator_is_available](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/ftxvalidator_is_available)
+<pre>--- Rationale ---
+
+There&#x27;s no reasonable (and legal) way to run the command `ftxvalidator` of the
+Apple Font Tool Suite on a non-macOS machine. I.e. on GNU+Linux or Windows etc.
+
+If Font Bakery is not running on an OSX machine, the machine running Font
+Bakery could access `ftxvalidator` on OSX, e.g. via ssh or a remote procedure
+call (rpc).
+
+There&#x27;s an ssh example implementation at:
+https://github.com/googlefonts/fontbakery/blob/master/prebuilt/workarounds
+/ftxvalidator/ssh-implementation/ftxvalidator
+
+
+</pre>
+
+* 🍞 **PASS** ftxvalidator is available at /Users/johannes/bin/ftxvalidator
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Each font in a family must have the same set of vertical metrics values.</summary>
 
 * [com.google.fonts/check/family/vertical_metrics](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/vertical_metrics)
@@ -189,29 +212,6 @@ value ranges accross all the files.
 * 💤 **SKIP** Unfulfilled Conditions: VFs
 
 </details>
-<details>
-<summary>⚠ <b>WARN:</b> Is the command `ftxvalidator` (Apple Font Tool Suite) available?</summary>
-
-* [com.google.fonts/check/ftxvalidator_is_available](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/ftxvalidator_is_available)
-<pre>--- Rationale ---
-
-There&#x27;s no reasonable (and legal) way to run the command `ftxvalidator` of the
-Apple Font Tool Suite on a non-macOS machine. I.e. on GNU+Linux or Windows etc.
-
-If Font Bakery is not running on an OSX machine, the machine running Font
-Bakery could access `ftxvalidator` on OSX, e.g. via ssh or a remote procedure
-call (rpc).
-
-There&#x27;s an ssh example implementation at:
-https://github.com/googlefonts/fontbakery/blob/master/prebuilt/workarounds
-/ftxvalidator/ssh-implementation/ftxvalidator
-
-
-</pre>
-
-* ⚠ **WARN** Could not find ftxvalidator.
-
-</details>
 <br>
 </details>
 <details>
@@ -293,8 +293,8 @@ Glyph name: uni1EC3.smcp	Contours detected: 3	Expected: 4
 Glyph name: uni1EC5.smcp	Contours detected: 3	Expected: 4
 Glyph name: uni1EC7.smcp	Contours detected: 3	Expected: 4
 Glyph name: uni1ECB.smcp	Contours detected: 2	Expected: 3
-Glyph name: uni1E08	Contours detected: 3	Expected: 2
-Glyph name: uni1E1C	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1E1C	Contours detected: 3	Expected: 2
+Glyph name: uni1E08	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -946,14 +946,6 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Checking with ftxvalidator.</summary>
-
-* [com.google.fonts/check/ftxvalidator](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/ftxvalidator)
-
-* 💤 **SKIP** Unfulfilled Conditions: ftxvalidator_cmd
-
-</details>
-<details>
 <summary>💤 <b>SKIP:</b> Is the CFF subr/gsubr call depth > 10?</summary>
 
 * [com.adobe.fonts/check/cff_call_depth](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/cff.html#com.adobe.fonts/check/cff_call_depth)
@@ -1214,7 +1206,7 @@ of hinted versus unhinted font files.
 	|:--- | ---:|
 	| Dehinted Size | 193.8kb |
 	| Hinted Size | 259.8kb |
-	| Increase | 66.1kb |
+	| Increase | 66.0kb |
 	| Change   | 34.1 % |
  [code: size-impact]
 
@@ -1307,7 +1299,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [gasp, GSUB, GPOS, loca, cvt , DSIG, fpgm, prep]
+* ℹ **INFO** This font contains the following optional tables [cvt , fpgm, GPOS, DSIG, GSUB, prep, loca, gasp]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -2047,6 +2039,14 @@ take care of their own situation.
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> Checking with ftxvalidator.</summary>
+
+* [com.google.fonts/check/ftxvalidator](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/ftxvalidator)
+
+* 🍞 **PASS** ftxvalidator passed this file
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Checking with ots-sanitize.</summary>
 
 * [com.google.fonts/check/ots](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/ots)
@@ -2520,5 +2520,5 @@ the same x,y coordinates.
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 0 | 3 | 70 | 8 | 86 | 0 |
-| 0% | 0% | 2% | 42% | 5% | 51% | 0% |
+| 0 | 0 | 2 | 69 | 8 | 88 | 0 |
+| 0% | 0% | 1% | 41% | 5% | 53% | 0% |

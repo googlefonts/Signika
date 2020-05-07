@@ -1,7 +1,7 @@
   <rules>
     <rule name="icon-alternates-escalator">
       <conditionset>
-        <condition minimum="845" name="Weight" />
+        <condition minimum="860" name="Weight" />
       </conditionset>
       <sub name="ico.escalator" with="ico.escalator.bold" />
     </rule>
