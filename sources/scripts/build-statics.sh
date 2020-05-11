@@ -31,14 +31,32 @@ fontmake -g ${tempGlyphsSource} --output ttf --interpolate --overlaps-backend bo
 ## clean up temp glyphs file
 rm -rf $tempGlyphsSource
 
-# #------------------------------------------------------------------------------
-# # Generate SC file versions and remove SC glyphs from non-SC files
-# #------------------------------------------------------------------------------
 
+#------------------------------------------------------------------------------
+# Switch some glyphs for some weights with their ".bold" alternate, emulating
+# Glyphs brace layers
+#------------------------------------------------------------------------------
+python sources/scripts/helpers/swap-glyph.py instance_ttf/Signika-SemiBold.ttf "ico.disabled" "ico.disabled.bold"
+python sources/scripts/helpers/swap-glyph.py instance_ttf/Signika-Bold.ttf "ico.disabled" "ico.disabled.bold"
+python sources/scripts/helpers/swap-glyph.py instance_ttf/SignikaNegative-SemiBold.ttf "ico.disabled" "ico.disabled.bold"
+python sources/scripts/helpers/swap-glyph.py instance_ttf/SignikaNegative-Bold.ttf "ico.disabled" "ico.disabled.bold"
+
+python sources/scripts/helpers/swap-glyph.py instance_ttf/Signika-Bold.ttf "ico.escalator" "ico.escalator.bold"
+python sources/scripts/helpers/swap-glyph.py instance_ttf/SignikaNegative-Bold.ttf "ico.escalator" "ico.escalator.bold"
+
+
+#------------------------------------------------------------------------------
+# Generate SC file versions and remove SC glyphs from non-SC files
+#------------------------------------------------------------------------------
 for file in instance_ttf/*; do 
 if [ -f "$file" ]; then 
     echo "FILE"
     echo $file
+
+    # Replace the swapped or unswapped ".bold" glyphs
+    pyftsubset $file --unicodes='*' --name-IDs='*' --glyph-names --layout-features="*" --notdef-glyph --notdef-outline
+    rm -rf $file
+    mv ${file/".ttf"/".subset.ttf"} $file
 
     # For all Signika files the new file should be SignikaSC
     if [[ $file != *"SignikaNegative-"* ]]; then
@@ -64,7 +82,7 @@ if [ -f "$file" ]; then
     
     echo "subsetting smallcap font"
     echo $smallCapFile
-    pyftsubset $smallCapFile --unicodes='*' --name-IDs='*' --glyph-names --layout-features="*" --layout-features-='smcp' --recalc-bounds --recalc-average-width
+    pyftsubset $smallCapFile --unicodes='*' --name-IDs='*' --glyph-names --layout-features="*" --layout-features-='smcp' --recalc-bounds --recalc-average-width  --notdef-glyph --notdef-outline
 
     # Replace the SC file with the pyftsubset output from the generated file
     rm -rf $smallCapFile

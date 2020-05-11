@@ -1,6 +1,6 @@
 ## Fontbakery report
 
-Fontbakery version: 0.7.23.dev7+ga779abba
+Fontbakery version: 0.7.24
 
 <details>
 <summary><b>[14] Family checks</b></summary>
@@ -9,9 +9,8 @@ Fontbakery version: 0.7.23.dev7+ga779abba
 
 * [com.google.fonts/check/fontbakery_version](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/fontbakery_version)
 
-* ℹ **INFO** fontbakery (0.7.22)  - Well designed Font QA tool, written in Python 3
-  INSTALLED: 0.7.23.dev7+ga779abba
-  LATEST:    0.7.22
+* ℹ **INFO** fontbakery (0.7.24)  - Well designed Font QA tool, written in Python 3
+  INSTALLED: 0.7.24 (latest)
 
 * 🍞 **PASS** Font Bakery is up-to-date
 
@@ -66,6 +65,29 @@ the files from a single family spreaded in several separate directories).
 </pre>
 
 * 🍞 **PASS** All files are in the same directory.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Is the command `ftxvalidator` (Apple Font Tool Suite) available?</summary>
+
+* [com.google.fonts/check/ftxvalidator_is_available](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/ftxvalidator_is_available)
+<pre>--- Rationale ---
+
+There&#x27;s no reasonable (and legal) way to run the command `ftxvalidator` of the
+Apple Font Tool Suite on a non-macOS machine. I.e. on GNU+Linux or Windows etc.
+
+If Font Bakery is not running on an OSX machine, the machine running Font
+Bakery could access `ftxvalidator` on OSX, e.g. via ssh or a remote procedure
+call (rpc).
+
+There&#x27;s an ssh example implementation at:
+https://github.com/googlefonts/fontbakery/blob/master/prebuilt/workarounds
+/ftxvalidator/ssh-implementation/ftxvalidator
+
+
+</pre>
+
+* 🍞 **PASS** ftxvalidator is available at /Users/johannes/bin/ftxvalidator
 
 </details>
 <details>
@@ -190,49 +212,10 @@ field, using bits 0 and 5.
 * 💤 **SKIP** Unfulfilled Conditions: RIBBI_ttFonts
 
 </details>
-<details>
-<summary>⚠ <b>WARN:</b> Is the command `ftxvalidator` (Apple Font Tool Suite) available?</summary>
-
-* [com.google.fonts/check/ftxvalidator_is_available](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/ftxvalidator_is_available)
-<pre>--- Rationale ---
-
-There&#x27;s no reasonable (and legal) way to run the command `ftxvalidator` of the
-Apple Font Tool Suite on a non-macOS machine. I.e. on GNU+Linux or Windows etc.
-
-If Font Bakery is not running on an OSX machine, the machine running Font
-Bakery could access `ftxvalidator` on OSX, e.g. via ssh or a remote procedure
-call (rpc).
-
-There&#x27;s an ssh example implementation at:
-https://github.com/googlefonts/fontbakery/blob/master/prebuilt/workarounds/ftxvalidator/ssh-implementation/ftxvalidator
-
-
-</pre>
-
-* ⚠ **WARN** ftxvalidator is not available.
-
-</details>
 <br>
 </details>
 <details>
-<summary><b>[153] SignikaSC[NEGA,wght].ttf</b></summary>
-<details>
-<summary>🔥 <b>FAIL:</b> A static fonts directory with at least two fonts must accompany variable fonts</summary>
-
-* [com.google.fonts/check/repo/vf_has_static_fonts](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/vf_has_static_fonts)
-<pre>--- Rationale ---
-
-Variable font family directories kept in the google/fonts git repo must include
-a static/ subdir containing static fonts.
-These files are meant to be served for users that still lack support for
-variable fonts in their web browsers.
-
-
-</pre>
-
-* 🔥 **FAIL** Please create a subdirectory called "static/" and include in it static font files. [code: missing]
-
-</details>
+<summary><b>[152] SignikaSC[NEGA,wght].ttf</b></summary>
 <details>
 <summary>⚠ <b>WARN:</b> Font has old ttfautohint applied?</summary>
 
@@ -247,26 +230,6 @@ installed in the system.
 </pre>
 
 * ⚠ **WARN** ttfautohint used in font = 1.8.1.43-b0c9; installed = 1.8.3; Need to re-run with the newer version! [code: old-ttfa]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Font contains .notdef as first glyph?</summary>
-
-* [com.google.fonts/check/mandatory_glyphs](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/mandatory_glyphs)
-<pre>--- Rationale ---
-
-The OpenType specification v1.8.2 recommends that the first glyph is the
-.notdef glyph without a codepoint assigned and with a drawing.
-
-https://docs.microsoft.com/en-us/typography/opentype/spec/recom#glyph-0-the-notdef-glyph
-
-Pre-v1.8, it was recommended that a font should also contain a .null, CR and
-space glyph. This might have been relevant for applications on MacOS 9.
-
-
-</pre>
-
-* ⚠ **WARN** Font should contain the .notdef glyph as the first glyph, it should not have a Unicode value assigned and should contain a drawing.
 
 </details>
 <details>
@@ -867,14 +830,6 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Checking with ftxvalidator.</summary>
-
-* [com.google.fonts/check/ftxvalidator](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/ftxvalidator)
-
-* 💤 **SKIP** Unfulfilled Conditions: ftxvalidator_is_available
-
-</details>
-<details>
 <summary>💤 <b>SKIP:</b> Is the CFF subr/gsubr call depth > 10?</summary>
 
 * [com.adobe.fonts/check/cff_call_depth](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/cff.html#com.adobe.fonts/check/cff_call_depth)
@@ -1059,10 +1014,10 @@ of hinted versus unhinted font files.
 
 	|  | fonts/signikavfsc/SignikaSC[NEGA,wght].ttf |
 	|:--- | ---:|
-	| Dehinted Size | 491.0kb |
-	| Hinted Size | 562.0kb |
-	| Increase | 71.1kb |
-	| Change   | 14.5 % |
+	| Dehinted Size | 505.3kb |
+	| Hinted Size | 576.8kb |
+	| Increase | 71.5kb |
+	| Change   | 14.1 % |
  [code: size-impact]
 
 </details>
@@ -1154,7 +1109,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [DSIG, GSUB, gasp, fpgm, cvt , loca, prep, GPOS]
+* ℹ **INFO** This font contains the following optional tables [gasp, prep, GPOS, cvt , fpgm, loca, GSUB, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -1613,7 +1568,8 @@ So, all variable fonts on the Google Fonts collection should have an HVAR with
 valid values.
 
 More info on the HVAR table can be found at:
-https://docs.microsoft.com/en-us/typography/opentype/spec/otvaroverview#variation-data-tables-and-miscellaneous-requirements
+https://docs.microsoft.com/en-us/typography/opentype/spec
+/otvaroverview#variation-data-tables-and-miscellaneous-requirements
 
 
 </pre>
@@ -1912,11 +1868,40 @@ take care of their own situation.
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> Checking with ftxvalidator.</summary>
+
+* [com.google.fonts/check/ftxvalidator](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/ftxvalidator)
+
+* 🍞 **PASS** ftxvalidator passed this file
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Checking with ots-sanitize.</summary>
 
 * [com.google.fonts/check/ots](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/ots)
 
 * 🍞 **PASS** ots-sanitize passed this file
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Font contains .notdef as first glyph?</summary>
+
+* [com.google.fonts/check/mandatory_glyphs](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/mandatory_glyphs)
+<pre>--- Rationale ---
+
+The OpenType specification v1.8.2 recommends that the first glyph is the
+.notdef glyph without a codepoint assigned and with a drawing.
+
+https://docs.microsoft.com/en-us/typography/opentype/spec
+/recom#glyph-0-the-notdef-glyph
+
+Pre-v1.8, it was recommended that a font should also contain a .null, CR and
+space glyph. This might have been relevant for applications on MacOS 9.
+
+
+</pre>
+
+* 🍞 **PASS** Font contains the .notdef glyph as the first glyph, it does not have a Unicode value assigned and contains a drawing.
 
 </details>
 <details>
@@ -1973,6 +1958,13 @@ underscore, i.e. from the set [A-Za-z0-9_.] and should start with a letter,
 except the special glyph name &quot;.notdef&quot; which starts with a period.&#x27;
 
 https://docs.microsoft.com/en-us/typography/opentype/spec/recom#post-table
+
+
+In practice, though, particularly in modern environments, glyph names can be as
+long as 63 characters.
+According to the &quot;Adobe Glyph List Specification&quot; available at:
+
+https://github.com/adobe-type-tools/agl-specification
 
 
 </pre>
@@ -2291,11 +2283,11 @@ Reference: https://github.com/googlefonts/fontbakery/issues/1845
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Whitespace and non-breaking space have the same width?</summary>
+<summary>🍞 <b>PASS:</b> Space and non-breaking space have the same width?</summary>
 
 * [com.google.fonts/check/whitespace_widths](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/hmtx.html#com.google.fonts/check/whitespace_widths)
 
-* 🍞 **PASS** Whitespace and non-breaking space have the same width.
+* 🍞 **PASS** Space and non-breaking space have the same width.
 
 </details>
 <details>
@@ -2452,5 +2444,5 @@ On the &#x27;wdth&#x27; (Width) axis, the valid coordinate range is 1-1000
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 1 | 3 | 67 | 8 | 88 | 0 |
-| 0% | 1% | 2% | 40% | 5% | 53% | 0% |
+| 0 | 0 | 1 | 66 | 8 | 91 | 0 |
+| 0% | 0% | 1% | 40% | 5% | 55% | 0% |

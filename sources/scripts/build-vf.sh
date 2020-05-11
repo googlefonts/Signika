@@ -6,6 +6,7 @@ pathNOSC="fonts/signikavf/Signika[NEGA,wght].ttf"
 pathSC="fonts/signikavfsc/SignikaSC[NEGA,wght].ttf"
 tmp="variable_ttf/Signika-VF.ttf"
 tmpSC="variable_ttf/Signika-VFSC.ttf"
+dsPath="master_ufo/Signika.designspace"
 
 #------------------------------------------------------------------------------
 # Remove previous build folder
@@ -13,20 +14,35 @@ tmpSC="variable_ttf/Signika-VFSC.ttf"
 if [ -d "variable_ttf" ]; then
   rm -rf variable_ttf
 fi
+if [ -d "master_ufo" ]; then
+  rm -rf variable_ttf
+fi
+if [ -d "instance_ufo" ]; then
+  rm -rf variable_ttf
+fi
+
+rm -rf dsPath
 
 
 #------------------------------------------------------------------------------
 # Compile from sources
 #------------------------------------------------------------------------------
-## make temp glyphs file with "-build" suffix
+# make temp glyphs file with "-build" suffix
 tmpSource=${source/".glyphs"/"-Build.glyphs"}
 
-## copy Glyphs file into temp file
+# copy Glyphs file into temp file
 cp $source $tmpSource
-fontmake -g $tmpSource -o variable
+fontmake -g $tmpSource -o ufo --designspace-path=$dsPath
 
-# Replace the TTF VFs name table entries which inherit frmo the Light master
+# add rules
+python sources/scripts/helpers/add-rules-to-designspace.py
+
+# compute variable fonts
+fontmake -m $dsPath -o variable
+
+# Replace the TTF VFs name table entries which inherit from the Light master
 python sources/scripts/helpers/replace-family-name.py $tmp "Signika Light" "Signika"
+
 
 #------------------------------------------------------------------------------
 # Smallcap subsetting
@@ -40,7 +56,7 @@ python sources/scripts/helpers/pyftfeatfreeze.py -f 'smcp' $tmp $tmpSC
 # This removes the smcp features and involved glyphs
 echo "subsetting smallcap font"
 echo $tmpSC
-pyftsubset $tmpSC --unicodes="*" --name-IDs='*' --glyph-names --layout-features="*" --layout-features-="smcp" --recalc-bounds --recalc-average-width
+pyftsubset $tmpSC --unicodes="*" --name-IDs='*' --glyph-names --layout-features="*" --layout-features-="smcp" --recalc-bounds --recalc-average-width --notdef-glyph --notdef-outline
 
 # Replace the SC file with the pyftsubset generated .subset file
 rm -rf $tmpSC
@@ -101,5 +117,6 @@ cp $tmpSC $pathSC
 # Run fontbakery checks on the final files
 #------------------------------------------------------------------------------
 echo "Run fontbakery checks"
-fontbakery check-googlefonts $pathNOSC --ghmarkdown "fonts/signikavf/fontbakery-checks/Signika[NEGA,wght]-fontbakery-report.md"
-fontbakery check-googlefonts $pathSC --ghmarkdown "fonts/signikavfsc/fontbakery-checks/SignikaSC[NEGA,wght]-fontbakery-report.md"
+# Exclude the static folder check; not relevant in this source repo
+fontbakery check-googlefonts $pathNOSC --exclude-checkid "com.google.fonts/check/repo/vf_has_static_fonts" --ghmarkdown "fonts/signikavf/fontbakery-checks/Signika[NEGA,wght]-fontbakery-report.md"
+fontbakery check-googlefonts $pathSC --exclude-checkid "com.google.fonts/check/repo/vf_has_static_fonts" --ghmarkdown "fonts/signikavfsc/fontbakery-checks/SignikaSC[NEGA,wght]-fontbakery-report.md"

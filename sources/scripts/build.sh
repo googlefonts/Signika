@@ -5,11 +5,11 @@ while [ ! $# -eq 0 ]
             source $(dirname ${BASH_SOURCE[0]})/build-statics.sh
         ;;
         --vf | -vf)
-            source $(dirname ${BASH_SOURCE[0]})/build-vf.sh -f
+            source $(dirname ${BASH_SOURCE[0]})/build-vf.sh
         ;;
         --all | -a)
             source $(dirname ${BASH_SOURCE[0]})/build-statics.sh
-            source $(dirname ${BASH_SOURCE[0]})/build-vf.sh -f
+            source $(dirname ${BASH_SOURCE[0]})/build-vf.sh
         ;;
     esac
     shift

@@ -1,6 +1,6 @@
 ## Fontbakery report
 
-Fontbakery version: 0.7.23.dev7+ga779abba
+Fontbakery version: 0.7.24
 
 <details>
 <summary><b>[14] Family checks</b></summary>
@@ -9,9 +9,8 @@ Fontbakery version: 0.7.23.dev7+ga779abba
 
 * [com.google.fonts/check/fontbakery_version](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/fontbakery_version)
 
-* ℹ **INFO** fontbakery (0.7.22)  - Well designed Font QA tool, written in Python 3
-  INSTALLED: 0.7.23.dev7+ga779abba
-  LATEST:    0.7.22
+* ℹ **INFO** fontbakery (0.7.24)  - Well designed Font QA tool, written in Python 3
+  INSTALLED: 0.7.24 (latest)
 
 * 🍞 **PASS** Font Bakery is up-to-date
 
@@ -66,6 +65,29 @@ the files from a single family spreaded in several separate directories).
 </pre>
 
 * 🍞 **PASS** All files are in the same directory.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Is the command `ftxvalidator` (Apple Font Tool Suite) available?</summary>
+
+* [com.google.fonts/check/ftxvalidator_is_available](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/ftxvalidator_is_available)
+<pre>--- Rationale ---
+
+There&#x27;s no reasonable (and legal) way to run the command `ftxvalidator` of the
+Apple Font Tool Suite on a non-macOS machine. I.e. on GNU+Linux or Windows etc.
+
+If Font Bakery is not running on an OSX machine, the machine running Font
+Bakery could access `ftxvalidator` on OSX, e.g. via ssh or a remote procedure
+call (rpc).
+
+There&#x27;s an ssh example implementation at:
+https://github.com/googlefonts/fontbakery/blob/master/prebuilt/workarounds
+/ftxvalidator/ssh-implementation/ftxvalidator
+
+
+</pre>
+
+* 🍞 **PASS** ftxvalidator is available at /Users/johannes/bin/ftxvalidator
 
 </details>
 <details>
@@ -190,49 +212,10 @@ field, using bits 0 and 5.
 * 💤 **SKIP** Unfulfilled Conditions: RIBBI_ttFonts
 
 </details>
-<details>
-<summary>⚠ <b>WARN:</b> Is the command `ftxvalidator` (Apple Font Tool Suite) available?</summary>
-
-* [com.google.fonts/check/ftxvalidator_is_available](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/ftxvalidator_is_available)
-<pre>--- Rationale ---
-
-There&#x27;s no reasonable (and legal) way to run the command `ftxvalidator` of the
-Apple Font Tool Suite on a non-macOS machine. I.e. on GNU+Linux or Windows etc.
-
-If Font Bakery is not running on an OSX machine, the machine running Font
-Bakery could access `ftxvalidator` on OSX, e.g. via ssh or a remote procedure
-call (rpc).
-
-There&#x27;s an ssh example implementation at:
-https://github.com/googlefonts/fontbakery/blob/master/prebuilt/workarounds/ftxvalidator/ssh-implementation/ftxvalidator
-
-
-</pre>
-
-* ⚠ **WARN** ftxvalidator is not available.
-
-</details>
 <br>
 </details>
 <details>
-<summary><b>[153] Signika[NEGA,wght].ttf</b></summary>
-<details>
-<summary>🔥 <b>FAIL:</b> A static fonts directory with at least two fonts must accompany variable fonts</summary>
-
-* [com.google.fonts/check/repo/vf_has_static_fonts](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/vf_has_static_fonts)
-<pre>--- Rationale ---
-
-Variable font family directories kept in the google/fonts git repo must include
-a static/ subdir containing static fonts.
-These files are meant to be served for users that still lack support for
-variable fonts in their web browsers.
-
-
-</pre>
-
-* 🔥 **FAIL** Please create a subdirectory called "static/" and include in it static font files. [code: missing]
-
-</details>
+<summary><b>[152] Signika[NEGA,wght].ttf</b></summary>
 <details>
 <summary>⚠ <b>WARN:</b> Font has old ttfautohint applied?</summary>
 
@@ -247,6 +230,275 @@ installed in the system.
 </pre>
 
 * ⚠ **WARN** ttfautohint used in font = 1.8.1.43-b0c9; installed = 1.8.3; Need to re-run with the newer version! [code: old-ttfa]
+
+</details>
+<details>
+<summary>⚠ <b>WARN:</b> Are there caret positions declared for every ligature?</summary>
+
+* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+<pre>--- Rationale ---
+
+All ligatures in a font must have corresponding caret (text cursor) positions
+defined in the GDEF table, otherwhise, users may experience issues with caret
+rendering.
+
+
+</pre>
+
+* ⚠ **WARN** This font lacks caret positioning values for these ligature glyphs:
+	- ico.write
+	- ico.cloudsmall
+	- ico.hamburger
+	- ico.squarearrowright
+	- ico.extinguisher
+	- ico.escalatorup
+	- ico.bellringing
+	- ico.trashbin
+	- ico.squareadd
+	- ico.tag
+	- ico.atm
+	- ico.snowflake
+	- ico.grill
+	- ico.onoff
+	- ico.baby
+	- ico.umbrella
+	- ico.policeman
+	- ico.statistics
+	- ico.hourglass
+	- ico.factory
+	- ico.envelope
+	- ico.elevator
+	- ico.menu
+	- ico.circlewarning
+	- ico.mobile
+	- ico.croissant
+	- ico.dogonleash
+	- ico.church
+	- ico.gift
+	- ico.settings3
+	- ico.squarecheck2
+	- ico.key
+	- ico.fireman
+	- ico.sorting1
+	- ico.park2
+	- ico.skyscraper
+	- ico.attachement
+	- ico.settings4
+	- ico.babychange
+	- ico.disabled
+	- ico.windy
+	- ico.batteryfull
+	- ico.car
+	- ico.rain
+	- ico.tram
+	- ico.ticket
+	- ico.bicycle
+	- ico.cocktail2
+	- ico.location
+	- ico.castle
+	- ico.flag
+	- ico.unlocked
+	- ico.calendar
+	- ico.waterarea
+	- ico.battery60
+	- ico.plant
+	- ico.settings
+	- ico.playground
+	- ico.sunbig
+	- ico.circle
+	- ico.microphone
+	- ico.pizza
+	- ico.send
+	- ico.icecream
+	- ico.monument
+	- ico.filter
+	- ico.trees
+	- ico.circlemenu
+	- ico.clouddownload
+	- ico.glasses
+	- ico.motorbike
+	- ico.nosmoking
+	- ico.mosque
+	- ico.cloudbig
+	- ico.printer
+	- ico.tablet
+	- ico.siren
+	- ico.champagne
+	- ico.volumeon
+	- ico.squarequestion
+	- ico.cloudyday
+	- ico.suitcase
+	- ico.camera
+	- ico.taxi
+	- ico.airplane
+	- ico.woman
+	- ico.circleinfo
+	- ico.lighthouse
+	- ico.museum
+	- ico.baggagecart
+	- ico.volumeup
+	- ico.squaremenu
+	- ico.history
+	- ico.exit
+	- ico.basketball
+	- ico.briefcase
+	- ico.storm
+	- ico.timer
+	- ico.wallet
+	- ico.trolleybus
+	- ico.signpost
+	- ico.clouds
+	- ico.cocktal1
+	- ico.circlearrowup
+	- ico.cashdesk
+	- ico.wifi
+	- ico.education
+	- ico.hail
+	- ico.luggagestorage
+	- ico.squarecheck1
+	- ico.zoomout
+	- ico.zoomin
+	- ico.coffeetogo
+	- ico.globe
+	- ico.carwash
+	- ico.bed
+	- ico.circlequestion
+	- ico.skyscraper2
+	- ico.edit
+	- ico.circlecheck1
+	- ico.escalatordown
+	- ico.apartements2
+	- ico.squareoverflowmenu
+	- ico.loading
+	- ico.creditcard
+	- ico.sunsmall
+	- ico.minimize
+	- ico.cinema
+	- ico.parking
+	- ico.securitycheck
+	- ico.speechbubble
+	- ico.stadium
+	- ico.publicbuilding
+	- ico.download
+	- ico.snow
+	- ico.apple
+	- ico.dog
+	- ico.infoterminal
+	- ico.swimmingpool
+	- ico.star
+	- ico.archive
+	- ico.circlearrowright
+	- ico.downstairs
+	- ico.securityfail
+	- ico.reproductor
+	- ico.circleclose
+	- ico.train
+	- ico.supermarket
+	- ico.lightbulb
+	- ico.whisky
+	- ico.leaf
+	- ico.cableway
+	- ico.hospital
+	- ico.cutlery
+	- ico.nurse
+	- ico.tea
+	- ico.shower
+	- ico.squarearrrowleft
+	- ico.securitywarning
+	- ico.man
+	- ico.maximize
+	- ico.dislike
+	- ico.batteryempty
+	- ico.water
+	- ico.pictures
+	- ico.square
+	- ico.eyeclosed
+	- ico.smoking
+	- ico.hanger
+	- ico.coffee
+	- ico.wind
+	- ico.fountain
+	- ico.squarearrowdown
+	- ico.user
+	- ico.pharmacy
+	- ico.lemonade
+	- ico.house
+	- ico.moon
+	- ico.beer
+	- ico.lightbulbon
+	- ico.squarewarning
+	- ico.bus
+	- ico.cloudupload
+	- ico.picnictable
+	- ico.securitycamera
+	- ico.firehose
+	- ico.bell
+	- ico.takeoff
+	- ico.heart
+	- ico.apatements1
+	- ico.download2
+	- ico.money
+	- ico.squareuser
+	- ico.circlefail
+	- ico.cloudynight
+	- ico.sorting2
+	- ico.shoppingcart
+	- ico.eyeopen
+	- ico.foggy
+	- ico.squarefilled
+	- ico.upload
+	- ico.volumeoff
+	- ico.shoppingbasket
+	- ico.squareinfo
+	- ico.locked
+	- ico.enter
+	- ico.volumedown
+	- ico.magnifier
+	- ico.circleadd
+	- ico.circlefilled
+	- ico.torygate
+	- ico.lostandfound
+	- ico.handbag
+	- ico.charging
+	- ico.fireexit
+	- ico.circlearrowdown
+	- ico.sailboat
+	- ico.circleowerflowmenu
+	- ico.landing
+	- ico.time
+	- ico.upstairs
+	- ico.circlearrowleft
+	- ico.mappin
+	- ico.circlecheck2
+	- ico.users
+	- ico.binoculars
+	- ico.stroller
+	- ico.home
+	- ico.squareclose
+	- ico.like
+	- ico.shop
+	- ico.anchor
+	- ico.battery30
+	- ico.bookmark
+	- ico.alarm
+	- ico.circleuser
+	- ico.call
+	- ico.gasstation
+	- ico.squarearrowup
+	- ico.desktop
+	- ico.documents
+	- ico.picture
+	- ico.town
+	- ico.escalator
+	- ico.park1
+	- ico.picnicpark
+	- ico.boat
+	- ico.trophy
+	- ico.wine
+	- ico.upload2
+	- ico.settings2
+
+   [code: incomplete-caret-pos-data]
 
 </details>
 <details>
@@ -269,6 +521,335 @@ https://github.com/impallari/Raleway/issues/14).
 	- f + l
 	- l + f
 	- i + l
+	- i + c
+	- c + o
+	- o + period
+	- period + c
+	- c + i
+	- i + r
+	- r + c
+	- c + l
+	- l + e
+	- e + o
+	- o + w
+	- w + e
+	- e + r
+	- r + f
+	- l + o
+	- w + m
+	- m + e
+	- e + n
+	- n + u
+	- u + c
+	- period + s
+	- s + q
+	- q + u
+	- u + a
+	- a + r
+	- r + e
+	- o + v
+	- v + e
+	- e + a
+	- r + r
+	- r + o
+	- w + r
+	- r + i
+	- i + g
+	- g + h
+	- h + t
+	- t + c
+	- w + l
+	- e + f
+	- f + t
+	- w + d
+	- d + o
+	- w + n
+	- n + c
+	- s + e
+	- e + c
+	- c + u
+	- u + r
+	- i + t
+	- t + y
+	- y + w
+	- w + a
+	- r + n
+	- n + i
+	- i + n
+	- n + g
+	- g + c
+	- e + q
+	- u + e
+	- e + s
+	- s + t
+	- t + i
+	- i + o
+	- o + n
+	- period + l
+	- l + u
+	- u + g
+	- g + g
+	- g + a
+	- a + g
+	- g + e
+	- t + o
+	- o + r
+	- r + a
+	- period + p
+	- p + u
+	- u + b
+	- b + l
+	- l + i
+	- c + b
+	- b + u
+	- u + i
+	- l + d
+	- d + i
+	- y + c
+	- c + a
+	- a + m
+	- a + c
+	- s + h
+	- h + o
+	- o + p
+	- p + p
+	- p + i
+	- g + b
+	- b + a
+	- a + s
+	- s + k
+	- k + e
+	- e + t
+	- w + u
+	- u + p
+	- p + c
+	- e + w
+	- o + u
+	- u + d
+	- d + d
+	- n + l
+	- o + a
+	- a + d
+	- d + c
+	- period + e
+	- s + c
+	- a + l
+	- l + a
+	- a + t
+	- r + d
+	- c + h
+	- h + e
+	- c + k
+	- k + c
+	- period + a
+	- a + p
+	- p + a
+	- r + t
+	- t + e
+	- e + m
+	- n + t
+	- t + s
+	- s + two
+	- two + c
+	- period + b
+	- t + t
+	- r + y
+	- y + e
+	- m + p
+	- p + t
+	- k + one
+	- one + c
+	- k + two
+	- l + l
+	- e + d
+	- e + x
+	- x + t
+	- g + u
+	- i + s
+	- period + i
+	- n + f
+	- f + o
+	- o + t
+	- r + m
+	- m + i
+	- n + a
+	- l + c
+	- o + s
+	- t + a
+	- a + n
+	- n + d
+	- d + f
+	- u + n
+	- y + f
+	- f + a
+	- a + i
+	- s + p
+	- p + e
+	- e + e
+	- h + b
+	- b + b
+	- s + w
+	- w + i
+	- i + m
+	- m + m
+	- g + p
+	- p + o
+	- o + o
+	- o + l
+	- s + one
+	- f + u
+	- u + l
+	- b + e
+	- e + l
+	- l + r
+	- g + i
+	- d + u
+	- p + l
+	- d + y
+	- y + n
+	- r + u
+	- t + b
+	- l + b
+	- b + o
+	- c + n
+	- c + t
+	- a + b
+	- period + r
+	- e + p
+	- p + r
+	- o + d
+	- k + y
+	- y + s
+	- c + r
+	- r + two
+	- s + u
+	- m + a
+	- r + k
+	- e + two
+	- b + y
+	- h + a
+	- b + i
+	- n + o
+	- o + c
+	- r + s
+	- e + i
+	- e + u
+	- u + s
+	- d + s
+	- s + m
+	- o + f
+	- f + e
+	- o + g
+	- g + o
+	- period + d
+	- h + c
+	- n + s
+	- period + g
+	- s + s
+	- t + h
+	- period + m
+	- p + h
+	- n + e
+	- c + p
+	- a + y
+	- y + g
+	- g + r
+	- c + s
+	- period + t
+	- t + r
+	- e + y
+	- y + b
+	- period + v
+	- v + o
+	- u + m
+	- y + six
+	- six + zero
+	- zero + c
+	- y + three
+	- three + zero
+	- b + r
+	- i + e
+	- f + c
+	- g + n
+	- y + d
+	- d + a
+	- k + t
+	- l + two
+	- o + i
+	- s + a
+	- d + two
+	- period + h
+	- m + b
+	- r + g
+	- g + l
+	- b + c
+	- m + o
+	- r + b
+	- i + k
+	- period + n
+	- o + k
+	- k + i
+	- c + e
+	- g + s
+	- s + four
+	- four + c
+	- s + three
+	- three + c
+	- s + n
+	- w + f
+	- a + k
+	- period + w
+	- r + p
+	- k + m
+	- h + d
+	- d + e
+	- d + b
+	- l + one
+	- e + v
+	- v + a
+	- n + v
+	- period + f
+	- x + i
+	- e + h
+	- m + c
+	- a + x
+	- i + z
+	- z + e
+	- c + y
+	- t + u
+	- s + i
+	- n + p
+	- s + o
+	- g + one
+	- g + two
+	- period + u
+	- p + s
+	- h + i
+	- i + v
+	- r + w
+	- u + t
+	- t + l
+	- s + l
+	- i + u
+	- period + z
+	- z + o
+	- o + m
+	- h + u
+	- l + t
+	- o + b
+	- m + u
+	- n + b
+	- h + y
+	- w + h
+	- g + y
+	- period + o
+	- z + z
+	- z + a
+	- w + o
+	- a + f
+	- w + c
+	- t + m
+	- period + k
 
    [code: lacks-kern-info]
 
@@ -810,14 +1391,6 @@ checks that nameID 1 is the family name + the style name.
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Checking with ftxvalidator.</summary>
-
-* [com.google.fonts/check/ftxvalidator](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/ftxvalidator)
-
-* 💤 **SKIP** Unfulfilled Conditions: ftxvalidator_is_available
-
-</details>
-<details>
 <summary>💤 <b>SKIP:</b> Is the CFF subr/gsubr call depth > 10?</summary>
 
 * [com.adobe.fonts/check/cff_call_depth](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/cff.html#com.adobe.fonts/check/cff_call_depth)
@@ -1002,10 +1575,10 @@ of hinted versus unhinted font files.
 
 	|  | fonts/signikavf/Signika[NEGA,wght].ttf |
 	|:--- | ---:|
-	| Dehinted Size | 598.6kb |
-	| Hinted Size | 678.1kb |
-	| Increase | 79.4kb |
-	| Change   | 13.3 % |
+	| Dehinted Size | 621.1kb |
+	| Hinted Size | 709.7kb |
+	| Increase | 88.5kb |
+	| Change   | 14.3 % |
  [code: size-impact]
 
 </details>
@@ -1113,7 +1686,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [cvt , fpgm, loca, gasp, GSUB, GPOS, prep, DSIG]
+* ℹ **INFO** This font contains the following optional tables [GPOS, GSUB, loca, gasp, fpgm, DSIG, prep, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -1557,7 +2130,8 @@ So, all variable fonts on the Google Fonts collection should have an HVAR with
 valid values.
 
 More info on the HVAR table can be found at:
-https://docs.microsoft.com/en-us/typography/opentype/spec/otvaroverview#variation-data-tables-and-miscellaneous-requirements
+https://docs.microsoft.com/en-us/typography/opentype/spec
+/otvaroverview#variation-data-tables-and-miscellaneous-requirements
 
 
 </pre>
@@ -1706,22 +2280,6 @@ Bit 3 = Force ppem to integer values for all internal scaler math;
 </pre>
 
 * 🍞 **PASS** OK
-
-</details>
-<details>
-<summary>🍞 <b>PASS:</b> Are there caret positions declared for every ligature?</summary>
-
-* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
-<pre>--- Rationale ---
-
-All ligatures in a font must have corresponding caret (text cursor) positions
-defined in the GDEF table, otherwhise, users may experience issues with caret
-rendering.
-
-
-</pre>
-
-* 🍞 **PASS** Looks good!
 
 </details>
 <details>
@@ -1901,6 +2459,14 @@ take care of their own situation.
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> Checking with ftxvalidator.</summary>
+
+* [com.google.fonts/check/ftxvalidator](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/ftxvalidator)
+
+* 🍞 **PASS** ftxvalidator passed this file
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Checking with ots-sanitize.</summary>
 
 * [com.google.fonts/check/ots](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/ots)
@@ -1917,7 +2483,8 @@ take care of their own situation.
 The OpenType specification v1.8.2 recommends that the first glyph is the
 .notdef glyph without a codepoint assigned and with a drawing.
 
-https://docs.microsoft.com/en-us/typography/opentype/spec/recom#glyph-0-the-notdef-glyph
+https://docs.microsoft.com/en-us/typography/opentype/spec
+/recom#glyph-0-the-notdef-glyph
 
 Pre-v1.8, it was recommended that a font should also contain a .null, CR and
 space glyph. This might have been relevant for applications on MacOS 9.
@@ -1982,6 +2549,13 @@ underscore, i.e. from the set [A-Za-z0-9_.] and should start with a letter,
 except the special glyph name &quot;.notdef&quot; which starts with a period.&#x27;
 
 https://docs.microsoft.com/en-us/typography/opentype/spec/recom#post-table
+
+
+In practice, though, particularly in modern environments, glyph names can be as
+long as 63 characters.
+According to the &quot;Adobe Glyph List Specification&quot; available at:
+
+https://github.com/adobe-type-tools/agl-specification
 
 
 </pre>
@@ -2300,11 +2874,11 @@ Reference: https://github.com/googlefonts/fontbakery/issues/1845
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Whitespace and non-breaking space have the same width?</summary>
+<summary>🍞 <b>PASS:</b> Space and non-breaking space have the same width?</summary>
 
 * [com.google.fonts/check/whitespace_widths](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/hmtx.html#com.google.fonts/check/whitespace_widths)
 
-* 🍞 **PASS** Whitespace and non-breaking space have the same width.
+* 🍞 **PASS** Space and non-breaking space have the same width.
 
 </details>
 <details>
@@ -2461,5 +3035,5 @@ On the &#x27;wdth&#x27; (Width) axis, the valid coordinate range is 1-1000
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 1 | 3 | 64 | 9 | 90 | 0 |
-| 0% | 1% | 2% | 38% | 5% | 54% | 0% |
+| 0 | 0 | 3 | 63 | 9 | 91 | 0 |
+| 0% | 0% | 2% | 38% | 5% | 55% | 0% |
