@@ -56,7 +56,7 @@ python sources/scripts/helpers/pyftfeatfreeze.py -f 'smcp' $tmp $tmpSC
 # This removes the smcp features and involved glyphs
 echo "subsetting smallcap font"
 echo $tmpSC
-pyftsubset $tmpSC --unicodes="*" --name-IDs='*' --glyph-names --layout-features="*" --layout-features-="smcp" --recalc-bounds --recalc-average-width
+pyftsubset $tmpSC --unicodes="*" --name-IDs='*' --glyph-names --layout-features="*" --layout-features-="smcp" --recalc-bounds --recalc-average-width --notdef-glyph --notdef-outline
 
 # Replace the SC file with the pyftsubset generated .subset file
 rm -rf $tmpSC

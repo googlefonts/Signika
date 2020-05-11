@@ -54,7 +54,7 @@ if [ -f "$file" ]; then
     echo $file
 
     # Replace the swapped or unswapped ".bold" glyphs
-    pyftsubset $file --unicodes='*' --name-IDs='*' --glyph-names --layout-features="*"
+    pyftsubset $file --unicodes='*' --name-IDs='*' --glyph-names --layout-features="*" --notdef-glyph --notdef-outline
     rm -rf $file
     mv ${file/".ttf"/".subset.ttf"} $file
 
@@ -82,7 +82,7 @@ if [ -f "$file" ]; then
     
     echo "subsetting smallcap font"
     echo $smallCapFile
-    pyftsubset $smallCapFile --unicodes='*' --name-IDs='*' --glyph-names --layout-features="*" --layout-features-='smcp' --recalc-bounds --recalc-average-width
+    pyftsubset $smallCapFile --unicodes='*' --name-IDs='*' --glyph-names --layout-features="*" --layout-features-='smcp' --recalc-bounds --recalc-average-width  --notdef-glyph --notdef-outline
 
     # Replace the SC file with the pyftsubset output from the generated file
     rm -rf $smallCapFile

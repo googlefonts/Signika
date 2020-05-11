@@ -233,27 +233,6 @@ installed in the system.
 
 </details>
 <details>
-<summary>⚠ <b>WARN:</b> Font contains .notdef as first glyph?</summary>
-
-* [com.google.fonts/check/mandatory_glyphs](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/mandatory_glyphs)
-<pre>--- Rationale ---
-
-The OpenType specification v1.8.2 recommends that the first glyph is the
-.notdef glyph without a codepoint assigned and with a drawing.
-
-https://docs.microsoft.com/en-us/typography/opentype/spec
-/recom#glyph-0-the-notdef-glyph
-
-Pre-v1.8, it was recommended that a font should also contain a .null, CR and
-space glyph. This might have been relevant for applications on MacOS 9.
-
-
-</pre>
-
-* ⚠ **WARN** Font should contain the .notdef glyph as the first glyph, it should not have a Unicode value assigned and should contain a drawing.
-
-</details>
-<details>
 <summary>💤 <b>SKIP:</b> Check METADATA.pb parse correctly.</summary>
 
 * [com.google.fonts/check/metadata/parses](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/parses)
@@ -1035,9 +1014,9 @@ of hinted versus unhinted font files.
 
 	|  | fonts/signikavfsc/SignikaSC[NEGA,wght].ttf |
 	|:--- | ---:|
-	| Dehinted Size | 504.9kb |
-	| Hinted Size | 576.3kb |
-	| Increase | 71.4kb |
+	| Dehinted Size | 505.3kb |
+	| Hinted Size | 576.8kb |
+	| Increase | 71.5kb |
 	| Change   | 14.1 % |
  [code: size-impact]
 
@@ -1130,7 +1109,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [fpgm, loca, DSIG, gasp, GPOS, prep, cvt , GSUB]
+* ℹ **INFO** This font contains the following optional tables [loca, DSIG, gasp, fpgm, GSUB, prep, GPOS, cvt ]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -1905,6 +1884,27 @@ take care of their own situation.
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> Font contains .notdef as first glyph?</summary>
+
+* [com.google.fonts/check/mandatory_glyphs](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/mandatory_glyphs)
+<pre>--- Rationale ---
+
+The OpenType specification v1.8.2 recommends that the first glyph is the
+.notdef glyph without a codepoint assigned and with a drawing.
+
+https://docs.microsoft.com/en-us/typography/opentype/spec
+/recom#glyph-0-the-notdef-glyph
+
+Pre-v1.8, it was recommended that a font should also contain a .null, CR and
+space glyph. This might have been relevant for applications on MacOS 9.
+
+
+</pre>
+
+* 🍞 **PASS** Font contains the .notdef glyph as the first glyph, it does not have a Unicode value assigned and contains a drawing.
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Font contains glyphs for whitespace characters?</summary>
 
 * [com.google.fonts/check/whitespace_glyphs](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_glyphs)
@@ -2444,5 +2444,5 @@ On the &#x27;wdth&#x27; (Width) axis, the valid coordinate range is 1-1000
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 0 | 2 | 66 | 8 | 90 | 0 |
-| 0% | 0% | 1% | 40% | 5% | 54% | 0% |
+| 0 | 0 | 1 | 66 | 8 | 91 | 0 |
+| 0% | 0% | 1% | 40% | 5% | 55% | 0% |

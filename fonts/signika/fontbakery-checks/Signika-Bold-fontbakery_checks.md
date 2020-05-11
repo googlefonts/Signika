@@ -221,7 +221,7 @@ value ranges accross all the files.
 
 * [com.google.fonts/check/production_glyphs_similarity](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity)
 
-* ⚠ **WARN** Following glyphs differ greatly from Google Fonts version: [onequarter, threequarters, uni2074, currency, exclam, sterling, degree, yen, onehalf, Euro, exclamdown, dollar, fraction, percent]
+* ⚠ **WARN** Following glyphs differ greatly from Google Fonts version: [degree, onequarter, onehalf, exclamdown, exclam, fraction, sterling, .notdef, dollar, currency, threequarters, percent, uni2074, Euro, yen]
 
 </details>
 <details>
@@ -254,8 +254,8 @@ Glyph name: uni1E08	Contours detected: 3	Expected: 2
 Glyph name: uni1E09	Contours detected: 3	Expected: 2
 Glyph name: uni1E1C	Contours detected: 3	Expected: 2
 Glyph name: uni1E1D	Contours detected: 4	Expected: 3
-Glyph name: uni1E08	Contours detected: 3	Expected: 2
 Glyph name: uni1E1D	Contours detected: 4	Expected: 3
+Glyph name: uni1E08	Contours detected: 3	Expected: 2
 Glyph name: uni1E09	Contours detected: 3	Expected: 2
 Glyph name: uni1E1C	Contours detected: 3	Expected: 2 [code: contour-count]
 
@@ -274,257 +274,257 @@ rendering.
 </pre>
 
 * ⚠ **WARN** This font lacks caret positioning values for these ligature glyphs:
-	- ico.unlocked
-	- ico.reproductor
-	- ico.waterarea
-	- ico.torygate
-	- ico.glasses
-	- ico.storm
-	- ico.water
-	- ico.hourglass
-	- ico.bookmark
-	- ico.tea
-	- ico.write
-	- ico.apartements2
-	- ico.mappin
-	- ico.shower
-	- ico.nurse
-	- ico.wine
-	- ico.download
-	- ico.charging
-	- ico.star
-	- ico.settings4
-	- ico.firehose
-	- ico.rain
-	- ico.zoomout
-	- ico.desktop
-	- ico.pharmacy
-	- ico.volumeon
-	- ico.circlewarning
-	- ico.like
-	- ico.printer
-	- ico.squarequestion
-	- ico.hamburger
-	- ico.siren
-	- ico.skyscraper2
-	- ico.apple
-	- ico.wind
-	- ico.circlequestion
-	- ico.hanger
-	- ico.windy
-	- ico.time
-	- ico.squarearrowup
-	- ico.escalatorup
-	- ico.squaremenu
-	- ico.camera
-	- ico.squarearrrowleft
-	- ico.babychange
-	- ico.gasstation
-	- ico.bellringing
-	- ico.infoterminal
-	- ico.archive
-	- ico.squarefilled
-	- ico.trophy
-	- ico.beer
-	- ico.coffee
-	- ico.stroller
-	- ico.man
-	- ico.cocktal1
-	- ico.tram
-	- ico.circleowerflowmenu
-	- ico.lighthouse
-	- ico.cinema
-	- ico.dog
-	- ico.extinguisher
-	- ico.locked
-	- ico.key
-	- ico.umbrella
-	- ico.picture
-	- ico.bell
-	- ico.clouddownload
-	- ico.playground
-	- ico.tag
-	- ico.binoculars
-	- ico.heart
-	- ico.edit
-	- ico.lemonade
-	- ico.smoking
-	- ico.squareuser
-	- ico.cloudynight
-	- ico.settings
-	- ico.call
-	- ico.circleclose
-	- ico.square
-	- ico.elevator
-	- ico.bed
-	- ico.downstairs
-	- ico.circlearrowup
-	- ico.circlearrowdown
-	- ico.upload2
-	- ico.dislike
-	- ico.eyeclosed
-	- ico.download2
-	- ico.factory
-	- ico.clouds
-	- ico.grill
-	- ico.park2
-	- ico.cocktail2
 	- ico.cloudsmall
-	- ico.lightbulbon
-	- ico.house
-	- ico.speechbubble
-	- ico.coffeetogo
-	- ico.squareinfo
-	- ico.picnictable
-	- ico.ticket
-	- ico.statistics
-	- ico.squareoverflowmenu
-	- ico.carwash
-	- ico.escalatordown
-	- ico.timer
-	- ico.envelope
-	- ico.circlefilled
-	- ico.supermarket
-	- ico.upload
-	- ico.stadium
-	- ico.parking
-	- ico.creditcard
-	- ico.disabled
-	- ico.sorting2
-	- ico.hail
-	- ico.settings2
-	- ico.lightbulb
-	- ico.lostandfound
-	- ico.squarecheck2
-	- ico.squareadd
-	- ico.landing
-	- ico.home
-	- ico.mosque
-	- ico.cloudbig
-	- ico.money
-	- ico.onoff
-	- ico.car
-	- ico.circlearrowright
-	- ico.shoppingbasket
-	- ico.settings3
+	- ico.elevator
 	- ico.airplane
-	- ico.upstairs
-	- ico.documents
-	- ico.circle
-	- ico.fountain
-	- ico.church
-	- ico.maximize
-	- ico.squarearrowdown
-	- ico.sorting1
-	- ico.motorbike
-	- ico.minimize
-	- ico.luggagestorage
-	- ico.circlecheck1
-	- ico.cloudyday
-	- ico.circleadd
-	- ico.trolleybus
-	- ico.hospital
-	- ico.flag
-	- ico.cutlery
-	- ico.cashdesk
-	- ico.location
-	- ico.skyscraper
-	- ico.handbag
-	- ico.zoomin
-	- ico.mobile
-	- ico.foggy
-	- ico.taxi
-	- ico.securitycamera
-	- ico.wallet
-	- ico.education
-	- ico.users
-	- ico.baggagecart
-	- ico.dogonleash
-	- ico.fireman
-	- ico.pizza
-	- ico.cloudupload
-	- ico.sunbig
-	- ico.sailboat
-	- ico.alarm
-	- ico.fireexit
-	- ico.shop
-	- ico.escalator
-	- ico.loading
-	- ico.museum
-	- ico.circlemenu
-	- ico.battery30
-	- ico.microphone
-	- ico.volumedown
-	- ico.boat
-	- ico.globe
-	- ico.magnifier
-	- ico.town
-	- ico.nosmoking
-	- ico.shoppingcart
-	- ico.snow
-	- ico.monument
-	- ico.icecream
-	- ico.attachement
-	- ico.castle
-	- ico.train
-	- ico.suitcase
-	- ico.champagne
-	- ico.picnicpark
-	- ico.atm
-	- ico.send
-	- ico.volumeup
-	- ico.gift
-	- ico.squarewarning
-	- ico.securitywarning
-	- ico.plant
-	- ico.circleinfo
-	- ico.menu
-	- ico.circlefail
-	- ico.trashbin
-	- ico.squarecheck1
-	- ico.policeman
-	- ico.pictures
-	- ico.woman
-	- ico.filter
-	- ico.eyeopen
-	- ico.circleuser
-	- ico.cableway
-	- ico.park1
-	- ico.circlearrowleft
-	- ico.enter
-	- ico.securityfail
-	- ico.whisky
-	- ico.baby
-	- ico.volumeoff
-	- ico.user
-	- ico.batteryfull
-	- ico.squarearrowright
-	- ico.wifi
-	- ico.sunsmall
-	- ico.batteryempty
-	- ico.trees
-	- ico.briefcase
-	- ico.bicycle
-	- ico.anchor
-	- ico.exit
-	- ico.takeoff
-	- ico.apatements1
+	- ico.rain
 	- ico.squareclose
-	- ico.signpost
-	- ico.publicbuilding
-	- ico.history
-	- ico.croissant
-	- ico.bus
-	- ico.calendar
-	- ico.securitycheck
-	- ico.swimmingpool
-	- ico.snowflake
-	- ico.leaf
-	- ico.circlecheck2
-	- ico.basketball
-	- ico.battery60
+	- ico.skyscraper
+	- ico.squaremenu
+	- ico.squarewarning
+	- ico.download2
+	- ico.money
+	- ico.squarearrowup
+	- ico.dog
+	- ico.circleuser
 	- ico.moon
+	- ico.pictures
+	- ico.taxi
+	- ico.icecream
+	- ico.factory
+	- ico.luggagestorage
+	- ico.nosmoking
+	- ico.archive
+	- ico.picnictable
+	- ico.batteryempty
+	- ico.circlecheck1
+	- ico.whisky
+	- ico.squareuser
+	- ico.circlearrowdown
+	- ico.history
+	- ico.users
+	- ico.onoff
+	- ico.squarequestion
+	- ico.write
+	- ico.publicbuilding
+	- ico.landing
+	- ico.circle
+	- ico.securitywarning
+	- ico.binoculars
+	- ico.firehose
+	- ico.education
+	- ico.sunsmall
+	- ico.picture
+	- ico.sailboat
+	- ico.bellringing
+	- ico.volumedown
+	- ico.baby
+	- ico.carwash
+	- ico.volumeoff
+	- ico.lemonade
+	- ico.foggy
+	- ico.car
+	- ico.wallet
+	- ico.lightbulbon
+	- ico.circlearrowright
+	- ico.documents
+	- ico.wine
+	- ico.torygate
+	- ico.cutlery
+	- ico.bicycle
+	- ico.pharmacy
+	- ico.lighthouse
+	- ico.settings2
+	- ico.park2
+	- ico.cableway
+	- ico.man
+	- ico.tag
+	- ico.star
+	- ico.upload2
+	- ico.mappin
+	- ico.circlewarning
+	- ico.coffeetogo
+	- ico.hospital
+	- ico.anchor
+	- ico.apartements2
+	- ico.clouds
+	- ico.trees
+	- ico.speechbubble
+	- ico.cashdesk
+	- ico.sorting1
+	- ico.settings3
+	- ico.gasstation
+	- ico.apple
+	- ico.hamburger
+	- ico.settings4
+	- ico.castle
+	- ico.stadium
+	- ico.infoterminal
+	- ico.squarearrowright
+	- ico.pizza
+	- ico.lostandfound
+	- ico.settings
+	- ico.gift
+	- ico.extinguisher
+	- ico.home
+	- ico.loading
+	- ico.lightbulb
+	- ico.securitycheck
+	- ico.storm
+	- ico.call
+	- ico.briefcase
+	- ico.statistics
+	- ico.disabled
+	- ico.shop
+	- ico.timer
+	- ico.cinema
+	- ico.microphone
+	- ico.trolleybus
+	- ico.house
+	- ico.handbag
+	- ico.coffee
+	- ico.squarecheck1
+	- ico.shower
+	- ico.monument
+	- ico.cloudbig
+	- ico.bus
+	- ico.parking
+	- ico.like
+	- ico.location
+	- ico.squarearrrowleft
+	- ico.maximize
+	- ico.camera
+	- ico.ticket
+	- ico.volumeon
+	- ico.envelope
+	- ico.globe
+	- ico.stroller
+	- ico.trophy
+	- ico.send
+	- ico.batteryfull
+	- ico.alarm
+	- ico.croissant
+	- ico.escalatorup
+	- ico.cloudyday
+	- ico.squareadd
+	- ico.tea
+	- ico.unlocked
+	- ico.circlemenu
+	- ico.waterarea
+	- ico.circleclose
+	- ico.locked
+	- ico.circlearrowup
+	- ico.printer
+	- ico.leaf
+	- ico.nurse
+	- ico.basketball
+	- ico.upstairs
+	- ico.dogonleash
+	- ico.park1
+	- ico.beer
+	- ico.desktop
+	- ico.enter
+	- ico.skyscraper2
+	- ico.creditcard
+	- ico.key
+	- ico.takeoff
+	- ico.cloudynight
+	- ico.circlefail
+	- ico.zoomin
+	- ico.dislike
+	- ico.fountain
+	- ico.squarefilled
+	- ico.atm
+	- ico.charging
+	- ico.policeman
+	- ico.woman
+	- ico.bed
+	- ico.time
+	- ico.cocktail2
+	- ico.attachement
+	- ico.flag
+	- ico.filter
 	- ico.tablet
+	- ico.church
+	- ico.wind
+	- ico.picnicpark
+	- ico.fireman
+	- ico.circleinfo
+	- ico.edit
+	- ico.circleadd
+	- ico.mobile
+	- ico.upload
+	- ico.hourglass
+	- ico.circleowerflowmenu
+	- ico.signpost
+	- ico.exit
+	- ico.swimmingpool
+	- ico.water
+	- ico.cocktal1
+	- ico.windy
+	- ico.bookmark
+	- ico.wifi
+	- ico.escalator
+	- ico.museum
+	- ico.magnifier
+	- ico.hail
+	- ico.circlecheck2
+	- ico.circlearrowleft
+	- ico.shoppingcart
+	- ico.hanger
+	- ico.minimize
+	- ico.circlefilled
+	- ico.bell
+	- ico.umbrella
+	- ico.menu
+	- ico.eyeclosed
+	- ico.smoking
+	- ico.circlequestion
+	- ico.apatements1
+	- ico.boat
+	- ico.securityfail
+	- ico.sunbig
+	- ico.train
+	- ico.squarearrowdown
+	- ico.calendar
+	- ico.sorting2
+	- ico.playground
+	- ico.fireexit
+	- ico.siren
+	- ico.cloudupload
+	- ico.supermarket
+	- ico.champagne
+	- ico.tram
+	- ico.grill
+	- ico.squarecheck2
+	- ico.download
+	- ico.eyeopen
+	- ico.zoomout
+	- ico.escalatordown
+	- ico.battery60
+	- ico.square
+	- ico.suitcase
+	- ico.plant
+	- ico.squareinfo
+	- ico.user
+	- ico.trashbin
+	- ico.babychange
+	- ico.squareoverflowmenu
+	- ico.reproductor
+	- ico.motorbike
+	- ico.clouddownload
+	- ico.mosque
+	- ico.battery30
+	- ico.snowflake
+	- ico.snow
+	- ico.heart
+	- ico.downstairs
+	- ico.glasses
+	- ico.securitycamera
+	- ico.town
+	- ico.baggagecart
+	- ico.volumeup
+	- ico.shoppingbasket
 
    [code: incomplete-caret-pos-data]
 
@@ -880,27 +880,6 @@ https://github.com/impallari/Raleway/issues/14).
 	- period + k
 
    [code: lacks-kern-info]
-
-</details>
-<details>
-<summary>⚠ <b>WARN:</b> Font contains .notdef as first glyph?</summary>
-
-* [com.google.fonts/check/mandatory_glyphs](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/mandatory_glyphs)
-<pre>--- Rationale ---
-
-The OpenType specification v1.8.2 recommends that the first glyph is the
-.notdef glyph without a codepoint assigned and with a drawing.
-
-https://docs.microsoft.com/en-us/typography/opentype/spec
-/recom#glyph-0-the-notdef-glyph
-
-Pre-v1.8, it was recommended that a font should also contain a .null, CR and
-space glyph. This might have been relevant for applications on MacOS 9.
-
-
-</pre>
-
-* ⚠ **WARN** Font should contain the .notdef glyph as the first glyph, it should not have a Unicode value assigned and should contain a drawing.
 
 </details>
 <details>
@@ -1712,9 +1691,9 @@ of hinted versus unhinted font files.
 
 	|  | fonts/signika/Signika-Bold.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 252.6kb |
-	| Hinted Size | 345.7kb |
-	| Increase | 93.1kb |
+	| Dehinted Size | 252.8kb |
+	| Hinted Size | 346.0kb |
+	| Increase | 93.2kb |
 	| Change   | 36.9 % |
  [code: size-impact]
 
@@ -1823,7 +1802,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [DSIG, GSUB, fpgm, cvt , GPOS, loca, prep, gasp]
+* ℹ **INFO** This font contains the following optional tables [prep, fpgm, loca, GPOS, cvt , GSUB, DSIG, gasp]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -2601,6 +2580,27 @@ take care of their own situation.
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> Font contains .notdef as first glyph?</summary>
+
+* [com.google.fonts/check/mandatory_glyphs](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/mandatory_glyphs)
+<pre>--- Rationale ---
+
+The OpenType specification v1.8.2 recommends that the first glyph is the
+.notdef glyph without a codepoint assigned and with a drawing.
+
+https://docs.microsoft.com/en-us/typography/opentype/spec
+/recom#glyph-0-the-notdef-glyph
+
+Pre-v1.8, it was recommended that a font should also contain a .null, CR and
+space glyph. This might have been relevant for applications on MacOS 9.
+
+
+</pre>
+
+* 🍞 **PASS** Font contains the .notdef glyph as the first glyph, it does not have a Unicode value assigned and contains a drawing.
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Font contains glyphs for whitespace characters?</summary>
 
 * [com.google.fonts/check/whitespace_glyphs](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_glyphs)
@@ -3066,5 +3066,5 @@ the same x,y coordinates.
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 0 | 5 | 64 | 9 | 89 | 0 |
-| 0% | 0% | 3% | 38% | 5% | 53% | 0% |
+| 0 | 0 | 4 | 64 | 9 | 90 | 0 |
+| 0% | 0% | 2% | 38% | 5% | 54% | 0% |
