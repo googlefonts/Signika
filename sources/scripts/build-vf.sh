@@ -1,267 +1,122 @@
-set -x
+# Set bash to exit on errors and print all commands
+set -x -e
 
-while [ ! $# -eq 0 ]
-    do
-    case "$1" in
-        --full | -f)
-            fullVF=true
-            splitVF=false
-            negativeSplit=false
+source="sources/sources-buildready/Signika-MM-prepped_designspace.glyphs"
+pathNOSC="fonts/signikavf/Signika[NEGA,wght].ttf"
+pathSC="fonts/signikavfsc/SignikaSC[NEGA,wght].ttf"
+tmp="variable_ttf/Signika-VF.ttf"
+tmpSC="variable_ttf/Signika-VFSC.ttf"
+dsPath="master_ufo/Signika.designspace"
 
-            glyphsSource="sources/sources-buildready/Signika-MM-prepped_designspace.glyphs"
-            finalLocation="fonts/signika/full_vf"
-            scFinalLocation="fonts/signikasc/full_vf"
-        ;;
-        --normal | -n)
-            fullVF=false
-            splitVF=true
-
-            glyphsSource="sources/sources-buildready/Signika-MM-prepped_designspace-split.glyphs"
-            finalLocation="fonts/signika/split_vf"
-            scFinalLocation="fonts/signikasc/split_vf"
-
-            negativeSplit=true
-
-            negGlyphsSource="sources/sources-buildready/Signika-MM-prepped_designspace-split-negative.glyphs"
-            negFinalLocation="fonts/signikanegative/split_vf"
-            negScFinalLocation="fonts/signikanegativesc/split_vf"
-        ;;
-        *) 
-            echo "Error: please supply an argument of --normal (-n) or --full (-f)"
-    esac
-    shift
-done
-
-# if varfont folder exists, clean it up
+#------------------------------------------------------------------------------
+# Remove previous build folder
+#------------------------------------------------------------------------------
 if [ -d "variable_ttf" ]; then
   rm -rf variable_ttf
 fi
-
-# ============================================================================
-# Set up names ===============================================================
-
-# get font name from glyphs source
-VFname=`python sources/scripts/helpers/get-font-name.py ${glyphsSource}`
-# VFname='Signika-Light'
-# checking that the name has been pulled out of the source file
-echo "VF Name: ${VFname}"
-
-# smallCapFontName, e..g 'SignikaSC-VF'
-smallCapFontName=${VFname/"-"/"SC-"}
-
-## make temp glyphs filename with "-build" suffix
-tempGlyphsSource=${glyphsSource/".glyphs"/"-Build.glyphs"}
-
-## copy Glyphs file into temp file
-cp $glyphsSource $tempGlyphsSource
-
-if [ $negativeSplit == true ]
-then
-    # get font name from glyphs source
-    negVFname=`python sources/scripts/helpers/get-font-name.py ${negGlyphsSource}`
-    # negVFname='SignikaNegative-Light'
-    # checking that the name has been pulled out of the source file
-    echo "Negative VF Name: ${negVFname}"
-
-    # smallCapFontName, e..g 'SignikaSC-VF'
-    negSmallCapFontName=${negVFname/"-"/"SC-"}
-
-    ## make temp glyphs filename with "-build" suffix
-    negTempGlyphsSource=${negGlyphsSource/".glyphs"/"-Build.glyphs"}
-
-    cp $negGlyphsSource $negTempGlyphsSource
+if [ -d "master_ufo" ]; then
+  rm -rf variable_ttf
+fi
+if [ -d "instance_ufo" ]; then
+  rm -rf variable_ttf
 fi
 
-# ============================================================================
-# Generate Variable Font =====================================================
+rm -rf dsPath
 
-## call fontmake to make a varfont
-fontmake -o variable -g $tempGlyphsSource
 
-if [ $negativeSplit == true ]
-then
-    fontmake -o variable -g $negTempGlyphsSource
-fi
+#------------------------------------------------------------------------------
+# Compile from sources
+#------------------------------------------------------------------------------
+# make temp glyphs file with "-build" suffix
+tmpSource=${source/".glyphs"/"-Build.glyphs"}
 
-## clean up temp glyphs file
-rm -rf $tempGlyphsSource
-if [ $negativeSplit == true ]
-then
-    rm -rf $negTempGlyphsSource
-fi
+# copy Glyphs file into temp file
+cp $source $tmpSource
+fontmake -g $tmpSource -o ufo --designspace-path=$dsPath
+
+# add rules
+python sources/scripts/helpers/add-rules-to-designspace.py
+
+# compute variable fonts
+fontmake -m $dsPath -o variable
+
+# Replace the TTF VFs name table entries which inherit from the Light master
+python sources/scripts/helpers/replace-family-name.py $tmp "Signika Light" "Signika"
+
+
+#------------------------------------------------------------------------------
+# Smallcap subsetting
+#------------------------------------------------------------------------------
+
+# Making a SC "frozen" font
+# This mapps all smcp glyphs to their "substitute" and also renames their names with suffix "SC"
+python sources/scripts/helpers/pyftfeatfreeze.py -f 'smcp' $tmp $tmpSC
+
+# Removing SC from the font
+# This removes the smcp features and involved glyphs
+echo "subsetting smallcap font"
+echo $tmpSC
+pyftsubset $tmpSC --unicodes="*" --name-IDs='*' --glyph-names --layout-features="*" --layout-features-="smcp" --recalc-bounds --recalc-average-width --notdef-glyph --notdef-outline
+
+# Replace the SC file with the pyftsubset generated .subset file
+rm -rf $tmpSC
+mv ${tmpSC/".ttf"/".subset.ttf"} $tmpSC
+
+#--------------------------------------------------------------------------
+# Update names in font with smallcaps suffix
+#--------------------------------------------------------------------------
+python sources/scripts/helpers/replace-family-name.py "$tmpSC" "Signika" "Signika SC"
+
 
 for file in variable_ttf/*; do 
-    cp $file ${file/"VF"/"Light"}
-    rm $file
-done
-# ============================================================================
-# SmallCap subsetting ========================================================
+if [ -f "$file" ]; then
 
-ttx variable_ttf/Signika-Light.ttf
-ttxPath="variable_ttf/Signika-Light.ttx"
-
-#get glyph names, minus .smcp glyphs
-subsetGlyphNames=`python sources/scripts/helpers/get-smallcap-subset-glyphnames.py $ttxPath`
-rm -rf $ttxPath
-
-echo $subsetGlyphNames
-
-for file in variable_ttf/*; do 
-if [ -f "$file" ]; then 
-
-    if [[ $file != *"SignikaNegative-"* ]]; then
-        smallCapFile=${file/"Signika"/"SignikaSC"}
-        familyName="Signika"
-    fi
-    if [[ $file == *"SignikaNegative-"* ]]; then
-        smallCapFile=${file/"SignikaNegative"/"SignikaNegativeSC"}
-        familyName="Signika Negative"
-    fi
-
-    python sources/scripts/helpers/pyftfeatfreeze.py -f 'smcp' $file $smallCapFile
-    
-    echo "subsetting smallcap font"
-    # subsetting with subsetGlyphNames list
-    pyftsubset --name-IDs='*' $smallCapFile $subsetGlyphNames --glyph-names --notdef-glyph
-
-    subsetSmallCapFile=${smallCapFile/".ttf"/".subset.ttf"}
-    rm -rf $smallCapFile
-    mv $subsetSmallCapFile $smallCapFile
-
-    smallCapSuffix="SC"
-    # update names in font with smallcaps suffix
-    python sources/scripts/helpers/add-smallcaps-suffix.py $smallCapFile $smallCapSuffix "$familyName"
-
-fi 
-done
-
-
-
-# ============================================================================
-# Autohinting ================================================================
-
-for file in variable_ttf/*; do 
-if [ -f "$file" ]; then 
-    # echo "fix DSIG in " ${file}
+    #--------------------------------------------------------------------------
+    # Fix DSIG
+    #--------------------------------------------------------------------------
+    echo "Fix DSIG in " ${file}
+    file="${file}"
     gftools fix-dsig --autofix ${file}
 
-    echo "TTFautohint " ${file}
-    # autohint with detailed info
+
+    #--------------------------------------------------------------------------
+    # Autohint with detailed info
+    #--------------------------------------------------------------------------
+    echo "TTFautohint ${file}" 
     hintedFile=${file/".ttf"/"-hinted.ttf"}
-    
-    # Hint with TTFautohint-VF ... currently janky – it would be better to properly add this dependency
-    # https://groups.google.com/forum/#!searchin/googlefonts-discuss/ttfautohint%7Csort:date/googlefonts-discuss/WJX1lrzcwVs/SIzaEvntAgAJ
-    # ./Users/stephennixon/Environments/gfonts3/bin/ttfautohint-vf ${ttfPath} ${ttfPath/"-unhinted.ttf"/"-hinted.ttf"}
-    echo "------------------------------------------------"
-    echo ttfautohint-vf $file $hintedFile --stem-width-mode nnn --increase-x-height 9
-    echo "------------------------------------------------"
-    ttfautohint-vf -I $file $hintedFile --stem-width-mode nnn --increase-x-height 9
 
-    cp ${hintedFile} ${file}
-    rm -rf ${hintedFile}
+    ./sources/scripts/helpers/ttfautohint-vf -I $file $hintedFile --stem-width-mode nnn --increase-x-height 9
+    gftools fix-hinting $hintedFile # will create a file suffixed with .fix
+    fixedFile="${hintedFile}.fix"
+    cp $fixedFile $file # copy back to original ttf
 
-    
+    rm -rf $hintedFile # remove the -hinted.ttf file
+    rm -rf $fixedFile # remove the -hinted.ttf.fix file
+
+
+    #--------------------------------------------------------------------------
+    # Various fixes MVAR
+    #--------------------------------------------------------------------------
+    echo "Fix MVAR and other name tables in ${file}"
+    gftools fix-unwanted-tables $file
+
 fi 
 done
 
-# ============================================================================
-# OpenType table fixes =======================================================
 
-insertPatch()
-{
-    FILE=$1
+#------------------------------------------------------------------------------
+# Copy to final location
+#------------------------------------------------------------------------------
+echo "Copy $tmp to output location $path"
+cp $tmp $pathNOSC
+echo "Copy $tmpSC to output location $pathSC"
+cp $tmpSC $pathSC
 
-    echo $FILE
 
-    ## sets up temp ttx file to insert correct values into tables # also drops MVAR table to fix vertical metrics issue
-    ttx -x "MVAR" $FILE
-
-    ttxPath=${FILE/".ttf"/".ttx"}
-    patchPath=${ttxPath/".ttx"/"-patch.ttx"}
-    rm -rf $FILE
-
-    echo "---------------------------------------------------"
-    if [[ $fullVF == true && $splitVF == false ]]; then
-        cp $ttxPath $patchPath
-        if [[ $file != *"SC"* ]]; then
-        cat $patchPath | tr '\n' '\r' | sed -e "s~<name>.*<\/name>~$(cat sources/scripts/helpers/patches/NAMEpatch.xml | tr '\n' '\r')~" | tr '\r' '\n' > $ttxPath
-        fi
-        if [[ $file == *"SC"* ]]; then
-        cat $patchPath | tr '\n' '\r' | sed -e "s~<name>.*<\/name>~$(cat sources/scripts/helpers/patches/NAMEpatch-SC.xml | tr '\n' '\r')~" | tr '\r' '\n' > $ttxPath
-        fi
-        rm -rf $patchPath
-
-        cp $ttxPath $patchPath
-        echo "---------------------------------------------------"
-        cat $patchPath | tr '\n' '\r' | sed -e "s~<STAT>.*<\/STAT>~$(cat sources/scripts/helpers/patches/STATpatch.xml | tr '\n' '\r')~" | tr '\r' '\n' > $ttxPath
-        rm -rf $patchPath
-    fi
-
-    ttx $ttxPath
-    rm -rf $ttxPath
-
-    if [[ $fullVF == false && $splitVF == true ]]; then
-        # Marc's solution to fix VF metadata
-        gftools fix-vf-meta $FILE
-        mv "$FILE.fix" $FILE
-    fi
-}
-
-for file in variable_ttf/*; do 
-    if [[ $file == *".ttf" ]]; then 
-        insertPatch $file
-    fi
-done
-
-# ============================================================================
-# Sort into final folder =====================================================
-
-# set this to true/false at top of script
-for file in variable_ttf/*; do 
-    if [ -f "$file" ]; then 
-        # open VF in default program; hopefully you have FontView
-        open ${file}
-        
-        fileName=$(basename $file)
-        fileName=${fileName/"VF"/"Light"}
-
-        if [[ $fullVF == true && $splitVF == false ]]; then
-            if [[ $file != *"SC"* ]]; then
-                cp $file $finalLocation/$fileName
-                echo "new VF location is " $finalLocation/$fileName
-                fontbakery check-googlefonts $finalLocation/$fileName --ghmarkdown $finalLocation/${fileName/".ttf"/"-fontbakery-report.md"}
-            fi
-            if [[ $file == *"SC"* ]]; then
-                cp $file $scFinalLocation/$fileName
-                echo "new VF location is " $scFinalLocation/$fileName
-                fontbakery check-googlefonts $scFinalLocation/$fileName --ghmarkdown $scFinalLocation/${fileName/".ttf"/"-fontbakery-report.md"}
-            fi
-        fi
-
-        if [[ $splitVF == true && $fullVF == false ]]; then
-            if [[ $file != *"Negative"* && $file != *"SC"* ]]; then
-                cp $file $finalLocation/$fileName
-                echo "new VF location is " $finalLocation/$fileName
-                fontbakery check-googlefonts $finalLocation/$fileName --ghmarkdown $finalLocation/${fileName/".ttf"/"-fontbakery-report.md"}
-            fi
-            if [[ $file != *"Negative"* && $file == *"SC"* ]]; then
-                cp $file $scFinalLocation/$fileName
-                echo "new VF location is " $scFinalLocation/$fileName
-                fontbakery check-googlefonts $scFinalLocation/$fileName --ghmarkdown $scFinalLocation/${fileName/".ttf"/"-fontbakery-report.md"}
-            fi
-            if [[ $file == *"Negative"* && $file != *"SC"* ]]; then
-                cp $file $negFinalLocation/$fileName
-                echo "new VF location is " $negFinalLocation/$fileName
-                fontbakery check-googlefonts $negFinalLocation/$fileName --ghmarkdown $negFinalLocation/${fileName/".ttf"/"-fontbakery-report.md"}
-            fi
-            if [[ $file == *"Negative"* && $file == *"SC"* ]]; then
-                cp $file $negScFinalLocation/$fileName
-                echo "new VF location is " $negScFinalLocation/$fileName
-                fontbakery check-googlefonts $negScFinalLocation/$fileName --ghmarkdown $negScFinalLocation/${fileName/".ttf"/"-fontbakery-report.md"}
-            fi
-        fi
-
-    fi
-done
-
-# rm -rf variable_ttf
+#------------------------------------------------------------------------------
+# Run fontbakery checks on the final files
+#------------------------------------------------------------------------------
+echo "Run fontbakery checks"
+# Exclude the static folder check; not relevant in this source repo
+fontbakery check-googlefonts $pathNOSC --exclude-checkid "com.google.fonts/check/repo/vf_has_static_fonts" --ghmarkdown "fonts/signikavf/fontbakery-checks/Signika[NEGA,wght]-fontbakery-report.md"
+fontbakery check-googlefonts $pathSC --exclude-checkid "com.google.fonts/check/repo/vf_has_static_fonts" --ghmarkdown "fonts/signikavfsc/fontbakery-checks/SignikaSC[NEGA,wght]-fontbakery-report.md"
