@@ -1183,10 +1183,10 @@ of hinted versus unhinted font files.
 
 	|  | fonts/signikanegativesc/SignikaNegativeSC-Regular.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 192.2kb |
-	| Hinted Size | 258.4kb |
-	| Increase | 66.2kb |
-	| Change   | 34.4 % |
+	| Dehinted Size | 198.6kb |
+	| Hinted Size | 279.2kb |
+	| Increase | 80.6kb |
+	| Change   | 40.6 % |
  [code: size-impact]
 
 </details>
@@ -1278,7 +1278,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [DSIG, prep, GSUB, cvt , loca, fpgm, GPOS, gasp]
+* ℹ **INFO** This font contains the following optional tables [GSUB, gasp, GPOS, prep, cvt , loca, DSIG, fpgm]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>

@@ -32,13 +32,7 @@ tmpSource=${source/".glyphs"/"-Build.glyphs"}
 
 # copy Glyphs file into temp file
 cp $source $tmpSource
-fontmake -g $tmpSource -o ufo --designspace-path=$dsPath
-
-# add rules
-python sources/scripts/helpers/add-rules-to-designspace.py
-
-# compute variable fonts
-fontmake -m $dsPath -o variable
+fontmake -g $tmpSource -o variable
 
 # Replace the TTF VFs name table entries which inherit from the Light master
 python sources/scripts/helpers/replace-family-name.py $tmp "Signika Light" "Signika"

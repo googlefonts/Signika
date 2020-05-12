@@ -293,8 +293,8 @@ Glyph name: uni1EC3.smcp	Contours detected: 3	Expected: 4
 Glyph name: uni1EC5.smcp	Contours detected: 3	Expected: 4
 Glyph name: uni1EC7.smcp	Contours detected: 3	Expected: 4
 Glyph name: uni1ECB.smcp	Contours detected: 2	Expected: 3
-Glyph name: uni1E08	Contours detected: 3	Expected: 2
-Glyph name: uni1E1C	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1E1C	Contours detected: 3	Expected: 2
+Glyph name: uni1E08	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -1211,10 +1211,10 @@ of hinted versus unhinted font files.
 
 	|  | fonts/signikanegativesc/SignikaNegativeSC-Light.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 191.8kb |
-	| Hinted Size | 250.6kb |
-	| Increase | 58.8kb |
-	| Change   | 30.6 % |
+	| Dehinted Size | 198.2kb |
+	| Hinted Size | 261.4kb |
+	| Increase | 63.2kb |
+	| Change   | 31.9 % |
  [code: size-impact]
 
 </details>
@@ -1306,7 +1306,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [cvt , loca, prep, GSUB, gasp, DSIG, GPOS, fpgm]
+* ℹ **INFO** This font contains the following optional tables [loca, prep, DSIG, GSUB, cvt , gasp, fpgm, GPOS]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
