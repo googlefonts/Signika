@@ -94,4 +94,4 @@ Further updates to the production code were undertaken in a 2020 refactor and ex
 
 ---
 
-![](docs/08-specimen/charset-tall-alt_title.png)
+![](docs/10-PDF-specimens/Signika_strip_specimen.png)
