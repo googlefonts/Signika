@@ -221,7 +221,7 @@ value ranges accross all the files.
 
 * [com.google.fonts/check/production_glyphs_similarity](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity)
 
-* ⚠ **WARN** Following glyphs differ greatly from Google Fonts version: [currency, degree, sterling, fraction, Euro, onehalf, .notdef, percent]
+* ⚠ **WARN** Following glyphs differ greatly from Google Fonts version: [.notdef, degree, Euro, sterling, percent, currency, onehalf, fraction]
 
 </details>
 <details>
@@ -261,275 +261,6 @@ Glyph name: uni1E1D	Contours detected: 4	Expected: 3 [code: contour-count]
 
 </details>
 <details>
-<summary>⚠ <b>WARN:</b> Are there caret positions declared for every ligature?</summary>
-
-* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
-<pre>--- Rationale ---
-
-All ligatures in a font must have corresponding caret (text cursor) positions
-defined in the GDEF table, otherwhise, users may experience issues with caret
-rendering.
-
-
-</pre>
-
-* ⚠ **WARN** This font lacks caret positioning values for these ligature glyphs:
-	- ico.volumeup
-	- ico.disabled
-	- ico.circlemenu
-	- ico.cocktail2
-	- ico.bicycle
-	- ico.calendar
-	- ico.batteryempty
-	- ico.settings2
-	- ico.atm
-	- ico.escalator
-	- ico.location
-	- ico.apple
-	- ico.squaremenu
-	- ico.batteryfull
-	- ico.circlequestion
-	- ico.shoppingbasket
-	- ico.glasses
-	- ico.motorbike
-	- ico.zoomin
-	- ico.upload2
-	- ico.circle
-	- ico.charging
-	- ico.circlewarning
-	- ico.unlocked
-	- ico.shoppingcart
-	- ico.squarecheck1
-	- ico.minimize
-	- ico.handbag
-	- ico.mosque
-	- ico.settings3
-	- ico.picture
-	- ico.castle
-	- ico.cloudsmall
-	- ico.hail
-	- ico.wifi
-	- ico.sunbig
-	- ico.camera
-	- ico.maximize
-	- ico.education
-	- ico.rain
-	- ico.cableway
-	- ico.bed
-	- ico.snowflake
-	- ico.torygate
-	- ico.trophy
-	- ico.parking
-	- ico.bookmark
-	- ico.users
-	- ico.car
-	- ico.squareoverflowmenu
-	- ico.trolleybus
-	- ico.briefcase
-	- ico.wind
-	- ico.airplane
-	- ico.squarecheck2
-	- ico.firehose
-	- ico.circleinfo
-	- ico.printer
-	- ico.lemonade
-	- ico.hospital
-	- ico.edit
-	- ico.town
-	- ico.pharmacy
-	- ico.man
-	- ico.whisky
-	- ico.gift
-	- ico.tag
-	- ico.siren
-	- ico.babychange
-	- ico.wallet
-	- ico.history
-	- ico.call
-	- ico.settings
-	- ico.binoculars
-	- ico.volumedown
-	- ico.tablet
-	- ico.nurse
-	- ico.statistics
-	- ico.battery30
-	- ico.carwash
-	- ico.gasstation
-	- ico.loading
-	- ico.upload
-	- ico.picnicpark
-	- ico.securitycamera
-	- ico.circlearrowdown
-	- ico.hamburger
-	- ico.publicbuilding
-	- ico.key
-	- ico.cutlery
-	- ico.monument
-	- ico.home
-	- ico.cinema
-	- ico.circlefail
-	- ico.tea
-	- ico.squareinfo
-	- ico.park2
-	- ico.envelope
-	- ico.hanger
-	- ico.money
-	- ico.bus
-	- ico.enter
-	- ico.church
-	- ico.stadium
-	- ico.tram
-	- ico.eyeclosed
-	- ico.apatements1
-	- ico.extinguisher
-	- ico.circlecheck2
-	- ico.dogonleash
-	- ico.like
-	- ico.sorting2
-	- ico.grill
-	- ico.time
-	- ico.circlecheck1
-	- ico.anchor
-	- ico.pizza
-	- ico.pictures
-	- ico.waterarea
-	- ico.squarewarning
-	- ico.fountain
-	- ico.circleadd
-	- ico.securitywarning
-	- ico.filter
-	- ico.volumeoff
-	- ico.lightbulbon
-	- ico.squareadd
-	- ico.upstairs
-	- ico.bellringing
-	- ico.volumeon
-	- ico.signpost
-	- ico.wine
-	- ico.creditcard
-	- ico.water
-	- ico.boat
-	- ico.magnifier
-	- ico.cloudynight
-	- ico.menu
-	- ico.circlearrowleft
-	- ico.circleclose
-	- ico.playground
-	- ico.cashdesk
-	- ico.park1
-	- ico.user
-	- ico.ticket
-	- ico.skyscraper
-	- ico.smoking
-	- ico.cocktal1
-	- ico.download2
-	- ico.policeman
-	- ico.moon
-	- ico.star
-	- ico.escalatorup
-	- ico.securityfail
-	- ico.trees
-	- ico.attachement
-	- ico.snow
-	- ico.takeoff
-	- ico.bell
-	- ico.plant
-	- ico.squarearrowdown
-	- ico.icecream
-	- ico.museum
-	- ico.infoterminal
-	- ico.settings4
-	- ico.send
-	- ico.cloudupload
-	- ico.woman
-	- ico.basketball
-	- ico.stroller
-	- ico.archive
-	- ico.dislike
-	- ico.windy
-	- ico.squarearrrowleft
-	- ico.flag
-	- ico.taxi
-	- ico.picnictable
-	- ico.coffeetogo
-	- ico.sunsmall
-	- ico.battery60
-	- ico.elevator
-	- ico.squarearrowright
-	- ico.lostandfound
-	- ico.skyscraper2
-	- ico.trashbin
-	- ico.eyeopen
-	- ico.circleowerflowmenu
-	- ico.apartements2
-	- ico.zoomout
-	- ico.documents
-	- ico.clouddownload
-	- ico.desktop
-	- ico.circlearrowup
-	- ico.shower
-	- ico.sorting1
-	- ico.storm
-	- ico.fireman
-	- ico.download
-	- ico.beer
-	- ico.heart
-	- ico.squarefilled
-	- ico.train
-	- ico.escalatordown
-	- ico.mobile
-	- ico.exit
-	- ico.squareuser
-	- ico.speechbubble
-	- ico.fireexit
-	- ico.factory
-	- ico.cloudyday
-	- ico.onoff
-	- ico.alarm
-	- ico.house
-	- ico.suitcase
-	- ico.foggy
-	- ico.squarearrowup
-	- ico.umbrella
-	- ico.clouds
-	- ico.baby
-	- ico.croissant
-	- ico.swimmingpool
-	- ico.coffee
-	- ico.globe
-	- ico.baggagecart
-	- ico.sailboat
-	- ico.mappin
-	- ico.circlearrowright
-	- ico.write
-	- ico.leaf
-	- ico.square
-	- ico.timer
-	- ico.squarequestion
-	- ico.circlefilled
-	- ico.supermarket
-	- ico.reproductor
-	- ico.lighthouse
-	- ico.microphone
-	- ico.hourglass
-	- ico.lightbulb
-	- ico.circleuser
-	- ico.champagne
-	- ico.dog
-	- ico.locked
-	- ico.shop
-	- ico.landing
-	- ico.downstairs
-	- ico.luggagestorage
-	- ico.nosmoking
-	- ico.cloudbig
-	- ico.squareclose
-	- ico.securitycheck
-
-   [code: incomplete-caret-pos-data]
-
-</details>
-<details>
 <summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences?</summary>
 
 * [com.google.fonts/check/kerning_for_non_ligated_sequences](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences)
@@ -546,338 +277,16 @@ https://github.com/impallari/Raleway/issues/14).
 	- f + f
 	- f + i
 	- i + f
+	- f + j
+	- j + f
 	- f + l
 	- l + f
-	- i + l
-	- i + c
-	- c + o
-	- o + period
-	- period + c
-	- c + i
-	- i + r
-	- r + c
-	- c + l
-	- l + e
-	- e + o
-	- o + w
-	- w + e
-	- e + r
-	- r + f
-	- l + o
-	- w + m
-	- m + e
-	- e + n
-	- n + u
-	- u + c
-	- period + s
-	- s + q
-	- q + u
-	- u + a
-	- a + r
-	- r + e
-	- o + v
-	- v + e
-	- e + a
-	- r + r
-	- r + o
-	- w + r
-	- r + i
-	- i + g
-	- g + h
-	- h + t
-	- t + c
-	- w + l
-	- e + f
 	- f + t
-	- w + d
-	- d + o
-	- w + n
-	- n + c
-	- s + e
-	- e + c
-	- c + u
-	- u + r
-	- i + t
-	- t + y
-	- y + w
-	- w + a
-	- r + n
-	- n + i
-	- i + n
-	- n + g
-	- g + c
-	- e + q
-	- u + e
-	- e + s
-	- s + t
-	- t + i
-	- i + o
-	- o + n
-	- period + l
-	- l + u
-	- u + g
-	- g + g
-	- g + a
-	- a + g
-	- g + e
-	- t + o
-	- o + r
-	- r + a
-	- period + p
-	- p + u
-	- u + b
-	- b + l
-	- l + i
-	- c + b
-	- b + u
-	- u + i
-	- l + d
-	- d + i
-	- y + c
-	- c + a
-	- a + m
-	- a + c
-	- s + h
-	- h + o
-	- o + p
-	- p + p
-	- p + i
-	- g + b
-	- b + a
-	- a + s
-	- s + k
-	- k + e
-	- e + t
-	- w + u
-	- u + p
-	- p + c
-	- e + w
-	- o + u
-	- u + d
-	- d + d
-	- n + l
-	- o + a
-	- a + d
-	- d + c
-	- period + e
-	- s + c
-	- a + l
-	- l + a
-	- a + t
-	- r + d
-	- c + h
-	- h + e
-	- c + k
-	- k + c
-	- period + a
-	- a + p
-	- p + a
-	- r + t
-	- t + e
-	- e + m
-	- n + t
-	- t + s
-	- s + two
-	- two + c
-	- period + b
-	- t + t
-	- r + y
-	- y + e
-	- m + p
-	- p + t
-	- k + one
-	- one + c
-	- k + two
-	- l + l
-	- e + d
-	- e + x
-	- x + t
-	- g + u
-	- i + s
-	- period + i
-	- n + f
-	- f + o
-	- o + t
-	- r + m
-	- m + i
-	- n + a
-	- l + c
-	- o + s
-	- t + a
-	- a + n
-	- n + d
-	- d + f
-	- u + n
-	- y + f
-	- f + a
-	- a + i
-	- s + p
-	- p + e
-	- e + e
-	- h + b
-	- b + b
-	- s + w
-	- w + i
-	- i + m
-	- m + m
-	- g + p
-	- p + o
-	- o + o
-	- o + l
-	- s + one
-	- f + u
-	- u + l
-	- b + e
-	- e + l
-	- l + r
-	- g + i
-	- d + u
-	- p + l
-	- d + y
-	- y + n
-	- r + u
-	- t + b
-	- l + b
-	- b + o
-	- c + n
-	- c + t
-	- a + b
-	- period + r
-	- e + p
-	- p + r
-	- o + d
-	- k + y
-	- y + s
-	- c + r
-	- r + two
-	- s + u
-	- m + a
-	- r + k
-	- e + two
-	- b + y
-	- h + a
-	- b + i
-	- n + o
-	- o + c
-	- r + s
-	- e + i
-	- e + u
-	- u + s
-	- d + s
-	- s + m
-	- o + f
-	- f + e
-	- o + g
-	- g + o
-	- period + d
-	- h + c
-	- n + s
-	- period + g
-	- s + s
-	- t + h
-	- period + m
-	- p + h
-	- n + e
-	- c + p
-	- a + y
-	- y + g
-	- g + r
-	- c + s
-	- period + t
-	- t + r
-	- e + y
-	- y + b
-	- period + v
-	- v + o
-	- u + m
-	- y + six
-	- six + zero
-	- zero + c
-	- y + three
-	- three + zero
-	- b + r
-	- i + e
-	- f + c
-	- g + n
-	- y + d
-	- d + a
-	- k + t
-	- l + two
-	- o + i
-	- s + a
-	- d + two
-	- period + h
-	- m + b
-	- r + g
-	- g + l
-	- b + c
-	- m + o
-	- r + b
-	- i + k
-	- period + n
-	- o + k
-	- k + i
-	- c + e
-	- g + s
-	- s + four
-	- four + c
-	- s + three
-	- three + c
-	- s + n
-	- w + f
-	- a + k
-	- period + w
-	- r + p
-	- k + m
-	- h + d
-	- d + e
-	- d + b
-	- l + one
-	- e + v
-	- v + a
-	- n + v
-	- period + f
-	- x + i
-	- e + h
-	- m + c
-	- a + x
-	- i + z
-	- z + e
-	- c + y
-	- t + u
-	- s + i
-	- n + p
-	- s + o
-	- g + one
-	- g + two
-	- period + u
-	- p + s
-	- h + i
-	- i + v
-	- r + w
-	- u + t
-	- t + l
-	- s + l
-	- i + u
-	- period + z
-	- z + o
-	- o + m
-	- h + u
+	- t + f
+	- i + j
+	- j + l
 	- l + t
-	- o + b
-	- m + u
-	- n + b
-	- h + y
-	- w + h
-	- g + y
-	- period + o
-	- z + z
-	- z + a
-	- w + o
-	- a + f
-	- w + c
-	- t + m
-	- period + k
+	- v + i
 
    [code: lacks-kern-info]
 
@@ -1691,10 +1100,10 @@ of hinted versus unhinted font files.
 
 	|  | fonts/signika/Signika-Regular.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 250.8kb |
-	| Hinted Size | 324.8kb |
-	| Increase | 74.0kb |
-	| Change   | 29.5 % |
+	| Dehinted Size | 257.8kb |
+	| Hinted Size | 331.9kb |
+	| Increase | 74.1kb |
+	| Change   | 28.7 % |
  [code: size-impact]
 
 </details>
@@ -1802,7 +1211,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [gasp, fpgm, loca, cvt , prep, GPOS, DSIG, GSUB]
+* ℹ **INFO** This font contains the following optional tables [loca, GSUB, DSIG, gasp, cvt , prep, GPOS, fpgm]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -2401,6 +1810,22 @@ Bit 3 = Force ppem to integer values for all internal scaler math;
 </pre>
 
 * 🍞 **PASS** OK
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Are there caret positions declared for every ligature?</summary>
+
+* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+<pre>--- Rationale ---
+
+All ligatures in a font must have corresponding caret (text cursor) positions
+defined in the GDEF table, otherwhise, users may experience issues with caret
+rendering.
+
+
+</pre>
+
+* 🍞 **PASS** Looks good!
 
 </details>
 <details>
@@ -3066,5 +2491,5 @@ the same x,y coordinates.
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 0 | 4 | 64 | 9 | 90 | 0 |
+| 0 | 0 | 3 | 64 | 9 | 91 | 0 |
 | 0% | 0% | 2% | 38% | 5% | 54% | 0% |

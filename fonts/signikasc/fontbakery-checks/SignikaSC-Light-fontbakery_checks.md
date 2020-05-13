@@ -1183,10 +1183,10 @@ of hinted versus unhinted font files.
 
 	|  | fonts/signikasc/SignikaSC-Light.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 191.9kb |
-	| Hinted Size | 249.9kb |
-	| Increase | 58.0kb |
-	| Change   | 30.2 % |
+	| Dehinted Size | 198.3kb |
+	| Hinted Size | 262.0kb |
+	| Increase | 63.7kb |
+	| Change   | 32.1 % |
  [code: size-impact]
 
 </details>
@@ -1278,7 +1278,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [cvt , loca, DSIG, fpgm, prep, GPOS, GSUB, gasp]
+* ℹ **INFO** This font contains the following optional tables [DSIG, cvt , GPOS, gasp, loca, prep, fpgm, GSUB]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>

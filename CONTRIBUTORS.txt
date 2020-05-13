@@ -10,5 +10,6 @@
 # Name <email address>
 
 Anna Giedryś <anna@ancymonic.com>
+Johannes Neumeier <hello@underscoretype.com>
 Stephen Nixon <stephen@thundernixon.com>
 Peter Machaj <petermachaj.dizajn@gmail.com>

@@ -1183,10 +1183,10 @@ of hinted versus unhinted font files.
 
 	|  | fonts/signikasc/SignikaSC-SemiBold.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 193.4kb |
-	| Hinted Size | 261.0kb |
-	| Increase | 67.6kb |
-	| Change   | 34.9 % |
+	| Dehinted Size | 199.7kb |
+	| Hinted Size | 272.4kb |
+	| Increase | 72.7kb |
+	| Change   | 36.4 % |
  [code: size-impact]
 
 </details>
@@ -1278,7 +1278,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [prep, loca, DSIG, GSUB, cvt , fpgm, GPOS, gasp]
+* ℹ **INFO** This font contains the following optional tables [loca, cvt , prep, DSIG, GSUB, GPOS, gasp, fpgm]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>

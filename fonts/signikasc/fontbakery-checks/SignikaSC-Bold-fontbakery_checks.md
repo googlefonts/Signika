@@ -293,8 +293,8 @@ Glyph name: uni1EC3.smcp	Contours detected: 3	Expected: 4
 Glyph name: uni1EC5.smcp	Contours detected: 3	Expected: 4
 Glyph name: uni1EC7.smcp	Contours detected: 3	Expected: 4
 Glyph name: uni1ECB.smcp	Contours detected: 2	Expected: 3
-Glyph name: uni1E08	Contours detected: 3	Expected: 2
-Glyph name: uni1E1C	Contours detected: 3	Expected: 2 [code: contour-count]
+Glyph name: uni1E1C	Contours detected: 3	Expected: 2
+Glyph name: uni1E08	Contours detected: 3	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -1183,10 +1183,10 @@ of hinted versus unhinted font files.
 
 	|  | fonts/signikasc/SignikaSC-Bold.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 193.9kb |
-	| Hinted Size | 257.5kb |
-	| Increase | 63.5kb |
-	| Change   | 32.8 % |
+	| Dehinted Size | 200.2kb |
+	| Hinted Size | 283.5kb |
+	| Increase | 83.3kb |
+	| Change   | 41.6 % |
  [code: size-impact]
 
 </details>
@@ -1278,7 +1278,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [DSIG, GSUB, loca, GPOS, prep, gasp, cvt , fpgm]
+* ℹ **INFO** This font contains the following optional tables [DSIG, GSUB, fpgm, loca, gasp, GPOS, cvt , prep]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>

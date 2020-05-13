@@ -1014,10 +1014,10 @@ of hinted versus unhinted font files.
 
 	|  | fonts/signikavfsc/SignikaSC[NEGA,wght].ttf |
 	|:--- | ---:|
-	| Dehinted Size | 505.3kb |
-	| Hinted Size | 576.8kb |
-	| Increase | 71.5kb |
-	| Change   | 14.1 % |
+	| Dehinted Size | 509.6kb |
+	| Hinted Size | 589.3kb |
+	| Increase | 79.6kb |
+	| Change   | 15.6 % |
  [code: size-impact]
 
 </details>
@@ -1109,7 +1109,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [gasp, prep, GPOS, cvt , fpgm, loca, GSUB, DSIG]
+* ℹ **INFO** This font contains the following optional tables [fpgm, DSIG, cvt , prep, loca, gasp, GPOS, GSUB]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
