@@ -9,8 +9,9 @@ Fontbakery version: 0.7.24
 
 * [com.google.fonts/check/fontbakery_version](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/fontbakery_version)
 
-* ℹ **INFO** fontbakery (0.7.24)  - Well designed Font QA tool, written in Python 3
-  INSTALLED: 0.7.24 (latest)
+* ℹ **INFO** fontbakery (0.7.25)  - Well designed Font QA tool, written in Python 3
+  INSTALLED: 0.7.24
+  LATEST:    0.7.25
 
 * 🍞 **PASS** Font Bakery is up-to-date
 
@@ -1014,7 +1015,7 @@ of hinted versus unhinted font files.
 
 	|  | fonts/signikavfsc/SignikaSC[NEGA,wght].ttf |
 	|:--- | ---:|
-	| Dehinted Size | 509.6kb |
+	| Dehinted Size | 509.7kb |
 	| Hinted Size | 589.3kb |
 	| Increase | 79.6kb |
 	| Change   | 15.6 % |
@@ -1109,7 +1110,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [fpgm, DSIG, cvt , prep, loca, gasp, GPOS, GSUB]
+* ℹ **INFO** This font contains the following optional tables [prep, cvt , GSUB, loca, fpgm, DSIG, GPOS, gasp]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>

@@ -1,6 +1,6 @@
 ## Fontbakery report
 
-Fontbakery version: 0.7.24
+Fontbakery version: 0.7.26.dev1+g82e6790f
 
 <details>
 <summary><b>[14] Family checks</b></summary>
@@ -9,8 +9,9 @@ Fontbakery version: 0.7.24
 
 * [com.google.fonts/check/fontbakery_version](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/fontbakery_version)
 
-* ℹ **INFO** fontbakery (0.7.24)  - Well designed Font QA tool, written in Python 3
-  INSTALLED: 0.7.24 (latest)
+* ℹ **INFO** fontbakery (0.7.25)  - Well designed Font QA tool, written in Python 3
+  INSTALLED: 0.7.26.dev1+g82e6790f
+  LATEST:    0.7.25
 
 * 🍞 **PASS** Font Bakery is up-to-date
 
@@ -215,7 +216,7 @@ field, using bits 0 and 5.
 <br>
 </details>
 <details>
-<summary><b>[153] SignikaNegativeSC-SemiBold.ttf</b></summary>
+<summary><b>[156] SignikaNegativeSC-SemiBold.ttf</b></summary>
 <details>
 <summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary>
 
@@ -904,7 +905,7 @@ variable fonts in their web browsers.
 
 </pre>
 
-* 💤 **SKIP** Unfulfilled Conditions: is_variable_font
+* 💤 **SKIP** Unfulfilled Conditions: gfonts_repo_structure, is_variable_font
 
 </details>
 <details>
@@ -950,6 +951,42 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 * [com.google.fonts/check/varfont_instance_names](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont_instance_names)
 
 * 💤 **SKIP** Unfulfilled Conditions: is_variable_font
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Ensure VFs do not contain opsz or ital axes. </summary>
+
+* [com.google.fonts/check/varfont/unsupported_axes](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont/unsupported_axes)
+<pre>--- Rationale ---
+
+The &#x27;ital&#x27; axis is not supported yet in Google Chrome. The &#x27;opsz&#x27; axis also has
+patchy support.
+
+For the time being, we need to ensure that VFs do not contain either of these
+axes. Once browser support is better, we can deprecate this check.
+
+For more info regarding ital and opsz browser support, see:
+https://arrowtype.github.io/vf-slnt-test/
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_variable_font
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Check correctness of STAT table strings </summary>
+
+* [com.google.fonts/check/STAT_strings](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/STAT_strings)
+<pre>--- Rationale ---
+
+On the STAT table, the &quot;Italic&quot; keyword must not be used on AxisValues for
+variation axes other than &#x27;ital&#x27;.
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: STAT_table
 
 </details>
 <details>
@@ -1211,7 +1248,7 @@ of hinted versus unhinted font files.
 
 	|  | fonts/signikanegativesc/SignikaNegativeSC-SemiBold.ttf |
 	|:--- | ---:|
-	| Dehinted Size | 199.6kb |
+	| Dehinted Size | 199.7kb |
 	| Hinted Size | 284.9kb |
 	| Increase | 85.2kb |
 	| Change   | 42.7 % |
@@ -1306,7 +1343,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [GPOS, fpgm, loca, DSIG, gasp, cvt , GSUB, prep]
+* ℹ **INFO** This font contains the following optional tables [gasp, GPOS, fpgm, prep, loca, cvt , GSUB, DSIG]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -1405,6 +1442,26 @@ edited by hand.
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> DESCRIPTION.en_us.html should end in a linebreak.</summary>
+
+* [com.google.fonts/check/description/eof_linebreak](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/eof_linebreak)
+<pre>--- Rationale ---
+
+Some older text-handling tools sometimes misbehave if the last line of data in
+a text file is not terminated with a newline character (also known as &#x27;\n&#x27;).
+
+We know that this is a very small detail, but for the sake of keeping all
+DESCRIPTION.en_us.html files uniformly formatted throughout the GFonts
+collection, we chose to adopt the practice of placing this final linebreak char
+on them.
+
+
+</pre>
+
+* 🍞 **PASS** :-)
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Checking OS/2 fsType does not impose restrictions.</summary>
 
 * [com.google.fonts/check/fstype](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype)
@@ -1428,6 +1485,28 @@ https://docs.microsoft.com/en-us/typography/opentype/spec/os2#fstype
 <summary>🍞 <b>PASS:</b> Checking OS/2 achVendID.</summary>
 
 * [com.google.fonts/check/vendor_id](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id)
+<pre>--- Rationale ---
+
+Microsoft keeps a list of font vendors and their respective contact info. This
+list is updated regularly and is indexed by a 4-char &quot;Vendor ID&quot; which is
+stored in the achVendID field of the OS/2 table.
+
+Registering your ID is not mandatory, but it is a good practice since some
+applications may display the type designer / type foundry contact info on some
+dialog and also because that info will be visible on Microsoft&#x27;s website:
+
+https://docs.microsoft.com/en-us/typography/vendors/
+
+This check verifies whether or not a given font&#x27;s vendor ID is registered in
+that list or if it has some of the default values used by the most common font
+editors.
+
+Each new FontBakery release includes a cached copy of that list of vendor IDs.
+If you registered recently, you&#x27;re safe to ignore warnings emitted by this
+check, since your ID will soon be included in one of our upcoming releases.
+
+
+</pre>
 
 * 🍞 **PASS** OS/2 VendorID 'GOOG' looks good!
 
@@ -1660,7 +1739,7 @@ power of two is most likely negligible nowadays.
 
 Another acceptable value is 2000. Since TT outlines are all integers (no
 floats), then instances in a VF suffer rounding compromises, and therefore a
-1000 UPM is to small because it forces too many such compromises.
+1000 UPM is too small because it forces too many such compromises.
 
 Therefore 2000 is a good &#x27;new VF standard&#x27;, because 2000 is a simple 2x
 conversion from existing fonts drawn on a 1000 UPM, and anyone who knows what
@@ -2523,5 +2602,5 @@ the same x,y coordinates.
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 0 | 2 | 71 | 8 | 86 | 0 |
+| 0 | 0 | 2 | 73 | 8 | 87 | 0 |
 | 0% | 0% | 1% | 43% | 5% | 51% | 0% |
