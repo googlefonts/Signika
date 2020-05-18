@@ -75,6 +75,3 @@ N: Stephen Nixon
 E: stephen@thundernixon.com
 W: http://www.thundernixon.com
 D: Variable Font Mastering
-
-
-
