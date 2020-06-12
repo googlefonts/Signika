@@ -62,6 +62,7 @@ mv ${tmpSC/".ttf"/".subset.ttf"} $tmpSC
 python sources/scripts/helpers/replace-family-name.py "$tmpSC" "Signika" "Signika SC"
 
 
+# Some QA post-processing on all generated fonts
 for file in variable_ttf/*; do 
 if [ -f "$file" ]; then
 
@@ -73,19 +74,25 @@ if [ -f "$file" ]; then
     gftools fix-dsig --autofix ${file}
 
 
-    #--------------------------------------------------------------------------
-    # Autohint with detailed info
-    #--------------------------------------------------------------------------
-    echo "TTFautohint ${file}" 
-    hintedFile=${file/".ttf"/"-hinted.ttf"}
+    # 12.06.2020 Disabled VF autohinting for now, since results are not 
+    # satisfactory
+    # #--------------------------------------------------------------------------
+    # # Autohint with detailed info
+    # #--------------------------------------------------------------------------
+    # echo "TTFautohint ${file}" 
+    # hintedFile=${file/".ttf"/"-hinted.ttf"}
 
-    ./sources/scripts/helpers/ttfautohint-vf -I $file $hintedFile --stem-width-mode nnn --increase-x-height 9
-    gftools fix-hinting $hintedFile # will create a file suffixed with .fix
-    fixedFile="${hintedFile}.fix"
-    cp $fixedFile $file # copy back to original ttf
+    # ./sources/scripts/helpers/ttfautohint-vf -I $file $hintedFile --stem-width-mode nnn --increase-x-height 9
+    # gftools fix-hinting $hintedFile # will create a file suffixed with .fix
+    # fixedFile="${hintedFile}.fix"
+    # cp $fixedFile $file # copy back to original ttf
 
-    rm -rf $hintedFile # remove the -hinted.ttf file
-    rm -rf $fixedFile # remove the -hinted.ttf.fix file
+    # rm -rf $hintedFile # remove the -hinted.ttf file
+    # rm -rf $fixedFile # remove the -hinted.ttf.fix file
+    
+    # 12.06.2020 Instead of autohinting, use gftools to fix up the unhinted 
+    # files
+    gftools fix-nonhinting ${file} ${file}
 
 
     #--------------------------------------------------------------------------

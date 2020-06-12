@@ -33,6 +33,7 @@ To operate the scripts within this repo, install requirements with:
 pip install -r requirements.txt
 ```
 
+*Note 12.06.2020: Currently ttfautohint-vf is not used*
 The `sources/scripts/helpers` contains a copy of [TTFautohint-vf](https://groups.google.com/forum/#!searchin/googlefonts-discuss/ttfautohint%7Csort:date/googlefonts-discuss/WJX1lrzcwVs/SIzaEvntAgAJ).
 
 To exit out of the virtual environment, you can use the command `deactivate` (just remember to start it up again if you come back).

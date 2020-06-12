@@ -1,6 +1,6 @@
 ## Fontbakery report
 
-Fontbakery version: 0.7.24
+Fontbakery version: 0.7.27
 
 <details>
 <summary><b>[14] Family checks</b></summary>
@@ -9,9 +9,8 @@ Fontbakery version: 0.7.24
 
 * [com.google.fonts/check/fontbakery_version](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/fontbakery_version)
 
-* ℹ **INFO** fontbakery (0.7.26)  - Well designed Font QA tool, written in Python 3
-  INSTALLED: 0.7.24
-  LATEST:    0.7.26
+* ℹ **INFO** fontbakery (0.7.27)  - Well designed Font QA tool, written in Python 3
+  INSTALLED: 0.7.27 (latest)
 
 * 🍞 **PASS** Font Bakery is up-to-date
 
@@ -216,23 +215,7 @@ field, using bits 0 and 5.
 <br>
 </details>
 <details>
-<summary><b>[152] SignikaSC[NEGA,wght].ttf</b></summary>
-<details>
-<summary>⚠ <b>WARN:</b> Font has old ttfautohint applied?</summary>
-
-* [com.google.fonts/check/old_ttfautohint](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/old_ttfautohint)
-<pre>--- Rationale ---
-
-This check finds which version of ttfautohint was used, by inspecting name
-table entries and then finds which version of ttfautohint is currently
-installed in the system.
-
-
-</pre>
-
-* ⚠ **WARN** ttfautohint used in font = 1.8.1.43-b0c9; installed = 1.8.3; Need to re-run with the newer version! [code: old-ttfa]
-
-</details>
+<summary><b>[160] SignikaSC[NEGA,wght].ttf</b></summary>
 <details>
 <summary>💤 <b>SKIP:</b> Check METADATA.pb parse correctly.</summary>
 
@@ -327,6 +310,14 @@ not placed on subdirectories.
 * [com.google.fonts/check/family/has_license](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/family/has_license)
 
 * 💤 **SKIP** Unfulfilled Conditions: gfonts_repo_structure
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Font has ttfautohint params?</summary>
+
+* [com.google.fonts/check/has_ttfautohint_params](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/has_ttfautohint_params)
+
+* 💤 **SKIP** Font appears to our heuristic as not hinted using ttfautohint. [code: not-hinted]
 
 </details>
 <details>
@@ -496,7 +487,8 @@ not placed on subdirectories.
 <pre>--- Rationale ---
 
 The expected pattern for the copyright string adheres to the following rules:
-* It must say &quot;Copyright&quot; followed by a 4 digit year
+* It must say &quot;Copyright&quot; followed by a 4 digit year (optionally followed by a
+hyphen and another 4 digit year)
 * Then it must say &quot;The &lt;familyname&gt; Project Authors&quot;
 * And within parentheses, a URL for a git repository must be provided
 * The check is case insensitive and does not validate whether the familyname is
@@ -599,19 +591,32 @@ We may want to merge them all into a single check.
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> Checking OS/2 usWeightClass matches weight specified at METADATA.pb.</summary>
+<summary>💤 <b>SKIP:</b> Check METADATA.pb font weights are correct.</summary>
 
 * [com.google.fonts/check/metadata/os2_weightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/os2_weightclass)
+<pre>--- Rationale ---
+
+Check METADATA.pb font weights are correct.
+
+For static fonts, the metadata weight should be the same
+as the static font&#x27;s OS/2 usWeightClass.
+
+For variable fonts, the weight value should be 400 if the
+font&#x27;s wght axis range includes 400, otherwise it should be the
+value closest to 400.
+
+
+</pre>
 
 * 💤 **SKIP** Unfulfilled Conditions: font_metadata
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName.</summary>
+<summary>💤 <b>SKIP:</b> METADATA.pb weight matches postScriptName for static fonts.</summary>
 
 * [com.google.fonts/check/metadata/match_weight_postscript](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/match_weight_postscript)
 
-* 💤 **SKIP** Unfulfilled Conditions: font_metadata
+* 💤 **SKIP** Unfulfilled Conditions: font_metadata, not is_variable_font
 
 </details>
 <details>
@@ -762,6 +767,28 @@ checks that nameID 1 is the family name + the style name.
 
 </details>
 <details>
+<summary>💤 <b>SKIP:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+<pre>--- Rationale ---
+
+Hinted fonts must have head table flag bit 3 set.
+
+Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
+Head::flags decides whether PPEM should be rounded. This bit should always be
+set for hinted fonts.
+
+Note:
+Bit 3 = Force ppem to integer values for all internal scaler math;
+        May use fractional ppem sizes if this bit is clear;
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_hinted
+
+</details>
+<details>
 <summary>💤 <b>SKIP:</b> Are there caret positions declared for every ligature?</summary>
 
 * [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
@@ -828,6 +855,25 @@ following schema which was outlined in Fontbakery issue #1162 [1]:
 </pre>
 
 * 💤 **SKIP** Unfulfilled Conditions: remote_styles
+
+</details>
+<details>
+<summary>💤 <b>SKIP:</b> Check font follows the Google Fonts CJK vertical metric schema</summary>
+
+* [com.google.fonts/check/cjk_vertical_metrics](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/cjk_vertical_metrics)
+<pre>--- Rationale ---
+
+CJK fonts have different vertical metrics when compared to Latin fonts. We
+follow the schema developed by dr Ken Lunde for Source Han Sans and the Noto
+CJK fonts.
+
+Our documentation includes further information:
+https://github.com/googlefonts/gf-docs/tree/master/Spec#cjk-vertical-metrics
+
+
+</pre>
+
+* 💤 **SKIP** Unfulfilled Conditions: is_cjk_font
 
 </details>
 <details>
@@ -1015,11 +1061,27 @@ of hinted versus unhinted font files.
 
 	|  | fonts/signikavfsc/SignikaSC[NEGA,wght].ttf |
 	|:--- | ---:|
-	| Dehinted Size | 509.6kb |
-	| Hinted Size | 589.2kb |
-	| Increase | 79.6kb |
-	| Change   | 15.6 % |
+	| Dehinted Size | 508.9kb |
+	| Hinted Size | 507.8kb |
+	| Increase | -1204 bytes |
+	| Change   | -0.2 % |
  [code: size-impact]
+
+</details>
+<details>
+<summary>ℹ <b>INFO:</b> Font has old ttfautohint applied?</summary>
+
+* [com.google.fonts/check/old_ttfautohint](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/old_ttfautohint)
+<pre>--- Rationale ---
+
+This check finds which version of ttfautohint was used, by inspecting name
+table entries and then finds which version of ttfautohint is currently
+installed in the system.
+
+
+</pre>
+
+* ℹ **INFO** Could not detect which version of ttfautohint was used in this font. It is typically specified as a comment in the font version entries of the 'name' table. Such font version strings are currently: ['Version 2.000'] [code: version-not-detected]
 
 </details>
 <details>
@@ -1088,7 +1150,7 @@ enforcing it.
 
 </pre>
 
-* ℹ **INFO** Version string is: "Version 2.000; ttfautohint (v1.8.1.43-b0c9) -l 8 -r 50 -G 200 -x 9 -D latn -f none -a nnn -X """
+* ℹ **INFO** Version string is: "Version 2.000"
 The version string must ideally include a git commit hash and either a "dev" or a "release" suffix such as in the example below:
 "Version 1.3; git-0d08353-release" [code: bad-format]
 
@@ -1110,7 +1172,7 @@ file. Etc.
 
 </pre>
 
-* ℹ **INFO** This font contains the following optional tables [DSIG, gasp, GSUB, prep, GPOS, fpgm, cvt , loca]
+* ℹ **INFO** This font contains the following optional tables [DSIG, GSUB, loca, gasp, GPOS, prep]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -1174,23 +1236,6 @@ it must be properly working.
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Does DESCRIPTION file mention when a family is available as variable font?</summary>
-
-* [com.google.fonts/check/description/variable_font](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/variable_font)
-<pre>--- Rationale ---
-
-Families with variable fonts do not always mention that in their descriptions.
-Therefore, this check ensures that a standard boilerplate sentence is present
-in the DESCRIPTION.en_us.html files for all those families which are available
-as variable fonts.
-
-
-</pre>
-
-* 🍞 **PASS** Looks good!
-
-</details>
-<details>
 <summary>🍞 <b>PASS:</b> Is this a proper HTML snippet?</summary>
 
 * [com.google.fonts/check/description/valid_html](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/valid_html)
@@ -1226,6 +1271,26 @@ edited by hand.
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> DESCRIPTION.en_us.html should end in a linebreak.</summary>
+
+* [com.google.fonts/check/description/eof_linebreak](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/eof_linebreak)
+<pre>--- Rationale ---
+
+Some older text-handling tools sometimes misbehave if the last line of data in
+a text file is not terminated with a newline character (also known as &#x27;\n&#x27;).
+
+We know that this is a very small detail, but for the sake of keeping all
+DESCRIPTION.en_us.html files uniformly formatted throughout the GFonts
+collection, we chose to adopt the practice of placing this final linebreak char
+on them.
+
+
+</pre>
+
+* 🍞 **PASS** :-)
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Checking OS/2 fsType does not impose restrictions.</summary>
 
 * [com.google.fonts/check/fstype](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype)
@@ -1249,6 +1314,28 @@ https://docs.microsoft.com/en-us/typography/opentype/spec/os2#fstype
 <summary>🍞 <b>PASS:</b> Checking OS/2 achVendID.</summary>
 
 * [com.google.fonts/check/vendor_id](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id)
+<pre>--- Rationale ---
+
+Microsoft keeps a list of font vendors and their respective contact info. This
+list is updated regularly and is indexed by a 4-char &quot;Vendor ID&quot; which is
+stored in the achVendID field of the OS/2 table.
+
+Registering your ID is not mandatory, but it is a good practice since some
+applications may display the type designer / type foundry contact info on some
+dialog and also because that info will be visible on Microsoft&#x27;s website:
+
+https://docs.microsoft.com/en-us/typography/vendors/
+
+This check verifies whether or not a given font&#x27;s vendor ID is registered in
+that list or if it has some of the default values used by the most common font
+editors.
+
+Each new FontBakery release includes a cached copy of that list of vendor IDs.
+If you registered recently, you&#x27;re safe to ignore warnings emitted by this
+check, since your ID will soon be included in one of our upcoming releases.
+
+
+</pre>
 
 * 🍞 **PASS** OS/2 VendorID 'GOOG' looks good!
 
@@ -1280,8 +1367,25 @@ set of characters defined in the `GF-latin-core` glyph-set.
 <summary>🍞 <b>PASS:</b> Checking OS/2 usWeightClass.</summary>
 
 * [com.google.fonts/check/usweightclass](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass)
+<pre>--- Rationale ---
 
-* 🍞 **PASS** OS/2 usWeightClass value looks good!
+Google Fonts expects variable fonts, static ttfs and static otfs to have
+differing OS/2 usWeightClass values.
+
+For Variable Fonts, Thin-Black must be 100-900
+For static ttfs, Thin-Black can be 100-900 or 250-900
+For static otfs, Thin-Black must be 250-900
+
+If static otfs are set lower than 250, text may appear blurry in legacy Windows
+applications.
+
+Glyphsapp users can change the usWeightClass value of an instance by adding a
+&#x27;weightClass&#x27; customParameter.
+
+
+</pre>
+
+* 🍞 **PASS** OS/2 usWeightClass is good
 
 </details>
 <details>
@@ -1394,14 +1498,6 @@ Longer strings are likely instances of the FontLab bug.
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Font has ttfautohint params?</summary>
-
-* [com.google.fonts/check/has_ttfautohint_params](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/has_ttfautohint_params)
-
-* 🍞 **PASS** Font has ttfautohint params (-l 8 -r 50 -G 200 -x 9 -D latn -f none -a nnn -X "") [code: ok]
-
-</details>
-<details>
 <summary>🍞 <b>PASS:</b> Make sure family name does not begin with a digit.</summary>
 
 * [com.google.fonts/check/name/familyname_first_char](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/familyname_first_char)
@@ -1465,7 +1561,7 @@ power of two is most likely negligible nowadays.
 
 Another acceptable value is 2000. Since TT outlines are all integers (no
 floats), then instances in a VF suffer rounding compromises, and therefore a
-1000 UPM is to small because it forces too many such compromises.
+1000 UPM is too small because it forces too many such compromises.
 
 Therefore 2000 is a good &#x27;new VF standard&#x27;, because 2000 is a simple 2x
 conversion from existing fonts drawn on a 1000 UPM, and anyone who knows what
@@ -1700,28 +1796,6 @@ that are multiples of 100 on the design space.
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-<pre>--- Rationale ---
-
-Hinted fonts must have head table flag bit 3 set.
-
-Per https://docs.microsoft.com/en-us/typography/opentype/spec/head, bit 3 of
-Head::flags decides whether PPEM should be rounded. This bit should always be
-set for hinted fonts.
-
-Note:
-Bit 3 = Force ppem to integer values for all internal scaler math;
-        May use fractional ppem sizes if this bit is clear;
-
-
-</pre>
-
-* 🍞 **PASS** OK
-
-</details>
-<details>
 <summary>🍞 <b>PASS:</b> Combined length of family and style must not exceed 27 characters.</summary>
 
 * [com.google.fonts/check/name/family_and_style_max_length](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length)
@@ -1792,6 +1866,40 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> A font repository should not include fontbakery report files</summary>
+
+* [com.google.fonts/check/repo/fb_report](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/fb_report)
+<pre>--- Rationale ---
+
+A FontBakery report is ephemeral and so should be used for posting issues on a
+bug-tracker instead of being hosted in the font project repository.
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> A font repository should not include ZIP files</summary>
+
+* [com.google.fonts/check/repo/zip_files](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/repo/zip_files)
+<pre>--- Rationale ---
+
+Sometimes people check in ZIPs into their font project repositories. While we
+accept the practice of checking in binaries, we believe that a ZIP is a step
+too far ;)
+
+Note: a source purist position is that only source files and build scripts
+should be checked in. 
+
+
+</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Check variable font instances have correct coordinate values</summary>
 
 * [com.google.fonts/check/varfont_instance_coordinates](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont_instance_coordinates)
@@ -1805,6 +1913,27 @@ This check ensures &quot;Reserved Font Name&quot; is not mentioned in the name t
 * [com.google.fonts/check/varfont_instance_names](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont_instance_names)
 
 * 🍞 **PASS** Instance names are correct
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Ensure VFs do not contain opsz or ital axes. </summary>
+
+* [com.google.fonts/check/varfont/unsupported_axes](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont/unsupported_axes)
+<pre>--- Rationale ---
+
+The &#x27;ital&#x27; axis is not supported yet in Google Chrome. The &#x27;opsz&#x27; axis also has
+patchy support.
+
+For the time being, we need to ensure that VFs do not contain either of these
+axes. Once browser support is better, we can deprecate this check.
+
+For more info regarding ital and opsz browser support, see:
+https://arrowtype.github.io/vf-slnt-test/
+
+
+</pre>
+
+* 🍞 **PASS** Looks good!
 
 </details>
 <details>
@@ -1943,6 +2072,21 @@ tables.
 </pre>
 
 * 🍞 **PASS** There are no unwanted tables.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check correctness of STAT table strings </summary>
+
+* [com.google.fonts/check/STAT_strings](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/STAT_strings)
+<pre>--- Rationale ---
+
+On the STAT table, the &quot;Italic&quot; keyword must not be used on AxisValues for
+variation axes other than &#x27;ital&#x27;.
+
+
+</pre>
+
+* 🍞 **PASS** Looks good!
 
 </details>
 <details>
@@ -2161,7 +2305,7 @@ apps.
 <pre>--- Rationale ---
 
 There are various metadata in the OpenType spec to specify if a font is
-monospaced or not. If the font is not trully monospaced, then no monospaced
+monospaced or not. If the font is not truly monospaced, then no monospaced
 metadata should be set (as sometimes they mistakenly are...)
 
 Requirements for monospace fonts:
@@ -2289,6 +2433,53 @@ Reference: https://github.com/googlefonts/fontbakery/issues/1845
 * [com.google.fonts/check/whitespace_widths](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/hmtx.html#com.google.fonts/check/whitespace_widths)
 
 * 🍞 **PASS** Space and non-breaking space have the same width.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class)</summary>
+
+* [com.google.fonts/check/gdef_spacing_marks](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks)
+<pre>--- Rationale ---
+
+Glyphs in the GDEF mark glyph class should be non-spacing.
+Spacing glyphs in the GDEF mark glyph class may have incorrect anchor
+positioning that was only intended for building composite glyphs during design.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not has spacing glyphs in the GDEF mark glyph class.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check mark characters are in GDEF mark glyph class</summary>
+
+* [com.google.fonts/check/gdef_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars)
+<pre>--- Rationale ---
+
+Mark characters should be in the GDEF mark glyph class.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not have mark characters not in the GDEF mark glyph class.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Check GDEF mark glyph class doesn't have characters that are not marks)</summary>
+
+* [com.google.fonts/check/gdef_non_mark_chars](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars)
+<pre>--- Rationale ---
+
+Glyphs in the GDEF mark glyph class become non-spacing and may be repositioned
+if they have mark anchors.
+Only combining mark glyphs should be in that class. Any non-mark glyph must not
+be in that class, in particular spacing glyphs.
+
+
+</pre>
+
+* 🍞 **PASS** Font does not have non-mark characters in the GDEF mark glyph class.
 
 </details>
 <details>
@@ -2445,5 +2636,5 @@ On the &#x27;wdth&#x27; (Width) axis, the valid coordinate range is 1-1000
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 0 | 1 | 66 | 8 | 91 | 0 |
-| 0% | 0% | 1% | 40% | 5% | 55% | 0% |
+| 0 | 0 | 0 | 69 | 9 | 96 | 0 |
+| 0% | 0% | 0% | 40% | 5% | 55% | 0% |
