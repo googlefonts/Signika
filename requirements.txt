@@ -1,3 +1,3 @@
 fontmake>=2.1.2
 git+https://github.com/googlefonts/gftools#81c138c4cc218cf0d1a71e36dd03e71c91e6e3c1 # Using 0.3.7 but not tagged
-fontbakery>=0.7.24
+fontbakery>=0.7.27
