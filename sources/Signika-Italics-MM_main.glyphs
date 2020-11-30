@@ -1,14 +1,12 @@
 {
-.appVersion = "1342";
+.appVersion = "1348";
 DisplayStrings = (
 "\012ABCDEFGHIJKLMNOPQRSTUVWXYZ\012abcdefghijklmnopqrstuvwxyz\0120102030804050609070\012-­/endash/emdash/guilsinglleft/guilsinglright «»'\"!?.:/ellipsis ·,;/quotesinglbase/quoteleft/quoteright/quotedblbase/quotedblleft/quotedblright///backslash \012\012\012",
 "\012oooooooooooooooooooo\012nnnnnnnnnnnnnnnnnnnn\012uuuuuuuuuuuuuuuuuu\012nununununununununun\012nnnunnnuunnnuuunnn\012nonononononononononon\012uouououououououououo\012nnnonnnuuuouuuonnnouuu\012mnhnnnnhhnnoohoouuhuu\012\012|h|m|n|u|o|c|e|s|a|d|g|q|p|b|l|i|j|r|f|t|k|z|v|w|x|y|\012\012nnlnnnluuuluuulnnnlooolooolnnn\012nnannnauuuauuuannnaoooaoooannn\012nnhnnnhuuuhuuuhnnnhooohooohnnn\012nndnnnduuuduuudnnnudooodooodnnn\012nn/idotless nninnniuuuiuuuinnnuioooioooinnn\012nnpnnnpuuupuuupnnnupooopooopnnn\012nnrnnnruuuruuurnnnurooorooornnn\012nnbnnnbuuubuuubnnnubooobooobnnn\012nncnnncuuucuuucnnnucooocooocnnn\012nnennneuuueuuuennnueoooeoooennn\012nngnnnguuuguuugnnnugooogooognnn\012nnqnnnquuuquuuqnnnuqoooqoooqnnn\012nnfnnnfuuufuuufnnnufooofooofnnn/space \012nnknnnkuuukuuuknnnukoookoooknnnkoookuuu\012nnn/jdotless nnjnnnjuuujuuujnnnujooojooojnnnjooojuuu\012nnznnnzuuuzuuuznnnuzooozoooznnnzooozuuu\012nnsnnnsuuusuuusnnnusooosooosnnnsooosuuu\012nnvnnnvuuuvuuuvnnnuvooovooovnnnvooovuuu\012nnwnnnwuuuwuuuwnnnuwooowooownnnwooowuuu\012\012|x|nnxnnnxuuuxuuuxnnnuxoooxoooxnnnxoooxuuu\012|y|nnynnnyuuuyuuuynnnuyoooyoooynnnyoooyuuu\012\012nnxa/space nnxg/space nnxs/space nnxr/space nnrx/space nnsx/space nnex/space nncx/space nnvx/space nnxv/space nnwx/space nnxw/space nnynn/space nnyuu/space dym/space umynica/space nnoyonn/space nnyann/space nnygnn/space dyganie/space yanuar/space dumny/space chiny/space myto/space ymka/space vmka/space \012nnuynun/space/space nny/space ynn/space nnvnn/space tom/space mysunia/space mys/space symbol/space sym/space mayona/idotless se/space mayona/jdotless se/space myslenka/space lsn/space Vin/space located/space chan\012majsne/space maisne/space maine/space majne/space |i|j|/space linda/space cnn/space with/space anuallyn\012nixon/space unboxing/space nnx/space xuu/space uux/space xnn/space hox/space fox/space ufox/space nufoun/space ufon\012drewniana/space dowonim/space juwenalia/space nowinka/space dwonim/space nawigant/space nuvcnu/space domu/space denu/space dama/space dgnum/space dnuvnitr/space dwanascie/space duvera/space nuovo/space novinka/space dvanact/space devedesat/space \012nvan/space nvgn/space nvon/space nwan/space nwgn/space nwon\012novn/space nown/space nvsn/space nwsn/space nsvn/space nswn/space n\012\012Einhornupsregenbogenfarben/space uoan/space uogan/space gon/space gen/space gsn/space gnn/space uon/space uen/space unn/space usn/space nnann/space nnonnoonn\012\012uns/space snu/space |s|\012hnusnie/space monsun/space duosonm/space podnosim/space nuszma/space mushroom/space \012nus/space nns/space uus/space suu/space snn/space nnsuu/space musil/space usilne/space osa/space same/space mustard/space standard/space nsfnn/space silne/space nusnu/space sennik/space mussen/space sonia/space minos\012simlock/space simple/space simba/space samba/space unsan/space onsen/space sen/space snim/space snek\012minimum/space monunm/space nominalna/space uhuln/space nhnln/space dluham/space mlodnim/space monahn/idotless ium/space nudnim/space indum/space opium/space mop/space dupnul/space hanoiman/space marmur/space durum/space dron/space android/space morning/space ran/space ron/space rgn/space mirin/space urnami/space muorn/space duonal/space umprum/space arm/space nnrnn/space mur/space mucha/space pomocna/space pocom/space cuma/space hucmi/space ducim/space muclim/space menu/space demi/space america/space pneuma/space meha/space mechanic/space melum/space ueno/space clima/space chum/space cma/space emu/space magnum/space guma/space angum/space mugol/space mugger/space genom/space umgon/space gone/space girl/space nnuongonn/space nngannn/space muflon/space ufnie/space ufon/space formalina/space mugfim/space film/space mafia/space muffin/space mufnn/space mafun/space fun/space nof/space fon/space fan/space nufa/space fgn/space fen/space mofend/space kmin/space kufer/space kefir/space kanapa/space komoda/space anakonda/space makum/space mikron/space mikina/space akumulator/space rekgni/space ufermen/space unkne/space knedel/space makronika/space menthol/space mentol/space mental/space metgm/space momentum/space kamion/space komar/space mnlon/space mnlan/space mnlgn/space makita/space maknij/space nielot/space latam/space uunzunn/space uznanie/space mozon/space muzeum/space nuzan/space bruzda/space muzgna/space mncznn/space mneznn/space nnetnn/space nnctnn/space nnrtnn/space nnftnn/space nnefnn/space nncfnn/space nnrfnn/space/space \012\012\012\012\012\012",
 "|Z|X|Y|H|V|W|A|I|N|D|O|U|T|E|F|B|Q|J|P|M|C|G|R|K|S|\012\012UHWAD/space WUNDER/space LWOW/space WINNER/space WINTER\012HHYHH/space HHUYUHH/space HHOYOHH/space HHAYAHH\012HHZHH/space HHUZUHH/space HHOZOHH/space HHZ/space ZHH/space HUZ/space ZUH/space HOZ/space ZOH/space HROZNE/space ZOHA/space UZDA/space ZUBNI/space \012ZHUBA/space HUZE/space ZBIGNIEW/space ZBIRK/space HHDZH\012HHY/space YHH/space CHYBNIE/space HOY/space YOH/space HAY/space YAH/space HLYH/space HDY/space HTY/space HEY/space HFY/space HBY/space HYJH/space HPY/space HMY/space YMH/space HHMYMHH/space HCY/space YCH/space HGY/space YGH/space HRY/space HKY/space HSY/space YSH/space CHYSLED/space HUSYNATE/space SYDNEY\012\012MYDLO/space HYMN/space HAYDE/space HYADUN/space LYNCH/space CYBUCH/space HRYBINA/space RYBA/space BYERN/space GOODBYE/space WYJEC/space/space HYPERBOLA\012\012HHWSWHH/space HHSW/space WSHH/space SWAT/space SWINIA/space WATER\012HAWED/space HATAH/space HHXHH/space HHUXUHH/space HHOXOHH\012HUX/space XUH/space HHX/space XHH/space/space HOX/space XOH/space DXH/space TXH/space BXH/space EXH/space FXH/space HXJ/space PXH/space HPX/space CHCX/space HGX/space HSX/space UNBOXING/space \012\012HHMHH/space HHWHH/space HHUWUHH/space HHOWOHH/space HHAWAHH\012HHVHH/space/space HHGHH/space/space CHVILE/space/space VLHH/space HHV/space VHH/space HHOV/space OVHH/space HHPV/space HHSV/space SVHH/space HHDV/space HTV/space VTH/space HHAV/space VAHH/space HHBV/space HHCV/space CVHH/space HHEV/space HHFV/space SVIH/space IGNUM/space HUGO/space HIUGH/space GHOST/space RIDER\012HHVAVHH/space HHAVAHH\012VLTAVA/space ATA/space \012HHSHH/space HHS/space SHH/space HUS/space SUH/space HOS/space SOH/space HHUHH\012HHMSHH/space HHTSHH/space HHSTHH/space HHASHH/space HHSAHH\012HHMSHH/space HHSMHH/space SMIECSH/space HMS/space JSMEH/space JSME/space JSH\012\012HAHNDE/space AHUHID/space UHADNUHHHUHHH/space HURHID/space UHRIEH/space RHUD/space DHRUHE/space DRUHE/space HHRUHH/space RUH/space HHROH/space HRAH/space HRU/space HRTHH/space RTHH/space ROH/space HRJH/space HJH/space HRH/space HREHI/space HHRE/space HERE\012UHKHI/space KHH/space KOHH/space KUHH/space KAHH/space KJHH/space KTHH/space HEKUDE/space KIMONO/space KNIHA/space \012HUNHTHD/space THE/space DUHT/space NEHUTNA/space EHO/space HEHT/space HUFHO/space FIND/space UNFIND/space FINE/space FUND/space HUBNUTI/space BUNT/space BEHU/space BHH/space UHQHOUD/space UHJHD/space JUHE/space JIH/space HIJ/space HIPNO/space PUH/space PAH/space UPIHD/space PANDA/space DAH/space HMHUD/space UMIENI/space HHMHH/space MUH/space MHH/space HUMUH/space HHTMTHH/space HTM/space MTHUHCHID/space CHIDE/space CHILD/space HHCTHH/space HHOTOHH/space HHCVH/space HHCWH/space HAOH/space HAOAH/space HAO/space OAH/space HPJH/space UPJEN\012HDAH\012\012HHAHHHHBHHHHCHHHHDHHHHEHHHHFHHHHGHHHHHHHHHIHHHHJHHHHKHHHHLHHHHMHHHHNHHHHOHHHHPHHHHQHHHHRHHHHSHHHHTHHHHUHHHHVHHHHWHHHHXHHHHYHHHHZHHHHHHHHHHHHHH\012\012HOAOHHOBOHHOCOHHODOHHOEOHHOFOHHOGOHHOHOHHOIOHHOJOHHOKOHHOLOHHOMOHHONOHHOOOHHOPOHHOQOHHOROHHOSOHHOTOHHOUOHHOVOHHOWOHHOXOHHOYOHHOZOHHOOHHOOHHOOH\012\012OOAOOOOBOOOOCOOOODOOOOEOOOOFOOOOGOOOOHOOOOIOOOOJOOOOKOOOOLOOOOMOOOONOOOOOOOOOPOOOOQOOOOROOOOSOOOOTOOOOUOOOOVOOOOWOOOOXOOOOYOOOOZOOOOOOOOOOOOOO\012\012",
 "aminfic\012\012beted/space wor/space fore/space fome/space rem/space ufo/space ormew\012peor/space dity/space effe/space peation/space pourg/space poura\012unces/space nuchni/space reen/space pienly/space/space fress\012reo/space bregivion/space vision/space uncas\012\012andays/space voly/space waspion/space nsu/space oso/space |s|\012\012quides/space qunn/space qnuu/space nqunn/space uqnuu\012\012Italics/space Washingtone/space untun/space unit/space itu/space stun/space alin/space itn/space tic/space olin\012dolina/space political/space tin/space contemporary/space perspectives",
 "|·-­/endash/emdash \012\012\012HXHWHZHYHVHAINDEFLTUJPSRHMHBOQ\012HÐHXHWHZHYHVHAINDEFLTUJPHKHMHGHCHSHRBOQH\012HhiaunHhiaun\012HhiaunHhiaun\012abcdefgh/idotless i/jdotless jklmnopþqarstuvwnux/space xrnyz/space \012¨/space/dieresiscomb/space/dieresiscomb.case/space ÄËÜÖÏIöouüu/ydieresis yäaëeïei\012/tildecomb.case/space ÃÑÕ/space/tildecomb/space aãnñõ/tilde \012/circumflexcomb.case/space ÂÊÎÔÛ/space/circumflexcomb/space nânênînônû/circumflex \012/gravecomb.case/space/space/acutecomb.case/space ÁÉÍÓÚÝÀÈÌÒÙ/space/acutecomb/space/gravecomb/space àèìòùáéíóúý`´\012/ringcomb/space/ring/ringcomb.case Åaå\012/cedillacomb ¸Çç/space Cc/Cacute/Ccircumflex/cacute/ccircumflex Oo\012ØøÆÞ\012/aeacute æ/oe °ßªº©®¶§#/OE \012/space/fraction/fraction.lf/space %¹²³/foursuperior ½¼¾ð\012H¹H²H³H/foursuperior H/space/space/space 5½/space 5¼/space 5¾\012/divisionslash/space µ@*h¥£/euro $¢¤\0120102030456789\012&/space HH&BH&\012\012\012\012ASTERISK*/space explanation*u/space info@signika.com/space straße/space großuen/space auður\012preðh/space riðciðnaacak/space kampucið\012\012HHHHH010\012\012\012\012\012'\",.:;?!/backslash///guilsinglleft/guilsinglright «»/quoteleft/quoteright/quotesinglbase/quotedblleft/space/quotedblright/quotedblbase/ellipsis/dotaccentcomb \0120123456789\012",
-"00/divisionslash 001/divisionslash 002/divisionslash 003/divisionslash 004/divisionslash 005/divisionslash 006/divisionslash 007/divisionslash 008/divisionslash 009/divisionslash 00\0120/divisionslash 000/divisionslash 100/divisionslash 200/divisionslash 300/divisionslash 400/divisionslash 500/divisionslash 600/divisionslash 700/divisionslash 800/divisionslash 900\012\012HHA/divisionslash HHHHB/divisionslash HHHHC/divisionslash HHHHD/divisionslash HHHHE/divisionslash HHHHF/divisionslash HHHHG/divisionslash HHHHH/divisionslash HHHHI/divisionslash HHHHJ/divisionslash HHHHK/divisionslash HHHHL/divisionslash HHHHM/divisionslash HHHHN/divisionslash HHHHO/divisionslash HHHHP/divisionslash HHHHQ/divisionslash HHHHR/divisionslash HHHHS/divisionslash HHHHT/divisionslash HHHHU/divisionslash HHHHV/divisionslash HHHHW/divisionslash HHHHX/divisionslash HHHHY/divisionslash HHHHZ/divisionslash HHHHÆ/divisionslash HHHHÐ/divisionslash HHHH/OE/divisionslash HHHH/divisionslash HHHH/divisionslash HHHH/divisionslash HHHHØ/divisionslash HHHH/divisionslash HHHH/divisionslash HHHHÞ/divisionslash HHHH/divisionslash HHHH/divisionslash HHHH/divisionslash HH\012\012HH/divisionslash A/divisionslash HHHH/divisionslash HHHH/divisionslash J/divisionslash HHHH/divisionslash M/divisionslash HHHH/divisionslash O/divisionslash HHHH/divisionslash S/divisionslash HHHH/divisionslash T/divisionslash HHHH/divisionslash U/divisionslash HHHH/divisionslash V/divisionslash HHHH/divisionslash W/divisionslash HHHH/divisionslash X/divisionslash HHHH/divisionslash Y/divisionslash HHHH/divisionslash Z/divisionslash HHHH/divisionslash Æ/divisionslash HHHH/divisionslash Ð/divisionslash HHHH/divisionslash/divisionslash HHHH/divisionslash/divisionslash HHHH/divisionslash/divisionslash HHHH/divisionslash/divisionslash HHHH/divisionslash HH\012\012nna/divisionslash nnnnb/divisionslash nnnnc/divisionslash nnnnd/divisionslash nnnne/divisionslash nnnnf/divisionslash nnnng/divisionslash nnnnh/divisionslash nnnni/divisionslash nnnnj/divisionslash nnnnk/divisionslash nnnnl/divisionslash nnnnm/divisionslash nnnnn/divisionslash nnnno/divisionslash nnnnp/divisionslash nnnnq/divisionslash nnnnr/divisionslash nnnns/divisionslash nnnnt/divisionslash nnnnu/divisionslash nnnnv/divisionslash nnnnw/divisionslash nnnnx/divisionslash nnnny/divisionslash nnnnz/divisionslash nnnnæ/divisionslash nnnn/divisionslash nnnn/divisionslash nnnn/divisionslash nnnn/idotless/divisionslash nnnn/jdotless/divisionslash nnnn/divisionslash nnnn/divisionslash nnnnø/divisionslash nnnn/oe/divisionslash nnnnß/divisionslash nnnn/divisionslash nnnnð/divisionslash nnnnþ/divisionslash nnnn/divisionslash nnnn/divisionslash nnnn/divisionslash nnnn/divisionslash nnnn\012nn/divisionslash ä/divisionslash nnnn/divisionslash bnnnn/divisionslash/ccircumflex nnnn/divisionslash dnnnn/divisionslash ennnn/divisionslash fnnnn/divisionslash gnnnn/divisionslash hnnnn/divisionslash innnn/divisionslash jnnnn/divisionslash knnnn/divisionslash lnnnn/divisionslash mnnnn/divisionslash nnnnn/divisionslash o/divisionslash nnnn/divisionslash pnnnn/divisionslash qnnnn/divisionslash rnnnn/divisionslash snnnn/divisionslash tnnnn/divisionslash unnnn/divisionslash vnnnn/divisionslash wnnnn/divisionslash xnnnn/divisionslash ynnnn/divisionslash znnnn/divisionslash ænnnn/divisionslash nnnn/divisionslash nnnn/divisionslash nnnn/divisionslash/idotless nnnn/divisionslash/jdotless nnnn/divisionslash nnnn/divisionslash nnnn/divisionslash ønnnn/divisionslash/oe nnnn/divisionslash ßnnnn/divisionslash nnnn/divisionslash ðnnnn/divisionslash þnnnn/divisionslash nnnn/divisionslash nnnn/divisionslash nnnn/divisionslash nnnn/divisionslash \012\012nn/divisionslash o/divisionslash nnnn/divisionslash s/divisionslash nnnn/divisionslash v/divisionslash nnnn/divisionslash w/divisionslash nnnn/divisionslash x/divisionslash nnnn/divisionslash y/divisionslash nnnn/divisionslash z/divisionslash nnn\012\012\012nn+a+nn/space nn/minus a/minus nn/space nn×a×nn/space nn÷a÷nn/space nn=a=nn/space nn±a±nn/space nn~a~nn/space nn^a^nn/space nn<a<nn/space nn>a>nn/space nn¬a¬nn\012nn+b+nn/space nn/minus b/minus nn/space nn×b×nn/space nn÷b÷nn/space nn=b=nn/space nn±b±nn/space nn~b~nn/space nn^b^nn/space nn<b<nn/space nn>b>nn/space nn¬b¬nn\012nn+c+nn/space nn/minus c/minus nn/space nn×c×nn/space nn÷c÷nn/space nn=c=nn/space nn±c±nn/space nn~c~nn/space nn^c^nn/space nn<c<nn/space nn>c>nn/space nn¬c¬nn\012nn+d+nn/space nn/minus d/minus nn/space nn×d×nn/space nn÷d÷nn/space nn=d=nn/space nn±d±nn/space nn~d~nn/space nn^d^nn/space nn<d<nn/space nn>d>nn/space nn¬d¬nn\012nn+e+nn/space nn/minus e/minus nn/space nn×e×nn/space nn÷e÷nn/space nn=e=nn/space nn±e±nn/space nn~e~nn/space nn^e^nn/space nn<e<nn/space nn>e>nn/space nn¬e¬nn\012nn+f+nn/space nn/minus f/minus nn/space nn×f×nn/space nn÷f÷nn/space nn=f=nn/space nn±f±nn/space nn~f~nn/space nn^f^nn/space nn<f<nn/space nn>f>nn/space nn¬f¬nn\012nn+g+nn/space nn/minus g/minus nn/space nn×g×nn/space nn÷g÷nn/space nn=g=nn/space nn±g±nn/space nn~g~nn/space nn^g^nn/space nn<g<nn/space nn>g>nn/space nn¬g¬nn\012nn+h+nn/space nn/minus h/minus nn/space nn×h×nn/space nn÷h÷nn/space nn=h=nn/space nn±h±nn/space nn~h~nn/space nn^h^nn/space nn<h<nn/space nn>h>nn/space nn¬h¬nn\012nn+i+nn/space nn/minus i/minus nn/space nn×i×nn/space nn÷i÷nn/space nn=i=nn/space nn±i±nn/space nn~i~nn/space nn^i^nn/space nn<i<nn/space nn>i>nn/space nn¬i¬nn\012nn+j+nn/space nn/minus j/minus nn/space nn×j×nn/space nn÷j÷nn/space nn=j=nn/space nn±j±nn/space nn~j~nn/space nn^j^nn/space nn<j<nn/space nn>j>nn/space nn¬j¬nn\012nn+k+nn/space nn/minus k/minus nn/space nn×k×nn/space nn÷k÷nn/space nn=k=nn/space nn±k±nn/space nn~k~nn/space nn^k^nn/space nn<k<nn/space nn>k>nn/space nn¬k¬nn\012nn+l+nn/space nn/minus l/minus nn/space nn×l×nn/space nn÷l÷nn/space nn=l=nn/space nn±l±nn/space nn~l~nn/space nn^l^nn/space nn<l<nn/space nn>l>nn/space nn¬l¬nn\012nn+m+nn/space nn/minus m/minus nn/space nn×m×nn/space nn÷m÷nn/space nn=m=nn/space nn±m±nn/space nn~m~nn/space nn^m^nn/space nn<m<nn/space nn>m>nn/space nn¬m¬nn\012nn+n+nn/space nn/minus n/minus nn/space nn×n×nn/space nn÷n÷nn/space nn=n=nn/space nn±n±nn/space nn~n~nn/space nn^n^nn/space nn<n<nn/space nn>n>nn/space nn¬n¬nn\012nn+o+nn/space nn/minus o/minus nn/space nn×o×nn/space nn÷o÷nn/space nn=o=nn/space nn±o±nn/space nn~o~nn/space nn^o^nn/space nn<o<nn/space nn>o>nn/space nn¬o¬nn\012nn+p+nn/space nn/minus p/minus nn/space nn×p×nn/space nn÷p÷nn/space nn=p=nn/space nn±p±nn/space nn~p~nn/space nn^p^nn/space nn<p<nn/space nn>p>nn/space nn¬p¬nn\012nn+q+nn/space nn/minus q/minus nn/space nn×q×nn/space nn÷q÷nn/space nn=q=nn/space nn±q±nn/space nn~q~nn/space nn^q^nn/space nn<q<nn/space nn>q>nn/space nn¬q¬nn\012nn+r+nn/space nn/minus r/minus nn/space nn×r×nn/space nn÷r÷nn/space nn=r=nn/space nn±r±nn/space nn~r~nn/space nn^r^nn/space nn<r<nn/space nn>r>nn/space nn¬r¬nn\012nn+s+nn/space nn/minus s/minus nn/space nn×s×nn/space nn÷s÷nn/space nn=s=nn/space nn±s±nn/space nn~s~nn/space nn^s^nn/space nn<s<nn/space nn>s>nn/space nn¬s¬nn\012nn+t+nn/space nn/minus t/minus nn/space nn×t×nn/space nn÷t÷nn/space nn=t=nn/space nn±t±nn/space nn~t~nn/space nn^t^nn/space nn<t<nn/space nn>t>nn/space nn¬t¬nn\012nn+u+nn/space nn/minus u/minus nn/space nn×u×nn/space nn÷u÷nn/space nn=u=nn/space nn±u±nn/space nn~u~nn/space nn^u^nn/space nn<u<nn/space nn>u>nn/space nn¬u¬nn\012nn+v+nn/space nn/minus v/minus nn/space nn×v×nn/space nn÷v÷nn/space nn=v=nn/space nn±v±nn/space nn~v~nn/space nn^v^nn/space nn<v<nn/space nn>v>nn/space nn¬v¬nn\012nn+w+nn/space nn/minus w/minus nn/space nn×w×nn/space nn÷w÷nn/space nn=w=nn/space nn±w±nn/space nn~w~nn/space nn^w^nn/space nn<w<nn/space nn>w>nn/space nn¬w¬nn\012nn+x+nn/space nn/minus x/minus nn/space nn×x×nn/space nn÷x÷nn/space nn=x=nn/space nn±x±nn/space nn~x~nn/space nn^x^nn/space nn<x<nn/space nn>x>nn/space nn¬x¬nn\012nn+y+nn/space nn/minus y/minus nn/space nn×y×nn/space nn÷y÷nn/space nn=y=nn/space nn±y±nn/space nn~y~nn/space nn^y^nn/space nn<y<nn/space nn>y>nn/space nn¬y¬nn\012nn+z+nn/space nn/minus z/minus nn/space nn×z×nn/space nn÷z÷nn/space nn=z=nn/space nn±z±nn/space nn~z~nn/space nn^z^nn/space nn<z<nn/space nn>z>nn/space nn¬z¬nn\012nn+ø+nn/space nn/minus ø/minus nn/space nn×ø×nn/space nn÷ø÷nn/space nn=ø=nn/space nn±ø±nn/space nn~ø~nn/space nn^ø^nn/space nn<ø<nn/space nn>ø>nn/space nn¬ø¬nn\012nn+ß+nn/space nn/minus ß/minus nn/space nn×ß×nn/space nn÷ß÷nn/space nn=ß=nn/space nn±ß±nn/space nn~ß~nn/space nn^ß^nn/space nn<ß<nn/space nn>ß>nn/space nn¬ß¬nn\012nn+ð+nn/space nn/minus ð/minus nn/space nn×ð×nn/space nn÷ð÷nn/space nn=ð=nn/space nn±ð±nn/space nn~ð~nn/space nn^ð^nn/space nn<ð<nn/space nn>ð>nn/space nn¬ð¬nn\012nn+þ+nn/space nn/minus þ/minus nn/space nn×þ×nn/space nn÷þ÷nn/space nn=þ=nn/space nn±þ±nn/space nn~þ~nn/space nn^þ^nn/space nn<þ<nn/space nn>þ>nn/space nn¬þ¬nn\012\012HH+A+HH/space HH/minus A/minus HH/space HH×A×HH/space HH÷A÷HH/space HH=A=HH/space HH±A±HH/space HH~A~HH/space HH^A^HH/space HH<A<HH/space HH>A>HH/space HH¬A¬HH\012HH+B+HH/space HH/minus B/minus HH/space HH×B×HH/space HH÷B÷HH/space HH=B=HH/space HH±B±HH/space HH~B~HH/space HH^B^HH/space HH<B<HH/space HH>B>HH/space HH¬B¬HH\012HH+C+HH/space HH/minus C/minus HH/space HH×C×HH/space HH÷C÷HH/space HH=C=HH/space HH±C±HH/space HH~C~HH/space HH^C^HH/space HH<C<HH/space HH>C>HH/space HH¬C¬HH\012HH+D+HH/space HH/minus D/minus HH/space HH×D×HH/space HH÷D÷HH/space HH=D=HH/space HH±D±HH/space HH~D~HH/space HH^D^HH/space HH<D<HH/space HH>D>HH/space HH¬D¬HH\012HH+E+HH/space HH/minus E/minus HH/space HH×E×HH/space HH÷E÷HH/space HH=E=HH/space HH±E±HH/space HH~E~HH/space HH^E^HH/space HH<E<HH/space HH>E>HH/space HH¬E¬HH\012HH+F+HH/space HH/minus F/minus HH/space HH×F×HH/space HH÷F÷HH/space HH=F=HH/space HH±F±HH/space HH~F~HH/space HH^F^HH/space HH<F<HH/space HH>F>HH/space HH¬F¬HH\012HH+G+HH/space HH/minus G/minus HH/space HH×G×HH/space HH÷G÷HH/space HH=G=HH/space HH±G±HH/space HH~G~HH/space HH^G^HH/space HH<G<HH/space HH>G>HH/space HH¬G¬HH\012HH+H+HH/space HH/minus H/minus HH/space HH×H×HH/space HH÷H÷HH/space HH=H=HH/space HH±H±HH/space HH~H~HH/space HH^H^HH/space HH<H<HH/space HH>H>HH/space HH¬H¬HH\012HH+I+HH/space HH/minus I/minus HH/space HH×I×HH/space HH÷I÷HH/space HH=I=HH/space HH±I±HH/space HH~I~HH/space HH^I^HH/space HH<I<HH/space HH>I>HH/space HH¬I¬HH\012HH+J+HH/space HH/minus J/minus HH/space HH×J×HH/space HH÷J÷HH/space HH=J=HH/space HH±J±HH/space HH~J~HH/space HH^J^HH/space HH<J<HH/space HH>J>HH/space HH¬J¬HH\012HH+K+HH/space HH/minus K/minus HH/space HH×K×HH/space HH÷K÷HH/space HH=K=HH/space HH±K±HH/space HH~K~HH/space HH^K^HH/space HH<K<HH/space HH>K>HH/space HH¬K¬HH\012HH+L+HH/space HH/minus L/minus HH/space HH×L×HH/space HH÷L÷HH/space HH=L=HH/space HH±L±HH/space HH~L~HH/space HH^L^HH/space HH<HL<HH/space HH>L>HH/space HH¬L¬HH\012HH+M+HH/space HH/minus M/minus HH/space HH×M×HH/space HH÷M÷HH/space HH=M=HH/space HH±M±HH/space HH~M~HH/space HH^M^HH/space HH<M<HH/space HH>M>HH/space HH¬M¬HH\012HH+N+HH/space HH/minus N/minus HH/space HH×N×HH/space HH÷N÷HH/space HH=N=HH/space HH±N±HH/space HH~N~HH/space HH^N^HH/space HH<N<HH/space HH>N>HH/space HH¬N¬HH\012HH+O+HH/space HH/minus O/minus HH/space HH×O×HH/space HH÷O÷HH/space HH=O=HH/space HH±O±HH/space HH~O~HH/space HH^O^HH/space HH<O<HH/space HH>O>HH/space HH¬O¬HH\012HH+P+HH/space HH/minus P/minus HH/space HH×P×HH/space HH÷P÷HH/space HH=P=HH/space HH±P±HH/space HH~P~HH/space HH^P^HH/space HH<P<HH/space HH>P>HH/space HH¬P¬HH\012HH+Q+HH/space HH/minus Q/minus HH/space HH×Q×HH/space HH÷Q÷HH/space HH=Q=HH/space HH±Q±HH/space HH~Q~HH/space HH^Q^HH/space HH<Q<HH/space HH>Q>HH/space HH¬Q¬HH\012HH+R+HH/space HH/minus R/minus HH/space HH×R×HH/space HH÷R÷HH/space HH=R=HH/space HH±R±HH/space HH~R~HH/space HH^R^HH/space HH<R<HH/space HH>R>HH/space HH¬R¬HH\012HH+S+HH/space HH/minus S/minus HH/space HH×S×HH/space HH÷S÷HH/space HH=S=HH/space HH±S±HH/space HH~S~HH/space HH^S^HH/space HH<S<HH/space HH>S>HH/space HH¬S¬HH\012HH+T+HH/space HH/minus T/minus HH/space HH×T×HH/space HH÷T÷HH/space HH=T=HH/space HH±T±HH/space HH~T~HH/space HH^T^HH/space HH<T<HH/space HH>T>HH/space HH¬T¬HH\012HH+U+HH/space HH/minus U/minus HH/space HH×U×HH/space HH÷U÷HH/space HH=U=HH/space HH±U±HH/space HH~U~HH/space HH^U^HH/space HH<U<HH/space HH>U>HH/space HH¬U¬HH\012HH+V+HH/space HH/minus V/minus HH/space HH×V×HH/space HH÷V÷HH/space HH=V=HH/space HH±V±HH/space HH~V~HH/space HH^V^HH/space HH<V<HH/space HH>V>HH/space HH¬V¬HH\012HH+W+HH/space HH/minus W/minus HH/space HH×W×HH/space HH÷W÷HH/space HH=W=HH/space HH±W±HH/space HH~W~HH/space HH^W^HH/space HH<W<HH/space HH>W>HH/space HH¬W¬HH\012HH+X+HH/space HH/minus X/minus HH/space HH×X×HH/space HH÷X÷HH/space HH=X=HH/space HH±X±HH/space HH~X~HH/space HH^X^HH/space HH<X<HH/space HH>X>HH/space HH¬X¬HH\012HH+Y+HH/space HH/minus Y/minus HH/space HH×Y×HH/space HH÷Y÷HH/space HH=Y=HH/space HH±Y±HH/space HH~Y~HH/space HH^Y^HH/space HH<Y<HH/space HH>Y>HH/space HH¬Y¬HH\012HH+Z+HH/space HH/minus Z/minus HH/space HH×Z×HH/space HH÷Z÷HH/space HH=Z=HH/space HH±Z±HH/space HH~Z~HH/space HH^Z^HH/space HH<Z<HH/space HH>Z>HH/space HH¬Z¬HH\012HH+Ø+HH/space HH/minus Ø/minus HH/space HH×Ø×HH/space HH÷Ø÷HH/space HH=Ø=HH/space HH±Ø±HH/space HH~Ø~HH/space HH^Ø^HH/space HH<Ø<HH/space HH>Ø>HH/space HH¬Ø¬HH\012HH+Ð+HH/space HH/minus Ð/minus HH/space HH×Ð×HH/space HH÷Ð÷HH/space HH=Ð=HH/space HH±Ð±HH/space HH~Ð~HH/space HH^Ð^HH/space HH<Ð<HH/space HH>Ð>HH/space HH¬Ð¬HH\012HH+Þ+HH/space HH/minus Þ/minus HH/space HH×Þ×HH/space HH÷Þ÷HH/space HH=Þ=HH/space HH±Þ±HH/space HH~Þ~HH/space HH^Þ^HH/space HH<Þ<HH/space HH>Þ>HH/space HH¬Þ¬HH\012\012\012\01200+0+00/space 00/minus 0/minus 00/space 00×0×00/space 00÷0÷00/space 00=0=00/space 00±0±00/space 00~0~00/space 00^0^00/space 00<0<00/space 00>0>00/space 00¬0¬00\01200+1+00/space 00/minus 1/minus 00/space 00×1×00/space 00÷1÷00/space 00=1=00/space 00±1±00/space 00~1~00/space 00^1^00/space 00<1<00/space 00>1>00/space 00¬1¬00\01200+2+00/space 00/minus 2/minus 00/space 00×2×00/space 00÷2÷00/space 00=2=00/space 00±2±00/space 00~2~00/space 00^2^00/space 00<2<00/space 00>2>00/space 00¬2¬00\01200+3+00/space 00/minus 3/minus 00/space 00×3×00/space 00÷3÷00/space 00=3=00/space 00±3±00/space 00~3~00/space 00^3^00/space 00<3<00/space 00>3>00/space 00¬3¬00\01200+4+00/space 00/minus 4/minus 00/space 00×4×00/space 00÷4÷00/space 00=4=00/space 00±4±00/space 00~4~00/space 00^4^00/space 00<4<00/space 00>4>00/space 00¬4¬00\01200+5+00/space 00/minus 5/minus 00/space 00×5×00/space 00÷5÷00/space 00=5=00/space 00±5±00/space 00~5~00/space 00^5^00/space 00<5<00/space 00>5>00/space 00¬5¬00\01200+6+00/space 00/minus 6/minus 00/space 00×6×00/space 00÷6÷00/space 00=6=00/space 00±6±00/space 00~6~00/space 00^6^00/space 00<6<00/space 00>6>00/space 00¬6¬00\01200+7+00/space 00/minus 7/minus 00/space 00×7×00/space 00÷7÷00/space 00=7=00/space 00±7±00/space 00~7~00/space 00^7^00/space 00<7<00/space 00>7>00/space 00¬7¬00\01200+8+00/space 00/minus 8/minus 00/space 00×8×00/space 00÷8÷00/space 00=8=00/space 00±8±00/space 00~8~00/space 00^8^00/space 00<8<00/space 00>8>00/space 00¬8¬00\01200+9+00/space 00/minus 9/minus 00/space 00×9×00/space 00÷9÷00/space 00=9=00/space 00±9±00/space 00~9~00/space 00^9^00/space 00<9<00/space 00>9>00/space 00¬9¬00\012\012\012\012",
 "00100200300400500600700800900\01200$001$002$003$004$005$006$007$008$009$00\01200$000$100$200$300$400$500$600$700$800$90\01200¢001¢002¢003¢004¢005¢006¢007¢008¢009¢00\01200¢000¢100¢200¢1300¢400¢500¢600¢700¢800¢90\01200£001£002£003£004£005£006£007£008£009£00\01200£000£100£200£300£400£500£600£700£800£90\01200/euro 001/euro 002/euro 003/euro 004/euro 005/euro 006/euro 007/euro 008/euro 009/euro 00\01200/euro 000/euro 100/euro 200/euro 300/euro 400/euro 500/euro 600/euro 700/euro 800/euro 90\01200¤001¤002¤003¤004¤005¤006¤007¤008¤009¤00\01200¤000¤100¤200¤300¤400¤500¤600¤700¤800¤90\01200¥001¥002¥003¥004¥005¥006¥007¥008¥009¥00\01200¥000¥100¥200¥300¥400¥500¥600¥700¥800¥90\012",
-"A^A/space J^J/space M^M/space O^O/space S^S/space T^T/space U^U/space V^V/space W^W/space X^X/space Y^Y/space Z^Z/space Æ^Æ/space Ð^Ð/space ^/space ^/space ^/space ^/space H^/space V^A\012/space HH^A^HHHH^HHHH^JHHHH^M^HHHH^O^HHHH^S^HHHH^T^HHHH^U^HHHH^V^HHHH^W^HHHH^X^HHHH^Y^HHHH^Z^HHHH^Æ^HHHH^Ð^HHHH^L^HHHH^^HHHH^^HHHH^^HHHH^HH\012\01200^001^002^003^004^005^006^007^008^009^00\0120^000^100^200^300^400^500^600^700^800^900\012\012nna^nnnnb^nnnnc^nnnnd^nnnne^nnnnf^nnnng^nnnnh^nnnni^nnnnj^nnnnk^nnnnl^nnnnm^nnnnn^nnnno^nnnnp^nnnnq^nnnnr^nnnns^nnnnt^nnnnu^nnnnv^nnnnw^nnnnx^nnnny^nnnnz^nnnnæ^nnnn^nnnn^nnnn^nnnn/idotless ^nnnn/jdotless ^nnnn^nnnn^nnnnø^nnnn/oe ^nnnnß^nnnn^nnnnð^nnnnþ^nnnn^nnnn^nnnn^nnnn^nnnn\012\012nn^annnn^bnnnn^cnnnn^dnnnn^ennnn^fnnnn^gnnnn^hnnnn^innnn^jnnnn^knnnn^lnnnn^mnnnn^nnnnn^onnnn^pnnnn^qnnnn^rnnnn^snnnn^tnnnn^unnnn^vnnnn^wnnnn^xnnnn^ynnnn^znnnn^ænnnn^nnnn^nnnn^nnnn^/idotless nnnn^/jdotless nnnn^nnnn^nnnn^ønnnn^/oe nnnn^ßnnnn^nnnn^ðnnnn^þnnnn^nnnn^nnnn^nnnn^nnnn^\012\012nn^o^nnnn^s^nnnn^v^vnnnn^w^nnnn^x^nnnn^y^nnnn^z^nnn\012\01200°001°002°003°004°005°006°007°008°009°00\0120°000°100°200°300°400°500°600°700°800°90\012\01251°C/space 25°F/space 58°K/space 50°R/space 51°R/space 52°R/space 53°R/space 54°R/space 55°R/space 56°R/space 57°R/space 58°R/space 59°R\012\01200ª0/space 001ª/space 002ª/space 003ª/space 004ª/space 005ª/space 006ª/space 007ª/space 008ª/space 009ª/space 00\01200º0/space 001º/space 002º/space 003º/space 004º/space 005º/space 006º/space 007º/space 008º/space 009º/space 00\012\012%000/space/space 000%/space/space 000%000\012%100/space/space 001%/space/space 001%100\012%200/space/space 002%/space/space 002%200\012%300/space/space 003%/space/space 003%300\012%400/space/space 004%/space/space 004%400\012%500/space/space 005%/space/space 005%500\012%600/space/space 006%/space/space 006%600\012%700/space/space 007%/space/space 007%700\012%800/space/space 008%/space/space 008%800\012%900/space/space 009%/space/space 009%900\012\0120,05%\012\0120,%,0'%\"%,%.%/backslash %/backslash %//%//%(%)%[%]%{%}%\012\012%:%;%?%!%¿%¡%",
 "UHO\012AHONE\012UHGHU\012GHNU\012HIFHA\012HIENA\012FINJE\012HINU\012UZEH\012HIPIS\012PISU\012HARIEN\012CHIME\012HIGIENA\012UFINO\012HUBNIE\012UHBH\012BEHU\012SUHE\012HSH\012HIS\012SHUM\012MUHS\012ROPISKA\012HRIH\012VIDEO\012HDHHI\012EHJND\012JEDNO\012CHJEK\012ROPISA\012NIHA\012KNIHA\012UEHL\012LIHU\012HUTNA\012TUNA\012MUTEK\012TEH\012TUN\012VIDEO\012CHIVED\012HVER\012JAHWE\012CHWDP\012HYDEPARK\012YETI\012THXE\012UNIXH\012HUHZHE\012ZENITH\012CHRZASZCZ\012BURZLIWY\012VIDEOSPAN\012HAMBURGEROUS\012ESKALOPKI\012STROGONOFF\012PIWKIEM\012MUFFINEK\012GRUCHA",
 "ekenbaum/space uinnunu/space minimum/space ann/space una/space duann/space dual/space donamic/space ubm/space bum/space bim/space nucniam/space cham/space cum/space mucha/space nuc/space noc/space und/space dno/space nudno/space nuem/space niemocna/space anemon/space emu/space inne/space menu/space menich/space idealna/space unifuma/space funi/space muflon/space full/space pnuf/space napuf/space funikuli/space fiu/space agat/space nugat/space ugniata/cacute/space brzeg/space dung/space dingi/space mango/space drugie/space uniata/cacute/space brze/space dun/space dini/space mano/space druie/space mijam/space jam/space jum/space jem/space jogging/space join/space hamburg/space hamuj/space panuje/space panikuje/space kunik/space nik/space domknij/space kij/space kijek/space lenno/space nil/space nikiel/space lniane/space kul/space namolnie/space polna/space ulic/space mlha/space upadek/space upnij/space pudem/space mop/space pomnik/space kup/space mapu/space opinion/space pinaple/space question/space antique/space moqin/space harlequin/space urna/space turnie/space mur/space rumiane/space ribbon/space rum/space ruomor/space humor/space homar/space marnie/space maruda/space ruda/space rima/space suma/space bus/space amusment/space smart/space smar/space arkusik/space osno/space dusno/space oslo/space nutne/space kutia/space tunel/space mit/space gnut/space butik/space tnij/space utnij/space tiul/space tlen/space/space vino/space ruvno/space hniuv/space vn/space tuvim/space vimeo/space video/space suwki/space winnica/space winda/space fuxia/space mix/space hiuxpem/space dym/space dynia/space buy/space buying/space lazy/space myk/space dziwki/space podziemny/space szum/space mizim/space zima/space czubek/space zub/space buzzing/space muz/space quiz/space luiza/space elizabeth/space ibiza/space dnim/space bdc/space jad/space bk/space budm/space mni/space dbnie/space duga/space uamek/space up/space puki/space niead/space punoc/space strnußne/space straße/space mußen/space grüßige/space weiß\012meßingenieur/space grüßen/space wäßrig/space preßburg/space blöße/space maße/space maß/space grüßte/space gruß/space außer/space reißen/space es/space reißt/space fleiß/space preußen\012\012duban/space punoc/space kurnik/space strnußne/space nuf/space fnu/space chujek/space wujnuinek/space wuj/space nulnu/space olnej/space lniany\012nus/space snu/space nutka/space nutnie/space tnie/space wnuk/space vnuk/space tux\012uyn/space buy/space bin/space nug/space gun/space tuyin/space ynn/space nuz/space muz\012muzneum/space znami/space binary/space num/space mu/space chub\012nek/space kus/space ufnie/space nuat/space uniata/space pniak/space cnn/space hunc/space emanu/space manuel/space puenta/space uann/space firma/space full\012confident/space fund/space unime/space hamuj/space chomik\012usniem/space nutki/space nutnie/space tniemy/space tune\012tuna/space nut/space nuwka/space niwu/space duwnie/space uvnie\012vino/space uvion/space wino/space guy/space buy/space dymka/space uznanie/space znielka/space duænik/space guzik/space znak\012duo/space nek/space ann/space daniem",
 "Sugar/space {2/space tbs}\012Równanie/space [2÷4(5+1x)]=12x/space \0122536×5/minus 1245>7934<8193¬65±70\012Any/space questions?\012Good!\012¿Que?\012¡Incredible!\012The/space winner/space is/space #25!\012©2016,Universal/space Music.\012AwesomeBrand®\012helo@buziaczek.com\012Marks/space &/space Spencer\012MARKS/space &/space SPENCER\012M&S\012Contextual*\012Semi-sweet/space wine,/space bread,/space and/space olives;\012http:////teddythebear//index.html\012Kierowca/space mia/space 0,5/space alkoholu.\01226%/space wzrost/space podatku\012Forcast/space for/space Tuesday:/space 35°C\012Lunch/space set:\012/bullet sardines\012/bullet chocolate\012/bullet yogurt\012\"Quotation/space continues/ellipsis \""
@@ -10858,7 +10856,7 @@ unicode = 004E;
 {
 color = 5;
 glyphname = O;
-lastChange = "2020-11-30 01:56:30 +0000";
+lastChange = "2020-11-30 17:04:14 +0000";
 layers = (
 {
 anchors = (
@@ -17689,7 +17687,7 @@ unicode = 005A;
 {
 color = 5;
 glyphname = a;
-lastChange = "2020-11-30 02:00:52 +0000";
+lastChange = "2020-11-30 16:58:48 +0000";
 layers = (
 {
 anchors = (
@@ -20549,7 +20547,7 @@ unicode = 0064;
 {
 color = 5;
 glyphname = e;
-lastChange = "2020-11-28 23:04:33 +0000";
+lastChange = "2020-11-30 16:58:13 +0000";
 layers = (
 {
 anchors = (
@@ -21386,7 +21384,7 @@ unicode = 0065;
 {
 color = 5;
 glyphname = f;
-lastChange = "2020-11-30 09:43:49 +0000";
+lastChange = "2020-11-30 17:40:19 +0000";
 layers = (
 {
 anchors = (
@@ -23719,7 +23717,7 @@ unicode = 0068;
 {
 color = 5;
 glyphname = i;
-lastChange = "2020-11-30 09:44:05 +0000";
+lastChange = "2020-11-30 17:02:02 +0000";
 layers = (
 {
 background = {
@@ -26817,7 +26815,7 @@ unicode = 006E;
 {
 color = 5;
 glyphname = o;
-lastChange = "2020-11-30 09:19:28 +0000";
+lastChange = "2020-11-30 16:58:59 +0000";
 layers = (
 {
 anchors = (
@@ -27772,7 +27770,7 @@ unicode = 0070;
 {
 color = 5;
 glyphname = q;
-lastChange = "2020-11-30 02:01:49 +0000";
+lastChange = "2020-11-30 16:58:54 +0000";
 layers = (
 {
 background = {
@@ -31501,7 +31499,7 @@ unicode = 0075;
 {
 color = 5;
 glyphname = v;
-lastChange = "2020-11-30 09:25:41 +0000";
+lastChange = "2020-11-30 17:43:08 +0000";
 layers = (
 {
 anchors = (
@@ -31929,7 +31927,7 @@ unicode = 0076;
 {
 color = 5;
 glyphname = w;
-lastChange = "2020-11-30 09:25:30 +0000";
+lastChange = "2020-11-30 17:43:09 +0000";
 layers = (
 {
 anchors = (
@@ -33489,7 +33487,7 @@ unicode = 0078;
 {
 color = 5;
 glyphname = y;
-lastChange = "2020-11-30 09:26:02 +0000";
+lastChange = "2020-11-30 17:45:08 +0000";
 layers = (
 {
 anchors = (
@@ -33985,7 +33983,7 @@ unicode = 0079;
 {
 color = 5;
 glyphname = z;
-lastChange = "2020-11-30 02:03:02 +0000";
+lastChange = "2020-11-30 17:44:32 +0000";
 layers = (
 {
 anchors = (
@@ -35122,9 +35120,8 @@ rightMetricsKey = quotesingle;
 unicode = 0022;
 },
 {
-color = 5;
 glyphname = numbersign;
-lastChange = "2020-11-28 23:25:16 +0000";
+lastChange = "2020-11-30 17:55:05 +0000";
 layers = (
 {
 background = {
@@ -35456,77 +35453,77 @@ paths = (
 {
 closed = 1;
 nodes = (
-"596 1306 LINE",
-"632 1322 OFFCURVE",
-"687 1330 OFFCURVE",
-"740 1330 CURVE SMOOTH",
-"794 1330 OFFCURVE",
-"845 1322 OFFCURVE",
-"874 1306 CURVE",
-"380 24 LINE",
-"344 8 OFFCURVE",
-"289 0 OFFCURVE",
-"236 0 CURVE SMOOTH",
-"183 0 OFFCURVE",
-"131 8 OFFCURVE",
-"102 24 CURVE"
+"591 1306 LINE",
+"627 1322 OFFCURVE",
+"682 1330 OFFCURVE",
+"735 1330 CURVE SMOOTH",
+"789 1330 OFFCURVE",
+"840 1322 OFFCURVE",
+"869 1306 CURVE",
+"375 24 LINE",
+"339 8 OFFCURVE",
+"284 0 OFFCURVE",
+"231 0 CURVE SMOOTH",
+"178 0 OFFCURVE",
+"126 8 OFFCURVE",
+"97 24 CURVE"
 );
 },
 {
 closed = 1;
 nodes = (
-"1096 1306 LINE",
-"1132 1322 OFFCURVE",
-"1187 1330 OFFCURVE",
-"1240 1330 CURVE SMOOTH",
-"1294 1330 OFFCURVE",
-"1345 1322 OFFCURVE",
-"1374 1306 CURVE",
-"880 24 LINE",
-"844 8 OFFCURVE",
-"789 0 OFFCURVE",
-"736 0 CURVE SMOOTH",
-"683 0 OFFCURVE",
-"631 8 OFFCURVE",
-"602 24 CURVE"
+"1091 1306 LINE",
+"1127 1322 OFFCURVE",
+"1182 1330 OFFCURVE",
+"1235 1330 CURVE SMOOTH",
+"1289 1330 OFFCURVE",
+"1340 1322 OFFCURVE",
+"1369 1306 CURVE",
+"875 24 LINE",
+"839 8 OFFCURVE",
+"784 0 OFFCURVE",
+"731 0 CURVE SMOOTH",
+"678 0 OFFCURVE",
+"626 8 OFFCURVE",
+"597 24 CURVE"
 );
 },
 {
 closed = 1;
 nodes = (
-"3 258 LINE",
-"-4 295 OFFCURVE",
-"-3 341 OFFCURVE",
-"5 386 CURVE SMOOTH",
-"12 432 OFFCURVE",
-"25 477 OFFCURVE",
-"44 514 CURVE",
-"1272 514 LINE",
-"1279 477 OFFCURVE",
-"1279 432 OFFCURVE",
-"1272 386 CURVE SMOOTH",
-"1264 341 OFFCURVE",
-"1250 295 OFFCURVE",
-"1231 258 CURVE"
+"-2 258 LINE",
+"-9 295 OFFCURVE",
+"-8 341 OFFCURVE",
+"0 386 CURVE SMOOTH",
+"7 432 OFFCURVE",
+"20 477 OFFCURVE",
+"39 514 CURVE",
+"1267 514 LINE",
+"1274 477 OFFCURVE",
+"1274 432 OFFCURVE",
+"1267 386 CURVE SMOOTH",
+"1259 341 OFFCURVE",
+"1245 295 OFFCURVE",
+"1226 258 CURVE"
 );
 },
 {
 closed = 1;
 nodes = (
-"200 816 LINE",
-"193 853 OFFCURVE",
-"194 899 OFFCURVE",
-"201 944 CURVE SMOOTH",
-"209 990 OFFCURVE",
-"222 1035 OFFCURVE",
-"241 1072 CURVE",
-"1469 1072 LINE",
-"1476 1035 OFFCURVE",
-"1476 990 OFFCURVE",
-"1468 944 CURVE SMOOTH",
-"1461 899 OFFCURVE",
-"1447 853 OFFCURVE",
-"1428 816 CURVE"
+"195 816 LINE",
+"188 853 OFFCURVE",
+"189 899 OFFCURVE",
+"196 944 CURVE SMOOTH",
+"204 990 OFFCURVE",
+"217 1035 OFFCURVE",
+"236 1072 CURVE",
+"1464 1072 LINE",
+"1471 1035 OFFCURVE",
+"1471 990 OFFCURVE",
+"1463 944 CURVE SMOOTH",
+"1456 899 OFFCURVE",
+"1442 853 OFFCURVE",
+"1423 816 CURVE"
 );
 }
 );
@@ -35536,69 +35533,69 @@ paths = (
 {
 closed = 1;
 nodes = (
-"782 -17 OFFCURVE",
-"838 -12 OFFCURVE",
-"875 0 CURVE",
-"1361 1261 LINE",
-"1329 1272 OFFCURVE",
-"1277 1278 OFFCURVE",
-"1229 1278 CURVE SMOOTH",
-"1176 1278 OFFCURVE",
-"1120 1273 OFFCURVE",
-"1083 1261 CURVE",
-"597 0 LINE",
-"629 -11 OFFCURVE",
-"681 -17 OFFCURVE",
-"729 -17 CURVE SMOOTH"
+"777 -17 OFFCURVE",
+"833 -12 OFFCURVE",
+"870 0 CURVE",
+"1356 1261 LINE",
+"1324 1272 OFFCURVE",
+"1272 1278 OFFCURVE",
+"1224 1278 CURVE SMOOTH",
+"1171 1278 OFFCURVE",
+"1115 1273 OFFCURVE",
+"1078 1261 CURVE",
+"592 0 LINE",
+"624 -11 OFFCURVE",
+"676 -17 OFFCURVE",
+"724 -17 CURVE SMOOTH"
 );
 },
 {
 closed = 1;
 nodes = (
-"1225 235 LINE",
-"1258 301 OFFCURVE",
-"1279 415 OFFCURVE",
-"1273 490 CURVE",
-"48 490 LINE",
-"15 424 OFFCURVE",
-"-6 310 OFFCURVE",
-"0 235 CURVE"
+"1220 235 LINE",
+"1253 301 OFFCURVE",
+"1274 415 OFFCURVE",
+"1268 490 CURVE",
+"43 490 LINE",
+"10 424 OFFCURVE",
+"-11 310 OFFCURVE",
+"-5 235 CURVE"
 );
 },
 {
 closed = 1;
 nodes = (
-"287 -17 OFFCURVE",
-"343 -12 OFFCURVE",
-"380 0 CURVE",
-"866 1261 LINE",
-"834 1272 OFFCURVE",
-"782 1278 OFFCURVE",
-"734 1278 CURVE SMOOTH",
-"681 1278 OFFCURVE",
-"625 1273 OFFCURVE",
-"588 1261 CURVE",
-"102 0 LINE",
-"134 -11 OFFCURVE",
-"186 -17 OFFCURVE",
-"234 -17 CURVE SMOOTH"
+"282 -17 OFFCURVE",
+"338 -12 OFFCURVE",
+"375 0 CURVE",
+"861 1261 LINE",
+"829 1272 OFFCURVE",
+"777 1278 OFFCURVE",
+"729 1278 CURVE SMOOTH",
+"676 1278 OFFCURVE",
+"620 1273 OFFCURVE",
+"583 1261 CURVE",
+"97 0 LINE",
+"129 -11 OFFCURVE",
+"181 -17 OFFCURVE",
+"229 -17 CURVE SMOOTH"
 );
 },
 {
 closed = 1;
 nodes = (
-"1414 771 LINE",
-"1447 837 OFFCURVE",
-"1468 951 OFFCURVE",
-"1462 1026 CURVE",
-"237 1026 LINE",
-"204 960 OFFCURVE",
-"183 846 OFFCURVE",
-"189 771 CURVE"
+"1409 771 LINE",
+"1442 837 OFFCURVE",
+"1463 951 OFFCURVE",
+"1457 1026 CURVE",
+"232 1026 LINE",
+"199 960 OFFCURVE",
+"178 846 OFFCURVE",
+"184 771 CURVE"
 );
 }
 );
-width = 1411;
+width = 1401;
 },
 {
 background = {
@@ -35606,77 +35603,77 @@ paths = (
 {
 closed = 1;
 nodes = (
-"588 1262 LINE",
-"605 1267 OFFCURVE",
-"631 1270 OFFCURVE",
-"655 1270 CURVE SMOOTH",
-"680 1270 OFFCURVE",
-"703 1267 OFFCURVE",
-"720 1262 CURVE",
-"247 28 LINE",
-"231 21 OFFCURVE",
-"205 18 OFFCURVE",
-"179 18 CURVE SMOOTH",
-"154 18 OFFCURVE",
-"129 21 OFFCURVE",
-"115 28 CURVE"
+"580 1262 LINE",
+"597 1267 OFFCURVE",
+"623 1270 OFFCURVE",
+"647 1270 CURVE SMOOTH",
+"672 1270 OFFCURVE",
+"695 1267 OFFCURVE",
+"712 1262 CURVE",
+"239 28 LINE",
+"223 21 OFFCURVE",
+"197 18 OFFCURVE",
+"171 18 CURVE SMOOTH",
+"146 18 OFFCURVE",
+"121 21 OFFCURVE",
+"107 28 CURVE"
 );
 },
 {
 closed = 1;
 nodes = (
-"980 1262 LINE",
-"997 1267 OFFCURVE",
-"1023 1270 OFFCURVE",
-"1047 1270 CURVE SMOOTH",
-"1072 1270 OFFCURVE",
-"1095 1267 OFFCURVE",
-"1112 1262 CURVE",
-"639 28 LINE",
-"623 21 OFFCURVE",
-"597 18 OFFCURVE",
-"571 18 CURVE SMOOTH",
-"546 18 OFFCURVE",
-"521 21 OFFCURVE",
-"507 28 CURVE"
+"972 1262 LINE",
+"989 1267 OFFCURVE",
+"1015 1270 OFFCURVE",
+"1039 1270 CURVE SMOOTH",
+"1064 1270 OFFCURVE",
+"1087 1267 OFFCURVE",
+"1104 1262 CURVE",
+"631 28 LINE",
+"615 21 OFFCURVE",
+"589 18 OFFCURVE",
+"563 18 CURVE SMOOTH",
+"538 18 OFFCURVE",
+"513 21 OFFCURVE",
+"499 28 CURVE"
 );
 },
 {
 closed = 1;
 nodes = (
-"18 338 LINE",
-"15 354 OFFCURVE",
-"15 377 OFFCURVE",
-"19 400 CURVE SMOOTH",
-"23 423 OFFCURVE",
-"29 446 OFFCURVE",
-"38 462 CURVE",
-"1028 462 LINE",
-"1031 446 OFFCURVE",
-"1031 423 OFFCURVE",
-"1027 400 CURVE SMOOTH",
-"1023 377 OFFCURVE",
-"1017 354 OFFCURVE",
-"1008 338 CURVE"
+"10 338 LINE",
+"7 354 OFFCURVE",
+"7 377 OFFCURVE",
+"11 400 CURVE SMOOTH",
+"15 423 OFFCURVE",
+"21 446 OFFCURVE",
+"30 462 CURVE",
+"1020 462 LINE",
+"1023 446 OFFCURVE",
+"1023 423 OFFCURVE",
+"1019 400 CURVE SMOOTH",
+"1015 377 OFFCURVE",
+"1009 354 OFFCURVE",
+"1000 338 CURVE"
 );
 },
 {
 closed = 1;
 nodes = (
-"184 828 LINE",
-"181 844 OFFCURVE",
-"182 867 OFFCURVE",
-"185 890 CURVE SMOOTH",
-"189 913 OFFCURVE",
-"196 936 OFFCURVE",
-"204 952 CURVE",
-"1194 952 LINE",
-"1198 936 OFFCURVE",
-"1197 913 OFFCURVE",
-"1193 890 CURVE SMOOTH",
-"1190 867 OFFCURVE",
-"1183 844 OFFCURVE",
-"1174 828 CURVE"
+"176 828 LINE",
+"173 844 OFFCURVE",
+"174 867 OFFCURVE",
+"177 890 CURVE SMOOTH",
+"181 913 OFFCURVE",
+"188 936 OFFCURVE",
+"196 952 CURVE",
+"1186 952 LINE",
+"1190 936 OFFCURVE",
+"1189 913 OFFCURVE",
+"1185 890 CURVE SMOOTH",
+"1182 867 OFFCURVE",
+"1175 844 OFFCURVE",
+"1166 828 CURVE"
 );
 }
 );
@@ -35686,69 +35683,69 @@ paths = (
 {
 closed = 1;
 nodes = (
-"615 -8 OFFCURVE",
-"639 -5 OFFCURVE",
-"655 0 CURVE",
-"1141 1264 LINE",
-"1127 1269 OFFCURVE",
-"1102 1272 OFFCURVE",
-"1079 1272 CURVE SMOOTH",
-"1051 1272 OFFCURVE",
-"1027 1269 OFFCURVE",
-"1011 1264 CURVE",
-"525 0 LINE",
-"539 -5 OFFCURVE",
-"564 -8 OFFCURVE",
-"587 -8 CURVE SMOOTH"
+"607 -8 OFFCURVE",
+"631 -5 OFFCURVE",
+"647 0 CURVE",
+"1133 1264 LINE",
+"1119 1269 OFFCURVE",
+"1094 1272 OFFCURVE",
+"1071 1272 CURVE SMOOTH",
+"1043 1272 OFFCURVE",
+"1019 1269 OFFCURVE",
+"1003 1264 CURVE",
+"517 0 LINE",
+"531 -5 OFFCURVE",
+"556 -8 OFFCURVE",
+"579 -8 CURVE SMOOTH"
 );
 },
 {
 closed = 1;
 nodes = (
-"1028 315 LINE",
-"1044 354 OFFCURVE",
-"1053 393 OFFCURVE",
-"1051 439 CURVE",
-"50 439 LINE",
-"34 400 OFFCURVE",
-"25 361 OFFCURVE",
-"27 315 CURVE"
+"1020 315 LINE",
+"1036 354 OFFCURVE",
+"1045 393 OFFCURVE",
+"1043 439 CURVE",
+"42 439 LINE",
+"26 400 OFFCURVE",
+"17 361 OFFCURVE",
+"19 315 CURVE"
 );
 },
 {
 closed = 1;
 nodes = (
-"208 -8 OFFCURVE",
-"232 -5 OFFCURVE",
-"248 0 CURVE",
-"734 1264 LINE",
-"720 1269 OFFCURVE",
-"695 1272 OFFCURVE",
-"672 1272 CURVE SMOOTH",
-"644 1272 OFFCURVE",
-"620 1269 OFFCURVE",
-"604 1264 CURVE",
-"118 0 LINE",
-"132 -5 OFFCURVE",
-"157 -8 OFFCURVE",
-"180 -8 CURVE SMOOTH"
+"200 -8 OFFCURVE",
+"224 -5 OFFCURVE",
+"240 0 CURVE",
+"726 1264 LINE",
+"712 1269 OFFCURVE",
+"687 1272 OFFCURVE",
+"664 1272 CURVE SMOOTH",
+"636 1272 OFFCURVE",
+"612 1269 OFFCURVE",
+"596 1264 CURVE",
+"110 0 LINE",
+"124 -5 OFFCURVE",
+"149 -8 OFFCURVE",
+"172 -8 CURVE SMOOTH"
 );
 },
 {
 closed = 1;
 nodes = (
-"1209 825 LINE",
-"1225 864 OFFCURVE",
-"1234 903 OFFCURVE",
-"1232 949 CURVE",
-"231 949 LINE",
-"215 910 OFFCURVE",
-"206 871 OFFCURVE",
-"208 825 CURVE"
+"1201 825 LINE",
+"1217 864 OFFCURVE",
+"1226 903 OFFCURVE",
+"1224 949 CURVE",
+"223 949 LINE",
+"207 910 OFFCURVE",
+"198 871 OFFCURVE",
+"200 825 CURVE"
 );
 }
 );
-width = 1204;
+width = 1188;
 }
 );
 rightMetricsKey = "=|";
@@ -38520,7 +38517,7 @@ unicode = 003B;
 {
 color = 5;
 glyphname = question;
-lastChange = "2020-11-28 23:52:27 +0000";
+lastChange = "2020-11-30 15:40:00 +0000";
 layers = (
 {
 background = {
@@ -42809,7 +42806,7 @@ unicode = 007D;
 {
 color = 5;
 glyphname = backslash;
-lastChange = "2020-11-30 11:33:34 +0000";
+lastChange = "2020-11-30 15:51:32 +0000";
 layers = (
 {
 background = {
@@ -42889,14 +42886,14 @@ paths = (
 {
 closed = 1;
 nodes = (
-"151 1353 LINE",
-"215 1401 OFFCURVE",
-"341 1430 OFFCURVE",
-"430 1427 CURVE",
-"768 -274 LINE",
-"703 -318 OFFCURVE",
-"577 -345 OFFCURVE",
-"488 -343 CURVE"
+"150 1353 LINE",
+"214 1401 OFFCURVE",
+"340 1430 OFFCURVE",
+"429 1427 CURVE",
+"767 -274 LINE",
+"702 -318 OFFCURVE",
+"576 -345 OFFCURVE",
+"487 -343 CURVE"
 );
 }
 );
@@ -42908,16 +42905,16 @@ closed = 1;
 nodes = (
 "175 1353 LINE",
 "235 1397 OFFCURVE",
-"362 1433 OFFCURVE",
-"455 1427 CURVE",
-"764 -274 LINE",
-"703 -314 OFFCURVE",
+"361 1433 OFFCURVE",
+"454 1427 CURVE",
+"763 -274 LINE",
+"702 -314 OFFCURVE",
 "576 -347 OFFCURVE",
 "482 -343 CURVE"
 );
 }
 );
-width = 886;
+width = 885;
 },
 {
 background = {
@@ -44743,9 +44740,8 @@ rightMetricsKey = "=|";
 unicode = 2014;
 },
 {
-color = 5;
 glyphname = section;
-lastChange = "2020-11-28 23:37:36 +0000";
+lastChange = "2020-11-30 17:28:48 +0000";
 layers = (
 {
 background = {
@@ -45101,83 +45097,83 @@ paths = (
 {
 closed = 1;
 nodes = (
-"576 -238 OFFCURVE",
-"779 -80 OFFCURVE",
-"779 124 CURVE SMOOTH",
-"779 250 OFFCURVE",
-"700 339 OFFCURVE",
-"582 392 CURVE SMOOTH",
-"502 428 LINE SMOOTH",
-"427 462 OFFCURVE",
-"343 493 OFFCURVE",
-"343 573 CURVE SMOOTH",
-"343 654 OFFCURVE",
-"429 742 OFFCURVE",
-"522 749 CURVE",
-"456 896 LINE",
-"241 863 OFFCURVE",
-"51 702 OFFCURVE",
-"51 502 CURVE SMOOTH",
-"51 322 OFFCURVE",
-"211 252 OFFCURVE",
-"308 205 CURVE SMOOTH",
-"388 166 LINE SMOOTH",
-"418 151 OFFCURVE",
-"467 128 OFFCURVE",
-"467 79 CURVE SMOOTH",
-"467 33 OFFCURVE",
-"422 -9 OFFCURVE",
-"342 -9 CURVE SMOOTH",
-"261 -9 OFFCURVE",
-"172 26 OFFCURVE",
-"110 70 CURVE",
-"52 15 OFFCURVE",
-"7 -70 OFFCURVE",
-"-1 -136 CURVE",
-"77 -194 OFFCURVE",
-"189 -238 OFFCURVE",
-"327 -238 CURVE SMOOTH"
+"547 256 LINE",
+"750 324 OFFCURVE",
+"933 462 OFFCURVE",
+"965 624 CURVE SMOOTH",
+"1001 808 OFFCURVE",
+"870 899 OFFCURVE",
+"703 976 CURVE SMOOTH",
+"598 1024 LINE SMOOTH",
+"553 1045 OFFCURVE",
+"532 1064 OFFCURVE",
+"539 1098 CURVE SMOOTH",
+"546 1136 OFFCURVE",
+"589 1160 OFFCURVE",
+"643 1160 CURVE SMOOTH",
+"715 1160 OFFCURVE",
+"788 1136 OFFCURVE",
+"866 1102 CURVE",
+"925 1140 OFFCURVE",
+"990 1246 OFFCURVE",
+"998 1322 CURVE",
+"918 1362 OFFCURVE",
+"797 1396 OFFCURVE",
+"673 1396 CURVE SMOOTH",
+"429 1396 OFFCURVE",
+"246 1246 OFFCURVE",
+"211 1070 CURVE SMOOTH",
+"182 920 OFFCURVE",
+"269 823 OFFCURVE",
+"408 764 CURVE SMOOTH",
+"487 730 LINE SMOOTH",
+"591 686 OFFCURVE",
+"657 636 OFFCURVE",
+"643 564 CURVE SMOOTH",
+"630 496 OFFCURVE",
+"558 434 OFFCURVE",
+"481 408 CURVE"
 );
 },
 {
 closed = 1;
 nodes = (
-"753 295 OFFCURVE",
-"943 456 OFFCURVE",
-"943 656 CURVE SMOOTH",
-"943 836 OFFCURVE",
-"783 906 OFFCURVE",
-"686 953 CURVE SMOOTH",
-"606 992 LINE SMOOTH",
-"578 1006 OFFCURVE",
-"533 1030 OFFCURVE",
-"533 1079 CURVE SMOOTH",
-"533 1125 OFFCURVE",
-"577 1167 OFFCURVE",
-"655 1167 CURVE SMOOTH",
-"728 1167 OFFCURVE",
-"810 1137 OFFCURVE",
-"865 1101 CURVE",
-"923 1156 OFFCURVE",
-"968 1241 OFFCURVE",
-"976 1307 CURVE",
-"891 1366 OFFCURVE",
-"763 1396 OFFCURVE",
-"659 1396 CURVE SMOOTH",
-"423 1396 OFFCURVE",
-"221 1238 OFFCURVE",
-"221 1034 CURVE SMOOTH",
-"221 908 OFFCURVE",
-"297 818 OFFCURVE",
-"412 766 CURVE SMOOTH",
-"492 730 LINE SMOOTH",
-"567 696 OFFCURVE",
-"651 665 OFFCURVE",
-"651 585 CURVE SMOOTH",
-"651 504 OFFCURVE",
-"565 416 OFFCURVE",
-"472 409 CURVE",
-"538 262 LINE"
+"462 906 LINE",
+"258 838 OFFCURVE",
+"76 700 OFFCURVE",
+"44 538 CURVE SMOOTH",
+"8 354 OFFCURVE",
+"139 263 OFFCURVE",
+"306 186 CURVE SMOOTH",
+"410 138 LINE SMOOTH",
+"456 117 OFFCURVE",
+"476 94 OFFCURVE",
+"469 60 CURVE SMOOTH",
+"462 22 OFFCURVE",
+"419 -2 OFFCURVE",
+"365 -2 CURVE SMOOTH",
+"275 -2 OFFCURVE",
+"178 34 OFFCURVE",
+"110 66 CURVE",
+"51 28 OFFCURVE",
+"-12 -78 OFFCURVE",
+"-20 -154 CURVE",
+"65 -208 OFFCURVE",
+"197 -238 OFFCURVE",
+"323 -238 CURVE SMOOTH",
+"579 -238 OFFCURVE",
+"762 -88 OFFCURVE",
+"797 88 CURVE SMOOTH",
+"826 238 OFFCURVE",
+"739 339 OFFCURVE",
+"601 398 CURVE SMOOTH",
+"521 432 LINE SMOOTH",
+"409 480 OFFCURVE",
+"352 526 OFFCURVE",
+"366 598 CURVE SMOOTH",
+"379 666 OFFCURVE",
+"451 728 OFFCURVE",
+"528 754 CURVE"
 );
 }
 );
@@ -45187,87 +45183,87 @@ paths = (
 {
 closed = 1;
 nodes = (
-"576 -238 OFFCURVE",
-"779 -80 OFFCURVE",
-"779 124 CURVE SMOOTH",
-"779 250 OFFCURVE",
-"701 340 OFFCURVE",
-"582 392 CURVE SMOOTH",
-"502 427 LINE SMOOTH",
-"427 460 OFFCURVE",
-"343 493 OFFCURVE",
-"343 573 CURVE SMOOTH",
-"343 649 OFFCURVE",
-"434 732 OFFCURVE",
-"532 739 CURVE",
-"456 896 LINE",
-"241 863 OFFCURVE",
-"51 702 OFFCURVE",
-"51 502 CURVE SMOOTH",
-"51 322 OFFCURVE",
-"211 250 OFFCURVE",
-"308 204 CURVE SMOOTH",
-"388 166 LINE SMOOTH",
-"418 152 OFFCURVE",
-"467 128 OFFCURVE",
-"467 79 CURVE SMOOTH",
-"467 33 OFFCURVE",
-"419 -11 OFFCURVE",
-"339 -11 CURVE SMOOTH",
-"255 -11 OFFCURVE",
-"168 24 OFFCURVE",
-"102 73 CURVE",
-"44 18 OFFCURVE",
-"-1 -67 OFFCURVE",
-"-9 -133 CURVE",
-"71 -193 OFFCURVE",
-"186 -238 OFFCURVE",
-"327 -238 CURVE SMOOTH"
+"578 -238 OFFCURVE",
+"781 -80 OFFCURVE",
+"781 124 CURVE SMOOTH",
+"781 250 OFFCURVE",
+"703 340 OFFCURVE",
+"584 392 CURVE SMOOTH",
+"504 427 LINE SMOOTH",
+"429 460 OFFCURVE",
+"345 493 OFFCURVE",
+"345 573 CURVE SMOOTH",
+"345 649 OFFCURVE",
+"436 732 OFFCURVE",
+"534 739 CURVE",
+"458 896 LINE",
+"243 863 OFFCURVE",
+"53 702 OFFCURVE",
+"53 502 CURVE SMOOTH",
+"53 322 OFFCURVE",
+"213 250 OFFCURVE",
+"310 204 CURVE SMOOTH",
+"390 166 LINE SMOOTH",
+"420 152 OFFCURVE",
+"469 128 OFFCURVE",
+"469 79 CURVE SMOOTH",
+"469 33 OFFCURVE",
+"421 -6 OFFCURVE",
+"341 -6 CURVE SMOOTH",
+"257 -6 OFFCURVE",
+"170 27 OFFCURVE",
+"104 76 CURVE",
+"46 21 OFFCURVE",
+"1 -67 OFFCURVE",
+"-7 -133 CURVE",
+"73 -193 OFFCURVE",
+"188 -238 OFFCURVE",
+"329 -238 CURVE SMOOTH"
 );
 },
 {
 closed = 1;
 nodes = (
-"753 295 OFFCURVE",
-"943 456 OFFCURVE",
-"943 656 CURVE SMOOTH",
-"943 836 OFFCURVE",
-"783 908 OFFCURVE",
-"686 954 CURVE SMOOTH",
-"606 992 LINE SMOOTH",
-"578 1005 OFFCURVE",
-"533 1030 OFFCURVE",
-"533 1079 CURVE SMOOTH",
-"533 1126 OFFCURVE",
-"577 1169 OFFCURVE",
-"655 1169 CURVE SMOOTH",
-"728 1169 OFFCURVE",
-"810 1139 OFFCURVE",
-"865 1101 CURVE",
-"923 1156 OFFCURVE",
-"968 1241 OFFCURVE",
-"976 1307 CURVE",
-"891 1366 OFFCURVE",
-"763 1396 OFFCURVE",
-"659 1396 CURVE SMOOTH",
-"423 1396 OFFCURVE",
-"221 1238 OFFCURVE",
-"221 1034 CURVE SMOOTH",
-"221 908 OFFCURVE",
-"296 817 OFFCURVE",
-"412 766 CURVE SMOOTH",
-"492 731 LINE SMOOTH",
-"567 698 OFFCURVE",
-"651 665 OFFCURVE",
-"651 585 CURVE SMOOTH",
-"651 509 OFFCURVE",
-"560 426 OFFCURVE",
-"462 419 CURVE",
-"538 262 LINE"
+"761 295 OFFCURVE",
+"951 456 OFFCURVE",
+"951 656 CURVE SMOOTH",
+"951 836 OFFCURVE",
+"791 908 OFFCURVE",
+"694 954 CURVE SMOOTH",
+"614 992 LINE SMOOTH",
+"586 1005 OFFCURVE",
+"541 1030 OFFCURVE",
+"541 1079 CURVE SMOOTH",
+"541 1126 OFFCURVE",
+"585 1164 OFFCURVE",
+"663 1164 CURVE SMOOTH",
+"737 1164 OFFCURVE",
+"821 1136 OFFCURVE",
+"877 1097 CURVE",
+"938 1150 OFFCURVE",
+"982 1240 OFFCURVE",
+"990 1306 CURVE",
+"903 1366 OFFCURVE",
+"773 1396 OFFCURVE",
+"667 1396 CURVE SMOOTH",
+"431 1396 OFFCURVE",
+"229 1238 OFFCURVE",
+"229 1034 CURVE SMOOTH",
+"229 908 OFFCURVE",
+"304 817 OFFCURVE",
+"420 766 CURVE SMOOTH",
+"500 731 LINE SMOOTH",
+"575 698 OFFCURVE",
+"659 665 OFFCURVE",
+"659 585 CURVE SMOOTH",
+"659 509 OFFCURVE",
+"568 426 OFFCURVE",
+"470 419 CURVE",
+"546 262 LINE"
 );
 }
 );
-width = 964;
+width = 974;
 },
 {
 background = {
@@ -45275,83 +45271,83 @@ paths = (
 {
 closed = 1;
 nodes = (
-"383 401 LINE SMOOTH",
-"307 435 OFFCURVE",
-"221 472 OFFCURVE",
-"221 573 CURVE SMOOTH",
-"221 703 OFFCURVE",
-"364 801 OFFCURVE",
-"483 844 CURVE",
-"442 920 LINE",
-"234 860 OFFCURVE",
-"80 707 OFFCURVE",
-"80 543 CURVE SMOOTH",
-"80 380 OFFCURVE",
-"234 315 OFFCURVE",
-"310 281 CURVE SMOOTH",
-"394 243 LINE SMOOTH",
-"456 215 OFFCURVE",
-"541 183 OFFCURVE",
-"541 85 CURVE SMOOTH",
-"541 -19 OFFCURVE",
-"447 -90 OFFCURVE",
-"326 -90 CURVE SMOOTH",
-"238 -90 OFFCURVE",
-"146 -53 OFFCURVE",
-"98 -12 CURVE",
-"62 -31 OFFCURVE",
-"35 -80 OFFCURVE",
-"28 -109 CURVE",
-"88 -163 OFFCURVE",
-"200 -204 OFFCURVE",
-"313 -204 CURVE SMOOTH",
-"510 -204 OFFCURVE",
-"683 -81 OFFCURVE",
-"683 104 CURVE SMOOTH",
-"683 273 OFFCURVE",
-"536 333 OFFCURVE",
-"464 365 CURVE SMOOTH"
+"488 266 LINE",
+"659 310 OFFCURVE",
+"843 432 OFFCURVE",
+"875 600 CURVE SMOOTH",
+"910 776 OFFCURVE",
+"770 859 OFFCURVE",
+"620 922 CURVE SMOOTH",
+"511 968 LINE SMOOTH",
+"422 1006 OFFCURVE",
+"373 1052 OFFCURVE",
+"388 1126 CURVE SMOOTH",
+"405 1218 OFFCURVE",
+"495 1276 OFFCURVE",
+"603 1276 CURVE SMOOTH",
+"701 1276 OFFCURVE",
+"792 1240 OFFCURVE",
+"848 1212 CURVE",
+"881 1238 OFFCURVE",
+"906 1284 OFFCURVE",
+"914 1322 CURVE",
+"841 1360 OFFCURVE",
+"727 1390 OFFCURVE",
+"629 1390 CURVE SMOOTH",
+"449 1390 OFFCURVE",
+"275 1288 OFFCURVE",
+"242 1118 CURVE SMOOTH",
+"212 962 OFFCURVE",
+"319 877 OFFCURVE",
+"441 826 CURVE SMOOTH",
+"547 782 LINE SMOOTH",
+"647 740 OFFCURVE",
+"746 688 OFFCURVE",
+"726 584 CURVE SMOOTH",
+"703 464 OFFCURVE",
+"574 386 OFFCURVE",
+"447 342 CURVE"
 );
 },
 {
 closed = 1;
 nodes = (
-"543 785 LINE SMOOTH",
-"619 751 OFFCURVE",
-"705 714 OFFCURVE",
-"705 613 CURVE SMOOTH",
-"705 483 OFFCURVE",
-"562 385 OFFCURVE",
-"443 342 CURVE",
-"484 266 LINE",
-"692 326 OFFCURVE",
-"846 479 OFFCURVE",
-"846 643 CURVE SMOOTH",
-"846 806 OFFCURVE",
-"692 871 OFFCURVE",
-"616 905 CURVE SMOOTH",
-"532 943 LINE SMOOTH",
-"470 971 OFFCURVE",
-"385 1003 OFFCURVE",
-"385 1101 CURVE SMOOTH",
-"385 1205 OFFCURVE",
-"479 1276 OFFCURVE",
-"600 1276 CURVE SMOOTH",
-"688 1276 OFFCURVE",
-"780 1239 OFFCURVE",
-"828 1198 CURVE",
-"864 1217 OFFCURVE",
-"891 1266 OFFCURVE",
-"898 1295 CURVE",
-"838 1349 OFFCURVE",
-"726 1390 OFFCURVE",
-"613 1390 CURVE SMOOTH",
-"416 1390 OFFCURVE",
-"243 1267 OFFCURVE",
-"243 1082 CURVE SMOOTH",
-"243 913 OFFCURVE",
-"390 853 OFFCURVE",
-"462 821 CURVE SMOOTH"
+"446 920 LINE",
+"275 876 OFFCURVE",
+"91 754 OFFCURVE",
+"59 586 CURVE SMOOTH",
+"24 410 OFFCURVE",
+"164 327 OFFCURVE",
+"314 264 CURVE SMOOTH",
+"423 218 LINE SMOOTH",
+"512 180 OFFCURVE",
+"561 134 OFFCURVE",
+"546 60 CURVE SMOOTH",
+"529 -32 OFFCURVE",
+"441 -90 OFFCURVE",
+"319 -90 CURVE SMOOTH",
+"201 -90 OFFCURVE",
+"119 -48 OFFCURVE",
+"64 -14 CURVE",
+"34 -34 OFFCURVE",
+"-3 -82 OFFCURVE",
+"-11 -120 CURVE",
+"56 -170 OFFCURVE",
+"181 -204 OFFCURVE",
+"289 -204 CURVE SMOOTH",
+"487 -204 OFFCURVE",
+"659 -102 OFFCURVE",
+"692 68 CURVE SMOOTH",
+"722 224 OFFCURVE",
+"615 309 OFFCURVE",
+"493 360 CURVE SMOOTH",
+"387 404 LINE SMOOTH",
+"287 446 OFFCURVE",
+"188 498 OFFCURVE",
+"208 602 CURVE SMOOTH",
+"231 722 OFFCURVE",
+"360 800 OFFCURVE",
+"487 844 CURVE"
 );
 }
 );
@@ -45361,87 +45357,87 @@ paths = (
 {
 closed = 1;
 nodes = (
-"519 -204 OFFCURVE",
-"683 -72 OFFCURVE",
-"683 101 CURVE SMOOTH",
-"683 264 OFFCURVE",
-"536 333 OFFCURVE",
-"464 365 CURVE SMOOTH",
-"383 401 LINE SMOOTH",
-"307 435 OFFCURVE",
-"221 472 OFFCURVE",
-"221 573 CURVE SMOOTH",
-"221 703 OFFCURVE",
-"364 801 OFFCURVE",
-"483 844 CURVE",
-"432 920 LINE",
-"234 860 OFFCURVE",
-"80 719 OFFCURVE",
+"505 -204 OFFCURVE",
+"676 -68 OFFCURVE",
+"676 105 CURVE SMOOTH",
+"676 270 OFFCURVE",
+"520 339 OFFCURVE",
+"462 365 CURVE SMOOTH",
+"381 401 LINE SMOOTH",
+"307 434 OFFCURVE",
+"221 471 OFFCURVE",
+"221 571 CURVE SMOOTH",
+"221 702 OFFCURVE",
+"365 801 OFFCURVE",
+"485 844 CURVE",
+"435 920 LINE",
+"204 849 OFFCURVE",
+"80 694 OFFCURVE",
 "80 543 CURVE SMOOTH",
-"80 380 OFFCURVE",
-"234 315 OFFCURVE",
-"310 281 CURVE SMOOTH",
-"394 243 LINE SMOOTH",
-"456 215 OFFCURVE",
-"541 183 OFFCURVE",
-"541 85 CURVE SMOOTH",
-"541 -15 OFFCURVE",
-"452 -90 OFFCURVE",
-"322 -90 CURVE SMOOTH",
-"225 -90 OFFCURVE",
-"134 -50 OFFCURVE",
-"81 3 CURVE",
-"43 -16 OFFCURVE",
-"15 -65 OFFCURVE",
-"8 -94 CURVE",
-"72 -161 OFFCURVE",
-"191 -204 OFFCURVE",
-"313 -204 CURVE SMOOTH"
+"80 378 OFFCURVE",
+"232 315 OFFCURVE",
+"307 281 CURVE SMOOTH",
+"391 243 LINE SMOOTH",
+"452 215 OFFCURVE",
+"534 184 OFFCURVE",
+"534 88 CURVE SMOOTH",
+"534 -18 OFFCURVE",
+"432 -90 OFFCURVE",
+"310 -90 CURVE SMOOTH",
+"222 -90 OFFCURVE",
+"125 -53 OFFCURVE",
+"64 4 CURVE",
+"26 -15 OFFCURVE",
+"-3 -64 OFFCURVE",
+"-10 -93 CURVE",
+"55 -159 OFFCURVE",
+"179 -204 OFFCURVE",
+"298 -204 CURVE SMOOTH"
 );
 },
 {
 closed = 1;
 nodes = (
-"692 326 OFFCURVE",
-"846 467 OFFCURVE",
-"846 643 CURVE SMOOTH",
-"846 806 OFFCURVE",
-"692 871 OFFCURVE",
-"616 905 CURVE SMOOTH",
-"532 943 LINE SMOOTH",
-"470 971 OFFCURVE",
-"385 1003 OFFCURVE",
-"385 1101 CURVE SMOOTH",
-"385 1205 OFFCURVE",
-"479 1276 OFFCURVE",
-"600 1276 CURVE SMOOTH",
-"685 1276 OFFCURVE",
-"773 1240 OFFCURVE",
-"818 1204 CURVE",
-"855 1223 OFFCURVE",
-"882 1273 OFFCURVE",
-"889 1302 CURVE",
-"832 1351 OFFCURVE",
-"723 1390 OFFCURVE",
-"612 1390 CURVE SMOOTH",
-"408 1390 OFFCURVE",
-"243 1259 OFFCURVE",
-"243 1086 CURVE SMOOTH",
-"243 922 OFFCURVE",
-"390 853 OFFCURVE",
-"462 821 CURVE SMOOTH",
-"543 785 LINE SMOOTH",
-"619 751 OFFCURVE",
-"705 714 OFFCURVE",
-"705 613 CURVE SMOOTH",
-"705 483 OFFCURVE",
-"562 385 OFFCURVE",
-"443 342 CURVE",
-"494 266 LINE"
+"726 337 OFFCURVE",
+"850 492 OFFCURVE",
+"850 643 CURVE SMOOTH",
+"850 808 OFFCURVE",
+"698 871 OFFCURVE",
+"623 905 CURVE SMOOTH",
+"539 943 LINE SMOOTH",
+"478 971 OFFCURVE",
+"396 1003 OFFCURVE",
+"396 1101 CURVE SMOOTH",
+"396 1205 OFFCURVE",
+"492 1276 OFFCURVE",
+"614 1276 CURVE SMOOTH",
+"700 1276 OFFCURVE",
+"791 1242 OFFCURVE",
+"836 1207 CURVE",
+"874 1226 OFFCURVE",
+"901 1276 OFFCURVE",
+"908 1305 CURVE",
+"851 1352 OFFCURVE",
+"739 1390 OFFCURVE",
+"627 1390 CURVE SMOOTH",
+"419 1390 OFFCURVE",
+"254 1256 OFFCURVE",
+"254 1084 CURVE SMOOTH",
+"254 920 OFFCURVE",
+"402 850 OFFCURVE",
+"468 821 CURVE SMOOTH",
+"549 785 LINE SMOOTH",
+"623 752 OFFCURVE",
+"709 715 OFFCURVE",
+"709 615 CURVE SMOOTH",
+"709 484 OFFCURVE",
+"565 385 OFFCURVE",
+"445 342 CURVE",
+"495 266 LINE"
 );
 }
 );
-width = 886;
+width = 890;
 },
 {
 associatedMasterId = "1023D002-3304-4399-867A-B886C920D2C0";
@@ -50702,9 +50698,8 @@ rightMetricsKey = "=|";
 unicode = 2026;
 },
 {
-color = 5;
 glyphname = paragraph;
-lastChange = "2020-11-28 23:26:53 +0000";
+lastChange = "2020-11-30 17:03:15 +0000";
 layers = (
 {
 background = {
@@ -50984,64 +50979,64 @@ paths = (
 {
 closed = 1;
 nodes = (
-"483 468 LINE",
-"461 468 LINE SMOOTH",
-"197 468 OFFCURVE",
-"12 614 OFFCURVE",
-"72 926 CURVE SMOOTH",
-"136 1254 OFFCURVE",
-"372 1378 OFFCURVE",
-"658 1378 CURVE SMOOTH",
-"762 1378 OFFCURVE",
-"855 1372 OFFCURVE",
-"972 1368 CURVE",
-"983 1354 LINE",
-"758 196 LINE SMOOTH",
-"691 -149 OFFCURVE",
-"532 -320 OFFCURVE",
-"184 -320 CURVE SMOOTH",
-"64 -320 OFFCURVE",
-"-43 -294 OFFCURVE",
-"-104 -270 CURVE",
-"-95 -212 OFFCURVE",
-"-51 -100 OFFCURVE",
-"7 -36 CURVE",
-"65 -56 OFFCURVE",
-"133 -76 OFFCURVE",
-"199 -76 CURVE SMOOTH",
-"333 -76 OFFCURVE",
-"391 -8 OFFCURVE",
-"417 128 CURVE SMOOTH"
+"496 468 LINE",
+"474 468 LINE SMOOTH",
+"210 468 OFFCURVE",
+"25 614 OFFCURVE",
+"85 926 CURVE SMOOTH",
+"149 1254 OFFCURVE",
+"385 1378 OFFCURVE",
+"671 1378 CURVE SMOOTH",
+"775 1378 OFFCURVE",
+"868 1372 OFFCURVE",
+"985 1368 CURVE",
+"996 1354 LINE",
+"771 196 LINE SMOOTH",
+"704 -149 OFFCURVE",
+"545 -320 OFFCURVE",
+"197 -320 CURVE SMOOTH",
+"77 -320 OFFCURVE",
+"-30 -294 OFFCURVE",
+"-91 -270 CURVE",
+"-82 -212 OFFCURVE",
+"-38 -100 OFFCURVE",
+"20 -36 CURVE",
+"78 -56 OFFCURVE",
+"146 -76 OFFCURVE",
+"212 -76 CURVE SMOOTH",
+"346 -76 OFFCURVE",
+"404 -8 OFFCURVE",
+"430 128 CURVE SMOOTH"
 );
 },
 {
 closed = 1;
 nodes = (
-"790 -260 LINE",
-"841 -272 OFFCURVE",
-"917 -274 OFFCURVE",
-"957 -274 CURVE SMOOTH",
-"1001 -274 OFFCURVE",
-"1063 -272 OFFCURVE",
-"1122 -260 CURVE",
-"1438 1366 LINE",
-"1120 1366 LINE",
-"1103 1352 LINE"
+"803 -260 LINE",
+"854 -272 OFFCURVE",
+"930 -274 OFFCURVE",
+"970 -274 CURVE SMOOTH",
+"1014 -274 OFFCURVE",
+"1076 -272 OFFCURVE",
+"1135 -260 CURVE",
+"1451 1366 LINE",
+"1133 1366 LINE",
+"1116 1352 LINE"
 );
 },
 {
 closed = 1;
 nodes = (
-"1220 1092 LINE",
-"1324 1092 LINE SMOOTH",
-"1382 1092 OFFCURVE",
-"1437 1086 OFFCURVE",
-"1495 1086 CURVE SMOOTH",
-"1545 1086 LINE",
-"1577 1148 OFFCURVE",
-"1608 1304 OFFCURVE",
-"1600 1366 CURVE",
-"1274 1366 LINE"
+"1233 1092 LINE",
+"1337 1092 LINE SMOOTH",
+"1395 1092 OFFCURVE",
+"1450 1086 OFFCURVE",
+"1508 1086 CURVE SMOOTH",
+"1558 1086 LINE",
+"1590 1148 OFFCURVE",
+"1621 1304 OFFCURVE",
+"1613 1366 CURVE",
+"1287 1366 LINE"
 );
 }
 );
@@ -51051,68 +51046,68 @@ paths = (
 {
 closed = 1;
 nodes = (
-"635 -310 OFFCURVE",
-"718 11 OFFCURVE",
-"758 216 CURVE SMOOTH",
-"979 1354 LINE",
-"968 1368 LINE",
-"854 1376 OFFCURVE",
-"765 1377 OFFCURVE",
-"736 1377 CURVE SMOOTH",
-"329 1377 OFFCURVE",
-"117 1116 OFFCURVE",
-"117 809 CURVE SMOOTH",
-"117 590 OFFCURVE",
-"268 468 OFFCURVE",
-"457 468 CURVE SMOOTH",
-"495 468 LINE",
-"445 213 LINE SMOOTH",
-"413 50 OFFCURVE",
-"370 -64 OFFCURVE",
-"206 -64 CURVE SMOOTH",
-"150 -64 OFFCURVE",
-"86 -46 OFFCURVE",
-"45 -24 CURVE",
-"-16 -81 OFFCURVE",
-"-52 -176 OFFCURVE",
-"-58 -253 CURVE",
-"6 -288 OFFCURVE",
-"118 -310 OFFCURVE",
-"205 -310 CURVE SMOOTH"
+"648 -310 OFFCURVE",
+"731 11 OFFCURVE",
+"771 216 CURVE SMOOTH",
+"992 1354 LINE",
+"981 1368 LINE",
+"867 1376 OFFCURVE",
+"778 1377 OFFCURVE",
+"749 1377 CURVE SMOOTH",
+"342 1377 OFFCURVE",
+"130 1116 OFFCURVE",
+"130 809 CURVE SMOOTH",
+"130 590 OFFCURVE",
+"281 468 OFFCURVE",
+"470 468 CURVE SMOOTH",
+"508 468 LINE",
+"458 213 LINE SMOOTH",
+"426 50 OFFCURVE",
+"383 -64 OFFCURVE",
+"219 -64 CURVE SMOOTH",
+"163 -64 OFFCURVE",
+"99 -46 OFFCURVE",
+"58 -24 CURVE",
+"-3 -81 OFFCURVE",
+"-39 -176 OFFCURVE",
+"-45 -253 CURVE",
+"19 -288 OFFCURVE",
+"131 -310 OFFCURVE",
+"218 -310 CURVE SMOOTH"
 );
 },
 {
 closed = 1;
 nodes = (
-"1001 -262 OFFCURVE",
-"1057 -260 OFFCURVE",
-"1108 -250 CURVE",
-"1422 1366 LINE",
-"1122 1366 LINE",
-"1105 1352 LINE",
-"797 -250 LINE",
-"844 -260 OFFCURVE",
-"906 -262 OFFCURVE",
-"953 -262 CURVE SMOOTH"
+"1014 -262 OFFCURVE",
+"1070 -260 OFFCURVE",
+"1121 -250 CURVE",
+"1435 1366 LINE",
+"1135 1366 LINE",
+"1118 1352 LINE",
+"810 -250 LINE",
+"857 -260 OFFCURVE",
+"919 -262 OFFCURVE",
+"966 -262 CURVE SMOOTH"
 );
 },
 {
 closed = 1;
 nodes = (
-"1521 1086 LINE",
-"1554 1150 OFFCURVE",
-"1582 1294 OFFCURVE",
-"1576 1366 CURVE",
-"1266 1366 LINE",
-"1212 1092 LINE",
-"1310 1092 LINE SMOOTH",
-"1368 1092 OFFCURVE",
-"1423 1086 OFFCURVE",
-"1481 1086 CURVE SMOOTH"
+"1534 1086 LINE",
+"1567 1150 OFFCURVE",
+"1595 1294 OFFCURVE",
+"1589 1366 CURVE",
+"1279 1366 LINE",
+"1225 1092 LINE",
+"1323 1092 LINE SMOOTH",
+"1381 1092 OFFCURVE",
+"1436 1086 OFFCURVE",
+"1494 1086 CURVE SMOOTH"
 );
 }
 );
-width = 1448;
+width = 1466;
 },
 {
 background = {
@@ -51120,64 +51115,64 @@ paths = (
 {
 closed = 1;
 nodes = (
-"541 522 LINE",
-"495 522 LINE SMOOTH",
-"237 522 OFFCURVE",
-"85 670 OFFCURVE",
-"140 950 CURVE SMOOTH",
-"195 1232 OFFCURVE",
-"406 1374 OFFCURVE",
-"660 1374 CURVE SMOOTH",
-"732 1374 OFFCURVE",
-"768 1372 OFFCURVE",
-"837 1368 CURVE",
-"847 1356 LINE",
-"609 132 LINE SMOOTH",
-"556 -140 OFFCURVE",
-"459 -306 OFFCURVE",
-"192 -306 CURVE SMOOTH",
-"108 -306 OFFCURVE",
-"8 -282 OFFCURVE",
-"-39 -260 CURVE",
-"-32 -222 OFFCURVE",
-"-2 -170 OFFCURVE",
-"25 -144 CURVE",
-"69 -166 OFFCURVE",
-"143 -188 OFFCURVE",
-"203 -188 CURVE SMOOTH",
-"376 -188 OFFCURVE",
-"423 -81 OFFCURVE",
-"462 116 CURVE SMOOTH"
+"543 522 LINE",
+"497 522 LINE SMOOTH",
+"239 522 OFFCURVE",
+"87 670 OFFCURVE",
+"142 950 CURVE SMOOTH",
+"197 1232 OFFCURVE",
+"408 1374 OFFCURVE",
+"662 1374 CURVE SMOOTH",
+"734 1374 OFFCURVE",
+"770 1372 OFFCURVE",
+"839 1368 CURVE",
+"849 1356 LINE",
+"611 132 LINE SMOOTH",
+"558 -140 OFFCURVE",
+"461 -306 OFFCURVE",
+"194 -306 CURVE SMOOTH",
+"110 -306 OFFCURVE",
+"10 -282 OFFCURVE",
+"-37 -260 CURVE",
+"-30 -222 OFFCURVE",
+"0 -170 OFFCURVE",
+"27 -144 CURVE",
+"71 -166 OFFCURVE",
+"145 -188 OFFCURVE",
+"205 -188 CURVE SMOOTH",
+"378 -188 OFFCURVE",
+"425 -81 OFFCURVE",
+"464 116 CURVE SMOOTH"
 );
 },
 {
 closed = 1;
 nodes = (
-"667 -268 LINE",
-"684 -272 OFFCURVE",
-"710 -274 OFFCURVE",
-"736 -274 CURVE SMOOTH",
-"764 -274 OFFCURVE",
-"790 -272 OFFCURVE",
-"811 -268 CURVE",
-"1129 1366 LINE",
-"997 1366 LINE",
-"982 1354 LINE"
+"669 -268 LINE",
+"686 -272 OFFCURVE",
+"712 -274 OFFCURVE",
+"738 -274 CURVE SMOOTH",
+"766 -274 OFFCURVE",
+"792 -272 OFFCURVE",
+"813 -268 CURVE",
+"1131 1366 LINE",
+"999 1366 LINE",
+"984 1354 LINE"
 );
 },
 {
 closed = 1;
 nodes = (
-"1034 1240 LINE",
-"1086 1240 LINE SMOOTH",
-"1106 1240 OFFCURVE",
-"1138 1238 OFFCURVE",
-"1168 1238 CURVE SMOOTH",
-"1264 1238 LINE",
-"1280 1268 OFFCURVE",
-"1293 1336 OFFCURVE",
-"1289 1366 CURVE",
-"1059 1366 LINE"
+"1036 1240 LINE",
+"1088 1240 LINE SMOOTH",
+"1108 1240 OFFCURVE",
+"1140 1238 OFFCURVE",
+"1170 1238 CURVE SMOOTH",
+"1266 1238 LINE",
+"1282 1268 OFFCURVE",
+"1295 1336 OFFCURVE",
+"1291 1366 CURVE",
+"1061 1366 LINE"
 );
 }
 );
@@ -51187,68 +51182,68 @@ paths = (
 {
 closed = 1;
 nodes = (
-"519 -306 OFFCURVE",
-"571 -62 OFFCURVE",
-"615 162 CURVE SMOOTH",
-"847 1356 LINE",
-"837 1368 LINE",
-"778 1372 OFFCURVE",
-"742 1374 OFFCURVE",
-"700 1374 CURVE SMOOTH",
-"374 1374 OFFCURVE",
-"168 1149 OFFCURVE",
-"168 835 CURVE SMOOTH",
-"168 640 OFFCURVE",
-"313 522 OFFCURVE",
-"475 522 CURVE SMOOTH",
-"541 522 LINE",
-"472 166 LINE SMOOTH",
-"437 -14 OFFCURVE",
-"401 -187 OFFCURVE",
-"203 -187 CURVE SMOOTH",
-"153 -187 OFFCURVE",
-"88 -171 OFFCURVE",
-"42 -149 CURVE",
-"18 -172 OFFCURVE",
-"-4 -222 OFFCURVE",
-"-7 -262 CURVE",
-"43 -287 OFFCURVE",
-"123 -306 OFFCURVE",
-"201 -306 CURVE SMOOTH"
+"521 -306 OFFCURVE",
+"573 -62 OFFCURVE",
+"617 162 CURVE SMOOTH",
+"849 1356 LINE",
+"839 1368 LINE",
+"780 1372 OFFCURVE",
+"744 1374 OFFCURVE",
+"702 1374 CURVE SMOOTH",
+"376 1374 OFFCURVE",
+"170 1149 OFFCURVE",
+"170 835 CURVE SMOOTH",
+"170 640 OFFCURVE",
+"315 522 OFFCURVE",
+"477 522 CURVE SMOOTH",
+"543 522 LINE",
+"474 166 LINE SMOOTH",
+"439 -14 OFFCURVE",
+"403 -187 OFFCURVE",
+"205 -187 CURVE SMOOTH",
+"155 -187 OFFCURVE",
+"90 -171 OFFCURVE",
+"44 -149 CURVE",
+"20 -172 OFFCURVE",
+"-2 -222 OFFCURVE",
+"-5 -262 CURVE",
+"45 -287 OFFCURVE",
+"125 -306 OFFCURVE",
+"203 -306 CURVE SMOOTH"
 );
 },
 {
 closed = 1;
 nodes = (
-"760 -274 OFFCURVE",
-"785 -272 OFFCURVE",
-"803 -268 CURVE",
-"1121 1366 LINE",
-"997 1366 LINE",
-"982 1354 LINE",
-"667 -268 LINE",
-"685 -272 OFFCURVE",
-"711 -274 OFFCURVE",
-"736 -274 CURVE SMOOTH"
+"762 -274 OFFCURVE",
+"787 -272 OFFCURVE",
+"805 -268 CURVE",
+"1123 1366 LINE",
+"999 1366 LINE",
+"984 1354 LINE",
+"669 -268 LINE",
+"687 -272 OFFCURVE",
+"713 -274 OFFCURVE",
+"738 -274 CURVE SMOOTH"
 );
 },
 {
 closed = 1;
 nodes = (
-"1226 1238 LINE",
-"1243 1270 OFFCURVE",
-"1251 1316 OFFCURVE",
-"1251 1366 CURVE",
-"1051 1366 LINE",
-"1026 1240 LINE",
-"1078 1240 LINE SMOOTH",
-"1098 1240 OFFCURVE",
-"1130 1238 OFFCURVE",
-"1160 1238 CURVE SMOOTH"
+"1228 1238 LINE",
+"1245 1270 OFFCURVE",
+"1253 1316 OFFCURVE",
+"1253 1366 CURVE",
+"1053 1366 LINE",
+"1028 1240 LINE",
+"1080 1240 LINE SMOOTH",
+"1100 1240 OFFCURVE",
+"1132 1238 OFFCURVE",
+"1162 1238 CURVE SMOOTH"
 );
 }
 );
-width = 1158;
+width = 1150;
 }
 );
 unicode = 00B6;
@@ -63234,7 +63229,7 @@ unicode = 00C3;
 {
 color = 5;
 glyphname = AE;
-lastChange = "2020-11-30 09:40:27 +0000";
+lastChange = "2020-11-30 18:58:39 +0000";
 layers = (
 {
 anchors = (
@@ -63879,6 +63874,12 @@ nodes = (
 }
 );
 };
+guideLines = (
+{
+angle = 59.4886;
+position = "{441, 328}";
+}
+);
 layerId = "861B5D7F-E490-44BC-908E-F1CBF79092B0";
 paths = (
 {
@@ -63888,13 +63889,13 @@ nodes = (
 "211 -8 OFFCURVE",
 "248 0 CURVE",
 "634 655 LINE SMOOTH",
-"707 778 OFFCURVE",
-"794 933 OFFCURVE",
-"866 1063 CURVE",
-"878 1063 LINE",
+"708 781 OFFCURVE",
+"799 940 OFFCURVE",
+"873 1073 CURVE",
+"902 1073 LINE",
 "1138 1366 LINE",
-"950 1366 LINE",
-"860 1366 OFFCURVE",
+"955 1366 LINE",
+"865 1366 OFFCURVE",
 "781 1356 OFFCURVE",
 "721 1328 CURVE",
 "-86 28 LINE",
@@ -63907,16 +63908,16 @@ nodes = (
 {
 closed = 1;
 nodes = (
-"661 280 LINE SMOOTH",
-"691 280 OFFCURVE",
-"729 282 OFFCURVE",
-"759 282 CURVE SMOOTH",
-"881 282 LINE",
-"931 538 LINE",
-"807 538 LINE SMOOTH",
-"777 538 OFFCURVE",
-"739 540 OFFCURVE",
-"709 540 CURVE SMOOTH",
+"666 280 LINE SMOOTH",
+"696 280 OFFCURVE",
+"734 282 OFFCURVE",
+"764 282 CURVE SMOOTH",
+"886 282 LINE",
+"936 538 LINE",
+"812 538 LINE SMOOTH",
+"782 538 OFFCURVE",
+"744 540 OFFCURVE",
+"714 540 CURVE SMOOTH",
 "629 540 LINE SMOOTH",
 "599 540 OFFCURVE",
 "561 538 OFFCURVE",
@@ -63956,15 +63957,15 @@ nodes = (
 "1187 1034 OFFCURVE",
 "1199 1090 CURVE SMOOTH",
 "1256 1366 LINE",
-"950 1366 LINE",
-"933 1352 LINE",
-"716 230 LINE SMOOTH",
-"711 206 OFFCURVE",
-"704 160 OFFCURVE",
-"704 132 CURVE SMOOTH",
-"704 43 OFFCURVE",
-"754 -6 OFFCURVE",
-"864 -6 CURVE SMOOTH"
+"955 1366 LINE",
+"938 1352 LINE",
+"721 230 LINE SMOOTH",
+"716 206 OFFCURVE",
+"709 160 OFFCURVE",
+"709 132 CURVE SMOOTH",
+"709 43 OFFCURVE",
+"759 -6 OFFCURVE",
+"869 -6 CURVE SMOOTH"
 );
 },
 {
@@ -64158,9 +64159,9 @@ nodes = (
 "101 -2 CURVE",
 "767 975 LINE SMOOTH",
 "811 1039 OFFCURVE",
-"872 1132 OFFCURVE",
-"918 1209 CURVE",
-"928 1209 LINE",
+"874 1139 OFFCURVE",
+"922 1216 CURVE",
+"950 1216 LINE",
 "1094 1366 LINE",
 "980 1366 LINE",
 "926 1366 OFFCURVE",
@@ -64176,16 +64177,16 @@ nodes = (
 {
 closed = 1;
 nodes = (
-"628 360 LINE SMOOTH",
-"680 360 OFFCURVE",
-"740 362 OFFCURVE",
-"774 362 CURVE SMOOTH",
-"824 362 LINE",
-"848 484 LINE",
-"800 484 LINE SMOOTH",
-"756 484 OFFCURVE",
-"696 486 OFFCURVE",
-"654 486 CURVE SMOOTH",
+"631 360 LINE SMOOTH",
+"683 360 OFFCURVE",
+"743 362 OFFCURVE",
+"777 362 CURVE SMOOTH",
+"827 362 LINE",
+"851 484 LINE",
+"803 484 LINE SMOOTH",
+"759 484 OFFCURVE",
+"699 486 OFFCURVE",
+"657 486 CURVE SMOOTH",
 "508 486 LINE SMOOTH",
 "466 486 OFFCURVE",
 "426 484 OFFCURVE",
@@ -64207,9 +64208,9 @@ nodes = (
 "1465 126 CURVE",
 "1013 126 LINE SMOOTH",
 "941 126 OFFCURVE",
-"826 126 OFFCURVE",
-"768 111 CURVE",
-"794 0 LINE"
+"829 126 OFFCURVE",
+"771 111 CURVE",
+"797 0 LINE"
 );
 },
 {
@@ -64226,14 +64227,14 @@ nodes = (
 "1071 1248 CURVE SMOOTH",
 "1094 1366 LINE",
 "979 1366 LINE",
-"955 1354 LINE",
-"718 129 LINE SMOOTH",
-"713 105 OFFCURVE",
-"711 89 OFFCURVE",
-"711 76 CURVE SMOOTH",
-"711 23 OFFCURVE",
-"744 0 OFFCURVE",
-"794 0 CURVE SMOOTH"
+"958 1354 LINE",
+"721 129 LINE SMOOTH",
+"716 105 OFFCURVE",
+"714 89 OFFCURVE",
+"714 76 CURVE SMOOTH",
+"714 23 OFFCURVE",
+"747 0 OFFCURVE",
+"797 0 CURVE SMOOTH"
 );
 },
 {
@@ -78534,9 +78535,8 @@ rightMetricsKey = e;
 unicode = 00E6;
 },
 {
-color = 5;
 glyphname = aeacute;
-lastChange = "2020-11-28 23:13:54 +0000";
+lastChange = "2020-11-30 17:55:23 +0000";
 layers = (
 {
 components = (
@@ -91683,7 +91683,7 @@ unicode = 0030;
 {
 color = 5;
 glyphname = one;
-lastChange = "2020-11-30 11:22:45 +0000";
+lastChange = "2020-11-30 17:21:00 +0000";
 layers = (
 {
 background = {
@@ -92257,7 +92257,7 @@ unicode = 0031;
 {
 color = 5;
 glyphname = two;
-lastChange = "2020-11-30 10:18:29 +0000";
+lastChange = "2020-11-30 17:47:17 +0000";
 layers = (
 {
 background = {
@@ -92735,7 +92735,7 @@ unicode = 0032;
 {
 color = 5;
 glyphname = three;
-lastChange = "2020-11-30 10:18:37 +0000";
+lastChange = "2020-11-30 17:47:21 +0000";
 layers = (
 {
 background = {
@@ -93599,7 +93599,7 @@ unicode = 0033;
 {
 color = 5;
 glyphname = four;
-lastChange = "2020-11-30 10:17:52 +0000";
+lastChange = "2020-11-30 17:48:32 +0000";
 layers = (
 {
 background = {
@@ -94263,7 +94263,7 @@ unicode = 0034;
 {
 color = 5;
 glyphname = five;
-lastChange = "2020-11-30 00:39:25 +0000";
+lastChange = "2020-11-30 17:48:58 +0000";
 layers = (
 {
 background = {
@@ -95758,7 +95758,7 @@ unicode = 0036;
 {
 color = 5;
 glyphname = seven;
-lastChange = "2020-11-30 11:23:07 +0000";
+lastChange = "2020-11-30 17:28:34 +0000";
 layers = (
 {
 background = {
@@ -96594,7 +96594,7 @@ unicode = 0038;
 {
 color = 5;
 glyphname = nine;
-lastChange = "2020-11-30 10:17:43 +0000";
+lastChange = "2020-11-30 17:23:25 +0000";
 layers = (
 {
 background = {
@@ -101971,9 +101971,8 @@ rightMetricsKey = "=|";
 unicode = 2044;
 },
 {
-color = 5;
 glyphname = percent;
-lastChange = "2020-11-30 11:39:30 +0000";
+lastChange = "2020-11-30 15:52:00 +0000";
 layers = (
 {
 background = {
@@ -114602,12 +114601,14 @@ UUID1 = {
 "@MMK_R_y" = -31;
 "@MMK_R_y.smcp" = -50;
 asciicircum = -30;
+numbersign = 30;
 };
 "@MMK_L_B" = {
 "@MMK_R_V" = -35;
 "@MMK_R_X" = -7;
 "@MMK_R_Y" = -54;
 asciicircum = -20;
+numbersign = 20;
 };
 "@MMK_L_C" = {
 "@MMK_R_C" = -14;
@@ -114626,6 +114627,7 @@ asciicircum = -20;
 "@MMK_R_u.smcp" = -10;
 "@MMK_R_y.smcp" = 10;
 less = -20;
+numbersign = 20;
 };
 "@MMK_L_D" = {
 "@MMK_R_A" = -20;
@@ -114677,6 +114679,7 @@ multiply = -20;
 "@MMK_R_f" = 9;
 "@MMK_R_v" = -18;
 "@MMK_R_y" = -18;
+numbersign = 10;
 };
 "@MMK_L_K" = {
 "@MMK_R_C" = -43;
@@ -114698,6 +114701,7 @@ multiply = -20;
 "@MMK_R_y" = -54;
 "@MMK_R_y.smcp" = -35;
 multiply = -30;
+numbersign = 20;
 };
 "@MMK_L_L" = {
 "@MMK_R_C" = -36;
@@ -114728,6 +114732,7 @@ asciicircum = -130;
 equal = -30;
 less = -110;
 multiply = -30;
+numbersign = 20;
 };
 "@MMK_L_M" = {
 "@MMK_R_S" = -6;
@@ -114738,6 +114743,7 @@ multiply = -30;
 "@MMK_R_f" = -18;
 "@MMK_R_guillemetleft" = -20;
 "@MMK_R_superior" = -40;
+numbersign = 20;
 };
 "@MMK_L_O" = {
 "@MMK_R_A" = -20;
@@ -114763,6 +114769,7 @@ multiply = -30;
 "@MMK_R_y.smcp" = -10;
 "@MMK_R_z" = -32;
 divisionslash = -20;
+numbersign = 20;
 };
 "@MMK_L_Ohorn" = {
 "@MMK_R_A" = -28;
@@ -114805,6 +114812,7 @@ divisionslash = -50;
 "@MMK_R_hyphen" = -30;
 "@MMK_R_u" = -47;
 "@MMK_R_u.smcp" = -16;
+numbersign = 20;
 };
 "@MMK_L_S" = {
 "@MMK_R_C" = 1;
@@ -114822,6 +114830,7 @@ divisionslash = -50;
 "@MMK_R_y" = -43;
 "@MMK_R_y.smcp" = -16;
 "@MMK_R_z" = -18;
+numbersign = 40;
 };
 "@MMK_L_T" = {
 "@MMK_R_A" = -85;
@@ -114865,6 +114874,7 @@ divisionslash = -50;
 divisionslash = -30;
 less = -60;
 multiply = -40;
+numbersign = -30;
 };
 "@MMK_L_Thorn" = {
 divisionslash = -70;
@@ -114927,6 +114937,7 @@ divisionslash = -10;
 "@MMK_R_A" = -55;
 "@MMK_R_T" = 30;
 "@MMK_R_i" = 5;
+numbersign = -10;
 };
 "@MMK_L_W" = {
 "@MMK_R_A" = -52;
@@ -114957,6 +114968,7 @@ divisionslash = -10;
 "@MMK_R_y" = 0;
 "@MMK_R_z" = -72;
 "@MMK_R_z.smcp" = -36;
+numbersign = -10;
 };
 "@MMK_L_X" = {
 "@MMK_R_C" = -30;
@@ -115068,6 +115080,7 @@ divisionslash = -20;
 "@MMK_R_s" = 6;
 "@MMK_R_t" = 20;
 equal = 30;
+numbersign = 20;
 plusminus = 40;
 };
 "@MMK_L_c.smcp" = {
@@ -115115,6 +115128,7 @@ plusminus = 40;
 "@MMK_R_v" = -10;
 "@MMK_R_w" = -7;
 asciicircum = -15;
+numbersign = 10;
 };
 "@MMK_L_d.smcp" = {
 "@MMK_R_T" = -60;
@@ -115142,6 +115156,7 @@ zero = 20;
 "@MMK_R_v" = -5;
 "@MMK_R_w" = 0;
 "@MMK_R_y" = -29;
+numbersign = 10;
 };
 "@MMK_L_e.smcp" = {
 "@MMK_R_T" = -44;
@@ -115341,6 +115356,7 @@ asciicircum = -40;
 "@MMK_R_z" = -20;
 divisionslash = 10;
 equal = 20;
+numbersign = 20;
 };
 "@MMK_L_o.smcp" = {
 "@MMK_R_T" = -70;
@@ -115404,6 +115420,7 @@ zero = 25;
 "@MMK_R_quotesingle" = -200;
 backslash = -120;
 one = -31;
+question = -20;
 seven = -91;
 slash = 10;
 };
@@ -115512,6 +115529,7 @@ plusminus = 10;
 "@MMK_R_plus" = -20;
 "@MMK_R_s" = -7;
 divisionslash = 30;
+numbersign = 20;
 };
 "@MMK_L_s.smcp" = {
 "@MMK_R_S" = 0;
@@ -115556,6 +115574,7 @@ divisionslash = 30;
 "@MMK_R_w" = 0;
 "@MMK_R_y" = 0;
 "@MMK_R_z" = 0;
+numbersign = 20;
 };
 "@MMK_L_t.smcp" = {
 "@MMK_R_A" = -94;
@@ -115581,6 +115600,7 @@ divisionslash = 30;
 "@MMK_R_c" = -6;
 "@MMK_R_i" = -11;
 "@MMK_R_o" = -5;
+numbersign = 20;
 };
 "@MMK_L_u.smcp" = {
 "@MMK_R_A" = -30;
@@ -115663,6 +115683,7 @@ divisionslash = 30;
 "@MMK_R_a" = -17;
 "@MMK_R_g" = -15;
 "@MMK_R_o" = -20;
+numbersign = 10;
 };
 "@MMK_L_y" = {
 "@MMK_R_a" = -10;
@@ -115677,6 +115698,7 @@ divisionslash = 30;
 "@MMK_R_s" = -5;
 "@MMK_R_t" = 20;
 "@MMK_R_y" = 9;
+numbersign = 5;
 };
 "@MMK_L_y.smcp" = {
 "@MMK_R_A" = -50;
@@ -115754,6 +115776,7 @@ zero = -75;
 };
 eight = {
 "@MMK_R_percent" = -20;
+numbersign = 20;
 };
 equal = {
 "@MMK_R_i" = 20;
@@ -115771,6 +115794,7 @@ four = {
 "@MMK_R_degree" = -100;
 "@MMK_R_ordinals" = -40;
 "@MMK_R_percent" = -90;
+numbersign = 20;
 };
 greater = {
 "@MMK_R_T" = -60;
@@ -115788,21 +115812,55 @@ multiply = {
 nine = {
 divisionslash = -70;
 };
+numbersign = {
+"@MMK_R_A" = -30;
+"@MMK_R_AE" = -20;
+"@MMK_R_C" = 20;
+"@MMK_R_f" = 40;
+"@MMK_R_o" = -20;
+"@MMK_R_s" = -10;
+"@MMK_R_t" = 40;
+"@MMK_R_u" = 10;
+"@MMK_R_v" = 20;
+"@MMK_R_w" = 20;
+"@MMK_R_y" = 20;
+"@MMK_R_z" = 10;
+five = -15;
+four = -20;
+nine = 10;
+one = -10;
+seven = -30;
+three = -20;
+two = -40;
+};
 one = {
 "@MMK_R_degree" = -130;
 "@MMK_R_ordinals" = -90;
 "@MMK_R_percent" = -90;
 };
+paragraph = {
+"@MMK_R_a" = -10;
+"@MMK_R_d" = -10;
+"@MMK_R_i" = 10;
+"@MMK_R_o" = -10;
+};
 plusminus = {
 "@MMK_R_i" = 20;
+};
+section = {
+"@MMK_R_C" = 30;
+one = -20;
+seven = -40;
 };
 seven = {
 "@MMK_R_degree" = 30;
 divisionslash = -70;
+numbersign = -40;
 };
 six = {
 "@MMK_R_degree" = -13;
 "@MMK_R_percent" = -33;
+numbersign = 30;
 };
 slash = {
 "@MMK_R_percent" = 30;
@@ -115851,11 +115909,13 @@ divisionslash = -30;
 "@MMK_R_y" = -27;
 "@MMK_R_y.smcp" = -53;
 asciicircum = -40;
+numbersign = 30;
 };
 "@MMK_L_B" = {
 "@MMK_R_X" = -10;
 "@MMK_R_Y" = -45;
 asciicircum = -20;
+numbersign = 30;
 };
 "@MMK_L_C" = {
 "@MMK_R_C" = -9;
@@ -115874,6 +115934,7 @@ asciicircum = -20;
 "@MMK_R_u.smcp" = 0;
 "@MMK_R_y.smcp" = 30;
 less = -20;
+numbersign = 20;
 };
 "@MMK_L_D" = {
 "@MMK_R_A" = -8;
@@ -115925,6 +115986,7 @@ multiply = -20;
 "@MMK_R_f" = 9;
 "@MMK_R_v" = -13;
 "@MMK_R_y" = -13;
+numbersign = 20;
 };
 "@MMK_L_K" = {
 "@MMK_R_C" = -38;
@@ -115946,6 +116008,7 @@ multiply = -20;
 "@MMK_R_y" = -41;
 "@MMK_R_y.smcp" = -30;
 multiply = -30;
+numbersign = 20;
 };
 "@MMK_L_L" = {
 "@MMK_R_C" = -23;
@@ -115976,6 +116039,7 @@ asciicircum = -130;
 equal = -5;
 less = -90;
 multiply = -30;
+numbersign = 30;
 };
 "@MMK_L_M" = {
 "@MMK_R_S" = 1;
@@ -115986,6 +116050,7 @@ multiply = -30;
 "@MMK_R_f" = -9;
 "@MMK_R_guillemetleft" = 0;
 "@MMK_R_superior" = -20;
+numbersign = 20;
 };
 "@MMK_L_O" = {
 "@MMK_R_A" = -8;
@@ -116010,6 +116075,7 @@ multiply = -30;
 "@MMK_R_y.smcp" = 5;
 "@MMK_R_z" = -22;
 divisionslash = -20;
+numbersign = 30;
 };
 "@MMK_L_Ohorn" = {
 "@MMK_R_A" = -20;
@@ -116053,6 +116119,7 @@ divisionslash = -50;
 "@MMK_R_hyphen" = -30;
 "@MMK_R_u" = -32;
 "@MMK_R_u.smcp" = -10;
+numbersign = 20;
 };
 "@MMK_L_S" = {
 "@MMK_R_C" = 4;
@@ -116070,6 +116137,7 @@ divisionslash = -50;
 "@MMK_R_y" = -27;
 "@MMK_R_y.smcp" = -10;
 "@MMK_R_z" = 0;
+numbersign = 50;
 };
 "@MMK_L_T" = {
 "@MMK_R_A" = -80;
@@ -116113,6 +116181,7 @@ divisionslash = -50;
 divisionslash = -40;
 less = -60;
 multiply = -40;
+numbersign = -30;
 plusminus = -30;
 };
 "@MMK_L_Thorn" = {
@@ -116176,6 +116245,7 @@ divisionslash = -10;
 "@MMK_R_A" = -36;
 "@MMK_R_T" = 40;
 "@MMK_R_i" = 15;
+numbersign = -10;
 };
 "@MMK_L_W" = {
 "@MMK_R_A" = -33;
@@ -116206,6 +116276,7 @@ divisionslash = -10;
 "@MMK_R_y" = -18;
 "@MMK_R_z" = -45;
 "@MMK_R_z.smcp" = -24;
+numbersign = -10;
 };
 "@MMK_L_X" = {
 "@MMK_R_C" = -40;
@@ -116318,6 +116389,7 @@ divisionslash = -20;
 "@MMK_R_s" = 8;
 "@MMK_R_t" = 20;
 equal = 30;
+numbersign = 20;
 plusminus = 30;
 };
 "@MMK_L_c.smcp" = {
@@ -116364,6 +116436,7 @@ plusminus = 30;
 "@MMK_R_o" = -6;
 "@MMK_R_w" = -2;
 asciicircum = -10;
+numbersign = 10;
 };
 "@MMK_L_d.smcp" = {
 "@MMK_R_T" = -48;
@@ -116392,6 +116465,7 @@ zero = 30;
 "@MMK_R_v" = -5;
 "@MMK_R_w" = 0;
 "@MMK_R_y" = -13;
+numbersign = 10;
 };
 "@MMK_L_e.smcp" = {
 "@MMK_R_T" = 0;
@@ -116588,6 +116662,7 @@ asciicircum = -35;
 "@MMK_R_z" = -12;
 divisionslash = 20;
 equal = 20;
+numbersign = 30;
 };
 "@MMK_L_o.smcp" = {
 "@MMK_R_T" = -70;
@@ -116653,6 +116728,7 @@ zero = 18;
 "@MMK_R_quotesingle" = -220;
 backslash = -110;
 one = -20;
+question = -20;
 seven = -120;
 slash = 10;
 };
@@ -116763,6 +116839,7 @@ plusminus = 20;
 "@MMK_R_s" = -8;
 divisionslash = 30;
 equal = 20;
+numbersign = 30;
 };
 "@MMK_L_s.smcp" = {
 "@MMK_R_S" = 20;
@@ -116805,6 +116882,7 @@ equal = 20;
 "@MMK_R_w" = 40;
 "@MMK_R_y" = 22;
 "@MMK_R_z" = 25;
+numbersign = 20;
 };
 "@MMK_L_t.smcp" = {
 "@MMK_R_A" = -80;
@@ -116829,6 +116907,7 @@ equal = 20;
 "@MMK_R_c" = -7;
 "@MMK_R_i" = 0;
 "@MMK_R_o" = -6;
+numbersign = 20;
 };
 "@MMK_L_u.smcp" = {
 "@MMK_R_A" = -28;
@@ -116918,6 +116997,7 @@ equal = 20;
 "@MMK_R_a" = -17;
 "@MMK_R_g" = -15;
 "@MMK_R_o" = -30;
+numbersign = 20;
 };
 "@MMK_L_y" = {
 "@MMK_R_a" = -11;
@@ -116932,6 +117012,7 @@ equal = 20;
 "@MMK_R_s" = -6;
 "@MMK_R_t" = 58;
 "@MMK_R_y" = 0;
+numbersign = 5;
 };
 "@MMK_L_y.smcp" = {
 "@MMK_R_A" = -53;
@@ -117009,6 +117090,7 @@ zero = -75;
 };
 eight = {
 "@MMK_R_percent" = -20;
+numbersign = 20;
 };
 equal = {
 "@MMK_R_i" = 20;
@@ -117027,6 +117109,7 @@ four = {
 "@MMK_R_degree" = -90;
 "@MMK_R_ordinals" = -30;
 "@MMK_R_percent" = -50;
+numbersign = 50;
 };
 greater = {
 "@MMK_R_T" = -60;
@@ -117044,22 +117127,57 @@ multiply = {
 nine = {
 divisionslash = -75;
 };
+numbersign = {
+"@MMK_R_A" = -25;
+"@MMK_R_AE" = -20;
+"@MMK_R_C" = 30;
+"@MMK_R_S" = 20;
+"@MMK_R_f" = 40;
+"@MMK_R_o" = -10;
+"@MMK_R_s" = -10;
+"@MMK_R_t" = 50;
+"@MMK_R_u" = 10;
+"@MMK_R_v" = 40;
+"@MMK_R_w" = 40;
+"@MMK_R_y" = 30;
+"@MMK_R_z" = 15;
+five = -15;
+four = -30;
+nine = 40;
+one = -7;
+seven = -20;
+three = -33;
+two = -33;
+};
 one = {
 "@MMK_R_degree" = -120;
 "@MMK_R_ordinals" = -100;
 "@MMK_R_percent" = -110;
 };
+paragraph = {
+"@MMK_R_a" = -20;
+"@MMK_R_d" = -20;
+"@MMK_R_i" = 30;
+"@MMK_R_o" = -20;
+};
 plusminus = {
 "@MMK_R_T" = -30;
 "@MMK_R_i" = 20;
 };
+section = {
+"@MMK_R_C" = 30;
+one = -10;
+seven = -40;
+};
 seven = {
 "@MMK_R_degree" = 20;
 divisionslash = -70;
+numbersign = -20;
 };
 six = {
 "@MMK_R_degree" = -15;
 "@MMK_R_percent" = -40;
+numbersign = 40;
 };
 slash = {
 "@MMK_R_percent" = 30;
