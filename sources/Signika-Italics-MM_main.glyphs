@@ -1490,7 +1490,7 @@ Tag = ital;
 date = "2020-05-07 12:35:45 +0000";
 designer = "Anna Giedryś";
 designerURL = www.ancymonic.com;
-familyName = "Signika Italics Test2";
+familyName = "Signika Italics Test";
 featurePrefixes = (
 {
 automatic = 1;
