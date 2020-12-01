@@ -1490,7 +1490,7 @@ Tag = ital;
 date = "2020-05-07 12:35:45 +0000";
 designer = "Anna Giedryś";
 designerURL = www.ancymonic.com;
-familyName = "Signika Italics Test";
+familyName = "Signika Italics Test2";
 featurePrefixes = (
 {
 automatic = 1;
@@ -33489,7 +33489,7 @@ unicode = 0078;
 {
 color = 5;
 glyphname = y;
-lastChange = "2020-12-01 18:31:52 +0000";
+lastChange = "2020-12-01 18:40:28 +0000";
 layers = (
 {
 anchors = (
@@ -115342,7 +115342,7 @@ zero = 20;
 "@MMK_R_o" = 0;
 "@MMK_R_t" = 20;
 "@MMK_R_w" = 0;
-"@MMK_R_y" = -5;
+"@MMK_R_y" = -6;
 numbersign = 10;
 };
 "@MMK_L_e.smcp" = {
