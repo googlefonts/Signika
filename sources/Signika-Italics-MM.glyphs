@@ -13,8 +13,8 @@ DisplayStrings = (
 "nn/cacute 000/cacute nn/space nn/ccircumflex 000/ccircumflex nn/space nné000énn/space nnê000ênn/space nnë000ënn/space nnè000ènn/space nn/idotless 000/idotless nn/space nní000ínn/space nnî000înn/space nnï000ïnn/space nnì000ìnn/space nn/jdotless 000/jdotless nn/space nnñ000ñnn/space nnø000ønn/space nnõ000õnn/space nn/sacute 000/sacute nn/space nn/cacute 101/cacute nn/space nn/ccircumflex 101/ccircumflex nn/space nné101énn/space nnê101ênn/space nnë101ënn/space nnè101ènn/space nn/idotless 101/idotless nn/space nní101ínn/space nnî101înn/space nnï101ïnn/space nnì101ìnn/space nn/jdotless 101/jdotless nn/space nnñ101ñnn/space nnø101ønn/space nnõ101õnn/space nn/sacute 101/sacute nn/space nn/cacute 202/cacute nn/space nn/ccircumflex 202/ccircumflex nn/space nné202énn/space nnê202ênn/space nnë202ënn/space nnè202ènn/space nn/idotless 202/idotless nn/space nní202ínn/space nnî202înn/space nnï202ïnn/space nnì202ìnn/space nn/jdotless 202/jdotless nn/space nnñ202ñnn/space nnø202ønn/space nnõ202õnn/space nn/sacute 202/sacute nn/space nn/cacute 303/cacute nn/space nn/ccircumflex 303/ccircumflex nn/space nné303énn/space nnê303ênn/space nnë303ënn/space nnè303ènn/space nn/idotless 303/idotless nn/space nní303ínn/space nnî303înn/space nnï303ïnn/space nnì303ìnn/space nn/jdotless 303/jdotless nn/space nnñ303ñnn/space nnø303ønn/space nnõ303õnn/space nn/sacute 303/sacute nn/space nn/cacute 404/cacute nn/space nn/ccircumflex 404/ccircumflex nn/space nné404énn/space nnê404ênn/space nnë404ënn/space nnè404ènn/space nn/idotless 404/idotless nn/space nní404ínn/space nnî404înn/space nnï404ïnn/space nnì404ìnn/space nn/jdotless 404/jdotless nn/space nnñ404ñnn/space nnø404ønn/space nnõ404õnn/space nn/sacute 404/sacute nn/space nn/cacute 505/cacute nn/space nn/ccircumflex 505/ccircumflex nn/space nné505énn/space nnê505ênn/space nnë505ënn/space nnè505ènn/space nn/idotless 505/idotless nn/space nní505ínn/space nnî505înn/space nnï505ïnn/space nnì505ìnn/space nn/jdotless 505/jdotless nn/space nnñ505ñnn/space nnø505ønn/space nnõ505õnn/space nn/sacute 505/sacute nn/space nn/cacute 606/cacute nn/space nn/ccircumflex 606/ccircumflex nn/space nné606énn/space nnê606ênn/space nnë606ënn/space nnè606ènn/space nn/idotless 606/idotless nn/space nní606ínn/space nnî606înn/space nnï606ïnn/space nnì606ìnn/space nn/jdotless 606/jdotless nn/space nnñ606ñnn/space nnø606ønn/space nnõ606õnn/space nn/sacute 606/sacute nn/space nn/cacute 707/cacute nn/space nn/ccircumflex 707/ccircumflex nn/space nné707énn/space nnê707ênn/space nnë707ënn/space nnè707ènn/space nn/idotless 707/idotless nn/space nní707ínn/space nnî707înn/space nnï707ïnn/space nnì707ìnn/space nn/jdotless 707/jdotless nn/space nnñ707ñnn/space nnø707ønn/space nnõ707õnn/space nn/sacute 707/sacute nn/space nn/cacute 808/cacute nn/space nn/ccircumflex 808/ccircumflex nn/space nné808énn/space nnê808ênn/space nnë808ënn/space nnè808ènn/space nn/idotless 808/idotless nn/space nní808ínn/space nnî808înn/space nnï808ïnn/space nnì808ìnn/space nn/jdotless 808/jdotless nn/space nnñ808ñnn/space nnø808ønn/space nnõ808õnn/space nn/sacute 808/sacute nn/space nn/cacute 909/cacute nn/space nn/ccircumflex 909/ccircumflex nn/space nné909énn/space nnê909ênn/space nnë909ënn/space nnè909ènn/space nn/idotless 909/idotless nn/space nní909ínn/space nnî909înn/space nnï909ïnn/space nnì909ìnn/space nn/jdotless 909/jdotless nn/space nnñ909ñnn/space nnø909ønn/space nnõ909õnn/space nn/sacute 909/sacute nn",
 "HHAHH/space UHAHU/space HOAOH\012HHBHH/space UHBHU/space HOBOH\012HHCHH/space UHCHU/space HOCOH/space \012HHDHH/space UHDHU/space HODOH\012HHEHH/space UHEHU/space HOEOH\012HHFHH/space UHFHU/space HOFOH\012HHGHH/space UHGHU/space HOGOH\012HHHHH/space UHHHU/space HOHOH\012HHIHH/space UHIHU/space HOIOH\012HHJHH/space UHJHU/space HOJOH/space/space \012HHKHH/space UHKHU/space HOKOH/space \012HHLHH/space UHLHU/space HOLOH/space \012HHMHH/space UHMHU/space HOMOH/space \012HHNHH/space UHNHU/space HONOH\012HHOHH/space UHOHU/space HOOOH\012HHPHH/space UHPHU/space HOPOH/space \012HHQHH/space UHQHU/space HOQOH\012HHRHH/space UHRHU/space HOROH/space \012HHSHH/space UHSHU/space HOSOH/space/space \012HHTHH/space UHTHU/space HOTOH/space \012HHUHH/space UHUHU/space HOUOH\012HHVHH/space UHVHU/space HOVOH/space \012HHWHH/space UHWHU/space HOWOH/space \012HHXHH/space UHXHU/space HOXOH/space \012HHYHH/space UHYHU/space HOYOH/space \012HHZHH/space UHZHU/space HOZOH/space \012\012",
 "Tanio/space Tànio/space Tánio/space Tânio/space Tãnio/space TnioTnio/space Tänio/space Tånio/space Tnio/space Tænio/space T/aeacute nio/space Tanio/space anio/space anio/space anio\012T/ccircumflex nio/space Tnio/space Tènio/space Tênio/space Tnio/space Tnio/space Tënio/space Tnio/space Tnio/space Tnio/space Tônio/space Tõnio/space Tnio/space Tnio/space Tönio/space \012\012Tìno/space Tíno/space Tîno/space Tno/space Tno/space Tno/space Tno/space Tïno/space Tno/space Tno/space Tno/space Tino/space ino/space ino/space ino\012\012Vino/space Vìno/space Víno/space Vîno/space Vno/space Vno/space Vno/space V/idotless no/space Vno/space Vïno/space Vno/space Vno/space Vno/space Vno/space Vino/space \012\012Yino/space Yìno/space Yíno/space Yîno/space Yno/space Yno/space Yno/space Y/idotless no/space Yno/space Yïno/space Yno/space Yno/space Yno/space Yno/space Yino/space ino/space Ýino/space ino/space ino/space \012\012Tjno/space Tno/space Tno/space Tno/space Tjno/space jno/space jno/space jno/space Vjno/space Vno/space Vno/space Vno/space Vjno/space Wjno/space Wno/space Wno/space Wno/space Wjno/space jno/space jno/space jno/space jno/space Yjno/space Yno/space Yno/space Yno/space Yjno/space jno/space Ýjno/space jno/space jno/space \012\012F/space Tuin/space Tuin/space Vuin/space Vuin/space Wuin/space Wuin/space Yuin/space Yuin\012\012Tnui\012\012OHTâno/space OHVâno/space OHWâno/space OHYâno/space OHTãno/space OHVãno/space OHWãno/space OHYãno/space OHTäno/space OHVäno/space OHWäno/space OHYäno/space OHTno/space OHVno/space OHWno/space OHYno/space OHTno/space OHVno/space OHWno/space OHYno/space/space OHTåno/space OHVåno/space OHWåno/space OHYåno\012\012OHT/ccircumflex no/space OHV/ccircumflex no/space OHW/ccircumflex no/space OHY/ccircumflex no/space OHTno/space OHVno/space OHWno/space OHYno\012\012OHTèno/space OHWèno/space OHYèno/space OHTêno/space OHYêno/space OHTno/space OHYno/space OHTno/space OHVno/space OHWno/space OHYno/space OHTëno/space OHVëno/space OHWëno/space OHYëno/space OHTno/space OHVno/space OHWno/space OHYno\012\012OHTno/space OHVno/space OHWno/space OHYno/space OHTno/space OHVno/space OHWno/space OHYno/space OHTno/space OHTno\012\012OHTòno/space OHVòno/space OHWòno/space OHYòno/space OHTôno/space OHVôno/space OHWôno/space OHYôno/space OHTõno/space OHVõno/space OHWõno/space OHYõno/space OHTöno/space OHVöno/space OHWöno/space OHYöno/space OHTno/space OHVno/space OHWno/space OHYno/space OHTno/space OHVno/space OHWno/space OHYno\012\012OHTno/space OHVno/space OHWno/space OHYno/space OHTno/space OHVno/space OHWno/space OHYno/space/space/space \012\012OHTno/space OHVno/space OHWno/space OHYno\012\012OHTno/space OHVno/space OHWno/space OHYno/space OHVn/space OHWno/space OHTno",
-"Aann/space/space Tbnn/space/space Vbnn/space/space Kbnn/space/space Rbnn\012\012Aann/space/space Bann/space/space Cann/space/space Dann/space/space Eann/space/space Fann/space/space Gann/space/space Hann/space/space Iann/space/space Jann/space/space Kann/space/space Lann/space/space Mann/space/space Nann/space/space Oann/space/space Pann/space/space Qann/space/space Rann/space/space Sann/space/space Tann/space/space Uann/space/space Vann/space/space Wann/space/space Xann/space/space Yann/space/space Zann/space/space Æann/space/space Ðann/space/space/OE ann/space/space Þann/space \012Adnn/space/space Bdnn/space/space Cdnn/space/space Ddnn/space/space Ednn/space/space Fdnn/space/space Gdnn/space/space Hdnn/space/space Idnn/space/space Jdnn/space/space Kdnn/space/space Ldnn/space/space Mdnn/space/space Ndnn/space/space Odnn/space/space Pdnn/space/space Qdnn/space/space Rdnn/space/space Sdnn/space/space Tdnn/space/space Udnn/space/space Vdnn/space/space Wdnn/space/space Xdnn/space/space Ydnn/space/space Zdnn/space/space Ædnn/space/space Ðdnn/space/space/OE dnn/space/space Þdnn\012Aænn/space/space Bænn/space/space Cænn/space/space Dænn/space/space Eænn/space/space Fænn/space/space Gænn/space/space Hænn/space/space Iænn/space/space Jænn/space/space Kænn/space/space Lænn/space/space Mænn/space/space Nænn/space/space Oænn/space/space Pænn/space/space Qænn/space/space Rænn/space/space Sænn/space/space Tænn/space/space Uænn/space/space Vænn/space/space Wænn/space/space Xænn/space/space Yænn/space/space Zænn/space/space Æænn/space/space Ðænn/space/space/OE ænn/space \012Abnn/space/space Bbnn/space/space Cbnn/space/space Dbnn/space/space Ebnn/space/space Fbnn/space/space Gbnn/space/space Hbnn/space/space Ibnn/space/space Jbnn/space/space Kbnn/space/space Lbnn/space/space Mbnn/space/space Nbnn/space/space Obnn/space/space Pbnn/space/space Qbnn/space/space Rbnn/space/space Sbnn/space/space Tbnn/space/space Ubnn/space/space Vbnn/space/space Wbnn/space/space Xbnn/space/space Ybnn/space/space Zbnn/space/space Æbnn/space/space Ðbnn/space/space/OE bnn/space/space Þbnn\012Ahnn/space/space Bhnn/space/space Chnn/space/space Dhnn/space/space Ehnn/space/space Fhnn/space/space Ghnn/space/space Hhnn/space/space Ihnn/space/space Jhnn/space/space Khnn/space/space Lhnn/space/space Mhnn/space/space Nhnn/space/space Ohnn/space/space Phnn/space/space Qhnn/space/space Rhnn/space/space Shnn/space/space Thnn/space/space Uhnn/space/space Vhnn/space/space Whnn/space/space Xhnn/space/space Yhnn/space/space Zhnn/space/space Æhnn/space/space Ðhnn/space/space/OE hnn/space/space Þhnn\012Aknn/space/space Bknn/space/space Cknn/space/space Dknn/space/space Eknn/space/space Fknn/space/space Gknn/space/space Hknn/space/space Iknn/space/space Jknn/space/space Kknn/space/space Lknn/space/space Mknn/space/space Nknn/space/space Oknn/space/space Pknn/space/space Qknn/space/space Rknn/space/space Sknn/space/space Tknn/space/space Uknn/space/space Vknn/space/space Wknn/space/space Xknn/space/space Yknn/space/space Zknn/space/space Æknn/space/space Ðknn/space/space/OE knn/space/space Þknn\012Aþnn/space/space Bþnn/space/space Cþnn/space/space Dþnn/space/space Eþnn/space/space Fþnn/space/space Gþnn/space/space Hþnn/space/space Iþnn/space/space Jþnn/space/space Kþnn/space/space Lþnn/space/space Mþnn/space/space Nþnn/space/space Oþnn/space/space Pþnn/space/space Qþnn/space/space Rþnn/space/space Sþnn/space/space Tþnn/space/space Uþnn/space/space Vþnn/space/space Wþnn/space/space Xþnn/space/space Yþnn/space/space Zþnn/space/space Æþnn/space/space Ðþnn/space/space/OE þnn/space \012Acnn/space/space Bcnn/space/space Ccnn/space/space Dcnn/space/space Ecnn/space/space Fcnn/space/space Gcnn/space/space Hcnn/space/space Icnn/space/space Jcnn/space/space Kcnn/space/space Lcnn/space/space Mcnn/space/space Ncnn/space/space Ocnn/space/space Pcnn/space/space Qcnn/space/space Rcnn/space/space Scnn/space/space Tcnn/space/space Ucnn/space/space Vcnn/space/space Wcnn/space/space Xcnn/space/space Ycnn/space/space Zcnn/space/space Æcnn/space/space Ðcnn/space/space/OE cnn/space/space Þcnn/space \012Aonn/space/space Bonn/space/space Conn/space/space Donn/space/space Eonn/space/space Fonn/space/space Gonn/space/space Honn/space/space Ionn/space/space Jonn/space/space Konn/space/space Lonn/space/space Monn/space/space Nonn/space/space Oonn/space/space Ponn/space/space Qonn/space/space Ronn/space/space Sonn/space/space Tonn/space/space Uonn/space/space Vonn/space/space Wonn/space/space Xonn/space/space Yonn/space/space Zonn/space/space Æonn/space/space Ðonn/space/space/OE onn/space/space Þonn\012Aenn/space/space Benn/space/space Cenn/space/space Denn/space/space Eenn/space/space Fenn/space/space Genn/space/space Henn/space/space Ienn/space/space Jenn/space/space Kenn/space/space Lenn/space/space Menn/space/space Nenn/space/space Oenn/space/space Penn/space/space Qenn/space/space Renn/space/space Senn/space/space Tenn/space/space Uenn/space/space Venn/space/space Wenn/space/space Xenn/space/space Yenn/space/space Zenn/space/space Æenn/space/space Ðenn/space/space/OE enn/space/space Þenn\012A/oe nn/space/space B/oe nn/space/space C/oe nn/space/space D/oe nn/space/space E/oe nn/space/space F/oe nn/space/space G/oe nn/space/space H/oe nn/space/space I/oe nn/space/space J/oe nn/space/space K/oe nn/space/space L/oe nn/space/space M/oe nn/space/space N/oe nn/space/space O/oe nn/space/space P/oe nn/space/space Q/oe nn/space/space R/oe nn/space/space S/oe nn/space/space T/oe nn/space/space U/oe nn/space/space V/oe nn/space/space W/oe nn/space/space X/oe nn/space/space Y/oe nn/space/space Z/oe nn/space/space Æ/oe nn/space/space Ð/oe nn/space/space/OE/oe nn\012\012Agnn/space/space Bgnn/space/space Cgnn/space/space Dgnn/space/space Egnn/space/space Fgnn/space/space Ggnn/space/space Hgnn/space/space Ignn/space/space Jgnn/space/space Kgnn/space/space Lgnn/space/space Mgnn/space/space Ngnn/space/space Ognn/space/space Pgnn/space/space Qgnn/space/space Rgnn/space/space Sgnn/space/space Tgnn/space/space Ugnn/space/space Vgnn/space/space Wgnn/space/space Xgnn/space/space Ygnn/space/space Zgnn/space/space Ægnn/space/space Ðgnn/space/space/OE gnn/space/space Þgnn\012\012Afnn/space/space Bfnn/space/space Cfnn/space/space Dfnn/space/space Efnn/space/space Ffnn/space/space Gfnn/space/space Hfnn/space/space Ifnn/space/space Jfnn/space/space Kfnn/space/space Lfnn/space/space Mfnn/space/space Nfnn/space/space Ofnn/space/space Pfnn/space/space Qfnn/space/space Rfnn/space/space Sfnn/space/space Tfnn/space/space Ufnn/space/space Vfnn/space/space Wfnn/space/space Xfnn/space/space Yfnn/space/space Zfnn/space/space Æfnn/space/space Ðfnn/space/space/OE fnn/space/space Þfnn\012\012Ainn/space/space Binn/space/space Cinn/space/space Dinn/space/space Einn/space/space Finn/space/space Ginn/space/space Hinn/space/space Iinn/space/space Jinn/space/space Kinn/space/space Linn/space/space Minn/space/space Ninn/space/space Oinn/space/space Pinn/space/space Qinn/space/space Rinn/space/space Sinn/space/space Tinn/space/space Uinn/space/space Vinn/space/space Winn/space/space Xinn/space/space Yinn/space/space Zinn/space/space Æinn/space/space Ðinn/space/space/OE inn/space/space Þinn\012\012Ajnn/space/space Bjnn/space/space Cjnn/space/space Djnn/space/space Ejnn/space/space Fjnn/space/space Gjnn/space/space Hjnn/space/space Ijnn/space/space Jjnn/space/space Kjnn/space/space Ljnn/space/space Mjnn/space/space Njnn/space/space Ojnn/space/space Pjnn/space/space Qjnn/space/space Rjnn/space/space Sjnn/space/space Tjnn/space/space Ujnn/space/space Vjnn/space/space Wjnn/space/space Xjnn/space/space Yjnn/space/space Zjnn/space/space Æjnn/space/space Ðjnn/space/space/OE jnn/space/space Þjnn\012\012Alnn/space/space Blnn/space/space Clnn/space/space Dlnn/space/space Elnn/space/space Flnn/space/space Glnn/space/space Hlnn/space/space Ilnn/space/space Jlnn/space/space Klnn/space/space Llnn/space/space Mlnn/space/space Nlnn/space/space Olnn/space/space Plnn/space/space Qlnn/space/space Rlnn/space/space Slnn/space/space Tlnn/space/space Ulnn/space/space Vlnn/space/space Wlnn/space/space Xlnn/space/space Ylnn/space/space Zlnn/space/space Ælnn/space/space Ðlnn/space/space/OE lnn/space/space Þlnn\012\012Annn/space/space Bnnn/space/space Cnnn/space/space Dnnn/space/space Ennn/space/space Fnnn/space/space Gnnn/space/space Hnnn/space/space Innn/space/space Jnnn/space/space Knnn/space/space Lnnn/space/space Mnnn/space/space Nnnn/space/space Onnn/space/space Pnnn/space/space Qnnn/space/space Rnnn/space/space Snnn/space/space Tnnn/space/space Unnn/space/space Vnnn/space/space Wnnn/space/space Xnnn/space/space Ynnn/space/space Znnn/space/space Ænnn/space/space Ðnnn/space/space/OE nnn\012\012Apnn/space/space Bpnn/space/space Cpnn/space/space Dpnn/space/space Epnn/space/space Fpnn/space/space Gpnn/space/space Hpnn/space/space Ipnn/space/space Jpnn/space/space Kpnn/space/space Lpnn/space/space Mpnn/space/space Npnn/space/space Opnn/space/space Ppnn/space/space Qpnn/space/space Rpnn/space/space Spnn/space/space Tpnn/space/space Upnn/space/space Vpnn/space/space Wpnn/space/space Xpnn/space/space Ypnn/space/space Zpnn/space/space Æpnn/space/space Ðpnn/space/space/OE pnn/space/space Þpnn\012\012Aqnn/space/space Bqnn/space/space Cqnn/space/space Dqnn/space/space Eqnn/space/space Fqnn/space/space Gqnn/space/space Hqnn/space/space Iqnn/space/space Jqnn/space/space Kqnn/space/space Lqnn/space/space Mqnn/space/space Nqnn/space/space Oqnn/space/space Pqnn/space/space Qqnn/space/space Rqnn/space/space Sqnn/space/space Tqnn/space/space Uqnn/space/space Vqnn/space/space Wqnn/space/space Xqnn/space/space Yqnn/space/space Zqnn/space/space Æqnn/space/space Ðqnn/space/space/OE qnn/space/space Þqnn\012\012Arnn/space/space Brnn/space/space Crnn/space/space Drnn/space/space Ernn/space/space Frnn/space/space Grnn/space/space Hrnn/space/space Irnn/space/space Jrnn/space/space Krnn/space/space Lrnn/space/space Mrnn/space/space Nrnn/space/space Ornn/space/space Prnn/space/space Qrnn/space/space Rrnn/space/space Srnn/space/space Trnn/space/space Urnn/space/space Vrnn/space/space Wrnn/space/space Xrnn/space/space Yrnn/space/space Zrnn/space/space Ærnn/space/space Ðrnn/space/space/OE rnn/space/space Þrnn\012\012Asnn/space/space Bsnn/space/space Csnn/space/space Dsnn/space/space Esnn/space/space Fsnn/space/space Gsnn/space/space Hsnn/space/space Isnn/space/space Jsnn/space/space Ksnn/space/space Lsnn/space/space Msnn/space/space Nsnn/space/space Osnn/space/space Psnn/space/space Qsnn/space/space Rsnn/space/space Ssnn/space/space Tsnn/space/space Usnn/space/space Vsnn/space/space Wsnn/space/space Xsnn/space/space Ysnn/space/space Zsnn/space/space Æsnn/space/space Ðsnn/space/space/OE snn/space/space Þsnn\012\012Atnn/space/space Btnn/space/space Ctnn/space/space Dtnn/space/space Etnn/space/space Ftnn/space/space Gtnn/space/space Htnn/space/space Itnn/space/space Jtnn/space/space Ktnn/space/space Ltnn/space/space Mtnn/space/space Ntnn/space/space Otnn/space/space Ptnn/space/space Qtnn/space/space Rtnn/space/space Stnn/space/space Ttnn/space/space Utnn/space/space Vtnn/space/space Wtnn/space/space Xtnn/space/space Ytnn/space/space Ztnn/space/space Ætnn/space/space Ðtnn/space/space/OE tnn/space/space Þtnn/space \012\012Aunn/space/space Bunn/space/space Cunn/space/space Dunn/space/space Eunn/space/space Funn/space/space Gunn/space/space Hunn/space/space Iunn/space/space Junn/space/space Kunn/space/space Lunn/space/space Munn/space/space Nunn/space/space Ounn/space/space Punn/space/space Qunn/space/space Runn/space/space Sunn/space/space Tunn/space/space Uunn/space/space Vunn/space/space Wunn/space/space Xunn/space/space Yunn/space/space Zunn/space/space Æunn/space/space Ðunn/space/space/OE unn/space/space Þunn/space \012\012Avnn/space/space Bvnn/space/space Cvnn/space/space Dvnn/space/space Evnn/space/space Fvnn/space/space Gvnn/space/space Hvnn/space/space Ivnn/space/space Jvnn/space/space Kvnn/space/space Lvnn/space/space Mvnn/space/space Nvnn/space/space Ovnn/space/space Pvnn/space/space Qvnn/space/space Rvnn/space/space Svnn/space/space Tvnn/space/space Uvnn/space/space Vvnn/space/space Wvnn/space/space Xvnn/space/space Yvnn/space/space Zvnn/space/space Ævnn/space/space Ðvnn/space/space/OE vnn/space/space Þvnn/space \012\012Awnn/space/space Bwnn/space/space Cwnn/space/space Dwnn/space/space Ewnn/space/space Fwnn/space/space Gwnn/space/space Hwnn/space/space Iwnn/space/space Jwnn/space/space Kwnn/space/space Lwnn/space/space Mwnn/space/space Nwnn/space/space Ownn/space/space Pwnn/space/space Qwnn/space/space Rwnn/space/space Swnn/space/space Twnn/space/space Uwnn/space/space Vwnn/space/space Wwnn/space/space Xwnn/space/space Ywnn/space/space Zwnn/space/space Æwnn/space/space Ðwnn/space/space/OE wnn/space/space Þwnn\012\012Axnn/space/space Bxnn/space/space Cxnn/space/space Dxnn/space/space Exnn/space/space Fxnn/space/space Gxnn/space/space Hxnn/space/space Ixnn/space/space Jxnn/space/space Kxnn/space/space Lxnn/space/space Mxnn/space/space Nxnn/space/space Oxnn/space/space Pxnn/space/space Qxnn/space/space Rxnn/space/space Sxnn/space/space Txnn/space/space Uxnn/space/space Vxnn/space/space Wxnn/space/space Xxnn/space/space Yxnn/space/space Zxnn/space/space Æxnn/space/space Ðxnn/space/space/OE xnn/space/space Þxnn\012\012Aynn/space/space Bynn/space/space Cynn/space/space Dynn/space/space Eynn/space/space Fynn/space/space Gynn/space/space Hynn/space/space Iynn/space/space Jynn/space/space Kynn/space/space Lynn/space/space Mynn/space/space Nynn/space/space Oynn/space/space Pynn/space/space Qynn/space/space Rynn/space/space Synn/space/space Tynn/space/space Uynn/space/space Vynn/space/space Wynn/space/space Xynn/space/space Yynn/space/space Zynn/space/space Æynn/space/space Ðynn/space/space/OE ynn/space/space Þynn\012\012Aznn/space/space Bznn/space/space Cznn/space/space Dznn/space/space Eznn/space/space Fznn/space/space Gznn/space/space Hznn/space/space Iznn/space/space Jznn/space/space Kznn/space/space Lznn/space/space Mznn/space/space Nznn/space/space Oznn/space/space Pznn/space/space Qznn/space/space Rznn/space/space Sznn/space/space Tznn/space/space Uznn/space/space Vznn/space/space Wznn/space/space Xznn/space/space Yznn/space/space Zznn/space/space Æznn/space/space Ðznn/space/space/OE znn/space/space Þznn",
-"HHAánn/space HHBánn/space HHCánn/space HHDánn/space HHEánn/space HHFánn/space HHGánn/space HHHánn/space HHIánn/space HHJánn/space HHKánn/space HHLánn/space HHMánn/space HHNánn/space HHOánn/space HHPánn/space HHQánn/space HHRánn/space HHSánn/space HHTánn/space HHUánn/space HHVánn/space HHWánn/space HHXánn/space HHYánn/space HHZánn/space HHÆánn/space HHÐánn/space HH/OE ánn/space HHAânn/space HHBânn/space HHCânn/space HHDânn/space HHEânn/space HHFânn/space HHGânn/space HHHânn/space HHIânn/space HHJânn/space HHKânn/space HHLânn/space HHMânn/space HHNânn/space HHOânn/space HHPânn/space HHQânn/space HHRânn/space HHSânn/space HHTânn/space HHUânn/space HHVânn/space HHWânn/space HHXânn/space HHYânn/space HHZânn/space HHÆânn/space HHÐânn/space HH/OE ânn/space HHAänn/space HHBänn/space HHCänn/space HHDänn/space HHEänn/space HHFänn/space HHGänn/space HHHänn/space HHIänn/space HHJänn/space HHKänn/space HHLänn/space HHMänn/space HHNänn/space HHOänn/space HHPänn/space HHQänn/space HHRänn/space HHSänn/space HHTänn/space HHUänn/space HHVänn/space HHWänn/space HHXänn/space HHYänn/space HHZänn/space HHÆänn/space HHÐänn/space HH/OE änn/space HHAànn/space HHBànn/space HHCànn/space HHDànn/space HHEànn/space HHFànn/space HHGànn/space HHHànn/space HHIànn/space HHJànn/space HHKànn/space HHLànn/space HHMànn/space HHNànn/space HHOànn/space HHPànn/space HHQànn/space HHRànn/space HHSànn/space HHTànn/space HHUànn/space HHVànn/space HHWànn/space HHXànn/space HHYànn/space HHZànn/space HHÆànn/space HHÐànn/space HH/OE ànn/space HHAånn/space HHBånn/space HHCånn/space HHDånn/space HHEånn/space HHFånn/space HHGånn/space HHHånn/space HHIånn/space HHJånn/space HHKånn/space HHLånn/space HHMånn/space HHNånn/space HHOånn/space HHPånn/space HHQånn/space HHRånn/space HHSånn/space HHTånn/space HHUånn/space HHVånn/space HHWånn/space HHXånn/space HHYånn/space HHZånn/space HHÆånn/space HHÐånn/space HH/OE ånn/space HHAãnn/space HHBãnn/space HHCãnn/space HHDãnn/space HHEãnn/space HHFãnn/space HHGãnn/space HHHãnn/space HHIãnn/space HHJãnn/space HHKãnn/space HHLãnn/space HHMãnn/space HHNãnn/space HHOãnn/space HHPãnn/space HHQãnn/space HHRãnn/space HHSãnn/space HHTãnn/space HHUãnn/space HHVãnn/space HHWãnn/space HHXãnn/space HHYãnn/space HHZãnn/space HHÆãnn/space HHÐãnn/space HH/OE ãnn/space HHAænn/space HHBænn/space HHCænn/space HHDænn/space HHEænn/space HHFænn/space HHGænn/space HHHænn/space HHIænn/space HHJænn/space HHKænn/space HHLænn/space HHMænn/space HHNænn/space HHOænn/space HHPænn/space HHQænn/space HHRænn/space HHSænn/space HHTænn/space HHUænn/space HHVænn/space HHWænn/space HHXænn/space HHYænn/space HHZænn/space HHÆænn/space HHÐænn/space HH/OE ænn/space HHA/aeacute nn/space HHB/aeacute nn/space HHC/aeacute nn/space HHD/aeacute nn/space HHE/aeacute nn/space HHF/aeacute nn/space HHG/aeacute nn/space HHH/aeacute nn/space HHI/aeacute nn/space HHJ/aeacute nn/space HHK/aeacute nn/space HHL/aeacute nn/space HHM/aeacute nn/space HHN/aeacute nn/space HHO/aeacute nn/space HHP/aeacute nn/space HHQ/aeacute nn/space HHR/aeacute nn/space HHS/aeacute nn/space HHT/aeacute nn/space HHU/aeacute nn/space HHV/aeacute nn/space HHW/aeacute nn/space HHX/aeacute nn/space HHY/aeacute nn/space HHZ/aeacute nn/space HHÆ/aeacute nn/space HHÐ/aeacute nn/space HH/OE/aeacute nn/space HHA/cacute nn/space HHB/cacute nn/space HHC/cacute nn/space HHD/cacute nn/space HHE/cacute nn/space HHF/cacute nn/space HHG/cacute nn/space HHH/cacute nn/space HHI/cacute nn/space HHJ/cacute nn/space HHK/cacute nn/space HHL/cacute nn/space HHM/cacute nn/space HHN/cacute nn/space HHO/cacute nn/space HHP/cacute nn/space HHQ/cacute nn/space HHR/cacute nn/space HHS/cacute nn/space HHT/cacute nn/space HHU/cacute nn/space HHV/cacute nn/space HHW/cacute nn/space HHX/cacute nn/space HHY/cacute nn/space HHZ/cacute nn/space HHÆ/cacute nn/space HHÐ/cacute nn/space HH/OE/cacute nn/space HHAçnn/space HHBçnn/space HHCçnn/space HHDçnn/space HHEçnn/space HHFçnn/space HHGçnn/space HHHçnn/space HHIçnn/space HHJçnn/space HHKçnn/space HHLçnn/space HHMçnn/space HHNçnn/space HHOçnn/space HHPçnn/space HHQçnn/space HHRçnn/space HHSçnn/space HHTçnn/space HHUçnn/space HHVçnn/space HHWçnn/space HHXçnn/space HHYçnn/space HHZçnn/space HHÆçnn/space HHÐçnn/space HH/OE çnn/space HHA/ccircumflex nn/space HHB/ccircumflex nn/space HHC/ccircumflex nn/space HHD/ccircumflex nn/space HHE/ccircumflex nn/space HHF/ccircumflex nn/space HHG/ccircumflex nn/space HHH/ccircumflex nn/space HHI/ccircumflex nn/space HHJ/ccircumflex nn/space HHK/ccircumflex nn/space HHL/ccircumflex nn/space HHM/ccircumflex nn/space HHN/ccircumflex nn/space HHO/ccircumflex nn/space HHP/ccircumflex nn/space HHQ/ccircumflex nn/space HHR/ccircumflex nn/space HHS/ccircumflex nn/space HHT/ccircumflex nn/space HHU/ccircumflex nn/space HHV/ccircumflex nn/space HHW/ccircumflex nn/space HHX/ccircumflex nn/space HHY/ccircumflex nn/space HHZ/ccircumflex nn/space HHÆ/ccircumflex nn/space HHÐ/ccircumflex nn/space HH/OE/ccircumflex nn/space HHAðnn/space HHBðnn/space HHCðnn/space HHDðnn/space HHEðnn/space HHFðnn/space HHGðnn/space HHHðnn/space HHIðnn/space HHJðnn/space HHKðnn/space HHLðnn/space HHMðnn/space HHNðnn/space HHOðnn/space HHPðnn/space HHQðnn/space HHRðnn/space HHSðnn/space HHTðnn/space HHUðnn/space HHVðnn/space HHWðnn/space HHXðnn/space HHYðnn/space HHZðnn/space HHÆðnn/space HHÐðnn/space HH/OE ðnn/space HHAénn/space HHBénn/space HHCénn/space HHDénn/space HHEénn/space HHFénn/space HHGénn/space HHHénn/space HHIénn/space HHJénn/space HHKénn/space HHLénn/space HHMénn/space HHNénn/space HHOénn/space HHPénn/space HHQénn/space HHRénn/space HHSénn/space HHTénn/space HHUénn/space HHVénn/space HHWénn/space HHXénn/space HHYénn/space HHZénn/space HHÆénn/space HHÐénn/space HH/OE énn/space HHAênn/space HHBênn/space HHCênn/space HHDênn/space HHEênn/space HHFênn/space HHGênn/space HHHênn/space HHIênn/space HHJênn/space HHKênn/space HHLênn/space HHMênn/space HHNênn/space HHOênn/space HHPênn/space HHQênn/space HHRênn/space HHSênn/space HHTênn/space HHUênn/space HHVênn/space HHWênn/space HHXênn/space HHYênn/space HHZênn/space HHÆênn/space HHÐênn/space HH/OE ênn/space HHAënn/space HHBënn/space HHCënn/space HHDënn/space HHEënn/space HHFënn/space HHGënn/space HHHënn/space HHIënn/space HHJënn/space HHKënn/space HHLënn/space HHMënn/space HHNënn/space HHOënn/space HHPënn/space HHQënn/space HHRënn/space HHSënn/space HHTënn/space HHUënn/space HHVënn/space HHWënn/space HHXënn/space HHYënn/space HHZënn/space HHÆënn/space HHÐënn/space HH/OE ënn/space HHAènn/space HHBènn/space HHCènn/space HHDènn/space HHEènn/space HHFènn/space HHGènn/space HHHènn/space HHIènn/space HHJènn/space HHKènn/space HHLènn/space HHMènn/space HHNènn/space HHOènn/space HHPènn/space HHQènn/space HHRènn/space HHSènn/space HHTènn/space HHUènn/space HHVènn/space HHWènn/space HHXènn/space HHYènn/space HHZènn/space HHÆènn/space HHÐènn/space HH/OE ènn/space HHA/idotless nn/space HHB/idotless nn/space HHC/idotless nn/space HHD/idotless nn/space HHE/idotless nn/space HHF/idotless nn/space HHG/idotless nn/space HHH/idotless nn/space HHI/idotless nn/space HHJ/idotless nn/space HHK/idotless nn/space HHL/idotless nn/space HHM/idotless nn/space HHN/idotless nn/space HHO/idotless nn/space HHP/idotless nn/space HHQ/idotless nn/space HHR/idotless nn/space HHS/idotless nn/space HHT/idotless nn/space HHU/idotless nn/space HHV/idotless nn/space HHW/idotless nn/space HHX/idotless nn/space HHY/idotless nn/space HHZ/idotless nn/space HHÆ/idotless nn/space HHÐ/idotless nn/space HH/OE/idotless nn/space HHAínn/space HHBínn/space HHCínn/space HHDínn/space HHEínn/space HHFínn/space HHGínn/space HHHínn/space HHIínn/space HHJínn/space HHKínn/space HHLínn/space HHMínn/space HHNínn/space HHOínn/space HHPínn/space HHQínn/space HHRínn/space HHSínn/space HHTínn/space HHUínn/space HHVínn/space HHWínn/space HHXínn/space HHYínn/space HHZínn/space HHÆínn/space HHÐínn/space HH/OE ínn/space HHAînn/space HHBînn/space HHCînn/space HHDînn/space HHEînn/space HHFînn/space HHGînn/space HHHînn/space HHIînn/space HHJînn/space HHKînn/space HHLînn/space HHMînn/space HHNînn/space HHOînn/space HHPînn/space HHQînn/space HHRînn/space HHSînn/space HHTînn/space HHUînn/space HHVînn/space HHWînn/space HHXînn/space HHYînn/space HHZînn/space HHÆînn/space HHÐînn/space HH/OE înn/space HHAïnn/space HHBïnn/space HHCïnn/space HHDïnn/space HHEïnn/space HHFïnn/space HHGïnn/space HHHïnn/space HHIïnn/space HHJïnn/space HHKïnn/space HHLïnn/space HHMïnn/space HHNïnn/space HHOïnn/space HHPïnn/space HHQïnn/space HHRïnn/space HHSïnn/space HHTïnn/space HHUïnn/space HHVïnn/space HHWïnn/space HHXïnn/space HHYïnn/space HHZïnn/space HHÆïnn/space HHÐïnn/space HH/OE ïnn/space HHAìnn/space HHBìnn/space HHCìnn/space HHDìnn/space HHEìnn/space HHFìnn/space HHGìnn/space HHHìnn/space HHIìnn/space HHJìnn/space HHKìnn/space HHLìnn/space HHMìnn/space HHNìnn/space HHOìnn/space HHPìnn/space HHQìnn/space HHRìnn/space HHSìnn/space HHTìnn/space HHUìnn/space HHVìnn/space HHWìnn/space HHXìnn/space HHYìnn/space HHZìnn/space HHÆìnn/space HHÐìnn/space HH/OE ìnn/space HHA/jdotless nn/space HHB/jdotless nn/space HHC/jdotless nn/space HHD/jdotless nn/space HHE/jdotless nn/space HHF/jdotless nn/space HHG/jdotless nn/space HHH/jdotless nn/space HHI/jdotless nn/space HHJ/jdotless nn/space HHK/jdotless nn/space HHL/jdotless nn/space HHM/jdotless nn/space HHN/jdotless nn/space HHO/jdotless nn/space HHP/jdotless nn/space HHQ/jdotless nn/space HHR/jdotless nn/space HHS/jdotless nn/space HHT/jdotless nn/space HHU/jdotless nn/space HHV/jdotless nn/space HHW/jdotless nn/space HHX/jdotless nn/space HHY/jdotless nn/space HHZ/jdotless nn/space HHÆ/jdotless nn/space HHÐ/jdotless nn/space HH/OE/jdotless nn/space HHAñnn/space HHBñnn/space HHCñnn/space HHDñnn/space HHEñnn/space HHFñnn/space HHGñnn/space HHHñnn/space HHIñnn/space HHJñnn/space HHKñnn/space HHLñnn/space HHMñnn/space HHNñnn/space HHOñnn/space HHPñnn/space HHQñnn/space HHRñnn/space HHSñnn/space HHTñnn/space HHUñnn/space HHVñnn/space HHWñnn/space HHXñnn/space HHYñnn/space HHZñnn/space HHÆñnn/space HHÐñnn/space HH/OE ñnn/space HHAónn/space HHBónn/space HHCónn/space HHDónn/space HHEónn/space HHFónn/space HHGónn/space HHHónn/space HHIónn/space HHJónn/space HHKónn/space HHLónn/space HHMónn/space HHNónn/space HHOónn/space HHPónn/space HHQónn/space HHRónn/space HHSónn/space HHTónn/space HHUónn/space HHVónn/space HHWónn/space HHXónn/space HHYónn/space HHZónn/space HHÆónn/space HHÐónn/space HH/OE ónn/space HHAônn/space HHBônn/space HHCônn/space HHDônn/space HHEônn/space HHFônn/space HHGônn/space HHHônn/space HHIônn/space HHJônn/space HHKônn/space HHLônn/space HHMônn/space HHNônn/space HHOônn/space HHPônn/space HHQônn/space HHRônn/space HHSônn/space HHTônn/space HHUônn/space HHVônn/space HHWônn/space HHXônn/space HHYônn/space HHZônn/space HHÆônn/space HHÐônn/space HH/OE ônn/space HHAönn/space HHBönn/space HHCönn/space HHDönn/space HHEönn/space HHFönn/space HHGönn/space HHHönn/space HHIönn/space HHJönn/space HHKönn/space HHLönn/space HHMönn/space HHNönn/space HHOönn/space HHPönn/space HHQönn/space HHRönn/space HHSönn/space HHTönn/space HHUönn/space HHVönn/space HHWönn/space HHXönn/space HHYönn/space HHZönn/space HHÆönn/space HHÐönn/space HH/OE önn/space HHAònn/space HHBònn/space HHCònn/space HHDònn/space HHEònn/space HHFònn/space HHGònn/space HHHònn/space HHIònn/space HHJònn/space HHKònn/space HHLònn/space HHMònn/space HHNònn/space HHOònn/space HHPònn/space HHQònn/space HHRònn/space HHSònn/space HHTònn/space HHUònn/space HHVònn/space HHWònn/space HHXònn/space HHYònn/space HHZònn/space HHÆònn/space HHÐònn/space HH/OE ònn/space HHAønn/space HHBønn/space HHCønn/space HHDønn/space HHEønn/space HHFønn/space HHGønn/space HHHønn/space HHIønn/space HHJønn/space HHKønn/space HHLønn/space HHMønn/space HHNønn/space HHOønn/space HHPønn/space HHQønn/space HHRønn/space HHSønn/space HHTønn/space HHUønn/space HHVønn/space HHWønn/space HHXønn/space HHYønn/space HHZønn/space HHÆønn/space HHÐønn/space HH/OE ønn/space HHAõnn/space HHBõnn/space HHCõnn/space HHDõnn/space HHEõnn/space HHFõnn/space HHGõnn/space HHHõnn/space HHIõnn/space HHJõnn/space HHKõnn/space HHLõnn/space HHMõnn/space HHNõnn/space HHOõnn/space HHPõnn/space HHQõnn/space HHRõnn/space HHSõnn/space HHTõnn/space HHUõnn/space HHVõnn/space HHWõnn/space HHXõnn/space HHYõnn/space HHZõnn/space HHÆõnn/space HHÐõnn/space HH/OE õnn/space HHA/oe nn/space HHB/oe nn/space HHC/oe nn/space HHD/oe nn/space HHE/oe nn/space HHF/oe nn/space HHG/oe nn/space HHH/oe nn/space HHI/oe nn/space HHJ/oe nn/space HHK/oe nn/space HHL/oe nn/space HHM/oe nn/space HHN/oe nn/space HHO/oe nn/space HHP/oe nn/space HHQ/oe nn/space HHR/oe nn/space HHS/oe nn/space HHT/oe nn/space HHU/oe nn/space HHV/oe nn/space HHW/oe nn/space HHX/oe nn/space HHY/oe nn/space HHZ/oe nn/space HHÆ/oe nn/space HHÐ/oe nn/space HH/OE/oe nn/space HHAþnn/space HHBþnn/space HHCþnn/space HHDþnn/space HHEþnn/space HHFþnn/space HHGþnn/space HHHþnn/space HHIþnn/space HHJþnn/space HHKþnn/space HHLþnn/space HHMþnn/space HHNþnn/space HHOþnn/space HHPþnn/space HHQþnn/space HHRþnn/space HHSþnn/space HHTþnn/space HHUþnn/space HHVþnn/space HHWþnn/space HHXþnn/space HHYþnn/space HHZþnn/space HHÆþnn/space HHÐþnn/space HH/OE þnn/space HHA/sacute nn/space HHB/sacute nn/space HHC/sacute nn/space HHD/sacute nn/space HHE/sacute nn/space HHF/sacute nn/space HHG/sacute nn/space HHH/sacute nn/space HHI/sacute nn/space HHJ/sacute nn/space HHK/sacute nn/space HHL/sacute nn/space HHM/sacute nn/space HHN/sacute nn/space HHO/sacute nn/space HHP/sacute nn/space HHQ/sacute nn/space HHR/sacute nn/space HHS/sacute nn/space HHT/sacute nn/space HHU/sacute nn/space HHV/sacute nn/space HHW/sacute nn/space HHX/sacute nn/space HHY/sacute nn/space HHZ/sacute nn/space HHÆ/sacute nn/space HHÐ/sacute nn/space HH/OE/sacute nn/space HHAßnn/space HHBßnn/space HHCßnn/space HHDßnn/space HHEßnn/space HHFßnn/space HHGßnn/space HHHßnn/space HHIßnn/space HHJßnn/space HHKßnn/space HHLßnn/space HHMßnn/space HHNßnn/space HHOßnn/space HHPßnn/space HHQßnn/space HHRßnn/space HHSßnn/space HHTßnn/space HHUßnn/space HHVßnn/space HHWßnn/space HHXßnn/space HHYßnn/space HHZßnn/space HHÆßnn/space HHÐßnn/space HH/OE ßnn/space HHAúnn/space HHBúnn/space HHCúnn/space HHDúnn/space HHEúnn/space HHFúnn/space HHGúnn/space HHHúnn/space HHIúnn/space HHJúnn/space HHKúnn/space HHLúnn/space HHMúnn/space HHNúnn/space HHOúnn/space HHPúnn/space HHQúnn/space HHRúnn/space HHSúnn/space HHTúnn/space HHUúnn/space HHVúnn/space HHWúnn/space HHXúnn/space HHYúnn/space HHZúnn/space HHÆúnn/space HHÐúnn/space HH/OE únn/space HHAûnn/space HHBûnn/space HHCûnn/space HHDûnn/space HHEûnn/space HHFûnn/space HHGûnn/space HHHûnn/space HHIûnn/space HHJûnn/space HHKûnn/space HHLûnn/space HHMûnn/space HHNûnn/space HHOûnn/space HHPûnn/space HHQûnn/space HHRûnn/space HHSûnn/space HHTûnn/space HHUûnn/space HHVûnn/space HHWûnn/space HHXûnn/space HHYûnn/space HHZûnn/space HHÆûnn/space HHÐûnn/space HH/OE ûnn/space HHAünn/space HHBünn/space HHCünn/space HHDünn/space HHEünn/space HHFünn/space HHGünn/space HHHünn/space HHIünn/space HHJünn/space HHKünn/space HHLünn/space HHMünn/space HHNünn/space HHOünn/space HHPünn/space HHQünn/space HHRünn/space HHSünn/space HHTünn/space HHUünn/space HHVünn/space HHWünn/space HHXünn/space HHYünn/space HHZünn/space HHÆünn/space HHÐünn/space HH/OE ünn/space HHAùnn/space HHBùnn/space HHCùnn/space HHDùnn/space HHEùnn/space HHFùnn/space HHGùnn/space HHHùnn/space HHIùnn/space HHJùnn/space HHKùnn/space HHLùnn/space HHMùnn/space HHNùnn/space HHOùnn/space HHPùnn/space HHQùnn/space HHRùnn/space HHSùnn/space HHTùnn/space HHUùnn/space HHVùnn/space HHWùnn/space HHXùnn/space HHYùnn/space HHZùnn/space HHÆùnn/space HHÐùnn/space HH/OE ùnn/space HHAýnn/space HHBýnn/space HHCýnn/space HHDýnn/space HHEýnn/space HHFýnn/space HHGýnn/space HHHýnn/space HHIýnn/space HHJýnn/space HHKýnn/space HHLýnn/space HHMýnn/space HHNýnn/space HHOýnn/space HHPýnn/space HHQýnn/space HHRýnn/space HHSýnn/space HHTýnn/space HHUýnn/space HHVýnn/space HHWýnn/space HHXýnn/space HHYýnn/space HHZýnn/space HHÆýnn/space HHÐýnn/space HH/OE ýnn/space HHA/ydieresis nn/space HHB/ydieresis nn/space HHC/ydieresis nn/space HHD/ydieresis nn/space HHE/ydieresis nn/space HHF/ydieresis nn/space HHG/ydieresis nn/space HHH/ydieresis nn/space HHI/ydieresis nn/space HHJ/ydieresis nn/space HHK/ydieresis nn/space HHL/ydieresis nn/space HHM/ydieresis nn/space HHN/ydieresis nn/space HHO/ydieresis nn/space HHP/ydieresis nn/space HHQ/ydieresis nn/space HHR/ydieresis nn/space HHS/ydieresis nn/space HHT/ydieresis nn/space HHU/ydieresis nn/space HHV/ydieresis nn/space HHW/ydieresis nn/space HHX/ydieresis nn/space HHY/ydieresis nn/space HHZ/ydieresis nn/space HHÆ/ydieresis nn/space HHÐ/ydieresis nn/space HH/OE/ydieresis nn"
+"Aann/space/space Tbnn/space/space Vbnn/space/space Kbnn/space/space Rbnn\012\012Aann/space/space Bann/space/space Cann/space/space Dann/space/space Eann/space/space Fann/space/space Gann/space/space Hann/space/space Iann/space/space Jann/space/space Kann/space/space Lann/space/space Mann/space/space Nann/space/space Oann/space/space Pann/space/space Qann/space/space Rann/space/space Sann/space/space Tann/space/space Uann/space/space Vann/space/space Wann/space/space Xann/space/space Yann/space/space Zann/space/space Æann/space/space Ðann/space/space/OE ann/space/space Þann/space \012Adnn/space/space Bdnn/space/space Cdnn/space/space Ddnn/space/space Ednn/space/space Fdnn/space/space Gdnn/space/space Hdnn/space/space Idnn/space/space Jdnn/space/space Kdnn/space/space Ldnn/space/space Mdnn/space/space Ndnn/space/space Odnn/space/space Pdnn/space/space Qdnn/space/space Rdnn/space/space Sdnn/space/space Tdnn/space/space Udnn/space/space Vdnn/space/space Wdnn/space/space Xdnn/space/space Ydnn/space/space Zdnn/space/space Ædnn/space/space Ðdnn/space/space/OE dnn/space/space Þdnn\012Agnn/space/space Bgnn/space/space Cgnn/space/space Dgnn/space/space Egnn/space/space Fgnn/space/space Ggnn/space/space Hgnn/space/space Ignn/space/space Jgnn/space/space Kgnn/space/space Lgnn/space/space Mgnn/space/space Ngnn/space/space Ognn/space/space Pgnn/space/space Qgnn/space/space Rgnn/space/space Sgnn/space/space Tgnn/space/space Ugnn/space/space Vgnn/space/space Wgnn/space/space Xgnn/space/space Ygnn/space/space Zgnn/space/space Ægnn/space/space Ðgnn/space/space/OE gnn/space/space Þgnn\012Aqnn/space/space Bqnn/space/space Cqnn/space/space Dqnn/space/space Eqnn/space/space Fqnn/space/space Gqnn/space/space Hqnn/space/space Iqnn/space/space Jqnn/space/space Kqnn/space/space Lqnn/space/space Mqnn/space/space Nqnn/space/space Oqnn/space/space Pqnn/space/space Qqnn/space/space Rqnn/space/space Sqnn/space/space Tqnn/space/space Uqnn/space/space Vqnn/space/space Wqnn/space/space Xqnn/space/space Yqnn/space/space Zqnn/space/space Æqnn/space/space Ðqnn/space/space/OE qnn/space/space Þqnn\012Aænn/space/space Bænn/space/space Cænn/space/space Dænn/space/space Eænn/space/space Fænn/space/space Gænn/space/space Hænn/space/space Iænn/space/space Jænn/space/space Kænn/space/space Lænn/space/space Mænn/space/space Nænn/space/space Oænn/space/space Pænn/space/space Qænn/space/space Rænn/space/space Sænn/space/space Tænn/space/space Uænn/space/space Vænn/space/space Wænn/space/space Xænn/space/space Yænn/space/space Zænn/space/space Æænn/space/space Ðænn/space/space/OE ænn/space \012Abnn/space/space Bbnn/space/space Cbnn/space/space Dbnn/space/space Ebnn/space/space Fbnn/space/space Gbnn/space/space Hbnn/space/space Ibnn/space/space Jbnn/space/space Kbnn/space/space Lbnn/space/space Mbnn/space/space Nbnn/space/space Obnn/space/space Pbnn/space/space Qbnn/space/space Rbnn/space/space Sbnn/space/space Tbnn/space/space Ubnn/space/space Vbnn/space/space Wbnn/space/space Xbnn/space/space Ybnn/space/space Zbnn/space/space Æbnn/space/space Ðbnn/space/space/OE bnn/space/space Þbnn\012Ahnn/space/space Bhnn/space/space Chnn/space/space Dhnn/space/space Ehnn/space/space Fhnn/space/space Ghnn/space/space Hhnn/space/space Ihnn/space/space Jhnn/space/space Khnn/space/space Lhnn/space/space Mhnn/space/space Nhnn/space/space Ohnn/space/space Phnn/space/space Qhnn/space/space Rhnn/space/space Shnn/space/space Thnn/space/space Uhnn/space/space Vhnn/space/space Whnn/space/space Xhnn/space/space Yhnn/space/space Zhnn/space/space Æhnn/space/space Ðhnn/space/space/OE hnn/space/space Þhnn\012Aknn/space/space Bknn/space/space Cknn/space/space Dknn/space/space Eknn/space/space Fknn/space/space Gknn/space/space Hknn/space/space Iknn/space/space Jknn/space/space Kknn/space/space Lknn/space/space Mknn/space/space Nknn/space/space Oknn/space/space Pknn/space/space Qknn/space/space Rknn/space/space Sknn/space/space Tknn/space/space Uknn/space/space Vknn/space/space Wknn/space/space Xknn/space/space Yknn/space/space Zknn/space/space Æknn/space/space Ðknn/space/space/OE knn/space/space Þknn\012Aþnn/space/space Bþnn/space/space Cþnn/space/space Dþnn/space/space Eþnn/space/space Fþnn/space/space Gþnn/space/space Hþnn/space/space Iþnn/space/space Jþnn/space/space Kþnn/space/space Lþnn/space/space Mþnn/space/space Nþnn/space/space Oþnn/space/space Pþnn/space/space Qþnn/space/space Rþnn/space/space Sþnn/space/space Tþnn/space/space Uþnn/space/space Vþnn/space/space Wþnn/space/space Xþnn/space/space Yþnn/space/space Zþnn/space/space Æþnn/space/space Ðþnn/space/space/OE þnn/space \012Acnn/space/space Bcnn/space/space Ccnn/space/space Dcnn/space/space Ecnn/space/space Fcnn/space/space Gcnn/space/space Hcnn/space/space Icnn/space/space Jcnn/space/space Kcnn/space/space Lcnn/space/space Mcnn/space/space Ncnn/space/space Ocnn/space/space Pcnn/space/space Qcnn/space/space Rcnn/space/space Scnn/space/space Tcnn/space/space Ucnn/space/space Vcnn/space/space Wcnn/space/space Xcnn/space/space Ycnn/space/space Zcnn/space/space Æcnn/space/space Ðcnn/space/space/OE cnn/space/space Þcnn/space \012Aonn/space/space Bonn/space/space Conn/space/space Donn/space/space Eonn/space/space Fonn/space/space Gonn/space/space Honn/space/space Ionn/space/space Jonn/space/space Konn/space/space Lonn/space/space Monn/space/space Nonn/space/space Oonn/space/space Ponn/space/space Qonn/space/space Ronn/space/space Sonn/space/space Tonn/space/space Uonn/space/space Vonn/space/space Wonn/space/space Xonn/space/space Yonn/space/space Zonn/space/space Æonn/space/space Ðonn/space/space/OE onn/space/space Þonn\012Aenn/space/space Benn/space/space Cenn/space/space Denn/space/space Eenn/space/space Fenn/space/space Genn/space/space Henn/space/space Ienn/space/space Jenn/space/space Kenn/space/space Lenn/space/space Menn/space/space Nenn/space/space Oenn/space/space Penn/space/space Qenn/space/space Renn/space/space Senn/space/space Tenn/space/space Uenn/space/space Venn/space/space Wenn/space/space Xenn/space/space Yenn/space/space Zenn/space/space Æenn/space/space Ðenn/space/space/OE enn/space/space Þenn\012A/oe nn/space/space B/oe nn/space/space C/oe nn/space/space D/oe nn/space/space E/oe nn/space/space F/oe nn/space/space G/oe nn/space/space H/oe nn/space/space I/oe nn/space/space J/oe nn/space/space K/oe nn/space/space L/oe nn/space/space M/oe nn/space/space N/oe nn/space/space O/oe nn/space/space P/oe nn/space/space Q/oe nn/space/space R/oe nn/space/space S/oe nn/space/space T/oe nn/space/space U/oe nn/space/space V/oe nn/space/space W/oe nn/space/space X/oe nn/space/space Y/oe nn/space/space Z/oe nn/space/space Æ/oe nn/space/space Ð/oe nn/space/space/OE/oe nn\012Annn/space/space Bnnn/space/space Cnnn/space/space Dnnn/space/space Ennn/space/space Fnnn/space/space Gnnn/space/space Hnnn/space/space Innn/space/space Jnnn/space/space Knnn/space/space Lnnn/space/space Mnnn/space/space Nnnn/space/space Onnn/space/space Pnnn/space/space Qnnn/space/space Rnnn/space/space Snnn/space/space Tnnn/space/space Unnn/space/space Vnnn/space/space Wnnn/space/space Xnnn/space/space Ynnn/space/space Znnn/space/space Ænnn/space/space Ðnnn/space/space/OE nnn\012Apnn/space/space Bpnn/space/space Cpnn/space/space Dpnn/space/space Epnn/space/space Fpnn/space/space Gpnn/space/space Hpnn/space/space Ipnn/space/space Jpnn/space/space Kpnn/space/space Lpnn/space/space Mpnn/space/space Npnn/space/space Opnn/space/space Ppnn/space/space Qpnn/space/space Rpnn/space/space Spnn/space/space Tpnn/space/space Upnn/space/space Vpnn/space/space Wpnn/space/space Xpnn/space/space Ypnn/space/space Zpnn/space/space Æpnn/space/space Ðpnn/space/space/OE pnn/space/space Þpnn\012Aunn/space/space Bunn/space/space Cunn/space/space Dunn/space/space Eunn/space/space Funn/space/space Gunn/space/space Hunn/space/space Iunn/space/space Junn/space/space Kunn/space/space Lunn/space/space Munn/space/space Nunn/space/space Ounn/space/space Punn/space/space Qunn/space/space Runn/space/space Sunn/space/space Tunn/space/space Uunn/space/space Vunn/space/space Wunn/space/space Xunn/space/space Yunn/space/space Zunn/space/space Æunn/space/space Ðunn/space/space/OE unn/space/space Þunn\012Alnn/space/space Blnn/space/space Clnn/space/space Dlnn/space/space Elnn/space/space Flnn/space/space Glnn/space/space Hlnn/space/space Ilnn/space/space Jlnn/space/space Klnn/space/space Llnn/space/space Mlnn/space/space Nlnn/space/space Olnn/space/space Plnn/space/space Qlnn/space/space Rlnn/space/space Slnn/space/space Tlnn/space/space Ulnn/space/space Vlnn/space/space Wlnn/space/space Xlnn/space/space Ylnn/space/space Zlnn/space/space Ælnn/space/space Ðlnn/space/space/OE lnn/space/space Þlnn/space \012Ainn/space/space Binn/space/space Cinn/space/space Dinn/space/space Einn/space/space Finn/space/space Ginn/space/space Hinn/space/space Iinn/space/space Jinn/space/space Kinn/space/space Linn/space/space Minn/space/space Ninn/space/space Oinn/space/space Pinn/space/space Qinn/space/space Rinn/space/space Sinn/space/space Tinn/space/space Uinn/space/space Vinn/space/space Winn/space/space Xinn/space/space Yinn/space/space Zinn/space/space Æinn/space/space Ðinn/space/space/OE inn/space/space Þinn\012Ajnn/space/space Bjnn/space/space Cjnn/space/space Djnn/space/space Ejnn/space/space Fjnn/space/space Gjnn/space/space Hjnn/space/space Ijnen/space/space Jjnn/space/space Kjnn/space/space Ljnn/space/space Mjnn/space/space Njnn/space/space Ojnn/space/space Pjnn/space/space Qjnn/space/space Rjnn/space/space Sjnn/space/space Tjnn/space/space Ujnn/space/space Vjnn/space/space Wjnn/space/space Xjnn/space/space Yjnn/space/space Zjnn/space/space Æjnn/space/space Ðjnn/space/space/OE jnn/space/space Þjnn/space \012\012Afnn/space/space Bfnn/space/space Cfnn/space Cfaniak/space/space Dfnn/space/space Efnn/space/space Ffnn/space/space Gfnn/space/space Hfnn/space/space Ifnn/space/space Jfnn/space/space Kfnn/space/space Lfnn/space/space Mfnn/space/space Nfnn/space/space Ofnn/space/space Pfnn/space/space Qfnn/space/space Rfnn/space/space Sfnn/space/space Tfnn/space/space Ufnn/space/space Vfnn/space/space Wfnn/space/space Xfnn/space/space Yfnn/space/space Zfnn/space/space Æfnn/space/space Ðfnn/space/space/OE fnn/space/space Þfnn\012\012Aßnn/space/space Bßnn/space/space Cßnn/space/space Dßnn/space/space Eßnn/space/space Fßnn/space/space Gßnn/space/space Hßnn/space/space Ißnn/space/space Jßnn/space/space Kßnn/space/space Lßnn/space/space Mßnn/space/space Nßnn/space/space Oßnn/space/space Pßnn/space/space Qßnn/space/space Rßnn/space/space Sßnn/space/space Tßnn/space/space Ußnn/space/space Vßnn/space/space Wßnn/space/space Xßnn/space/space Yßnn/space/space Zßnn/space/space Æßnn/space/space Ðßnn/space/space/OE ßnn\012\012Arnn/space/space Brnn/space/space Crnn/space/space Drnn/space/space Ernn/space/space Frnn/space/space Grnn/space/space Hrnn/space/space Irnn/space/space Jrnn/space/space Krnn/space/space Lrnn/space/space Mrnn/space/space Nrnn/space/space Ornn/space/space Prnn/space/space Qrnn/space/space Rrnn/space/space Srnn/space/space Trnn/space/space Urnn/space/space Vrnn/space/space Wrnn/space/space Xrnn/space/space Yrnn/space/space Zrnn/space/space Ærnn/space/space Ðrnn/space/space/OE rnn/space/space Þrnn\012\012Asnn/space/space Bsnn/space/space Csnn/space/space Dsnn/space/space Esnn/space/space Fsnn/space/space Gsnn/space/space Hsnn/space/space Isnn/space/space Jsnn/space/space Ksnn/space/space Lsnn/space/space Msnn/space/space Nsnn/space/space Osnn/space/space Psnn/space/space Qsnn/space/space Rsnn/space/space Ssnn/space/space Tsnn/space/space Usnn/space/space Vsnn/space/space Wsnn/space/space Xsnn/space/space Ysnn/space/space Zsnn/space/space Æsnn/space/space Ðsnn/space/space/OE snn/space/space Þsnn\012\012Atnn/space/space Btnn/space/space Ctnn/space/space Dtnn/space/space Etnn/space/space Ftnn/space/space Gtnn/space/space Htnn/space/space Itnn/space/space Jtnn/space/space Ktnn/space/space Ltnn/space/space Mtnn/space/space Ntnn/space/space Otnn/space/space Ptnn/space/space Qtnn/space/space Rtnn/space/space Stnn/space/space Ttnn/space/space Utnn/space/space Vtnn/space/space Wtnn/space/space Xtnn/space/space Ytnn/space/space Ztnn/space/space Ætnn/space/space Ðtnn/space/space/OE tnn/space/space Þtnn/space \012\012Avnn/space/space Bvnn/space/space Cvnn/space/space Dvnn/space/space Evnn/space/space Fvnn/space/space Gvnn/space/space Hvnn/space/space Ivnn/space/space Jvnn/space/space Kvnn/space/space Lvnn/space/space Mvnn/space/space Nvnn/space/space Ovnn/space/space Pvnn/space/space Qvnn/space/space Rvnn/space/space Svnn/space/space Tvnn/space/space Uvnn/space/space Vvnn/space/space Wvnn/space/space Xvnn/space/space Yvnn/space/space Zvnn/space/space Ævnn/space/space Ðvnn/space/space/OE vnn/space/space Þvnn/space \012\012Awnn/space/space Bwnn/space/space Cwnn/space/space Dwnn/space/space Ewnn/space/space Fwnn/space/space Gwnn/space/space Hwnn/space/space Iwnn/space/space Jwnn/space/space Kwnn/space/space Lwnn/space/space Mwnn/space/space Nwnn/space/space Ownn/space/space Pwnn/space/space Qwnn/space/space Rwnn/space/space Swnn/space/space Twnn/space/space Uwnn/space/space Vwnn/space/space Wwnn/space/space Xwnn/space/space Ywnn/space/space Zwnn/space/space Æwnn/space/space Ðwnn/space/space/OE wnn/space/space Þwnn\012\012Aynn/space/space Bynn/space/space Cynn/space/space Dynn/space/space Eynn/space/space Fynn/space/space Gynn/space/space Hynn/space/space Iynn/space/space Jynn/space/space Kynn/space/space Lynn/space/space Mynn/space/space Nynn/space/space Oynn/space/space Pynn/space/space Qynn/space/space Rynn/space/space Synn/space/space Tynn/space/space Uynn/space/space Vynn/space/space Wynn/space/space Xynn/space/space Yynn/space/space Zynn/space/space Æynn/space/space Ðynn/space/space/OE ynn/space/space Þynn\012\012Axnn/space/space Bxnn/space/space Cxnn/space/space Dxnn/space/space Exnn/space/space Fxnn/space/space Gxnn/space/space Hxnn/space/space Ixnn/space/space Jxnn/space/space Kxnn/space/space Lxnn/space/space Mxnn/space/space Nxnn/space/space Oxnn/space/space Pxnn/space/space Qxnn/space/space Rxnn/space/space Sxnn/space/space Txnn/space/space Uxnn/space/space Vxnn/space/space Wxnn/space/space Xxnn/space/space Yxnn/space/space Zxnn/space/space Æxnn/space/space Ðxnn/space/space/OE xnn/space/space Þxnn\012\012Aznn/space/space Bznn/space/space Cznn/space/space Dznn/space/space Eznn/space/space Fznn/space/space Gznn/space/space Hznn/space/space Iznn/space/space Jznn/space/space Kznn/space/space Lznn/space/space Mznn/space/space Nznn/space/space Oznn/space/space Pznn/space/space Qznn/space/space Rznn/space/space Sznn/space/space Tznn/space/space Uznn/space/space Vznn/space/space Wznn/space/space Xznn/space/space Yznn/space/space Zznn/space/space Æznn/space/space Ðznn/space/space/OE znn/space/space Þznn\012\012Aðnn/space/space Bðnn/space/space Cðnn/space/space Dðnn/space/space Eðnn/space/space Fðnn/space/space Gðnn/space/space Hðnn/space/space Iðnn/space/space Jðnn/space/space Kðnn/space/space Lðnn/space/space Mðnn/space/space Nðnn/space/space Oðnn/space/space Pðnn/space/space Qðnn/space/space Rðnn/space/space Sðnn/space/space Tðnn/space/space Uðnn/space/space Vðnn/space/space Wðnn/space/space Xðnn/space/space Yðnn/space/space Zðnn/space/space Æðnn/space/space Ððnn/space/space/OE ðnn/space Þðnn\012\012",
+"GFTVWY/space aeci/idotless/jdotless ñosuy\012\012B-Z/space îïì\012\012HHAánn/space HHBánn/space HHCánn/space HHDánn/space HHEánn/space HHFánn/space HHGánn/space HHHánn/space HHIánn/space HHJánn/space HHKánn/space HHLánn/space HHMánn/space HHNánn/space HHOánn/space HHPánn/space HHQánn/space HHRánn/space HHSánn/space HHTánn/space HHUánn/space HHVánn/space HHWánn/space HHXánn/space HHYánn/space HHZánn/space HHÆánn/space HHÐánn/space HH/OE ánn/space HHAânn/space HHBânn/space HHCânn/space HHDânn/space HHEânn/space HHFânn/space HHGânn/space HHHânn/space HHIânn/space HHJânn/space HHKânn/space HHLânn/space HHMânn/space HHNânn/space HHOânn/space HHPânn/space HHQânn/space HHRânn/space HHSânn/space HHTânn/space HHUânn/space HHVânn/space HHWânn/space HHXânn/space HHYânn/space HHZânn/space HHÆânn/space HHÐânn/space HH/OE ânn/space HHAänn/space HHBänn/space HHCänn/space HHDänn/space HHEänn/space HHFänn/space HHGänn/space HHHänn/space HHIänn/space HHJänn/space HHKänn/space HHLänn/space HHMänn/space HHNänn/space HHOänn/space HHPänn/space HHQänn/space HHRänn/space HHSänn/space HHTänn/space HHUänn/space HHVänn/space HHWänn/space HHXänn/space HHYänn/space HHZänn/space HHÆänn/space HHÐänn/space HH/OE änn/space HHAànn/space HHBànn/space HHCànn/space HHDànn/space HHEànn/space HHFànn/space HHGànn/space HHHànn/space HHIànn/space HHJànn/space HHKànn/space HHLànn/space HHMànn/space HHNànn/space HHOànn/space HHPànn/space HHQànn/space HHRànn/space HHSànn/space HHTànn/space HHUànn/space HHVànn/space HHWànn/space HHXànn/space HHYànn/space HHZànn/space HHÆànn/space HHÐànn/space HH/OE ànn/space HHAånn/space HHBånn/space HHCånn/space HHDånn/space HHEånn/space HHFånn/space HHGånn/space HHHånn/space HHIånn/space HHJånn/space HHKånn/space HHLånn/space HHMånn/space HHNånn/space HHOånn/space HHPånn/space HHQånn/space HHRånn/space HHSånn/space HHTånn/space HHUånn/space HHVånn/space HHWånn/space HHXånn/space HHYånn/space HHZånn/space HHÆånn/space HHÐånn/space HH/OE ånn/space HHAãnn/space HHBãnn/space HHCãnn/space HHDãnn/space HHEãnn/space HHFãnn/space HHGãnn/space HHHãnn/space HHIãnn/space HHJãnn/space HHKãnn/space HHLãnn/space HHMãnn/space HHNãnn/space HHOãnn/space HHPãnn/space HHQãnn/space HHRãnn/space HHSãnn/space HHTãnn/space HHUãnn/space HHVãnn/space HHWãnn/space HHXãnn/space HHYãnn/space HHZãnn/space HHÆãnn/space HHÐãnn/space HH/OE ãnn/space HHAænn/space HHBænn/space HHCænn/space HHDænn/space HHEænn/space HHFænn/space HHGænn/space HHHænn/space HHIænn/space HHJænn/space HHKænn/space HHLænn/space HHMænn/space HHNænn/space HHOænn/space HHPænn/space HHQænn/space HHRænn/space HHSænn/space HHTænn/space HHUænn/space HHVænn/space HHWænn/space HHXænn/space HHYænn/space HHZænn/space HHÆænn/space HHÐænn/space HH/OE ænn/space HHA/aeacute nn/space HHB/aeacute nn/space HHC/aeacute nn/space HHD/aeacute nn/space HHE/aeacute nn/space HHF/aeacute nn/space HHG/aeacute nn/space HHH/aeacute nn/space HHI/aeacute nn/space HHJ/aeacute nn/space HHK/aeacute nn/space HHL/aeacute nn/space HHM/aeacute nn/space HHN/aeacute nn/space HHO/aeacute nn/space HHP/aeacute nn/space HHQ/aeacute nn/space HHR/aeacute nn/space HHS/aeacute nn/space HHT/aeacute nn/space HHU/aeacute nn/space HHV/aeacute nn/space HHW/aeacute nn/space HHX/aeacute nn/space HHY/aeacute nn/space HHZ/aeacute nn/space HHÆ/aeacute nn/space HHÐ/aeacute nn/space HH/OE/aeacute nn/space HHA/cacute nn/space HHB/cacute nn/space HHC/cacute nn/space HHD/cacute nn/space HHE/cacute nn/space HHF/cacute nn/space HHG/cacute nn/space HHH/cacute nn/space HHI/cacute nn/space HHJ/cacute nn/space HHK/cacute nn/space HHL/cacute nn/space HHM/cacute nn/space HHN/cacute nn/space HHO/cacute nn/space HHP/cacute nn/space HHQ/cacute nn/space HHR/cacute nn/space HHS/cacute nn/space HHT/cacute nn/space HHU/cacute nn/space HHV/cacute nn/space HHW/cacute nn/space HHX/cacute nn/space HHY/cacute nn/space HHZ/cacute nn/space HHÆ/cacute nn/space HHÐ/cacute nn/space HH/OE/cacute nn/space HHAçnn/space HHBçnn/space HHCçnn/space HHDçnn/space HHEçnn/space HHFçnn/space HHGçnn/space HHHçnn/space HHIçnn/space HHJçnn/space HHKçnn/space HHLçnn/space HHMçnn/space HHNçnn/space HHOçnn/space HHPçnn/space HHQçnn/space HHRçnn/space HHSçnn/space HHTçnn/space HHUçnn/space HHVçnn/space HHWçnn/space HHXçnn/space HHYçnn/space HHZçnn/space HHÆçnn/space HHÐçnn/space HH/OE çnn/space HHA/ccircumflex nn/space HHB/ccircumflex nn/space HHC/ccircumflex nn/space HHD/ccircumflex nn/space HHE/ccircumflex nn/space HHF/ccircumflex nn/space HHG/ccircumflex nn/space HHH/ccircumflex nn/space HHI/ccircumflex nn/space HHJ/ccircumflex nn/space HHK/ccircumflex nn/space HHL/ccircumflex nn/space HHM/ccircumflex nn/space HHN/ccircumflex nn/space HHO/ccircumflex nn/space HHP/ccircumflex nn/space HHQ/ccircumflex nn/space HHR/ccircumflex nn/space HHS/ccircumflex nn/space HHT/ccircumflex nn/space HHU/ccircumflex nn/space HHV/ccircumflex nn/space HHW/ccircumflex nn/space HHX/ccircumflex nn/space HHY/ccircumflex nn/space HHZ/ccircumflex nn/space HHÆ/ccircumflex nn/space HHÐ/ccircumflex nn/space HH/OE/ccircumflex nn/space HHAðnn/space HHBðnn/space HHCðnn/space HHDðnn/space HHEðnn/space HHFðnn/space HHGðnn/space HHHðnn/space HHIðnn/space HHJðnn/space HHKðnn/space HHLðnn/space HHMðnn/space HHNðnn/space HHOðnn/space HHPðnn/space HHQðnn/space HHRðnn/space HHSðnn/space HHTðnn/space HHUðnn/space HHVðnn/space HHWðnn/space HHXðnn/space HHYðnn/space HHZðnn/space HHÆðnn/space HHÐðnn/space HH/OE ðnn/space HHAénn/space HHBénn/space HHCénn/space HHDénn/space HHEénn/space HHFénn/space HHGénn/space HHHénn/space HHIénn/space HHJénn/space HHKénn/space HHLénn/space HHMénn/space HHNénn/space HHOénn/space HHPénn/space HHQénn/space HHRénn/space HHSénn/space HHTénn/space HHUénn/space HHVénn/space HHWénn/space HHXénn/space HHYénn/space HHZénn/space HHÆénn/space HHÐénn/space HH/OE énn/space HHAênn/space HHBênn/space HHCênn/space HHDênn/space HHEênn/space HHFênn/space HHGênn/space HHHênn/space HHIênn/space HHJênn/space HHKênn/space HHLênn/space HHMênn/space HHNênn/space HHOênn/space HHPênn/space HHQênn/space HHRênn/space HHSênn/space HHTênn/space HHUênn/space HHVênn/space HHWênn/space HHXênn/space HHYênn/space HHZênn/space HHÆênn/space HHÐênn/space HH/OE ênn/space HHAënn/space HHBënn/space HHCënn/space HHDënn/space HHEënn/space HHFënn/space HHGënn/space HHHënn/space HHIënn/space HHJënn/space HHKënn/space HHLënn/space HHMënn/space HHNënn/space HHOënn/space HHPënn/space HHQënn/space HHRënn/space HHSënn/space HHTënn/space HHUënn/space HHVënn/space HHWënn/space HHXënn/space HHYënn/space HHZënn/space HHÆënn/space HHÐënn/space HH/OE ënn/space HHAènn/space HHBènn/space HHCènn/space HHDènn/space HHEènn/space HHFènn/space HHGènn/space HHHènn/space HHIènn/space HHJènn/space HHKènn/space HHLènn/space HHMènn/space HHNènn/space HHOènn/space HHPènn/space HHQènn/space HHRènn/space HHSènn/space HHTènn/space HHUènn/space HHVènn/space HHWènn/space HHXènn/space HHYènn/space HHZènn/space HHÆènn/space HHÐènn/space HH/OE ènn/space HHA/idotless nn/space HHB/idotless nn/space HHC/idotless nn/space HHD/idotless nn/space HHE/idotless nn/space HHF/idotless nn/space HHG/idotless nn/space HHH/idotless nn/space HHI/idotless nn/space HHJ/idotless nn/space HHK/idotless nn/space HHL/idotless nn/space HHM/idotless nn/space HHN/idotless nn/space HHO/idotless nn/space HHP/idotless nn/space HHQ/idotless nn/space HHR/idotless nn/space HHS/idotless nn/space HHT/idotless nn/space HHU/idotless nn/space HHV/idotless nn/space HHW/idotless nn/space HHX/idotless nn/space HHY/idotless nn/space HHZ/idotless nn/space HHÆ/idotless nn/space HHÐ/idotless nn/space HH/OE/idotless nn/space HHAínn/space HHBínn/space HHCínn/space HHDínn/space HHEínn/space HHFínn/space HHGínn/space HHHínn/space HHIínn/space HHJínn/space HHKínn/space HHLínn/space HHMínn/space HHNínn/space HHOínn/space HHPínn/space HHQínn/space HHRínn/space HHSínn/space HHTínn/space HHUínn/space HHVínn/space HHWínn/space HHXínn/space HHYínn/space HHZínn/space HHÆínn/space HHÐínn/space HH/OE ínn/space HHAînn/space HHBînn/space HHCînn/space HHDînn/space HHEînn/space HHFînn/space HHGînn/space HHHînn/space HHIînn/space HHJînn/space HHKînn/space HHLînn/space HHMînn/space HHNînn/space HHOînn/space HHPînn/space HHQînn/space HHRînn/space HHSînn/space HHTînn/space HHUînn/space HHVînn/space HHWînn/space HHXînn/space HHYînn/space HHZînn/space HHÆînn/space HHÐînn/space HH/OE înn/space HHAïnn/space HHBïnn/space HHCïnn/space HHDïnn/space HHEïnn/space HHFïnn/space HHGïnn/space HHHïnn/space HHIïnn/space HHJïnn/space HHKïnn/space HHLïnn/space HHMïnn/space HHNïnn/space HHOïnn/space HHPïnn/space HHQïnn/space HHRïnn/space HHSïnn/space HHTïnn/space HHUïnn/space HHVïnn/space HHWïnn/space HHXïnn/space HHYïnn/space HHZïnn/space HHÆïnn/space HHÐïnn/space HH/OE ïnn/space HHAìnn/space HHBìnn/space HHCìnn/space HHDìnn/space HHEìnn/space HHFìnn/space HHGìnn/space HHHìnn/space HHIìnn/space HHJìnn/space HHKìnn/space HHLìnn/space HHMìnn/space HHNìnn/space HHOìnn/space HHPìnn/space HHQìnn/space HHRìnn/space HHSìnn/space HHTìnn/space HHUìnn/space HHVìnn/space HHWìnn/space HHXìnn/space HHYìnn/space HHZìnn/space HHÆìnn/space HHÐìnn/space HH/OE ìnn/space HHA/jdotless nn/space HHB/jdotless nn/space HHC/jdotless nn/space HHD/jdotless nn/space HHE/jdotless nn/space HHF/jdotless nn/space HHG/jdotless nn/space HHH/jdotless nn/space HHI/jdotless nn/space HHJ/jdotless nn/space HHK/jdotless nn/space HHL/jdotless nn/space HHM/jdotless nn/space HHN/jdotless nn/space HHO/jdotless nn/space HHP/jdotless nn/space HHQ/jdotless nn/space HHR/jdotless nn/space HHS/jdotless nn/space HHT/jdotless nn/space HHU/jdotless nn/space HHV/jdotless nn/space HHW/jdotless nn/space HHX/jdotless nn/space HHY/jdotless nn/space HHZ/jdotless nn/space HHÆ/jdotless nn/space HHÐ/jdotless nn/space HH/OE/jdotless nn/space HHAñnn/space HHBñnn/space HHCñnn/space HHDñnn/space HHEñnn/space HHFñnn/space HHGñnn/space HHHñnn/space HHIñnn/space HHJñnn/space HHKñnn/space HHLñnn/space HHMñnn/space HHNñnn/space HHOñnn/space HHPñnn/space HHQñnn/space HHRñnn/space HHSñnn/space HHTñnn/space HHUñnn/space HHVñnn/space HHWñnn/space HHXñnn/space HHYñnn/space HHZñnn/space HHÆñnn/space HHÐñnn/space HH/OE ñnn/space HHAónn/space HHBónn/space HHCónn/space HHDónn/space HHEónn/space HHFónn/space HHGónn/space HHHónn/space HHIónn/space HHJónn/space HHKónn/space HHLónn/space HHMónn/space HHNónn/space HHOónn/space HHPónn/space HHQónn/space HHRónn/space HHSónn/space HHTónn/space HHUónn/space HHVónn/space HHWónn/space HHXónn/space HHYónn/space HHZónn/space HHÆónn/space HHÐónn/space HH/OE ónn/space HHAônn/space HHBônn/space HHCônn/space HHDônn/space HHEônn/space HHFônn/space HHGônn/space HHHônn/space HHIônn/space HHJônn/space HHKônn/space HHLônn/space HHMônn/space HHNônn/space HHOônn/space HHPônn/space HHQônn/space HHRônn/space HHSônn/space HHTônn/space HHUônn/space HHVônn/space HHWônn/space HHXônn/space HHYônn/space HHZônn/space HHÆônn/space HHÐônn/space HH/OE ônn/space HHAönn/space HHBönn/space HHCönn/space HHDönn/space HHEönn/space HHFönn/space HHGönn/space HHHönn/space HHIönn/space HHJönn/space HHKönn/space HHLönn/space HHMönn/space HHNönn/space HHOönn/space HHPönn/space HHQönn/space HHRönn/space HHSönn/space HHTönn/space HHUönn/space HHVönn/space HHWönn/space HHXönn/space HHYönn/space HHZönn/space HHÆönn/space HHÐönn/space HH/OE önn/space HHAònn/space HHBònn/space HHCònn/space HHDònn/space HHEònn/space HHFònn/space HHGònn/space HHHònn/space HHIònn/space HHJònn/space HHKònn/space HHLònn/space HHMònn/space HHNònn/space HHOònn/space HHPònn/space HHQònn/space HHRònn/space HHSònn/space HHTònn/space HHUònn/space HHVònn/space HHWònn/space HHXònn/space HHYònn/space HHZònn/space HHÆònn/space HHÐònn/space HH/OE ònn/space HHAønn/space HHBønn/space HHCønn/space HHDønn/space HHEønn/space HHFønn/space HHGønn/space HHHønn/space HHIønn/space HHJønn/space HHKønn/space HHLønn/space HHMønn/space HHNønn/space HHOønn/space HHPønn/space HHQønn/space HHRønn/space HHSønn/space HHTønn/space HHUønn/space HHVønn/space HHWønn/space HHXønn/space HHYønn/space HHZønn/space HHÆønn/space HHÐønn/space HH/OE ønn/space HHAõnn/space HHBõnn/space HHCõnn/space HHDõnn/space HHEõnn/space HHFõnn/space HHGõnn/space HHHõnn/space HHIõnn/space HHJõnn/space HHKõnn/space HHLõnn/space HHMõnn/space HHNõnn/space HHOõnn/space HHPõnn/space HHQõnn/space HHRõnn/space HHSõnn/space HHTõnn/space HHUõnn/space HHVõnn/space HHWõnn/space HHXõnn/space HHYõnn/space HHZõnn/space HHÆõnn/space HHÐõnn/space HH/OE õnn/space HHA/oe nn/space HHB/oe nn/space HHC/oe nn/space HHD/oe nn/space HHE/oe nn/space HHF/oe nn/space HHG/oe nn/space HHH/oe nn/space HHI/oe nn/space HHJ/oe nn/space HHK/oe nn/space HHL/oe nn/space HHM/oe nn/space HHN/oe nn/space HHO/oe nn/space HHP/oe nn/space HHQ/oe nn/space HHR/oe nn/space HHS/oe nn/space HHT/oe nn/space HHU/oe nn/space HHV/oe nn/space HHW/oe nn/space HHX/oe nn/space HHY/oe nn/space HHZ/oe nn/space HHÆ/oe nn/space HHÐ/oe nn/space HH/OE/oe nn/space HHAþnn/space HHBþnn/space HHCþnn/space HHDþnn/space HHEþnn/space HHFþnn/space HHGþnn/space HHHþnn/space HHIþnn/space HHJþnn/space HHKþnn/space HHLþnn/space HHMþnn/space HHNþnn/space HHOþnn/space HHPþnn/space HHQþnn/space HHRþnn/space HHSþnn/space HHTþnn/space HHUþnn/space HHVþnn/space HHWþnn/space HHXþnn/space HHYþnn/space HHZþnn/space HHÆþnn/space HHÐþnn/space HH/OE þnn/space HHA/sacute nn/space HHB/sacute nn/space HHC/sacute nn/space HHD/sacute nn/space HHE/sacute nn/space HHF/sacute nn/space HHG/sacute nn/space HHH/sacute nn/space HHI/sacute nn/space HHJ/sacute nn/space HHK/sacute nn/space HHL/sacute nn/space HHM/sacute nn/space HHN/sacute nn/space HHO/sacute nn/space HHP/sacute nn/space HHQ/sacute nn/space HHR/sacute nn/space HHS/sacute nn/space HHT/sacute nn/space HHU/sacute nn/space HHV/sacute nn/space HHW/sacute nn/space HHX/sacute nn/space HHY/sacute nn/space HHZ/sacute nn/space HHÆ/sacute nn/space HHÐ/sacute nn/space HH/OE/sacute nn/space HHAßnn/space HHBßnn/space HHCßnn/space HHDßnn/space HHEßnn/space HHFßnn/space HHGßnn/space HHHßnn/space HHIßnn/space HHJßnn/space HHKßnn/space HHLßnn/space HHMßnn/space HHNßnn/space HHOßnn/space HHPßnn/space HHQßnn/space HHRßnn/space HHSßnn/space HHTßnn/space HHUßnn/space HHVßnn/space HHWßnn/space HHXßnn/space HHYßnn/space HHZßnn/space HHÆßnn/space HHÐßnn/space HH/OE ßnn/space HHAúnn/space HHBúnn/space HHCúnn/space HHDúnn/space HHEúnn/space HHFúnn/space HHGúnn/space HHHúnn/space HHIúnn/space HHJúnn/space HHKúnn/space HHLúnn/space HHMúnn/space HHNúnn/space HHOúnn/space HHPúnn/space HHQúnn/space HHRúnn/space HHSúnn/space HHTúnn/space HHUúnn/space HHVúnn/space HHWúnn/space HHXúnn/space HHYúnn/space HHZúnn/space HHÆúnn/space HHÐúnn/space HH/OE únn/space HHAûnn/space HHBûnn/space HHCûnn/space HHDûnn/space HHEûnn/space HHFûnn/space HHGûnn/space HHHûnn/space HHIûnn/space HHJûnn/space HHKûnn/space HHLûnn/space HHMûnn/space HHNûnn/space HHOûnn/space HHPûnn/space HHQûnn/space HHRûnn/space HHSûnn/space HHTûnn/space HHUûnn/space HHVûnn/space HHWûnn/space HHXûnn/space HHYûnn/space HHZûnn/space HHÆûnn/space HHÐûnn/space HH/OE ûnn/space HHAünn/space HHBünn/space HHCünn/space HHDünn/space HHEünn/space HHFünn/space HHGünn/space HHHünn/space HHIünn/space HHJünn/space HHKünn/space HHLünn/space HHMünn/space HHNünn/space HHOünn/space HHPünn/space HHQünn/space HHRünn/space HHSünn/space HHTünn/space HHUünn/space HHVünn/space HHWünn/space HHXünn/space HHYünn/space HHZünn/space HHÆünn/space HHÐünn/space HH/OE ünn/space HHAùnn/space HHBùnn/space HHCùnn/space HHDùnn/space HHEùnn/space HHFùnn/space HHGùnn/space HHHùnn/space HHIùnn/space HHJùnn/space HHKùnn/space HHLùnn/space HHMùnn/space HHNùnn/space HHOùnn/space HHPùnn/space HHQùnn/space HHRùnn/space HHSùnn/space HHTùnn/space HHUùnn/space HHVùnn/space HHWùnn/space HHXùnn/space HHYùnn/space HHZùnn/space HHÆùnn/space HHÐùnn/space HH/OE ùnn/space HHAýnn/space HHBýnn/space HHCýnn/space HHDýnn/space HHEýnn/space HHFýnn/space HHGýnn/space HHHýnn/space HHIýnn/space HHJýnn/space HHKýnn/space HHLýnn/space HHMýnn/space HHNýnn/space HHOýnn/space HHPýnn/space HHQýnn/space HHRýnn/space HHSýnn/space HHTýnn/space HHUýnn/space HHVýnn/space HHWýnn/space HHXýnn/space HHYýnn/space HHZýnn/space HHÆýnn/space HHÐýnn/space HH/OE ýnn/space HHA/ydieresis nn/space HHB/ydieresis nn/space HHC/ydieresis nn/space HHD/ydieresis nn/space HHE/ydieresis nn/space HHF/ydieresis nn/space HHG/ydieresis nn/space HHH/ydieresis nn/space HHI/ydieresis nn/space HHJ/ydieresis nn/space HHK/ydieresis nn/space HHL/ydieresis nn/space HHM/ydieresis nn/space HHN/ydieresis nn/space HHO/ydieresis nn/space HHP/ydieresis nn/space HHQ/ydieresis nn/space HHR/ydieresis nn/space HHS/ydieresis nn/space HHT/ydieresis nn/space HHU/ydieresis nn/space HHV/ydieresis nn/space HHW/ydieresis nn/space HHX/ydieresis nn/space HHY/ydieresis nn/space HHZ/ydieresis nn/space HHÆ/ydieresis nn/space HHÐ/ydieresis nn/space HH/OE/ydieresis nn"
 );
 classes = (
 {
@@ -2799,7 +2799,7 @@ unicode = 200B;
 {
 color = 5;
 glyphname = A;
-lastChange = "2020-12-07 18:18:36 +0000";
+lastChange = "2020-12-08 09:18:19 +0000";
 layers = (
 {
 anchors = (
@@ -3113,160 +3113,86 @@ width = 1284;
 anchors = (
 {
 name = bottom;
-position = "{537, 0}";
+position = "{543, 0}";
 },
 {
 name = ogonek;
-position = "{1163, 22}";
+position = "{1169, 22}";
 },
 {
 name = top;
-position = "{822, 1464}";
+position = "{828, 1464}";
 }
 );
 background = {
 anchors = (
 {
 name = bottom;
-position = "{537, 0}";
+position = "{543, 0}";
 },
 {
 name = ogonek;
-position = "{1163, 22}";
+position = "{1169, 22}";
 },
 {
 name = top;
-position = "{795, 1464}";
+position = "{801, 1464}";
 }
 );
 paths = (
 {
 closed = 1;
 nodes = (
-"1013 -18 OFFCURVE",
-"1092 -3 OFFCURVE",
-"1143 19 CURVE",
-"979 1364 LINE",
-"927 1374 OFFCURVE",
-"837 1378 OFFCURVE",
-"778 1378 CURVE SMOOTH",
-"716 1378 OFFCURVE",
-"633 1374 OFFCURVE",
-"578 1366 CURVE",
-"-72 26 LINE",
-"-63 8 LINE",
-"-22 -8 OFFCURVE",
-"51 -14 OFFCURVE",
-"106 -14 CURVE SMOOTH",
-"159 -14 OFFCURVE",
-"208 -10 OFFCURVE",
-"247 -2 CURVE",
-"546 656 LINE SMOOTH",
-"605 785 OFFCURVE",
-"667 923 OFFCURVE",
-"722 1065 CURVE",
-"734 1065 LINE",
-"740 914 OFFCURVE",
-"749 773 OFFCURVE",
-"758 651 CURVE SMOOTH",
-"793 184 LINE SMOOTH",
-"801 73 OFFCURVE",
-"812 -18 OFFCURVE",
-"953 -18 CURVE SMOOTH"
+"1019 -18 OFFCURVE",
+"1098 -3 OFFCURVE",
+"1149 19 CURVE",
+"985 1364 LINE",
+"933 1374 OFFCURVE",
+"843 1378 OFFCURVE",
+"784 1378 CURVE SMOOTH",
+"722 1378 OFFCURVE",
+"639 1374 OFFCURVE",
+"584 1366 CURVE",
+"-66 26 LINE",
+"-57 8 LINE",
+"-16 -8 OFFCURVE",
+"57 -14 OFFCURVE",
+"112 -14 CURVE SMOOTH",
+"165 -14 OFFCURVE",
+"214 -10 OFFCURVE",
+"253 -2 CURVE",
+"552 656 LINE SMOOTH",
+"611 785 OFFCURVE",
+"673 923 OFFCURVE",
+"728 1065 CURVE",
+"740 1065 LINE",
+"746 914 OFFCURVE",
+"755 773 OFFCURVE",
+"764 651 CURVE SMOOTH",
+"799 184 LINE SMOOTH",
+"807 73 OFFCURVE",
+"818 -18 OFFCURVE",
+"959 -18 CURVE SMOOTH"
 );
 },
 {
 closed = 1;
 nodes = (
-"690 280 LINE SMOOTH",
-"720 280 OFFCURVE",
-"759 282 OFFCURVE",
-"789 282 CURVE SMOOTH",
-"977 282 LINE",
-"943 542 LINE",
-"771 542 LINE SMOOTH",
-"741 542 OFFCURVE",
-"703 543 OFFCURVE",
-"673 543 CURVE SMOOTH",
-"577 543 LINE SMOOTH",
-"549 543 OFFCURVE",
-"515 542 OFFCURVE",
-"487 542 CURVE SMOOTH",
-"331 542 LINE",
-"179 282 LINE",
-"367 282 LINE SMOOTH",
-"397 282 OFFCURVE",
-"434 280 OFFCURVE",
-"464 280 CURVE SMOOTH"
-);
-}
-);
-};
-guideLines = (
-{
-angle = 243.4008;
-position = "{264, 696}";
-},
-{
-angle = 95.5126;
-position = "{1072, 691}";
-}
-);
-layerId = "861B5D7F-E490-44BC-908E-F1CBF79092B0";
-paths = (
-{
-closed = 1;
-nodes = (
-"1020 -18 OFFCURVE",
-"1089 -4 OFFCURVE",
-"1137 17 CURVE",
-"1007 1364 LINE",
-"950 1374 OFFCURVE",
-"861 1378 OFFCURVE",
-"802 1378 CURVE SMOOTH",
-"740 1378 OFFCURVE",
-"654 1374 OFFCURVE",
-"599 1366 CURVE",
-"-72 26 LINE",
-"-63 8 LINE",
-"-29 -6 OFFCURVE",
-"35 -14 OFFCURVE",
-"104 -14 CURVE SMOOTH",
-"153 -14 OFFCURVE",
-"203 -10 OFFCURVE",
-"243 -2 CURVE",
-"554 656 LINE SMOOTH",
-"604 762 OFFCURVE",
-"669 899 OFFCURVE",
-"743 1069 CURVE",
-"755 1069 LINE",
-"760 898 OFFCURVE",
-"767 781 OFFCURVE",
-"773 651 CURVE SMOOTH",
-"796 184 LINE SMOOTH",
-"801 75 OFFCURVE",
-"812 -18 OFFCURVE",
-"957 -18 CURVE SMOOTH"
-);
-},
-{
-closed = 1;
-nodes = (
-"698 280 LINE SMOOTH",
-"728 280 OFFCURVE",
-"767 282 OFFCURVE",
-"797 282 CURVE SMOOTH",
-"985 282 LINE",
-"955 542 LINE",
-"783 542 LINE SMOOTH",
-"753 542 OFFCURVE",
-"715 543 OFFCURVE",
-"685 543 CURVE SMOOTH",
-"587 543 LINE SMOOTH",
-"559 543 OFFCURVE",
-"525 542 OFFCURVE",
-"497 542 CURVE SMOOTH",
-"343 542 LINE",
+"696 280 LINE SMOOTH",
+"726 280 OFFCURVE",
+"765 282 OFFCURVE",
+"795 282 CURVE SMOOTH",
+"983 282 LINE",
+"949 542 LINE",
+"777 542 LINE SMOOTH",
+"747 542 OFFCURVE",
+"709 543 OFFCURVE",
+"679 543 CURVE SMOOTH",
+"583 543 LINE SMOOTH",
+"555 543 OFFCURVE",
+"521 542 OFFCURVE",
+"493 542 CURVE SMOOTH",
+"337 542 LINE",
 "185 282 LINE",
 "373 282 LINE SMOOTH",
 "403 282 OFFCURVE",
@@ -3275,97 +3201,171 @@ nodes = (
 );
 }
 );
-width = 1251;
+};
+guideLines = (
+{
+angle = 243.4008;
+position = "{270, 696}";
+},
+{
+angle = 95.5126;
+position = "{1078, 691}";
+}
+);
+layerId = "861B5D7F-E490-44BC-908E-F1CBF79092B0";
+paths = (
+{
+closed = 1;
+nodes = (
+"1026 -18 OFFCURVE",
+"1095 -4 OFFCURVE",
+"1143 17 CURVE",
+"1013 1364 LINE",
+"956 1374 OFFCURVE",
+"867 1378 OFFCURVE",
+"808 1378 CURVE SMOOTH",
+"746 1378 OFFCURVE",
+"660 1374 OFFCURVE",
+"605 1366 CURVE",
+"-66 26 LINE",
+"-57 8 LINE",
+"-23 -6 OFFCURVE",
+"41 -14 OFFCURVE",
+"110 -14 CURVE SMOOTH",
+"159 -14 OFFCURVE",
+"209 -10 OFFCURVE",
+"249 -2 CURVE",
+"560 656 LINE SMOOTH",
+"610 762 OFFCURVE",
+"675 899 OFFCURVE",
+"749 1069 CURVE",
+"761 1069 LINE",
+"766 898 OFFCURVE",
+"773 781 OFFCURVE",
+"779 651 CURVE SMOOTH",
+"802 184 LINE SMOOTH",
+"807 75 OFFCURVE",
+"818 -18 OFFCURVE",
+"963 -18 CURVE SMOOTH"
+);
+},
+{
+closed = 1;
+nodes = (
+"704 280 LINE SMOOTH",
+"734 280 OFFCURVE",
+"773 282 OFFCURVE",
+"803 282 CURVE SMOOTH",
+"991 282 LINE",
+"961 542 LINE",
+"789 542 LINE SMOOTH",
+"759 542 OFFCURVE",
+"721 543 OFFCURVE",
+"691 543 CURVE SMOOTH",
+"593 543 LINE SMOOTH",
+"565 543 OFFCURVE",
+"531 542 OFFCURVE",
+"503 542 CURVE SMOOTH",
+"349 542 LINE",
+"191 282 LINE",
+"379 282 LINE SMOOTH",
+"409 282 OFFCURVE",
+"446 280 OFFCURVE",
+"476 280 CURVE SMOOTH"
+);
+}
+);
+width = 1263;
 },
 {
 anchors = (
 {
 name = bottom;
-position = "{457, 0}";
+position = "{461, 0}";
 },
 {
 name = ogonek;
-position = "{943, 8}";
+position = "{947, 8}";
 },
 {
 name = top;
-position = "{734, 1464}";
+position = "{738, 1464}";
 }
 );
 background = {
 anchors = (
 {
 name = bottom;
-position = "{457, 0}";
+position = "{461, 0}";
 },
 {
 name = ogonek;
-position = "{943, 8}";
+position = "{947, 8}";
 },
 {
 name = top;
-position = "{714, 1464}";
+position = "{718, 1464}";
 }
 );
 paths = (
 {
 closed = 1;
 nodes = (
-"895 -12 OFFCURVE",
-"927 -6 OFFCURVE",
-"949 3 CURVE",
-"777 1366 LINE",
-"765 1368 OFFCURVE",
-"730 1372 OFFCURVE",
-"692 1372 CURVE SMOOTH",
-"665 1372 OFFCURVE",
-"621 1370 OFFCURVE",
-"606 1366 CURVE",
-"-44 8 LINE",
-"-41 2 LINE",
-"-25 -3 OFFCURVE",
-"5 -6 OFFCURVE",
-"37 -6 CURVE SMOOTH",
-"62 -6 OFFCURVE",
-"83 -4 OFFCURVE",
-"95 -2 CURVE",
-"555 970 LINE SMOOTH",
-"576 1014 OFFCURVE",
-"612 1096 OFFCURVE",
-"658 1208 CURVE",
-"667 1208 LINE",
-"673 1120 OFFCURVE",
-"688 992 OFFCURVE",
-"701 878 CURVE SMOOTH",
-"794 78 LINE SMOOTH",
-"800 29 OFFCURVE",
-"809 -12 OFFCURVE",
-"872 -12 CURVE SMOOTH"
+"899 -12 OFFCURVE",
+"931 -6 OFFCURVE",
+"953 3 CURVE",
+"781 1366 LINE",
+"769 1368 OFFCURVE",
+"734 1372 OFFCURVE",
+"696 1372 CURVE SMOOTH",
+"669 1372 OFFCURVE",
+"625 1370 OFFCURVE",
+"610 1366 CURVE",
+"-40 8 LINE",
+"-37 2 LINE",
+"-21 -3 OFFCURVE",
+"9 -6 OFFCURVE",
+"41 -6 CURVE SMOOTH",
+"66 -6 OFFCURVE",
+"87 -4 OFFCURVE",
+"99 -2 CURVE",
+"559 970 LINE SMOOTH",
+"580 1014 OFFCURVE",
+"616 1096 OFFCURVE",
+"662 1208 CURVE",
+"671 1208 LINE",
+"677 1120 OFFCURVE",
+"692 992 OFFCURVE",
+"705 878 CURVE SMOOTH",
+"798 78 LINE SMOOTH",
+"804 29 OFFCURVE",
+"813 -12 OFFCURVE",
+"876 -12 CURVE SMOOTH"
 );
 },
 {
 closed = 1;
 nodes = (
-"634 358 LINE SMOOTH",
-"655 358 OFFCURVE",
-"752 360 OFFCURVE",
-"775 360 CURVE SMOOTH",
-"823 360 LINE",
-"808 484 LINE",
-"764 484 LINE SMOOTH",
-"742 484 OFFCURVE",
-"663 486 OFFCURVE",
-"642 486 CURVE SMOOTH",
-"431 486 LINE SMOOTH",
-"411 486 OFFCURVE",
-"335 484 OFFCURVE",
-"313 484 CURVE SMOOTH",
-"269 484 LINE",
-"206 360 LINE",
-"255 360 LINE SMOOTH",
-"277 360 OFFCURVE",
-"372 358 OFFCURVE",
-"393 358 CURVE SMOOTH"
+"638 358 LINE SMOOTH",
+"659 358 OFFCURVE",
+"756 360 OFFCURVE",
+"779 360 CURVE SMOOTH",
+"827 360 LINE",
+"812 484 LINE",
+"768 484 LINE SMOOTH",
+"746 484 OFFCURVE",
+"667 486 OFFCURVE",
+"646 486 CURVE SMOOTH",
+"435 486 LINE SMOOTH",
+"415 486 OFFCURVE",
+"339 484 OFFCURVE",
+"317 484 CURVE SMOOTH",
+"273 484 LINE",
+"210 360 LINE",
+"259 360 LINE SMOOTH",
+"281 360 OFFCURVE",
+"376 358 OFFCURVE",
+"397 358 CURVE SMOOTH"
 );
 }
 );
@@ -3373,11 +3373,11 @@ nodes = (
 guideLines = (
 {
 angle = 96.1971;
-position = "{949, 3}";
+position = "{953, 3}";
 },
 {
 angle = 63.604;
-position = "{-44, 8}";
+position = "{-40, 8}";
 }
 );
 layerId = "1023D002-3304-4399-867A-B886C920D2C0";
@@ -3385,65 +3385,65 @@ paths = (
 {
 closed = 1;
 nodes = (
-"899 -12 OFFCURVE",
-"927 -6 OFFCURVE",
-"949 3 CURVE",
-"804 1366 LINE",
-"792 1368 OFFCURVE",
-"753 1372 OFFCURVE",
-"716 1372 CURVE SMOOTH",
-"689 1372 OFFCURVE",
-"645 1370 OFFCURVE",
-"630 1366 CURVE",
-"-44 8 LINE",
-"-41 2 LINE",
-"-25 -3 OFFCURVE",
-"5 -6 OFFCURVE",
-"37 -6 CURVE SMOOTH",
-"62 -6 OFFCURVE",
-"83 -4 OFFCURVE",
-"95 -2 CURVE",
-"575 970 LINE SMOOTH",
-"609 1040 OFFCURVE",
-"642 1113 OFFCURVE",
-"683 1212 CURVE",
-"692 1212 LINE",
-"698 1096 OFFCURVE",
-"706 1010 OFFCURVE",
-"719 878 CURVE SMOOTH",
-"801 73 LINE SMOOTH",
-"807 19 OFFCURVE",
-"818 -12 OFFCURVE",
-"875 -12 CURVE SMOOTH"
+"903 -12 OFFCURVE",
+"931 -6 OFFCURVE",
+"953 3 CURVE",
+"808 1366 LINE",
+"796 1368 OFFCURVE",
+"757 1372 OFFCURVE",
+"720 1372 CURVE SMOOTH",
+"693 1372 OFFCURVE",
+"649 1370 OFFCURVE",
+"634 1366 CURVE",
+"-40 8 LINE",
+"-37 2 LINE",
+"-21 -3 OFFCURVE",
+"9 -6 OFFCURVE",
+"41 -6 CURVE SMOOTH",
+"66 -6 OFFCURVE",
+"87 -4 OFFCURVE",
+"99 -2 CURVE",
+"579 970 LINE SMOOTH",
+"613 1040 OFFCURVE",
+"646 1113 OFFCURVE",
+"687 1212 CURVE",
+"696 1212 LINE",
+"702 1096 OFFCURVE",
+"710 1010 OFFCURVE",
+"723 878 CURVE SMOOTH",
+"805 73 LINE SMOOTH",
+"811 19 OFFCURVE",
+"822 -12 OFFCURVE",
+"879 -12 CURVE SMOOTH"
 );
 },
 {
 closed = 1;
 nodes = (
-"643 358 LINE SMOOTH",
-"664 358 OFFCURVE",
-"761 360 OFFCURVE",
-"784 360 CURVE SMOOTH",
-"832 360 LINE",
-"819 484 LINE",
-"775 484 LINE SMOOTH",
-"753 484 OFFCURVE",
-"674 486 OFFCURVE",
-"653 486 CURVE SMOOTH",
-"442 486 LINE SMOOTH",
-"422 486 OFFCURVE",
-"346 484 OFFCURVE",
-"324 484 CURVE SMOOTH",
-"280 484 LINE",
-"215 360 LINE",
-"264 360 LINE SMOOTH",
-"286 360 OFFCURVE",
-"381 358 OFFCURVE",
-"402 358 CURVE SMOOTH"
+"647 358 LINE SMOOTH",
+"668 358 OFFCURVE",
+"765 360 OFFCURVE",
+"788 360 CURVE SMOOTH",
+"836 360 LINE",
+"823 484 LINE",
+"779 484 LINE SMOOTH",
+"757 484 OFFCURVE",
+"678 486 OFFCURVE",
+"657 486 CURVE SMOOTH",
+"446 486 LINE SMOOTH",
+"426 486 OFFCURVE",
+"350 484 OFFCURVE",
+"328 484 CURVE SMOOTH",
+"284 484 LINE",
+"219 360 LINE",
+"268 360 LINE SMOOTH",
+"290 360 OFFCURVE",
+"385 358 OFFCURVE",
+"406 358 CURVE SMOOTH"
 );
 }
 );
-width = 1094;
+width = 1102;
 }
 );
 leftKerningGroup = A;
@@ -5782,7 +5782,7 @@ unicode = 0045;
 {
 color = 5;
 glyphname = F;
-lastChange = "2020-12-06 21:38:22 +0000";
+lastChange = "2020-12-08 10:01:33 +0000";
 layers = (
 {
 anchors = (
@@ -6151,10 +6151,10 @@ nodes = (
 {
 closed = 1;
 nodes = (
-"859 531 LINE",
-"897 619 OFFCURVE",
-"916 732 OFFCURVE",
-"912 803 CURVE",
+"865 531 LINE",
+"903 619 OFFCURVE",
+"922 732 OFFCURVE",
+"918 803 CURVE",
 "556 803 LINE SMOOTH",
 "498 803 OFFCURVE",
 "433 801 OFFCURVE",
@@ -18205,7 +18205,7 @@ unicode = 005A;
 {
 color = 5;
 glyphname = a;
-lastChange = "2020-12-08 00:18:46 +0000";
+lastChange = "2020-12-08 09:08:40 +0000";
 layers = (
 {
 anchors = (
@@ -19879,7 +19879,7 @@ unicode = 0063;
 {
 color = 5;
 glyphname = d;
-lastChange = "2020-12-08 00:22:11 +0000";
+lastChange = "2020-12-08 09:14:42 +0000";
 layers = (
 {
 anchors = (
@@ -21065,7 +21065,7 @@ unicode = 0064;
 {
 color = 5;
 glyphname = e;
-lastChange = "2020-12-08 00:33:39 +0000";
+lastChange = "2020-12-08 09:01:26 +0000";
 layers = (
 {
 anchors = (
@@ -21902,7 +21902,7 @@ unicode = 0065;
 {
 color = 5;
 glyphname = f;
-lastChange = "2020-12-05 00:15:55 +0000";
+lastChange = "2020-12-08 10:32:50 +0000";
 layers = (
 {
 anchors = (
@@ -22582,7 +22582,7 @@ unicode = 0066;
 {
 color = 5;
 glyphname = g;
-lastChange = "2020-12-08 00:35:13 +0000";
+lastChange = "2020-12-08 09:14:10 +0000";
 layers = (
 {
 anchors = (
@@ -24235,7 +24235,7 @@ unicode = 0068;
 {
 color = 5;
 glyphname = i;
-lastChange = "2020-12-05 00:22:24 +0000";
+lastChange = "2020-12-08 10:11:35 +0000";
 layers = (
 {
 background = {
@@ -24528,7 +24528,7 @@ unicode = 0069;
 {
 color = 5;
 glyphname = j;
-lastChange = "2020-12-05 00:23:21 +0000";
+lastChange = "2020-12-08 10:14:59 +0000";
 layers = (
 {
 background = {
@@ -25459,7 +25459,7 @@ unicode = 006B;
 {
 color = 5;
 glyphname = l;
-lastChange = "2020-12-05 00:12:12 +0000";
+lastChange = "2020-12-08 09:58:35 +0000";
 layers = (
 {
 anchors = (
@@ -25669,67 +25669,6 @@ position = "{527, 1000}";
 }
 );
 background = {
-anchors = (
-{
-name = bottom;
-position = "{260, 0}";
-},
-{
-name = periodcentered;
-position = "{671, 786}";
-},
-{
-name = top;
-position = "{436, 1542}";
-},
-{
-name = topright;
-position = "{508, 1000}";
-}
-);
-paths = (
-{
-closed = 1;
-nodes = (
-"555 1262 OFFCURVE",
-"563 1297 OFFCURVE",
-"563 1339 CURVE SMOOTH",
-"563 1428 OFFCURVE",
-"512 1472 OFFCURVE",
-"422 1472 CURVE SMOOTH",
-"286 1472 LINE",
-"270 1458 LINE",
-"73 341 LINE SMOOTH",
-"67 307 OFFCURVE",
-"58 247 OFFCURVE",
-"58 206 CURVE SMOOTH",
-"58 55 OFFCURVE",
-"139 -10 OFFCURVE",
-"294 -10 CURVE SMOOTH",
-"360 -10 OFFCURVE",
-"446 1 OFFCURVE",
-"497 13 CURVE",
-"507 47 OFFCURVE",
-"512 100 OFFCURVE",
-"512 141 CURVE SMOOTH",
-"512 179 OFFCURVE",
-"507 219 OFFCURVE",
-"501 242 CURVE",
-"486 240 OFFCURVE",
-"470 238 OFFCURVE",
-"455 238 CURVE SMOOTH",
-"433 238 OFFCURVE",
-"390 238 OFFCURVE",
-"390 303 CURVE SMOOTH",
-"390 312 OFFCURVE",
-"392 336 OFFCURVE",
-"397 364 CURVE SMOOTH",
-"545 1204 LINE SMOOTH"
-);
-}
-);
-};
-layerId = "861B5D7F-E490-44BC-908E-F1CBF79092B0";
 paths = (
 {
 closed = 1;
@@ -25771,6 +25710,49 @@ nodes = (
 );
 }
 );
+};
+layerId = "861B5D7F-E490-44BC-908E-F1CBF79092B0";
+paths = (
+{
+closed = 1;
+nodes = (
+"361 -9 OFFCURVE",
+"423 -3 OFFCURVE",
+"500 11 CURVE",
+"512 43 OFFCURVE",
+"516 95 OFFCURVE",
+"516 124 CURVE SMOOTH",
+"516 165 OFFCURVE",
+"511 211 OFFCURVE",
+"502 242 CURVE",
+"487 240 OFFCURVE",
+"469 239 OFFCURVE",
+"453 239 CURVE SMOOTH",
+"428 239 OFFCURVE",
+"384 239 OFFCURVE",
+"384 298 CURVE SMOOTH",
+"384 310 OFFCURVE",
+"386 333 OFFCURVE",
+"392 364 CURVE SMOOTH",
+"555 1204 LINE SMOOTH",
+"566 1262 OFFCURVE",
+"574 1293 OFFCURVE",
+"574 1344 CURVE SMOOTH",
+"574 1429 OFFCURVE",
+"523 1472 OFFCURVE",
+"435 1472 CURVE SMOOTH",
+"305 1472 LINE",
+"288 1458 LINE",
+"81 383 LINE SMOOTH",
+"70 326 OFFCURVE",
+"58 257 OFFCURVE",
+"58 210 CURVE SMOOTH",
+"58 61 OFFCURVE",
+"141 -9 OFFCURVE",
+"288 -9 CURVE SMOOTH"
+);
+}
+);
 width = 606;
 },
 {
@@ -25793,67 +25775,6 @@ position = "{393, 980}";
 }
 );
 background = {
-anchors = (
-{
-name = bottom;
-position = "{221, 0}";
-},
-{
-name = periodcentered;
-position = "{570, 786}";
-},
-{
-name = top;
-position = "{416, 1564}";
-},
-{
-name = topright;
-position = "{379, 980}";
-}
-);
-paths = (
-{
-closed = 1;
-nodes = (
-"452 1397 OFFCURVE",
-"453 1404 OFFCURVE",
-"453 1415 CURVE SMOOTH",
-"453 1459 OFFCURVE",
-"421 1470 OFFCURVE",
-"395 1470 CURVE SMOOTH",
-"338 1470 LINE",
-"325 1458 LINE",
-"109 232 LINE SMOOTH",
-"102 192 OFFCURVE",
-"94 144 OFFCURVE",
-"94 116 CURVE SMOOTH",
-"94 36 OFFCURVE",
-"146 -6 OFFCURVE",
-"248 -6 CURVE SMOOTH",
-"276 -6 OFFCURVE",
-"323 -2 OFFCURVE",
-"365 7 CURVE",
-"370 24 OFFCURVE",
-"373 43 OFFCURVE",
-"373 62 CURVE SMOOTH",
-"373 80 OFFCURVE",
-"370 103 OFFCURVE",
-"366 112 CURVE",
-"344 110 OFFCURVE",
-"322 108 OFFCURVE",
-"302 108 CURVE SMOOTH",
-"281 108 OFFCURVE",
-"237 109 OFFCURVE",
-"237 161 CURVE SMOOTH",
-"237 178 OFFCURVE",
-"241 201 OFFCURVE",
-"246 230 CURVE SMOOTH",
-"450 1385 LINE SMOOTH"
-);
-}
-);
-};
-layerId = "1023D002-3304-4399-867A-B886C920D2C0";
 paths = (
 {
 closed = 1;
@@ -25868,6 +25789,49 @@ nodes = (
 "376 95 OFFCURVE",
 "368 113 CURVE",
 "354 111 OFFCURVE",
+"327 108 OFFCURVE",
+"305 108 CURVE SMOOTH",
+"261 108 OFFCURVE",
+"238 120 OFFCURVE",
+"238 165 CURVE SMOOTH",
+"238 188 OFFCURVE",
+"244 219 OFFCURVE",
+"246 229 CURVE SMOOTH",
+"469 1375 LINE SMOOTH",
+"472 1391 OFFCURVE",
+"475 1406 OFFCURVE",
+"475 1417 CURVE SMOOTH",
+"475 1459 OFFCURVE",
+"443 1470 OFFCURVE",
+"418 1470 CURVE SMOOTH",
+"363 1470 LINE",
+"349 1458 LINE",
+"111 232 LINE SMOOTH",
+"105 201 OFFCURVE",
+"97 160 OFFCURVE",
+"97 124 CURVE SMOOTH",
+"97 36 OFFCURVE",
+"146 -6 OFFCURVE",
+"249 -6 CURVE SMOOTH"
+);
+}
+);
+};
+layerId = "1023D002-3304-4399-867A-B886C920D2C0";
+paths = (
+{
+closed = 1;
+nodes = (
+"291 -6 OFFCURVE",
+"342 0 OFFCURVE",
+"375 8 CURVE",
+"378 20 OFFCURVE",
+"380 35 OFFCURVE",
+"380 53 CURVE SMOOTH",
+"380 71 OFFCURVE",
+"376 97 OFFCURVE",
+"370 113 CURVE",
+"356 111 OFFCURVE",
 "327 108 OFFCURVE",
 "305 108 CURVE SMOOTH",
 "261 108 OFFCURVE",
@@ -26799,7 +26763,7 @@ unicode = 006D;
 {
 color = 5;
 glyphname = n;
-lastChange = "2020-12-04 16:02:49 +0000";
+lastChange = "2020-12-08 09:50:57 +0000";
 layers = (
 {
 anchors = (
@@ -27185,7 +27149,7 @@ nodes = (
 );
 }
 );
-width = 1042;
+width = 1043;
 },
 {
 anchors = (
@@ -27784,7 +27748,7 @@ unicode = 006F;
 {
 color = 5;
 glyphname = p;
-lastChange = "2020-12-04 18:39:44 +0000";
+lastChange = "2020-12-08 09:24:48 +0000";
 layers = (
 {
 anchors = (
@@ -28288,7 +28252,7 @@ unicode = 0070;
 {
 color = 5;
 glyphname = q;
-lastChange = "2020-12-04 18:43:40 +0000";
+lastChange = "2020-12-08 09:14:57 +0000";
 layers = (
 {
 background = {
@@ -29023,7 +28987,7 @@ nodes = (
 width = 985;
 }
 );
-leftKerningGroup = d;
+leftKerningGroup = a;
 leftMetricsKey = a;
 rightKerningGroup = q;
 unicode = 0071;
@@ -31403,7 +31367,7 @@ unicode = 0074;
 {
 color = 5;
 glyphname = u;
-lastChange = "2020-12-04 18:13:24 +0000";
+lastChange = "2020-12-08 09:32:40 +0000";
 layers = (
 {
 anchors = (
@@ -60755,7 +60719,7 @@ width = 0;
 },
 {
 glyphname = Aacute;
-lastChange = "2020-12-06 22:10:59 +0000";
+lastChange = "2020-12-08 09:24:56 +0000";
 layers = (
 {
 background = {
@@ -61051,11 +61015,11 @@ name = A;
 },
 {
 name = acutecomb.case;
-transform = "{1, 0, 0, 1, 635, 0}";
+transform = "{1, 0, 0, 1, 641, 0}";
 }
 );
 layerId = "861B5D7F-E490-44BC-908E-F1CBF79092B0";
-width = 1251;
+width = 1263;
 },
 {
 background = {
@@ -61151,11 +61115,11 @@ name = A;
 },
 {
 name = acutecomb.case;
-transform = "{1, 0, 0, 1, 545, 0}";
+transform = "{1, 0, 0, 1, 549, 0}";
 }
 );
 layerId = "1023D002-3304-4399-867A-B886C920D2C0";
-width = 1094;
+width = 1102;
 }
 );
 leftKerningGroup = A;
@@ -61164,7 +61128,7 @@ unicode = 00C1;
 },
 {
 glyphname = Acircumflex;
-lastChange = "2020-12-06 22:10:59 +0000";
+lastChange = "2020-12-08 09:24:56 +0000";
 layers = (
 {
 background = {
@@ -61484,11 +61448,11 @@ name = A;
 },
 {
 name = circumflexcomb.case;
-transform = "{1, 0, 0, 1, 635, 0}";
+transform = "{1, 0, 0, 1, 641, 0}";
 }
 );
 layerId = "861B5D7F-E490-44BC-908E-F1CBF79092B0";
-width = 1251;
+width = 1263;
 },
 {
 background = {
@@ -61592,11 +61556,11 @@ name = A;
 },
 {
 name = circumflexcomb.case;
-transform = "{1, 0, 0, 1, 546, 0}";
+transform = "{1, 0, 0, 1, 550, 0}";
 }
 );
 layerId = "1023D002-3304-4399-867A-B886C920D2C0";
-width = 1094;
+width = 1102;
 }
 );
 leftKerningGroup = A;
@@ -61605,7 +61569,7 @@ unicode = 00C2;
 },
 {
 glyphname = Adieresis;
-lastChange = "2020-12-06 22:10:59 +0000";
+lastChange = "2020-12-08 09:24:56 +0000";
 layers = (
 {
 background = {
@@ -62036,11 +62000,11 @@ name = A;
 },
 {
 name = dieresiscomb.case;
-transform = "{1, 0, 0, 1, 635, 0}";
+transform = "{1, 0, 0, 1, 641, 0}";
 }
 );
 layerId = "861B5D7F-E490-44BC-908E-F1CBF79092B0";
-width = 1251;
+width = 1263;
 },
 {
 background = {
@@ -62181,11 +62145,11 @@ name = A;
 },
 {
 name = dieresiscomb.case;
-transform = "{1, 0, 0, 1, 545, 0}";
+transform = "{1, 0, 0, 1, 549, 0}";
 }
 );
 layerId = "1023D002-3304-4399-867A-B886C920D2C0";
-width = 1094;
+width = 1102;
 }
 );
 leftKerningGroup = A;
@@ -62194,7 +62158,7 @@ unicode = 00C4;
 },
 {
 glyphname = Agrave;
-lastChange = "2020-12-06 22:10:59 +0000";
+lastChange = "2020-12-08 09:24:56 +0000";
 layers = (
 {
 background = {
@@ -62490,11 +62454,11 @@ name = A;
 },
 {
 name = gravecomb.case;
-transform = "{1, 0, 0, 1, 635, 0}";
+transform = "{1, 0, 0, 1, 641, 0}";
 }
 );
 layerId = "861B5D7F-E490-44BC-908E-F1CBF79092B0";
-width = 1251;
+width = 1263;
 },
 {
 background = {
@@ -62590,11 +62554,11 @@ name = A;
 },
 {
 name = gravecomb.case;
-transform = "{1, 0, 0, 1, 546, 0}";
+transform = "{1, 0, 0, 1, 550, 0}";
 }
 );
 layerId = "1023D002-3304-4399-867A-B886C920D2C0";
-width = 1094;
+width = 1102;
 }
 );
 leftKerningGroup = A;
@@ -63478,7 +63442,7 @@ unicode = 00C5;
 },
 {
 glyphname = Atilde;
-lastChange = "2020-12-06 22:10:59 +0000";
+lastChange = "2020-12-08 09:24:56 +0000";
 layers = (
 {
 background = {
@@ -63858,11 +63822,11 @@ name = A;
 },
 {
 name = tildecomb.case;
-transform = "{1, 0, 0, 1, 637, 8}";
+transform = "{1, 0, 0, 1, 643, 8}";
 }
 );
 layerId = "861B5D7F-E490-44BC-908E-F1CBF79092B0";
-width = 1251;
+width = 1263;
 },
 {
 background = {
@@ -63986,11 +63950,11 @@ name = A;
 },
 {
 name = tildecomb.case;
-transform = "{1, 0, 0, 1, 546, 0}";
+transform = "{1, 0, 0, 1, 550, 0}";
 }
 );
 layerId = "1023D002-3304-4399-867A-B886C920D2C0";
-width = 1094;
+width = 1102;
 }
 );
 leftKerningGroup = A;
@@ -84151,7 +84115,7 @@ unicode = 0237;
 {
 color = 5;
 glyphname = ntilde;
-lastChange = "2020-12-04 15:36:28 +0000";
+lastChange = "2020-12-08 09:55:37 +0000";
 layers = (
 {
 background = {
@@ -84496,7 +84460,7 @@ transform = "{1, 0, 0, 1, 502, 0}";
 }
 );
 layerId = "861B5D7F-E490-44BC-908E-F1CBF79092B0";
-width = 1042;
+width = 1043;
 },
 {
 background = {
@@ -113807,7 +113771,6 @@ UUID0 = {
 "@MMK_R_W" = -58;
 "@MMK_R_Y" = -104;
 "@MMK_R_comma" = 60;
-"@MMK_R_d" = -10;
 "@MMK_R_f" = -30;
 "@MMK_R_l" = -20;
 "@MMK_R_quoteleft" = -140;
@@ -113826,7 +113789,6 @@ UUID0 = {
 "@MMK_R_C" = -16;
 "@MMK_R_S" = 10;
 "@MMK_R_a" = -20;
-"@MMK_R_d" = -20;
 "@MMK_R_f" = 0;
 "@MMK_R_guillemetleft" = -30;
 "@MMK_R_r" = 0;
@@ -113849,7 +113811,6 @@ UUID0 = {
 "@MMK_L_E" = {
 "@MMK_R_C" = -10;
 "@MMK_R_a" = -16;
-"@MMK_R_d" = -24;
 "@MMK_R_f" = -20;
 "@MMK_R_guillemetleft" = -20;
 "@MMK_R_t" = -16;
@@ -113867,7 +113828,6 @@ UUID0 = {
 "@MMK_L_K" = {
 "@MMK_R_C" = -20;
 "@MMK_R_U" = -12;
-"@MMK_R_d" = -36;
 "@MMK_R_f" = -20;
 "@MMK_R_guillemetleft" = -60;
 "@MMK_R_hyphen" = -30;
@@ -113883,7 +113843,6 @@ UUID0 = {
 "@MMK_R_U" = -40;
 "@MMK_R_W" = -100;
 "@MMK_R_Y" = -170;
-"@MMK_R_d" = -30;
 "@MMK_R_guillemetleft" = -90;
 "@MMK_R_hyphen" = -140;
 "@MMK_R_quoteleft" = -210;
@@ -113927,7 +113886,6 @@ UUID0 = {
 "@MMK_R_W" = -20;
 "@MMK_R_Y" = -46;
 "@MMK_R_a" = -20;
-"@MMK_R_d" = -32;
 "@MMK_R_f" = 20;
 "@MMK_R_guillemetleft" = -60;
 "@MMK_R_hyphen" = -30;
@@ -113956,7 +113914,6 @@ UUID0 = {
 "@MMK_R_a" = -150;
 "@MMK_R_colon" = -80;
 "@MMK_R_comma" = -180;
-"@MMK_R_d" = -140;
 "@MMK_R_f" = -14;
 "@MMK_R_guillemetleft" = -120;
 "@MMK_R_guillemetright" = -100;
@@ -113992,7 +113949,6 @@ UUID0 = {
 "@MMK_R_a" = -84;
 "@MMK_R_colon" = -50;
 "@MMK_R_comma" = -140;
-"@MMK_R_d" = -96;
 "@MMK_R_f" = -10;
 "@MMK_R_guillemetleft" = -60;
 "@MMK_R_r" = -32;
@@ -114011,7 +113967,6 @@ UUID0 = {
 "@MMK_R_a" = -92;
 "@MMK_R_colon" = -80;
 "@MMK_R_comma" = -200;
-"@MMK_R_d" = -100;
 "@MMK_R_f" = -20;
 "@MMK_R_guillemetleft" = -120;
 "@MMK_R_guillemetright" = -92;
@@ -114028,7 +113983,6 @@ UUID0 = {
 "@MMK_L_Z" = {
 "@MMK_R_C" = -52;
 "@MMK_R_a" = -40;
-"@MMK_R_d" = -68;
 "@MMK_R_f" = -20;
 "@MMK_R_guillemetleft" = -70;
 "@MMK_R_hyphen" = -80;
@@ -114063,7 +114017,6 @@ UUID0 = {
 };
 "@MMK_L_f" = {
 "@MMK_R_comma" = -66;
-"@MMK_R_d" = -20;
 "@MMK_R_guillemetleft" = -52;
 "@MMK_R_i" = 80;
 "@MMK_R_quoteleft" = 140;
@@ -114104,7 +114057,6 @@ UUID0 = {
 "@MMK_R_y" = -24;
 };
 "@MMK_L_k" = {
-"@MMK_R_d" = -30;
 "@MMK_R_guillemetleft" = -40;
 "@MMK_R_hyphen" = -50;
 "@MMK_R_i" = -14;
@@ -114113,7 +114065,6 @@ UUID0 = {
 };
 "@MMK_L_l" = {
 "@MMK_R_a" = 0;
-"@MMK_R_d" = -12;
 "@MMK_R_f" = -5;
 "@MMK_R_hyphen" = -20;
 "@MMK_R_i" = 0;
@@ -114145,7 +114096,6 @@ UUID0 = {
 "@MMK_R_A" = -120;
 "@MMK_R_AE" = -200;
 "@MMK_R_J" = -120;
-"@MMK_R_d" = -50;
 "@MMK_R_s" = -50;
 };
 "@MMK_L_quoteright" = {
@@ -114155,7 +114105,6 @@ UUID0 = {
 "@MMK_L_r" = {
 "@MMK_R_a" = -12;
 "@MMK_R_comma" = -130;
-"@MMK_R_d" = -16;
 "@MMK_R_f" = 48;
 "@MMK_R_i" = 32;
 "@MMK_R_quoteleft" = 40;
@@ -114177,7 +114126,6 @@ UUID0 = {
 };
 "@MMK_L_t" = {
 "@MMK_R_a" = 0;
-"@MMK_R_d" = 0;
 "@MMK_R_f" = 24;
 "@MMK_R_i" = 24;
 "@MMK_R_r" = 0;
@@ -114194,7 +114142,6 @@ UUID0 = {
 "@MMK_L_v" = {
 "@MMK_R_a" = 0;
 "@MMK_R_comma" = -120;
-"@MMK_R_d" = -16;
 "@MMK_R_f" = 10;
 "@MMK_R_i" = 5;
 "@MMK_R_t" = 0;
@@ -114209,14 +114156,12 @@ UUID0 = {
 "@MMK_L_y" = {
 "@MMK_R_a" = -24;
 "@MMK_R_comma" = -110;
-"@MMK_R_d" = -10;
 "@MMK_R_f" = 10;
 "@MMK_R_i" = 16;
 "@MMK_R_t" = 0;
 "@MMK_R_y" = 10;
 };
 "@MMK_L_z" = {
-"@MMK_R_d" = -10;
 "@MMK_R_guillemetleft" = -24;
 "@MMK_R_hyphen" = -30;
 };
@@ -114230,7 +114175,6 @@ UUID1 = {
 "@MMK_R_W" = -40;
 "@MMK_R_Y" = -102;
 "@MMK_R_comma" = 100;
-"@MMK_R_d" = -20;
 "@MMK_R_f" = -36;
 "@MMK_R_l" = -20;
 "@MMK_R_quoteleft" = -110;
@@ -114246,7 +114190,6 @@ UUID1 = {
 "@MMK_R_C" = -10;
 "@MMK_R_S" = 10;
 "@MMK_R_a" = 0;
-"@MMK_R_d" = -14;
 "@MMK_R_f" = 50;
 "@MMK_R_guillemetleft" = -20;
 "@MMK_R_r" = 10;
@@ -114269,7 +114212,6 @@ UUID1 = {
 "@MMK_L_E" = {
 "@MMK_R_C" = -20;
 "@MMK_R_a" = -12;
-"@MMK_R_d" = -18;
 "@MMK_R_f" = 0;
 "@MMK_R_guillemetleft" = 0;
 "@MMK_R_t" = -20;
@@ -114287,7 +114229,6 @@ UUID1 = {
 "@MMK_L_K" = {
 "@MMK_R_C" = -16;
 "@MMK_R_U" = -14;
-"@MMK_R_d" = -20;
 "@MMK_R_f" = -20;
 "@MMK_R_guillemetleft" = -24;
 "@MMK_R_hyphen" = -20;
@@ -114303,7 +114244,6 @@ UUID1 = {
 "@MMK_R_U" = -30;
 "@MMK_R_W" = -70;
 "@MMK_R_Y" = -200;
-"@MMK_R_d" = 0;
 "@MMK_R_guillemetleft" = -30;
 "@MMK_R_hyphen" = -90;
 "@MMK_R_quoteleft" = -190;
@@ -114347,7 +114287,6 @@ UUID1 = {
 "@MMK_R_W" = -20;
 "@MMK_R_Y" = -50;
 "@MMK_R_a" = -12;
-"@MMK_R_d" = -28;
 "@MMK_R_f" = 24;
 "@MMK_R_guillemetleft" = -24;
 "@MMK_R_hyphen" = -30;
@@ -114376,7 +114315,6 @@ UUID1 = {
 "@MMK_R_a" = -140;
 "@MMK_R_colon" = -80;
 "@MMK_R_comma" = -150;
-"@MMK_R_d" = -148;
 "@MMK_R_f" = 0;
 "@MMK_R_guillemetleft" = -100;
 "@MMK_R_guillemetright" = -100;
@@ -114412,7 +114350,6 @@ UUID1 = {
 "@MMK_R_a" = -60;
 "@MMK_R_colon" = -50;
 "@MMK_R_comma" = -100;
-"@MMK_R_d" = -76;
 "@MMK_R_f" = 0;
 "@MMK_R_guillemetleft" = -16;
 "@MMK_R_r" = -36;
@@ -114431,7 +114368,6 @@ UUID1 = {
 "@MMK_R_a" = -110;
 "@MMK_R_colon" = -80;
 "@MMK_R_comma" = -210;
-"@MMK_R_d" = -134;
 "@MMK_R_f" = 0;
 "@MMK_R_guillemetleft" = -100;
 "@MMK_R_guillemetright" = -90;
@@ -114448,7 +114384,6 @@ UUID1 = {
 "@MMK_L_Z" = {
 "@MMK_R_C" = -30;
 "@MMK_R_a" = -16;
-"@MMK_R_d" = -20;
 "@MMK_R_f" = -20;
 "@MMK_R_guillemetleft" = -16;
 "@MMK_R_hyphen" = -40;
@@ -114483,7 +114418,6 @@ UUID1 = {
 };
 "@MMK_L_f" = {
 "@MMK_R_comma" = -64;
-"@MMK_R_d" = 0;
 "@MMK_R_guillemetleft" = -20;
 "@MMK_R_i" = 106;
 "@MMK_R_quoteleft" = 140;
@@ -114524,7 +114458,6 @@ UUID1 = {
 "@MMK_R_y" = -10;
 };
 "@MMK_L_k" = {
-"@MMK_R_d" = -18;
 "@MMK_R_guillemetleft" = -24;
 "@MMK_R_hyphen" = -40;
 "@MMK_R_i" = -10;
@@ -114533,7 +114466,6 @@ UUID1 = {
 };
 "@MMK_L_l" = {
 "@MMK_R_a" = -120;
-"@MMK_R_d" = -12;
 "@MMK_R_f" = -55;
 "@MMK_R_hyphen" = -20;
 "@MMK_R_i" = -40;
@@ -114565,7 +114497,6 @@ UUID1 = {
 "@MMK_R_A" = -130;
 "@MMK_R_AE" = -200;
 "@MMK_R_J" = -180;
-"@MMK_R_d" = -80;
 "@MMK_R_s" = -40;
 };
 "@MMK_L_quoteright" = {
@@ -114575,7 +114506,6 @@ UUID1 = {
 "@MMK_L_r" = {
 "@MMK_R_a" = -20;
 "@MMK_R_comma" = -140;
-"@MMK_R_d" = -24;
 "@MMK_R_f" = 80;
 "@MMK_R_i" = 40;
 "@MMK_R_quoteleft" = 40;
@@ -114597,7 +114527,6 @@ UUID1 = {
 };
 "@MMK_L_t" = {
 "@MMK_R_a" = -70;
-"@MMK_R_d" = -84;
 "@MMK_R_f" = 60;
 "@MMK_R_i" = -20;
 "@MMK_R_r" = -76;
@@ -114613,7 +114542,6 @@ UUID1 = {
 "@MMK_L_v" = {
 "@MMK_R_a" = -10;
 "@MMK_R_comma" = -80;
-"@MMK_R_d" = -12;
 "@MMK_R_f" = 86;
 "@MMK_R_i" = 10;
 "@MMK_R_t" = 86;
@@ -114628,14 +114556,12 @@ UUID1 = {
 "@MMK_L_y" = {
 "@MMK_R_a" = -26;
 "@MMK_R_comma" = -110;
-"@MMK_R_d" = -24;
 "@MMK_R_f" = 64;
 "@MMK_R_i" = 24;
 "@MMK_R_t" = 64;
 "@MMK_R_y" = 0;
 };
 "@MMK_L_z" = {
-"@MMK_R_d" = -10;
 "@MMK_R_guillemetleft" = -16;
 "@MMK_R_hyphen" = -28;
 };
@@ -114658,13 +114584,12 @@ UUID1 = {
 "@MMK_R_bracketright" = -10;
 "@MMK_R_colon" = 40;
 "@MMK_R_comma" = 80;
-"@MMK_R_d" = -9;
-"@MMK_R_f" = -27;
+"@MMK_R_f" = -18;
 "@MMK_R_g" = 10;
 "@MMK_R_guillemetleft" = -10;
 "@MMK_R_guillemetright" = 30;
 "@MMK_R_hyphen" = -22;
-"@MMK_R_l" = -18;
+"@MMK_R_l" = -6;
 "@MMK_R_o" = -2;
 "@MMK_R_parenright" = -10;
 "@MMK_R_quoteleft" = -200;
@@ -114733,20 +114658,19 @@ registered = -30;
 "@MMK_R_W" = 3;
 "@MMK_R_Y" = -16;
 "@MMK_R_Z" = 14;
-"@MMK_R_a" = -18;
+"@MMK_R_a" = -12;
 "@MMK_R_braceright" = 20;
 "@MMK_R_bracketright" = 20;
 "@MMK_R_comma" = 40;
-"@MMK_R_d" = -18;
-"@MMK_R_f" = 0;
+"@MMK_R_f" = 22;
 "@MMK_R_guillemetright" = 10;
 "@MMK_R_h" = 10;
+"@MMK_R_i" = 30;
 "@MMK_R_parenright" = 20;
 "@MMK_R_quoteleft" = 40;
 "@MMK_R_quoteright" = 30;
 "@MMK_R_quotesingle" = 10;
 "@MMK_R_r" = 0;
-"@MMK_R_u" = -9;
 Oslash = 16;
 ampersand = 10;
 asterisk = 20;
@@ -114772,15 +114696,18 @@ slash = 30;
 "@MMK_R_X" = -30;
 "@MMK_R_Y" = -52;
 "@MMK_R_Z" = -30;
-"@MMK_R_a" = 14;
+"@MMK_R_a" = 12;
 "@MMK_R_comma" = -60;
 "@MMK_R_f" = 0;
+"@MMK_R_g" = 10;
 "@MMK_R_guillemetleft" = 16;
 "@MMK_R_hyphen" = 50;
+"@MMK_R_i" = 10;
 "@MMK_R_o" = 20;
 "@MMK_R_quoteleft" = -26;
 "@MMK_R_quoteright" = -30;
 "@MMK_R_quotesingle" = -60;
+"@MMK_R_u" = 10;
 "@MMK_R_underscore" = -40;
 "@MMK_R_z" = -23;
 ampersand = 8;
@@ -114804,17 +114731,18 @@ space = -20;
 "@MMK_R_Z" = 30;
 "@MMK_R_a" = -28;
 "@MMK_R_comma" = 20;
-"@MMK_R_d" = -22;
-"@MMK_R_f" = -18;
+"@MMK_R_f" = -10;
+"@MMK_R_g" = -10;
 "@MMK_R_guillemetleft" = -30;
 "@MMK_R_guillemetright" = 16;
 "@MMK_R_hyphen" = -20;
+"@MMK_R_i" = 10;
 "@MMK_R_o" = -18;
 "@MMK_R_plus" = -10;
 "@MMK_R_quoteleft" = 20;
 "@MMK_R_quoteright" = 28;
 "@MMK_R_t" = -14;
-"@MMK_R_u" = -22;
+"@MMK_R_u" = -14;
 "@MMK_R_v" = -27;
 "@MMK_R_w" = -27;
 "@MMK_R_y" = -25;
@@ -114840,9 +114768,13 @@ slash = 70;
 "@MMK_R_bracketright" = 40;
 "@MMK_R_colon" = -30;
 "@MMK_R_comma" = -130;
+"@MMK_R_g" = -40;
 "@MMK_R_guillemetright" = -10;
 "@MMK_R_hyphen" = -20;
+"@MMK_R_i" = 20;
+"@MMK_R_n" = -42;
 "@MMK_R_o" = -28;
+"@MMK_R_p" = -44;
 "@MMK_R_parenright" = 40;
 "@MMK_R_quoteleft" = 70;
 "@MMK_R_quoteright" = 70;
@@ -114893,6 +114825,7 @@ questiondown = 30;
 "@MMK_L_H" = {
 "@MMK_R_H" = 0;
 "@MMK_R_a" = -4;
+"@MMK_R_i" = 6;
 };
 "@MMK_L_K" = {
 "@MMK_R_A" = 40;
@@ -114910,15 +114843,16 @@ questiondown = 30;
 "@MMK_R_bracketright" = 30;
 "@MMK_R_colon" = 20;
 "@MMK_R_comma" = 40;
-"@MMK_R_d" = -32;
 "@MMK_R_f" = -18;
+"@MMK_R_g" = -12;
 "@MMK_R_guillemetleft" = -70;
 "@MMK_R_hyphen" = -34;
+"@MMK_R_l" = -6;
 "@MMK_R_o" = -12;
 "@MMK_R_parenright" = 22;
 "@MMK_R_plus" = -30;
 "@MMK_R_t" = -45;
-"@MMK_R_u" = -36;
+"@MMK_R_u" = -30;
 "@MMK_R_underscore" = 40;
 "@MMK_R_v" = -63;
 "@MMK_R_w" = -58;
@@ -114950,7 +114884,6 @@ space = -20;
 "@MMK_R_a" = -18;
 "@MMK_R_colon" = 20;
 "@MMK_R_comma" = 50;
-"@MMK_R_d" = -27;
 "@MMK_R_guillemetleft" = -90;
 "@MMK_R_guillemetright" = 30;
 "@MMK_R_h" = 10;
@@ -114994,6 +114927,7 @@ space = -50;
 "@MMK_R_guillemetleft" = -20;
 "@MMK_R_guillemetright" = -6;
 "@MMK_R_hyphen" = -10;
+"@MMK_R_i" = 6;
 "@MMK_R_o" = -6;
 "@MMK_R_quoteleft" = -70;
 "@MMK_R_quoteright" = -56;
@@ -115023,14 +114957,18 @@ registered = -24;
 "@MMK_R_a" = 10;
 "@MMK_R_comma" = -60;
 "@MMK_R_f" = 0;
+"@MMK_R_g" = 10;
 "@MMK_R_guillemetleft" = 20;
 "@MMK_R_guillemetright" = 4;
 "@MMK_R_hyphen" = 40;
-"@MMK_R_i" = 0;
+"@MMK_R_i" = 20;
+"@MMK_R_l" = 10;
+"@MMK_R_n" = 10;
 "@MMK_R_o" = 12;
 "@MMK_R_quoteleft" = -26;
 "@MMK_R_quoteright" = -26;
 "@MMK_R_quotesingle" = -30;
+"@MMK_R_u" = 12;
 "@MMK_R_underscore" = -40;
 "@MMK_R_y" = 0;
 "@MMK_R_z" = -32;
@@ -115039,6 +114977,7 @@ at = 10;
 backslash = -12;
 copyright = 10;
 divisionslash = -20;
+n = 16;
 numbersign = 20;
 registered = -10;
 space = -20;
@@ -115062,11 +115001,13 @@ space = -20;
 "@MMK_R_guillemetleft" = -20;
 "@MMK_R_h" = 10;
 "@MMK_R_hyphen" = -30;
+"@MMK_R_i" = 50;
 "@MMK_R_o" = 12;
 "@MMK_R_parenright" = 20;
 "@MMK_R_quoteleft" = 40;
 "@MMK_R_quoteright" = 60;
 "@MMK_R_quotesingle" = 26;
+"@MMK_R_u" = 14;
 "@MMK_R_underscore" = -80;
 ampersand = -10;
 asterisk = 20;
@@ -115094,15 +115035,17 @@ space = -70;
 "@MMK_R_bracketright" = 16;
 "@MMK_R_colon" = 10;
 "@MMK_R_comma" = 50;
-"@MMK_R_d" = -29;
 "@MMK_R_f" = 18;
+"@MMK_R_g" = -6;
 "@MMK_R_guillemetleft" = -60;
 "@MMK_R_hyphen" = -36;
+"@MMK_R_i" = 26;
+"@MMK_R_l" = -4;
 "@MMK_R_o" = -2;
 "@MMK_R_parenright" = 16;
 "@MMK_R_quoteright" = -20;
 "@MMK_R_quotesingle" = -30;
-"@MMK_R_u" = -47;
+"@MMK_R_u" = -26;
 "@MMK_R_underscore" = 40;
 Oslash = 6;
 asterisk = -10;
@@ -115128,6 +115071,7 @@ space = -20;
 "@MMK_R_Z" = 6;
 "@MMK_R_a" = 10;
 "@MMK_R_colon" = 10;
+"@MMK_R_g" = 10;
 "@MMK_R_guillemetleft" = 40;
 "@MMK_R_guillemetright" = 30;
 "@MMK_R_hyphen" = 30;
@@ -115163,12 +115107,15 @@ space = -24;
 "@MMK_R_bracketright" = 40;
 "@MMK_R_colon" = -80;
 "@MMK_R_comma" = -120;
-"@MMK_R_d" = -126;
 "@MMK_R_f" = -13;
+"@MMK_R_g" = -120;
 "@MMK_R_guillemetleft" = -130;
 "@MMK_R_guillemetright" = -100;
 "@MMK_R_hyphen" = -120;
+"@MMK_R_i" = 40;
+"@MMK_R_n" = -76;
 "@MMK_R_o" = -90;
+"@MMK_R_p" = -78;
 "@MMK_R_parenright" = 40;
 "@MMK_R_plus" = -50;
 "@MMK_R_quoteleft" = 80;
@@ -115176,7 +115123,7 @@ space = -24;
 "@MMK_R_quotesingle" = 70;
 "@MMK_R_r" = -90;
 "@MMK_R_s" = -133;
-"@MMK_R_u" = -144;
+"@MMK_R_u" = -90;
 "@MMK_R_underscore" = -30;
 "@MMK_R_v" = -126;
 "@MMK_R_w" = -126;
@@ -115216,10 +115163,12 @@ space = -50;
 "@MMK_R_guillemetleft" = 10;
 "@MMK_R_guillemetright" = -20;
 "@MMK_R_hyphen" = 50;
+"@MMK_R_i" = 20;
 "@MMK_R_parenright" = -20;
 "@MMK_R_quoteleft" = -30;
 "@MMK_R_quoteright" = -40;
 "@MMK_R_quotesingle" = -54;
+"@MMK_R_u" = 10;
 "@MMK_R_underscore" = -110;
 asterisk = -40;
 backslash = -40;
@@ -115240,6 +115189,8 @@ space = -60;
 "@MMK_R_a" = -20;
 "@MMK_R_comma" = -50;
 "@MMK_R_f" = -13;
+"@MMK_R_g" = -10;
+"@MMK_R_i" = 10;
 "@MMK_R_s" = -54;
 "@MMK_R_underscore" = -60;
 "@MMK_R_z" = -54;
@@ -115264,16 +115215,20 @@ slash = -10;
 "@MMK_R_bracketright" = 30;
 "@MMK_R_colon" = -50;
 "@MMK_R_comma" = -120;
+"@MMK_R_g" = -50;
 "@MMK_R_guillemetleft" = -40;
 "@MMK_R_guillemetright" = -20;
 "@MMK_R_h" = 20;
 "@MMK_R_hyphen" = -80;
-"@MMK_R_i" = 5;
+"@MMK_R_i" = 24;
+"@MMK_R_n" = -14;
 "@MMK_R_o" = -50;
+"@MMK_R_p" = -14;
 "@MMK_R_parenright" = 30;
 "@MMK_R_quoteleft" = 70;
 "@MMK_R_quoteright" = 80;
 "@MMK_R_quotesingle" = 30;
+"@MMK_R_u" = -30;
 "@MMK_R_underscore" = -40;
 ampersand = -4;
 asterisk = 40;
@@ -115302,19 +115257,22 @@ space = -40;
 "@MMK_R_bracketright" = 34;
 "@MMK_R_colon" = -40;
 "@MMK_R_comma" = -80;
-"@MMK_R_d" = -86;
 "@MMK_R_f" = -9;
+"@MMK_R_g" = -60;
 "@MMK_R_guillemetleft" = -60;
 "@MMK_R_guillemetright" = -10;
 "@MMK_R_hyphen" = -26;
+"@MMK_R_i" = 20;
+"@MMK_R_n" = -16;
 "@MMK_R_o" = -38;
+"@MMK_R_p" = -16;
 "@MMK_R_parenright" = 20;
 "@MMK_R_quoteleft" = 60;
 "@MMK_R_quoteright" = 60;
 "@MMK_R_quotesingle" = 50;
 "@MMK_R_r" = -29;
 "@MMK_R_s" = -90;
-"@MMK_R_u" = -76;
+"@MMK_R_u" = -44;
 "@MMK_R_underscore" = -20;
 "@MMK_R_y" = 0;
 "@MMK_R_z" = -72;
@@ -115338,6 +115296,7 @@ space = -20;
 "@MMK_R_a" = -14;
 "@MMK_R_colon" = 10;
 "@MMK_R_comma" = 40;
+"@MMK_R_g" = -10;
 "@MMK_R_guillemetright" = 30;
 "@MMK_R_h" = 10;
 "@MMK_R_hyphen" = -60;
@@ -115371,12 +115330,15 @@ space = -40;
 "@MMK_R_bracketright" = 30;
 "@MMK_R_colon" = -70;
 "@MMK_R_comma" = -120;
-"@MMK_R_d" = -90;
 "@MMK_R_f" = -18;
+"@MMK_R_g" = -96;
 "@MMK_R_guillemetleft" = -120;
 "@MMK_R_guillemetright" = -92;
 "@MMK_R_hyphen" = -82;
+"@MMK_R_i" = 12;
+"@MMK_R_n" = -42;
 "@MMK_R_o" = -80;
+"@MMK_R_p" = -50;
 "@MMK_R_parenright" = 50;
 "@MMK_R_quoteleft" = 60;
 "@MMK_R_quoteright" = 40;
@@ -115384,7 +115346,7 @@ space = -40;
 "@MMK_R_r" = -54;
 "@MMK_R_s" = -90;
 "@MMK_R_t" = -25;
-"@MMK_R_u" = -72;
+"@MMK_R_u" = -60;
 "@MMK_R_underscore" = -40;
 "@MMK_R_v" = -43;
 "@MMK_R_w" = -61;
@@ -115416,17 +115378,17 @@ space = -50;
 "@MMK_R_bracketright" = 10;
 "@MMK_R_colon" = 30;
 "@MMK_R_comma" = 40;
-"@MMK_R_d" = -61;
 "@MMK_R_f" = -18;
 "@MMK_R_guillemetleft" = -70;
 "@MMK_R_guillemetright" = 20;
 "@MMK_R_h" = 4;
 "@MMK_R_hyphen" = -86;
+"@MMK_R_i" = 20;
 "@MMK_R_o" = -10;
 "@MMK_R_parenright" = 10;
 "@MMK_R_quoteright" = 20;
 "@MMK_R_r" = -36;
-"@MMK_R_u" = -61;
+"@MMK_R_u" = -14;
 "@MMK_R_underscore" = 30;
 "@MMK_R_v" = -68;
 "@MMK_R_w" = -79;
@@ -115448,7 +115410,6 @@ registered = 40;
 "@MMK_R_W" = 30;
 "@MMK_R_Y" = 50;
 "@MMK_R_a" = -50;
-"@MMK_R_d" = -50;
 "@MMK_R_f" = -14;
 "@MMK_R_h" = -10;
 "@MMK_R_i" = 5;
@@ -115482,7 +115443,6 @@ jdotless = 30;
 "@MMK_R_W" = 40;
 "@MMK_R_Y" = 50;
 "@MMK_R_a" = -46;
-"@MMK_R_d" = -46;
 "@MMK_R_f" = -12;
 "@MMK_R_h" = -10;
 "@MMK_R_i" = 15;
@@ -115509,7 +115469,6 @@ jdotless = 26;
 "@MMK_R_a" = 2;
 "@MMK_R_colon" = 24;
 "@MMK_R_comma" = 50;
-"@MMK_R_d" = 2;
 "@MMK_R_f" = 15;
 "@MMK_R_g" = 2;
 "@MMK_R_guillemetleft" = 20;
@@ -115572,7 +115531,6 @@ oslash = 30;
 "@MMK_R_Y" = -130;
 "@MMK_R_Z" = 20;
 "@MMK_R_a" = -30;
-"@MMK_R_d" = -30;
 "@MMK_R_f" = -10;
 "@MMK_R_g" = -20;
 "@MMK_R_i" = -10;
@@ -115616,7 +115574,6 @@ zero = 20;
 "@MMK_R_bracketright" = 8;
 "@MMK_R_colon" = 10;
 "@MMK_R_comma" = 40;
-"@MMK_R_d" = -4;
 "@MMK_R_f" = 6;
 "@MMK_R_g" = -4;
 "@MMK_R_guillemetleft" = 20;
@@ -115647,7 +115604,6 @@ slash = 40;
 "@MMK_R_a" = 10;
 "@MMK_R_braceright" = -18;
 "@MMK_R_bracketright" = -16;
-"@MMK_R_d" = 10;
 "@MMK_R_g" = 10;
 "@MMK_R_hyphen" = 40;
 "@MMK_R_parenright" = -18;
@@ -115665,7 +115621,6 @@ registered = -40;
 "@MMK_R_braceright" = 66;
 "@MMK_R_bracketright" = 66;
 "@MMK_R_comma" = -80;
-"@MMK_R_d" = -24;
 "@MMK_R_g" = -24;
 "@MMK_R_guillemetleft" = -52;
 "@MMK_R_hyphen" = -40;
@@ -115755,7 +115710,6 @@ registered = -30;
 "@MMK_R_Y" = -120;
 "@MMK_R_Z" = -10;
 "@MMK_R_a" = 30;
-"@MMK_R_d" = 30;
 "@MMK_R_g" = 30;
 "@MMK_R_o" = 32;
 "@MMK_R_z" = -20;
@@ -115799,7 +115753,6 @@ exclam = -10;
 "@MMK_R_bracketright" = -4;
 "@MMK_R_colon" = 30;
 "@MMK_R_comma" = 60;
-"@MMK_R_d" = -27;
 "@MMK_R_g" = -8;
 "@MMK_R_guillemetleft" = -40;
 "@MMK_R_hyphen" = -50;
@@ -115829,7 +115782,6 @@ slash = 50;
 "@MMK_R_bracketright" = -10;
 "@MMK_R_colon" = 30;
 "@MMK_R_comma" = 60;
-"@MMK_R_d" = -11;
 "@MMK_R_f" = -8;
 "@MMK_R_g" = -4;
 "@MMK_R_guillemetleft" = -20;
@@ -115882,7 +115834,6 @@ registered = -80;
 "@MMK_R_braceright" = -24;
 "@MMK_R_bracketright" = -22;
 "@MMK_R_comma" = -20;
-"@MMK_R_d" = 5;
 "@MMK_R_f" = -15;
 "@MMK_R_g" = 5;
 "@MMK_R_guillemetleft" = 32;
@@ -115927,7 +115878,6 @@ zero = 25;
 "@MMK_R_W" = 30;
 "@MMK_R_Y" = 70;
 "@MMK_R_a" = -60;
-"@MMK_R_d" = -60;
 "@MMK_R_f" = -10;
 "@MMK_R_i" = 15;
 "@MMK_R_n" = -26;
@@ -115993,7 +115943,6 @@ slash = 50;
 "@MMK_R_W" = 50;
 "@MMK_R_Y" = 40;
 "@MMK_R_a" = -70;
-"@MMK_R_d" = -70;
 "@MMK_R_f" = 20;
 "@MMK_R_g" = -70;
 "@MMK_R_i" = 50;
@@ -116021,7 +115970,6 @@ otilde = -50;
 "@MMK_R_W" = 30;
 "@MMK_R_Y" = 40;
 "@MMK_R_a" = -90;
-"@MMK_R_d" = -90;
 "@MMK_R_g" = -90;
 "@MMK_R_n" = -46;
 "@MMK_R_o" = -90;
@@ -116047,7 +115995,6 @@ otilde = -60;
 "@MMK_R_W" = 54;
 "@MMK_R_Y" = 20;
 "@MMK_R_a" = -50;
-"@MMK_R_d" = -50;
 "@MMK_R_g" = -50;
 "@MMK_R_i" = 70;
 "@MMK_R_l" = 10;
@@ -116068,7 +116015,6 @@ otilde = -30;
 "@MMK_R_bracketright" = -20;
 "@MMK_R_colon" = 30;
 "@MMK_R_comma" = -100;
-"@MMK_R_d" = -20;
 "@MMK_R_f" = 20;
 "@MMK_R_g" = -20;
 "@MMK_R_guillemetright" = 34;
@@ -116137,7 +116083,6 @@ slash = 10;
 "@MMK_R_bracketright" = -10;
 "@MMK_R_colon" = 10;
 "@MMK_R_comma" = 20;
-"@MMK_R_d" = 0;
 "@MMK_R_f" = 22;
 "@MMK_R_g" = -23;
 "@MMK_R_guillemetleft" = -36;
@@ -116199,7 +116144,6 @@ registered = -20;
 "@MMK_R_W" = -54;
 "@MMK_R_Y" = -80;
 "@MMK_R_a" = -100;
-"@MMK_R_d" = -100;
 "@MMK_R_g" = 70;
 "@MMK_R_l" = -40;
 "@MMK_R_o" = -86;
@@ -116313,7 +116257,6 @@ registered = 40;
 "@MMK_R_braceright" = -10;
 "@MMK_R_bracketright" = -10;
 "@MMK_R_comma" = 40;
-"@MMK_R_d" = -9;
 "@MMK_R_g" = -17;
 "@MMK_R_guillemetleft" = -24;
 "@MMK_R_hyphen" = -30;
@@ -116372,6 +116315,8 @@ Q = {
 "@MMK_R_underscore" = 60;
 exclamdown = 10;
 slash = 50;
+"@MMK_R_u" = 14;
+"@MMK_R_i" = 24;
 };
 adieresis = {
 "@MMK_R_i" = -11;
@@ -116390,7 +116335,6 @@ ampersand = {
 "@MMK_R_Y" = -50;
 "@MMK_R_Z" = -12;
 "@MMK_R_a" = 20;
-"@MMK_R_d" = 20;
 "@MMK_R_f" = 50;
 "@MMK_R_g" = 20;
 "@MMK_R_i" = 30;
@@ -116423,7 +116367,6 @@ asterisk = {
 "@MMK_R_W" = 30;
 "@MMK_R_X" = -34;
 "@MMK_R_a" = -30;
-"@MMK_R_d" = -30;
 "@MMK_R_f" = 50;
 "@MMK_R_g" = -30;
 "@MMK_R_o" = -14;
@@ -116445,7 +116388,6 @@ at = {
 "@MMK_R_X" = -8;
 "@MMK_R_Y" = -56;
 "@MMK_R_a" = 4;
-"@MMK_R_d" = 4;
 "@MMK_R_f" = -8;
 "@MMK_R_g" = 4;
 "@MMK_R_o" = 10;
@@ -116530,7 +116472,6 @@ divisionslash = {
 "@MMK_R_C" = -20;
 "@MMK_R_J" = -100;
 "@MMK_R_a" = -120;
-"@MMK_R_d" = -120;
 "@MMK_R_g" = -100;
 "@MMK_R_n" = -100;
 "@MMK_R_o" = -120;
@@ -116751,7 +116692,6 @@ idieresis = 10;
 };
 paragraph = {
 "@MMK_R_a" = -10;
-"@MMK_R_d" = -10;
 "@MMK_R_i" = 10;
 "@MMK_R_o" = -10;
 };
@@ -116791,7 +116731,6 @@ questiondown = {
 "@MMK_R_W" = -60;
 "@MMK_R_Y" = -70;
 "@MMK_R_a" = -10;
-"@MMK_R_d" = -10;
 "@MMK_R_g" = 60;
 "@MMK_R_o" = -10;
 "@MMK_R_p" = 40;
@@ -116815,7 +116754,6 @@ registered = {
 "@MMK_R_Y" = -20;
 "@MMK_R_Z" = -50;
 "@MMK_R_a" = 10;
-"@MMK_R_d" = 10;
 "@MMK_R_f" = 40;
 "@MMK_R_g" = 10;
 "@MMK_R_i" = 40;
@@ -116864,7 +116802,6 @@ slash = {
 "@MMK_R_W" = 40;
 "@MMK_R_Y" = 80;
 "@MMK_R_a" = -60;
-"@MMK_R_d" = -60;
 "@MMK_R_f" = 10;
 "@MMK_R_g" = -60;
 "@MMK_R_i" = 30;
@@ -116947,13 +116884,12 @@ divisionslash = -30;
 "@MMK_R_bracketright" = -16;
 "@MMK_R_colon" = 30;
 "@MMK_R_comma" = 80;
-"@MMK_R_d" = -18;
-"@MMK_R_f" = -32;
+"@MMK_R_f" = -28;
 "@MMK_R_g" = 20;
 "@MMK_R_guillemetleft" = -10;
 "@MMK_R_guillemetright" = 10;
 "@MMK_R_hyphen" = -20;
-"@MMK_R_l" = -18;
+"@MMK_R_l" = -20;
 "@MMK_R_o" = -8;
 "@MMK_R_parenright" = -16;
 "@MMK_R_quoteleft" = -200;
@@ -116990,12 +116926,12 @@ space = 10;
 "@MMK_R_X" = -10;
 "@MMK_R_Y" = -64;
 "@MMK_R_Z" = 10;
-"@MMK_R_a" = 10;
+"@MMK_R_a" = 12;
 "@MMK_R_comma" = -6;
 "@MMK_R_g" = 14;
 "@MMK_R_guillemetleft" = 20;
 "@MMK_R_hyphen" = 16;
-"@MMK_R_o" = 12;
+"@MMK_R_o" = 11;
 "@MMK_R_quoteleft" = -20;
 "@MMK_R_quoteright" = -30;
 "@MMK_R_quotesingle" = -50;
@@ -117026,16 +116962,15 @@ registered = -20;
 "@MMK_R_braceright" = 20;
 "@MMK_R_bracketright" = 20;
 "@MMK_R_comma" = 40;
-"@MMK_R_d" = -13;
-"@MMK_R_f" = 45;
+"@MMK_R_f" = 55;
 "@MMK_R_guillemetright" = 20;
 "@MMK_R_h" = 20;
+"@MMK_R_i" = 50;
 "@MMK_R_parenright" = 20;
 "@MMK_R_quoteleft" = 30;
 "@MMK_R_quoteright" = 40;
 "@MMK_R_quotesingle" = 10;
 "@MMK_R_r" = 9;
-"@MMK_R_u" = -9;
 Oslash = 24;
 ampersand = 14;
 asterisk = 20;
@@ -117064,12 +116999,15 @@ slash = 30;
 "@MMK_R_a" = 14;
 "@MMK_R_comma" = -36;
 "@MMK_R_f" = 18;
+"@MMK_R_g" = 14;
 "@MMK_R_guillemetleft" = 50;
 "@MMK_R_hyphen" = 50;
+"@MMK_R_i" = 20;
 "@MMK_R_o" = 20;
 "@MMK_R_quoteleft" = -22;
 "@MMK_R_quoteright" = -14;
 "@MMK_R_quotesingle" = -42;
+"@MMK_R_u" = 10;
 "@MMK_R_underscore" = -40;
 "@MMK_R_z" = -25;
 ampersand = 16;
@@ -117094,17 +117032,18 @@ space = -18;
 "@MMK_R_Z" = 30;
 "@MMK_R_a" = -14;
 "@MMK_R_comma" = 20;
-"@MMK_R_d" = -16;
-"@MMK_R_f" = 0;
+"@MMK_R_f" = -2;
+"@MMK_R_g" = -4;
 "@MMK_R_guillemetleft" = -10;
 "@MMK_R_guillemetright" = 14;
 "@MMK_R_hyphen" = -20;
+"@MMK_R_i" = 20;
 "@MMK_R_o" = -14;
 "@MMK_R_plus" = -15;
 "@MMK_R_quoteleft" = 14;
 "@MMK_R_quoteright" = 22;
 "@MMK_R_t" = -18;
-"@MMK_R_u" = -23;
+"@MMK_R_u" = -14;
 "@MMK_R_v" = -27;
 "@MMK_R_w" = -27;
 "@MMK_R_y" = -27;
@@ -117125,18 +117064,23 @@ slash = 60;
 "@MMK_R_V" = 15;
 "@MMK_R_W" = 34;
 "@MMK_R_Z" = -10;
-"@MMK_R_a" = -60;
+"@MMK_R_a" = -48;
 "@MMK_R_braceright" = 30;
 "@MMK_R_bracketright" = 40;
 "@MMK_R_colon" = -50;
 "@MMK_R_comma" = -160;
+"@MMK_R_g" = -54;
 "@MMK_R_guillemetright" = -10;
 "@MMK_R_hyphen" = -20;
+"@MMK_R_i" = 34;
+"@MMK_R_n" = -50;
 "@MMK_R_o" = -60;
+"@MMK_R_p" = -50;
 "@MMK_R_parenright" = 30;
 "@MMK_R_quoteleft" = 70;
 "@MMK_R_quoteright" = 70;
 "@MMK_R_quotesingle" = 40;
+"@MMK_R_u" = -30;
 "@MMK_R_underscore" = -100;
 Oslash = 10;
 ampersand = -20;
@@ -117183,6 +117127,7 @@ questiondown = 30;
 "@MMK_L_H" = {
 "@MMK_R_H" = 0;
 "@MMK_R_a" = -4;
+"@MMK_R_i" = 10;
 };
 "@MMK_L_K" = {
 "@MMK_R_A" = 34;
@@ -117195,21 +117140,22 @@ questiondown = 30;
 "@MMK_R_W" = -4;
 "@MMK_R_Y" = -36;
 "@MMK_R_Z" = 26;
-"@MMK_R_a" = -8;
+"@MMK_R_a" = -6;
 "@MMK_R_braceright" = 20;
 "@MMK_R_bracketright" = 14;
 "@MMK_R_colon" = 20;
 "@MMK_R_comma" = 50;
-"@MMK_R_d" = -18;
 "@MMK_R_f" = -18;
+"@MMK_R_g" = -10;
 "@MMK_R_guillemetleft" = -44;
 "@MMK_R_guillemetright" = 10;
 "@MMK_R_hyphen" = -24;
+"@MMK_R_l" = -6;
 "@MMK_R_o" = -12;
 "@MMK_R_parenright" = 12;
 "@MMK_R_plus" = -30;
 "@MMK_R_t" = -32;
-"@MMK_R_u" = -27;
+"@MMK_R_u" = -24;
 "@MMK_R_underscore" = 40;
 "@MMK_R_v" = -54;
 "@MMK_R_w" = -47;
@@ -117241,7 +117187,6 @@ space = -20;
 "@MMK_R_a" = -6;
 "@MMK_R_colon" = 20;
 "@MMK_R_comma" = 50;
-"@MMK_R_d" = 0;
 "@MMK_R_guillemetleft" = -30;
 "@MMK_R_guillemetright" = 30;
 "@MMK_R_h" = 10;
@@ -117286,6 +117231,7 @@ space = -50;
 "@MMK_R_guillemetleft" = 0;
 "@MMK_R_guillemetright" = -10;
 "@MMK_R_hyphen" = -10;
+"@MMK_R_i" = 10;
 "@MMK_R_o" = -6;
 "@MMK_R_quoteleft" = -70;
 "@MMK_R_quoteright" = -56;
@@ -117312,17 +117258,21 @@ registered = -24;
 "@MMK_R_X" = -28;
 "@MMK_R_Y" = -52;
 "@MMK_R_Z" = -12;
-"@MMK_R_a" = 20;
+"@MMK_R_a" = 22;
 "@MMK_R_comma" = -30;
 "@MMK_R_f" = 18;
+"@MMK_R_g" = 20;
 "@MMK_R_guillemetleft" = 52;
 "@MMK_R_guillemetright" = 6;
 "@MMK_R_hyphen" = 40;
-"@MMK_R_i" = 18;
+"@MMK_R_i" = 48;
+"@MMK_R_l" = 14;
+"@MMK_R_n" = 10;
 "@MMK_R_o" = 20;
 "@MMK_R_quoteleft" = -20;
 "@MMK_R_quoteright" = -14;
 "@MMK_R_quotesingle" = -24;
+"@MMK_R_u" = 16;
 "@MMK_R_underscore" = -40;
 "@MMK_R_y" = 14;
 "@MMK_R_z" = -22;
@@ -117354,11 +117304,13 @@ space = -16;
 "@MMK_R_guillemetleft" = -6;
 "@MMK_R_h" = 10;
 "@MMK_R_hyphen" = -4;
+"@MMK_R_i" = 70;
 "@MMK_R_o" = 11;
 "@MMK_R_parenright" = 4;
 "@MMK_R_quoteleft" = 20;
 "@MMK_R_quoteright" = 30;
 "@MMK_R_quotesingle" = 4;
+"@MMK_R_u" = 20;
 "@MMK_R_underscore" = -100;
 asterisk = 10;
 backslash = 10;
@@ -117385,15 +117337,17 @@ space = -70;
 "@MMK_R_bracketright" = 10;
 "@MMK_R_colon" = 10;
 "@MMK_R_comma" = 50;
-"@MMK_R_d" = -25;
 "@MMK_R_f" = 22;
+"@MMK_R_g" = -6;
 "@MMK_R_guillemetleft" = -24;
 "@MMK_R_hyphen" = -36;
+"@MMK_R_i" = 30;
+"@MMK_R_l" = -6;
 "@MMK_R_o" = -4;
 "@MMK_R_parenright" = 10;
 "@MMK_R_quoteright" = -30;
 "@MMK_R_quotesingle" = -30;
-"@MMK_R_u" = -32;
+"@MMK_R_u" = -14;
 "@MMK_R_underscore" = 40;
 Oslash = 18;
 asterisk = -10;
@@ -117419,6 +117373,7 @@ space = -20;
 "@MMK_R_Z" = 10;
 "@MMK_R_a" = 20;
 "@MMK_R_colon" = 10;
+"@MMK_R_g" = 12;
 "@MMK_R_guillemetleft" = 50;
 "@MMK_R_guillemetright" = 30;
 "@MMK_R_hyphen" = 30;
@@ -117454,12 +117409,15 @@ space = -24;
 "@MMK_R_bracketright" = 40;
 "@MMK_R_colon" = -80;
 "@MMK_R_comma" = -120;
-"@MMK_R_d" = -133;
 "@MMK_R_f" = 0;
+"@MMK_R_g" = -120;
 "@MMK_R_guillemetleft" = -120;
 "@MMK_R_guillemetright" = -100;
 "@MMK_R_hyphen" = -80;
+"@MMK_R_i" = 40;
+"@MMK_R_n" = -80;
 "@MMK_R_o" = -120;
+"@MMK_R_p" = -80;
 "@MMK_R_parenright" = 40;
 "@MMK_R_plus" = -60;
 "@MMK_R_quoteleft" = 100;
@@ -117467,7 +117425,7 @@ space = -24;
 "@MMK_R_quotesingle" = 70;
 "@MMK_R_r" = -81;
 "@MMK_R_s" = -146;
-"@MMK_R_u" = -158;
+"@MMK_R_u" = -90;
 "@MMK_R_underscore" = -20;
 "@MMK_R_v" = -126;
 "@MMK_R_w" = -117;
@@ -117508,10 +117466,12 @@ space = -50;
 "@MMK_R_guillemetleft" = 20;
 "@MMK_R_guillemetright" = -10;
 "@MMK_R_hyphen" = 40;
+"@MMK_R_i" = 30;
 "@MMK_R_parenright" = -30;
 "@MMK_R_quoteleft" = -50;
 "@MMK_R_quoteright" = -56;
 "@MMK_R_quotesingle" = -60;
+"@MMK_R_u" = 10;
 "@MMK_R_underscore" = -100;
 asterisk = -30;
 backslash = -60;
@@ -117532,6 +117492,8 @@ space = -60;
 "@MMK_R_a" = -10;
 "@MMK_R_comma" = -50;
 "@MMK_R_f" = 0;
+"@MMK_R_g" = -10;
+"@MMK_R_i" = 20;
 "@MMK_R_s" = -36;
 "@MMK_R_underscore" = -50;
 "@MMK_R_z" = -27;
@@ -117551,21 +117513,25 @@ slash = -10;
 "@MMK_R_T" = 10;
 "@MMK_R_Y" = 5;
 "@MMK_R_Z" = -4;
-"@MMK_R_a" = -52;
+"@MMK_R_a" = -56;
 "@MMK_R_braceright" = 40;
 "@MMK_R_bracketright" = 30;
 "@MMK_R_colon" = -50;
 "@MMK_R_comma" = -110;
+"@MMK_R_g" = -60;
 "@MMK_R_guillemetleft" = -40;
 "@MMK_R_guillemetright" = -30;
 "@MMK_R_h" = 10;
 "@MMK_R_hyphen" = -56;
-"@MMK_R_i" = 15;
+"@MMK_R_i" = 35;
+"@MMK_R_n" = -14;
 "@MMK_R_o" = -54;
+"@MMK_R_p" = -14;
 "@MMK_R_parenright" = 30;
 "@MMK_R_quoteleft" = 80;
 "@MMK_R_quoteright" = 80;
 "@MMK_R_quotesingle" = 30;
+"@MMK_R_u" = -26;
 "@MMK_R_underscore" = -40;
 ampersand = -6;
 asterisk = 50;
@@ -117593,19 +117559,22 @@ space = -40;
 "@MMK_R_bracketright" = 30;
 "@MMK_R_colon" = -36;
 "@MMK_R_comma" = -60;
-"@MMK_R_d" = -68;
 "@MMK_R_f" = 0;
+"@MMK_R_g" = -50;
 "@MMK_R_guillemetleft" = -16;
 "@MMK_R_guillemetright" = -10;
 "@MMK_R_hyphen" = -28;
+"@MMK_R_i" = 24;
+"@MMK_R_n" = -10;
 "@MMK_R_o" = -37;
+"@MMK_R_p" = -10;
 "@MMK_R_parenright" = 30;
 "@MMK_R_quoteleft" = 60;
 "@MMK_R_quoteright" = 78;
 "@MMK_R_quotesingle" = 40;
 "@MMK_R_r" = -32;
 "@MMK_R_s" = -59;
-"@MMK_R_u" = -43;
+"@MMK_R_u" = -24;
 "@MMK_R_underscore" = -10;
 "@MMK_R_y" = -18;
 "@MMK_R_z" = -45;
@@ -117627,9 +117596,10 @@ space = -20;
 "@MMK_R_C" = -38;
 "@MMK_R_T" = -6;
 "@MMK_R_U" = -27;
-"@MMK_R_a" = -2;
+"@MMK_R_a" = -4;
 "@MMK_R_colon" = 20;
 "@MMK_R_comma" = 50;
+"@MMK_R_g" = -2;
 "@MMK_R_guillemetright" = 30;
 "@MMK_R_h" = 20;
 "@MMK_R_hyphen" = -70;
@@ -117664,12 +117634,15 @@ space = -40;
 "@MMK_R_bracketright" = 40;
 "@MMK_R_colon" = -70;
 "@MMK_R_comma" = -160;
-"@MMK_R_d" = -121;
 "@MMK_R_f" = 0;
+"@MMK_R_g" = -120;
 "@MMK_R_guillemetleft" = -100;
 "@MMK_R_guillemetright" = -90;
 "@MMK_R_hyphen" = -94;
+"@MMK_R_i" = 10;
+"@MMK_R_n" = -42;
 "@MMK_R_o" = -110;
+"@MMK_R_p" = -50;
 "@MMK_R_parenright" = 30;
 "@MMK_R_quoteleft" = 50;
 "@MMK_R_quoteright" = 40;
@@ -117677,7 +117650,7 @@ space = -40;
 "@MMK_R_r" = -59;
 "@MMK_R_s" = -115;
 "@MMK_R_t" = 0;
-"@MMK_R_u" = -79;
+"@MMK_R_u" = -50;
 "@MMK_R_underscore" = -40;
 "@MMK_R_v" = -29;
 "@MMK_R_w" = -32;
@@ -117703,22 +117676,22 @@ space = -50;
 "@MMK_R_V" = 10;
 "@MMK_R_W" = -1;
 "@MMK_R_Y" = -16;
-"@MMK_R_a" = -10;
+"@MMK_R_a" = -6;
 "@MMK_R_braceright" = 10;
 "@MMK_R_bracketright" = 10;
 "@MMK_R_colon" = 30;
 "@MMK_R_comma" = 40;
-"@MMK_R_d" = -18;
 "@MMK_R_f" = -18;
 "@MMK_R_guillemetleft" = -20;
 "@MMK_R_guillemetright" = 20;
 "@MMK_R_h" = 10;
 "@MMK_R_hyphen" = -46;
+"@MMK_R_i" = 20;
 "@MMK_R_o" = -6;
 "@MMK_R_parenright" = 10;
 "@MMK_R_quoteright" = 10;
 "@MMK_R_r" = -13;
-"@MMK_R_u" = -23;
+"@MMK_R_u" = -4;
 "@MMK_R_underscore" = 30;
 "@MMK_R_v" = -32;
 "@MMK_R_w" = -36;
@@ -117740,7 +117713,6 @@ registered = 40;
 "@MMK_R_W" = 32;
 "@MMK_R_Y" = 40;
 "@MMK_R_a" = -60;
-"@MMK_R_d" = -60;
 "@MMK_R_f" = -20;
 "@MMK_R_h" = -10;
 "@MMK_R_i" = 6;
@@ -117774,7 +117746,6 @@ jdotless = 66;
 "@MMK_R_W" = 40;
 "@MMK_R_Y" = 40;
 "@MMK_R_a" = -56;
-"@MMK_R_d" = -56;
 "@MMK_R_f" = -16;
 "@MMK_R_h" = -10;
 "@MMK_R_i" = 10;
@@ -117801,7 +117772,6 @@ jdotless = 70;
 "@MMK_R_a" = 6;
 "@MMK_R_colon" = 26;
 "@MMK_R_comma" = 50;
-"@MMK_R_d" = 6;
 "@MMK_R_f" = 20;
 "@MMK_R_g" = 6;
 "@MMK_R_guillemetleft" = 20;
@@ -117865,7 +117835,6 @@ oslash = 30;
 "@MMK_R_Y" = -160;
 "@MMK_R_Z" = 20;
 "@MMK_R_a" = -30;
-"@MMK_R_d" = -24;
 "@MMK_R_f" = -20;
 "@MMK_R_g" = -10;
 "@MMK_R_i" = -10;
@@ -117909,7 +117878,6 @@ zero = 30;
 "@MMK_R_bracketright" = 0;
 "@MMK_R_colon" = 10;
 "@MMK_R_comma" = 40;
-"@MMK_R_d" = -4;
 "@MMK_R_f" = 10;
 "@MMK_R_g" = -4;
 "@MMK_R_guillemetleft" = 14;
@@ -117940,7 +117908,6 @@ slash = 60;
 "@MMK_R_a" = 12;
 "@MMK_R_braceright" = -26;
 "@MMK_R_bracketright" = -30;
-"@MMK_R_d" = 12;
 "@MMK_R_g" = 12;
 "@MMK_R_hyphen" = 40;
 "@MMK_R_parenright" = -30;
@@ -117958,7 +117925,6 @@ registered = -50;
 "@MMK_R_braceright" = 84;
 "@MMK_R_bracketright" = 54;
 "@MMK_R_comma" = -74;
-"@MMK_R_d" = -30;
 "@MMK_R_g" = -30;
 "@MMK_R_guillemetleft" = -20;
 "@MMK_R_hyphen" = -40;
@@ -118047,7 +118013,6 @@ registered = -50;
 "@MMK_R_Y" = -100;
 "@MMK_R_Z" = 10;
 "@MMK_R_a" = 40;
-"@MMK_R_d" = 40;
 "@MMK_R_g" = 40;
 "@MMK_R_o" = 40;
 "@MMK_R_z" = -10;
@@ -118092,7 +118057,6 @@ exclam = -10;
 "@MMK_R_bracketright" = -22;
 "@MMK_R_colon" = 20;
 "@MMK_R_comma" = 60;
-"@MMK_R_d" = -16;
 "@MMK_R_g" = -17;
 "@MMK_R_guillemetleft" = -24;
 "@MMK_R_hyphen" = -40;
@@ -118122,7 +118086,6 @@ slash = 40;
 "@MMK_R_bracketright" = -20;
 "@MMK_R_colon" = 30;
 "@MMK_R_comma" = 60;
-"@MMK_R_d" = -11;
 "@MMK_R_f" = -24;
 "@MMK_R_g" = -14;
 "@MMK_R_guillemetleft" = -20;
@@ -118174,7 +118137,6 @@ registered = -62;
 "@MMK_R_braceright" = -28;
 "@MMK_R_bracketright" = -38;
 "@MMK_R_comma" = -20;
-"@MMK_R_d" = 5;
 "@MMK_R_f" = 0;
 "@MMK_R_g" = 5;
 "@MMK_R_guillemetleft" = 40;
@@ -118219,7 +118181,6 @@ zero = 18;
 "@MMK_R_W" = 40;
 "@MMK_R_Y" = 50;
 "@MMK_R_a" = -70;
-"@MMK_R_d" = -70;
 "@MMK_R_f" = -14;
 "@MMK_R_i" = 16;
 "@MMK_R_n" = -44;
@@ -118285,7 +118246,6 @@ slash = 60;
 "@MMK_R_W" = 60;
 "@MMK_R_Y" = 40;
 "@MMK_R_a" = -84;
-"@MMK_R_d" = -84;
 "@MMK_R_f" = 20;
 "@MMK_R_g" = -84;
 "@MMK_R_i" = 60;
@@ -118313,7 +118273,6 @@ otilde = -70;
 "@MMK_R_W" = 36;
 "@MMK_R_Y" = 40;
 "@MMK_R_a" = -106;
-"@MMK_R_d" = -106;
 "@MMK_R_g" = -106;
 "@MMK_R_n" = -64;
 "@MMK_R_o" = -100;
@@ -118339,7 +118298,6 @@ otilde = -70;
 "@MMK_R_W" = 40;
 "@MMK_R_Y" = 20;
 "@MMK_R_a" = -70;
-"@MMK_R_d" = -70;
 "@MMK_R_g" = -70;
 "@MMK_R_i" = 60;
 "@MMK_R_l" = 10;
@@ -118360,7 +118318,6 @@ otilde = -40;
 "@MMK_R_bracketright" = -30;
 "@MMK_R_colon" = 20;
 "@MMK_R_comma" = -110;
-"@MMK_R_d" = -28;
 "@MMK_R_f" = 20;
 "@MMK_R_g" = -28;
 "@MMK_R_guillemetright" = 20;
@@ -118429,7 +118386,6 @@ slash = 10;
 "@MMK_R_bracketright" = -18;
 "@MMK_R_colon" = 10;
 "@MMK_R_comma" = 30;
-"@MMK_R_d" = -76;
 "@MMK_R_f" = 54;
 "@MMK_R_g" = -17;
 "@MMK_R_guillemetleft" = -20;
@@ -118488,7 +118444,6 @@ registered = -14;
 "@MMK_R_W" = -40;
 "@MMK_R_Y" = -100;
 "@MMK_R_a" = -100;
-"@MMK_R_d" = -100;
 "@MMK_R_g" = 70;
 "@MMK_R_l" = -40;
 "@MMK_R_o" = -94;
@@ -118600,7 +118555,6 @@ registered = 40;
 "@MMK_R_braceright" = -20;
 "@MMK_R_bracketright" = -20;
 "@MMK_R_comma" = 30;
-"@MMK_R_d" = -9;
 "@MMK_R_g" = -10;
 "@MMK_R_guillemetleft" = -16;
 "@MMK_R_hyphen" = -28;
@@ -118660,6 +118614,9 @@ Q = {
 "@MMK_R_underscore" = 140;
 exclamdown = 20;
 slash = 80;
+"@MMK_R_n" = 20;
+"@MMK_R_u" = 24;
+"@MMK_R_i" = 64;
 };
 adieresis = {
 "@MMK_R_i" = 0;
@@ -118678,7 +118635,6 @@ ampersand = {
 "@MMK_R_Y" = -50;
 "@MMK_R_Z" = -12;
 "@MMK_R_a" = 20;
-"@MMK_R_d" = 20;
 "@MMK_R_f" = 60;
 "@MMK_R_g" = 20;
 "@MMK_R_i" = 40;
@@ -118711,7 +118667,6 @@ asterisk = {
 "@MMK_R_W" = 30;
 "@MMK_R_X" = -26;
 "@MMK_R_a" = -30;
-"@MMK_R_d" = -30;
 "@MMK_R_f" = 50;
 "@MMK_R_g" = -30;
 "@MMK_R_o" = -14;
@@ -118733,7 +118688,6 @@ at = {
 "@MMK_R_X" = -6;
 "@MMK_R_Y" = -94;
 "@MMK_R_a" = 6;
-"@MMK_R_d" = 6;
 "@MMK_R_f" = -8;
 "@MMK_R_g" = 6;
 "@MMK_R_o" = 10;
@@ -118819,7 +118773,6 @@ divisionslash = {
 "@MMK_R_C" = -20;
 "@MMK_R_J" = -100;
 "@MMK_R_a" = -120;
-"@MMK_R_d" = -120;
 "@MMK_R_g" = -100;
 "@MMK_R_n" = -90;
 "@MMK_R_o" = -120;
@@ -119043,7 +118996,6 @@ idieresis = 30;
 };
 paragraph = {
 "@MMK_R_a" = -20;
-"@MMK_R_d" = -20;
 "@MMK_R_i" = 30;
 "@MMK_R_o" = -20;
 };
@@ -119084,7 +119036,6 @@ questiondown = {
 "@MMK_R_W" = -60;
 "@MMK_R_Y" = -110;
 "@MMK_R_a" = -10;
-"@MMK_R_d" = -10;
 "@MMK_R_g" = 50;
 "@MMK_R_o" = -10;
 "@MMK_R_p" = 60;
@@ -119108,7 +119059,6 @@ registered = {
 "@MMK_R_Y" = -20;
 "@MMK_R_Z" = -30;
 "@MMK_R_a" = 16;
-"@MMK_R_d" = 16;
 "@MMK_R_f" = 70;
 "@MMK_R_g" = 16;
 "@MMK_R_i" = 70;
@@ -119158,7 +119108,6 @@ slash = {
 "@MMK_R_X" = 40;
 "@MMK_R_Y" = 100;
 "@MMK_R_a" = -50;
-"@MMK_R_d" = -50;
 "@MMK_R_f" = 10;
 "@MMK_R_g" = -50;
 "@MMK_R_i" = 60;
