@@ -18,7 +18,7 @@ code = "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Aacute Acircumflex A
 name = Uppercase;
 }
 );
-copyright = "Copyright 2018 The Signika Project Authors (https://github.com/googlefonts/Signika).";
+copyright = "Copyright 2020 The Signika Project Authors (https://github.com/googlefonts/Signika).";
 customParameters = (
 {
 name = trademark;
@@ -1488,7 +1488,7 @@ Tag = ital;
 date = "2020-05-07 12:35:45 +0000";
 designer = "Anna Giedryś";
 designerURL = www.ancymonic.com;
-familyName = "Signika Italics Test";
+familyName = Signika;
 featurePrefixes = (
 {
 automatic = 1;
