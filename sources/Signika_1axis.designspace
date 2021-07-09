@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<designspace format="4.1">
+  <axes>
+    <axis tag="wght" name="Weight" minimum="300" maximum="700" default="300">
+      <map input="300" output="50"/>
+      <map input="400" output="360"/>
+      <map input="500" output="470"/>
+      <map input="600" output="650"/>
+      <map input="700" output="920"/>
+    </axis>
+  </axes>
+  <sources>
+    <source filename="instance_UFO/Signika-Light.ufo" name="Signika Light" familyname="Signika" stylename="Light">
+      <lib copy="1"/>
+      <groups copy="1"/>
+      <features copy="1"/>
+      <info copy="1"/>
+      <location>
+        <dimension name="Weight" xvalue="50"/>
+      </location>
+    </source>
+    <source filename="instance_UFO/Signika-Bold.ufo" name="Signika Bold" familyname="Signika" stylename="Bold">
+      <location>
+        <dimension name="Weight" xvalue="920"/>
+      </location>
+    </source>
+  </sources>
+  <instances>
+    <instance name="Signika Light" familyname="Signika" stylename="Light" filename="instance_ufos/Signika-Light.ufo">
+      <location>
+        <dimension name="Weight" xvalue="50"/>
+      </location>
+      <kerning/>
+      <info/>
+    </instance>
+    <instance name="Signika Regular" familyname="Signika" stylename="Regular" filename="instance_ufos/Signika-Regular.ufo">
+      <location>
+        <dimension name="Weight" xvalue="360"/>
+      </location>
+      <kerning/>
+      <info/>
+    </instance>
+    <instance name="Signika Medium" familyname="Signika" stylename="Medium" filename="instance_ufos/Signika-Medium.ufo">
+      <location>
+        <dimension name="Weight" xvalue="470"/>
+      </location>
+      <kerning/>
+      <info/>
+    </instance>
+    <instance name="Signika Semibold" familyname="Signika" stylename="Semibold" filename="instance_ufos/Signika-Semibold.ufo">
+      <location>
+        <dimension name="Weight" xvalue="650"/>
+      </location>
+      <kerning/>
+      <info/>
+    </instance>
+    <instance name="Signika Bold" familyname="Signika" stylename="Bold" filename="instance_ufos/Signika-Bold.ufo">
+      <location>
+        <dimension name="Weight" xvalue="920"/>
+      </location>
+      <kerning/>
+      <info/>
+    </instance>
+  </instances>
+  <lib>
+    <dict>
+      <key>public.skipExportGlyphs</key>
+      <array>
+        <string>germandbls.smcp.alt1</string>
+      </array>
+    </dict>
+  </lib>
+</designspace>
