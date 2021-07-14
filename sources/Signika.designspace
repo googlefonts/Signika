@@ -68,7 +68,7 @@
       <kerning/>
       <info/>
     </instance>
-    <instance name="Signika SemiBold" familyname="Signika" stylename="SemiBold" filename="instance_ufos/Signika-Semibold.ufo">
+    <instance name="Signika SemiBold" familyname="Signika" stylename="SemiBold" filename="instance_ufos/Signika-SemiBold.ufo">
       <location>
         <dimension name="Negative" xvalue="0"/>
         <dimension name="Weight" xvalue="650"/>
@@ -108,7 +108,7 @@
       <kerning/>
       <info/>
     </instance>
-    <instance name="Signika Negative SemiBold" familyname="Signika Negative" stylename="SemiBold" filename="instance_ufos/SignikaNegative-Semibold.ufo">
+    <instance name="Signika Negative SemiBold" familyname="Signika Negative" stylename="SemiBold" filename="instance_ufos/SignikaNegative-SemiBold.ufo">
       <location>
         <dimension name="Negative" xvalue="1"/>
         <dimension name="Weight" xvalue="650"/>
