@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="s" format="2">
+  <advance width="885"/>
+  <unicode hex="0073"/>
+  <anchor x="444" y="0" name="bottom"/>
+  <anchor x="444" y="1084" name="top"/>
+  <outline>
+    <contour>
+      <point x="42" y="69" type="curve"/>
+      <point x="135" y="16"/>
+      <point x="268" y="-29"/>
+      <point x="410" y="-29" type="curve" smooth="yes"/>
+      <point x="676" y="-29"/>
+      <point x="837" y="95"/>
+      <point x="837" y="293" type="curve" smooth="yes"/>
+      <point x="837" y="461"/>
+      <point x="724" y="557"/>
+      <point x="572" y="611" type="curve" smooth="yes"/>
+      <point x="449" y="656" type="line" smooth="yes"/>
+      <point x="390" y="677"/>
+      <point x="365" y="700"/>
+      <point x="365" y="738" type="curve" smooth="yes"/>
+      <point x="365" y="778"/>
+      <point x="398" y="809"/>
+      <point x="457" y="809" type="curve" smooth="yes"/>
+      <point x="552" y="809"/>
+      <point x="653" y="772"/>
+      <point x="734" y="736" type="curve"/>
+      <point x="782" y="772"/>
+      <point x="820" y="873"/>
+      <point x="816" y="943" type="curve"/>
+      <point x="730" y="986"/>
+      <point x="577" y="1026"/>
+      <point x="454" y="1026" type="curve" smooth="yes"/>
+      <point x="223" y="1026"/>
+      <point x="71" y="900"/>
+      <point x="71" y="700" type="curve" smooth="yes"/>
+      <point x="71" y="540"/>
+      <point x="181" y="454"/>
+      <point x="322" y="402" type="curve" smooth="yes"/>
+      <point x="434" y="361" type="line" smooth="yes"/>
+      <point x="501" y="337"/>
+      <point x="529" y="306"/>
+      <point x="529" y="265" type="curve" smooth="yes"/>
+      <point x="529" y="219"/>
+      <point x="485" y="187"/>
+      <point x="404" y="187" type="curve" smooth="yes"/>
+      <point x="310" y="187"/>
+      <point x="214" y="225"/>
+      <point x="127" y="271" type="curve"/>
+      <point x="82" y="225"/>
+      <point x="44" y="134"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2021/07/09 03:44:18</string>
+    </dict>
+  </lib>
+</glyph>

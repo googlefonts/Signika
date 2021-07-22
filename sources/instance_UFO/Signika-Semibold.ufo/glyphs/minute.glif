@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="minute" format="2">
+  <advance width="439"/>
+  <unicode hex="2032"/>
+  <outline>
+    <contour>
+      <point x="182" y="1294" type="curve"/>
+      <point x="106" y="752" type="line"/>
+      <point x="140" y="724"/>
+      <point x="213" y="710"/>
+      <point x="257" y="719" type="curve"/>
+      <point x="419" y="1239" type="line"/>
+      <point x="370" y="1281"/>
+      <point x="246" y="1306"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2021/07/09 03:44:18</string>
+    </dict>
+  </lib>
+</glyph>

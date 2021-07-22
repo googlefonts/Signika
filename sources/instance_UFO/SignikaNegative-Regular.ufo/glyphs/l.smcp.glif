@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="l.smcp" format="2">
+  <advance width="929"/>
+  <anchor x="519" y="0" name="bottom"/>
+  <anchor x="929" y="619" name="periodcentered"/>
+  <anchor x="266" y="1188" name="top"/>
+  <anchor x="444" y="618" name="topright"/>
+  <outline>
+    <contour>
+      <point x="367" y="-2" type="line"/>
+      <point x="367" y="973" type="line" smooth="yes"/>
+      <point x="367" y="1060"/>
+      <point x="339" y="1097"/>
+      <point x="258" y="1097" type="curve" smooth="yes"/>
+      <point x="181" y="1097" type="line"/>
+      <point x="170" y="1086" type="line"/>
+      <point x="170" y="118" type="line" smooth="yes"/>
+      <point x="170" y="42"/>
+      <point x="217" y="-2"/>
+      <point x="284" y="-2" type="curve" smooth="yes"/>
+    </contour>
+    <contour>
+      <point x="878" y="166" type="curve"/>
+      <point x="533" y="166" type="line" smooth="yes"/>
+      <point x="438" y="166"/>
+      <point x="316" y="156"/>
+      <point x="208" y="136" type="curve"/>
+      <point x="284" y="-2" type="line"/>
+      <point x="747" y="-2" type="line" smooth="yes"/>
+      <point x="842" y="-2"/>
+      <point x="875" y="41"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2021/07/09 03:44:18</string>
+      <key>public.markColor</key>
+      <string>0.97,1,0,1</string>
+    </dict>
+  </lib>
+</glyph>

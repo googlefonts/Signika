@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="ico.squarearrowup" format="2">
+  <advance width="1956"/>
+  <unicode hex="E01B"/>
+  <outline>
+    <contour>
+      <point x="968" y="991" type="line"/>
+      <point x="607" y="627" type="line"/>
+      <point x="646" y="564"/>
+      <point x="715" y="496"/>
+      <point x="778" y="458" type="curve"/>
+      <point x="888" y="572" type="line" smooth="yes"/>
+      <point x="925" y="611"/>
+      <point x="952" y="638"/>
+      <point x="988" y="676" type="curve"/>
+      <point x="968" y="676" type="line"/>
+      <point x="1004" y="638"/>
+      <point x="1030" y="612"/>
+      <point x="1067" y="572" type="curve" smooth="yes"/>
+      <point x="1177" y="458" type="line"/>
+      <point x="1241" y="496"/>
+      <point x="1310" y="564"/>
+      <point x="1348" y="627" type="curve"/>
+      <point x="987" y="991" type="line"/>
+    </contour>
+    <component base="ico.square"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>ico.square</string>
+        </dict>
+      </array>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2021/07/09 03:44:18</string>
+      <key>public.markColor</key>
+      <string>0.18,0.16,0.78,1</string>
+    </dict>
+  </lib>
+</glyph>

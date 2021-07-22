@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="perthousand.lf" format="2">
+  <advance width="2677"/>
+  <outline>
+    <contour>
+      <point x="1392" y="406" type="curve" smooth="yes"/>
+      <point x="1392" y="542"/>
+      <point x="1402" y="652"/>
+      <point x="1491" y="652" type="curve" smooth="yes"/>
+      <point x="1579" y="652"/>
+      <point x="1590" y="542"/>
+      <point x="1590" y="406" type="curve" smooth="yes"/>
+      <point x="1590" y="269"/>
+      <point x="1579" y="157"/>
+      <point x="1491" y="157" type="curve" smooth="yes"/>
+      <point x="1402" y="157"/>
+      <point x="1392" y="269"/>
+    </contour>
+    <contour>
+      <point x="770" y="962" type="curve" smooth="yes"/>
+      <point x="770" y="1218"/>
+      <point x="675" y="1392"/>
+      <point x="430" y="1392" type="curve" smooth="yes"/>
+      <point x="182" y="1392"/>
+      <point x="90" y="1220"/>
+      <point x="90" y="962" type="curve" smooth="yes"/>
+      <point x="90" y="707"/>
+      <point x="178" y="531"/>
+      <point x="430" y="531" type="curve" smooth="yes"/>
+      <point x="676" y="531"/>
+      <point x="770" y="703"/>
+    </contour>
+    <contour>
+      <point x="331" y="962" type="curve" smooth="yes"/>
+      <point x="331" y="1098"/>
+      <point x="342" y="1209"/>
+      <point x="430" y="1209" type="curve" smooth="yes"/>
+      <point x="518" y="1209"/>
+      <point x="529" y="1098"/>
+      <point x="529" y="962" type="curve" smooth="yes"/>
+      <point x="529" y="826"/>
+      <point x="518" y="714"/>
+      <point x="430" y="714" type="curve" smooth="yes"/>
+      <point x="342" y="714"/>
+      <point x="331" y="826"/>
+    </contour>
+    <contour>
+      <point x="1831" y="406" type="curve" smooth="yes"/>
+      <point x="1831" y="661"/>
+      <point x="1736" y="835"/>
+      <point x="1491" y="835" type="curve" smooth="yes"/>
+      <point x="1243" y="835"/>
+      <point x="1151" y="663"/>
+      <point x="1151" y="406" type="curve" smooth="yes"/>
+      <point x="1151" y="150"/>
+      <point x="1239" y="-26"/>
+      <point x="1491" y="-26" type="curve" smooth="yes"/>
+      <point x="1737" y="-26"/>
+      <point x="1831" y="146"/>
+    </contour>
+    <contour>
+      <point x="2148" y="406" type="curve" smooth="yes"/>
+      <point x="2148" y="542"/>
+      <point x="2159" y="652"/>
+      <point x="2247" y="652" type="curve" smooth="yes"/>
+      <point x="2335" y="652"/>
+      <point x="2346" y="542"/>
+      <point x="2346" y="406" type="curve" smooth="yes"/>
+      <point x="2346" y="269"/>
+      <point x="2335" y="157"/>
+      <point x="2247" y="157" type="curve" smooth="yes"/>
+      <point x="2159" y="157"/>
+      <point x="2148" y="269"/>
+    </contour>
+    <contour>
+      <point x="2587" y="406" type="curve" smooth="yes"/>
+      <point x="2587" y="661"/>
+      <point x="2492" y="835"/>
+      <point x="2247" y="835" type="curve" smooth="yes"/>
+      <point x="2000" y="835"/>
+      <point x="1907" y="663"/>
+      <point x="1907" y="406" type="curve" smooth="yes"/>
+      <point x="1907" y="150"/>
+      <point x="1995" y="-26"/>
+      <point x="2247" y="-26" type="curve" smooth="yes"/>
+      <point x="2493" y="-26"/>
+      <point x="2587" y="146"/>
+    </contour>
+    <component base="fraction.lf" xOffset="682"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2021/07/09 03:44:18</string>
+      <key>public.markColor</key>
+      <string>0.98,0.36,0.67,1</string>
+    </dict>
+  </lib>
+</glyph>

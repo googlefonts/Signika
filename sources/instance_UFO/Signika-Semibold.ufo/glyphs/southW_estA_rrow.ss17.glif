@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="southWestArrow.ss17" format="2">
+  <advance width="1940"/>
+  <outline>
+    <contour>
+      <point x="493" y="0" type="line"/>
+      <point x="1246" y="0" type="line"/>
+      <point x="1308" y="29"/>
+      <point x="1436" y="162"/>
+      <point x="1458" y="213" type="curve"/>
+      <point x="1451" y="227" type="line"/>
+      <point x="986" y="214" type="line" smooth="yes"/>
+      <point x="931" y="212"/>
+      <point x="881" y="207"/>
+      <point x="834" y="198" type="curve"/>
+      <point x="861" y="221"/>
+      <point x="902" y="257"/>
+      <point x="929" y="284" type="curve" smooth="yes"/>
+      <point x="1458" y="811" type="line"/>
+      <point x="1443" y="839"/>
+      <point x="1409" y="880"/>
+      <point x="1385" y="905" type="curve" smooth="yes"/>
+      <point x="1360" y="929"/>
+      <point x="1319" y="962"/>
+      <point x="1291" y="977" type="curve"/>
+      <point x="765" y="448" type="line" smooth="yes"/>
+      <point x="739" y="421"/>
+      <point x="702" y="380"/>
+      <point x="680" y="352" type="curve"/>
+      <point x="689" y="401"/>
+      <point x="693" y="451"/>
+      <point x="695" y="505" type="curve" smooth="yes"/>
+      <point x="708" y="970" type="line"/>
+      <point x="694" y="977" type="line"/>
+      <point x="643" y="955"/>
+      <point x="510" y="827"/>
+      <point x="481" y="765" type="curve"/>
+      <point x="481" y="12" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2021/07/09 03:44:18</string>
+    </dict>
+  </lib>
+</glyph>

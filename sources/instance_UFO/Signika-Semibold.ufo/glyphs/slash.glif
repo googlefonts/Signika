@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="slash" format="2">
+  <advance width="874"/>
+  <unicode hex="002F"/>
+  <outline>
+    <contour>
+      <point x="638" y="1430" type="curve"/>
+      <point x="8" y="-246" type="line"/>
+      <point x="72" y="-296"/>
+      <point x="155" y="-323"/>
+      <point x="232" y="-331" type="curve"/>
+      <point x="862" y="1345" type="line"/>
+      <point x="798" y="1394"/>
+      <point x="714" y="1421"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2021/07/09 03:44:18</string>
+    </dict>
+  </lib>
+</glyph>

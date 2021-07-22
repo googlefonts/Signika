@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="two.c2sc" format="2">
+  <advance width="964"/>
+  <outline>
+    <contour>
+      <point x="98" y="851" type="curve"/>
+      <point x="131" y="804"/>
+      <point x="210" y="766"/>
+      <point x="281" y="764" type="curve"/>
+      <point x="310" y="842"/>
+      <point x="369" y="909"/>
+      <point x="452" y="909" type="curve" smooth="yes"/>
+      <point x="528" y="909"/>
+      <point x="576" y="851"/>
+      <point x="576" y="784" type="curve" smooth="yes"/>
+      <point x="576" y="721"/>
+      <point x="537" y="668"/>
+      <point x="481" y="621" type="curve" smooth="yes"/>
+      <point x="294" y="460" type="line" smooth="yes"/>
+      <point x="184" y="366"/>
+      <point x="84" y="248"/>
+      <point x="84" y="150" type="curve" smooth="yes"/>
+      <point x="84" y="98"/>
+      <point x="142" y="26"/>
+      <point x="175" y="-3" type="curve"/>
+      <point x="344" y="-3" type="line"/>
+      <point x="352" y="175" type="line" smooth="yes"/>
+      <point x="353" y="214"/>
+      <point x="424" y="275"/>
+      <point x="492" y="328" type="curve" smooth="yes"/>
+      <point x="633" y="443" type="line" smooth="yes"/>
+      <point x="744" y="533"/>
+      <point x="839" y="642"/>
+      <point x="839" y="780" type="curve" smooth="yes"/>
+      <point x="839" y="978"/>
+      <point x="694" y="1125"/>
+      <point x="467" y="1125" type="curve" smooth="yes"/>
+      <point x="281" y="1125"/>
+      <point x="144" y="1002"/>
+    </contour>
+    <contour>
+      <point x="873" y="217" type="curve"/>
+      <point x="614" y="217" type="line" smooth="yes"/>
+      <point x="503" y="217"/>
+      <point x="253" y="192"/>
+      <point x="124" y="147" type="curve"/>
+      <point x="191" y="-3" type="line"/>
+      <point x="708" y="-3" type="line" smooth="yes"/>
+      <point x="799" y="-3"/>
+      <point x="854" y="37"/>
+      <point x="867" y="119" type="curve" smooth="yes"/>
+      <point x="872" y="147"/>
+      <point x="873" y="193"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2021/07/09 03:44:18</string>
+      <key>public.markColor</key>
+      <string>0.97,1,0,1</string>
+    </dict>
+  </lib>
+</glyph>

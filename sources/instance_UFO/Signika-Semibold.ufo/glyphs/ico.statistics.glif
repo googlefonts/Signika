@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="ico.statistics" format="2">
+  <advance width="1940"/>
+  <unicode hex="E053"/>
+  <outline>
+    <contour>
+      <point x="618" y="198" type="curve" smooth="yes"/>
+      <point x="552" y="198" type="line" smooth="yes"/>
+      <point x="533" y="198"/>
+      <point x="515" y="198"/>
+      <point x="495" y="196" type="curve"/>
+      <point x="496" y="222"/>
+      <point x="496" y="244"/>
+      <point x="496" y="268" type="curve" smooth="yes"/>
+      <point x="496" y="570" type="line"/>
+      <point x="515" y="580"/>
+      <point x="564" y="582"/>
+      <point x="584" y="582" type="curve" smooth="yes"/>
+      <point x="605" y="582"/>
+      <point x="656" y="580"/>
+      <point x="674" y="570" type="curve"/>
+      <point x="674" y="268" type="line" smooth="yes"/>
+      <point x="674" y="244"/>
+      <point x="674" y="222"/>
+      <point x="675" y="196" type="curve"/>
+      <point x="654" y="198"/>
+      <point x="636" y="198"/>
+    </contour>
+    <contour>
+      <point x="1444" y="268" type="line" smooth="yes"/>
+      <point x="1444" y="244"/>
+      <point x="1444" y="222"/>
+      <point x="1446" y="196" type="curve"/>
+      <point x="1425" y="198"/>
+      <point x="1407" y="198"/>
+      <point x="1389" y="198" type="curve" smooth="yes"/>
+      <point x="1322" y="198" type="line" smooth="yes"/>
+      <point x="1304" y="198"/>
+      <point x="1286" y="198"/>
+      <point x="1265" y="196" type="curve"/>
+      <point x="1266" y="222"/>
+      <point x="1266" y="244"/>
+      <point x="1266" y="268" type="curve" smooth="yes"/>
+      <point x="1266" y="1170" type="line"/>
+      <point x="1286" y="1180"/>
+      <point x="1335" y="1182"/>
+      <point x="1355" y="1182" type="curve" smooth="yes"/>
+      <point x="1377" y="1182"/>
+      <point x="1425" y="1180"/>
+      <point x="1444" y="1170" type="curve"/>
+    </contour>
+    <contour>
+      <point x="1059" y="268" type="line" smooth="yes"/>
+      <point x="1059" y="244"/>
+      <point x="1059" y="222"/>
+      <point x="1061" y="196" type="curve"/>
+      <point x="1039" y="198"/>
+      <point x="1022" y="198"/>
+      <point x="1003" y="198" type="curve" smooth="yes"/>
+      <point x="937" y="198" type="line" smooth="yes"/>
+      <point x="919" y="198"/>
+      <point x="901" y="198"/>
+      <point x="880" y="196" type="curve"/>
+      <point x="881" y="222"/>
+      <point x="881" y="244"/>
+      <point x="881" y="268" type="curve" smooth="yes"/>
+      <point x="881" y="870" type="line"/>
+      <point x="901" y="880"/>
+      <point x="950" y="882"/>
+      <point x="970" y="882" type="curve" smooth="yes"/>
+      <point x="991" y="882"/>
+      <point x="1040" y="880"/>
+      <point x="1059" y="870" type="curve"/>
+    </contour>
+    <contour>
+      <point x="1638" y="0" type="line"/>
+      <point x="1651" y="13" type="line"/>
+      <point x="1651" y="1260" type="line" smooth="yes"/>
+      <point x="1651" y="1350"/>
+      <point x="1577" y="1380"/>
+      <point x="1355" y="1380" type="curve" smooth="yes"/>
+      <point x="1134" y="1380"/>
+      <point x="1059" y="1348"/>
+      <point x="1059" y="1260" type="curve" smooth="yes"/>
+      <point x="1059" y="1028" type="line"/>
+      <point x="1262" y="960" type="line"/>
+      <point x="1262" y="1050"/>
+      <point x="1188" y="1080"/>
+      <point x="970" y="1080" type="curve" smooth="yes"/>
+      <point x="749" y="1080"/>
+      <point x="674" y="1048"/>
+      <point x="674" y="960" type="curve" smooth="yes"/>
+      <point x="674" y="720" type="line"/>
+      <point x="877" y="660" type="line"/>
+      <point x="877" y="750"/>
+      <point x="807" y="780"/>
+      <point x="585" y="780" type="curve" smooth="yes"/>
+      <point x="364" y="780"/>
+      <point x="289" y="748"/>
+      <point x="289" y="660" type="curve" smooth="yes"/>
+      <point x="289" y="13" type="line"/>
+      <point x="302" y="0" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2021/07/09 03:44:18</string>
+    </dict>
+  </lib>
+</glyph>

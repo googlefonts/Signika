@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="minute.lf" format="2">
+  <advance width="433"/>
+  <outline>
+    <contour>
+      <point x="183" y="1389" type="curve"/>
+      <point x="107" y="852" type="line"/>
+      <point x="140" y="825"/>
+      <point x="209" y="812"/>
+      <point x="252" y="820" type="curve"/>
+      <point x="409" y="1336" type="line"/>
+      <point x="362" y="1377"/>
+      <point x="244" y="1400"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2021/07/09 03:44:18</string>
+    </dict>
+  </lib>
+</glyph>

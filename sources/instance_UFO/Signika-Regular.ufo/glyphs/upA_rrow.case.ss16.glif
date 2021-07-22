@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="upArrow.case.ss16" format="2">
+  <advance width="1924"/>
+  <outline>
+    <contour>
+      <point x="962" y="-14" type="curve" smooth="yes"/>
+      <point x="990" y="-14"/>
+      <point x="1031" y="-10"/>
+      <point x="1056" y="-5" type="curve"/>
+      <point x="1056" y="981" type="line" smooth="yes"/>
+      <point x="1056" y="1011"/>
+      <point x="1055" y="1054"/>
+      <point x="1053" y="1088" type="curve"/>
+      <point x="1080" y="1048"/>
+      <point x="1116" y="1007"/>
+      <point x="1149" y="972" type="curve" smooth="yes"/>
+      <point x="1476" y="635" type="line" smooth="yes"/>
+      <point x="1495" y="614"/>
+      <point x="1527" y="581"/>
+      <point x="1570" y="581" type="curve" smooth="yes"/>
+      <point x="1611" y="581"/>
+      <point x="1653" y="608"/>
+      <point x="1689" y="673" type="curve"/>
+      <point x="1689" y="690" type="line"/>
+      <point x="971" y="1408" type="line"/>
+      <point x="953" y="1408" type="line"/>
+      <point x="235" y="690" type="line"/>
+      <point x="235" y="673" type="line"/>
+      <point x="271" y="608"/>
+      <point x="314" y="581"/>
+      <point x="354" y="581" type="curve" smooth="yes"/>
+      <point x="397" y="581"/>
+      <point x="429" y="614"/>
+      <point x="448" y="635" type="curve" smooth="yes"/>
+      <point x="775" y="972" type="line" smooth="yes"/>
+      <point x="808" y="1007"/>
+      <point x="842" y="1046"/>
+      <point x="872" y="1088" type="curve"/>
+      <point x="869" y="1054"/>
+      <point x="868" y="1011"/>
+      <point x="868" y="981" type="curve" smooth="yes"/>
+      <point x="868" y="-5" type="line"/>
+      <point x="893" y="-10"/>
+      <point x="935" y="-14"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2021/07/09 03:44:18</string>
+    </dict>
+  </lib>
+</glyph>

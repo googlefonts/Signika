@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="florin.lf" format="2">
+  <advance width="1080"/>
+  <outline>
+    <contour>
+      <point x="515" y="835" type="line"/>
+      <point x="165" y="839" type="line"/>
+      <point x="157" y="803"/>
+      <point x="153" y="762"/>
+      <point x="153" y="726" type="curve" smooth="yes"/>
+      <point x="153" y="690"/>
+      <point x="157" y="645"/>
+      <point x="165" y="609" type="curve"/>
+      <point x="511" y="615" type="line"/>
+      <point x="915" y="609" type="line"/>
+      <point x="923" y="645"/>
+      <point x="927" y="690"/>
+      <point x="927" y="726" type="curve" smooth="yes"/>
+      <point x="927" y="762"/>
+      <point x="923" y="803"/>
+      <point x="915" y="839" type="curve"/>
+    </contour>
+    <contour>
+      <point x="405" y="1007" type="curve" smooth="yes"/>
+      <point x="271" y="212" type="line" smooth="yes"/>
+      <point x="238" y="14"/>
+      <point x="175" y="-53"/>
+      <point x="89" y="-53" type="curve" smooth="yes"/>
+      <point x="48" y="-53"/>
+      <point x="2" y="-41"/>
+      <point x="-37" y="-24" type="curve"/>
+      <point x="-84" y="-66"/>
+      <point x="-124" y="-168"/>
+      <point x="-123" y="-245" type="curve"/>
+      <point x="-54" y="-282"/>
+      <point x="46" y="-302"/>
+      <point x="129" y="-302" type="curve" smooth="yes"/>
+      <point x="348" y="-302"/>
+      <point x="516" y="-189"/>
+      <point x="577" y="166" type="curve" smooth="yes"/>
+      <point x="713" y="963" type="line" smooth="yes"/>
+      <point x="736" y="1097"/>
+      <point x="771" y="1150"/>
+      <point x="859" y="1150" type="curve" smooth="yes"/>
+      <point x="897" y="1150"/>
+      <point x="946" y="1137"/>
+      <point x="984" y="1118" type="curve"/>
+      <point x="1029" y="1164"/>
+      <point x="1067" y="1264"/>
+      <point x="1072" y="1337" type="curve"/>
+      <point x="993" y="1378"/>
+      <point x="890" y="1396"/>
+      <point x="802" y="1396" type="curve" smooth="yes"/>
+      <point x="559" y="1396"/>
+      <point x="445" y="1243"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2021/07/09 03:44:18</string>
+    </dict>
+  </lib>
+</glyph>

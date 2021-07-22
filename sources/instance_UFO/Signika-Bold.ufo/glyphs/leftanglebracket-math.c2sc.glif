@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="leftanglebracket-math.c2sc" format="2">
+  <advance width="776"/>
+  <outline>
+    <contour>
+      <point x="78" y="540" type="line"/>
+      <point x="78" y="564" type="line"/>
+      <point x="462" y="1394" type="line"/>
+      <point x="545" y="1392"/>
+      <point x="645" y="1348"/>
+      <point x="690" y="1291" type="curve"/>
+      <point x="428" y="552" type="line"/>
+      <point x="690" y="-187" type="line"/>
+      <point x="645" y="-244"/>
+      <point x="545" y="-288"/>
+      <point x="462" y="-290" type="curve"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2021/07/09 03:44:18</string>
+      <key>public.markColor</key>
+      <string>0.97,1,0,1</string>
+    </dict>
+  </lib>
+</glyph>

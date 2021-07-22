@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="naira.lf" format="2">
+  <advance width="1080"/>
+  <guideline x="484" y="1366" angle="253.302048"/>
+  <guideline x="671" y="1010" angle="270.0"/>
+  <guideline x="410" y="317" angle="90.0"/>
+  <guideline x="594" y="0" angle="73.264204"/>
+  <outline>
+    <contour>
+      <point x="302" y="-12" type="curve" smooth="yes"/>
+      <point x="347" y="-12"/>
+      <point x="381" y="-8"/>
+      <point x="416" y="0" type="curve"/>
+      <point x="416" y="373" type="line" smooth="yes"/>
+      <point x="416" y="524"/>
+      <point x="411" y="692"/>
+      <point x="400" y="892" type="curve"/>
+      <point x="418" y="895" type="line"/>
+      <point x="485" y="1366" type="line"/>
+      <point x="441" y="1375"/>
+      <point x="388" y="1378"/>
+      <point x="333" y="1378" type="curve" smooth="yes"/>
+      <point x="281" y="1378"/>
+      <point x="227" y="1371"/>
+      <point x="187" y="1360" type="curve"/>
+      <point x="187" y="0" type="line"/>
+      <point x="218" y="-8"/>
+      <point x="259" y="-12"/>
+    </contour>
+    <contour>
+      <point x="743" y="-12" type="curve" smooth="yes"/>
+      <point x="794" y="-12"/>
+      <point x="853" y="-5"/>
+      <point x="893" y="6" type="curve"/>
+      <point x="893" y="1366" type="line"/>
+      <point x="883" y="1379" type="line"/>
+      <point x="804" y="1379" type="line" smooth="yes"/>
+      <point x="706" y="1379"/>
+      <point x="667" y="1330"/>
+      <point x="667" y="1217" type="curve" smooth="yes"/>
+      <point x="667" y="963" type="line" smooth="yes"/>
+      <point x="667" y="814"/>
+      <point x="669" y="647"/>
+      <point x="679" y="473" type="curve"/>
+      <point x="662" y="469" type="line"/>
+      <point x="594" y="0" type="line"/>
+      <point x="638" y="-9"/>
+      <point x="689" y="-12"/>
+    </contour>
+    <contour>
+      <point x="594" y="0" type="line"/>
+      <point x="853" y="46" type="line"/>
+      <point x="671" y="471" type="line"/>
+      <point x="655" y="578"/>
+      <point x="634" y="680"/>
+      <point x="613" y="777" type="curve" smooth="yes"/>
+      <point x="485" y="1366" type="line"/>
+      <point x="227" y="1321" type="line"/>
+      <point x="408" y="893" type="line"/>
+      <point x="426" y="786"/>
+      <point x="444" y="687"/>
+      <point x="465" y="591" type="curve" smooth="yes"/>
+    </contour>
+    <contour>
+      <point x="56" y="415" type="curve"/>
+      <point x="292" y="415" type="line"/>
+      <point x="292" y="617" type="line"/>
+      <point x="56" y="617" type="line"/>
+      <point x="49" y="591"/>
+      <point x="45" y="554"/>
+      <point x="45" y="517" type="curve" smooth="yes"/>
+      <point x="45" y="479"/>
+      <point x="49" y="441"/>
+    </contour>
+    <contour>
+      <point x="56" y="748" type="curve"/>
+      <point x="292" y="748" type="line"/>
+      <point x="292" y="950" type="line"/>
+      <point x="56" y="950" type="line"/>
+      <point x="49" y="925"/>
+      <point x="45" y="887"/>
+      <point x="45" y="850" type="curve" smooth="yes"/>
+      <point x="45" y="813"/>
+      <point x="49" y="775"/>
+    </contour>
+    <contour>
+      <point x="798" y="415" type="line"/>
+      <point x="1024" y="415" type="line"/>
+      <point x="1031" y="441"/>
+      <point x="1035" y="480"/>
+      <point x="1035" y="517" type="curve" smooth="yes"/>
+      <point x="1035" y="554"/>
+      <point x="1031" y="592"/>
+      <point x="1024" y="617" type="curve"/>
+      <point x="798" y="617" type="line"/>
+    </contour>
+    <contour>
+      <point x="798" y="748" type="line"/>
+      <point x="1024" y="748" type="line"/>
+      <point x="1031" y="775"/>
+      <point x="1035" y="813"/>
+      <point x="1035" y="850" type="curve" smooth="yes"/>
+      <point x="1035" y="888"/>
+      <point x="1031" y="925"/>
+      <point x="1024" y="950" type="curve"/>
+      <point x="798" y="950" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2021/07/09 03:44:18</string>
+    </dict>
+  </lib>
+</glyph>
