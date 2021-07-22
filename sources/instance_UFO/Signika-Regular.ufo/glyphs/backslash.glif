@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="backslash" format="2">
+  <advance width="845"/>
+  <unicode hex="005C"/>
+  <outline>
+    <contour>
+      <point x="651" y="-322" type="curve"/>
+      <point x="19" y="1355" type="line"/>
+      <point x="71" y="1395"/>
+      <point x="139" y="1418"/>
+      <point x="199" y="1423" type="curve"/>
+      <point x="831" y="-254" type="line"/>
+      <point x="780" y="-293"/>
+      <point x="710" y="-316"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2021/07/09 03:44:18</string>
+    </dict>
+  </lib>
+</glyph>

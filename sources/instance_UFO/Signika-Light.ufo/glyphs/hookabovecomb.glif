@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="hookabovecomb" format="2">
+  <unicode hex="0309"/>
+  <anchor x="-1" y="1084" name="_top"/>
+  <anchor x="-1" y="1480" name="top"/>
+  <outline>
+    <contour>
+      <point x="-71" y="1157" type="curve"/>
+      <point x="-69" y="1126"/>
+      <point x="-53" y="1090"/>
+      <point x="-23" y="1072" type="curve"/>
+      <point x="107" y="1115"/>
+      <point x="191" y="1191"/>
+      <point x="191" y="1293" type="curve" smooth="yes"/>
+      <point x="191" y="1394"/>
+      <point x="112" y="1461"/>
+      <point x="1" y="1461" type="curve" smooth="yes"/>
+      <point x="-71" y="1461"/>
+      <point x="-136" y="1437"/>
+      <point x="-181" y="1409" type="curve"/>
+      <point x="-181" y="1376"/>
+      <point x="-167" y="1342"/>
+      <point x="-146" y="1320" type="curve"/>
+      <point x="-114" y="1338"/>
+      <point x="-70" y="1353"/>
+      <point x="-32" y="1353" type="curve" smooth="yes"/>
+      <point x="19" y="1353"/>
+      <point x="56" y="1324"/>
+      <point x="56" y="1281" type="curve" smooth="yes"/>
+      <point x="56" y="1231"/>
+      <point x="13" y="1193"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2021/07/09 03:44:18</string>
+    </dict>
+  </lib>
+</glyph>

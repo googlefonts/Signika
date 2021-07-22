@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="ico.squarearrowdown" format="2">
+  <advance width="1940"/>
+  <unicode hex="E019"/>
+  <outline>
+    <contour>
+      <point x="962" y="386" type="line"/>
+      <point x="979" y="386" type="line"/>
+      <point x="1349" y="770" type="line"/>
+      <point x="1316" y="824"/>
+      <point x="1254" y="884"/>
+      <point x="1199" y="917" type="curve"/>
+      <point x="1049" y="755" type="line" smooth="yes"/>
+      <point x="1016" y="720"/>
+      <point x="990" y="693"/>
+      <point x="961" y="659" type="curve"/>
+      <point x="980" y="659" type="line"/>
+      <point x="950" y="693"/>
+      <point x="924" y="721"/>
+      <point x="892" y="755" type="curve" smooth="yes"/>
+      <point x="741" y="917" type="line"/>
+      <point x="687" y="884"/>
+      <point x="624" y="824"/>
+      <point x="591" y="770" type="curve"/>
+    </contour>
+    <component base="ico.square"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2021/07/09 03:44:18</string>
+      <key>public.markColor</key>
+      <string>0.18,0.16,0.78,1</string>
+    </dict>
+  </lib>
+</glyph>

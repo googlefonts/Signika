@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="naira" format="2">
+  <advance width="1080"/>
+  <unicode hex="20A6"/>
+  <guideline x="450" y="1304" angle="158.76054499999998"/>
+  <guideline x="689" y="1143" angle="270.0"/>
+  <guideline x="393" y="202" angle="90.0"/>
+  <guideline x="625" y="0" angle="338.38635500000004"/>
+  <outline>
+    <contour>
+      <point x="289" y="-10" type="curve" smooth="yes"/>
+      <point x="327" y="-10"/>
+      <point x="361" y="-7"/>
+      <point x="391" y="0" type="curve"/>
+      <point x="391" y="403" type="line" smooth="yes"/>
+      <point x="391" y="559"/>
+      <point x="387" y="709"/>
+      <point x="378" y="897" type="curve"/>
+      <point x="394" y="900" type="line"/>
+      <point x="452" y="1270" type="line"/>
+      <point x="413" y="1278"/>
+      <point x="367" y="1280"/>
+      <point x="318" y="1280" type="curve" smooth="yes"/>
+      <point x="270" y="1280"/>
+      <point x="223" y="1275"/>
+      <point x="187" y="1266" type="curve"/>
+      <point x="187" y="0" type="line"/>
+      <point x="216" y="-7"/>
+      <point x="257" y="-10"/>
+    </contour>
+    <contour>
+      <point x="760" y="-10" type="curve" smooth="yes"/>
+      <point x="804" y="-10"/>
+      <point x="857" y="-5"/>
+      <point x="893" y="4" type="curve"/>
+      <point x="893" y="1270" type="line"/>
+      <point x="883" y="1282" type="line"/>
+      <point x="810" y="1282" type="line" smooth="yes"/>
+      <point x="714" y="1282"/>
+      <point x="692" y="1226"/>
+      <point x="692" y="1143" type="curve" smooth="yes"/>
+      <point x="692" y="822" type="line" smooth="yes"/>
+      <point x="692" y="710"/>
+      <point x="697" y="529"/>
+      <point x="706" y="349" type="curve"/>
+      <point x="689" y="346" type="line"/>
+      <point x="627" y="0" type="line"/>
+      <point x="667" y="-8"/>
+      <point x="715" y="-10"/>
+    </contour>
+    <contour>
+      <point x="627" y="0" type="line"/>
+      <point x="846" y="41" type="line"/>
+      <point x="699" y="347" type="line"/>
+      <point x="677" y="458"/>
+      <point x="649" y="568"/>
+      <point x="627" y="653" type="curve" smooth="yes"/>
+      <point x="452" y="1270" type="line"/>
+      <point x="232" y="1233" type="line"/>
+      <point x="385" y="898" type="line"/>
+      <point x="407" y="795"/>
+      <point x="427" y="711"/>
+      <point x="452" y="619" type="curve" smooth="yes"/>
+    </contour>
+    <contour>
+      <point x="49" y="387" type="curve"/>
+      <point x="273" y="387" type="line"/>
+      <point x="273" y="562" type="line"/>
+      <point x="49" y="562" type="line"/>
+      <point x="42" y="539"/>
+      <point x="39" y="505"/>
+      <point x="39" y="475" type="curve" smooth="yes"/>
+      <point x="39" y="442"/>
+      <point x="42" y="411"/>
+    </contour>
+    <contour>
+      <point x="49" y="701" type="curve"/>
+      <point x="273" y="701" type="line"/>
+      <point x="273" y="876" type="line"/>
+      <point x="49" y="876" type="line"/>
+      <point x="42" y="852"/>
+      <point x="39" y="821"/>
+      <point x="39" y="789" type="curve" smooth="yes"/>
+      <point x="39" y="758"/>
+      <point x="42" y="724"/>
+    </contour>
+    <contour>
+      <point x="815" y="387" type="line"/>
+      <point x="1031" y="387" type="line"/>
+      <point x="1038" y="411"/>
+      <point x="1041" y="444"/>
+      <point x="1041" y="475" type="curve" smooth="yes"/>
+      <point x="1041" y="508"/>
+      <point x="1038" y="539"/>
+      <point x="1031" y="562" type="curve"/>
+      <point x="815" y="562" type="line"/>
+    </contour>
+    <contour>
+      <point x="815" y="701" type="line"/>
+      <point x="1031" y="701" type="line"/>
+      <point x="1038" y="724"/>
+      <point x="1041" y="759"/>
+      <point x="1041" y="789" type="curve" smooth="yes"/>
+      <point x="1041" y="821"/>
+      <point x="1038" y="853"/>
+      <point x="1031" y="876" type="curve"/>
+      <point x="815" y="876" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>RMXScaler</key>
+      <dict>
+        <key>height</key>
+        <integer>93</integer>
+      </dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2021/07/09 03:44:18</string>
+    </dict>
+  </lib>
+</glyph>

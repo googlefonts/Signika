@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="l" format="2">
+  <advance width="602"/>
+  <unicode hex="006C"/>
+  <anchor x="346" y="0" name="bottom"/>
+  <anchor x="602" y="786" name="periodcentered"/>
+  <anchor x="253" y="1551" name="top"/>
+  <anchor x="381" y="992" name="topright"/>
+  <outline>
+    <contour>
+      <point x="530" y="183" type="curve"/>
+      <point x="463" y="183" type="line"/>
+      <point x="406" y="183"/>
+      <point x="381" y="214"/>
+      <point x="381" y="274" type="curve" smooth="yes"/>
+      <point x="381" y="1317" type="line" smooth="yes"/>
+      <point x="381" y="1428"/>
+      <point x="348" y="1471"/>
+      <point x="247" y="1471" type="curve" smooth="yes"/>
+      <point x="152" y="1471" type="line"/>
+      <point x="139" y="1458" type="line"/>
+      <point x="139" y="225" type="line" smooth="yes"/>
+      <point x="139" y="66"/>
+      <point x="207" y="-9"/>
+      <point x="356" y="-9" type="curve" smooth="yes"/>
+      <point x="419" y="-9"/>
+      <point x="492" y="-1"/>
+      <point x="544" y="7" type="curve"/>
+      <point x="549" y="24"/>
+      <point x="550" y="44"/>
+      <point x="550" y="62" type="curve" smooth="yes"/>
+      <point x="550" y="104"/>
+      <point x="542" y="148"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2021/07/09 03:44:18</string>
+    </dict>
+  </lib>
+</glyph>

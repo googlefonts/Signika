@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="germandbls" format="2">
+  <advance width="1322"/>
+  <unicode hex="00DF"/>
+  <outline>
+    <contour>
+      <point x="348" y="954" type="line"/>
+      <point x="16" y="958" type="line"/>
+      <point x="8" y="922"/>
+      <point x="4" y="872"/>
+      <point x="4" y="836" type="curve" smooth="yes"/>
+      <point x="4" y="800"/>
+      <point x="8" y="746"/>
+      <point x="16" y="710" type="curve"/>
+      <point x="348" y="716" type="line"/>
+    </contour>
+    <contour>
+      <point x="188" y="996" type="curve" smooth="yes"/>
+      <point x="188" y="0" type="line"/>
+      <point x="238" y="-8"/>
+      <point x="302" y="-12"/>
+      <point x="354" y="-12" type="curve" smooth="yes"/>
+      <point x="408" y="-12"/>
+      <point x="472" y="-8"/>
+      <point x="522" y="0" type="curve"/>
+      <point x="522" y="962" type="line" smooth="yes"/>
+      <point x="522" y="1078"/>
+      <point x="566" y="1150"/>
+      <point x="678" y="1150" type="curve" smooth="yes"/>
+      <point x="786" y="1150"/>
+      <point x="844" y="1068"/>
+      <point x="844" y="978" type="curve" smooth="yes"/>
+      <point x="844" y="912"/>
+      <point x="826" y="848"/>
+      <point x="796" y="802" type="curve"/>
+      <point x="1144" y="826" type="line"/>
+      <point x="1166" y="876"/>
+      <point x="1178" y="930"/>
+      <point x="1178" y="980" type="curve" smooth="yes"/>
+      <point x="1178" y="1238"/>
+      <point x="976" y="1400"/>
+      <point x="676" y="1400" type="curve" smooth="yes"/>
+      <point x="382" y="1400"/>
+      <point x="188" y="1264"/>
+    </contour>
+    <contour>
+      <point x="600" y="38" type="curve"/>
+      <point x="682" y="-9"/>
+      <point x="791" y="-30"/>
+      <point x="882" y="-30" type="curve" smooth="yes"/>
+      <point x="1106" y="-30"/>
+      <point x="1276" y="80"/>
+      <point x="1276" y="294" type="curve" smooth="yes"/>
+      <point x="1276" y="382"/>
+      <point x="1228" y="474"/>
+      <point x="1136" y="566" type="curve" smooth="yes"/>
+      <point x="1060" y="642" type="line" smooth="yes"/>
+      <point x="1034" y="668"/>
+      <point x="1022" y="690"/>
+      <point x="1022" y="714" type="curve" smooth="yes"/>
+      <point x="1022" y="754"/>
+      <point x="1060" y="808"/>
+      <point x="1144" y="826" type="curve"/>
+      <point x="862" y="938" type="line"/>
+      <point x="738" y="888"/>
+      <point x="672" y="778"/>
+      <point x="672" y="692" type="curve" smooth="yes"/>
+      <point x="672" y="608"/>
+      <point x="716" y="542"/>
+      <point x="794" y="468" type="curve" smooth="yes"/>
+      <point x="876" y="392" type="line" smooth="yes"/>
+      <point x="914" y="356"/>
+      <point x="932" y="326"/>
+      <point x="932" y="292" type="curve" smooth="yes"/>
+      <point x="932" y="242"/>
+      <point x="890" y="214"/>
+      <point x="830" y="214" type="curve" smooth="yes"/>
+      <point x="794" y="214"/>
+      <point x="736" y="227"/>
+      <point x="686" y="262" type="curve"/>
+      <point x="638" y="212"/>
+      <point x="602" y="108"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2021/07/09 03:44:18</string>
+    </dict>
+  </lib>
+</glyph>

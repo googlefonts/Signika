@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="ico.magnifier" format="2">
+  <advance width="1940"/>
+  <unicode hex="E065"/>
+  <guideline x="1343" y="313" angle="135.0"/>
+  <outline>
+    <contour>
+      <point x="853" y="267" type="curve" smooth="yes"/>
+      <point x="1180" y="267"/>
+      <point x="1430" y="511"/>
+      <point x="1430" y="840" type="curve" smooth="yes"/>
+      <point x="1430" y="1169"/>
+      <point x="1180" y="1413"/>
+      <point x="853" y="1413" type="curve" smooth="yes"/>
+      <point x="526" y="1413"/>
+      <point x="276" y="1169"/>
+      <point x="276" y="840" type="curve" smooth="yes"/>
+      <point x="276" y="511"/>
+      <point x="526" y="267"/>
+    </contour>
+    <contour>
+      <point x="853" y="470" type="curve" smooth="yes"/>
+      <point x="645" y="470"/>
+      <point x="498" y="627"/>
+      <point x="498" y="840" type="curve" smooth="yes"/>
+      <point x="498" y="1052"/>
+      <point x="645" y="1210"/>
+      <point x="853" y="1210" type="curve" smooth="yes"/>
+      <point x="1061" y="1210"/>
+      <point x="1208" y="1052"/>
+      <point x="1208" y="840" type="curve" smooth="yes"/>
+      <point x="1208" y="627"/>
+      <point x="1061" y="470"/>
+    </contour>
+    <contour>
+      <point x="1589" y="-40" type="line"/>
+      <point x="1615" y="-23"/>
+      <point x="1640" y="-3"/>
+      <point x="1671" y="29" type="curve" smooth="yes"/>
+      <point x="1702" y="59"/>
+      <point x="1723" y="86"/>
+      <point x="1740" y="111" type="curve"/>
+      <point x="1264" y="587" type="line"/>
+      <point x="1113" y="436" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2021/07/09 03:44:18</string>
+    </dict>
+  </lib>
+</glyph>

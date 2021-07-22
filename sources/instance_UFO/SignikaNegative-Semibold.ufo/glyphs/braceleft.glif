@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="braceleft" format="2">
+  <advance width="733"/>
+  <unicode hex="007B"/>
+  <outline>
+    <contour>
+      <point x="87" y="633" type="curve"/>
+      <point x="71" y="594"/>
+      <point x="71" y="512"/>
+      <point x="87" y="472" type="curve"/>
+      <point x="182" y="448"/>
+      <point x="252" y="356"/>
+      <point x="252" y="244" type="curve" smooth="yes"/>
+      <point x="252" y="-90" type="line" smooth="yes"/>
+      <point x="252" y="-288"/>
+      <point x="379" y="-399"/>
+      <point x="552" y="-428" type="curve" smooth="yes"/>
+      <point x="666" y="-446" type="line"/>
+      <point x="700" y="-409"/>
+      <point x="722" y="-324"/>
+      <point x="712" y="-281" type="curve"/>
+      <point x="604" y="-246" type="line" smooth="yes"/>
+      <point x="544" y="-227"/>
+      <point x="503" y="-173"/>
+      <point x="503" y="-88" type="curve" smooth="yes"/>
+      <point x="503" y="240" type="line" smooth="yes"/>
+      <point x="503" y="370"/>
+      <point x="436" y="498"/>
+      <point x="332" y="545" type="curve"/>
+      <point x="332" y="561" type="line"/>
+      <point x="436" y="607"/>
+      <point x="503" y="735"/>
+      <point x="503" y="866" type="curve" smooth="yes"/>
+      <point x="503" y="1192" type="line" smooth="yes"/>
+      <point x="503" y="1277"/>
+      <point x="544" y="1331"/>
+      <point x="604" y="1350" type="curve" smooth="yes"/>
+      <point x="712" y="1385" type="line"/>
+      <point x="722" y="1428"/>
+      <point x="700" y="1514"/>
+      <point x="666" y="1551" type="curve"/>
+      <point x="552" y="1532" type="line" smooth="yes"/>
+      <point x="379" y="1504"/>
+      <point x="252" y="1392"/>
+      <point x="252" y="1194" type="curve" smooth="yes"/>
+      <point x="252" y="862" type="line" smooth="yes"/>
+      <point x="252" y="749"/>
+      <point x="182" y="657"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2021/07/09 03:44:18</string>
+    </dict>
+  </lib>
+</glyph>

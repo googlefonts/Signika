@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="primemod" format="2">
+  <advance width="514"/>
+  <unicode hex="02B9"/>
+  <outline>
+    <contour>
+      <point x="204" y="861" type="curve"/>
+      <point x="519" y="1422" type="line"/>
+      <point x="462" y="1477"/>
+      <point x="361" y="1508"/>
+      <point x="274" y="1504" type="curve"/>
+      <point x="65" y="928" type="line"/>
+      <point x="93" y="890"/>
+      <point x="158" y="864"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2021/07/09 03:44:18</string>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="tcaron" format="2">
+  <advance width="670"/>
+  <unicode hex="0165"/>
+  <outline>
+    <contour>
+      <point x="506" y="1534" type="curve"/>
+      <point x="480" y="1132" type="line"/>
+      <point x="492" y="1125"/>
+      <point x="512" y="1119"/>
+      <point x="532" y="1119" type="curve" smooth="yes"/>
+      <point x="544" y="1119"/>
+      <point x="557" y="1121"/>
+      <point x="568" y="1126" type="curve"/>
+      <point x="654" y="1512" type="line"/>
+      <point x="625" y="1530"/>
+      <point x="581" y="1536"/>
+      <point x="544" y="1536" type="curve" smooth="yes"/>
+      <point x="530" y="1536"/>
+      <point x="517" y="1536"/>
+    </contour>
+    <component base="t"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2021/07/09 03:44:18</string>
+      <key>public.markColor</key>
+      <string>0.98,0.36,0.67,1</string>
+    </dict>
+  </lib>
+</glyph>

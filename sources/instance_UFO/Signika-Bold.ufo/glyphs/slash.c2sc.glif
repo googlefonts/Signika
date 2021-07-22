@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="slash.c2sc" format="2">
+  <advance width="803"/>
+  <guideline x="267" y="599" angle="249.42573199999998"/>
+  <outline>
+    <contour>
+      <point x="526" y="1290" type="curve"/>
+      <point x="11" y="-84" type="line"/>
+      <point x="87" y="-144"/>
+      <point x="185" y="-174"/>
+      <point x="276" y="-185" type="curve"/>
+      <point x="792" y="1188" type="line"/>
+      <point x="716" y="1248"/>
+      <point x="618" y="1278"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2021/07/09 03:44:18</string>
+      <key>public.markColor</key>
+      <string>0.97,1,0,1</string>
+    </dict>
+  </lib>
+</glyph>

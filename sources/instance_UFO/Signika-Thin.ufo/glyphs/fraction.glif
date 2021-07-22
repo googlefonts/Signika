@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="fraction" format="2">
+  <advance width="317"/>
+  <unicode hex="2044"/>
+  <outline>
+    <contour>
+      <point x="437" y="1266" type="curve"/>
+      <point x="-260" y="0" type="line"/>
+      <point x="-230" y="-14"/>
+      <point x="-150" y="-14"/>
+      <point x="-120" y="0" type="curve"/>
+      <point x="577" y="1266" type="line"/>
+      <point x="547" y="1280"/>
+      <point x="467" y="1280"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2021/07/09 03:44:18</string>
+    </dict>
+  </lib>
+</glyph>

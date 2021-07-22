@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="dieresisbelowcomb.case" format="2">
+  <anchor x="0" y="0" name="_bottom"/>
+  <anchor x="0" y="-467" name="bottom"/>
+  <outline>
+    <contour>
+      <point x="-232" y="-118" type="curve" smooth="yes"/>
+      <point x="-276" y="-118"/>
+      <point x="-328" y="-130"/>
+      <point x="-362" y="-151" type="curve"/>
+      <point x="-375" y="-183"/>
+      <point x="-380" y="-227"/>
+      <point x="-380" y="-253" type="curve" smooth="yes"/>
+      <point x="-380" y="-280"/>
+      <point x="-375" y="-323"/>
+      <point x="-362" y="-355" type="curve"/>
+      <point x="-328" y="-376"/>
+      <point x="-276" y="-388"/>
+      <point x="-232" y="-388" type="curve" smooth="yes"/>
+      <point x="-187" y="-388"/>
+      <point x="-136" y="-376"/>
+      <point x="-101" y="-355" type="curve"/>
+      <point x="-88" y="-323"/>
+      <point x="-84" y="-280"/>
+      <point x="-84" y="-253" type="curve" smooth="yes"/>
+      <point x="-84" y="-227"/>
+      <point x="-88" y="-183"/>
+      <point x="-101" y="-151" type="curve"/>
+      <point x="-136" y="-130"/>
+      <point x="-187" y="-118"/>
+    </contour>
+    <contour>
+      <point x="228" y="-118" type="curve" smooth="yes"/>
+      <point x="184" y="-118"/>
+      <point x="132" y="-130"/>
+      <point x="98" y="-151" type="curve"/>
+      <point x="85" y="-183"/>
+      <point x="80" y="-227"/>
+      <point x="80" y="-253" type="curve" smooth="yes"/>
+      <point x="80" y="-280"/>
+      <point x="85" y="-323"/>
+      <point x="98" y="-355" type="curve"/>
+      <point x="132" y="-376"/>
+      <point x="184" y="-388"/>
+      <point x="228" y="-388" type="curve" smooth="yes"/>
+      <point x="273" y="-388"/>
+      <point x="324" y="-376"/>
+      <point x="359" y="-355" type="curve"/>
+      <point x="372" y="-323"/>
+      <point x="377" y="-280"/>
+      <point x="377" y="-253" type="curve" smooth="yes"/>
+      <point x="377" y="-227"/>
+      <point x="372" y="-183"/>
+      <point x="359" y="-151" type="curve"/>
+      <point x="324" y="-130"/>
+      <point x="273" y="-118"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2021/07/09 03:44:18</string>
+    </dict>
+  </lib>
+</glyph>

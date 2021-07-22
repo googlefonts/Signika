@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>ascender</key>
+    <integer>1500</integer>
+    <key>capHeight</key>
+    <integer>1370</integer>
+    <key>copyright</key>
+    <string>Copyright 2018 The Signika Project Authors (https://github.com/googlefonts/Signika).</string>
+    <key>descender</key>
+    <integer>-500</integer>
+    <key>familyName</key>
+    <string>Signika</string>
+    <key>italicAngle</key>
+    <integer>0</integer>
+    <key>openTypeHeadCreated</key>
+    <string>2020/05/07 12:35:45</string>
+    <key>openTypeHheaAscender</key>
+    <integer>1880</integer>
+    <key>openTypeHheaDescender</key>
+    <integer>-584</integer>
+    <key>openTypeHheaLineGap</key>
+    <integer>0</integer>
+    <key>openTypeNameDesigner</key>
+    <string>Anna Giedryś</string>
+    <key>openTypeNameDesignerURL</key>
+    <string>www.ancymonic.com</string>
+    <key>openTypeNameLicense</key>
+    <string>This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL</string>
+    <key>openTypeNameLicenseURL</key>
+    <string>https://scripts.sil.org/OFL</string>
+    <key>openTypeNameManufacturer</key>
+    <string>Anna Giedryś</string>
+    <key>openTypeNameManufacturerURL</key>
+    <string>www.ancymonic.com</string>
+    <key>openTypeOS2Selection</key>
+    <array>
+      <integer>7</integer>
+    </array>
+    <key>openTypeOS2Type</key>
+    <array/>
+    <key>openTypeOS2TypoAscender</key>
+    <integer>1880</integer>
+    <key>openTypeOS2TypoDescender</key>
+    <integer>-584</integer>
+    <key>openTypeOS2TypoLineGap</key>
+    <integer>0</integer>
+    <key>openTypeOS2VendorID</key>
+    <string>GOOG</string>
+    <key>openTypeOS2WeightClass</key>
+    <integer>627</integer>
+    <key>openTypeOS2WinAscent</key>
+    <integer>2307</integer>
+    <key>openTypeOS2WinDescent</key>
+    <integer>592</integer>
+    <key>postscriptBlueValues</key>
+    <array>
+      <integer>-448</integer>
+      <integer>-418</integer>
+      <integer>-28</integer>
+      <integer>15</integer>
+      <integer>991</integer>
+      <integer>1021</integer>
+      <integer>1097</integer>
+      <integer>1125</integer>
+      <integer>1266</integer>
+      <integer>1294</integer>
+      <integer>1366</integer>
+      <integer>1399</integer>
+      <integer>1458</integer>
+      <integer>1488</integer>
+    </array>
+    <key>postscriptStemSnapH</key>
+    <array>
+      <integer>227</integer>
+      <integer>197</integer>
+      <integer>183</integer>
+    </array>
+    <key>postscriptStemSnapV</key>
+    <array>
+      <integer>272</integer>
+      <integer>269</integer>
+      <integer>256</integer>
+    </array>
+    <key>postscriptUnderlinePosition</key>
+    <integer>-100</integer>
+    <key>postscriptUnderlineThickness</key>
+    <integer>50</integer>
+    <key>styleName</key>
+    <string>Semibold</string>
+    <key>trademark</key>
+    <string>Signika is a trademark of Anna Giedryś.</string>
+    <key>unitsPerEm</key>
+    <integer>2000</integer>
+    <key>versionMajor</key>
+    <integer>2</integer>
+    <key>versionMinor</key>
+    <integer>1</integer>
+    <key>xHeight</key>
+    <integer>993</integer>
+  </dict>
+</plist>
