@@ -33,7 +33,8 @@ To operate the scripts within this repo, install requirements with:
 pip install -r requirements.txt
 ```
 
-You will also need to download this build of [TTFautohint-vf](https://groups.google.com/forum/#!searchin/googlefonts-discuss/ttfautohint%7Csort:date/googlefonts-discuss/WJX1lrzcwVs/SIzaEvntAgAJ), and place the file directly into the new `venv/bin` within this project.
+*Note 12.06.2020: Currently ttfautohint-vf is not used*
+The `sources/scripts/helpers` contains a copy of [TTFautohint-vf](https://groups.google.com/forum/#!searchin/googlefonts-discuss/ttfautohint%7Csort:date/googlefonts-discuss/WJX1lrzcwVs/SIzaEvntAgAJ).
 
 To exit out of the virtual environment, you can use the command `deactivate` (just remember to start it up again if you come back).
 
@@ -56,13 +57,7 @@ You can then build sources by running shell scripts in `sources/scripts/`.
 Build the full variable font (Weight + "Negative" axes) with:
 
 ```
-sources/scripts/build.sh -f
-```
-
-Build the split variable font with just the Weight axis for both the normal and Negative families:
-
-```
-sources/scripts/build.sh -n
+sources/scripts/build.sh -vf
 ```
 
 Build all static instances with:
@@ -94,8 +89,10 @@ Notes were taken throughout the variable font upgrade project and added to the [
 
 If you have any questions about the project or the notes, feel free to [file an issue](/issues) or to reach out to Stephen Nixon via Twitter ([@thundernixon](https://twitter.com/thundernixon)) or other social media (typically also @thundernixon).
 
+Further updates to the production code were undertaken in a 2020 refactor and extension of the font family by [Johannes Neumeier](https://github.com/kontur) — feel free to be in touch. Some of those changes superseed or replace parts of Stephen's original notes and code.
+
 </details>
 
 ---
 
-![](docs/08-specimen/charset-tall-alt_title.png)
+![](docs/10-PDF-specimens/Signika_strip_specimen.png)
