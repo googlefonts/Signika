@@ -1,6 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <designspace format="4.1">
   <axes>
+    <axis tag="NEGA" name="Negative" minimum="0" maximum="1" default="0">
+      <map input="0" output="0"/>
+      <map input="1" output="1"/>
+    </axis>
     <axis tag="wght" name="Weight" minimum="300" maximum="700" default="300">
       <map input="300" output="50"/>
       <map input="400" output="360"/>
@@ -16,11 +20,25 @@
       <features copy="1"/>
       <info copy="1"/>
       <location>
+        <dimension name="Negative" xvalue="0"/>
         <dimension name="Weight" xvalue="50"/>
       </location>
     </source>
     <source filename="instance_UFO/Signika-Bold.ufo" name="Signika Bold" familyname="Signika" stylename="Bold">
       <location>
+        <dimension name="Negative" xvalue="0"/>
+        <dimension name="Weight" xvalue="920"/>
+      </location>
+    </source>
+    <source filename="instance_UFO/SignikaNegative-Light.ufo" name="Signika Negative Light" familyname="Signika" stylename="Light">
+      <location>
+        <dimension name="Negative" xvalue="1"/>
+        <dimension name="Weight" xvalue="50"/>
+      </location>
+    </source>
+    <source filename="instance_UFO/SignikaNegative-Bold.ufo" name="Signika Negative Bold" familyname="Signika" stylename="Bold">
+      <location>
+        <dimension name="Negative" xvalue="1"/>
         <dimension name="Weight" xvalue="920"/>
       </location>
     </source>
@@ -28,6 +46,7 @@
   <instances>
     <instance name="Signika Light" familyname="Signika" stylename="Light" filename="instance_ufos/Signika-Light.ufo">
       <location>
+        <dimension name="Negative" xvalue="0"/>
         <dimension name="Weight" xvalue="50"/>
       </location>
       <kerning/>
@@ -35,6 +54,7 @@
     </instance>
     <instance name="Signika Regular" familyname="Signika" stylename="Regular" filename="instance_ufos/Signika-Regular.ufo">
       <location>
+        <dimension name="Negative" xvalue="0"/>
         <dimension name="Weight" xvalue="360"/>
       </location>
       <kerning/>
@@ -42,6 +62,7 @@
     </instance>
     <instance name="Signika Medium" familyname="Signika" stylename="Medium" filename="instance_ufos/Signika-Medium.ufo">
       <location>
+        <dimension name="Negative" xvalue="0"/>
         <dimension name="Weight" xvalue="470"/>
       </location>
       <kerning/>
@@ -49,6 +70,7 @@
     </instance>
     <instance name="Signika SemiBold" familyname="Signika" stylename="SemiBold" filename="instance_ufos/Signika-SemiBold.ufo">
       <location>
+        <dimension name="Negative" xvalue="0"/>
         <dimension name="Weight" xvalue="650"/>
       </location>
       <kerning/>
@@ -56,6 +78,7 @@
     </instance>
     <instance name="Signika Bold" familyname="Signika" stylename="Bold" filename="instance_ufos/Signika-Bold.ufo">
       <location>
+        <dimension name="Negative" xvalue="0"/>
         <dimension name="Weight" xvalue="920"/>
       </location>
       <kerning/>

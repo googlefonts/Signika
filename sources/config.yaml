@@ -3,29 +3,3 @@ sources:
 axisOrder:
   - wght
 familyName: "Signika"
-stat:
-    Signika[NEGA,wght].ttf:
-    - name: Negative
-      tag: NEGA
-      values:
-      - name: Normal
-        value: 0
-        linkedValue: 1
-        flags: 2
-      - name: Negative
-        value: 1
-    - name: Weight
-      tag: wght
-      values:
-      - name: Light
-        value: 300
-      - name: Regular
-        value: 400
-        linkedValue: 700
-        flags: 2
-      - name: Medium
-        value: 500
-      - name: SemiBold
-        value: 600
-      - name: Bold
-        value: 700
