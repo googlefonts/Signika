@@ -68,6 +68,15 @@
       <array>
         <string>germandbls.smcp.alt1</string>
       </array>
+      <key>com.github.googlei18n.ufo2ft.filters</key>
+      <array>
+        <dict>
+          <key>name</key>
+          <string>propagateAnchors</string>
+          <key>pre</key>
+          <integer>1</integer>
+        </dict>
+      </array>
     </dict>
   </lib>
 </designspace>
