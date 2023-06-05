@@ -302492,6 +302492,18 @@ name = Regular;
 },
 {
 axesValues = (
+470,
+0
+);
+instanceInterpolations = {
+"33C6340C-19D4-4BAD-95FA-1AE5BEBDD22C" = 0.48276;
+"E2DCCAAC-30DB-413E-982C-2359C46E476F" = 0.51724;
+};
+name = Medium;
+weightClass = 500;
+},
+{
+axesValues = (
 650,
 0
 );
@@ -302557,6 +302569,18 @@ value = "Signika Negative";
 );
 }
 );
+},
+{
+axesValues = (
+470,
+1000
+);
+instanceInterpolations = {
+"11405D41-D873-4173-B059-BD48D7789B90" = 0.51724;
+"E2DCE989-2657-47EA-91FE-B2106D1F3005" = 0.48276;
+};
+name = Medium;
+weightClass = 500;
 },
 {
 axesValues = (

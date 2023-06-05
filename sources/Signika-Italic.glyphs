@@ -46477,6 +46477,21 @@ name = Italic;
 },
 {
 axesValues = (
+470,
+100,
+0
+);
+instanceInterpolations = {
+"60A08B03-D3FB-4CD5-9797-EA57F0A37C3C" = 0.51724;
+"6BF21B58-DCB1-4E7D-A305-B9EC5092F295" = 0.48276;
+};
+isItalic = 1;
+linkStyle = Medium;
+name = "Medium Italic";
+weightClass = 500;
+},
+{
+axesValues = (
 650,
 100,
 0
@@ -46508,14 +46523,14 @@ weightClass = 700;
 {
 axesValues = (
 50,
-0,
+100,
 1000
 );
 instanceInterpolations = {
-"62135F79-58D5-4DC2-8CB3-F8AE7229E95A" = 1;
+"60A08B03-D3FB-4CD5-9797-EA57F0A37C3C" = 1;
 };
 isItalic = 1;
-linkStyle = Light;
+linkStyle = "Negative Light";
 name = "Light Italic";
 properties = (
 {
@@ -46533,14 +46548,15 @@ weightClass = 300;
 {
 axesValues = (
 360,
-0,
+100,
 1000
 );
 instanceInterpolations = {
-"62135F79-58D5-4DC2-8CB3-F8AE7229E95A" = 0.64368;
-"E595FEC6-42D0-4CBC-9ED1-F9D07DC361C2" = 0.35632;
+"60A08B03-D3FB-4CD5-9797-EA57F0A37C3C" = 0.64368;
+"6BF21B58-DCB1-4E7D-A305-B9EC5092F295" = 0.35632;
 };
 isItalic = 1;
+linkStyle = "Negative Italic";
 name = Italic;
 properties = (
 {
@@ -46556,16 +46572,31 @@ value = "Signika Negative";
 },
 {
 axesValues = (
-650,
-0,
+470,
+100,
 1000
 );
 instanceInterpolations = {
-"62135F79-58D5-4DC2-8CB3-F8AE7229E95A" = 0.31034;
-"E595FEC6-42D0-4CBC-9ED1-F9D07DC361C2" = 0.68966;
+"60A08B03-D3FB-4CD5-9797-EA57F0A37C3C" = 0.51724;
+"6BF21B58-DCB1-4E7D-A305-B9EC5092F295" = 0.48276;
 };
 isItalic = 1;
-linkStyle = SemiBold;
+linkStyle = "Negative Medium";
+name = "Signika Negative Medium Italic";
+weightClass = 500;
+},
+{
+axesValues = (
+650,
+100,
+1000
+);
+instanceInterpolations = {
+"60A08B03-D3FB-4CD5-9797-EA57F0A37C3C" = 0.31034;
+"6BF21B58-DCB1-4E7D-A305-B9EC5092F295" = 0.68966;
+};
+isItalic = 1;
+linkStyle = "Negative SemiBold";
 name = "SemiBold Italic";
 properties = (
 {
@@ -46583,15 +46614,15 @@ weightClass = 600;
 {
 axesValues = (
 920,
-0,
+100,
 1000
 );
 instanceInterpolations = {
-"E595FEC6-42D0-4CBC-9ED1-F9D07DC361C2" = 1;
+"6BF21B58-DCB1-4E7D-A305-B9EC5092F295" = 1;
 };
 isBold = 1;
 isItalic = 1;
-linkStyle = Regular;
+linkStyle = "Negative Regular";
 name = "Bold Italic";
 properties = (
 {
