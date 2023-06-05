@@ -17,7 +17,7 @@ venv: venv/touchfile
 
 build.stamp: venv
 	# . venv/bin/activate; python sources/preprocess.py; gftools builder sources/config.yaml; gftools builder sources/configNegative.yaml && touch build.stamp
-	. venv/bin/activate; python sources/preprocess.py; gftools builder sources/config.yaml && touch build.stamp
+	. venv/bin/activate; python sources/preprocess.py; gftools builder sources/config.yaml --no-clean-up && touch build.stamp
 
 venv/touchfile: requirements.txt
 	test -d venv || python3 -m venv venv

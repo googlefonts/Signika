@@ -1675,7 +1675,7 @@ over = 28;
 pos = -426;
 }
 );
-name = "Light Italic 50";
+name = "Light Italic";
 stemValues = (
 136,
 131,
@@ -1802,7 +1802,7 @@ over = 2;
 pos = -36;
 }
 );
-name = "Bold Italic 920";
+name = "Bold Italic";
 stemValues = (
 268,
 249,
