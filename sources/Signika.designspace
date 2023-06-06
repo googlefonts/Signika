@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<designspace format="4.1">
+<designspace format="5.0">
   <axes>
     <axis tag="wght" name="Weight" minimum="300" maximum="700" default="300">
       <map input="300" output="50"/>
@@ -8,20 +8,35 @@
       <map input="600" output="650"/>
       <map input="700" output="920"/>
     </axis>
+    <axis tag="GRAD" name="GRAD" minimum="0" maximum="1000" default="0"/>
   </axes>
   <sources>
-    <source filename="instance_UFO/Signika-Light.ufo" name="Signika Light" familyname="Signika" stylename="Light">
+    <source filename="instance_ufos/Signika-Light.ufo" name="Signika Light" familyname="Signika" stylename="Light">
       <lib copy="1"/>
       <groups copy="1"/>
       <features copy="1"/>
       <info copy="1"/>
       <location>
         <dimension name="Weight" xvalue="50"/>
+        <dimension name="GRAD" xvalue="0"/>
       </location>
     </source>
-    <source filename="instance_UFO/Signika-Bold.ufo" name="Signika Bold" familyname="Signika" stylename="Bold">
+    <source filename="instance_ufos/Signika-Bold.ufo" name="Signika Bold" familyname="Signika" stylename="Bold">
       <location>
         <dimension name="Weight" xvalue="920"/>
+        <dimension name="GRAD" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="instance_ufos/SignikaNegative-Light.ufo" name="Signika Negative Light" familyname="Signika" stylename="Negative Light">
+      <location>
+        <dimension name="Weight" xvalue="50"/>
+        <dimension name="GRAD" xvalue="1000"/>
+      </location>
+    </source>
+    <source filename="instance_ufos/SignikaNegative-Bold.ufo" name="Signika Negative Bold" familyname="Signika" stylename="Negative Bold">
+      <location>
+        <dimension name="Weight" xvalue="920"/>
+        <dimension name="GRAD" xvalue="1000"/>
       </location>
     </source>
   </sources>
@@ -29,54 +44,244 @@
     <instance name="Signika Light" familyname="Signika" stylename="Light" filename="instance_ufos/Signika-Light.ufo">
       <location>
         <dimension name="Weight" xvalue="50"/>
+        <dimension name="GRAD" xvalue="0"/>
       </location>
-      <kerning/>
-      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.export</key>
+          <true/>
+          <key>com.schriftgestaltung.intanceInterpolations</key>
+          <dict>
+            <key>E2DCCAAC-30DB-413E-982C-2359C46E476F</key>
+            <integer>1</integer>
+          </dict>
+          <key>com.schriftgestaltung.manualInterpolation</key>
+          <false/>
+          <key>com.schriftgestaltung.weight</key>
+          <integer>300</integer>
+          <key>com.schriftgestaltung.width</key>
+          <string>Medium (normal)</string>
+        </dict>
+      </lib>
     </instance>
     <instance name="Signika Regular" familyname="Signika" stylename="Regular" filename="instance_ufos/Signika-Regular.ufo">
       <location>
         <dimension name="Weight" xvalue="360"/>
+        <dimension name="GRAD" xvalue="0"/>
       </location>
-      <kerning/>
-      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.export</key>
+          <true/>
+          <key>com.schriftgestaltung.intanceInterpolations</key>
+          <dict>
+            <key>33C6340C-19D4-4BAD-95FA-1AE5BEBDD22C</key>
+            <real>0.35632</real>
+            <key>E2DCCAAC-30DB-413E-982C-2359C46E476F</key>
+            <real>0.64368</real>
+          </dict>
+          <key>com.schriftgestaltung.manualInterpolation</key>
+          <false/>
+          <key>com.schriftgestaltung.weight</key>
+          <string>Regular</string>
+          <key>com.schriftgestaltung.width</key>
+          <string>Medium (normal)</string>
+        </dict>
+      </lib>
     </instance>
     <instance name="Signika Medium" familyname="Signika" stylename="Medium" filename="instance_ufos/Signika-Medium.ufo">
       <location>
         <dimension name="Weight" xvalue="470"/>
+        <dimension name="GRAD" xvalue="0"/>
       </location>
-      <kerning/>
-      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.export</key>
+          <true/>
+          <key>com.schriftgestaltung.intanceInterpolations</key>
+          <dict>
+            <key>33C6340C-19D4-4BAD-95FA-1AE5BEBDD22C</key>
+            <real>0.48276</real>
+            <key>E2DCCAAC-30DB-413E-982C-2359C46E476F</key>
+            <real>0.51724</real>
+          </dict>
+          <key>com.schriftgestaltung.manualInterpolation</key>
+          <false/>
+          <key>com.schriftgestaltung.weight</key>
+          <integer>500</integer>
+          <key>com.schriftgestaltung.width</key>
+          <string>Medium (normal)</string>
+        </dict>
+      </lib>
     </instance>
-    <instance name="Signika SemiBold" familyname="Signika" stylename="SemiBold" filename="instance_ufos/Signika-SemiBold.ufo">
+    <instance name="Signika Semibold" familyname="Signika" stylename="Semibold" filename="instance_ufos/Signika-Semibold.ufo">
       <location>
         <dimension name="Weight" xvalue="650"/>
+        <dimension name="GRAD" xvalue="0"/>
       </location>
-      <kerning/>
-      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.export</key>
+          <true/>
+          <key>com.schriftgestaltung.intanceInterpolations</key>
+          <dict>
+            <key>33C6340C-19D4-4BAD-95FA-1AE5BEBDD22C</key>
+            <real>0.68966</real>
+            <key>E2DCCAAC-30DB-413E-982C-2359C46E476F</key>
+            <real>0.31034</real>
+          </dict>
+          <key>com.schriftgestaltung.manualInterpolation</key>
+          <false/>
+          <key>com.schriftgestaltung.weight</key>
+          <integer>600</integer>
+          <key>com.schriftgestaltung.width</key>
+          <string>Medium (normal)</string>
+        </dict>
+      </lib>
     </instance>
     <instance name="Signika Bold" familyname="Signika" stylename="Bold" filename="instance_ufos/Signika-Bold.ufo">
       <location>
         <dimension name="Weight" xvalue="920"/>
+        <dimension name="GRAD" xvalue="0"/>
       </location>
-      <kerning/>
-      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.export</key>
+          <true/>
+          <key>com.schriftgestaltung.intanceInterpolations</key>
+          <dict>
+            <key>33C6340C-19D4-4BAD-95FA-1AE5BEBDD22C</key>
+            <integer>1</integer>
+          </dict>
+          <key>com.schriftgestaltung.manualInterpolation</key>
+          <false/>
+          <key>com.schriftgestaltung.weight</key>
+          <integer>700</integer>
+          <key>com.schriftgestaltung.width</key>
+          <string>Medium (normal)</string>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Signika Negative Light" familyname="Signika Negative" stylename="Light" filename="instance_ufos/SignikaNegative-Light.ufo">
+      <location>
+        <dimension name="Weight" xvalue="50"/>
+        <dimension name="GRAD" xvalue="1000"/>
+      </location>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.export</key>
+          <true/>
+          <key>com.schriftgestaltung.intanceInterpolations</key>
+          <dict>
+            <key>11405D41-D873-4173-B059-BD48D7789B90</key>
+            <integer>1</integer>
+          </dict>
+          <key>com.schriftgestaltung.manualInterpolation</key>
+          <false/>
+          <key>com.schriftgestaltung.weight</key>
+          <integer>300</integer>
+          <key>com.schriftgestaltung.width</key>
+          <string>Medium (normal)</string>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Signika Negative Regular" familyname="Signika Negative" stylename="Regular" filename="instance_ufos/SignikaNegative-Regular.ufo">
+      <location>
+        <dimension name="Weight" xvalue="360"/>
+        <dimension name="GRAD" xvalue="1000"/>
+      </location>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.export</key>
+          <true/>
+          <key>com.schriftgestaltung.intanceInterpolations</key>
+          <dict>
+            <key>11405D41-D873-4173-B059-BD48D7789B90</key>
+            <real>0.64368</real>
+            <key>E2DCE989-2657-47EA-91FE-B2106D1F3005</key>
+            <real>0.35632</real>
+          </dict>
+          <key>com.schriftgestaltung.manualInterpolation</key>
+          <false/>
+          <key>com.schriftgestaltung.weight</key>
+          <string>Regular</string>
+          <key>com.schriftgestaltung.width</key>
+          <string>Medium (normal)</string>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Signika Negative Medium" familyname="Signika Negative" stylename="Medium" filename="instance_ufos/SignikaNegative-Medium.ufo">
+      <location>
+        <dimension name="Weight" xvalue="470"/>
+        <dimension name="GRAD" xvalue="1000"/>
+      </location>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.export</key>
+          <true/>
+          <key>com.schriftgestaltung.intanceInterpolations</key>
+          <dict>
+            <key>11405D41-D873-4173-B059-BD48D7789B90</key>
+            <real>0.51724</real>
+            <key>E2DCE989-2657-47EA-91FE-B2106D1F3005</key>
+            <real>0.48276</real>
+          </dict>
+          <key>com.schriftgestaltung.manualInterpolation</key>
+          <false/>
+          <key>com.schriftgestaltung.weight</key>
+          <integer>500</integer>
+          <key>com.schriftgestaltung.width</key>
+          <string>Medium (normal)</string>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Signika Negative Semibold" familyname="Signika Negative" stylename="Semibold" filename="instance_ufos/SignikaNegative-Semibold.ufo">
+      <location>
+        <dimension name="Weight" xvalue="650"/>
+        <dimension name="GRAD" xvalue="1000"/>
+      </location>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.export</key>
+          <true/>
+          <key>com.schriftgestaltung.intanceInterpolations</key>
+          <dict>
+            <key>11405D41-D873-4173-B059-BD48D7789B90</key>
+            <real>0.31034</real>
+            <key>E2DCE989-2657-47EA-91FE-B2106D1F3005</key>
+            <real>0.68966</real>
+          </dict>
+          <key>com.schriftgestaltung.manualInterpolation</key>
+          <false/>
+          <key>com.schriftgestaltung.weight</key>
+          <integer>600</integer>
+          <key>com.schriftgestaltung.width</key>
+          <string>Medium (normal)</string>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="Signika Negative Bold" familyname="Signika Negative" stylename="Bold" filename="instance_ufos/SignikaNegative-Bold.ufo" stylemapfamilyname="Signika Negative Signika Negative Regular" stylemapstylename="bold">
+      <location>
+        <dimension name="Weight" xvalue="920"/>
+        <dimension name="GRAD" xvalue="1000"/>
+      </location>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.export</key>
+          <true/>
+          <key>com.schriftgestaltung.intanceInterpolations</key>
+          <dict>
+            <key>E2DCE989-2657-47EA-91FE-B2106D1F3005</key>
+            <integer>1</integer>
+          </dict>
+          <key>com.schriftgestaltung.manualInterpolation</key>
+          <false/>
+          <key>com.schriftgestaltung.weight</key>
+          <integer>700</integer>
+          <key>com.schriftgestaltung.width</key>
+          <string>Medium (normal)</string>
+        </dict>
+      </lib>
     </instance>
   </instances>
-  <lib>
-    <dict>
-      <key>public.skipExportGlyphs</key>
-      <array>
-        <string>germandbls.smcp.alt1</string>
-      </array>
-      <key>com.github.googlei18n.ufo2ft.filters</key>
-      <array>
-        <dict>
-          <key>name</key>
-          <string>propagateAnchors</string>
-          <key>pre</key>
-          <integer>1</integer>
-        </dict>
-      </array>
-    </dict>
-  </lib>
 </designspace>

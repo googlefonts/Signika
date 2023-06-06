@@ -16,12 +16,12 @@ try:
 except:
     pass
 try:
-    os.mkdir("sources/instance_UFO")
+    os.mkdir("sources/instance_ufos")
 except:
     pass
 
 sourceURL = Path("sources/UFO")
-instanceURL = Path("sources/instance_UFO")
+instanceURL = Path("sources/instance_ufos")
 
 for s in sources:
 
