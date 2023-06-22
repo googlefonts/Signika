@@ -5,7 +5,7 @@ only (no grade).
 -->
 <designspace format="4.1">
   <axes>
-    <axis tag="wght" name="Weight" minimum="300" maximum="700" default="300">
+    <axis tag="wght" name="Weight" minimum="300" maximum="700" default="400">
       <map input="300" output="-15"/>
       <map input="400" output="291"/>
       <map input="500" output="434"/>
@@ -21,6 +21,11 @@ only (no grade).
       <info copy="1"/>
       <location>
         <dimension name="Weight" xvalue="-15"/>
+      </location>
+    </source>
+    <source filename="instance_ufos/SignikaNegative-Regular.ufo" name="Signika Negative Regular" familyname="Signika Negative" stylename="Regular">
+      <location>
+        <dimension name="Weight" xvalue="291"/>
       </location>
     </source>
     <source filename="instance_ufos/SignikaNegative-Bold.ufo" name="Signika Negative Bold" familyname="Signika Negative" stylename="Bold">
