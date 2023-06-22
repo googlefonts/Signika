@@ -1,6 +1,9 @@
 {
 .appVersion = "3201";
 .formatVersion = 3;
+DisplayStrings = (
+"”Ų/uhorn.smcp/uhornacute.smcp/uhorndotbelow.smcp/uhorngrave.smcp/uhornhookabove.smcp/uhorntilde.smcp ₁₂₃₄/one.dnom/four.numr"
+);
 axes = (
 {
 name = Weight;
@@ -2929,12 +2932,24 @@ automatic = 1;
 code = "sub Q by Q.ss02;
 sub q.smcp by q.smcp.ss02;
 ";
+labels = (
+{
+language = dflt;
+value = "";
+}
+);
 tag = ss02;
 },
 {
 automatic = 1;
 code = "sub germandbls by germandbls.ss03;
 ";
+labels = (
+{
+language = dflt;
+value = "";
+}
+);
 tag = ss03;
 },
 {
@@ -2964,6 +2979,12 @@ code = "@hyphens = [hyphen endash emdash];
 	sub @hyphens' [@arrows_right @hyphens] by arrowdash;
 	# and the same for .case
 	sub @hyphens_case' [@arrows_right @hyphens_case] by arrowdash.case;";
+labels = (
+{
+language = dflt;
+value = "";
+}
+);
 tag = ss06;
 },
 {
@@ -3037,6 +3058,12 @@ sub northWestArrow.case by northWestArrow.case.ss16;
 sub leftRightArrow.case by leftRightArrow.case.ss16;
 sub upDownArrow.case by upDownArrow.case.ss16;
 ";
+labels = (
+{
+language = dflt;
+value = "";
+}
+);
 tag = ss16;
 },
 {
@@ -3062,6 +3089,12 @@ sub northWestArrow.case by northWestArrow.case.ss17;
 sub leftRightArrow.case by leftRightArrow.case.ss17;
 sub upDownArrow.case by upDownArrow.case.ss17;
 ";
+labels = (
+{
+language = dflt;
+value = "";
+}
+);
 tag = ss17;
 }
 );
@@ -23513,49 +23546,26 @@ color = 4;
 glyphname = softhyphen;
 kernLeft = hyphen;
 kernRight = hyphen;
-lastChange = "2023-06-06 12:13:23 +0000";
+lastChange = "2023-06-22 10:09:59 +0000";
 layers = (
 {
 layerId = "E2DCCAAC-30DB-413E-982C-2359C46E476F";
-shapes = (
-{
-alignment = 1;
-ref = hyphen;
-}
-);
-width = 671;
+width = 0;
 },
 {
 layerId = "33C6340C-19D4-4BAD-95FA-1AE5BEBDD22C";
-shapes = (
-{
-alignment = 1;
-ref = hyphen;
-}
-);
-width = 752;
+width = 0;
 },
 {
 layerId = "11405D41-D873-4173-B059-BD48D7789B90";
-shapes = (
-{
-alignment = 1;
-ref = hyphen;
-}
-);
-width = 671;
+width = 0;
 },
 {
 layerId = "E2DCE989-2657-47EA-91FE-B2106D1F3005";
-shapes = (
-{
-alignment = 1;
-ref = hyphen;
+width = 0;
 }
 );
-width = 752;
-}
-);
+metricWidth = "=0";
 unicode = 173;
 },
 {
@@ -58658,15 +58668,9 @@ width = 0;
 {
 color = 4;
 glyphname = periodcentered.CAT;
-lastChange = "2023-06-20 14:03:22 +0000";
+lastChange = "2023-06-22 10:14:28 +0000";
 layers = (
 {
-anchors = (
-{
-name = _periodcentered;
-pos = (0,786);
-}
-);
 layerId = "E2DCCAAC-30DB-413E-982C-2359C46E476F";
 shapes = (
 {
@@ -58702,12 +58706,6 @@ nodes = (
 width = 81;
 },
 {
-anchors = (
-{
-name = _periodcentered;
-pos = (0,786);
-}
-);
 layerId = "33C6340C-19D4-4BAD-95FA-1AE5BEBDD22C";
 shapes = (
 {
@@ -58743,12 +58741,6 @@ nodes = (
 width = 197;
 },
 {
-anchors = (
-{
-name = _periodcentered;
-pos = (0,786);
-}
-);
 layerId = "11405D41-D873-4173-B059-BD48D7789B90";
 shapes = (
 {
@@ -58784,12 +58776,6 @@ nodes = (
 width = 81;
 },
 {
-anchors = (
-{
-name = _periodcentered;
-pos = (0,786);
-}
-);
 layerId = "E2DCE989-2657-47EA-91FE-B2106D1F3005";
 shapes = (
 {
@@ -320028,7 +320014,7 @@ instanceInterpolations = {
 "33C6340C-19D4-4BAD-95FA-1AE5BEBDD22C" = 0.68966;
 "E2DCCAAC-30DB-413E-982C-2359C46E476F" = 0.31034;
 };
-name = Semibold;
+name = SemiBold;
 weightClass = 600;
 },
 {
@@ -320119,7 +320105,7 @@ instanceInterpolations = {
 "11405D41-D873-4173-B059-BD48D7789B90" = 0.31034;
 "E2DCE989-2657-47EA-91FE-B2106D1F3005" = 0.68966;
 };
-name = Semibold;
+name = SemiBold;
 properties = (
 {
 key = familyNames;

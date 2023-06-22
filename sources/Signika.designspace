@@ -1,4 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
+<!-- 
+Designspace for compiling Signika with weight and grade axes as variable fonts
+as well as static instances.
+-->
 <designspace format="5.0">
   <axes>
     <axis tag="wght" name="Weight" minimum="300" maximum="700" default="300">
@@ -114,7 +118,7 @@
         </dict>
       </lib>
     </instance>
-    <instance name="Signika Semibold" familyname="Signika" stylename="Semibold" filename="instance_ufos/Signika-Semibold.ufo">
+    <instance name="Signika SemiBold" familyname="Signika" stylename="SemiBold" filename="instance_ufos/Signika-SemiBold.ufo">
       <location>
         <dimension name="Weight" xvalue="650"/>
         <dimension name="GRAD" xvalue="0"/>
@@ -235,7 +239,7 @@
         </dict>
       </lib>
     </instance>
-    <instance name="Signika Negative Semibold" familyname="Signika Negative" stylename="Semibold" filename="instance_ufos/SignikaNegative-Semibold.ufo">
+    <instance name="Signika Negative SemiBold" familyname="Signika Negative" stylename="SemiBold" filename="instance_ufos/SignikaNegative-SemiBold.ufo">
       <location>
         <dimension name="Weight" xvalue="650"/>
         <dimension name="GRAD" xvalue="1000"/>
