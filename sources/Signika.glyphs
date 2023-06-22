@@ -2932,7 +2932,7 @@ sub q.smcp by q.smcp.ss02;
 labels = (
 {
 language = dflt;
-value = "";
+value = "Alternative version of Q";
 }
 );
 tag = ss02;
@@ -2944,7 +2944,7 @@ code = "sub germandbls by germandbls.ss03;
 labels = (
 {
 language = dflt;
-value = "";
+value = "Alternative version of Eszett";
 }
 );
 tag = ss03;
@@ -2979,7 +2979,7 @@ code = "@hyphens = [hyphen endash emdash];
 labels = (
 {
 language = dflt;
-value = "";
+value = "Combinable arrows";
 }
 );
 tag = ss06;
@@ -3058,7 +3058,7 @@ sub upDownArrow.case by upDownArrow.case.ss16;
 labels = (
 {
 language = dflt;
-value = "";
+value = "Round arrow caps";
 }
 );
 tag = ss16;
@@ -3089,7 +3089,7 @@ sub upDownArrow.case by upDownArrow.case.ss17;
 labels = (
 {
 language = dflt;
-value = "";
+value = "Sharp arrow caps";
 }
 );
 tag = ss17;
