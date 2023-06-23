@@ -171,7 +171,7 @@ for instance in font.instances:
     if "Regular" in instance.name:
         instance.weightValue = instanceWeightValues[1]
 
-    if "Semibold" in instance.name:
+    if "Semiold" in instance.name or "SemiBold" in instance.name:
         instance.weightValue = instanceWeightValues[2]
         instance.name = "SemiBold"
 
