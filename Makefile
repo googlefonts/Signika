@@ -17,7 +17,8 @@ build: build.stamp sources/config.yaml $(SOURCES)
 venv: venv/touchfile
 
 build.stamp: venv
-	. venv/bin/activate; gftools builder sources/config.yaml; 
+	. venv/bin/activate; 
+	gftools builder sources/config.yaml; 
 	gftools builder sources/configNegative.yaml;
 	sh scripts/fix-naming.sh;
 	make clean && touch build.stamp

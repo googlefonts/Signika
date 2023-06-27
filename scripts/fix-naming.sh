@@ -1,8 +1,5 @@
 #!/bin/sh
 
-# keep commented next line to have the shell output window open
-# set -e
-
 fonts=$(ls ./fonts/variable_negative/*.ttf)
 for font in $fonts;
 do
