@@ -47,7 +47,7 @@
       <kerning/>
       <info/>
     </instance>
-    <instance name="Signika SemiBold" familyname="Signika" stylename="SemiBold" filename="instance_ufos/Signika-SemiBold.ufo">
+    <instance name="Signika Semibold" familyname="Signika" stylename="Semibold" filename="instance_ufos/Signika-Semibold.ufo">
       <location>
         <dimension name="Weight" xvalue="650"/>
       </location>
