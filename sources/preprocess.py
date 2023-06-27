@@ -16,16 +16,30 @@ try:
 except:
     pass
 try:
-    os.mkdir("sources/instance_UFO")
+    os.mkdir("sources/instance_ufos")
 except:
     pass
 
 sourceURL = Path("sources/UFO")
-instanceURL = Path("sources/instance_UFO")
+instanceURL = Path("sources/instance_ufos")
 
 for s in sources:
 
-    main(("glyphs2ufo", str(s), "--write-public-skip-export-glyphs", "--output-dir", str(sourceURL)))
+    main(("glyphs2ufo", str(s), "--write-public-skip-export-glyphs", "--propagate-anchors", "--output-dir", str(sourceURL)))
+
+
+    for ufo in Path(sourceURL).glob("*.ufo"):
+        temp = ufoLib2.Font.open(ufo)
+
+        temp.lib['com.github.googlei18n.ufo2ft.filters'] = [
+            {
+            "name": "propagateAnchors",
+            "pre": 1,
+            }
+        ]
+        temp.save(Path(ufo), overwrite=True)
+
+        
 
     designspace = fontTools.designspaceLib.DesignSpaceDocument.fromfile(
             sourceURL / "Signika.designspace"
