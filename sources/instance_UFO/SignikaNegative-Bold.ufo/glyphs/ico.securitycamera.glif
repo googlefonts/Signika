@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="ico.securitycamera" format="2">
+  <advance width="1951"/>
+  <unicode hex="E10E"/>
+  <guideline x="335" y="439" angle="67.70538999999997"/>
+  <guideline x="554" y="115" angle="199.874524"/>
+  <guideline x="448" y="435" angle="199.874524"/>
+  <outline>
+    <contour>
+      <point x="825" y="3" type="curve" smooth="yes"/>
+      <point x="1632" y="296" type="line" smooth="yes"/>
+      <point x="1701" y="321"/>
+      <point x="1727" y="375"/>
+      <point x="1702" y="443" type="curve" smooth="yes"/>
+      <point x="1516" y="952" type="line" smooth="yes"/>
+      <point x="1492" y="1020"/>
+      <point x="1439" y="1045"/>
+      <point x="1368" y="1020" type="curve" smooth="yes"/>
+      <point x="562" y="727" type="line" smooth="yes"/>
+      <point x="492" y="701"/>
+      <point x="467" y="647"/>
+      <point x="491" y="579" type="curve" smooth="yes"/>
+      <point x="677" y="69" type="line" smooth="yes"/>
+      <point x="702" y="2"/>
+      <point x="756" y="-23"/>
+    </contour>
+    <contour>
+      <point x="367" y="46" type="line"/>
+      <point x="400" y="52"/>
+      <point x="431" y="58"/>
+      <point x="477" y="75" type="curve" smooth="yes"/>
+      <point x="520" y="91"/>
+      <point x="553" y="107"/>
+      <point x="580" y="124" type="curve"/>
+      <point x="453" y="471" type="line"/>
+      <point x="422" y="467"/>
+      <point x="386" y="458"/>
+      <point x="343" y="444" type="curve" smooth="yes"/>
+      <point x="296" y="427"/>
+      <point x="270" y="412"/>
+      <point x="241" y="394" type="curve"/>
+    </contour>
+    <contour>
+      <point x="865" y="250" type="curve"/>
+      <point x="858" y="275"/>
+      <point x="850" y="296"/>
+      <point x="842" y="319" type="curve" smooth="yes"/>
+      <point x="777" y="495" type="line" smooth="yes"/>
+      <point x="769" y="518"/>
+      <point x="762" y="538"/>
+      <point x="751" y="562" type="curve"/>
+      <point x="775" y="568"/>
+      <point x="796" y="576"/>
+      <point x="818" y="584" type="curve" smooth="yes"/>
+      <point x="1263" y="746" type="line" smooth="yes"/>
+      <point x="1286" y="754"/>
+      <point x="1306" y="761"/>
+      <point x="1329" y="772" type="curve"/>
+      <point x="1336" y="747"/>
+      <point x="1344" y="726"/>
+      <point x="1352" y="704" type="curve" smooth="yes"/>
+      <point x="1415" y="527" type="line" smooth="yes"/>
+      <point x="1423" y="505"/>
+      <point x="1431" y="484"/>
+      <point x="1442" y="460" type="curve"/>
+      <point x="1418" y="453"/>
+      <point x="1397" y="446"/>
+      <point x="1376" y="438" type="curve" smooth="yes"/>
+      <point x="930" y="276" type="line" smooth="yes"/>
+      <point x="908" y="268"/>
+      <point x="887" y="260"/>
+    </contour>
+    <contour>
+      <point x="995" y="840" type="line"/>
+      <point x="1235" y="840" type="line"/>
+      <point x="1235" y="1104" type="line" smooth="yes"/>
+      <point x="1235" y="1124"/>
+      <point x="1233" y="1143"/>
+      <point x="1233" y="1163" type="curve" smooth="yes"/>
+      <point x="1233" y="1197" type="line"/>
+      <point x="997" y="1197" type="line"/>
+      <point x="997" y="1163" type="line" smooth="yes"/>
+      <point x="997" y="1143"/>
+      <point x="995" y="1124"/>
+      <point x="995" y="1104" type="curve" smooth="yes"/>
+    </contour>
+    <contour>
+      <point x="638" y="1159" type="curve"/>
+      <point x="1544" y="1159" type="line"/>
+      <point x="1551" y="1189"/>
+      <point x="1555" y="1225"/>
+      <point x="1555" y="1269" type="curve" smooth="yes"/>
+      <point x="1555" y="1317"/>
+      <point x="1551" y="1347"/>
+      <point x="1544" y="1380" type="curve"/>
+      <point x="638" y="1380" type="line"/>
+      <point x="631" y="1347"/>
+      <point x="627" y="1317"/>
+      <point x="627" y="1269" type="curve" smooth="yes"/>
+      <point x="627" y="1225"/>
+      <point x="631" y="1189"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2021/07/09 03:44:18</string>
+    </dict>
+  </lib>
+</glyph>

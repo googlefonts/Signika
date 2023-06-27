@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="guilsinglright" format="2">
+  <advance width="663"/>
+  <unicode hex="203A"/>
+  <outline>
+    <contour>
+      <point x="360" y="505" type="line"/>
+      <point x="83" y="183" type="line"/>
+      <point x="100" y="138"/>
+      <point x="152" y="88"/>
+      <point x="198" y="74" type="curve"/>
+      <point x="586" y="443" type="line"/>
+      <point x="600" y="478"/>
+      <point x="600" y="539"/>
+      <point x="586" y="574" type="curve"/>
+      <point x="190" y="945" type="line"/>
+      <point x="143" y="930"/>
+      <point x="89" y="881"/>
+      <point x="73" y="836" type="curve"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2021/07/09 03:44:18</string>
+    </dict>
+  </lib>
+</glyph>

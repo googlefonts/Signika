@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="eng.smcp" format="2">
+  <advance width="1281"/>
+  <anchor x="645" y="1188" name="top"/>
+  <outline>
+    <contour>
+      <point x="622" y="-142" type="curve"/>
+      <point x="578" y="-203"/>
+      <point x="553" y="-285"/>
+      <point x="545" y="-359" type="curve"/>
+      <point x="612" y="-386"/>
+      <point x="697" y="-402"/>
+      <point x="766" y="-402" type="curve" smooth="yes"/>
+      <point x="1024" y="-402"/>
+      <point x="1137" y="-230"/>
+      <point x="1137" y="4" type="curve" smooth="yes"/>
+      <point x="1137" y="41" type="line"/>
+      <point x="864" y="41" type="line"/>
+      <point x="864" y="-16" type="line" smooth="yes"/>
+      <point x="864" y="-131"/>
+      <point x="808" y="-170"/>
+      <point x="739" y="-170" type="curve" smooth="yes"/>
+      <point x="696" y="-170"/>
+      <point x="655" y="-158"/>
+    </contour>
+    <contour>
+      <point x="144" y="1095" type="curve"/>
+      <point x="144" y="0" type="line"/>
+      <point x="193" y="-10"/>
+      <point x="254" y="-12"/>
+      <point x="292" y="-12" type="curve" smooth="yes"/>
+      <point x="333" y="-12"/>
+      <point x="382" y="-10"/>
+      <point x="434" y="0" type="curve"/>
+      <point x="434" y="304" type="line" smooth="yes"/>
+      <point x="434" y="371"/>
+      <point x="425" y="592"/>
+      <point x="417" y="751" type="curve"/>
+      <point x="431" y="757" type="line"/>
+      <point x="503" y="1102" type="line"/>
+      <point x="453" y="1114"/>
+      <point x="362" y="1114"/>
+      <point x="321" y="1114" type="curve" smooth="yes"/>
+      <point x="281" y="1114"/>
+      <point x="193" y="1106"/>
+    </contour>
+    <contour>
+      <point x="532" y="503" type="curve" smooth="yes"/>
+      <point x="772" y="0" type="line"/>
+      <point x="958" y="224" type="line"/>
+      <point x="858" y="328" type="line"/>
+      <point x="836" y="378"/>
+      <point x="758" y="562"/>
+      <point x="738" y="601" type="curve" smooth="yes"/>
+      <point x="503" y="1102" type="line"/>
+      <point x="338" y="850" type="line"/>
+      <point x="423" y="757" type="line"/>
+      <point x="444" y="711"/>
+      <point x="512" y="545"/>
+    </contour>
+    <contour>
+      <point x="1137" y="1102" type="line"/>
+      <point x="1125" y="1116" type="line"/>
+      <point x="1022" y="1116" type="line" smooth="yes"/>
+      <point x="901" y="1116"/>
+      <point x="839" y="1084"/>
+      <point x="839" y="943" type="curve" smooth="yes"/>
+      <point x="839" y="787" type="line" smooth="yes"/>
+      <point x="839" y="689"/>
+      <point x="858" y="465"/>
+      <point x="866" y="332" type="curve"/>
+      <point x="852" y="328" type="line"/>
+      <point x="772" y="0" type="line"/>
+      <point x="820" y="-11"/>
+      <point x="919" y="-12"/>
+      <point x="959" y="-12" type="curve" smooth="yes"/>
+      <point x="997" y="-12"/>
+      <point x="1085" y="-8"/>
+      <point x="1137" y="4" type="curve"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2021/07/09 03:44:18</string>
+      <key>public.markColor</key>
+      <string>0.97,1,0,1</string>
+    </dict>
+  </lib>
+</glyph>

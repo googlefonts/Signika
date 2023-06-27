@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="periodcentered.CAT.c2sc" format="2">
+  <anchor x="0" y="604" name="_periodcentered"/>
+  <outline>
+    <contour>
+      <point x="-299" y="604" type="curve" smooth="yes"/>
+      <point x="-299" y="573"/>
+      <point x="-293" y="540"/>
+      <point x="-285" y="524" type="curve"/>
+      <point x="-269" y="515"/>
+      <point x="-236" y="505"/>
+      <point x="-201" y="505" type="curve" smooth="yes"/>
+      <point x="-168" y="505"/>
+      <point x="-133" y="515"/>
+      <point x="-117" y="524" type="curve"/>
+      <point x="-109" y="540"/>
+      <point x="-103" y="573"/>
+      <point x="-103" y="604" type="curve" smooth="yes"/>
+      <point x="-103" y="637"/>
+      <point x="-109" y="668"/>
+      <point x="-117" y="684" type="curve"/>
+      <point x="-133" y="693"/>
+      <point x="-168" y="703"/>
+      <point x="-201" y="703" type="curve" smooth="yes"/>
+      <point x="-236" y="703"/>
+      <point x="-269" y="693"/>
+      <point x="-285" y="684" type="curve"/>
+      <point x="-293" y="668"/>
+      <point x="-299" y="637"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2021/07/09 03:44:18</string>
+    </dict>
+  </lib>
+</glyph>

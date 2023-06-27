@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="doubleprimemod" format="2">
+  <advance width="954"/>
+  <unicode hex="02BA"/>
+  <outline>
+    <contour>
+      <point x="638" y="837" type="curve"/>
+      <point x="967" y="1418" type="line"/>
+      <point x="902" y="1481"/>
+      <point x="786" y="1516"/>
+      <point x="686" y="1510" type="curve"/>
+      <point x="476" y="913" type="line"/>
+      <point x="507" y="869"/>
+      <point x="586" y="840"/>
+    </contour>
+    <contour>
+      <point x="223" y="837" type="curve"/>
+      <point x="537" y="1418" type="line"/>
+      <point x="472" y="1481"/>
+      <point x="356" y="1516"/>
+      <point x="256" y="1510" type="curve"/>
+      <point x="66" y="913" type="line"/>
+      <point x="97" y="869"/>
+      <point x="171" y="840"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.leftMetricsKey</key>
+      <string>primemod</string>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>primemod</string>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2021/07/09 03:44:18</string>
+    </dict>
+  </lib>
+</glyph>

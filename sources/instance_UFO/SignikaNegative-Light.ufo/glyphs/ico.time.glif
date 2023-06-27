@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="ico.time" format="2">
+  <advance width="1904"/>
+  <unicode hex="E026"/>
+  <guideline x="580" y="690" angle="0"/>
+  <guideline x="1255" y="475" angle="150"/>
+  <guideline x="912" y="1088" angle="90"/>
+  <guideline x="952" y="1114" angle="180"/>
+  <guideline x="850" y="631" angle="300"/>
+  <outline>
+    <contour>
+      <point x="844" y="641" type="line"/>
+      <point x="850" y="631" type="line"/>
+      <point x="1259" y="394" type="line"/>
+      <point x="1276" y="410"/>
+      <point x="1287" y="426"/>
+      <point x="1300" y="449" type="curve" smooth="yes"/>
+      <point x="1313" y="472"/>
+      <point x="1321" y="490"/>
+      <point x="1327" y="512" type="curve"/>
+      <point x="980" y="713" type="line"/>
+      <point x="980" y="1114" type="line"/>
+      <point x="958" y="1119"/>
+      <point x="939" y="1122"/>
+      <point x="912" y="1122" type="curve" smooth="yes"/>
+      <point x="885" y="1122"/>
+      <point x="866" y="1120"/>
+      <point x="844" y="1114" type="curve"/>
+    </contour>
+    <component base="ico.circle"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2021/07/09 03:44:18</string>
+      <key>public.markColor</key>
+      <string>0.18,0.16,0.78,1</string>
+    </dict>
+  </lib>
+</glyph>

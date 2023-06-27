@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="hyphen" format="2">
+  <advance width="727"/>
+  <unicode hex="002D"/>
+  <outline>
+    <contour>
+      <point x="98" y="429" type="curve"/>
+      <point x="629" y="429" type="line"/>
+      <point x="638" y="464"/>
+      <point x="640" y="509"/>
+      <point x="640" y="536" type="curve" smooth="yes"/>
+      <point x="640" y="564"/>
+      <point x="638" y="609"/>
+      <point x="629" y="644" type="curve"/>
+      <point x="98" y="644" type="line"/>
+      <point x="89" y="609"/>
+      <point x="87" y="564"/>
+      <point x="87" y="536" type="curve" smooth="yes"/>
+      <point x="87" y="509"/>
+      <point x="89" y="464"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2021/07/09 03:44:18</string>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="gravecomb.case" format="2">
+  <anchor x="0" y="1464" name="_top"/>
+  <anchor x="0" y="1838" name="top"/>
+  <outline>
+    <contour>
+      <point x="-178" y="1805" type="curve"/>
+      <point x="228" y="1564" type="line"/>
+      <point x="220" y="1526"/>
+      <point x="200" y="1479"/>
+      <point x="165" y="1457" type="curve"/>
+      <point x="-271" y="1635" type="line"/>
+      <point x="-262" y="1702"/>
+      <point x="-219" y="1776"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2021/07/09 03:44:18</string>
+    </dict>
+  </lib>
+</glyph>

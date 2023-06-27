@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="lozenge" format="2">
+  <advance width="1177"/>
+  <unicode hex="25CA"/>
+  <outline>
+    <contour>
+      <point x="588" y="-22" type="curve" smooth="yes"/>
+      <point x="628" y="-22"/>
+      <point x="667" y="-19"/>
+      <point x="699" y="-12" type="curve"/>
+      <point x="1111" y="674" type="line"/>
+      <point x="1111" y="699" type="line"/>
+      <point x="699" y="1385" type="line"/>
+      <point x="667" y="1392"/>
+      <point x="628" y="1395"/>
+      <point x="588" y="1395" type="curve" smooth="yes"/>
+      <point x="549" y="1395"/>
+      <point x="511" y="1392"/>
+      <point x="477" y="1385" type="curve"/>
+      <point x="65" y="699" type="line"/>
+      <point x="65" y="674" type="line"/>
+      <point x="477" y="-12" type="line"/>
+      <point x="511" y="-19"/>
+      <point x="549" y="-22"/>
+    </contour>
+    <contour>
+      <point x="581" y="225" type="line"/>
+      <point x="559" y="280"/>
+      <point x="521" y="358"/>
+      <point x="486" y="416" type="curve" smooth="yes"/>
+      <point x="272" y="785" type="line"/>
+      <point x="272" y="588" type="line"/>
+      <point x="486" y="957" type="line" smooth="yes"/>
+      <point x="521" y="1015"/>
+      <point x="559" y="1093"/>
+      <point x="581" y="1147" type="curve"/>
+      <point x="595" y="1147" type="line"/>
+      <point x="617" y="1093"/>
+      <point x="655" y="1015"/>
+      <point x="690" y="957" type="curve" smooth="yes"/>
+      <point x="904" y="588" type="line"/>
+      <point x="904" y="785" type="line"/>
+      <point x="690" y="416" type="line" smooth="yes"/>
+      <point x="655" y="358"/>
+      <point x="617" y="280"/>
+      <point x="595" y="225" type="curve"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2021/07/09 03:44:18</string>
+    </dict>
+  </lib>
+</glyph>
