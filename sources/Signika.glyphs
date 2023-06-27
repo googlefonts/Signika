@@ -1,10 +1,6 @@
 {
 .appVersion = "3202";
 .formatVersion = 3;
-DisplayStrings = (
-gpH,
-"fpnldOH/ico.circleoverflowmenu"
-);
 axes = (
 {
 name = Weight;
@@ -103300,53 +103296,6 @@ unicode = 8203;
 },
 {
 color = 6;
-glyphname = CR;
-lastChange = "2023-06-27 11:34:53 +0000";
-layers = (
-{
-layerId = "E2DCCAAC-30DB-413E-982C-2359C46E476F";
-width = 0;
-},
-{
-layerId = "33C6340C-19D4-4BAD-95FA-1AE5BEBDD22C";
-width = 0;
-},
-{
-layerId = "11405D41-D873-4173-B059-BD48D7789B90";
-width = 0;
-},
-{
-layerId = "E2DCE989-2657-47EA-91FE-B2106D1F3005";
-width = 0;
-}
-);
-unicode = 13;
-},
-{
-color = 6;
-glyphname = NULL;
-lastChange = "2023-06-27 11:34:53 +0000";
-layers = (
-{
-layerId = "E2DCCAAC-30DB-413E-982C-2359C46E476F";
-width = 0;
-},
-{
-layerId = "33C6340C-19D4-4BAD-95FA-1AE5BEBDD22C";
-width = 0;
-},
-{
-layerId = "11405D41-D873-4173-B059-BD48D7789B90";
-width = 0;
-},
-{
-layerId = "E2DCE989-2657-47EA-91FE-B2106D1F3005";
-width = 0;
-}
-);
-},
-{
-color = 6;
 glyphname = .notdef;
 lastChange = "2023-06-27 11:34:53 +0000";
 layers = (
@@ -105065,7 +105014,7 @@ unicode = 33;
 {
 color = 10;
 glyphname = exclamdown;
-lastChange = "2023-06-27 14:20:12 +0000";
+lastChange = "2023-06-27 16:03:46 +0000";
 layers = (
 {
 layerId = "E2DCCAAC-30DB-413E-982C-2359C46E476F";
@@ -105073,7 +105022,7 @@ shapes = (
 {
 alignment = 1;
 angle = 180;
-pos = (555,981);
+pos = (555,987);
 ref = exclam;
 }
 );
@@ -105085,7 +105034,7 @@ shapes = (
 {
 alignment = 1;
 angle = 180;
-pos = (616,998);
+pos = (616,1012);
 ref = exclam;
 }
 );
@@ -105109,7 +105058,7 @@ shapes = (
 {
 alignment = 1;
 angle = 180;
-pos = (616,997);
+pos = (616,1009);
 ref = exclam;
 }
 );
@@ -108502,57 +108451,6 @@ width = 752;
 );
 metricRight = "=|";
 unicode = 45;
-},
-{
-color = 10;
-glyphname = softhyphen;
-kernLeft = hyphen;
-kernRight = hyphen;
-lastChange = "2023-06-27 11:34:53 +0000";
-layers = (
-{
-layerId = "E2DCCAAC-30DB-413E-982C-2359C46E476F";
-shapes = (
-{
-alignment = 1;
-ref = hyphen;
-}
-);
-width = 671;
-},
-{
-layerId = "33C6340C-19D4-4BAD-95FA-1AE5BEBDD22C";
-shapes = (
-{
-alignment = 1;
-ref = hyphen;
-}
-);
-width = 752;
-},
-{
-layerId = "11405D41-D873-4173-B059-BD48D7789B90";
-shapes = (
-{
-alignment = 1;
-ref = hyphen;
-}
-);
-width = 671;
-},
-{
-layerId = "E2DCE989-2657-47EA-91FE-B2106D1F3005";
-shapes = (
-{
-alignment = 1;
-ref = hyphen;
-}
-);
-width = 752;
-}
-);
-metricWidth = "=0";
-unicode = 173;
 },
 {
 color = 6;
@@ -320398,7 +320296,6 @@ instanceInterpolations = {
 "E2DCE989-2657-47EA-91FE-B2106D1F3005" = 1;
 };
 isBold = 1;
-linkStyle = "Signika Negative Regular";
 name = Bold;
 properties = (
 {
