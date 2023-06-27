@@ -1,6 +1,7 @@
 sources:
-  - Signika.designspace
+  - Signika.glyphs
 axisOrder:
   - wght
   - GRAD
 familyName: "Signika"
+cleanUp: false
