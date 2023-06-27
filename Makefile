@@ -17,7 +17,10 @@ build: build.stamp sources/config.yaml $(SOURCES)
 venv: venv/touchfile
 
 build.stamp: venv
-	. venv/bin/activate; gftools builder sources/config.yaml; gftools builder sources/configNegative.yaml; rm -rf sources/*_ufo && touch build.stamp
+	. venv/bin/activate; gftools builder sources/config.yaml; 
+	gftools builder sources/configNegative.yaml;
+	sh scripts/fix-naming.sh;
+	make clean && touch build.stamp
 
 venv/touchfile: requirements.txt
 	test -d venv || python3 -m venv venv
@@ -28,7 +31,7 @@ test: venv build.stamp
 	. venv/bin/activate; fontbakery check-googlefonts --html fontbakery-report.html --ghmarkdown fontbakery-report.md $(shell find fonts -type f)
 
 proof: venv build.stamp
-	. venv/bin/activate; gftools gen-html proof $(shell find fonts/ttf -type f) -o proof
+	. venv/bin/activate; gftools gen-html proof $(shell find fonts/variable -type f) -o proof
 
 clean:
 	rm -rf venv
