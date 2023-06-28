@@ -1,2 +1,4 @@
 fontbakery>=0.8
 gftools>=0.9
+diffenator2>=0.2.5
+gftools[qa]>=0.9.23
