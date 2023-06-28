@@ -1,90 +1,64 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<!-- 
-A legacy designspace for compiling a Negative Variable font with weight axis
-only (no grade).
--->
-<designspace format="4.1">
+<designspace format="5.0">
   <axes>
-    <axis tag="wght" name="Weight" minimum="300" maximum="700" default="400">
-      <map input="300" output="-15"/>
-      <map input="400" output="291"/>
-      <map input="500" output="434"/>
-      <map input="600" output="577"/>
-      <map input="700" output="843"/>
+    <axis tag="wght" name="Weight" minimum="300" maximum="700" default="300">
+      <map input="300" output="154"/>
+      <map input="400" output="213"/>
+      <map input="500" output="235"/>
+      <map input="600" output="269"/>
+      <map input="700" output="321"/>
     </axis>
   </axes>
   <sources>
-    <source filename="instance_ufos/SignikaNegative-Light.ufo" name="Signika Negative Light" familyname="Signika Negative" stylename="Light">
+    <source filename="master_ufo/Signika-NegativeLight.ufo" name="Signika Negative Light" familyname="Signika Negative" stylename="Light">
       <lib copy="1"/>
       <groups copy="1"/>
       <features copy="1"/>
       <info copy="1"/>
       <location>
-        <dimension name="Weight" xvalue="-15"/>
+        <dimension name="Weight" xvalue="154"/>
       </location>
     </source>
-    <source filename="instance_ufos/SignikaNegative-Regular.ufo" name="Signika Negative Regular" familyname="Signika Negative" stylename="Regular">
+    <source filename="master_ufo/Signika-NegativeBold.ufo" name="Signika Negative Bold" familyname="Signika Negative" stylename="Bold">
       <location>
-        <dimension name="Weight" xvalue="291"/>
-      </location>
-    </source>
-    <source filename="instance_ufos/SignikaNegative-Bold.ufo" name="Signika Negative Bold" familyname="Signika Negative" stylename="Bold">
-      <location>
-        <dimension name="Weight" xvalue="843"/>
+        <dimension name="Weight" xvalue="321"/>
       </location>
     </source>
   </sources>
   <instances>
-    <instance name="Signika Negative Light" familyname="Signika Negative" stylename="Light" filename="instance_ufoss/SignikaNegative-Light.ufo">
+    <instance name="Signika Negative Light" familyname="Signika Negative" stylename="Light" filename="./instance_ufo/SignikaNegative-Light.ufo">
       <location>
-        <dimension name="Weight" xvalue="-15"/>
+        <dimension name="Weight" xvalue="154"/>
       </location>
-      <kerning/>
-      <info/>
     </instance>
-    <instance name="Signika Negative Regular" familyname="Signika Negative" stylename="Regular" filename="instance_ufoss/SignikaNegative-Regular.ufo">
+    <instance name="Signika Negative Regular" familyname="Signika Negative" stylename="Regular" filename="./instance_ufo/SignikaNegative-Regular.ufo">
       <location>
-        <dimension name="Weight" xvalue="291"/>
+        <dimension name="Weight" xvalue="213"/>
       </location>
-      <kerning/>
-      <info/>
     </instance>
-    <instance name="Signika Negative Medium" familyname="Signika Negative" stylename="Medium" filename="instance_ufoss/SignikaNegative-Medium.ufo">
+    <instance name="Signika Negative Medium" familyname="Signika Negative" stylename="Medium" filename="./instance_ufo/SignikaNegative-Medium.ufo">
       <location>
-        <dimension name="Weight" xvalue="434"/>
+        <dimension name="Weight" xvalue="235"/>
       </location>
-      <kerning/>
-      <info/>
     </instance>
-    <instance name="Signika Negative SemiBold" familyname="Signika Negative" stylename="SemiBold" filename="instance_ufoss/SignikaNegative-SemiBold.ufo">
+    <instance name="Signika Negative SemiBold" familyname="Signika Negative" stylename="SemiBold" filename="./instance_ufo/SignikaNegative-SemiBold.ufo">
       <location>
-        <dimension name="Weight" xvalue="577"/>
+        <dimension name="Weight" xvalue="269"/>
       </location>
-      <kerning/>
-      <info/>
     </instance>
-    <instance name="Signika Negative Bold" familyname="Signika Negative" stylename="Bold" filename="instance_ufoss/SignikaNegative-Bold.ufo">
+    <instance name="Signika Negative Bold" familyname="Signika Negative" stylename="Bold" filename="./instance_ufo/SignikaNegative-Bold.ufo">
       <location>
-        <dimension name="Weight" xvalue="843"/>
+        <dimension name="Weight" xvalue="321"/>
       </location>
-      <kerning/>
-      <info/>
     </instance>
   </instances>
   <lib>
     <dict>
+      <key>GSDontShowVersionAlert</key>
+      <integer>1</integer>
       <key>public.skipExportGlyphs</key>
       <array>
         <string>germandbls.smcp.alt1</string>
-      </array>
-      <key>com.github.googlei18n.ufo2ft.filters</key>
-      <array>
-        <dict>
-          <key>name</key>
-          <string>propagateAnchors</string>
-          <key>pre</key>
-          <integer>1</integer>
-        </dict>
       </array>
     </dict>
   </lib>
