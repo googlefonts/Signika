@@ -4,4 +4,5 @@ axisOrder:
   - wght
   - GRAD
 familyName: "Signika"
+buildOTF: false
 cleanUp: false
