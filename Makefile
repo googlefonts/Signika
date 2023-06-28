@@ -17,7 +17,7 @@ build: build.stamp sources/config.yaml $(SOURCES)
 venv: venv/touchfile
 
 build.stamp: venv
-	. venv/bin/activate; gftools builder sources/config.yaml; gftools builder sources/configNegative.yaml; sh scripts/fix-naming.sh; make clean && touch build.stamp
+	. venv/bin/activate; gftools builder sources/config.yaml; gftools builder sources/configNegative.yaml; sh scripts/fix-naming.sh && touch build.stamp
 
 venv/touchfile: requirements.txt
 	test -d venv || python3 -m venv venv
@@ -34,3 +34,4 @@ clean:
 	rm -rf venv
 	rm -rf sources/master_ufo
 	rm -rf sources/instance_ufo
+	find . -name "*.pyc" | xargs rm delete
