@@ -17,6 +17,8 @@ Then:
 * `make build` will produce font files.
 * `make test` will run [FontBakery](https://github.com/googlefonts/fontbakery)'s quality assurance tests.
 * `make proof` will generate HTML proof files.
+* You should run `make clean` before or after each build.
+* Building `.otf` fonts takes a lot of time so it is disabled, but you can turn it on in `sources/config.yaml` by changing `false` to `true` for the entry `builOTF`.
 
 ## License
 
